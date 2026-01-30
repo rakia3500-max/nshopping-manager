@@ -125,7 +125,7 @@ def run_daily_routine():
                 if detected_type != "NONE":
                     row_data.update({
                         "rank": r, 
-                        "mall": standard_mall_name,  # <--- 깔끔해진 이름으로 저장
+                        "mall": standard_mall_name,  # <--- 깔끔해진 이름으로 저장 (여기가 핵심!)
                         "price": item['lprice'],
                         "title": item['title'].replace("<b>", "").replace("</b>", ""),
                         "link": item['link'],
@@ -152,9 +152,12 @@ def run_daily_routine():
             df.to_csv(csv_buffer, index=False)
             csv_data = csv_buffer.getvalue().encode('utf-8')
             
+            # [중요] 한글 깨짐 방지용 헤더 추가
+            headers = {'Content-Type': 'text/csv; charset=utf-8'}
+
             # 구글 시트로 전송 (수동과 동일하게 'auto_daily' 타입으로 보냄)
             # 이러면 구글 앱스스크립트가 알아서 받아서 슬랙을 보냅니다.
-            res = requests.post(APPS_URL, params={"token": APPS_TOKEN, "type": "auto_daily"}, data=csv_data)
+            res = requests.post(APPS_URL, params={"token": APPS_TOKEN, "type": "auto_daily"}, data=csv_data, headers=headers)
             print(f"📤 구글 시트 전송 완료: {res.status_code}")
             
         except Exception as e:
