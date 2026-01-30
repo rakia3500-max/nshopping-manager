@@ -45,7 +45,7 @@ def get_rank(kw, cid, sec):
 
 # --- 3. 메인 로직 ---
 def run_daily_routine():
-    print("🚀 [진단 모드] 일일 자동 분석 시작")
+    print("🚀 [강력 매칭 모드] 분석 시작")
     
     GEMINI_KEY = get_secret("GEMINI_API_KEY")
     N_CID = get_secret("NAVER_CLIENT_ID")
@@ -59,21 +59,22 @@ def run_daily_routine():
     # 키워드 로드
     raw_kws = get_secret("DEFAULT_KEYWORDS")
     if not raw_kws:
-        print("❌ [오류] DEFAULT_KEYWORDS 시크릿이 로드되지 않았습니다.")
+        print("❌ [오류] DEFAULT_KEYWORDS 없음")
         return
     keywords = [k.strip() for k in raw_kws.replace('\n', ',').split(',') if k.strip()]
     
-    # 브랜드 & 경쟁사 로드
-    my_brands = []
-    if get_secret("MY_BRAND_1"): my_brands += [x.strip() for x in get_secret("MY_BRAND_1").split(',')]
-    if get_secret("MY_BRAND_2"): my_brands += [x.strip() for x in get_secret("MY_BRAND_2").split(',')]
+    # --- [핵심] 브랜드/경쟁사 정제 (따옴표 제거 + 소문자화 + 공백제거) ---
+    def clean_brand_list(secret_val):
+        if not secret_val: return []
+        # 콤마로 나누고 -> 앞뒤 공백 제거 -> 따옴표 제거 -> 소문자 변환 -> 내부 공백 제거
+        return [x.strip().replace('"', '').replace("'", "").lower().replace(" ", "") 
+                for x in secret_val.split(',') if x.strip()]
+
+    my_brands = clean_brand_list(get_secret("MY_BRAND_1")) + clean_brand_list(get_secret("MY_BRAND_2"))
+    competitors = clean_brand_list(get_secret("COMPETITORS"))
     
-    competitors = []
-    if get_secret("COMPETITORS"): competitors += [x.strip() for x in get_secret("COMPETITORS").split(',')]
-    
-    print(f"✅ [설정 확인] 키워드: {len(keywords)}개 로드됨")
-    print(f"✅ [설정 확인] 내 브랜드: {len(my_brands)}개 로드됨")
-    print(f"✅ [설정 확인] 경쟁사: {len(competitors)}개 로드됨")
+    print(f"✅ [설정] 내 브랜드(정제됨): {my_brands}")
+    print(f"✅ [설정] 경쟁사(정제됨): {competitors}")
     
     today = dt.date.today().isoformat()
     results = []
@@ -91,36 +92,45 @@ def run_daily_routine():
 
         if items:
             for r, item in enumerate(items, 1):
-                mn = item['mallName'].replace(" ", "")
-                # 내 브랜드 찾기
-                is_mine = any(b.replace(" ", "") in mn for b in my_brands if b)
-                # 경쟁사 찾기
-                is_comp = any(c.replace(" ", "") in mn for c in competitors if c)
-                # 상위권(1~3위)
+                # 비교를 위해 몰 이름도 정제 (소문자 + 공백제거)
+                raw_mall = item['mallName']
+                clean_mall = raw_mall.replace(" ", "").lower()
+                
+                # 디버깅: 첫 번째 키워드의 1위 업체가 뭔지 로그로 확인
+                if idx == 0 and r == 1:
+                    print(f"🔎 [디버깅] '{kw}' 1위 몰이름: 실제='{raw_mall}' vs 변환='{clean_mall}'")
+
+                # 1. 내 브랜드 체크
+                is_mine = any(b in clean_mall for b in my_brands)
+                # 2. 경쟁사 체크
+                is_comp = any(c in clean_mall for c in competitors)
+                # 3. 상위권(1~3위)
                 is_top = r <= 3
                 
                 if is_mine or is_comp or is_top:
+                    brand_type = "TOP"
+                    if is_comp: brand_type = "COMP" # 경쟁사가 상위권일 수도 있으니 순서 중요
+                    if is_mine: brand_type = "MY"   # 내 브랜드가 최우선
+                    
                     row_data.update({
-                        "rank": r, "mall": item['mallName'], "price": item['lprice'],
+                        "rank": r, "mall": raw_mall, "price": item['lprice'],
                         "title": item['title'].replace("<b>", "").replace("</b>", ""),
                         "link": item['link'],
-                        "type": "MY" if is_mine else ("COMP" if is_comp else "TOP")
+                        "type": brand_type
                     })
                     found_any = True
-                    break # 가장 높은 순위 1개만 기록
+                    break
 
         results.append(row_data)
         
-        log_msg = f"{kw}: {vol}건"
-        if found_any: log_msg += f" / {row_data['rank']}위 ({row_data['type']})"
-        else: log_msg += " / 발견 못함"
-        print(f"[{idx+1}/{len(keywords)}] {log_msg}")
-        
+        log_type = f"({row_data['type']})" if found_any else ""
+        if idx % 10 == 0: # 로그 너무 많으면 보기 힘드니 10개마다 출력
+            print(f"[{idx+1}/{len(keywords)}] {kw} {log_type}")
         time.sleep(0.3)
 
     if results:
         df = pd.DataFrame(results)
-        print(f"📊 최종 데이터: {len(df)}행 생성됨.")
+        print(f"📊 최종 수집: {len(df)}개 (내 브랜드 발견: {len(df[df['type']=='MY'])})")
         
         if APPS_URL:
             try:
