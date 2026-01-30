@@ -2,8 +2,8 @@ name: Daily Manager Routine
 
 on:
   schedule:
-    - cron: '30 23 * * *' # 매일 아침 8시 30분 (UTC 23:30) 실행
-  workflow_dispatch:      # 수동 실행 가능
+    - cron: '30 23 * * *'
+  workflow_dispatch:
 
 jobs:
   run-manager:
@@ -20,7 +20,6 @@ jobs:
       - name: Run Daily Script
         run: python daily_manager.py
         env:
-          # 모든 시크릿 연결 (이전에 등록한 것들)
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
           NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
@@ -32,3 +31,5 @@ jobs:
           DEFAULT_KEYWORDS: ${{ secrets.DEFAULT_KEYWORDS }}
           MY_BRAND_1: ${{ secrets.MY_BRAND_1 }}
           MY_BRAND_2: ${{ secrets.MY_BRAND_2 }}
+          # [중요] 아래 줄을 꼭 추가해야 경쟁사를 찾습니다!
+          COMPETITORS: ${{ secrets.COMPETITORS }}
