@@ -7,6 +7,7 @@ import hmac
 import hashlib
 import os
 import io
+import sys
 
 # --- 1. 시크릿 로드 함수 ---
 def get_secret(key):
@@ -45,7 +46,7 @@ def get_rank(kw, cid, sec):
 
 # --- 3. 메인 로직 ---
 def run_daily_routine():
-    print("🚀 [최종] 자동 분석 시작 (브랜드 고정 방식)")
+    print("🔎 [포렌식 모드] 정밀 분석 시작")
     
     # API 키 로드
     GEMINI_KEY = get_secret("GEMINI_API_KEY")
@@ -60,24 +61,27 @@ def run_daily_routine():
     # 키워드 로드
     raw_kws = get_secret("DEFAULT_KEYWORDS")
     if not raw_kws:
-        print("❌ 키워드가 없습니다.")
+        print("❌ 키워드 없음")
         return
     keywords = [k.strip() for k in raw_kws.replace('\n', ',').split(',') if k.strip()]
     
-    # ==================================================
-    # 👇 [여기에 사장님의 브랜드를 직접 적습니다]
-    # (공백이 있든 없든 다 잡아내도록 코드가 알아서 처리합니다)
-    # ==================================================
+    # [하드코딩] 브랜드 설정
     MY_BRANDS = ["드론박스", "빛드론", "DRONEBOX", "BitDrone"]
     COMPETITORS = ["다다사", "효로로", "드론뷰", "dadasa", "hyororo", "droneview"]
     
-    print(f"✅ 추적 브랜드: {MY_BRANDS}")
+    print(f"🎯 찾는 내 브랜드: {MY_BRANDS}")
+    print(f"🎯 찾는 경쟁사: {COMPETITORS}")
     
     today = dt.date.today().isoformat()
     results = []
     
+    total_found_my = 0
+    total_found_comp = 0
+    
     # 분석 루프
+    print("\n--- [실시간 탐지 로그] ---")
     for idx, kw in enumerate(keywords):
+        # 1. API 호출
         vol, clk, ctr = get_vol(kw, AD_KEY, AD_SEC, AD_CUS)
         items = get_rank(kw, N_CID, N_SEC)
         
@@ -89,34 +93,36 @@ def run_daily_routine():
 
         if items:
             for r, item in enumerate(items, 1):
-                # 1. 몰 이름을 "소문자" + "공백제거" 상태로 변환
-                # 예: "DJI 정품판매점 드론박스" -> "dji정품판매점드론박스"
                 raw_mall = item['mallName']
                 clean_mall = raw_mall.replace(" ", "").lower()
                 
-                # 2. 내 브랜드 찾기
+                # 상세 로그: 무엇과 비교했는지 출력 (상위 5개 키워드만)
+                if idx < 5 and r == 1:
+                    print(f"👁️ '{kw}' 1위: {raw_mall} (변환됨: {clean_mall})")
+
+                # 판별 로직
                 is_mine = False
-                for brand in MY_BRANDS:
-                    # 내 브랜드도 "소문자" + "공백제거" 해서 비교
-                    # "드론박스" -> "dji정품판매점드론박스" 안에 있니? (YES!)
-                    if brand.replace(" ", "").lower() in clean_mall:
+                for b in MY_BRANDS:
+                    if b.replace(" ", "").lower() in clean_mall:
                         is_mine = True
+                        print(f"🚨 [내꺼 발견!] {kw} -> {raw_mall} ({r}위)")
+                        total_found_my += 1
                         break
                 
-                # 3. 경쟁사 찾기
                 is_comp = False
-                for comp in COMPETITORS:
-                    if comp.replace(" ", "").lower() in clean_mall:
+                for c in COMPETITORS:
+                    if c.replace(" ", "").lower() in clean_mall:
                         is_comp = True
+                        print(f"⚠️ [경쟁사 발견] {kw} -> {raw_mall} ({r}위)")
+                        total_found_comp += 1
                         break
-                
-                # 4. 상위권 (1~3위)
+
                 is_top = r <= 3
                 
                 if is_mine or is_comp or is_top:
                     brand_type = "TOP"
                     if is_comp: brand_type = "COMP"
-                    if is_mine: brand_type = "MY" # 내 브랜드가 최우선
+                    if is_mine: brand_type = "MY"
                     
                     row_data.update({
                         "rank": r, "mall": raw_mall, "price": item['lprice'],
@@ -125,28 +131,37 @@ def run_daily_routine():
                         "type": brand_type
                     })
                     found_any = True
-                    break # 가장 높은 순위 1개만 기록
+                    break
 
         results.append(row_data)
-        
-        # 로그 출력
-        log_msg = f"{kw}"
-        if found_any: log_msg += f" -> {row_data['rank']}위 ({row_data['type']})"
-        print(f"[{idx+1}/{len(keywords)}] {log_msg}")
         time.sleep(0.3)
+
+    print("\n--------------------------------")
+    print(f"📊 [파이썬 집계 결과]")
+    print(f"▶ 내 브랜드 발견 수: {total_found_my}개")
+    print(f"▶ 경쟁사 발견 수: {total_found_comp}개")
+    print("--------------------------------")
 
     if results:
         df = pd.DataFrame(results)
-        my_count = len(df[df['type']=='MY'])
-        print(f"📊 최종 결과: 총 {len(df)}개 중 내 브랜드 {my_count}개 발견")
         
+        # CSV 내용 미리보기 (데이터가 진짜 들어있는지 확인)
+        my_df = df[df['type'] == 'MY']
+        if not my_df.empty:
+            print("\n[전송할 데이터 미리보기 - 내 브랜드]")
+            print(my_df[['keyword', 'rank', 'mall', 'type']].head())
+        else:
+            print("\n[경고] 전송할 데이터에 'MY' 타입이 하나도 없습니다!")
+
         if APPS_URL:
             try:
                 csv_buffer = io.StringIO()
                 df.to_csv(csv_buffer, index=False)
                 csv_data = csv_buffer.getvalue().encode('utf-8')
-                requests.post(APPS_URL, params={"token": APPS_TOKEN, "type": "auto_daily"}, data=csv_data)
-                print("📤 구글 시트/슬랙 전송 완료")
+                
+                print(f"📤 구글 시트로 데이터 전송 중... ({len(df)}행)")
+                res = requests.post(APPS_URL, params={"token": APPS_TOKEN, "type": "auto_daily"}, data=csv_data)
+                print(f"📨 전송 응답 코드: {res.status_code}")
             except Exception as e:
                 print(f"❌ 전송 실패: {e}")
 
