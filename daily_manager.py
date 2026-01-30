@@ -45,8 +45,9 @@ def get_rank(kw, cid, sec):
 
 # --- 3. 메인 로직 ---
 def run_daily_routine():
-    print("🚀 [강력 매칭 모드] 분석 시작")
+    print("🚀 [확정 모드] 자동 분석 시작 - 브랜드 직접 지정")
     
+    # API 키 로드 (이건 시크릿 써야 함)
     GEMINI_KEY = get_secret("GEMINI_API_KEY")
     N_CID = get_secret("NAVER_CLIENT_ID")
     N_SEC = get_secret("NAVER_CLIENT_SECRET")
@@ -59,29 +60,30 @@ def run_daily_routine():
     # 키워드 로드
     raw_kws = get_secret("DEFAULT_KEYWORDS")
     if not raw_kws:
-        print("❌ [오류] DEFAULT_KEYWORDS 없음")
+        print("❌ 키워드가 없습니다.")
         return
     keywords = [k.strip() for k in raw_kws.replace('\n', ',').split(',') if k.strip()]
     
-    # --- [핵심] 브랜드/경쟁사 정제 (따옴표 제거 + 소문자화 + 공백제거) ---
-    def clean_brand_list(secret_val):
-        if not secret_val: return []
-        # 콤마로 나누고 -> 앞뒤 공백 제거 -> 따옴표 제거 -> 소문자 변환 -> 내부 공백 제거
-        return [x.strip().replace('"', '').replace("'", "").lower().replace(" ", "") 
-                for x in secret_val.split(',') if x.strip()]
-
-    my_brands = clean_brand_list(get_secret("MY_BRAND_1")) + clean_brand_list(get_secret("MY_BRAND_2"))
-    competitors = clean_brand_list(get_secret("COMPETITORS"))
+    # ==========================================
+    # 👇 [여기만 수정하세요] 내 브랜드와 경쟁사 이름
+    # ==========================================
+    # 따옴표 안에 정확한 한글 이름을 적으세요. (띄어쓰기 있어도 됩니다)
     
-    print(f"✅ [설정] 내 브랜드(정제됨): {my_brands}")
-    print(f"✅ [설정] 경쟁사(정제됨): {competitors}")
+    my_brands = ["드론박스", "빛드론", "DRONEBOX", "BitDrone"] 
+    competitors = ["다다사", "효로로", "드론뷰"]
+    
+    print(f"✅ 내 브랜드(고정): {my_brands}")
+    print(f"✅ 경쟁사(고정): {competitors}")
     
     today = dt.date.today().isoformat()
     results = []
     
     # 분석 루프
     for idx, kw in enumerate(keywords):
+        # 1. 검색량
         vol, clk, ctr = get_vol(kw, AD_KEY, AD_SEC, AD_CUS)
+        
+        # 2. 순위
         items = get_rank(kw, N_CID, N_SEC)
         
         found_any = False
@@ -92,25 +94,31 @@ def run_daily_routine():
 
         if items:
             for r, item in enumerate(items, 1):
-                # 비교를 위해 몰 이름도 정제 (소문자 + 공백제거)
+                # 비교를 위해 공백 제거
                 raw_mall = item['mallName']
-                clean_mall = raw_mall.replace(" ", "").lower()
+                clean_mall = raw_mall.replace(" ", "")
                 
-                # 디버깅: 첫 번째 키워드의 1위 업체가 뭔지 로그로 확인
-                if idx == 0 and r == 1:
-                    print(f"🔎 [디버깅] '{kw}' 1위 몰이름: 실제='{raw_mall}' vs 변환='{clean_mall}'")
+                # 내 브랜드 찾기 (직접 입력한 리스트 사용)
+                is_mine = False
+                for b in my_brands:
+                    if b.replace(" ", "") in clean_mall:
+                        is_mine = True
+                        break
+                
+                # 경쟁사 찾기
+                is_comp = False
+                for c in competitors:
+                    if c.replace(" ", "") in clean_mall:
+                        is_comp = True
+                        break
 
-                # 1. 내 브랜드 체크
-                is_mine = any(b in clean_mall for b in my_brands)
-                # 2. 경쟁사 체크
-                is_comp = any(c in clean_mall for c in competitors)
-                # 3. 상위권(1~3위)
+                # 상위권 (1~3위)
                 is_top = r <= 3
                 
                 if is_mine or is_comp or is_top:
                     brand_type = "TOP"
-                    if is_comp: brand_type = "COMP" # 경쟁사가 상위권일 수도 있으니 순서 중요
-                    if is_mine: brand_type = "MY"   # 내 브랜드가 최우선
+                    if is_comp: brand_type = "COMP"
+                    if is_mine: brand_type = "MY"
                     
                     row_data.update({
                         "rank": r, "mall": raw_mall, "price": item['lprice'],
@@ -123,22 +131,22 @@ def run_daily_routine():
 
         results.append(row_data)
         
+        # 로그 출력
         log_type = f"({row_data['type']})" if found_any else ""
-        if idx % 10 == 0: # 로그 너무 많으면 보기 힘드니 10개마다 출력
-            print(f"[{idx+1}/{len(keywords)}] {kw} {log_type}")
+        print(f"[{idx+1}/{len(keywords)}] {kw} {log_type}")
         time.sleep(0.3)
 
     if results:
         df = pd.DataFrame(results)
-        print(f"📊 최종 수집: {len(df)}개 (내 브랜드 발견: {len(df[df['type']=='MY'])})")
+        print(f"📊 최종 결과: 자사 {len(df[df['type']=='MY'])}개 발견")
         
         if APPS_URL:
             try:
                 csv_buffer = io.StringIO()
                 df.to_csv(csv_buffer, index=False)
                 csv_data = csv_buffer.getvalue().encode('utf-8')
-                res = requests.post(APPS_URL, params={"token": APPS_TOKEN, "type": "auto_daily"}, data=csv_data)
-                print(f"📤 전송 결과: {res.status_code}")
+                requests.post(APPS_URL, params={"token": APPS_TOKEN, "type": "auto_daily"}, data=csv_data)
+                print("📤 구글 시트 전송 완료")
             except Exception as e:
                 print(f"❌ 전송 실패: {e}")
 
