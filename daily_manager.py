@@ -7,6 +7,10 @@ import hmac
 import hashlib
 import os
 import io
+import sys
+
+# [중요] 리눅스 서버에서 한글 로그 깨짐 방지
+sys.stdout.reconfigure(encoding='utf-8')
 
 # --- 1. 시크릿 로드 ---
 def get_secret(key):
@@ -45,7 +49,7 @@ def get_rank(kw, cid, sec):
 
 # --- 3. 메인 로직 ---
 def run_daily_routine():
-    print("🚀 [호환 모드] 기존 구글 스크립트 규격에 맞춰 전송")
+    print("🚀 [최종] 한글 깨짐 방지 + 이름 표준화 전송")
     
     # 시크릿 로드
     GEMINI_KEY = get_secret("GEMINI_API_KEY")
@@ -86,13 +90,11 @@ def run_daily_routine():
                 raw_mall = item['mallName']
                 clean_mall = raw_mall.replace(" ", "").lower()
                 
-                # --- [핵심 수정 1] 이름을 수동 프로그램처럼 단순화 ---
-                # 긴 이름(DJI...드론박스)을 그냥 "드론박스"로 바꿔서 저장
-                
-                final_mall_name = raw_mall
+                # --- [1단계] 이름 표준화 (수동 프로그램처럼 변경) ---
+                standard_mall_name = raw_mall
                 detected_type = "NONE"
 
-                # 1. 내 브랜드 확인
+                # 내 브랜드 확인
                 is_mine = False
                 for b in MY_BRANDS:
                     if b.replace(" ", "").lower() in clean_mall:
@@ -101,32 +103,30 @@ def run_daily_routine():
                 
                 if is_mine:
                     detected_type = "MY"
-                    # 구글 스크립트가 '드론박스'라는 글자를 좋아하므로 강제 변경
+                    # 구글이 100% 알아듣는 이름으로 변경
                     if "드론박스" in clean_mall or "dronebox" in clean_mall:
-                        final_mall_name = "드론박스"
+                        standard_mall_name = "드론박스"
                     elif "빛드론" in clean_mall or "bitdrone" in clean_mall:
-                        final_mall_name = "빛드론"
+                        standard_mall_name = "빛드론"
 
-                # 2. 경쟁사 확인
+                # 경쟁사 확인
                 if not is_mine:
                     for c in COMPETITORS:
                         if c.replace(" ", "").lower() in clean_mall:
                             detected_type = "COMP"
-                            # 경쟁사 이름도 통일
-                            if "다다사" in clean_mall: final_mall_name = "다다사"
-                            elif "효로로" in clean_mall: final_mall_name = "효로로"
-                            elif "드론뷰" in clean_mall: final_mall_name = "드론뷰"
+                            if "다다사" in clean_mall: standard_mall_name = "다다사"
+                            elif "효로로" in clean_mall: standard_mall_name = "효로로"
+                            elif "드론뷰" in clean_mall: standard_mall_name = "드론뷰"
                             break
 
-                # 3. 상위권 확인
+                # 상위권 확인
                 if detected_type == "NONE" and r <= 3:
                     detected_type = "TOP"
 
-                # 저장
                 if detected_type != "NONE":
                     row_data.update({
                         "rank": r, 
-                        "mall": final_mall_name,  # <--- 깔끔하게 바뀐 이름
+                        "mall": standard_mall_name, 
                         "price": item['lprice'],
                         "title": item['title'].replace("<b>", "").replace("</b>", ""),
                         "link": item['link'],
@@ -142,7 +142,7 @@ def run_daily_routine():
         print(f"[{idx+1}/{len(keywords)}] {log_txt}")
         time.sleep(0.3)
 
-    # --- [핵심 수정 2] 한글 깨짐 방지 전송 ---
+    # --- [2단계] 한글 깨짐 방지 전송 ---
     if results and APPS_URL:
         try:
             df = pd.DataFrame(results)
@@ -150,16 +150,19 @@ def run_daily_routine():
             # CSV로 변환
             csv_buffer = io.StringIO()
             df.to_csv(csv_buffer, index=False)
-            csv_data = csv_buffer.getvalue().encode('utf-8') # UTF-8 바이트로 변환
             
-            # 헤더에 '나 UTF-8이야'라고 명시해서 보냄
-            headers = {'Content-Type': 'text/csv; charset=utf-8'}
+            # [핵심] UTF-8 바이트로 명확하게 인코딩
+            csv_bytes = csv_buffer.getvalue().encode('utf-8')
+            
+            # [핵심] 헤더에 charset=utf-8 명시
+            # 이렇게 하면 구글이 "아, 이거 한글(UTF-8)이구나" 하고 깨지지 않게 받습니다.
+            headers = {'Content-Type': 'text/plain; charset=utf-8'}
 
-            print(f"📊 전송 데이터 크기: {len(results)}건")
+            print(f"📊 데이터 전송 중... ({len(df)}행)")
             
-            # 수동과 동일한 'auto_daily' 타입 사용
-            res = requests.post(APPS_URL, params={"token": APPS_TOKEN, "type": "auto_daily"}, data=csv_data, headers=headers)
-            print(f"📤 구글 시트 응답: {res.status_code}")
+            # 기존 구글 스크립트와 호환되는 'auto_daily' 타입으로 전송
+            res = requests.post(APPS_URL, params={"token": APPS_TOKEN, "type": "auto_daily"}, data=csv_bytes, headers=headers)
+            print(f"📤 전송 결과: {res.status_code}")
             
         except Exception as e:
             print(f"❌ 전송 실패: {e}")
