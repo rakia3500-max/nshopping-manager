@@ -125,4 +125,12 @@ def run_daily_routine():
         if APPS_URL:
             try:
                 csv_buffer = io.StringIO()
-                df.to_csv
+                df.to_csv(csv_buffer, index=False)
+                csv_data = csv_buffer.getvalue().encode('utf-8')
+                res = requests.post(APPS_URL, params={"token": APPS_TOKEN, "type": "auto_daily"}, data=csv_data)
+                print(f"📤 전송 결과: {res.status_code}")
+            except Exception as e:
+                print(f"❌ 전송 실패: {e}")
+
+if __name__ == "__main__":
+    run_daily_routine()
