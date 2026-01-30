@@ -2,8 +2,8 @@ name: Daily Manager Routine
 
 on:
   schedule:
-    - cron: '30 23 * * *'
-  workflow_dispatch:
+    - cron: '30 23 * * *' # 매일 아침 8시 30분 (UTC 23:30)
+  workflow_dispatch:      # 수동 실행 버튼
 
 jobs:
   run-manager:
@@ -20,6 +20,7 @@ jobs:
       - name: Run Daily Script
         run: python daily_manager.py
         env:
+          # --- [중요] 아래 항목들이 빠지면 데이터가 비어서 옵니다 ---
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
           NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
@@ -28,8 +29,8 @@ jobs:
           NAVER_CUSTOMER_ID: ${{ secrets.NAVER_CUSTOMER_ID }}
           APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
           APPS_SCRIPT_TOKEN: ${{ secrets.APPS_SCRIPT_TOKEN }}
+          # ▼▼▼ 여기가 핵심입니다! ▼▼▼
           DEFAULT_KEYWORDS: ${{ secrets.DEFAULT_KEYWORDS }}
           MY_BRAND_1: ${{ secrets.MY_BRAND_1 }}
           MY_BRAND_2: ${{ secrets.MY_BRAND_2 }}
-          # [중요] 아래 줄을 꼭 추가해야 경쟁사를 찾습니다!
           COMPETITORS: ${{ secrets.COMPETITORS }}
