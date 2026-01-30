@@ -7,7 +7,6 @@ import hmac
 import hashlib
 import os
 import io
-import sys
 
 # --- 1. 시크릿 로드 함수 ---
 def get_secret(key):
@@ -46,9 +45,9 @@ def get_rank(kw, cid, sec):
 
 # --- 3. 메인 로직 ---
 def run_daily_routine():
-    print("🔎 [포렌식 모드] 정밀 분석 시작")
+    print("🚀 [최종 수정] 데이터 '이름 세탁' 후 전송 모드")
     
-    # API 키 로드
+    # 시크릿 로드
     GEMINI_KEY = get_secret("GEMINI_API_KEY")
     N_CID = get_secret("NAVER_CLIENT_ID")
     N_SEC = get_secret("NAVER_CLIENT_SECRET")
@@ -58,7 +57,7 @@ def run_daily_routine():
     APPS_URL = get_secret("APPS_SCRIPT_URL")
     APPS_TOKEN = get_secret("APPS_SCRIPT_TOKEN")
     
-    # 키워드 로드
+    # 키워드
     raw_kws = get_secret("DEFAULT_KEYWORDS")
     if not raw_kws:
         print("❌ 키워드 없음")
@@ -69,19 +68,10 @@ def run_daily_routine():
     MY_BRANDS = ["드론박스", "빛드론", "DRONEBOX", "BitDrone"]
     COMPETITORS = ["다다사", "효로로", "드론뷰", "dadasa", "hyororo", "droneview"]
     
-    print(f"🎯 찾는 내 브랜드: {MY_BRANDS}")
-    print(f"🎯 찾는 경쟁사: {COMPETITORS}")
-    
     today = dt.date.today().isoformat()
     results = []
     
-    total_found_my = 0
-    total_found_comp = 0
-    
-    # 분석 루프
-    print("\n--- [실시간 탐지 로그] ---")
     for idx, kw in enumerate(keywords):
-        # 1. API 호출
         vol, clk, ctr = get_vol(kw, AD_KEY, AD_SEC, AD_CUS)
         items = get_rank(kw, N_CID, N_SEC)
         
@@ -96,36 +86,53 @@ def run_daily_routine():
                 raw_mall = item['mallName']
                 clean_mall = raw_mall.replace(" ", "").lower()
                 
-                # 상세 로그: 무엇과 비교했는지 출력 (상위 5개 키워드만)
-                if idx < 5 and r == 1:
-                    print(f"👁️ '{kw}' 1위: {raw_mall} (변환됨: {clean_mall})")
-
-                # 판별 로직
+                # --- [핵심 수정] 이름 세탁기 가동 ---
+                # 복잡한 몰 이름을 구글 시트가 좋아하는 단순한 이름으로 변경
+                
+                final_mall_name = raw_mall # 기본값은 원래 이름
+                brand_type = "NONE"
+                
+                # 1. 내 브랜드 확인
                 is_mine = False
                 for b in MY_BRANDS:
                     if b.replace(" ", "").lower() in clean_mall:
                         is_mine = True
-                        print(f"🚨 [내꺼 발견!] {kw} -> {raw_mall} ({r}위)")
-                        total_found_my += 1
                         break
                 
+                if is_mine:
+                    brand_type = "MY"
+                    # ★★★ 여기가 해결책입니다 ★★★
+                    # 긴 이름을 '드론박스'나 '빛드론'으로 딱 잘라서 저장합니다.
+                    if "드론박스" in clean_mall or "dronebox" in clean_mall:
+                        final_mall_name = "드론박스"
+                    elif "빛드론" in clean_mall or "bitdrone" in clean_mall:
+                        final_mall_name = "빛드론"
+                
+                # 2. 경쟁사 확인
                 is_comp = False
-                for c in COMPETITORS:
-                    if c.replace(" ", "").lower() in clean_mall:
-                        is_comp = True
-                        print(f"⚠️ [경쟁사 발견] {kw} -> {raw_mall} ({r}위)")
-                        total_found_comp += 1
-                        break
+                if not is_mine: # 내께 아니면 경쟁사 확인
+                    for c in COMPETITORS:
+                        if c.replace(" ", "").lower() in clean_mall:
+                            is_comp = True
+                            break
+                    if is_comp:
+                        brand_type = "COMP"
+                        # 경쟁사 이름도 깔끔하게 통일 (선택사항)
+                        if "다다사" in clean_mall: final_mall_name = "다다사"
+                        elif "효로로" in clean_mall: final_mall_name = "효로로"
+                        elif "드론뷰" in clean_mall: final_mall_name = "드론뷰"
 
+                # 3. 상위권 확인
                 is_top = r <= 3
-                
-                if is_mine or is_comp or is_top:
+                if brand_type == "NONE" and is_top:
                     brand_type = "TOP"
-                    if is_comp: brand_type = "COMP"
-                    if is_mine: brand_type = "MY"
-                    
+
+                # 저장 조건 충족 시
+                if brand_type != "NONE":
                     row_data.update({
-                        "rank": r, "mall": raw_mall, "price": item['lprice'],
+                        "rank": r, 
+                        "mall": final_mall_name,  # <--- 세탁된 이름 저장
+                        "price": item['lprice'],
                         "title": item['title'].replace("<b>", "").replace("</b>", ""),
                         "link": item['link'],
                         "type": brand_type
@@ -134,36 +141,28 @@ def run_daily_routine():
                     break
 
         results.append(row_data)
+        
+        log_txt = f"{kw}"
+        if found_any: log_txt += f" -> {row_data['mall']} ({row_data['type']})"
+        print(f"[{idx+1}/{len(keywords)}] {log_txt}")
         time.sleep(0.3)
 
-    print("\n--------------------------------")
-    print(f"📊 [파이썬 집계 결과]")
-    print(f"▶ 내 브랜드 발견 수: {total_found_my}개")
-    print(f"▶ 경쟁사 발견 수: {total_found_comp}개")
-    print("--------------------------------")
-
-    if results:
-        df = pd.DataFrame(results)
-        
-        # CSV 내용 미리보기 (데이터가 진짜 들어있는지 확인)
-        my_df = df[df['type'] == 'MY']
-        if not my_df.empty:
-            print("\n[전송할 데이터 미리보기 - 내 브랜드]")
-            print(my_df[['keyword', 'rank', 'mall', 'type']].head())
-        else:
-            print("\n[경고] 전송할 데이터에 'MY' 타입이 하나도 없습니다!")
-
-        if APPS_URL:
-            try:
-                csv_buffer = io.StringIO()
-                df.to_csv(csv_buffer, index=False)
-                csv_data = csv_buffer.getvalue().encode('utf-8')
-                
-                print(f"📤 구글 시트로 데이터 전송 중... ({len(df)}행)")
-                res = requests.post(APPS_URL, params={"token": APPS_TOKEN, "type": "auto_daily"}, data=csv_data)
-                print(f"📨 전송 응답 코드: {res.status_code}")
-            except Exception as e:
-                print(f"❌ 전송 실패: {e}")
+    # --- 구글 시트로 전송 ---
+    if results and APPS_URL:
+        try:
+            df = pd.DataFrame(results)
+            print(f"📊 최종 데이터: {len(df)}개 (내 브랜드: {len(df[df['type']=='MY'])})")
+            
+            csv_buffer = io.StringIO()
+            df.to_csv(csv_buffer, index=False)
+            csv_data = csv_buffer.getvalue().encode('utf-8')
+            
+            # 구글 시트로 전송 (알림은 구글 시트가 보냄)
+            res = requests.post(APPS_URL, params={"token": APPS_TOKEN, "type": "auto_daily"}, data=csv_data)
+            print(f"📤 구글 시트 전송 완료: {res.status_code}")
+            
+        except Exception as e:
+            print(f"❌ 전송 실패: {e}")
 
 if __name__ == "__main__":
     run_daily_routine()
