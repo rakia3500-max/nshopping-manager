@@ -162,7 +162,6 @@ def run_daily_routine():
             csv_bytes = csv_buffer.getvalue().encode('utf-8')
             
             # [핵심] 헤더에 charset=utf-8 명시
-            # 이렇게 하면 구글이 "아, 이거 한글(UTF-8)이구나" 하고 깨지지 않게 받습니다.
             headers = {'Content-Type': 'text/plain; charset=utf-8'}
 
             print(f"📊 데이터 전송 중... ({len(df)}행)")
