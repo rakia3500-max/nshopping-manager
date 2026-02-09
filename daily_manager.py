@@ -49,7 +49,7 @@ def get_rank(kw, cid, sec):
 
 # --- 3. 메인 로직 ---
 def run_daily_routine():
-    print("🚀 [최종] 한글 깨짐 방지 + 이름 표준화 전송")
+    print("🚀 [최종] 날짜 수정(KST) + 한글 깨짐 방지 + 이름 표준화")
     
     # 시크릿 로드
     GEMINI_KEY = get_secret("GEMINI_API_KEY")
@@ -72,7 +72,14 @@ def run_daily_routine():
     MY_BRANDS = ["드론박스", "빛드론", "DRONEBOX", "BitDrone"]
     COMPETITORS = ["다다사", "효로로", "드론뷰", "dadasa", "hyororo", "droneview"]
     
-    today = dt.date.today().isoformat()
+    # --- [수정 1] 날짜를 한국 시간(KST)으로 강제 고정 ---
+    # 서버 시간(UTC) + 9시간 = 한국 시간
+    utc_now = dt.datetime.utcnow()
+    kst_now = utc_now + dt.timedelta(hours=9)
+    today = kst_now.strftime("%Y-%m-%d")
+    
+    print(f"📅 기준 날짜(한국시간): {today}")
+
     results = []
     
     for idx, kw in enumerate(keywords):
@@ -90,7 +97,7 @@ def run_daily_routine():
                 raw_mall = item['mallName']
                 clean_mall = raw_mall.replace(" ", "").lower()
                 
-                # --- [1단계] 이름 표준화 (수동 프로그램처럼 변경) ---
+                # --- [수정 2] 이름 표준화 (수동 프로그램처럼 변경) ---
                 standard_mall_name = raw_mall
                 detected_type = "NONE"
 
@@ -142,7 +149,7 @@ def run_daily_routine():
         print(f"[{idx+1}/{len(keywords)}] {log_txt}")
         time.sleep(0.3)
 
-    # --- [2단계] 한글 깨짐 방지 전송 ---
+    # --- [수정 3] 한글 깨짐 방지 전송 ---
     if results and APPS_URL:
         try:
             df = pd.DataFrame(results)
