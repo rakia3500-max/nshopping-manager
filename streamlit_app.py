@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 [웹 버전] BitDrone_Manager_Web_Final.py
-- Secrets 연동: API 키 및 기본 키워드 자동 로드
-- 기능: 네이버 쇼핑 크롤링 + Gemini AI 분석 + 구글 시트 전송
+- 기능: 네이버 쇼핑 크롤링 + Gemini AI 분석 (날짜 고정) + 구글 시트 전송 (UTF-8)
 """
 
 import streamlit as st
@@ -17,22 +16,37 @@ import json
 import io
 import google.generativeai as genai
 import xlsxwriter
+import sys
+
+# [중요] 한글 인코딩 설정
+sys.stdout.reconfigure(encoding='utf-8')
 
 # --- 페이지 설정 ---
 st.set_page_config(page_title="쇼핑 통합 관제 (Web)", layout="wide")
 
+# --- [핵심 수정 1] 한국 시간(KST) 구하기 ---
+# 스트림릿 서버는 UTC 기준이므로 9시간을 더해 한국 시간을 만듭니다.
+def get_korea_today():
+    utc_now = dt.datetime.utcnow()
+    kst_now = utc_now + dt.timedelta(hours=9)
+    return kst_now
+
+# 오늘 날짜 변수 (전역 사용)
+NOW_KST = get_korea_today()
+TODAY_ISO = NOW_KST.strftime("%Y-%m-%d")       # 데이터 저장용 (202X-XX-XX)
+TODAY_KOR = NOW_KST.strftime("%Y년 %m월 %d일") # 보고서용 (202X년 X월 X일)
+
 # --- 비밀번호(Secrets) 안전하게 가져오기 ---
 def get_secret(key, default=""):
-    # Secrets에 값이 있으면 가져오고, 없으면 빈칸(또는 기본값) 반환
     if key in st.secrets:
         return st.secrets[key]
     return default
 
 # --- 1. 사이드바 (설정 메뉴) ---
 st.sidebar.title("⚙️ 시스템 설정")
+st.sidebar.markdown(f"📅 **기준일: {TODAY_KOR}**") # 사이드바에 날짜 표시
 
 with st.sidebar.expander("🔑 API 키 설정", expanded=True):
-    # Secrets에서 값을 불러와서 자동으로 채움
     gemini_key = st.text_input("Gemini API Key", value=get_secret("GEMINI_API_KEY"), type="password")
     naver_cid = st.text_input("네이버 검색 Client ID", value=get_secret("NAVER_CLIENT_ID"))
     naver_csec = st.text_input("네이버 검색 Client Secret", value=get_secret("NAVER_CLIENT_SECRET"), type="password")
@@ -78,21 +92,29 @@ def get_rank(kw, cid, sec):
         return res.json().get('items', [])
     except: return []
 
-def get_ai_report(text, api_key):
+# --- [핵심 수정 2] AI 리포트 함수 (날짜 강제 주입) ---
+def get_ai_report(text, api_key, report_date_str):
     if not api_key: return "API 키가 없습니다."
     try:
         genai.configure(api_key=api_key)
+        # 프롬프트에 날짜 변수({report_date_str})를 넣어줍니다.
         prompt = f"""
-        당신은 '드론박스(DroneBox)'와 '빛드론(BitDrone)'의 수석 SEO 컨설턴트입니다.
-        아래 데이터를 분석하여 '일일 SEO 전략 보고서'를 작성하십시오.
+        당신은 '드론박스(DroneBox)'와 '빛드론(BitDrone)'의 10년차 수석 SEO 컨설턴트입니다.
+        
+        [오늘 날짜]
+        **{report_date_str}**
+        
+        위 날짜를 기준으로 아래 데이터를 분석하여 '일일 SEO 전략 보고서'를 작성하십시오.
+        보고서 서두에 반드시 "기준일: {report_date_str}"를 명시하고, 절대 2023년이나 가상의 날짜를 쓰지 마십시오.
         
         [데이터]
         {text}
         
         [작성 가이드]
-        1. 🚨 긴급 점검 (10위 밖): 경쟁사(다다사 등) 언급 및 액션 플랜 제시
-        2. 🏆 상위권 유지 (1~3위): 성과 칭찬 및 방어 전략
-        3. 💡 액션 플랜: 4~9위권 집중 공략법
+        1. 🚨 긴급 점검 (10위 밖): 경쟁사(다다사 등) 대비 밀리는 키워드 분석 및 액션 플랜
+        2. 🏆 상위권 유지 (1~3위): 현재 1위를 지키고 있는 키워드 칭찬 및 방어 전략
+        3. 💡 액션 플랜: 4~9위권 집중 공략법 (구체적으로)
+        4. 톤앤매너: 전문적이고 분석적이며, 격려하는 어조
         """
         models = ['gemini-2.5-flash', 'gemini-1.5-flash', 'gemini-1.5-pro']
         for m in models:
@@ -106,14 +128,13 @@ def get_ai_report(text, api_key):
 
 # --- 3. 메인 화면 ---
 st.title("🚀 쇼핑 통합 관제 시스템 (Web Ver)")
-st.markdown("네이버 쇼핑 순위 추적 및 AI 분석 리포트 자동화")
+st.markdown(f"**기준일: {TODAY_KOR}** (한국 시간)") # 화면에도 날짜 명시
 
 # 키워드 입력
 input_method = st.radio("키워드 입력 방식", ["직접 입력", "파일 업로드 (.txt)"], horizontal=True)
 keywords = []
 
 if input_method == "직접 입력":
-    # [핵심] Secrets에 저장된 DEFAULT_KEYWORDS를 가져와서 입력창 기본값으로 설정
     default_kws = get_secret("DEFAULT_KEYWORDS", "")
     kws_text = st.text_area("키워드를 콤마(,) 또는 줄바꿈으로 구분해 입력하세요", value=default_kws, height=300)
     if kws_text:
@@ -134,7 +155,8 @@ if st.button("분석 시작", type="primary"):
         
         results = []
         ai_raw_text = ""
-        today = dt.date.today().isoformat()
+        # 여기서 TODAY_ISO (한국시간 날짜) 사용
+        current_date = TODAY_ISO
         
         t_db = [x.strip() for x in my_brand_1.split(',')]
         t_bit = [x.strip() for x in my_brand_2.split(',')]
@@ -164,9 +186,20 @@ if st.button("분석 시작", type="primary"):
                     is_comp = any(x.replace(" ", "") in mn for x in t_comp) or "다다사" in mn
                     
                     if r <= 3 or is_mine or is_comp:
+                        # --- [핵심] 저장 시 이름 표준화 (자동화 코드와 통일) ---
+                        standard_mall = item['mallName']
+                        clean_mall = standard_mall.replace(" ", "").lower()
+                        
+                        # 자동화 로직과 동일하게 이름을 변경하여 저장
+                        if any(x in clean_mall for x in ["드론박스", "dronebox"]): standard_mall = "드론박스"
+                        elif any(x in clean_mall for x in ["빛드론", "bitdrone"]): standard_mall = "빛드론"
+                        elif "다다사" in clean_mall: standard_mall = "다다사"
+                        elif "효로로" in clean_mall: standard_mall = "효로로"
+                        elif "드론뷰" in clean_mall: standard_mall = "드론뷰"
+                        
                         results.append({
-                            "date": today, "keyword": kw, "vol": vol, "click": clk, "ctr": ctr,
-                            "rank": r, "mall": item['mallName'], "title": item['title'].replace("<b>", "").replace("</b>", ""),
+                            "date": current_date, "keyword": kw, "vol": vol, "click": clk, "ctr": ctr,
+                            "rank": r, "mall": standard_mall, "title": item['title'].replace("<b>", "").replace("</b>", ""),
                             "price": item['lprice'], "link": item['link'],
                             "is_db": any(x.replace(" ", "") in mn for x in t_db),
                             "is_bit": any(x.replace(" ", "") in mn for x in t_bit),
@@ -190,27 +223,32 @@ if st.button("분석 시작", type="primary"):
                 df.to_excel(writer, index=False, sheet_name='Results')
             processed_data = output.getvalue()
             
-            st.download_button(label="💾 엑셀 다운로드", data=processed_data, file_name=f"Rank_{today}.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+            st.download_button(label="💾 엑셀 다운로드", data=processed_data, file_name=f"Rank_{current_date}.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
             
-            # 2. 구글 시트 전송
+            # 2. 구글 시트 전송 (한글 깨짐 방지 적용)
             if apps_script_url:
                 try:
                     csv_buffer = io.StringIO()
                     df.to_csv(csv_buffer, index=False)
-                    csv_data = csv_buffer.getvalue().encode('utf-8')
+                    
+                    # [중요] UTF-8 인코딩 명시
+                    csv_bytes = csv_buffer.getvalue().encode('utf-8')
+                    headers = {'Content-Type': 'text/plain; charset=utf-8'}
                     
                     requests.post(apps_script_url, 
-                                  params={"token": apps_script_token, "dash_url": "https://share.streamlit.io"}, 
-                                  data=csv_data)
+                                  params={"token": apps_script_token, "type": "auto_daily"}, 
+                                  data=csv_bytes,
+                                  headers=headers) # 헤더 추가
                     st.toast("✅ 구글 시트 및 슬랙 전송 완료", icon="🚀")
                 except Exception as e:
                     st.error(f"전송 실패: {e}")
             
-            # 3. AI 리포트
-            with st.spinner("🤖 AI가 리포트를 작성 중입니다..."):
-                report = get_ai_report(ai_raw_text, gemini_key)
+            # 3. AI 리포트 (날짜 전달)
+            with st.spinner(f"🤖 AI가 {TODAY_KOR} 기준 리포트를 작성 중입니다..."):
+                # TODAY_KOR(예: 2026년 2월 9일)을 함수에 전달
+                report = get_ai_report(ai_raw_text, gemini_key, TODAY_KOR)
                 st.subheader("📝 AI SEO 전략 리포트")
                 st.markdown(report)
-                st.download_button("📜 리포트 다운로드 (TXT)", report, file_name=f"Report_{today}.txt")
+                st.download_button("📜 리포트 다운로드 (TXT)", report, file_name=f"Report_{current_date}.txt")
         else:
             st.warning("검색 결과가 없습니다.")
