@@ -26,25 +26,16 @@ T_DB = [x.strip() for x in "드론박스, DroneBox, DJI 정품판매점 드론�
 T_BIT = [x.strip() for x in "빛드론, Bit-Drone, Bit Drone, BITDRONE".split(',')]
 T_COMP = [x.strip() for x in "다다사, dadasa, 효로로, 드론뷰".split(',')]
 
-# --- [수정] 키워드 텍스트 파일 로드 함수 ---
 def load_keywords(file_path="keywords.txt"):
-    """텍스트 파일에서 키워드를 읽어옵니다. 실패 시 기본 키워드를 반환합니다."""
     if os.path.exists(file_path):
         try:
             with open(file_path, "r", encoding="utf-8") as f:
-                # 공백 및 줄바꿈 제거, 빈 줄 무시
                 kw_list = [line.strip() for line in f if line.strip()]
                 if kw_list:
-                    logging.info(f"📂 {file_path} 파일에서 {len(kw_list)}개의 키워드를 로드했습니다.")
+                    logging.info(f"📂 {len(kw_list)}개의 키워드 로드 완료")
                     return kw_list
-                else:
-                    logging.warning(f"⚠️ {file_path} 파일이 비어있습니다.")
         except Exception as e:
-            logging.error(f"❌ 키워드 파일 읽기 에러: {e}")
-    else:
-        logging.warning(f"⚠️ {file_path} 파일이 존재하지 않습니다. 기본 키워드로 대체합니다.")
-    
-    # Fallback (비상용 기본 키워드)
+            logging.error(f"❌ 파일 읽기 에러: {e}")
     return ["입문용 드론", "촬영용 드론", "미니4 프로"]
 
 def get_vol(kw):
@@ -59,12 +50,11 @@ def get_vol(kw):
                 v = int(str(i.get('monthlyPcQcCnt', 0)).replace("<", "0")) + int(str(i.get('monthlyMobileQcCnt', 0)).replace("<", "0"))
                 c = float(str(i.get('monthlyAvePcClkCnt', 0)).replace("<", "0")) + float(str(i.get('monthlyAveMobileClkCnt', 0)).replace("<", "0"))
                 return v, round(c, 1), round(c / v * 100, 2) if v else 0
-    except Exception as e:
-        logging.warning(f"⚠️ {kw} 검색량 에러: {e}")
+    except Exception as e: pass
     return 0, 0, 0
 
 def get_rank(kw):
-    time.sleep(random.uniform(1.0, 2.0)) 
+    time.sleep(random.uniform(1.0, 2.5)) # 91개 대량 조회를 위한 딜레이 조정
     headers = {
         "X-Naver-Client-Id": NAVER_CLIENT_ID, 
         "X-Naver-Client-Secret": NAVER_CLIENT_SECRET,
@@ -75,14 +65,17 @@ def get_rank(kw):
         res.raise_for_status()
         return res.json().get('items', [])
     except Exception as e:
-        logging.warning(f"⚠️ {kw} 쇼핑 에러: {e}")
+        logging.warning(f"⚠️ {kw} 검색 에러: {e}")
         return []
 
 def run_automation():
     today_iso = (dt.datetime.utcnow() + dt.timedelta(hours=9)).strftime("%Y-%m-%d")
-    
-    # [수정] txt 파일에서 키워드 로출
     keywords = load_keywords("keywords.txt")
+    
+    # [핵심 로직 개선] 비교를 위한 소문자+공백제거 리스트 사전 구축
+    t_db_clean = [x.replace(" ", "").lower() for x in T_DB]
+    t_bit_clean = [x.replace(" ", "").lower() for x in T_BIT]
+    t_comp_clean = [x.replace(" ", "").lower() for x in T_COMP]
     
     results = []
     
@@ -92,12 +85,18 @@ def run_automation():
         items = get_rank(kw)
         if items:
             for r, item in enumerate(items, 1):
-                mn = item.get('mallName', '').replace(" ", "")
-                if r <= 3 or any(x.replace(" ", "") in mn for x in T_DB + T_BIT + T_COMP):
-                    sm = item.get('mallName', '')
-                    cm = sm.replace(" ", "").lower()
-                    if any(x in cm for x in ["드론박스", "dronebox"]): sm = "드론박스"
-                    elif any(x in cm for x in ["빛드론", "bitdrone"]): sm = "빛드론"
+                raw_mall = item.get('mallName', '')
+                cm = raw_mall.replace(" ", "").lower() # 추출된 몰 이름을 소문자+공백제거 변환
+                
+                is_mine = any(x in cm for x in t_db_clean + t_bit_clean)
+                is_comp = any(x in cm for x in t_comp_clean)
+                
+                # 1~3위 무조건 수집 OR 내 업체/경쟁사일 경우 수집
+                if r <= 3 or is_mine or is_comp:
+                    sm = raw_mall
+                    # GAS/Slack 전송을 위한 표준 이름 규격화
+                    if any(x in cm for x in t_db_clean): sm = "드론박스"
+                    elif any(x in cm for x in t_bit_clean): sm = "빛드론"
                     elif "다다사" in cm: sm = "다다사"
                     elif "효로로" in cm: sm = "효로로"
                     elif "드론뷰" in cm: sm = "드론뷰"
@@ -109,9 +108,7 @@ def run_automation():
         csv_bytes = df.to_csv(index=False).encode('utf-8')
         try:
             requests.post(APPS_SCRIPT_URL, params={"token": APPS_SCRIPT_TOKEN, "type": "auto_daily"}, data=csv_bytes, headers={'Content-Type': 'text/plain; charset=utf-8'}, timeout=30)
-            logging.info("✅ 구글 시트 및 슬랙 전송 완료")
-        except requests.exceptions.Timeout:
-            logging.warning("⚠️ 구글 시트 응답 지연 (데이터 발송은 성공했을 수 있음)")
+            logging.info("✅ 구글 시트 전송 완료")
         except Exception as e:
             logging.error(f"❌ 전송 실패: {e}")
 
