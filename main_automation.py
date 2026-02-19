@@ -32,7 +32,6 @@ def load_keywords(file_path="keywords.txt"):
             with open(file_path, "r", encoding="utf-8") as f:
                 kw_list = [line.strip() for line in f if line.strip()]
                 if kw_list:
-                    logging.info(f"📂 {len(kw_list)}개의 키워드 로드 완료")
                     return kw_list
         except Exception as e:
             logging.error(f"❌ 파일 읽기 에러: {e}")
@@ -50,11 +49,11 @@ def get_vol(kw):
                 v = int(str(i.get('monthlyPcQcCnt', 0)).replace("<", "0")) + int(str(i.get('monthlyMobileQcCnt', 0)).replace("<", "0"))
                 c = float(str(i.get('monthlyAvePcClkCnt', 0)).replace("<", "0")) + float(str(i.get('monthlyAveMobileClkCnt', 0)).replace("<", "0"))
                 return v, round(c, 1), round(c / v * 100, 2) if v else 0
-    except Exception as e: pass
+    except Exception: pass
     return 0, 0, 0
 
 def get_rank(kw):
-    time.sleep(random.uniform(1.0, 2.5)) # 91개 대량 조회를 위한 딜레이 조정
+    time.sleep(random.uniform(0.8, 1.8)) 
     headers = {
         "X-Naver-Client-Id": NAVER_CLIENT_ID, 
         "X-Naver-Client-Secret": NAVER_CLIENT_SECRET,
@@ -72,7 +71,7 @@ def run_automation():
     today_iso = (dt.datetime.utcnow() + dt.timedelta(hours=9)).strftime("%Y-%m-%d")
     keywords = load_keywords("keywords.txt")
     
-    # [핵심 로직 개선] 비교를 위한 소문자+공백제거 리스트 사전 구축
+    # 띄어쓰기 무시 + 소문자 변환된 비교용 리스트
     t_db_clean = [x.replace(" ", "").lower() for x in T_DB]
     t_bit_clean = [x.replace(" ", "").lower() for x in T_BIT]
     t_comp_clean = [x.replace(" ", "").lower() for x in T_COMP]
@@ -80,31 +79,46 @@ def run_automation():
     results = []
     
     for kw in keywords:
-        logging.info(f"🔍 분석 중: {kw}")
         vol, clk, ctr = get_vol(kw)
         items = get_rank(kw)
         if items:
             for r, item in enumerate(items, 1):
                 raw_mall = item.get('mallName', '')
-                cm = raw_mall.replace(" ", "").lower() # 추출된 몰 이름을 소문자+공백제거 변환
+                cm = raw_mall.replace(" ", "").lower()
                 
                 is_mine = any(x in cm for x in t_db_clean + t_bit_clean)
                 is_comp = any(x in cm for x in t_comp_clean)
                 
-                # 1~3위 무조건 수집 OR 내 업체/경쟁사일 경우 수집
                 if r <= 3 or is_mine or is_comp:
                     sm = raw_mall
-                    # GAS/Slack 전송을 위한 표준 이름 규격화
                     if any(x in cm for x in t_db_clean): sm = "드론박스"
                     elif any(x in cm for x in t_bit_clean): sm = "빛드론"
                     elif "다다사" in cm: sm = "다다사"
                     elif "효로로" in cm: sm = "효로로"
                     elif "드론뷰" in cm: sm = "드론뷰"
                     
-                    results.append({"date": today_iso, "keyword": kw, "vol": vol, "rank": r, "mall": sm, "title": item.get('title', '').replace("<b>", "").replace("</b>", ""), "price": item.get('lprice', 0)})
+                    # [핵심 수정] 원본 스트림릿 코드와 100% 동일한 구조와 컬럼 복원
+                    results.append({
+                        "date": today_iso, 
+                        "keyword": kw, 
+                        "vol": vol, 
+                        "click": clk, 
+                        "ctr": ctr,
+                        "rank": r, 
+                        "mall": sm, 
+                        "title": item.get('title', '').replace("<b>", "").replace("</b>", ""),
+                        "price": item.get('lprice', 0), 
+                        "link": item.get('link', ''),
+                        "is_db": any(x in cm for x in t_db_clean),
+                        "is_bit": any(x in cm for x in t_bit_clean),
+                        "is_da": "다다사" in cm, 
+                        "is_hr": "효로로" in cm, 
+                        "is_dv": "드론뷰" in cm
+                    })
 
     if results and APPS_SCRIPT_URL:
         df = pd.DataFrame(results)
+        # 구글 시트에 기존과 동일한 순서/컬럼명으로 CSV 전송
         csv_bytes = df.to_csv(index=False).encode('utf-8')
         try:
             requests.post(APPS_SCRIPT_URL, params={"token": APPS_SCRIPT_TOKEN, "type": "auto_daily"}, data=csv_bytes, headers={'Content-Type': 'text/plain; charset=utf-8'}, timeout=30)
