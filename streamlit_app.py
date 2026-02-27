@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 [최종 릴리즈] BitDrone_Manager_Web_UI.py
-- 기능: 네이버 쇼핑 크롤링, GAS 연동(POST/GET), 일자별 시계열 차트, AI 리포트
+- Fix: Gemini 2.5 Flash 모델 우선 적용
+- Fix: GAS 누적 데이터(DB_Archive) Fetch 예외 처리 및 디버깅 강화
 """
 
 import streamlit as st
@@ -31,7 +32,6 @@ TODAY_KOR = NOW_KST.strftime("%Y년 %m월 %d일")
 def get_secret(key, default=""):
     return st.secrets.get(key, default)
 
-# IP 차단 방어 헤더
 HTTP_HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7"
@@ -79,7 +79,6 @@ def send_to_gas(df, url, token):
         df.to_csv(csv_buffer, index=False)
         csv_bytes = csv_buffer.getvalue().encode('utf-8')
         headers = {'Content-Type': 'text/plain; charset=utf-8'}
-        # 타임아웃 30초로 연장 (에러 방지)
         res = requests.post(url, params={"token": token, "type": "auto_daily"}, data=csv_bytes, headers=headers, timeout=30)
         res.raise_for_status()
         return True, "성공"
@@ -87,23 +86,26 @@ def send_to_gas(df, url, token):
         return False, str(e)
 
 def fetch_history_from_gas(url):
-    if not url: return pd.DataFrame()
+    if not url: return pd.DataFrame(), "GAS URL이 설정되지 않았습니다."
     try:
-        # GET 요청으로 누적 데이터 가져오기
         res = requests.get(url, timeout=20)
         res.raise_for_status()
-        data = res.json()
+        try:
+            data = res.json()
+        except ValueError:
+            return pd.DataFrame(), f"JSON 파싱 실패. 배포 권한이 '모든 사용자'인지 확인하세요.\n(응답: {res.text[:100]})"
+        
+        if not data or len(data) == 0:
+            return pd.DataFrame(), "DB_Archive 시트에 데이터가 없습니다. 먼저 'Run & Sync'를 실행하여 데이터를 누적하세요."
+
         df = pd.DataFrame(data)
-        # 날짜 포맷 변환 (정렬 및 차트 표시용)
         if 'date' in df.columns:
             df['date'] = pd.to_datetime(df['date']).dt.strftime('%Y-%m-%d')
-        # 순위 숫자형 변환 (순위 밖은 999 등으로 처리)
         if 'rank' in df.columns:
             df['rank'] = pd.to_numeric(df['rank'], errors='coerce').fillna(999)
-        return df
+        return df, ""
     except Exception as e:
-        logging.error(f"GAS Fetch Error: {e}")
-        return pd.DataFrame()
+        return pd.DataFrame(), f"요청 실패: {str(e)}"
 
 # --- 사이드바 ---
 with st.sidebar:
@@ -133,16 +135,18 @@ with st.sidebar:
 if selected_menu == "Dashboard":
     st.title("📊 통합 관제 대시보드")
     
-    # 1. 히스토리 데이터 동기화 버튼 (구글 시트에서 가져오기)
     if st.button("🔄 구글 시트 과거 데이터 동기화"):
         with st.spinner("누적 데이터를 가져오는 중입니다..."):
-            st.session_state.history_df = fetch_history_from_gas(apps_script_url)
-        st.success("데이터 동기화 완료!")
+            df, err_msg = fetch_history_from_gas(apps_script_url)
+            if not df.empty:
+                st.session_state.history_df = df
+                st.success("데이터 동기화 완료!")
+            else:
+                st.error(f"동기화 실패: {err_msg}")
 
     hist_df = st.session_state.history_df
     curr_df = st.session_state.crawled_df
 
-    # 2. 메트릭 (오늘 수집한 데이터 기준, 없으면 과거 데이터의 가장 최근 날짜 기준)
     metric_df = curr_df if not curr_df.empty else (hist_df[hist_df['date'] == hist_df['date'].max()] if not hist_df.empty else pd.DataFrame())
     
     if not metric_df.empty:
@@ -153,21 +157,18 @@ if selected_menu == "Dashboard":
         col1.metric("분석 대상 키워드", f"{metric_df['keyword'].nunique()} 개")
         col2.metric("드론박스 상위(1~3위)", f"{db_top} 건")
         col3.metric("빛드론 상위(1~3위)", f"{bit_top} 건")
-        vol_col = 'vol' if 'vol' in metric_df.columns else 'search_vol' # 시트 컬럼명 방어
+        vol_col = 'vol' if 'vol' in metric_df.columns else 'search_vol'
         avg_vol = int(pd.to_numeric(metric_df[vol_col], errors='coerce').mean()) if vol_col in metric_df.columns else 0
         col4.metric("평균 검색량", f"{avg_vol}")
     
     st.markdown("---")
 
-    # 3. 일자별 추이 차트 (Altair 사용: Y축 역순 정렬)
     st.subheader("📈 일자별 키워드 순위 추이")
     if not hist_df.empty:
-        # 주요 자사 몰 키워드만 필터링 (가독성 목적)
         target_malls = ["드론박스", "빛드론"]
         chart_data = hist_df[hist_df['mall'].isin(target_malls)]
         
         if not chart_data.empty:
-            # Altair 차트: 순위 1이 맨 위로 오도록 scale=alt.Scale(reverse=True) 적용
             line_chart = alt.Chart(chart_data).mark_line(point=True).encode(
                 x=alt.X('date:T', title='일자'),
                 y=alt.Y('rank:Q', scale=alt.Scale(reverse=True, domain=[10, 1]), title='순위 (1위에 가까울수록 위)'),
@@ -177,13 +178,12 @@ if selected_menu == "Dashboard":
             ).properties(height=400).interactive()
             st.altair_chart(line_chart, use_container_width=True)
         else:
-            st.info("차트를 구성할 '드론박스' 또는 '빛드론' 누적 데이터가 부족합니다.")
+            st.info("차트를 구성할 '드론박스' 또는 '빛드론' 누적 데이터가 아직 없습니다.")
     else:
-        st.warning("상단의 '동기화 버튼'을 눌러 구글 시트 데이터를 불러오세요.")
+        st.warning("상단의 '동기화 버튼'을 눌러 구글 시트 데이터를 불러오세요. (데이터가 없다면 Run & Sync 먼저 실행)")
 
     st.markdown("---")
     
-    # 4. 실시간 데이터 테이블 & AI 리포트 분할
     col_t, col_a = st.columns([1.5, 1])
     with col_t:
         st.subheader("🗂️ 최신 순위 데이터")
@@ -262,7 +262,6 @@ elif selected_menu == "Run & Sync":
             st.session_state.crawled_df = df
             status_text.text("✅ 크롤링 완료. GAS 데이터 전송 중...")
             
-            # GAS 발송
             if not df.empty and apps_script_url:
                 success, msg = send_to_gas(df, apps_script_url, apps_script_token)
                 if success:
@@ -270,14 +269,17 @@ elif selected_menu == "Run & Sync":
                 else:
                     st.error(f"GAS 전송 실패: {msg}")
             
-            # AI 리포트 생성 (Fallback 적용)
+            # --- AI 리포트 (요청하신 gemini-2.5-flash 최우선 적용) ---
             if gemini_key:
                 status_text.text("🤖 AI 리포트 생성 중...")
                 genai.configure(api_key=gemini_key)
                 prompt = f"[오늘 날짜] **{TODAY_KOR}**\n아래 데이터를 분석하여 일일 SEO 전략 보고서를 작성하세요.\n\n{ai_raw_text}"
                 
-                ai_result = "AI 분석 실패: 사용 가능한 모델이 없거나 할당량 초과"
-                for m in ['gemini-1.5-flash', 'gemini-1.5-pro', 'gemini-pro']:
+                ai_result = ""
+                error_logs = []
+                
+                models = ['gemini-2.5-flash', 'gemini-1.5-flash', 'gemini-1.5-pro']
+                for m in models:
                     try:
                         model = genai.GenerativeModel(m)
                         res = model.generate_content(prompt)
@@ -285,9 +287,13 @@ elif selected_menu == "Run & Sync":
                             ai_result = res.text
                             break
                     except Exception as e:
-                        logging.warning(f"{m} error: {e}")
+                        error_logs.append(f"[{m}] {str(e)}")
                         continue
-                st.session_state.ai_report_text = ai_result
+                
+                if ai_result:
+                    st.session_state.ai_report_text = ai_result
+                else:
+                    st.session_state.ai_report_text = "⚠️ **AI 분석 실패**\n\n" + "\n".join(error_logs)
             
             status_text.empty()
             st.success("🎉 모든 작업이 완료되었습니다. Dashboard에서 결과를 확인하세요.")
