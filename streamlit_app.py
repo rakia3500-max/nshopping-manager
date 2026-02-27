@@ -1,7 +1,13 @@
 # -*- coding: utf-8 -*-
+"""
+[최종 릴리즈] BitDrone_Manager_Web_UI.py
+- 기능: 네이버 쇼핑 크롤링, GAS 연동(POST/GET), 일자별 시계열 차트, AI 리포트
+"""
+
 import streamlit as st
 from streamlit_option_menu import option_menu
 import pandas as pd
+import altair as alt
 import datetime as dt
 import time
 import random
@@ -25,13 +31,15 @@ TODAY_KOR = NOW_KST.strftime("%Y년 %m월 %d일")
 def get_secret(key, default=""):
     return st.secrets.get(key, default)
 
+# IP 차단 방어 헤더
 HTTP_HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7"
 }
 
 # --- 세션 상태 초기화 ---
-if 'crawled_df' not in st.session_state: st.session_state.crawled_df = None
+if 'crawled_df' not in st.session_state: st.session_state.crawled_df = pd.DataFrame()
+if 'history_df' not in st.session_state: st.session_state.history_df = pd.DataFrame()
 if 'ai_report_text' not in st.session_state: st.session_state.ai_report_text = ""
 
 # --- API 엔진 ---
@@ -63,29 +71,47 @@ def get_rank(kw, cid, sec):
     except Exception as e: logging.error(f"Search API Error: {e}")
     return []
 
-# --- GAS 웹훅 전송 함수 (최적화) ---
+# --- GAS 웹훅 (POST & GET) ---
 def send_to_gas(df, url, token):
-    if not url: return False, "GAS URL이 설정되지 않았습니다."
+    if not url: return False, "GAS URL 누락"
     try:
         csv_buffer = io.StringIO()
         df.to_csv(csv_buffer, index=False)
         csv_bytes = csv_buffer.getvalue().encode('utf-8')
         headers = {'Content-Type': 'text/plain; charset=utf-8'}
-        
-        # timeout을 15초로 설정하여 GAS 스크립트 실행 지연 방어
-        res = requests.post(url, params={"token": token, "type": "auto_daily"}, data=csv_bytes, headers=headers, timeout=15)
+        # 타임아웃 30초로 연장 (에러 방지)
+        res = requests.post(url, params={"token": token, "type": "auto_daily"}, data=csv_bytes, headers=headers, timeout=30)
         res.raise_for_status()
-        return True, "전송 성공"
+        return True, "성공"
     except Exception as e:
         return False, str(e)
+
+def fetch_history_from_gas(url):
+    if not url: return pd.DataFrame()
+    try:
+        # GET 요청으로 누적 데이터 가져오기
+        res = requests.get(url, timeout=20)
+        res.raise_for_status()
+        data = res.json()
+        df = pd.DataFrame(data)
+        # 날짜 포맷 변환 (정렬 및 차트 표시용)
+        if 'date' in df.columns:
+            df['date'] = pd.to_datetime(df['date']).dt.strftime('%Y-%m-%d')
+        # 순위 숫자형 변환 (순위 밖은 999 등으로 처리)
+        if 'rank' in df.columns:
+            df['rank'] = pd.to_numeric(df['rank'], errors='coerce').fillna(999)
+        return df
+    except Exception as e:
+        logging.error(f"GAS Fetch Error: {e}")
+        return pd.DataFrame()
 
 # --- 사이드바 ---
 with st.sidebar:
     st.markdown("### ⚙️ 시스템 설정")
     selected_menu = option_menu(
         "Navigation", 
-        ["Run & Sync", "Dashboard", "Charts", "AI Report"], 
-        icons=['play-circle', 'house', 'bar-chart', 'robot'], 
+        ["Dashboard", "Run & Sync", "AI Report"], 
+        icons=['house', 'play-circle', 'robot'], 
         menu_icon="cast", default_index=0
     )
     
@@ -103,8 +129,79 @@ with st.sidebar:
         my_brand_2 = st.text_area("내 브랜드 2", value=get_secret("MY_BRAND_2", "빛드론, Bit-Drone, Bit Drone, BITDRONE, BIT-DRONE"))
         competitors = st.text_area("경쟁사", value=get_secret("COMPETITORS", "다다사, dadasa, 효로로, Hyororo, 드론뷰, DroneView"))
 
-# --- 1. Run & Sync (실행 및 구글시트 전송) ---
-if selected_menu == "Run & Sync":
+# --- 1. Dashboard (메인 화면) ---
+if selected_menu == "Dashboard":
+    st.title("📊 통합 관제 대시보드")
+    
+    # 1. 히스토리 데이터 동기화 버튼 (구글 시트에서 가져오기)
+    if st.button("🔄 구글 시트 과거 데이터 동기화"):
+        with st.spinner("누적 데이터를 가져오는 중입니다..."):
+            st.session_state.history_df = fetch_history_from_gas(apps_script_url)
+        st.success("데이터 동기화 완료!")
+
+    hist_df = st.session_state.history_df
+    curr_df = st.session_state.crawled_df
+
+    # 2. 메트릭 (오늘 수집한 데이터 기준, 없으면 과거 데이터의 가장 최근 날짜 기준)
+    metric_df = curr_df if not curr_df.empty else (hist_df[hist_df['date'] == hist_df['date'].max()] if not hist_df.empty else pd.DataFrame())
+    
+    if not metric_df.empty:
+        col1, col2, col3, col4 = st.columns(4)
+        db_top = len(metric_df[(metric_df['rank'] <= 3) & metric_df['mall'].str.contains('드론박스', na=False)])
+        bit_top = len(metric_df[(metric_df['rank'] <= 3) & metric_df['mall'].str.contains('빛드론', na=False)])
+        
+        col1.metric("분석 대상 키워드", f"{metric_df['keyword'].nunique()} 개")
+        col2.metric("드론박스 상위(1~3위)", f"{db_top} 건")
+        col3.metric("빛드론 상위(1~3위)", f"{bit_top} 건")
+        vol_col = 'vol' if 'vol' in metric_df.columns else 'search_vol' # 시트 컬럼명 방어
+        avg_vol = int(pd.to_numeric(metric_df[vol_col], errors='coerce').mean()) if vol_col in metric_df.columns else 0
+        col4.metric("평균 검색량", f"{avg_vol}")
+    
+    st.markdown("---")
+
+    # 3. 일자별 추이 차트 (Altair 사용: Y축 역순 정렬)
+    st.subheader("📈 일자별 키워드 순위 추이")
+    if not hist_df.empty:
+        # 주요 자사 몰 키워드만 필터링 (가독성 목적)
+        target_malls = ["드론박스", "빛드론"]
+        chart_data = hist_df[hist_df['mall'].isin(target_malls)]
+        
+        if not chart_data.empty:
+            # Altair 차트: 순위 1이 맨 위로 오도록 scale=alt.Scale(reverse=True) 적용
+            line_chart = alt.Chart(chart_data).mark_line(point=True).encode(
+                x=alt.X('date:T', title='일자'),
+                y=alt.Y('rank:Q', scale=alt.Scale(reverse=True, domain=[10, 1]), title='순위 (1위에 가까울수록 위)'),
+                color=alt.Color('keyword:N', title='키워드'),
+                strokeDash=alt.StrokeDash('mall:N', title='쇼핑몰'),
+                tooltip=['date', 'keyword', 'mall', 'rank']
+            ).properties(height=400).interactive()
+            st.altair_chart(line_chart, use_container_width=True)
+        else:
+            st.info("차트를 구성할 '드론박스' 또는 '빛드론' 누적 데이터가 부족합니다.")
+    else:
+        st.warning("상단의 '동기화 버튼'을 눌러 구글 시트 데이터를 불러오세요.")
+
+    st.markdown("---")
+    
+    # 4. 실시간 데이터 테이블 & AI 리포트 분할
+    col_t, col_a = st.columns([1.5, 1])
+    with col_t:
+        st.subheader("🗂️ 최신 순위 데이터")
+        if not metric_df.empty:
+            st.dataframe(metric_df[['keyword', 'rank', 'mall', 'title', 'price']], use_container_width=True)
+        else:
+            st.write("데이터가 없습니다.")
+            
+    with col_a:
+        st.subheader("🤖 AI 전략 리포트 요약")
+        if st.session_state.ai_report_text:
+            st.info(st.session_state.ai_report_text[:300] + "...\n\n(상세 내용은 AI Report 메뉴 확인)")
+        else:
+            st.warning("금일 생성된 AI 리포트가 없습니다.")
+
+
+# --- 2. Run & Sync (실행) ---
+elif selected_menu == "Run & Sync":
     st.title("🎯 데이터 수집 및 GAS 연동")
     kws_text = st.text_area("키워드 입력 (콤마/줄바꿈 구분)", height=200, value=get_secret("DEFAULT_KEYWORDS", ""))
     
@@ -163,69 +260,43 @@ if selected_menu == "Run & Sync":
 
             df = pd.DataFrame(results)
             st.session_state.crawled_df = df
-            status_text.text("✅ 크롤링 완료. 데이터 정제 중...")
+            status_text.text("✅ 크롤링 완료. GAS 데이터 전송 중...")
             
             # GAS 발송
             if not df.empty and apps_script_url:
-                status_text.text("🚀 구글 시트(GAS)로 데이터 전송 중...")
                 success, msg = send_to_gas(df, apps_script_url, apps_script_token)
                 if success:
-                    st.toast("✅ 구글 시트 전송 완료 -> Slack 알림 대기중", icon="🚀")
+                    st.toast("✅ 구글 시트 전송 완료", icon="🚀")
                 else:
                     st.error(f"GAS 전송 실패: {msg}")
             
-            # AI 리포트 생성 백그라운드 처리
+            # AI 리포트 생성 (Fallback 적용)
             if gemini_key:
                 status_text.text("🤖 AI 리포트 생성 중...")
                 genai.configure(api_key=gemini_key)
                 prompt = f"[오늘 날짜] **{TODAY_KOR}**\n아래 데이터를 분석하여 일일 SEO 전략 보고서를 작성하세요.\n\n{ai_raw_text}"
-                try:
-                    model = genai.GenerativeModel('gemini-1.5-flash')
-                    st.session_state.ai_report_text = model.generate_content(prompt).text
-                except Exception as e:
-                    st.session_state.ai_report_text = f"AI 분석 실패: {e}"
+                
+                ai_result = "AI 분석 실패: 사용 가능한 모델이 없거나 할당량 초과"
+                for m in ['gemini-1.5-flash', 'gemini-1.5-pro', 'gemini-pro']:
+                    try:
+                        model = genai.GenerativeModel(m)
+                        res = model.generate_content(prompt)
+                        if res.text: 
+                            ai_result = res.text
+                            break
+                    except Exception as e:
+                        logging.warning(f"{m} error: {e}")
+                        continue
+                st.session_state.ai_report_text = ai_result
             
             status_text.empty()
             st.success("🎉 모든 작업이 완료되었습니다. Dashboard에서 결과를 확인하세요.")
 
-# --- 2. Dashboard ---
-elif selected_menu == "Dashboard":
-    st.title("📊 시스템 대시보드")
-    df = st.session_state.crawled_df
-    
-    if df is not None and not df.empty:
-        col1, col2, col3, col4 = st.columns(4)
-        col1.metric("분석 대상 키워드", f"{df['keyword'].nunique()} 개")
-        col2.metric("자사 노출(1~3위)", f"{len(df[(df['rank'] <= 3) & (df['is_db'] | df['is_bit'])])} 건")
-        col3.metric("평균 검색량", f"{int(df['vol'].mean())}")
-        col4.metric("데이터 동기화", "완료")
-        
-        st.markdown("---")
-        st.subheader("🗂️ 핵심 데이터 테이블")
-        st.dataframe(df[['keyword', 'rank', 'mall', 'vol', 'title', 'price']], use_container_width=True)
-    else:
-        st.info("데이터가 없습니다. 'Run & Sync' 메뉴에서 분석을 먼저 실행하세요.")
-
-# --- 3. Charts ---
-elif selected_menu == "Charts":
-    st.title("📈 키워드 및 몰별 차트")
-    df = st.session_state.crawled_df
-    
-    if df is not None and not df.empty:
-        col1, col2 = st.columns(2)
-        with col1:
-            st.subheader("몰별 노출 점유율")
-            st.bar_chart(df['mall'].value_counts())
-        with col2:
-            st.subheader("키워드별 평균 검색량")
-            st.area_chart(df.groupby('keyword')['vol'].mean())
-    else:
-        st.info("데이터가 없습니다.")
-
-# --- 4. AI Report ---
+# --- 3. AI Report ---
 elif selected_menu == "AI Report":
     st.title("📝 AI 전략 리포트")
     if st.session_state.ai_report_text:
         st.markdown(st.session_state.ai_report_text)
+        st.download_button("📜 리포트 다운로드 (TXT)", st.session_state.ai_report_text, file_name=f"Report_{TODAY_ISO}.txt")
     else:
         st.info("생성된 AI 리포트가 없습니다. 실행 메뉴에서 분석을 완료해주세요.")
