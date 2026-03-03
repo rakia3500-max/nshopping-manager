@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-[최종 통합 완성본] BitDrone_Manager_Web_Final.py
-- 기능 1: 대시보드 요약 (현재 1-3위 진입 상품만 집중 노출)
-- 기능 2: 일자별 순위 추이 (별도 탭, 키워드 개별 선택/제외 필터)
-- 기능 3: 실시간 크롤링 및 GAS 연동 (Timeout 120초 강화)
-- 기능 4: Gemini 2.5 Flash 기반 AI 전략 리포트
+[최종 통합 완성본 v3] BitDrone_Manager_Web.py
+- Fix: GAS로 전송하는 CSV에 경쟁사/자사 식별 항목(is_db, is_bit 등) 복구 (슬랙 0건 표기 오류 해결)
+- Fix: 데이터 동기화(GET) 및 전송(POST) 타임아웃 모두 120초로 통일 (에러 방지)
 """
 
 import streamlit as st
@@ -78,8 +76,9 @@ def send_to_gas(df, url, token):
         csv_buffer = io.StringIO()
         df.to_csv(csv_buffer, index=False)
         csv_bytes = csv_buffer.getvalue().encode('utf-8')
-        # 타임아웃 120초 강화
-        res = requests.post(url, params={"token": token, "type": "auto_daily"}, data=csv_bytes, timeout=120)
+        headers = {'Content-Type': 'text/plain; charset=utf-8'}
+        # 타임아웃 120초로 확실히 고정
+        res = requests.post(url, params={"token": token, "type": "auto_daily"}, data=csv_bytes, headers=headers, timeout=120)
         res.raise_for_status()
         return True, "성공"
     except requests.exceptions.ReadTimeout:
@@ -90,7 +89,8 @@ def send_to_gas(df, url, token):
 def fetch_history_from_gas(url):
     if not url: return pd.DataFrame(), "URL 누락"
     try:
-        res = requests.get(url, timeout=30)
+        # DB_Archive에서 가져올 때도 120초 대기하도록 수정
+        res = requests.get(url, timeout=120)
         res.raise_for_status()
         df = pd.DataFrame(res.json())
         if not df.empty:
@@ -197,17 +197,27 @@ elif selected_menu == "Run & Sync":
                 items = get_rank(kw, naver_cid, naver_csec)
                 
                 r_db = r_bit = 999
+                top_mall = items[0]['mallName'] if items else "-"
+                
                 if items:
                     for r, item in enumerate(items, 1):
                         mn = item['mallName'].replace(" ", "").lower()
                         if any(x.lower().replace(" ","") in mn for x in t_db): r_db = min(r_db, r)
                         if any(x.lower().replace(" ","") in mn for x in t_bit): r_bit = min(r_bit, r)
                         
-                        if r <= 3 or any(x.lower() in mn for x in t_db + t_bit + t_comp):
+                        if r <= 3 or any(x.lower().replace(" ","") in mn for x in t_db + t_bit + t_comp):
+                            standard_mall = item['mallName']
+                            
+                            # [핵심 수정] 슬랙 알림을 위해 GAS가 요구하는 boolean 값 복구
                             results.append({
                                 "date": TODAY_ISO, "keyword": kw, "vol": vol, "click": clk, "ctr": ctr,
-                                "rank": r, "mall": item['mallName'], "title": item['title'].replace("<b>","").replace("</b>",""),
-                                "price": item['lprice'], "link": item['link']
+                                "rank": r, "mall": standard_mall, "title": item['title'].replace("<b>","").replace("</b>",""),
+                                "price": item['lprice'], "link": item['link'],
+                                "is_db": any(x.lower().replace(" ", "") in mn for x in t_db),
+                                "is_bit": any(x.lower().replace(" ", "") in mn for x in t_bit),
+                                "is_da": "다다사" in mn,
+                                "is_hr": "효로로" in mn,
+                                "is_dv": "드론뷰" in mn
                             })
                 ai_raw += f"{kw}: {min(r_db, r_bit)}위\n"
 
