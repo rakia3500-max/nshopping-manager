@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-[최종 통합 완성본 v3] BitDrone_Manager_Web.py
-- Fix: GAS로 전송하는 CSV에 경쟁사/자사 식별 항목(is_db, is_bit 등) 복구 (슬랙 0건 표기 오류 해결)
-- Fix: 데이터 동기화(GET) 및 전송(POST) 타임아웃 모두 120초로 통일 (에러 방지)
+[최종 통합 완성본 v4] BitDrone_Manager_Web.py
+- Update: 사이드바 메인 메뉴에 '일자별 순위 추이' 단독 메뉴 추가
+- Fix: 슬랙 알림 정상화 (is_db, is_bit 등 식별값 복구)
+- Fix: GAS GET/POST 타임아웃 120초 상향
 """
 
 import streamlit as st
@@ -77,7 +78,7 @@ def send_to_gas(df, url, token):
         df.to_csv(csv_buffer, index=False)
         csv_bytes = csv_buffer.getvalue().encode('utf-8')
         headers = {'Content-Type': 'text/plain; charset=utf-8'}
-        # 타임아웃 120초로 확실히 고정
+        # 타임아웃 120초
         res = requests.post(url, params={"token": token, "type": "auto_daily"}, data=csv_bytes, headers=headers, timeout=120)
         res.raise_for_status()
         return True, "성공"
@@ -89,7 +90,7 @@ def send_to_gas(df, url, token):
 def fetch_history_from_gas(url):
     if not url: return pd.DataFrame(), "URL 누락"
     try:
-        # DB_Archive에서 가져올 때도 120초 대기하도록 수정
+        # DB_Archive 가져올 때도 120초 대기
         res = requests.get(url, timeout=120)
         res.raise_for_status()
         df = pd.DataFrame(res.json())
@@ -102,8 +103,9 @@ def fetch_history_from_gas(url):
 # --- 사이드바 메뉴 ---
 with st.sidebar:
     st.markdown("### 🚁 BitDrone Control")
-    selected_menu = option_menu("메뉴", ["Dashboard", "Run & Sync", "AI Report"], 
-                               icons=['speedometer2', 'cloud-upload', 'robot'], default_index=0)
+    # 메뉴에 '일자별 순위 추이' 추가
+    selected_menu = option_menu("메뉴", ["Dashboard", "일자별 순위 추이", "Run & Sync", "AI Report"], 
+                               icons=['speedometer2', 'graph-up', 'cloud-upload', 'robot'], default_index=0)
     
     with st.expander("🔑 환경 변수 설정", expanded=False):
         gemini_key = st.text_input("Gemini API Key", value=get_secret("GEMINI_API_KEY"), type="password")
@@ -120,7 +122,7 @@ with st.sidebar:
 
 # --- 1. Dashboard ---
 if selected_menu == "Dashboard":
-    st.title("📊 통합 관제 대시보드")
+    st.title("📊 통합 관제 대시보드 요약")
     
     if st.button("🔄 구글 시트 데이터 동기화"):
         with st.spinner("DB_Archive 데이터를 불러오는 중..."):
@@ -130,49 +132,57 @@ if selected_menu == "Dashboard":
                 st.success("동기화 완료")
             else: st.error(f"동기화 실패: {err}")
 
-    tab1, tab2 = st.tabs(["🏠 대시보드 요약 (상위 1-3위)", "📈 일자별 순위 추이 (전체)"])
-
-    with tab1:
-        hist_df = st.session_state.history_df
-        metric_df = st.session_state.crawled_df if not st.session_state.crawled_df.empty else (hist_df[hist_df['date'] == hist_df['date'].max()] if not hist_df.empty else pd.DataFrame())
+    hist_df = st.session_state.history_df
+    metric_df = st.session_state.crawled_df if not st.session_state.crawled_df.empty else (hist_df[hist_df['date'] == hist_df['date'].max()] if not hist_df.empty else pd.DataFrame())
+    
+    if not metric_df.empty:
+        # 상위 1~3위 필터링
+        top_df = metric_df[metric_df['rank'] <= 3]
         
-        if not metric_df.empty:
-            # 상위 1~3위 필터링
-            top_df = metric_df[metric_df['rank'] <= 3]
-            
-            c1, c2, c3 = st.columns(3)
-            c1.metric("전체 키워드", f"{metric_df['keyword'].nunique()} 개")
-            c2.metric("드론박스 (1-3위)", f"{len(top_df[top_df['mall'].str.contains('드론박스', na=False)])} 건")
-            c3.metric("빛드론 (1-3위)", f"{len(top_df[top_df['mall'].str.contains('빛드론', na=False)])} 건")
-            
-            st.markdown("---")
-            st.subheader("🏆 현재 1-3위 노출 키워드 상세")
-            if not top_df.empty:
-                st.dataframe(top_df[['keyword', 'rank', 'mall', 'title', 'price']], use_container_width=True)
-            else:
-                st.info("현재 3위 이내에 진출한 상품이 없습니다.")
-        else: st.info("동기화 또는 수집을 먼저 진행해주세요.")
+        c1, c2, c3 = st.columns(3)
+        c1.metric("전체 키워드", f"{metric_df['keyword'].nunique()} 개")
+        c2.metric("드론박스 (1-3위)", f"{len(top_df[top_df['mall'].str.contains('드론박스', na=False)])} 건")
+        c3.metric("빛드론 (1-3위)", f"{len(top_df[top_df['mall'].str.contains('빛드론', na=False)])} 건")
+        
+        st.markdown("---")
+        st.subheader("🏆 현재 1-3위 노출 키워드 상세")
+        if not top_df.empty:
+            st.dataframe(top_df[['keyword', 'rank', 'mall', 'title', 'price']], use_container_width=True)
+        else:
+            st.info("현재 3위 이내에 진출한 상품이 없습니다.")
+    else: st.info("동기화 또는 수집을 먼저 진행해주세요.")
 
-    with tab2:
-        st.subheader("📉 키워드별 순위 변동 추이")
-        hist_df = st.session_state.history_df
-        if not hist_df.empty:
-            # 키워드 멀티 선택 필터
-            all_kws = sorted(hist_df['keyword'].unique().tolist())
-            selected = st.multiselect("분석할 키워드 선택/제외", options=all_kws, default=all_kws)
-            
-            filtered_chart_df = hist_df[hist_df['keyword'].isin(selected)] if selected else hist_df
-            
-            chart = alt.Chart(filtered_chart_df).mark_line(point=True).encode(
-                x=alt.X('date:T', title='날짜'),
-                y=alt.Y('rank:Q', scale=alt.Scale(reverse=True, domain=[10, 1]), title='순위'),
-                color='keyword:N',
-                tooltip=['date', 'keyword', 'rank', 'mall']
-            ).properties(height=500).interactive()
-            st.altair_chart(chart, use_container_width=True)
-        else: st.warning("과거 데이터가 없습니다.")
+# --- 2. 일자별 순위 추이 (신규 단독 메뉴) ---
+elif selected_menu == "일자별 순위 추이":
+    st.title("📈 일자별 키워드 순위 추이")
+    
+    if st.button("🔄 누적 데이터 다시 불러오기"):
+        with st.spinner("DB_Archive 데이터를 불러오는 중..."):
+            df, err = fetch_history_from_gas(apps_script_url)
+            if not df.empty:
+                st.session_state.history_df = df
+                st.success("동기화 완료")
+            else: st.error(f"동기화 실패: {err}")
 
-# --- 2. Run & Sync ---
+    hist_df = st.session_state.history_df
+    if not hist_df.empty:
+        # 키워드 멀티 선택 필터
+        all_kws = sorted(hist_df['keyword'].unique().tolist())
+        selected = st.multiselect("분석할 키워드 선택/제외", options=all_kws, default=all_kws)
+        
+        filtered_chart_df = hist_df[hist_df['keyword'].isin(selected)] if selected else hist_df
+        
+        chart = alt.Chart(filtered_chart_df).mark_line(point=True, strokeWidth=2).encode(
+            x=alt.X('date:T', title='날짜'),
+            y=alt.Y('rank:Q', scale=alt.Scale(reverse=True, domain=[10, 1]), title='순위 (1위에 가까울수록 위)'),
+            color='keyword:N',
+            tooltip=['date', 'keyword', 'rank', 'mall']
+        ).properties(height=600).interactive()
+        st.altair_chart(chart, use_container_width=True)
+    else: 
+        st.warning("과거 데이터가 없습니다. 상단 '누적 데이터 다시 불러오기' 버튼을 눌러주세요.")
+
+# --- 3. Run & Sync ---
 elif selected_menu == "Run & Sync":
     st.title("🎯 실시간 순위 수집")
     kws_text = st.text_area("키워드 입력 (줄바꿈 구분)", height=200, value=get_secret("DEFAULT_KEYWORDS", ""))
@@ -208,7 +218,7 @@ elif selected_menu == "Run & Sync":
                         if r <= 3 or any(x.lower().replace(" ","") in mn for x in t_db + t_bit + t_comp):
                             standard_mall = item['mallName']
                             
-                            # [핵심 수정] 슬랙 알림을 위해 GAS가 요구하는 boolean 값 복구
+                            # 슬랙 알림 오류를 해결하는 is_db, is_bit 등 식별값 복구 완료
                             results.append({
                                 "date": TODAY_ISO, "keyword": kw, "vol": vol, "click": clk, "ctr": ctr,
                                 "rank": r, "mall": standard_mall, "title": item['title'].replace("<b>","").replace("</b>",""),
@@ -229,7 +239,7 @@ elif selected_menu == "Run & Sync":
             if success: st.toast("✅ 전송 완료!"); status.empty()
             else: st.error(f"전송 실패: {msg}")
 
-            # AI 리포트 생성 (Gemini 2.5 Flash 최우선)
+            # AI 리포트 생성
             if gemini_key:
                 genai.configure(api_key=gemini_key)
                 models = ['gemini-2.5-flash', 'gemini-1.5-flash', 'gemini-pro']
@@ -241,7 +251,7 @@ elif selected_menu == "Run & Sync":
                         break
                     except: continue
 
-# --- 3. AI Report ---
+# --- 4. AI Report ---
 elif selected_menu == "AI Report":
     st.title("🤖 AI SEO 전략 리포트")
     if st.session_state.ai_report_text:
