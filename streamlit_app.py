@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-[최종 통합 완성본 v5] BitDrone_Manager_Web.py
-- Update: 차트 렌더링 랙(버벅거림) 해결을 위한 '날짜 기간 필터(Date Picker)' 추가
-- Update: 기본 조회 기간을 '최근 14일'로 제한하여 사이트 이동 속도 대폭 향상
-- Fix: 슬랙 알림 정상화 및 GAS 타임아웃 120초 유지
+[최종 통합 완성본 v6] BitDrone_Manager_Web.py
+- Update: AI 프롬프트 고도화 (검색량/클릭률 기반 실무자 맞춤형 '액션 플랜' 제안 기능 추가)
+- Update: 차트 렌더링 랙 해결 (기본 14일 조회 + 달력 필터)
 """
 
 import streamlit as st
@@ -150,13 +149,12 @@ if selected_menu == "Dashboard":
             st.info("현재 3위 이내에 진출한 상품이 없습니다.")
     else: st.info("동기화 또는 수집을 먼저 진행해주세요.")
 
-# --- 2. 일자별 순위 추이 (속도 최적화 적용) ---
+# --- 2. 일자별 순위 추이 ---
 elif selected_menu == "일자별 순위 추이":
     st.title("📈 일자별 키워드 순위 추이")
     
     hist_df = st.session_state.history_df
     if not hist_df.empty:
-        # [최적화] 날짜 형식 변환 및 기본 기간 설정 (최근 14일)
         hist_df['date_obj'] = pd.to_datetime(hist_df['date']).dt.date
         min_date = hist_df['date_obj'].min()
         max_date = hist_df['date_obj'].max()
@@ -167,7 +165,6 @@ elif selected_menu == "일자별 순위 추이":
         col1, col2 = st.columns([1, 2])
         
         with col1:
-            # 날짜 선택 달력 필터 (기본값: 최근 14일)
             selected_dates = st.date_input(
                 "조회할 기간을 선택하세요",
                 value=(default_start, max_date),
@@ -175,15 +172,11 @@ elif selected_menu == "일자별 순위 추이":
                 max_value=max_date
             )
         with col2:
-            # 키워드 멀티 선택 필터
             all_kws = sorted(hist_df['keyword'].unique().tolist())
             selected_kws = st.multiselect("차트에 표시할 키워드 선택/제외", options=all_kws, default=all_kws)
 
-        # 사용자가 날짜를 정상적으로(시작일~종료일) 선택했을 때만 렌더링
         if len(selected_dates) == 2:
             start_date, end_date = selected_dates
-            
-            # 선택한 날짜와 키워드로 데이터프레임 필터링 (렌더링 데이터 최소화)
             mask = (hist_df['date_obj'] >= start_date) & (hist_df['date_obj'] <= end_date)
             filtered_df = hist_df.loc[mask]
             if selected_kws:
@@ -251,7 +244,10 @@ elif selected_menu == "Run & Sync":
                                 "is_hr": "효로로" in mn,
                                 "is_dv": "드론뷰" in mn
                             })
-                ai_raw += f"{kw}: {min(r_db, r_bit)}위\n"
+                # [핵심 변경] AI에게 줄 데이터를 대폭 보강 (검색량, 클릭률 포함)
+                best_rank = min(r_db, r_bit)
+                rank_str = f"{best_rank}위" if best_rank < 999 else "순위 밖"
+                ai_raw += f"- 키워드: {kw} | 자사 최고 순위: {rank_str} | 월간 검색수: {vol}회 | 클릭률: {ctr}%\n"
 
             df = pd.DataFrame(results)
             st.session_state.crawled_df = df
@@ -261,21 +257,41 @@ elif selected_menu == "Run & Sync":
             if success: st.toast("✅ 전송 완료!"); status.empty()
             else: st.error(f"전송 실패: {msg}")
 
-            # AI 리포트 생성
+            # [핵심 변경] AI 프롬프트 고도화 (액션 플랜 강제)
             if gemini_key:
+                status.text("🤖 실무자 맞춤형 AI 리포트 생성 중...")
                 genai.configure(api_key=gemini_key)
+                
+                ai_prompt = f"""[오늘 날짜] {TODAY_KOR}
+아래는 네이버 쇼핑에서 당사(드론박스/빛드론) 브랜드의 키워드별 현재 순위와 주요 지표(월간 검색수, 클릭률) 데이터입니다.
+이 데이터를 분석하여, 단순 현황 요약이 아닌 **실무자가 지금 당장 실행할 수 있는 '구체적인 액션 플랜' 위주**로 SEO 전략 보고서를 작성해주세요.
+
+[수집 데이터 요약]
+{ai_raw}
+
+[보고서 필수 포함 항목 (마크다운 형식으로 깔끔하게)]
+1. 📊 오늘 순위 현황 요약 (긍정적 포인트 / 아쉬운 포인트)
+2. 🚨 긴급 조치 타겟 키워드 TOP 3 (검색량은 높은데 순위가 낮거나 밀린 핵심 키워드)
+3. 🛠️ 실무자 맞춤형 즉시 실행 액션 플랜
+   - 상품명/태그 수정 제안 (어떤 단어를 앞으로 빼야 유리한지 등)
+   - 네이버 검색/쇼핑 검색광고 입찰가 조절 제안
+   - 이벤트/리뷰 유도 등 상세페이지 보완 제안
+4. 🛡️ 상위권(1~3위) 안착 및 방어 전략
+"""
                 models = ['gemini-2.5-flash', 'gemini-1.5-flash', 'gemini-pro']
                 for m in models:
                     try:
                         model = genai.GenerativeModel(m)
-                        res = model.generate_content(f"{TODAY_KOR} 쇼핑 순위 분석 보고서 작성:\n{ai_raw}")
+                        res = model.generate_content(ai_prompt)
                         st.session_state.ai_report_text = res.text
                         break
                     except: continue
+                status.empty()
 
 # --- 4. AI Report ---
 elif selected_menu == "AI Report":
-    st.title("🤖 AI SEO 전략 리포트")
+    st.title("🤖 AI SEO 전략 및 액션 플랜")
     if st.session_state.ai_report_text:
         st.markdown(st.session_state.ai_report_text)
-    else: st.info("Run & Sync 메뉴에서 분석을 실행하면 리포트가 생성됩니다.")
+        st.download_button("📜 리포트 다운로드 (TXT)", st.session_state.ai_report_text, file_name=f"Action_Plan_{TODAY_ISO}.txt")
+    else: st.info("Run & Sync 메뉴에서 분석을 실행하면 맞춤형 액션 플랜이 생성됩니다.")
