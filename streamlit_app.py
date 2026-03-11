@@ -290,8 +290,98 @@ elif selected_menu == "Run & Sync":
 
 # --- 4. AI Report ---
 elif selected_menu == "AI Report":
-    st.title("🤖 AI SEO 전략 및 액션 플랜")
-    if st.session_state.ai_report_text:
-        st.markdown(st.session_state.ai_report_text)
-        st.download_button("📜 리포트 다운로드 (TXT)", st.session_state.ai_report_text, file_name=f"Action_Plan_{TODAY_ISO}.txt")
-    else: st.info("Run & Sync 메뉴에서 분석을 실행하면 맞춤형 액션 플랜이 생성됩니다.")
+    st.title("🤖 일자별 AI SEO 전략 및 액션 플랜")
+    
+    # [예외처리] GAS 데이터 연동 확인
+    hist_df = st.session_state.history_df
+    if hist_df.empty:
+        st.warning("과거 데이터가 없습니다. [Dashboard] 메뉴에서 '구글 시트 데이터 동기화'를 먼저 진행해주세요.")
+    else:
+        # 1. 일자 필터링 UI 구성
+        available_dates = sorted(hist_df['date'].dropna().unique().tolist(), reverse=True)
+        
+        col1, col2 = st.columns([1, 3])
+        with col1:
+            selected_date = st.selectbox("보고서 기준일 선택", available_dates)
+        
+        # 2. 일자별 AI 리포트 캐싱용 딕셔너리 세션 초기화
+        if 'ai_reports_cache' not in st.session_state:
+            st.session_state.ai_reports_cache = {}
+            # 기존 Run & Sync에서 생성된 당일 리포트가 있다면 캐시에 마이그레이션
+            if st.session_state.get('ai_report_text'):
+                st.session_state.ai_reports_cache[TODAY_ISO] = st.session_state.ai_report_text
+
+        # 3. 리포트 출력 및 동적 생성 로직
+        if selected_date in st.session_state.ai_reports_cache:
+            st.success(f"✅ {selected_date} 기준 SEO 리포트")
+            st.markdown(st.session_state.ai_reports_cache[selected_date])
+            st.download_button(
+                label="📜 리포트 다운로드 (TXT)", 
+                data=st.session_state.ai_reports_cache[selected_date], 
+                file_name=f"Action_Plan_{selected_date}.txt"
+            )
+        else:
+            st.info(f"선택한 날짜({selected_date})의 AI 리포트가 메모리에 없습니다.")
+            if st.button(f"🚀 {selected_date} 데이터로 AI 리포트 생성", type="primary"):
+                if not gemini_key:
+                    st.error("[Error] 좌측 사이드바 환경 변수에서 Gemini API Key를 입력해주세요.")
+                else:
+                    with st.spinner(f"{selected_date} 데이터를 분석하여 액션 플랜을 생성 중입니다..."):
+                        # ③ 데이터 재구성 로직
+                        target_df = hist_df[hist_df['date'] == selected_date]
+                        ai_raw = ""
+                        
+                        for kw in target_df['keyword'].unique():
+                            kw_df = target_df[target_df['keyword'] == kw]
+                            
+                            # 지표 추출 (히스토리에 컬럼이 존재하는지 예외처리 방어)
+                            vol = kw_df['vol'].iloc[0] if 'vol' in kw_df.columns else 0
+                            ctr = kw_df['ctr'].iloc[0] if 'ctr' in kw_df.columns else 0
+                            
+                            # 자사 브랜드 랭크 최상위 추적
+                            db_ranks = kw_df[kw_df['is_db'] == True]['rank']
+                            bit_ranks = kw_df[kw_df['is_bit'] == True]['rank']
+                            
+                            best_rank = 999
+                            if not db_ranks.empty: best_rank = min(best_rank, db_ranks.min())
+                            if not bit_ranks.empty: best_rank = min(best_rank, bit_ranks.min())
+                            
+                            rank_str = f"{int(best_rank)}위" if best_rank < 999 else "순위 밖"
+                            ai_raw += f"- 키워드: {kw} | 자사 최고 순위: {rank_str} | 월간 검색수: {vol}회 | 클릭률: {ctr}%\n"
+
+                        # 프롬프트 전송 및 결과 적재
+                        try:
+                            genai.configure(api_key=gemini_key)
+                            ai_prompt = f"""[기준일] {selected_date}
+아래는 네이버 쇼핑에서 당사(드론박스/빛드론) 브랜드의 키워드별 순위와 주요 지표 데이터입니다.
+단순 현황 요약이 아닌 실무자가 지금 당장 실행할 수 있는 '구체적인 액션 플랜' 위주로 SEO 전략 보고서를 작성해주세요.
+
+[수집 데이터 요약]
+{ai_raw}
+
+[보고서 필수 포함 항목 (마크다운 형식으로 깔끔하게)]
+1. 📊 {selected_date} 순위 현황 요약 (긍정적 포인트 / 아쉬운 포인트)
+2. 🚨 긴급 조치 타겟 키워드 TOP 3 (검색량은 높은데 순위가 낮거나 밀린 핵심 키워드)
+3. 🛠️ 실무자 맞춤형 즉시 실행 액션 플랜
+4. 🛡️ 상위권(1~3위) 안착 및 방어 전략
+"""
+                            # Fallback 모델 적용
+                            models = ['gemini-2.5-flash', 'gemini-1.5-flash', 'gemini-pro']
+                            res_text = ""
+                            for m in models:
+                                try:
+                                    model = genai.GenerativeModel(m)
+                                    res = model.generate_content(ai_prompt)
+                                    res_text = res.text
+                                    break
+                                except Exception:
+                                    continue
+                            
+                            if res_text:
+                                st.session_state.ai_reports_cache[selected_date] = res_text
+                                st.rerun() # UI 강제 새로고침을 통해 즉시 렌더링
+                            else:
+                                st.error("[Error] Gemini API 호출을 모두 실패했습니다. 할당량(Quota)이나 API 키를 확인하세요.")
+                                
+                        except Exception as e:
+                            st.error(f"[Error] AI 리포트 생성 중 알 수 없는 오류 발생: {str(e)}")
