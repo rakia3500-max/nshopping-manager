@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-[최종 통합 완성본 v6] BitDrone_Manager_Web.py
+[최종 통합 완성본 v7] BitDrone_Manager_Web.py
 - Update: AI 프롬프트 고도화 (검색량/클릭률 기반 실무자 맞춤형 '액션 플랜' 제안 기능 추가)
 - Update: 차트 렌더링 랙 해결 (기본 14일 조회 + 달력 필터)
+- Update: Gemini API 404 에러 방지를 위한 다중 모델 Fallback 로직 적용 (2.5 -> 2.0 -> 1.5 -> pro)
 """
 
 import streamlit as st
@@ -22,7 +23,7 @@ import sys
 
 # 인코딩 및 페이지 설정
 sys.stdout.reconfigure(encoding='utf-8')
-st.set_page_config(page_title="비트드론 쇼핑 통합 관제", layout="wide")
+st.set_page_config(page_title="쇼핑 통합 관제", layout="wide")
 
 # --- KST 시간 설정 ---
 NOW_KST = dt.datetime.utcnow() + dt.timedelta(hours=9)
@@ -101,7 +102,7 @@ def fetch_history_from_gas(url):
 
 # --- 사이드바 메뉴 ---
 with st.sidebar:
-    st.markdown("### 🚁 BitDrone Control")
+    st.markdown("### 🚁 Shopping Control")
     selected_menu = option_menu("메뉴", ["Dashboard", "일자별 순위 추이", "Run & Sync", "AI Report"], 
                                icons=['speedometer2', 'graph-up', 'cloud-upload', 'robot'], default_index=0)
     
@@ -244,7 +245,7 @@ elif selected_menu == "Run & Sync":
                                 "is_hr": "효로로" in mn,
                                 "is_dv": "드론뷰" in mn
                             })
-                # [핵심 변경] AI에게 줄 데이터를 대폭 보강 (검색량, 클릭률 포함)
+                
                 best_rank = min(r_db, r_bit)
                 rank_str = f"{best_rank}위" if best_rank < 999 else "순위 밖"
                 ai_raw += f"- 키워드: {kw} | 자사 최고 순위: {rank_str} | 월간 검색수: {vol}회 | 클릭률: {ctr}%\n"
@@ -257,7 +258,6 @@ elif selected_menu == "Run & Sync":
             if success: st.toast("✅ 전송 완료!"); status.empty()
             else: st.error(f"전송 실패: {msg}")
 
-            # [핵심 변경] AI 프롬프트 고도화 (액션 플랜 강제)
             if gemini_key:
                 status.text("🤖 실무자 맞춤형 AI 리포트 생성 중...")
                 genai.configure(api_key=gemini_key)
@@ -278,12 +278,13 @@ elif selected_menu == "Run & Sync":
    - 이벤트/리뷰 유도 등 상세페이지 보완 제안
 4. 🛡️ 상위권(1~3위) 안착 및 방어 전략
 """
-                models = ['gemini-2.5-flash', 'gemini-1.5-flash', 'gemini-pro']
-                for m in models:
+                # [수정됨] 모델 Fallback 로직 적용
+                models_to_try = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash-latest', 'gemini-1.5-flash', 'gemini-pro']
+                for m in models_to_try:
                     try:
                         model = genai.GenerativeModel(m)
                         res = model.generate_content(ai_prompt)
-                        st.session_state.ai_report_text = res.text
+                        st.session_state.ai_report_text = f"\n" + res.text
                         break
                     except: continue
                 status.empty()
@@ -292,7 +293,7 @@ elif selected_menu == "Run & Sync":
 elif selected_menu == "AI Report":
     st.title("🤖 일자별 AI SEO 전략 및 액션 플랜")
     
-    # [예외 처리 1] 이전 버전 세션 상태(st.session_state) 충돌 방지 및 마이그레이션
+    # [예외 처리 1] 이전 버전 세션 상태 충돌 방지 및 마이그레이션
     if 'ai_reports_cache' not in st.session_state:
         st.session_state.ai_reports_cache = {}
         if 'ai_report_text' in st.session_state and st.session_state.ai_report_text:
@@ -368,12 +369,35 @@ elif selected_menu == "AI Report":
 3. 🛠️ 실무자 맞춤형 즉시 실행 액션 플랜 (입찰가, 상품명 등)
 4. 🛡️ 상위권 방어 전략
 """
-                                # 모델 호출 및 결과 저장
-                                model = genai.GenerativeModel('gemini-1.5-flash')
-                                res = model.generate_content(ai_prompt)
+                                # [수정됨] 2.5부터 구형 Pro까지 순차적 Fallback (에러 방어 로직)
+                                models_to_try = [
+                                    'gemini-2.5-flash',
+                                    'gemini-2.0-flash',
+                                    'gemini-1.5-flash-latest',
+                                    'gemini-1.5-flash',
+                                    'gemini-pro'
+                                ]
                                 
-                                st.session_state.ai_reports_cache[selected_date] = res.text
-                                st.rerun() # UI 강제 새로고침
+                                res_text = ""
+                                last_error = ""
+                                successful_model = ""
+                                
+                                for model_name in models_to_try:
+                                    try:
+                                        model = genai.GenerativeModel(model_name)
+                                        res = model.generate_content(ai_prompt)
+                                        res_text = res.text
+                                        successful_model = model_name
+                                        break  # 성공 시 즉시 루프 탈출
+                                    except Exception as e:
+                                        last_error = str(e)
+                                        continue  # 실패 시 다음 하위 모델로 재시도
+                                
+                                if res_text:
+                                    st.session_state.ai_reports_cache[selected_date] = f"\n" + res_text
+                                    st.rerun() 
+                                else:
+                                    st.error(f"[Error] 모든 API 모델 호출 실패. 최신 패키지 업데이트가 필요합니다.\n마지막 에러: {last_error}")
                                 
                             except Exception as e:
                                 st.error(f"[Error] AI 리포트 생성 중 예외 발생: {str(e)}")
