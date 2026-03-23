@@ -89,3 +89,7 @@ dji flighthub 2
 플라이트 허브2
 플라이트 허브
 dji RS 5
+dji mavic 4 pro
+농업용 드론 
+농업용 드론 배터리
+드론 배터리
