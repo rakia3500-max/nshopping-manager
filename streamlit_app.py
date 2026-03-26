@@ -37,24 +37,22 @@ st.markdown("""
     font-style: normal;
 }
 
-/* 전체 느낌 (연한 배경) */
+/* 전체 느낌 (다크 테마 배경) */
 div[data-testid="stAppViewContainer"] {
-    background-color: #f3f4f6;
+    background-color: transparent;
     font-family: 'Poppins', 'NanumSquareRound', sans-serif;
 }
 
-/* 사이드바 스타일 (사이드바 전체를 회색으로 일체화) */
+/* 사이드바 스타일 (투명하게 두어 config.toml의 테마를 따르게 함) */
 section[data-testid="stSidebar"] {
-    background-color: #f0f2f6 !important;
-    background-image: none !important;
     border-right: none;
 }
 /* 사이드바 텍스트 기본 톤 */
 section[data-testid="stSidebar"] p, section[data-testid="stSidebar"] div {
-    color: #4b5563;
+    color: #9ca3af;
 }
 section[data-testid="stSidebar"] h1, section[data-testid="stSidebar"] h2, section[data-testid="stSidebar"] h3 {
-    color: #111827 !important;
+    color: #ffffff !important;
     font-weight: 700;
 }
 
@@ -68,47 +66,47 @@ header[data-testid="stHeader"] {
     padding-top: 3rem;
 }
 
-/* Metric (상단 요약 박스 - 둥근 부드러운 카드 느낌) */
+/* Metric (상단 요약 박스 - 둥근 다크 카드 느낌) */
 [data-testid="stMetric"] {
-    background-color: #ffffff;
+    background-color: #222432;
     border-radius: 16px;
     padding: 1.5rem;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
     border: none;
     margin-bottom: 1rem;
 }
 [data-testid="stMetricValue"] {
     font-size: 1.8rem;
     font-weight: 700;
-    color: #111827;
+    color: #ffffff;
 }
 [data-testid="stMetricLabel"] {
     font-size: 0.9rem;
     font-weight: 600;
-    color: #6b7280;
+    color: #9ca3af;
     text-transform: none;
 }
 
 /* 컨텐츠 내 소제목(H1, H2, H3 등) 스타일 */
 h1, h2, h3, h4, h5 {
-    color: #111827;
+    color: #ffffff;
     font-family: 'Poppins', 'NanumSquareRound', sans-serif;
     font-weight: 700;
 }
 
 /* 버튼 스타일 (둥근 파란색 캡슐 Button) */
 div.stButton > button {
-    background-color: #3b82f6; /* 소프트 블루 */
-    color: white !important;
-    border-radius: 20px; /* 캡슐 형태 */
-    font-weight: 600;
+    background-color: #3b82f6; /* 파란색 */
+    color: #ffffff !important; /* 흰색 텍스트 */
+    border-radius: 20px;
+    font-weight: 700;
     border: none;
     box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.3);
     transition: all 0.2s;
 }
 div.stButton > button:hover {
     background-color: #2563eb;
-    color: white !important;
+    color: #ffffff !important;
     transform: translateY(-2px);
     box-shadow: 0 6px 8px -1px rgba(59, 130, 246, 0.4);
 }
@@ -116,7 +114,7 @@ div.stButton > button:hover {
 /* Expander(아코디언) 제목 */
 .streamlit-expanderHeader {
     font-weight: 600;
-    color: #374151;
+    color: #d1d5db;
 }
 </style>
 """, unsafe_allow_html=True)
@@ -208,24 +206,24 @@ with st.sidebar:
         icons=['speedometer2', 'graph-up', 'bar-chart-line', 'search', 'cloud-upload', 'robot'], 
         default_index=0,
         styles={
-            "container": {"background-color": "#f0f2f6 !important", "padding": "0!important", "border": "none"},
+            "container": {"background-color": "transparent !important", "padding": "0!important", "border": "none"},
             "icon": {"font-size": "1.2rem"}, 
             "nav-link": {
-                "background-color": "#ffffff",
-                "color": "#4b5563",
+                "background-color": "transparent",
+                "color": "#9ca3af",
                 "font-size": "0.95rem", 
                 "text-align": "left", 
                 "margin": "10px 0", 
                 "padding": "12px 18px",
                 "border-radius": "30px",
-                "box-shadow": "0 2px 6px rgba(0,0,0,0.06)",
-                "--hover-color": "#f8f9fa"
+                "box-shadow": "none",
+                "--hover-color": "rgba(255,255,255,0.05)"
             },
             "nav-link-selected": {
                 "background-color": "#3b82f6", 
                 "color": "#ffffff", 
-                "font-weight": "600",
-                "box-shadow": "0 4px 8px rgba(59, 130, 246, 0.35)"
+                "font-weight": "700",
+                "box-shadow": "0 4px 8px rgba(59, 130, 246, 0.3)"
             },
         }
     )
@@ -346,7 +344,9 @@ elif selected_menu == "일자별 순위 추이":
             )
         with col2:
             all_kws = sorted(hist_df['keyword'].unique().tolist())
-            selected_kws = st.multiselect("차트에 표시할 키워드 선택/제외", options=all_kws, default=all_kws)
+            # 난잡함을 방지하기 위해 기본적으로 5개의 키워드만 선택되도록 처리
+            default_kws = all_kws[:5] if len(all_kws) > 5 else all_kws
+            selected_kws = st.multiselect("차트에 표시할 키워드 선택/제외", options=all_kws, default=default_kws)
 
         if len(selected_dates) == 2:
             start_date, end_date = selected_dates
@@ -356,21 +356,26 @@ elif selected_menu == "일자별 순위 추이":
                 filtered_df = filtered_df[filtered_df['keyword'].isin(selected_kws)]
             
             if not filtered_df.empty:
-                # 차트 개선: 범례 클릭 시 해당 키워드만 강조(Highlight)되도록 하여 난잡함 완화
-                selection = alt.selection_point(fields=['keyword'], bind='legend')
+                # 차트 개선: 범례 클릭 시 (Alt버전 호환) 강조
+                try:
+                    selection = alt.selection_point(fields=['keyword'], bind='legend')
+                except AttributeError:
+                    selection = alt.selection_multi(fields=['keyword'], bind='legend')
                 
                 chart = alt.Chart(filtered_df).mark_line(point=True, strokeWidth=3).encode(
-                    x=alt.X('date:T', title='날짜', axis=alt.Axis(grid=False, format="%m-%d")),
-                    y=alt.Y('rank:Q', scale=alt.Scale(reverse=True, domain=[10, 1]), title='순위 (1위에 가까울수록 위)'),
-                    color=alt.Color('keyword:N', legend=alt.Legend(title="키워드 (클릭하여 강조/끄기)", orient="right")),
+                    x=alt.X('date:T', title='날짜', axis=alt.Axis(grid=False, format="%m-%d", labelColor="#9ca3af", titleColor="#9ca3af", domainColor="#9ca3af", tickColor="#9ca3af")),
+                    y=alt.Y('rank:Q', scale=alt.Scale(reverse=True, domain=[10, 1]), title='순위 (1위에 가까울수록 위)', axis=alt.Axis(labelColor="#9ca3af", titleColor="#9ca3af", domainColor="#9ca3af", tickColor="#9ca3af")),
+                    color=alt.Color('keyword:N', legend=alt.Legend(title="키워드 (선택된 항목)", orient="right", titleColor="#9ca3af", labelColor="#d1d5db")),
                     opacity=alt.condition(selection, alt.value(1), alt.value(0.1)),
                     tooltip=['date', 'keyword', 'rank', 'mall']
                 ).properties(
-                    height=600
+                    height=500,
+                    background="transparent"
                 ).add_params(
                     selection
                 ).interactive()
                 
+                st.altair_chart(chart, use_container_width=True, theme="streamlit")
                 st.altair_chart(chart, use_container_width=True)
             else:
                 st.warning("선택한 기간/키워드에 해당하는 데이터가 없습니다.")
@@ -446,15 +451,20 @@ elif selected_menu == "틈새 키워드 발굴기":
                     kw_list = res.json().get('keywordList', [])
                     results = []
                     for i in kw_list[:300]: # 최대 300개 연관 분석
-                        v_pc = str(i['monthlyPcQcCnt']).replace("<", "10")
-                        v_mo = str(i['monthlyMobileQcCnt']).replace("<", "10")
-                        sum_v = int(v_pc) + int(v_mo)
+                        # 네이버 API에서 '< 10' 등으로 문자열이 넘어올 때 처리하는 오류 해결식
+                        v_pc_val = str(i['monthlyPcQcCnt']).replace("< 10", "10")
+                        v_mo_val = str(i['monthlyMobileQcCnt']).replace("< 10", "10")
+                        
+                        click_pc_val = str(i['monthlyAvePcClkCnt']).replace("< 10", "10")
+                        click_mo_val = str(i['monthlyAveMobileClkCnt']).replace("< 10", "10")
+                        
+                        sum_v = int(v_pc_val) + int(v_mo_val)
                         
                         if sum_v > 50: # 월 50건 이상 짜리만 선별
                             results.append({
                                 "연관 추천 타겟 키워드": i['relKeyword'],
                                 "월별 통합 잠재 고객 수 (검색량)": sum_v,
-                                "기존 평균 클릭률": float(str(i['monthlyAvePcClkCnt']).replace("<", "0")) + float(str(i['monthlyAveMobileClkCnt']).replace("<", "0"))
+                                "기존 평균 클릭률": float(click_pc_val) + float(click_mo_val)
                             })
                             
                     if results:
