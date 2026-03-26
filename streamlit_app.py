@@ -252,6 +252,30 @@ with st.sidebar:
         my_brand_2 = st.text_area("내 브랜드 2", value=get_secret("MY_BRAND_2", "빛드론, BitDrone"))
         competitors = st.text_area("경쟁사", value=get_secret("COMPETITORS", "다다사, 효로로, 드론뷰"))
 
+# --- [NEW] 전역 쇼핑몰 이름 통합(정규화) 함수 ---
+def get_clean_df(df_target):
+    if df_target.empty or 'mall' not in df_target.columns: return df_target
+    df_clean = df_target.copy()
+    
+    t_db = [x.strip() for x in my_brand_1.split(',') if x.strip()]
+    t_bit = [x.strip() for x in my_brand_2.split(',') if x.strip()]
+    t_comp = [x.strip() for x in competitors.split(',') if x.strip()]
+    core_malls = t_db + t_bit + t_comp
+    
+    def map_mall_name(name):
+        if not isinstance(name, str): return name
+        for core in core_malls:
+            if core in name: return core # "DJI온라인다다사" -> "다다사" (이름 완전 정제)
+        return name
+        
+    df_clean['mall'] = df_clean['mall'].apply(map_mall_name)
+    return df_clean
+
+# 모든 메뉴에서 공통으로 사용할 정제된 데이터프레임 사전 생성
+hist_df = get_clean_df(st.session_state.history_df)
+crawled_df = get_clean_df(st.session_state.crawled_df)
+metric_df = crawled_df.copy() if not crawled_df.empty else (hist_df[hist_df['date'] == hist_df['date'].max()] if not hist_df.empty else pd.DataFrame())
+
 # --- 1. Dashboard ---
 if selected_menu == "Dashboard":
     st.title("📊 통합 관제 대시보드 요약")
@@ -261,11 +285,11 @@ if selected_menu == "Dashboard":
             df, err = fetch_history_from_gas(apps_script_url)
             if not df.empty:
                 st.session_state.history_df = df
+                # 동기화 직후 hist_df 강제 갱신
+                hist_df = get_clean_df(st.session_state.history_df)
+                metric_df = hist_df[hist_df['date'] == hist_df['date'].max()] if not hist_df.empty else pd.DataFrame()
                 st.success("동기화 완료")
             else: st.error(f"동기화 실패: {err}")
-
-    hist_df = st.session_state.history_df
-    metric_df = st.session_state.crawled_df if not st.session_state.crawled_df.empty else (hist_df[hist_df['date'] == hist_df['date'].max()] if not hist_df.empty else pd.DataFrame())
     
     if not metric_df.empty:
         # [1, 5] Delta를 위한 이전 날짜 데이터 추출 및 축하 이펙트
@@ -302,31 +326,7 @@ if selected_menu == "Dashboard":
         c3.metric("빛드론 (1-3위 노출)", f"{total_bit:,}", f"{abs(bit_delta)}건 상승" if bit_delta >= 0 else f"{abs(bit_delta)}건 하락", delta_color="normal" if bit_delta >= 0 else "inverse")
         
         st.markdown("---")
-        h1, h2 = st.columns([2, 1])
-        with h1:
-            st.subheader("🏆 현재 1-3위 노출 키워드 상세")
-        with h2:
-            csv = metric_df.to_csv(index=False).encode('utf-8-sig')
-            
-            html_report = f"""
-            <html><head><meta charset="utf-8"><style>
-                body {{ font-family: 'Malgun Gothic', sans-serif; padding: 40px; color: #333; }}
-                h1 {{ color: #2563eb; border-bottom: 2px solid #2563eb; padding-bottom: 10px; }}
-                .box {{ background: #f3f4f6; padding: 20px; border-radius: 10px; margin: 15px 0; border-left: 5px solid #2563eb; }}
-                .val {{ font-size: 28px; font-weight: bold; color: #1e40af; }}
-            </style></head><body>
-                <h1>📈 통합 관제 주간 성과 요약 리포트</h1>
-                <p><strong>생성 기준일:</strong> {TODAY_KOR}</p>
-                <div class="box">모니터링 전체 고유 키워드 <div class="val">{total_kws} 개</div></div>
-                <div class="box">드론박스 1~3위 장악 <div class="val">{total_db}건 (전일대비 {db_delta:+}건)</div></div>
-                <div class="box">빛드론 1~3위 장악 <div class="val">{total_bit}건 (전일대비 {bit_delta:+}건)</div></div>
-                <br><p>상세 순위 지표 및 경쟁사 최신 분석 데이터는 통합 관제 웹 대시보드 시스템에서 확인하실 수 있습니다.</p>
-            </body></html>
-            """
-            
-            c_btn1, c_btn2 = st.columns(2)
-            c_btn1.download_button(label="📑 요약 리포트 (.html)", data=html_report.encode('utf-8-sig'), file_name=f"Smart_Report_{TODAY_ISO}.html", mime="text/html", use_container_width=True)
-            c_btn2.download_button(label="📥 전체 데이터 (.csv)", data=csv, file_name=f"Rank_Data_{TODAY_ISO}.csv", mime="text/csv", use_container_width=True)
+        st.subheader("🏆 현재 1-3위 노출 키워드 상세")
             
         if not top_df.empty:
             # 1. 자사 브랜드(내 브랜드 1, 2)만 식별하기 위해 정규식 패턴 생성
@@ -338,11 +338,10 @@ if selected_menu == "Dashboard":
             my_brands = top_df[top_df['mall'].str.contains(brand_pattern, na=False, regex=True)]
             
             if not my_brands.empty:
-                # 3. 중복 데이터(동일 키워드/쇼핑몰에 여러 데이터가 들어온 경우) 중 순위가 제일 높은 딱 1개만 추출
+                # 3. 중복 데이터 중복 방지: 동일 키워드 및 쇼핑몰에서는 가장 순위가 높은(min) 데이터 1점만 고르기
                 show_df = my_brands.sort_values('rank').drop_duplicates(['keyword', 'mall'])
                 
                 if not prev_df.empty and 'mall' in prev_df.columns and 'keyword' in prev_df.columns:
-                    # 4. 비교할 과거 데이터도 중복 곱셈(Cartesian) 방지를 위해 정확히 단 1개만 추출
                     prev_subset = prev_df[prev_df['mall'].str.contains(brand_pattern, na=False, regex=True)]
                     prev_subset = prev_subset.sort_values('rank').drop_duplicates(['keyword', 'mall'])
                     prev_subset = prev_subset[['keyword', 'mall', 'rank']].rename(columns={'rank': 'prev_rank'})
@@ -364,6 +363,49 @@ if selected_menu == "Dashboard":
                 else:
                     show_df = show_df.sort_values(['keyword', 'mall'])
                     st.dataframe(show_df[['keyword', 'rank', 'mall', 'title', 'price']], use_container_width=True)
+                
+                st.markdown("<br>", unsafe_allow_html=True)
+                # --- 리포트/Export 영역 (표의 직관성 집중 후 하단 배치) ---
+                csv = metric_df.to_csv(index=False).encode('utf-8-sig')
+                
+                html_report = f"""
+                <html><head><meta charset="utf-8"><style>
+                    body {{ font-family: 'Malgun Gothic', 'Noto Sans KR', sans-serif; padding: 25px; color: #333; background-color: #ffffff; border-radius: 12px; }}
+                    h1 {{ color: #2563eb; border-bottom: 2px solid #2563eb; padding-bottom: 10px; font-size: 24px; }}
+                    .box {{ background: #f8fafc; padding: 15px 20px; border-radius: 8px; margin: 12px 0; border-left: 5px solid #2563eb; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }}
+                    .title {{ font-size: 14px; color: #64748b; margin-bottom: 5px; font-weight: bold; }}
+                    .val {{ font-size: 26px; font-weight: 800; color: #0f172a; }}
+                    .delta {{ font-size: 16px; font-weight: 600; color: {'#ef4444' if db_delta < 0 else '#10b981'}; }}
+                    .delta-bit {{ font-size: 16px; font-weight: 600; color: {'#ef4444' if bit_delta < 0 else '#10b981'}; }}
+                </style></head><body>
+                    <h1>📈 통합 관제 주간 성과 요약 리포트</h1>
+                    <p style="color: #64748b; font-size: 13px;"><strong>생성 기준일:</strong> {TODAY_KOR}</p>
+                    <div class="box">
+                        <div class="title">🎯 전체 모니터링 고유 키워드</div>
+                        <div class="val">{total_kws} 개 시장 감시 중</div>
+                    </div>
+                    <div class="box" style="border-left-color: #3b82f6;">
+                        <div class="title">🚁 드론박스 1~3위 장악 성과</div>
+                        <div class="val">{total_db} 건 <span class="delta">(전일대비 {db_delta:+}건)</span></div>
+                    </div>
+                    <div class="box" style="border-left-color: #06b6d4;">
+                        <div class="title">💡 빛드론 1~3위 장악 성과</div>
+                        <div class="val">{total_bit} 건 <span class="delta-bit">(전일대비 {bit_delta:+}건)</span></div>
+                    </div>
+                    <p style="margin-top:20px; color: #64748b; font-size: 12px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+                        상세 순위 지표 및 경쟁사 단가 분석 데이터는 통합 관제 웹 시스템 본문에서 직접 확인하실 수 있습니다.
+                    </p>
+                </body></html>
+                """
+                
+                # 리포트 본문을 웹 화면(대시보드)에 그대로 시각화하여 삽입 (Iframe)
+                import streamlit.components.v1 as components
+                components.html(html_report, height=450, scrolling=True)
+                
+                c_btn1, c_btn2, c_btn3 = st.columns([1, 1, 1])
+                c_btn1.download_button(label="📑 위 리포트 원본 다운로드 (.html)", data=html_report.encode('utf-8-sig'), file_name=f"Smart_Report_{TODAY_ISO}.html", mime="text/html", use_container_width=True)
+                c_btn2.download_button(label="📥 당일 전체 데이터 (.csv)", data=csv, file_name=f"Rank_Data_{TODAY_ISO}.csv", mime="text/csv", use_container_width=True)
+                
             else:
                 st.info("현재 자사 브랜드(드론박스/빛드론) 중 3위 이내에 진출한 상품이 없습니다.")
     else: st.info("동기화 또는 수집을 먼저 진행해주세요.")
@@ -372,7 +414,6 @@ if selected_menu == "Dashboard":
 elif selected_menu == "일자별 순위 추이":
     st.title("📈 일자별 키워드 순위 추이")
     
-    hist_df = st.session_state.history_df
     if not hist_df.empty:
         hist_df['date_obj'] = pd.to_datetime(hist_df['date']).dt.date
         min_date = hist_df['date_obj'].min()
@@ -405,12 +446,25 @@ elif selected_menu == "일자별 순위 추이":
             
             if not filtered_df.empty:
                 st.markdown("---")
-                chart_type = st.radio("📈 차트 보기 방식", ["선그래프 (일자별 최고 순위 추이)", "🔲 히트맵 (한눈에 보는 순위판)"], horizontal=True)
+                chart_type = st.radio("📈 차트 보기 방식", ["선그래프 (일자별 최고 순위 추이)", "🔲 자사몰 성과 히트맵 (한눈에 보는 순위판)"], horizontal=True)
                 
-                # 동일 기준일/키워드 내에서 가장 높은 순위(min) 1개만 추출하여 지그재그(톱니바퀴) 깨짐 현상 방지
-                best_rank_df = filtered_df.groupby(['date', 'keyword'], as_index=False).agg({'rank':'min', 'mall':'first'})
-                best_rank_df['rank_display'] = best_rank_df['rank'].apply(lambda x: str(int(x)) if x <= 10 else "10+")
-                best_rank_df['rank_color'] = best_rank_df['rank'].apply(lambda x: x if x <= 10 else 11)
+                # 오류 방지: 완전히 안전하게 데이터가 정렬된 상태에서 시작
+                filtered_df = filtered_df.sort_values(['keyword', 'mall', 'title', 'date_obj'])
+                
+                if "히트맵" in chart_type:
+                    # 히트맵: (사용자 요청) 단순히 전체 최고순위 표시가 아닌, '내 쇼핑몰'이 몇 위인지 직관적으로 보여주기 위해 필터링
+                    t_db = [x.strip() for x in my_brand_1.split(',') if x.strip()]
+                    t_bit = [x.strip() for x in my_brand_2.split(',') if x.strip()]
+                    my_brand_filter = "|".join(t_db + t_bit)
+                    
+                    my_heatmap_df = filtered_df[filtered_df['mall'].str.contains(my_brand_filter, na=False, regex=True)]
+                    if not my_heatmap_df.empty:
+                        best_rank_df = my_heatmap_df.groupby(['date', 'keyword'], as_index=False).agg({'rank':'min', 'mall':'first'})
+                    else:
+                        best_rank_df = filtered_df.groupby(['date', 'keyword'], as_index=False).agg({'rank':'min', 'mall':'first'}) # Fallback
+
+                    best_rank_df['rank_display'] = best_rank_df['rank'].apply(lambda x: str(int(x)) if x <= 10 else "10+")
+                    best_rank_df['rank_color'] = best_rank_df['rank'].apply(lambda x: x if x <= 10 else 11)
 
                 if "히트맵" in chart_type:
                     # 히트맵 전용 오류 없는 기본 mark_rect 테마 설정
@@ -444,13 +498,17 @@ elif selected_menu == "일자별 순위 추이":
                     line_df['데이터_유형'] = '실제 수집 데이터'
                     
                     st.markdown("---")
-                    use_ai_pred = st.toggle("🤖 AI 추세 분석 (최근 트렌드 기반 향후 5일 예상 순위 흐름 점선 예측)")
+                    st.caption("※ 너무 많은 키워드를 동시에 선택하시면 선이 뒤엉켜(스파게티) 볼 수 없습니다. 제대로 된 분석, 특히 AI 추세선 파악을 위해서는 상단에서 **핵심 분석 대상 키워드를 1~2개로 좁혀서** 보시는 것이 좋습니다.")
+                    
+                    use_ai_pred = st.toggle("🤖 AI 추세 분석 (최근 트렌드 기반 향후 5일 예상 순위 흐름 점선 예측)", value=False)
                     if use_ai_pred:
                         import numpy as np
                         future_rows = []
+                        # 선의 뒤섞임 방지를 위해 완벽한 시간적/분류적 정렬!!
+                        line_df = line_df.sort_values(['keyword', 'title', 'mall', 'date'])
+                        
                         for (keyword, title, mall), group in line_df.groupby(['keyword', 'title', 'mall']):
                             if len(group) >= 2:
-                                group = group.sort_values('date')
                                 group_recent = group.tail(7) # 최근 7일치 트렌드 집중 반영
                                 x = np.arange(len(group_recent))
                                 y = group_recent['rank'].values
@@ -481,7 +539,10 @@ elif selected_menu == "일자별 순위 추이":
                                         '데이터_유형': 'AI 예측 트렌드'
                                     })
                         if future_rows:
-                            line_df = pd.concat([line_df, pd.DataFrame(future_rows)], ignore_index=True)
+                            pred_df = pd.DataFrame(future_rows)
+                            # 다시 한번 시간순 정렬하여 Altair에서 선이 좌우로 튀는 '스파게티 현상' 원천 봉쇄
+                            line_df = pd.concat([line_df, pred_df], ignore_index=True)
+                            line_df = line_df.sort_values(['keyword', 'title', 'mall', 'date'])
                             
                     base_chart = alt.Chart(line_df).encode(
                         x=alt.X('date:O', title='날짜', axis=alt.Axis(labelAngle=-45, labelColor="#9ca3af", titleColor="#9ca3af", domainColor="#9ca3af", tickColor="#9ca3af")),
@@ -520,7 +581,6 @@ elif selected_menu == "일자별 순위 추이":
 # --- 3. 경쟁사 집중 분석 ---
 elif selected_menu == "경쟁사 집중 분석":
     st.title("⚔️ 경쟁사 점유율 정밀 분석")
-    hist_df = st.session_state.history_df
     if hist_df.empty:
         st.warning("과거 데이터가 없습니다. 대시보드에서 '구글 시트 데이터 동기화'를 먼저 진행해주세요.")
     else:
