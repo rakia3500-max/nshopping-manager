@@ -302,34 +302,70 @@ if selected_menu == "Dashboard":
         c3.metric("빛드론 (1-3위 노출)", f"{total_bit:,}", f"{abs(bit_delta)}건 상승" if bit_delta >= 0 else f"{abs(bit_delta)}건 하락", delta_color="normal" if bit_delta >= 0 else "inverse")
         
         st.markdown("---")
-        h1, h2 = st.columns([3, 1])
+        h1, h2 = st.columns([2, 1])
         with h1:
             st.subheader("🏆 현재 1-3위 노출 키워드 상세")
         with h2:
-            # [4] 엑셀/CSV 다운로드 기능
             csv = metric_df.to_csv(index=False).encode('utf-8-sig')
-            st.download_button(label="📥 당일 전체데이터 다운로드 (.csv)", data=csv, file_name=f"Rank_Data_{TODAY_ISO}.csv", mime="text/csv", use_container_width=True)
+            
+            html_report = f"""
+            <html><head><meta charset="utf-8"><style>
+                body {{ font-family: 'Malgun Gothic', sans-serif; padding: 40px; color: #333; }}
+                h1 {{ color: #2563eb; border-bottom: 2px solid #2563eb; padding-bottom: 10px; }}
+                .box {{ background: #f3f4f6; padding: 20px; border-radius: 10px; margin: 15px 0; border-left: 5px solid #2563eb; }}
+                .val {{ font-size: 28px; font-weight: bold; color: #1e40af; }}
+            </style></head><body>
+                <h1>📈 통합 관제 주간 성과 요약 리포트</h1>
+                <p><strong>생성 기준일:</strong> {TODAY_KOR}</p>
+                <div class="box">모니터링 전체 고유 키워드 <div class="val">{total_kws} 개</div></div>
+                <div class="box">드론박스 1~3위 장악 <div class="val">{total_db}건 (전일대비 {db_delta:+}건)</div></div>
+                <div class="box">빛드론 1~3위 장악 <div class="val">{total_bit}건 (전일대비 {bit_delta:+}건)</div></div>
+                <br><p>상세 순위 지표 및 경쟁사 최신 분석 데이터는 통합 관제 웹 대시보드 시스템에서 확인하실 수 있습니다.</p>
+            </body></html>
+            """
+            
+            c_btn1, c_btn2 = st.columns(2)
+            c_btn1.download_button(label="📑 요약 리포트 (.html)", data=html_report.encode('utf-8-sig'), file_name=f"Smart_Report_{TODAY_ISO}.html", mime="text/html", use_container_width=True)
+            c_btn2.download_button(label="📥 전체 데이터 (.csv)", data=csv, file_name=f"Rank_Data_{TODAY_ISO}.csv", mime="text/csv", use_container_width=True)
             
         if not top_df.empty:
-            show_df = top_df.copy()
-            if not prev_df.empty and 'mall' in prev_df.columns and 'keyword' in prev_df.columns:
-                prev_subset = prev_df[['keyword', 'mall', 'rank']].rename(columns={'rank': 'prev_rank'})
-                show_df = pd.merge(show_df, prev_subset, on=['keyword', 'mall'], how='left')
-                show_df['순위변동'] = show_df['prev_rank'] - show_df['rank']
+            # 1. 자사 브랜드(내 브랜드 1, 2)만 식별하기 위해 정규식 패턴 생성
+            t_db = [x.strip() for x in my_brand_1.split(',') if x.strip()]
+            t_bit = [x.strip() for x in my_brand_2.split(',') if x.strip()]
+            brand_pattern = "|".join(t_db + t_bit)
+            
+            # 2. 내 브랜드만 추출
+            my_brands = top_df[top_df['mall'].str.contains(brand_pattern, na=False, regex=True)]
+            
+            if not my_brands.empty:
+                # 3. 중복 데이터(동일 키워드/쇼핑몰에 여러 데이터가 들어온 경우) 중 순위가 제일 높은 딱 1개만 추출
+                show_df = my_brands.sort_values('rank').drop_duplicates(['keyword', 'mall'])
                 
-                def format_delta(delta):
-                    if pd.isna(delta): return "-"
-                    d = int(delta)
-                    if d > 0: return f"🔺{d} 계단 상승"
-                    elif d < 0: return f"🔻{abs(d)} 계단 하락"
-                    return "-"
-                
-                show_df['순위변동'] = show_df['순위변동'].apply(format_delta)
-                st.dataframe(show_df[['keyword', 'rank', '순위변동', 'mall', 'title', 'price']], use_container_width=True)
+                if not prev_df.empty and 'mall' in prev_df.columns and 'keyword' in prev_df.columns:
+                    # 4. 비교할 과거 데이터도 중복 곱셈(Cartesian) 방지를 위해 정확히 단 1개만 추출
+                    prev_subset = prev_df[prev_df['mall'].str.contains(brand_pattern, na=False, regex=True)]
+                    prev_subset = prev_subset.sort_values('rank').drop_duplicates(['keyword', 'mall'])
+                    prev_subset = prev_subset[['keyword', 'mall', 'rank']].rename(columns={'rank': 'prev_rank'})
+                    
+                    show_df = pd.merge(show_df, prev_subset, on=['keyword', 'mall'], how='left')
+                    show_df['순위변동'] = show_df['prev_rank'] - show_df['rank']
+                    
+                    def format_delta(delta):
+                        if pd.isna(delta): return "신규 진입"
+                        d = int(delta)
+                        if d > 0: return f"🔺{d} 계단 상승"
+                        elif d < 0: return f"🔻{abs(d)} 계단 하락"
+                        return "-"
+                    
+                    show_df['순위변동'] = show_df['순위변동'].apply(format_delta)
+                    
+                    show_df = show_df.sort_values(['keyword', 'mall'])
+                    st.dataframe(show_df[['keyword', 'rank', '순위변동', 'mall', 'title', 'price']], use_container_width=True)
+                else:
+                    show_df = show_df.sort_values(['keyword', 'mall'])
+                    st.dataframe(show_df[['keyword', 'rank', 'mall', 'title', 'price']], use_container_width=True)
             else:
-                st.dataframe(show_df[['keyword', 'rank', 'mall', 'title', 'price']], use_container_width=True)
-        else:
-            st.info("현재 3위 이내에 진출한 상품이 없습니다.")
+                st.info("현재 자사 브랜드(드론박스/빛드론) 중 3위 이내에 진출한 상품이 없습니다.")
     else: st.info("동기화 또는 수집을 먼저 진행해주세요.")
 
 # --- 2. 일자별 순위 추이 ---
@@ -405,8 +441,49 @@ elif selected_menu == "일자별 순위 추이":
                     
                     # 선그래프: 동일 키워드 및 상품 내부에서 중복 수집된 데이터(광고+일반)가 혼재하여 X자로 교차하지 않도록 그룹핑
                     line_df = filtered_df.groupby(['date', 'keyword', 'title', 'mall'], as_index=False)['rank'].min()
+                    line_df['데이터_유형'] = '실제 수집 데이터'
                     
-                    chart = alt.Chart(line_df).mark_line(point=alt.OverlayMarkDef(filled=False, fill='white', size=80, strokeWidth=2), strokeWidth=3).encode(
+                    st.markdown("---")
+                    use_ai_pred = st.toggle("🤖 AI 추세 분석 (최근 트렌드 기반 향후 5일 예상 순위 흐름 점선 예측)")
+                    if use_ai_pred:
+                        import numpy as np
+                        future_rows = []
+                        for (keyword, title, mall), group in line_df.groupby(['keyword', 'title', 'mall']):
+                            if len(group) >= 2:
+                                group = group.sort_values('date')
+                                group_recent = group.tail(7) # 최근 7일치 트렌드 집중 반영
+                                x = np.arange(len(group_recent))
+                                y = group_recent['rank'].values
+                                poly = np.polyfit(x, y, 1) # 1차 선형회귀
+                                
+                                last_date = pd.to_datetime(group_recent['date'].iloc[-1])
+                                last_rank = group_recent['rank'].iloc[-1]
+                                
+                                # 점선 연결을 위한 마지막 실제 데이터 기준점 추가
+                                future_rows.append({
+                                    'date': last_date.strftime('%Y-%m-%d'),
+                                    'keyword': keyword,
+                                    'title': title,
+                                    'mall': mall,
+                                    'rank': last_rank,
+                                    '데이터_유형': 'AI 예측 트렌드'
+                                })
+                                
+                                for i in range(1, 6): # 향후 5일
+                                    fut_date = last_date + dt.timedelta(days=i)
+                                    pred_rank = poly[0] * (len(group_recent) - 1 + i) + poly[1]
+                                    future_rows.append({
+                                        'date': fut_date.strftime('%Y-%m-%d'),
+                                        'keyword': keyword,
+                                        'title': title,
+                                        'mall': mall,
+                                        'rank': max(1, min(100, round(pred_rank))),
+                                        '데이터_유형': 'AI 예측 트렌드'
+                                    })
+                        if future_rows:
+                            line_df = pd.concat([line_df, pd.DataFrame(future_rows)], ignore_index=True)
+                            
+                    base_chart = alt.Chart(line_df).encode(
                         x=alt.X('date:O', title='날짜', axis=alt.Axis(labelAngle=-45, labelColor="#9ca3af", titleColor="#9ca3af", domainColor="#9ca3af", tickColor="#9ca3af")),
                         y=alt.Y('rank:Q', scale=alt.Scale(reverse=True, domain=[10, 1]), title='상품별 순위 (1위에 가까울수록 위)', axis=alt.Axis(labelColor="#9ca3af", titleColor="#9ca3af", domainColor="#9ca3af", tickColor="#9ca3af")),
                         color=alt.Color('keyword:N', legend=alt.Legend(title="키워드 (선택된 항목)", orient="right", titleColor="#9ca3af", labelColor="#d1d5db")),
@@ -414,11 +491,16 @@ elif selected_menu == "일자별 순위 추이":
                         opacity=alt.condition(selection, alt.value(1), alt.value(0.1)),
                         tooltip=[
                             alt.Tooltip('date:N', title='날짜'), 
+                            alt.Tooltip('데이터_유형:N', title='분석 상태'), 
                             alt.Tooltip('keyword:N', title='키워드'), 
-                            alt.Tooltip('rank:Q', title='순위'), 
+                            alt.Tooltip('rank:Q', title='해당일 순위'), 
                             alt.Tooltip('mall:N', title='쇼핑몰'), 
-                            alt.Tooltip('title:N', title='상품명(마우스 호버 시 확인 가능!)')
+                            alt.Tooltip('title:N', title='상품명')
                         ]
+                    )
+                    
+                    chart = base_chart.mark_line(point=alt.OverlayMarkDef(filled=False, fill='white', size=80, strokeWidth=2), strokeWidth=3).encode(
+                        strokeDash=alt.condition(alt.datum['데이터_유형'] == 'AI 예측 트렌드', alt.value([5, 5]), alt.value([1, 0]))
                     ).properties(
                         height=500,
                         background="transparent"
@@ -473,6 +555,43 @@ elif selected_menu == "경쟁사 집중 분석":
             st.download_button(label="📥 차트 요약 데이터 다운로드 (CSV)", data=csv, file_name=f"Competitor_Data_{latest_date}.csv", mime="text/csv")
         else:
             st.info("현재 분석 대상 브랜드 중 10위 안에 진입한 상품이 없습니다.")
+            
+        # --- 3.5 경쟁사 가격 변동 X-Ray ---
+        st.markdown("---")
+        st.subheader("🕵️ 경쟁사 상품 판매가(가격) 변동 흐름(X-Ray) 추적기")
+        st.markdown("순위 하락 원인이 **'경쟁사의 단가 인하/인상 수작'** 때문인지 즉시 시각적으로 스캔합니다.")
+        
+        all_comp_kws = sorted(hist_df['keyword'].unique().tolist())
+        target_kw = st.selectbox("가격 변동을 스캔할 핵심 타겟 키워드를 하나 선택하세요", all_comp_kws)
+        
+        price_df = hist_df[(hist_df['keyword'] == target_kw) & (hist_df['price'].notnull())].copy()
+        price_df['price_num'] = pd.to_numeric(price_df['price'], errors='coerce')
+        price_df = price_df.dropna(subset=['price_num'])
+        
+        # 분석 타겟: 내 브랜드 전체 + 경쟁사 전체
+        all_brands = t_db + t_bit + t_comp
+        pattern = "|".join(all_brands)
+        price_df = price_df[price_df['mall'].str.contains(pattern, na=False, regex=True)]
+        
+        if not price_df.empty:
+            p_trend = price_df.groupby(['date', 'mall', 'title'], as_index=False)['price_num'].mean().sort_values('date')
+            
+            p_chart = alt.Chart(p_trend).mark_line(point=True, strokeWidth=3).encode(
+                x=alt.X('date:O', title='날짜', axis=alt.Axis(labelAngle=-45, labelColor="#9ca3af", titleColor="#9ca3af", domainColor="#9ca3af", tickColor="#9ca3af")),
+                y=alt.Y('price_num:Q', title='평균 판매가(원)', scale=alt.Scale(zero=False), axis=alt.Axis(labelColor="#9ca3af", titleColor="#9ca3af", domainColor="#9ca3af", tickColor="#9ca3af")),
+                color=alt.Color('mall:N', title='쇼핑몰', legend=alt.Legend(labelColor="#d1d5db", titleColor="#9ca3af")),
+                detail='title:N',
+                tooltip=[
+                    alt.Tooltip('date:N', title='날짜'),
+                    alt.Tooltip('mall:N', title='쇼핑몰'),
+                    alt.Tooltip('price_num:Q', title='평균가(원)', format=',.0f'),
+                    alt.Tooltip('title:N', title='상품명')
+                ]
+            ).properties(height=400, background="transparent").interactive()
+            
+            st.altair_chart(p_chart, use_container_width=True, theme="streamlit")
+        else:
+            st.info("해당 키워드에 대한 타겟 브랜드들의 가격 변동 데이터가 충분히 누적되지 않았습니다.")
 
 # --- 4. 틈새 키워드 발굴기 ---
 elif selected_menu == "틈새 키워드 발굴기":
