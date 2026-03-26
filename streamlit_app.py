@@ -213,8 +213,8 @@ with st.sidebar:
     st.markdown("### 🚁 Shopping Control")
     selected_menu = option_menu(
         None, 
-        ["Dashboard", "일자별 순위 추이", "경쟁사 집중 분석", "틈새 키워드 발굴기", "Run & Sync", "AI Report"], 
-        icons=['speedometer2', 'graph-up', 'bar-chart-line', 'search', 'cloud-upload', 'robot'], 
+        ["Dashboard", "일자별 순위 추이", "경쟁사 집중 분석", "틈새 키워드 발굴기", "SEO태그 생성기", "Run & Sync", "AI Report"], 
+        icons=['speedometer2', 'graph-up', 'bar-chart-line', 'search', 'tags', 'cloud-upload', 'robot'], 
         default_index=0,
         styles={
             "container": {"background-color": "transparent !important", "padding": "0!important", "border": "none"},
@@ -370,29 +370,29 @@ if selected_menu == "Dashboard":
                 
                 html_report = f"""
                 <html><head><meta charset="utf-8"><style>
-                    body {{ font-family: 'Malgun Gothic', 'Noto Sans KR', sans-serif; padding: 25px; color: #333; background-color: #ffffff; border-radius: 12px; }}
-                    h1 {{ color: #2563eb; border-bottom: 2px solid #2563eb; padding-bottom: 10px; font-size: 24px; }}
-                    .box {{ background: #f8fafc; padding: 15px 20px; border-radius: 8px; margin: 12px 0; border-left: 5px solid #2563eb; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }}
-                    .title {{ font-size: 14px; color: #64748b; margin-bottom: 5px; font-weight: bold; }}
-                    .val {{ font-size: 26px; font-weight: 800; color: #0f172a; }}
-                    .delta {{ font-size: 16px; font-weight: 600; color: {'#ef4444' if db_delta < 0 else '#10b981'}; }}
-                    .delta-bit {{ font-size: 16px; font-weight: 600; color: {'#ef4444' if bit_delta < 0 else '#10b981'}; }}
+                    body {{ font-family: 'Malgun Gothic', 'Noto Sans KR', sans-serif; padding: 25px; color: #e2e8f0; background-color: #1e1e2d; border-radius: 12px; margin: 0; }}
+                    h1 {{ color: #60a5fa; border-bottom: 2px solid #334155; padding-bottom: 10px; font-size: 24px; margin-top: 0; }}
+                    .box {{ background: #2a2a3e; padding: 15px 20px; border-radius: 8px; margin: 12px 0; border-left: 5px solid #3b82f6; box-shadow: 0 4px 6px rgba(0,0,0,0.3); }}
+                    .title {{ font-size: 14px; color: #94a3b8; margin-bottom: 5px; font-weight: bold; }}
+                    .val {{ font-size: 26px; font-weight: 800; color: #f8fafc; }}
+                    .delta {{ font-size: 16px; font-weight: 600; color: {'#f87171' if db_delta < 0 else '#34d399'}; }}
+                    .delta-bit {{ font-size: 16px; font-weight: 600; color: {'#f87171' if bit_delta < 0 else '#34d399'}; }}
                 </style></head><body>
                     <h1>📈 통합 관제 주간 성과 요약 리포트</h1>
-                    <p style="color: #64748b; font-size: 13px;"><strong>생성 기준일:</strong> {TODAY_KOR}</p>
+                    <p style="color: #94a3b8; font-size: 13px;"><strong>생성 기준일:</strong> {TODAY_KOR}</p>
                     <div class="box">
                         <div class="title">🎯 전체 모니터링 고유 키워드</div>
                         <div class="val">{total_kws} 개 시장 감시 중</div>
                     </div>
-                    <div class="box" style="border-left-color: #3b82f6;">
+                    <div class="box" style="border-left-color: #60a5fa;">
                         <div class="title">🚁 드론박스 1~3위 장악 성과</div>
                         <div class="val">{total_db} 건 <span class="delta">(전일대비 {db_delta:+}건)</span></div>
                     </div>
-                    <div class="box" style="border-left-color: #06b6d4;">
+                    <div class="box" style="border-left-color: #22d3ee;">
                         <div class="title">💡 빛드론 1~3위 장악 성과</div>
                         <div class="val">{total_bit} 건 <span class="delta-bit">(전일대비 {bit_delta:+}건)</span></div>
                     </div>
-                    <p style="margin-top:20px; color: #64748b; font-size: 12px; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+                    <p style="margin-top:20px; color: #64748b; font-size: 12px; border-top: 1px solid #334155; padding-top: 10px;">
                         상세 순위 지표 및 경쟁사 단가 분석 데이터는 통합 관제 웹 시스템 본문에서 직접 확인하실 수 있습니다.
                     </p>
                 </body></html>
@@ -625,7 +625,9 @@ elif selected_menu == "경쟁사 집중 분석":
         target_kw = st.selectbox("가격 변동을 스캔할 핵심 타겟 키워드를 하나 선택하세요", all_comp_kws)
         
         price_df = hist_df[(hist_df['keyword'] == target_kw) & (hist_df['price'].notnull())].copy()
-        price_df['price_num'] = pd.to_numeric(price_df['price'], errors='coerce')
+        # 가격 문자에 포함된 콤마(,)나 '원' 등의 한글/특수기호를 전부 제거 후 순수 숫자로 변환
+        price_df['price_clean'] = price_df['price'].astype(str).str.replace(r'[^0-9]', '', regex=True)
+        price_df['price_num'] = pd.to_numeric(price_df['price_clean'], errors='coerce')
         price_df = price_df.dropna(subset=['price_num'])
         
         # 분석 타겟: 내 브랜드 전체 + 경쟁사 전체
@@ -710,7 +712,109 @@ elif selected_menu == "틈새 키워드 발굴기":
                 except Exception as e:
                     st.error(f"API 권한/통신 오류: {str(e)}\n\nAPI 키를 설정했는지, IP차단을 당했는지 확인해주세요.")
 
-# --- 5. Run & Sync ---
+# --- 5. SEO & GEO 태그 생성기 ---
+elif selected_menu == "SEO태그 생성기":
+    st.title("🚀 제품 SEO & GEO 메타태그 생성기")
+    st.markdown("네이버 쇼핑 1위 제품을 벤치마킹하고, 최신 AI 검색 엔진(GEO) 및 SEO 알고리즘에 맞춘 완벽한 상품 메타태그를 원클릭으로 구워냅니다.")
+    
+    col1, col2 = st.columns([1, 1])
+    with col1:
+        target_kw = st.selectbox("🎯 타겟 키워드 (1위 벤치마킹 대상)", options=sorted(hist_df['keyword'].dropna().unique().tolist()) if not hist_df.empty else ["기본키워드"])
+        target_product = st.text_input("📦 내 상품명 (선택)", placeholder="예: DJI 네오 2 플라이모어 콤보")
+        mall_name = st.text_input("🏢 우리 쇼핑몰명 (Author)", value="드론박스")
+        
+    with col2:
+        usps = st.text_area("✨ 특장점 필살기 (USPs)", placeholder="가벼운 무게, 전방 LiDAR 센서 등 어필할 특징을 적어주세요.", height=110)
+        
+    if st.button("🌟 1등 벤치마킹 SEO & GEO 문구 자동 생성", use_container_width=True, type="primary"):
+        if not gemini_key:
+            st.error("좌측 사이드바 '환경 변수 설정'에서 Gemini API Key를 입력해주세요.")
+        else:
+            with st.spinner("최고의 성과를 위한 SEO & GEO 데이터를 생성하는 중... (약 5~10초)"):
+                # 1. 1위 데이터 벤치마킹
+                top1_title = "조회된 1위 데이터 없음"
+                if not hist_df.empty:
+                    top1_df = hist_df[(hist_df['keyword'] == target_kw) & (hist_df['rank'] == 1)]
+                    if not top1_df.empty:
+                        latest_top1 = top1_df.sort_values('date', ascending=False).iloc[0]
+                        top1_title = f"{latest_top1['mall']}: {latest_top1['title']}"
+                        
+                # 2. 제미나이 프롬프트 생성
+                prompt = f"""
+당신은 네이버 쇼핑 및 구글 SEO/GEO(Generative Engine Optimization) 최고 등급의 마케터입니다.
+사용자의 상품이 검색엔진(네이버/구글)과 AI 챗봇(ChatGPT, Gemini 등)에서 최상단에 노출되도록 아래 정해진 스마트스토어 양식에 맞춰 메타태그 데이터를 생성하세요.
+
+[입력 데이터]
+- 타겟 검색 키워드: {target_kw}
+- 내 상품명: {target_product if target_product else '(입력안됨. 키워드를 바탕으로 최적화된 상품명 생성할 것)'}
+- 우리 쇼핑몰명: {mall_name}
+- 핵심 특장점: {usps if usps else '없음'}
+- 🎯 현재 이 키워드의 실제 1등 상품 제목 (벤치마킹 필수): {top1_title}
+
+[요청 사항]
+1. 1등 상품의 제목을 철저히 분석/벤치마킹하여, 이길 수 있는 시선을 끄는 강력한 제목(Title)을 제안하세요. (내 상품명이 주어졌다면 다듬고, 안 주어졌다면 새로 지어주세요)
+2. Description은 1~2문장의 매력적이고 자연스러운 세일즈/소개글이어야 합니다. AI 챗봇이 사용자 문답에서 상품을 추천해줄 때 쓰기 가장 완벽한 구어체/설명형 형태(GEO 특화)로 작성하세요.
+3. Keywords (메타태그 키워드)는 특수기호 없이 콤마(,)로만 구분된 15개의 핫한 키워드 + GEO용 일상 언어 연관 단어.
+4. 속성 정보: 짧은 스펙이나 특성을 캐럿(^) 기호로 이어붙이세요. 시작과 끝에는 캐럿이 절대 없어야 합니다. 꼭 500자 이하로 제한하세요. (ex: 135g초경량^전방LiDAR^빠른배송)
+5. 검색 태그: 가장 클릭률을 높일 타겟팅 키워드를 수직선(|)으로 이어붙이세요. 시작/끝에 수직선이 없어야 합니다. 반드시 **최대 10개**만 작성. 공백 지양. (ex: {target_kw.replace(' ', '')}|입문용드론|가성비촬영장비)
+
+결과는 다음 형식을 **정확하고 완벽하게** 지켜서 출력하세요. 다른 잡담이나 마크다운(```) 블록은 절대 금지합니다.
+
+Title: (추천 타이틀 내용)
+Author: {mall_name}
+Description: (상품 설명문 내용)
+Keywords: (콤마로 구분된 15개 키워드)
+Attributes: (캐럿으로 구분된 속성들)
+SearchTags: (수직선으로 구분된 10개 태그)
+"""
+                try:
+                    genai.configure(api_key=gemini_key)
+                    models_to_try = ['gemini-2.5-flash', 'gemini-2.5-pro', 'gemini-2.0-flash', 'gemini-1.5-flash', 'gemini-1.5-pro']
+                    response_text = ""
+                    for m_name in models_to_try:
+                        try:
+                            model = genai.GenerativeModel(m_name)
+                            response = model.generate_content(prompt)
+                            response_text = response.text
+                            if response_text: break
+                        except Exception:
+                            continue
+                            
+                    if not response_text:
+                        st.error("API 응답이 없거나 모델 로드에 실패했습니다. 키를 확인하세요.")
+                    else:
+                        st.success("✨ 1위 벤치마킹 완벽 반영! 압도적인 SEO & GEO 태그 생성이 완료되었습니다!")
+                        
+                        # 파싱
+                        lines = response_text.strip().split('\n')
+                        res_dict = {}
+                        for line in lines:
+                            if ":" in line:
+                                k, v = line.split(":", 1)
+                                res_dict[k.strip()] = v.strip()
+                                
+                        # UI 렌더링
+                        st.markdown("<br>", unsafe_allow_html=True)
+                        st.markdown("### 📋 상품 개별 SEO 태그 입력용 결과")
+                        
+                        def render_row(label, value):
+                            c1, c2 = st.columns([1, 4])
+                            c1.markdown(f"**{label}**")
+                            c2.code(value, language='text')
+                            st.divider()
+                            
+                        render_row("타이틀 (Title)", res_dict.get('Title', '생성 실패'))
+                        render_row("메타태그 작성자 (Author)", res_dict.get('Author', mall_name))
+                        render_row("메타태그 설명 (Description)", res_dict.get('Description', '생성 실패'))
+                        render_row("메타태그 키워드 (Keywords)", res_dict.get('Keywords', '생성 실패'))
+                        render_row("속성 정보 (기호: ^)", res_dict.get('Attributes', '생성 실패'))
+                        render_row("검색 태그 (기호: |)", res_dict.get('SearchTags', '생성 실패'))
+                        
+                        st.info("💡 위 결과 우측 상단의 [복사] 아이콘을 클릭하여, 쇼핑몰의 [SEO 태그 설정] 및 [쇼핑 정보 등록] 항목에 바로 붙여넣으세요.")
+                except Exception as e:
+                    st.error(f"생성 중 오류: {e}")
+
+# --- 6. Run & Sync ---
 elif selected_menu == "Run & Sync":
     st.title("🎯 실시간 순위 수집")
     kws_text = st.text_area("키워드 입력 (줄바꿈 구분)", height=200, value=get_secret("DEFAULT_KEYWORDS", ""))
