@@ -4,3 +4,4 @@ requests
 xlsxwriter
 google-generativeai
 streamlit-option-menu
+altair
