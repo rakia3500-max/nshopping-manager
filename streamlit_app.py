@@ -285,20 +285,21 @@ if selected_menu == "Dashboard":
                 st.balloons()
         
         total_kws = metric_df['keyword'].nunique()
-        total_db = len(top_df[top_df['mall'].str.contains('드론박스', na=False)])
-        total_bit = len(top_df[top_df['mall'].str.contains('빛드론', na=False)])
+        # 단순히 줄(row) 수를 세지 않고, 1~3위에 노출된 '고유 키워드 개수'를 세도록 수정하여 다중 상품/중복 수집으로 인한 수치 뻥튀기 방지
+        total_db = top_df[top_df['mall'].str.contains('드론박스', na=False)]['keyword'].nunique()
+        total_bit = top_df[top_df['mall'].str.contains('빛드론', na=False)]['keyword'].nunique()
         
         db_delta = 0
         bit_delta = 0
         if not prev_df.empty:
             prev_top = prev_df[prev_df['rank'] <= 3]
-            db_delta = total_db - len(prev_top[prev_top['mall'].str.contains('드론박스', na=False)])
-            bit_delta = total_bit - len(prev_top[prev_top['mall'].str.contains('빛드론', na=False)])
+            db_delta = total_db - prev_top[prev_top['mall'].str.contains('드론박스', na=False)]['keyword'].nunique()
+            bit_delta = total_bit - prev_top[prev_top['mall'].str.contains('빛드론', na=False)]['keyword'].nunique()
             
         c1, c2, c3 = st.columns(3)
-        c1.metric("전체 모니터링 키워드", f"{total_kws} 개", "모니터링 중")
-        c2.metric("드론박스 (1-3위 노출)", f"{total_db} 건", f"{abs(db_delta)}건 상승" if db_delta >= 0 else f"{abs(db_delta)}건 하락", delta_color="normal" if db_delta >= 0 else "inverse")
-        c3.metric("빛드론 (1-3위 노출)", f"{total_bit} 건", f"{abs(bit_delta)}건 상승" if bit_delta >= 0 else f"{abs(bit_delta)}건 하락", delta_color="normal" if bit_delta >= 0 else "inverse")
+        c1.metric("전체 모니터링 키워드", f"{total_kws:,}", "모니터링 중")
+        c2.metric("드론박스 (1-3위 노출)", f"{total_db:,}", f"{abs(db_delta)}건 상승" if db_delta >= 0 else f"{abs(db_delta)}건 하락", delta_color="normal" if db_delta >= 0 else "inverse")
+        c3.metric("빛드론 (1-3위 노출)", f"{total_bit:,}", f"{abs(bit_delta)}건 상승" if bit_delta >= 0 else f"{abs(bit_delta)}건 하락", delta_color="normal" if bit_delta >= 0 else "inverse")
         
         st.markdown("---")
         h1, h2 = st.columns([3, 1])
@@ -378,12 +379,18 @@ elif selected_menu == "일자별 순위 추이":
                 if "히트맵" in chart_type:
                     # 히트맵 전용 오류 없는 기본 mark_rect 테마 설정
                     base = alt.Chart(best_rank_df).encode(
-                        x=alt.X('date:T', title='날짜', axis=alt.Axis(format="%m-%d", labelColor="#9ca3af", titleColor="#9ca3af", domainColor="#9ca3af", tickColor="#9ca3af")),
+                        x=alt.X('date:O', title='날짜', axis=alt.Axis(labelAngle=-45, labelColor="#9ca3af", titleColor="#9ca3af", domainColor="#9ca3af", tickColor="#9ca3af")),
                         y=alt.Y('keyword:N', title='키워드', axis=alt.Axis(labelColor="#9ca3af", titleColor="#9ca3af", domainColor="#9ca3af", tickColor="#9ca3af"))
                     )
                     rects = base.mark_rect().encode(
-                        color=alt.Color('rank_color:Q', scale=alt.Scale(reverse=True, scheme='blues', domain=[10, 1]), legend=None),
-                        tooltip=['date', 'keyword', 'rank', 'mall']
+                        # 1등은 형광 시안, 5등 이내는 파랑, 10등 이내는 네이비, 그 밖은 배경색으로 처리하여 가시성 극대화!
+                        color=alt.Color('rank_color:Q', scale=alt.Scale(domain=[1, 3, 5, 10, 11], range=['#00e5ff', '#0ea5e9', '#3b82f6', '#1e3a8a', '#1e1e2d']), legend=None),
+                        tooltip=[
+                            alt.Tooltip('date:N', title='날짜'),
+                            alt.Tooltip('keyword:N', title='키워드'),
+                            alt.Tooltip('rank:Q', title='최고 순위'),
+                            alt.Tooltip('mall:N', title='쇼핑몰')
+                        ]
                     )
                     text = base.mark_text(baseline='middle', color='#ffffff', fontWeight='bold').encode(
                         text='rank_display:N'
@@ -396,14 +403,22 @@ elif selected_menu == "일자별 순위 추이":
                     except AttributeError:
                         selection = alt.selection_multi(fields=['keyword'], bind='legend')
                     
-                    # 선그래프: 동일 키워드 내 여러 상품이 있더라도 상품(title)을 기준으로 선을 독립적으로 분리(detail)하여 지그재그와 강제 일원화 깨짐 방지
-                    chart = alt.Chart(filtered_df).mark_line(point=True, strokeWidth=3).encode(
-                        x=alt.X('date:T', title='날짜', axis=alt.Axis(grid=False, format="%m-%d", labelColor="#9ca3af", titleColor="#9ca3af", domainColor="#9ca3af", tickColor="#9ca3af")),
+                    # 선그래프: 동일 키워드 및 상품 내부에서 중복 수집된 데이터(광고+일반)가 혼재하여 X자로 교차하지 않도록 그룹핑
+                    line_df = filtered_df.groupby(['date', 'keyword', 'title', 'mall'], as_index=False)['rank'].min()
+                    
+                    chart = alt.Chart(line_df).mark_line(point=alt.OverlayMarkDef(filled=False, fill='white', size=80, strokeWidth=2), strokeWidth=3).encode(
+                        x=alt.X('date:O', title='날짜', axis=alt.Axis(labelAngle=-45, labelColor="#9ca3af", titleColor="#9ca3af", domainColor="#9ca3af", tickColor="#9ca3af")),
                         y=alt.Y('rank:Q', scale=alt.Scale(reverse=True, domain=[10, 1]), title='상품별 순위 (1위에 가까울수록 위)', axis=alt.Axis(labelColor="#9ca3af", titleColor="#9ca3af", domainColor="#9ca3af", tickColor="#9ca3af")),
                         color=alt.Color('keyword:N', legend=alt.Legend(title="키워드 (선택된 항목)", orient="right", titleColor="#9ca3af", labelColor="#d1d5db")),
-                        detail='title:N', # 상품 고유 구분자
+                        detail='title:N', # 상품 고유 구분자로 선을 분리
                         opacity=alt.condition(selection, alt.value(1), alt.value(0.1)),
-                        tooltip=['date', 'keyword', 'rank', 'mall', 'title']
+                        tooltip=[
+                            alt.Tooltip('date:N', title='날짜'), 
+                            alt.Tooltip('keyword:N', title='키워드'), 
+                            alt.Tooltip('rank:Q', title='순위'), 
+                            alt.Tooltip('mall:N', title='쇼핑몰'), 
+                            alt.Tooltip('title:N', title='상품명(마우스 호버 시 확인 가능!)')
+                        ]
                     ).properties(
                         height=500,
                         background="transparent"
@@ -438,14 +453,15 @@ elif selected_menu == "경쟁사 집중 분석":
         # 브랜드별 10위 내 진입 횟수 (부분 일치)
         comp_count = {}
         for brand in t_db + t_bit + t_comp:
-            count = len(target_df[(target_df['mall'].str.contains(brand, na=False)) & (target_df['rank'] <= 10)])
+            # 중복 데이터 방지를 위해 고유 키워드 갯수(nunique)로 카운트
+            count = target_df[(target_df['mall'].str.contains(brand, na=False)) & (target_df['rank'] <= 10)]['keyword'].nunique()
             comp_count[brand] = count
             
         chart_df = pd.DataFrame(list(comp_count.items()), columns=["추적 대상 브랜드", "10위 이내 노출 수"])
         chart_df = chart_df[chart_df["10위 이내 노출 수"] > 0].sort_values("10위 이내 노출 수", ascending=False)
         
         if not chart_df.empty:
-            bar_chart = alt.Chart(chart_df).mark_bar(cornerRadiusTopLeft=8, cornerRadiusTopRight=8, color="#8b5cf6").encode(
+            bar_chart = alt.Chart(chart_df).mark_bar(cornerRadiusTopLeft=8, cornerRadiusTopRight=8, color="#3b82f6").encode(
                 x=alt.X('추적 대상 브랜드:N', sort='-y', axis=alt.Axis(labelAngle=0, title='브랜드')),
                 y=alt.Y('10위 이내 노출 수:Q', title='노출된 키워드 개수 (10위 이내)'),
                 tooltip=['추적 대상 브랜드', '10위 이내 노출 수']
