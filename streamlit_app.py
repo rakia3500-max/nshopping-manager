@@ -25,13 +25,112 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 st.set_page_config(page_title="쇼핑 통합 관제", layout="wide")
 
+# --- UI Custom CSS (Modern Floating Card Style) ---
+st.markdown("""
+<style>
+/* 폰트 및 배경화면 (Modern SaaS 스타일) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 전체 느낌 (연한 배경) */
+div[data-testid="stAppViewContainer"] {
+    background-color: #f3f4f6;
+    font-family: 'Poppins', 'NanumSquareRound', sans-serif;
+}
+
+/* 사이드바 스타일 (사이드바 전체를 회색으로 일체화) */
+section[data-testid="stSidebar"] {
+    background-color: #f0f2f6 !important;
+    background-image: none !important;
+    border-right: none;
+}
+/* 사이드바 텍스트 기본 톤 */
+section[data-testid="stSidebar"] p, section[data-testid="stSidebar"] div {
+    color: #4b5563;
+}
+section[data-testid="stSidebar"] h1, section[data-testid="stSidebar"] h2, section[data-testid="stSidebar"] h3 {
+    color: #111827 !important;
+    font-weight: 700;
+}
+
+/* 상단 헤더 숨기기 */
+header[data-testid="stHeader"] {
+    background-color: transparent !important;
+}
+
+/* 메인 여백 */
+.block-container {
+    padding-top: 3rem;
+}
+
+/* Metric (상단 요약 박스 - 둥근 부드러운 카드 느낌) */
+[data-testid="stMetric"] {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    border: none;
+    margin-bottom: 1rem;
+}
+[data-testid="stMetricValue"] {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #111827;
+}
+[data-testid="stMetricLabel"] {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #6b7280;
+    text-transform: none;
+}
+
+/* 컨텐츠 내 소제목(H1, H2, H3 등) 스타일 */
+h1, h2, h3, h4, h5 {
+    color: #111827;
+    font-family: 'Poppins', 'NanumSquareRound', sans-serif;
+    font-weight: 700;
+}
+
+/* 버튼 스타일 (둥근 파란색 캡슐 Button) */
+div.stButton > button {
+    background-color: #3b82f6; /* 소프트 블루 */
+    color: white !important;
+    border-radius: 20px; /* 캡슐 형태 */
+    font-weight: 600;
+    border: none;
+    box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.3);
+    transition: all 0.2s;
+}
+div.stButton > button:hover {
+    background-color: #2563eb;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px -1px rgba(59, 130, 246, 0.4);
+}
+
+/* Expander(아코디언) 제목 */
+.streamlit-expanderHeader {
+    font-weight: 600;
+    color: #374151;
+}
+</style>
+""", unsafe_allow_html=True)
+
 # --- KST 시간 설정 ---
 NOW_KST = dt.datetime.utcnow() + dt.timedelta(hours=9)
 TODAY_ISO = NOW_KST.strftime("%Y-%m-%d")
 TODAY_KOR = NOW_KST.strftime("%Y년 %m월 %d일")
 
 def get_secret(key, default=""):
-    return st.secrets.get(key, default)
+    try:
+        return st.secrets.get(key, default)
+    except Exception:
+        return default
 
 HTTP_HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
@@ -103,8 +202,33 @@ def fetch_history_from_gas(url):
 # --- 사이드바 메뉴 ---
 with st.sidebar:
     st.markdown("### 🚁 Shopping Control")
-    selected_menu = option_menu("메뉴", ["Dashboard", "일자별 순위 추이", "Run & Sync", "AI Report"], 
-                               icons=['speedometer2', 'graph-up', 'cloud-upload', 'robot'], default_index=0)
+    selected_menu = option_menu(
+        None, 
+        ["Dashboard", "일자별 순위 추이", "경쟁사 집중 분석", "틈새 키워드 발굴기", "Run & Sync", "AI Report"], 
+        icons=['speedometer2', 'graph-up', 'bar-chart-line', 'search', 'cloud-upload', 'robot'], 
+        default_index=0,
+        styles={
+            "container": {"background-color": "#f0f2f6 !important", "padding": "0!important", "border": "none"},
+            "icon": {"font-size": "1.2rem"}, 
+            "nav-link": {
+                "background-color": "#ffffff",
+                "color": "#4b5563",
+                "font-size": "0.95rem", 
+                "text-align": "left", 
+                "margin": "10px 0", 
+                "padding": "12px 18px",
+                "border-radius": "30px",
+                "box-shadow": "0 2px 6px rgba(0,0,0,0.06)",
+                "--hover-color": "#f8f9fa"
+            },
+            "nav-link-selected": {
+                "background-color": "#3b82f6", 
+                "color": "#ffffff", 
+                "font-weight": "600",
+                "box-shadow": "0 4px 8px rgba(59, 130, 246, 0.35)"
+            },
+        }
+    )
     
     with st.expander("🔑 환경 변수 설정", expanded=False):
         gemini_key = st.text_input("Gemini API Key", value=get_secret("GEMINI_API_KEY"), type="password")
@@ -135,17 +259,65 @@ if selected_menu == "Dashboard":
     metric_df = st.session_state.crawled_df if not st.session_state.crawled_df.empty else (hist_df[hist_df['date'] == hist_df['date'].max()] if not hist_df.empty else pd.DataFrame())
     
     if not metric_df.empty:
+        # [1, 5] Delta를 위한 이전 날짜 데이터 추출 및 축하 이펙트
+        prev_df = pd.DataFrame()
+        if not hist_df.empty:
+            dates = sorted(hist_df['date'].dropna().unique().tolist(), reverse=True)
+            today_date = dates[0] if dates else TODAY_ISO
+            if len(dates) > 1:
+                prev_date = dates[1]
+                prev_df = hist_df[hist_df['date'] == prev_date]
+        
         top_df = metric_df[metric_df['rank'] <= 3]
         
+        # 축하 이펙트 (1-3위에 자사 브랜드가 있으면)
+        if not top_df.empty and ('is_db' in top_df.columns or 'is_bit' in top_df.columns):
+            if any(top_df['mall'].str.contains('빛드론|드론박스', na=False)):
+                st.balloons()
+        
+        total_kws = metric_df['keyword'].nunique()
+        total_db = len(top_df[top_df['mall'].str.contains('드론박스', na=False)])
+        total_bit = len(top_df[top_df['mall'].str.contains('빛드론', na=False)])
+        
+        db_delta = 0
+        bit_delta = 0
+        if not prev_df.empty:
+            prev_top = prev_df[prev_df['rank'] <= 3]
+            db_delta = total_db - len(prev_top[prev_top['mall'].str.contains('드론박스', na=False)])
+            bit_delta = total_bit - len(prev_top[prev_top['mall'].str.contains('빛드론', na=False)])
+            
         c1, c2, c3 = st.columns(3)
-        c1.metric("전체 키워드", f"{metric_df['keyword'].nunique()} 개")
-        c2.metric("드론박스 (1-3위)", f"{len(top_df[top_df['mall'].str.contains('드론박스', na=False)])} 건")
-        c3.metric("빛드론 (1-3위)", f"{len(top_df[top_df['mall'].str.contains('빛드론', na=False)])} 건")
+        c1.metric("전체 모니터링 키워드", f"{total_kws} 개", "모니터링 중")
+        c2.metric("드론박스 (1-3위 노출)", f"{total_db} 건", f"{abs(db_delta)}건 상승" if db_delta >= 0 else f"{abs(db_delta)}건 하락", delta_color="normal" if db_delta >= 0 else "inverse")
+        c3.metric("빛드론 (1-3위 노출)", f"{total_bit} 건", f"{abs(bit_delta)}건 상승" if bit_delta >= 0 else f"{abs(bit_delta)}건 하락", delta_color="normal" if bit_delta >= 0 else "inverse")
         
         st.markdown("---")
-        st.subheader("🏆 현재 1-3위 노출 키워드 상세")
+        h1, h2 = st.columns([3, 1])
+        with h1:
+            st.subheader("🏆 현재 1-3위 노출 키워드 상세")
+        with h2:
+            # [4] 엑셀/CSV 다운로드 기능
+            csv = metric_df.to_csv(index=False).encode('utf-8-sig')
+            st.download_button(label="📥 당일 전체데이터 다운로드 (.csv)", data=csv, file_name=f"Rank_Data_{TODAY_ISO}.csv", mime="text/csv", use_container_width=True)
+            
         if not top_df.empty:
-            st.dataframe(top_df[['keyword', 'rank', 'mall', 'title', 'price']], use_container_width=True)
+            show_df = top_df.copy()
+            if not prev_df.empty and 'mall' in prev_df.columns and 'keyword' in prev_df.columns:
+                prev_subset = prev_df[['keyword', 'mall', 'rank']].rename(columns={'rank': 'prev_rank'})
+                show_df = pd.merge(show_df, prev_subset, on=['keyword', 'mall'], how='left')
+                show_df['순위변동'] = show_df['prev_rank'] - show_df['rank']
+                
+                def format_delta(delta):
+                    if pd.isna(delta): return "-"
+                    d = int(delta)
+                    if d > 0: return f"🔺{d} 계단 상승"
+                    elif d < 0: return f"🔻{abs(d)} 계단 하락"
+                    return "-"
+                
+                show_df['순위변동'] = show_df['순위변동'].apply(format_delta)
+                st.dataframe(show_df[['keyword', 'rank', '순위변동', 'mall', 'title', 'price']], use_container_width=True)
+            else:
+                st.dataframe(show_df[['keyword', 'rank', 'mall', 'title', 'price']], use_container_width=True)
         else:
             st.info("현재 3위 이내에 진출한 상품이 없습니다.")
     else: st.info("동기화 또는 수집을 먼저 진행해주세요.")
@@ -184,12 +356,21 @@ elif selected_menu == "일자별 순위 추이":
                 filtered_df = filtered_df[filtered_df['keyword'].isin(selected_kws)]
             
             if not filtered_df.empty:
-                chart = alt.Chart(filtered_df).mark_line(point=True, strokeWidth=2).encode(
-                    x=alt.X('date:T', title='날짜'),
+                # 차트 개선: 범례 클릭 시 해당 키워드만 강조(Highlight)되도록 하여 난잡함 완화
+                selection = alt.selection_point(fields=['keyword'], bind='legend')
+                
+                chart = alt.Chart(filtered_df).mark_line(point=True, strokeWidth=3).encode(
+                    x=alt.X('date:T', title='날짜', axis=alt.Axis(grid=False, format="%m-%d")),
                     y=alt.Y('rank:Q', scale=alt.Scale(reverse=True, domain=[10, 1]), title='순위 (1위에 가까울수록 위)'),
-                    color='keyword:N',
+                    color=alt.Color('keyword:N', legend=alt.Legend(title="키워드 (클릭하여 강조/끄기)", orient="right")),
+                    opacity=alt.condition(selection, alt.value(1), alt.value(0.1)),
                     tooltip=['date', 'keyword', 'rank', 'mall']
-                ).properties(height=600).interactive()
+                ).properties(
+                    height=600
+                ).add_params(
+                    selection
+                ).interactive()
+                
                 st.altair_chart(chart, use_container_width=True)
             else:
                 st.warning("선택한 기간/키워드에 해당하는 데이터가 없습니다.")
@@ -199,7 +380,97 @@ elif selected_menu == "일자별 순위 추이":
     else: 
         st.warning("과거 데이터가 없습니다. 대시보드에서 '데이터 동기화'를 먼저 진행해주세요.")
 
-# --- 3. Run & Sync ---
+# --- 3. 경쟁사 집중 분석 ---
+elif selected_menu == "경쟁사 집중 분석":
+    st.title("⚔️ 경쟁사 점유율 정밀 분석")
+    hist_df = st.session_state.history_df
+    if hist_df.empty:
+        st.warning("과거 데이터가 없습니다. 대시보드에서 '구글 시트 데이터 동기화'를 먼저 진행해주세요.")
+    else:
+        latest_date = sorted(hist_df['date'].dropna().unique().tolist(), reverse=True)[0]
+        st.markdown(f"**기준일:** {latest_date} (최근 수집일 기준 상위 10위권 진입 노출 횟수 집중 분석)")
+        
+        target_df = hist_df[hist_df['date'] == latest_date]
+        t_db = [x.strip() for x in my_brand_1.split(',') if x.strip()]
+        t_bit = [x.strip() for x in my_brand_2.split(',') if x.strip()]
+        t_comp = [x.strip() for x in competitors.split(',') if x.strip()]
+        
+        # 브랜드별 10위 내 진입 횟수 (부분 일치)
+        comp_count = {}
+        for brand in t_db + t_bit + t_comp:
+            count = len(target_df[(target_df['mall'].str.contains(brand, na=False)) & (target_df['rank'] <= 10)])
+            comp_count[brand] = count
+            
+        chart_df = pd.DataFrame(list(comp_count.items()), columns=["추적 대상 브랜드", "10위 이내 노출 수"])
+        chart_df = chart_df[chart_df["10위 이내 노출 수"] > 0].sort_values("10위 이내 노출 수", ascending=False)
+        
+        if not chart_df.empty:
+            bar_chart = alt.Chart(chart_df).mark_bar(cornerRadiusTopLeft=8, cornerRadiusTopRight=8, color="#8b5cf6").encode(
+                x=alt.X('추적 대상 브랜드:N', sort='-y', axis=alt.Axis(labelAngle=0, title='브랜드')),
+                y=alt.Y('10위 이내 노출 수:Q', title='노출된 키워드 개수 (10위 이내)'),
+                tooltip=['추적 대상 브랜드', '10위 이내 노출 수']
+            ).properties(height=500)
+            st.altair_chart(bar_chart, use_container_width=True)
+            
+            # 표 다운로드
+            csv = chart_df.to_csv(index=False).encode('utf-8-sig')
+            st.download_button(label="📥 차트 요약 데이터 다운로드 (CSV)", data=csv, file_name=f"Competitor_Data_{latest_date}.csv", mime="text/csv")
+        else:
+            st.info("현재 분석 대상 브랜드 중 10위 안에 진입한 상품이 없습니다.")
+
+# --- 4. 틈새 키워드 발굴기 ---
+elif selected_menu == "틈새 키워드 발굴기":
+    st.title("💎 틈새 꿀 키워드 발굴기")
+    st.markdown("네이버 광고 API를 활용하여, 기준 키워드와 연관성 높으면서 검색량이 빵빵한 **숨은 잠재 수익 키워드**를 탐색합니다.")
+    
+    col1, col2 = st.columns([3, 1])
+    with col1:
+        base_kw = st.text_input("💡 탐색 기준 장난감/단어 입력 (예: 드론, 미니드론 등)", value="미니드론")
+    with col2:
+        st.markdown("<br>", unsafe_allow_html=True)
+        search_btn = st.button("🚀 추천 키워드 탐색 발사", use_container_width=True)
+        
+    if search_btn:
+        if not (ad_api_key and ad_sec_key and ad_cus_id):
+            st.error("좌측 사이드바 '환경 변수 설정'을 열고 네이버 광고 API 정보를 정확히 3개 모두 입력해주세요.")
+        else:
+            with st.spinner(f"'{base_kw}' 중심 연관 키워드 AI 파싱 중... (약 2~4초 소요)"):
+                try:
+                    ts = str(int(time.time() * 1000))
+                    sig = base64.b64encode(hmac.new(ad_sec_key.encode(), f"{ts}.GET./keywordstool".encode(), hashlib.sha256).digest()).decode()
+                    headers = {**HTTP_HEADERS, "X-Timestamp": ts, "X-API-KEY": ad_api_key, "X-Customer": ad_cus_id, "X-Signature": sig}
+                    
+                    res = requests.get(f"https://api.naver.com/keywordstool?hintKeywords={base_kw.replace(' ', '')}&showDetail=1", headers=headers, timeout=10)
+                    res.raise_for_status()
+                    
+                    kw_list = res.json().get('keywordList', [])
+                    results = []
+                    for i in kw_list[:300]: # 최대 300개 연관 분석
+                        v_pc = str(i['monthlyPcQcCnt']).replace("<", "10")
+                        v_mo = str(i['monthlyMobileQcCnt']).replace("<", "10")
+                        sum_v = int(v_pc) + int(v_mo)
+                        
+                        if sum_v > 50: # 월 50건 이상 짜리만 선별
+                            results.append({
+                                "연관 추천 타겟 키워드": i['relKeyword'],
+                                "월별 통합 잠재 고객 수 (검색량)": sum_v,
+                                "기존 평균 클릭률": float(str(i['monthlyAvePcClkCnt']).replace("<", "0")) + float(str(i['monthlyAveMobileClkCnt']).replace("<", "0"))
+                            })
+                            
+                    if results:
+                        kw_df = pd.DataFrame(results).sort_values("월별 통합 잠재 고객 수 (검색량)", ascending=False).head(100)
+                        st.success(f"탐색 완료! 네이버 데이터베이스 기준 잠재 키워드 TOP 100개를 발굴했습니다. (조회 높은 순 정렬)")
+                        st.dataframe(kw_df, use_container_width=True)
+                        
+                        # 표 다운로드
+                        csv2 = kw_df.to_csv(index=False).encode('utf-8-sig')
+                        st.download_button(label="📥 발굴 키워드 전체 리스트 다운로드 (CSV)", data=csv2, file_name=f"{base_kw}_SecretKeywords.csv", mime="text/csv")
+                    else:
+                        st.warning("유의미한 연관 키워드를 네이버에서 찾지 못했습니다. 다른 단어를 입력해보세요.")
+                except Exception as e:
+                    st.error(f"API 권한/통신 오류: {str(e)}\n\nAPI 키를 설정했는지, IP차단을 당했는지 확인해주세요.")
+
+# --- 5. Run & Sync ---
 elif selected_menu == "Run & Sync":
     st.title("🎯 실시간 순위 수집")
     kws_text = st.text_area("키워드 입력 (줄바꿈 구분)", height=200, value=get_secret("DEFAULT_KEYWORDS", ""))
