@@ -116,6 +116,17 @@ div.stButton > button:hover {
     font-weight: 600;
     color: #d1d5db;
 }
+
+/* 경고창/안내창(stAlert) 다크 테마 커스텀 */
+[data-testid="stAlert"] {
+    background-color: #222432 !important; 
+    border: 1px solid #374151 !important;
+    color: #ffffff !important;
+    border-radius: 12px;
+}
+[data-testid="stAlert"] p {
+    color: #ffffff !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
@@ -356,27 +367,48 @@ elif selected_menu == "일자별 순위 추이":
                 filtered_df = filtered_df[filtered_df['keyword'].isin(selected_kws)]
             
             if not filtered_df.empty:
-                # 차트 개선: 범례 클릭 시 (Alt버전 호환) 강조
-                try:
-                    selection = alt.selection_point(fields=['keyword'], bind='legend')
-                except AttributeError:
-                    selection = alt.selection_multi(fields=['keyword'], bind='legend')
+                st.markdown("---")
+                chart_type = st.radio("📈 차트 보기 방식", ["선그래프 (일자별 최고 순위 추이)", "🔲 히트맵 (한눈에 보는 순위판)"], horizontal=True)
                 
-                chart = alt.Chart(filtered_df).mark_line(point=True, strokeWidth=3).encode(
-                    x=alt.X('date:T', title='날짜', axis=alt.Axis(grid=False, format="%m-%d", labelColor="#9ca3af", titleColor="#9ca3af", domainColor="#9ca3af", tickColor="#9ca3af")),
-                    y=alt.Y('rank:Q', scale=alt.Scale(reverse=True, domain=[10, 1]), title='순위 (1위에 가까울수록 위)', axis=alt.Axis(labelColor="#9ca3af", titleColor="#9ca3af", domainColor="#9ca3af", tickColor="#9ca3af")),
-                    color=alt.Color('keyword:N', legend=alt.Legend(title="키워드 (선택된 항목)", orient="right", titleColor="#9ca3af", labelColor="#d1d5db")),
-                    opacity=alt.condition(selection, alt.value(1), alt.value(0.1)),
-                    tooltip=['date', 'keyword', 'rank', 'mall']
-                ).properties(
-                    height=500,
-                    background="transparent"
-                ).add_params(
-                    selection
-                ).interactive()
-                
-                st.altair_chart(chart, use_container_width=True, theme="streamlit")
-                st.altair_chart(chart, use_container_width=True)
+                # 동일 기준일/키워드 내에서 가장 높은 순위(min) 1개만 추출하여 지그재그(톱니바퀴) 깨짐 현상 방지
+                best_rank_df = filtered_df.groupby(['date', 'keyword'], as_index=False).agg({'rank':'min', 'mall':'first'})
+                best_rank_df['rank_display'] = best_rank_df['rank'].apply(lambda x: str(int(x)) if x <= 10 else "10+")
+                best_rank_df['rank_color'] = best_rank_df['rank'].apply(lambda x: x if x <= 10 else 11)
+
+                if "히트맵" in chart_type:
+                    base = alt.Chart(best_rank_df).encode(
+                        x=alt.X('date:T', title='날짜', axis=alt.Axis(format="%m-%d", labelColor="#9ca3af", titleColor="#9ca3af", domainColor="#9ca3af", tickColor="#9ca3af")),
+                        y=alt.Y('keyword:N', title='키워드', axis=alt.Axis(labelColor="#9ca3af", titleColor="#9ca3af", domainColor="#9ca3af", tickColor="#9ca3af"))
+                    )
+                    rects = base.mark_rect(rx=5, ry=5, stroke="#1e1e2d", strokeWidth=2).encode(
+                        color=alt.Color('rank_color:Q', scale=alt.Scale(reverse=True, scheme='blues', domain=[10, 1]), legend=None),
+                        tooltip=['date', 'keyword', 'rank', 'mall']
+                    )
+                    text = base.mark_text(baseline='middle', color='#ffffff', fontWeight='bold').encode(
+                        text='rank_display:N'
+                    )
+                    chart = (rects + text).properties(height=max(300, len(selected_kws)*50), background="transparent").interactive()
+                    st.altair_chart(chart, use_container_width=True, theme="streamlit")
+                else:
+                    try:
+                        selection = alt.selection_point(fields=['keyword'], bind='legend')
+                    except AttributeError:
+                        selection = alt.selection_multi(fields=['keyword'], bind='legend')
+                    
+                    chart = alt.Chart(best_rank_df).mark_line(point=True, strokeWidth=3).encode(
+                        x=alt.X('date:T', title='날짜', axis=alt.Axis(grid=False, format="%m-%d", labelColor="#9ca3af", titleColor="#9ca3af", domainColor="#9ca3af", tickColor="#9ca3af")),
+                        y=alt.Y('rank:Q', scale=alt.Scale(reverse=True, domain=[10, 1]), title='최고 순위 (1위에 가까울수록 위)', axis=alt.Axis(labelColor="#9ca3af", titleColor="#9ca3af", domainColor="#9ca3af", tickColor="#9ca3af")),
+                        color=alt.Color('keyword:N', legend=alt.Legend(title="키워드 (선택된 항목)", orient="right", titleColor="#9ca3af", labelColor="#d1d5db")),
+                        opacity=alt.condition(selection, alt.value(1), alt.value(0.1)),
+                        tooltip=['date', 'keyword', 'rank', 'mall']
+                    ).properties(
+                        height=500,
+                        background="transparent"
+                    ).add_params(
+                        selection
+                    ).interactive()
+                    
+                    st.altair_chart(chart, use_container_width=True, theme="streamlit")
             else:
                 st.warning("선택한 기간/키워드에 해당하는 데이터가 없습니다.")
         else:
