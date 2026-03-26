@@ -271,6 +271,13 @@ def get_clean_df(df_target):
     df_clean['mall'] = df_clean['mall'].apply(map_mall_name)
     return df_clean
 
+# 앱 접속 시 구글 시트 데이터 최초 1회 자동 로드
+if st.session_state.history_df.empty and apps_script_url:
+    with st.spinner("최신 데이터를 구글 시트에서 불러오는 중... (앱 최초 접속 시에만 약 5~10초 소요됩니다)"):
+        df_auto, err_auto = fetch_history_from_gas(apps_script_url)
+        if not df_auto.empty:
+            st.session_state.history_df = df_auto
+
 # 모든 메뉴에서 공통으로 사용할 정제된 데이터프레임 사전 생성
 hist_df = get_clean_df(st.session_state.history_df)
 crawled_df = get_clean_df(st.session_state.crawled_df)
@@ -278,17 +285,17 @@ metric_df = crawled_df.copy() if not crawled_df.empty else (hist_df[hist_df['dat
 
 # --- 1. Dashboard ---
 if selected_menu == "Dashboard":
-    st.title("📊 통합 관제 대시보드 요약")
+    st.title("📊 Dashboard")
     
-    if st.button("🔄 구글 시트 데이터 동기화"):
-        with st.spinner("DB_Archive 데이터를 불러오는 중... (최초 1회 약 10초 소요)"):
+    if st.button("🔄 최신 랭킹 수동 새로고침 (클릭)"):
+        with st.spinner("DB_Archive 최신 데이터를 새로고침 하는 중..."):
             df, err = fetch_history_from_gas(apps_script_url)
             if not df.empty:
                 st.session_state.history_df = df
                 # 동기화 직후 hist_df 강제 갱신
                 hist_df = get_clean_df(st.session_state.history_df)
                 metric_df = hist_df[hist_df['date'] == hist_df['date'].max()] if not hist_df.empty else pd.DataFrame()
-                st.success("동기화 완료")
+                st.success("데이터 새로고침 완료! 최신 순위가 반영되었습니다.")
             else: st.error(f"동기화 실패: {err}")
     
     if not metric_df.empty:
@@ -493,8 +500,14 @@ elif selected_menu == "일자별 순위 추이":
                     except AttributeError:
                         selection = alt.selection_multi(fields=['keyword'], bind='legend')
                     
+                    # 선그래프: [수정] 스파게티 꼬임 방지를 위해 타사(경쟁사) 배제, 순수 우리 브랜드(드론박스/빛드론)만 필터링하여 선 그래프 추적
+                    t_db = [x.strip() for x in my_brand_1.split(',') if x.strip()]
+                    t_bit = [x.strip() for x in my_brand_2.split(',') if x.strip()]
+                    my_brand_filter = "|".join(t_db + t_bit)
+                    line_filtered_df = filtered_df[filtered_df['mall'].str.contains(my_brand_filter, na=False, regex=True)]
+                    
                     # 선그래프: 동일 키워드 및 상품 내부에서 중복 수집된 데이터(광고+일반)가 혼재하여 X자로 교차하지 않도록 그룹핑
-                    line_df = filtered_df.groupby(['date', 'keyword', 'title', 'mall'], as_index=False)['rank'].min()
+                    line_df = line_filtered_df.groupby(['date', 'keyword', 'title', 'mall'], as_index=False)['rank'].min()
                     line_df['데이터_유형'] = '실제 수집 데이터'
                     
                     st.markdown("---")
@@ -625,9 +638,21 @@ elif selected_menu == "경쟁사 집중 분석":
         target_kw = st.selectbox("가격 변동을 스캔할 핵심 타겟 키워드를 하나 선택하세요", all_comp_kws)
         
         price_df = hist_df[(hist_df['keyword'] == target_kw) & (hist_df['price'].notnull())].copy()
-        # 가격 문자에 포함된 콤마(,)나 '원' 등의 한글/특수기호를 전부 제거 후 순수 숫자로 변환
-        price_df['price_clean'] = price_df['price'].astype(str).str.replace(r'[^0-9]', '', regex=True)
-        price_df['price_num'] = pd.to_numeric(price_df['price_clean'], errors='coerce')
+        
+        # [수정] 가격 문자에 '배송비 3,000' 등이 섞여 있을 경우 모든 숫자가 합쳐져 900,000,000원 단위로 폭주하는 오류 방지
+        import re
+        def extract_real_price(val):
+            val_str = str(val)
+            # 숫자와 콤마(,) 덩어리를 모두 찾고, 첫 번째 메인 가격 덩어리만 가져옴
+            matches = re.findall(r'[0-9,]+', val_str)
+            if matches:
+                # 쉼표 제거 후 정수 변환
+                clean_num_str = matches[0].replace(',', '')
+                try: return int(clean_num_str)
+                except: return pd.NA
+            return pd.NA
+            
+        price_df['price_num'] = price_df['price'].apply(extract_real_price)
         price_df = price_df.dropna(subset=['price_num'])
         
         # 분석 타겟: 내 브랜드 전체 + 경쟁사 전체
@@ -660,9 +685,12 @@ elif selected_menu == "틈새 키워드 발굴기":
     st.title("💎 틈새 꿀 키워드 발굴기")
     st.markdown("네이버 광고 API를 활용하여, 기준 키워드와 연관성 높으면서 검색량이 빵빵한 **숨은 잠재 수익 키워드**를 탐색합니다.")
     
+    if 'save_base_kw' not in st.session_state: st.session_state.save_base_kw = "미니드론"
+    
     col1, col2 = st.columns([3, 1])
     with col1:
-        base_kw = st.text_input("💡 탐색 기준 장난감/단어 입력 (예: 드론, 미니드론 등)", value="미니드론")
+        base_kw = st.text_input("💡 탐색 기준 장난감/단어 입력 (예: 드론, 미니드론 등)", value=st.session_state.save_base_kw)
+        st.session_state.save_base_kw = base_kw
     with col2:
         st.markdown("<br>", unsafe_allow_html=True)
         search_btn = st.button("🚀 추천 키워드 탐색 발사", use_container_width=True)
@@ -717,14 +745,27 @@ elif selected_menu == "SEO태그 생성기":
     st.title("🚀 제품 SEO & GEO 메타태그 생성기")
     st.markdown("네이버 쇼핑 1위 제품을 벤치마킹하고, 최신 AI 검색 엔진(GEO) 및 SEO 알고리즘에 맞춘 완벽한 상품 메타태그를 원클릭으로 구워냅니다.")
     
+    if 'save_target_kw' not in st.session_state: st.session_state.save_target_kw = ""
+    if 'save_target_product' not in st.session_state: st.session_state.save_target_product = ""
+    if 'save_mall_name' not in st.session_state: st.session_state.save_mall_name = "드론박스"
+    if 'save_usps' not in st.session_state: st.session_state.save_usps = ""
+    
     col1, col2 = st.columns([1, 1])
     with col1:
-        target_kw = st.selectbox("🎯 타겟 키워드 (1위 벤치마킹 대상)", options=sorted(hist_df['keyword'].dropna().unique().tolist()) if not hist_df.empty else ["기본키워드"])
-        target_product = st.text_input("📦 내 상품명 (선택)", placeholder="예: DJI 네오 2 플라이모어 콤보")
-        mall_name = st.text_input("🏢 우리 쇼핑몰명 (Author)", value="드론박스")
+        kw_options = sorted(hist_df['keyword'].dropna().unique().tolist()) if not hist_df.empty else ["기본키워드"]
+        idx = kw_options.index(st.session_state.save_target_kw) if st.session_state.save_target_kw in kw_options else 0
+        target_kw = st.selectbox("🎯 타겟 키워드 (1위 벤치마킹 대상)", options=kw_options, index=idx)
+        st.session_state.save_target_kw = target_kw
+        
+        target_product = st.text_input("📦 내 상품명 (선택)", placeholder="예: DJI 네오 2 플라이모어 콤보", value=st.session_state.save_target_product)
+        st.session_state.save_target_product = target_product
+        
+        mall_name = st.text_input("🏢 우리 쇼핑몰명 (Author)", value=st.session_state.save_mall_name)
+        st.session_state.save_mall_name = mall_name
         
     with col2:
-        usps = st.text_area("✨ 특장점 필살기 (USPs)", placeholder="가벼운 무게, 전방 LiDAR 센서 등 어필할 특징을 적어주세요.", height=110)
+        usps = st.text_area("✨ 특장점 필살기 (USPs)", placeholder="가벼운 무게, 전방 LiDAR 센서 등 어필할 특징을 적어주세요.", height=110, value=st.session_state.save_usps)
+        st.session_state.save_usps = usps
         
     if st.button("🌟 1등 벤치마킹 SEO & GEO 문구 자동 생성", use_container_width=True, type="primary"):
         if not gemini_key:
@@ -817,7 +858,10 @@ SearchTags: (수직선으로 구분된 10개 태그)
 # --- 6. Run & Sync ---
 elif selected_menu == "Run & Sync":
     st.title("🎯 실시간 순위 수집")
-    kws_text = st.text_area("키워드 입력 (줄바꿈 구분)", height=200, value=get_secret("DEFAULT_KEYWORDS", ""))
+    
+    if 'save_kws_text' not in st.session_state: st.session_state.save_kws_text = get_secret("DEFAULT_KEYWORDS", "")
+    kws_text = st.text_area("키워드 입력 (줄바꿈 구분)", height=200, value=st.session_state.save_kws_text)
+    st.session_state.save_kws_text = kws_text
     
     if st.button("🚀 분석 시작 및 구글 시트 전송", type="primary"):
         keywords = [k.strip() for k in kws_text.split('\n') if k.strip()]
