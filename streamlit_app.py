@@ -643,15 +643,16 @@ elif selected_menu == "경쟁사 집중 분석":
         
         price_df = hist_df[(hist_df['keyword'] == target_kw) & (hist_df['price'].notnull())].copy()
         
-        # [수정] 가격 문자에 '배송비 3,000' 등이 섞여 있을 경우 모든 숫자가 합쳐져 900,000,000원 단위로 폭주하는 오류 방지
+        # [수정] 가격 문자에 기종 숫자('D-RTK 3')나 '배송비 3,000' 등이 섞여 있을 경우를 완벽히 필터링하고 실제 메인 단위만 추출
         import re
         def extract_real_price(val):
             val_str = str(val)
-            # 숫자와 콤마(,) 덩어리를 모두 찾고, 첫 번째 메인 가격 덩어리만 가져옴
-            matches = re.findall(r'[0-9,]+', val_str)
+            matches = re.findall(r'[0-9]+(?:,[0-9]{3})*', val_str)
             if matches:
-                # 쉼표 제거 후 정수 변환
-                clean_num_str = matches[0].replace(',', '')
+                # 섞인 숫자들 중 가장 길이가 긴 것(십만~백만 단위)이 진짜 가격일 확률이 100%
+                lengths = [len(m) for m in matches]
+                idx = lengths.index(max(lengths))
+                clean_num_str = matches[idx].replace(',', '')
                 try: return int(clean_num_str)
                 except: return pd.NA
             return pd.NA
@@ -663,6 +664,12 @@ elif selected_menu == "경쟁사 집중 분석":
         all_brands = t_db + t_bit + t_comp
         pattern = "|".join(all_brands)
         price_df = price_df[price_df['mall'].str.contains(pattern, na=False, regex=True)]
+        
+        # [데이터 수집 중 뻥튀기 필터링] 네이버 스마트스토어 판매자가 '품절 방지'를 위해 임시로 숫자를 999,999,999로 올렸거나
+        # 가격 오기입을 한 경우, 전체 평균(median)의 5배수를 초과하는 엉터리 데이터(8억 등)를 차트에서 날려버립니다.
+        if not price_df.empty:
+            median_val = price_df['price_num'].median()
+            price_df = price_df[price_df['price_num'] <= median_val * 5]
         
         if not price_df.empty:
             p_trend = price_df.groupby(['date', 'mall', 'title'], as_index=False)['price_num'].mean().sort_values('date')
@@ -681,8 +688,9 @@ elif selected_menu == "경쟁사 집중 분석":
             ).properties(height=400, background="transparent").interactive()
             
             st.altair_chart(p_chart, use_container_width=True, theme="streamlit")
+            st.info(f"💡 만약 우측 범례에 '드론뷰', '다다사' 등의 특정 경쟁사가 뜨지 않는다면, 좌측 하단 [🔑 환경 변수 설정] 탭에 기재된 '경쟁사' 텍스트({competitors})와 동일한 쇼핑몰 정보가 구글 시트(DB) 내에 아예 없는 상태입니다.")
         else:
-            st.info("해당 키워드에 대한 타겟 브랜드들의 가격 변동 데이터가 충분히 누적되지 않았습니다.")
+            st.info("해당 키워드에 대한 타겟 브랜드들의 올바른 가격 변동 데이터가 충분히 누적되지 않았습니다.")
 
 # --- 4. 틈새 키워드 발굴기 ---
 elif selected_menu == "틈새 키워드 발굴기":
