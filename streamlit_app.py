@@ -385,7 +385,7 @@ if selected_menu == "Dashboard":
                     .delta {{ font-size: 16px; font-weight: 600; color: {'#f87171' if db_delta < 0 else '#34d399'}; }}
                     .delta-bit {{ font-size: 16px; font-weight: 600; color: {'#f87171' if bit_delta < 0 else '#34d399'}; }}
                 </style></head><body>
-                    <h1>📈 통합 관제 주간 성과 요약 리포트</h1>
+                    <h1>📈 요약 리포트</h1>
                     <p style="color: #94a3b8; font-size: 13px;"><strong>생성 기준일:</strong> {TODAY_KOR}</p>
                     <div class="box">
                         <div class="title">🎯 전체 모니터링 고유 키워드</div>
@@ -557,9 +557,13 @@ elif selected_menu == "일자별 순위 추이":
                             line_df = pd.concat([line_df, pred_df], ignore_index=True)
                             line_df = line_df.sort_values(['keyword', 'title', 'mall', 'date'])
                             
+                    # 1위 위인 0, -2, -4 등 불필요한 마이너스 y축 패딩이 생기지 않도록 엄격한 domain 설정
+                    max_rank = int(line_df['rank'].max() + 2) if not line_df.empty else 10
+                    if max_rank < 5: max_rank = 5
+                    
                     base_chart = alt.Chart(line_df).encode(
                         x=alt.X('date:O', title='날짜', axis=alt.Axis(labelAngle=-45, labelColor="#9ca3af", titleColor="#9ca3af", domainColor="#9ca3af", tickColor="#9ca3af")),
-                        y=alt.Y('rank:Q', scale=alt.Scale(reverse=True, domain=[10, 1]), title='상품별 순위 (1위에 가까울수록 위)', axis=alt.Axis(labelColor="#9ca3af", titleColor="#9ca3af", domainColor="#9ca3af", tickColor="#9ca3af")),
+                        y=alt.Y('rank:Q', scale=alt.Scale(reverse=True, domain=[max_rank, 1], nice=False), title='상품별 순위 (1위에 가까울수록 위)', axis=alt.Axis(labelColor="#9ca3af", titleColor="#9ca3af", domainColor="#9ca3af", tickColor="#9ca3af")),
                         color=alt.Color('keyword:N', legend=alt.Legend(title="키워드 (선택된 항목)", orient="right", titleColor="#9ca3af", labelColor="#d1d5db")),
                         detail='title:N', # 상품 고유 구분자로 선을 분리
                         opacity=alt.condition(selection, alt.value(1), alt.value(0.1)),
