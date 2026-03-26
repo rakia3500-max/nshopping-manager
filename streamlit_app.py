@@ -633,64 +633,107 @@ elif selected_menu == "경쟁사 집중 분석":
         else:
             st.info("현재 분석 대상 브랜드 중 10위 안에 진입한 상품이 없습니다.")
             
-        # --- 3.5 경쟁사 가격 변동 X-Ray ---
+        # --- 3.5 경쟁사 특화 분석 멀티 탭 ---
         st.markdown("---")
-        st.subheader("🕵️ 경쟁사 상품 판매가(가격) 변동 흐름(X-Ray) 추적기")
-        st.markdown("순위 하락 원인이 **'경쟁사의 단가 인하/인상 수작'** 때문인지 즉시 시각적으로 스캔합니다.")
+        st.subheader("🕵️ 타사 브랜드 X-Ray 정밀 타격")
+        st.markdown("가격이 고정된 DJI 시장에서 경쟁사가 어떤 무기를 쥐고 점유율을 뺏어가고 있는지 핵심 지표를 스캔합니다.")
         
-        all_comp_kws = sorted(hist_df['keyword'].unique().tolist())
-        target_kw = st.selectbox("가격 변동을 스캔할 핵심 타겟 키워드를 하나 선택하세요", all_comp_kws)
+        all_comp_kws = sorted(hist_df['keyword'].dropna().unique().tolist())
+        target_kw = st.selectbox("전략을 분석할 핵심 타겟 키워드를 먼저 하나 선택하세요", all_comp_kws)
         
-        price_df = hist_df[(hist_df['keyword'] == target_kw) & (hist_df['price'].notnull())].copy()
+        tab1, tab2, tab3 = st.tabs(["🥊 1:1 라이벌 데스매치 (순위 비교)", "🍰 1페이지 매대 점유율 (1~40위)", "🥷 1등 경쟁사 '마법 단어(Title)' 해킹기"])
         
-        # [수정] 가격 문자에 기종 숫자('D-RTK 3')나 '배송비 3,000' 등이 섞여 있을 경우를 완벽히 필터링하고 실제 메인 단위만 추출
-        import re
-        def extract_real_price(val):
-            val_str = str(val)
-            matches = re.findall(r'[0-9]+(?:,[0-9]{3})*', val_str)
-            if matches:
-                # 섞인 숫자들 중 가장 길이가 긴 것(십만~백만 단위)이 진짜 가격일 확률이 100%
-                lengths = [len(m) for m in matches]
-                idx = lengths.index(max(lengths))
-                clean_num_str = matches[idx].replace(',', '')
-                try: return int(clean_num_str)
-                except: return pd.NA
-            return pd.NA
+        with tab1:
+            st.markdown("###### 우리 브랜드와 지정한 **타겟 타사 단 1곳만 남겨두고**, 두 경쟁자의 피말리는 순위 혈투(추세)를 선그래프로 직관적으로 비교합니다.")
             
-        price_df['price_num'] = price_df['price'].apply(extract_real_price)
-        price_df = price_df.dropna(subset=['price_num'])
-        
-        # 분석 타겟: 내 브랜드 전체 + 경쟁사 전체
-        all_brands = t_db + t_bit + t_comp
-        pattern = "|".join(all_brands)
-        price_df = price_df[price_df['mall'].str.contains(pattern, na=False, regex=True)]
-        
-        # [데이터 수집 중 뻥튀기 필터링] 네이버 스마트스토어 판매자가 '품절 방지'를 위해 임시로 숫자를 999,999,999로 올렸거나
-        # 가격 오기입을 한 경우, 전체 평균(median)의 5배수를 초과하는 엉터리 데이터(8억 등)를 차트에서 날려버립니다.
-        if not price_df.empty:
-            median_val = price_df['price_num'].median()
-            price_df = price_df[price_df['price_num'] <= median_val * 5]
-        
-        if not price_df.empty:
-            p_trend = price_df.groupby(['date', 'mall', 'title'], as_index=False)['price_num'].mean().sort_values('date')
+            # 사용자에게 1:1 매칭 선택권을 주기 위한 타사 목록 구성
+            comp_options = [c for c in t_comp if hist_df[(hist_df['keyword'] == target_kw) & (hist_df['mall'].str.contains(c, na=False))].shape[0] > 0]
+            if not comp_options:
+                comp_options = t_comp
+                
+            rival = st.selectbox("비교할 타겟 경쟁사 선택", comp_options)
             
-            p_chart = alt.Chart(p_trend).mark_line(point=True, strokeWidth=3).encode(
-                x=alt.X('date:O', title='날짜', axis=alt.Axis(labelAngle=-45, labelColor="#9ca3af", titleColor="#9ca3af", domainColor="#9ca3af", tickColor="#9ca3af")),
-                y=alt.Y('price_num:Q', title='평균 판매가(원)', scale=alt.Scale(zero=False), axis=alt.Axis(labelColor="#9ca3af", titleColor="#9ca3af", domainColor="#9ca3af", tickColor="#9ca3af")),
-                color=alt.Color('mall:N', title='쇼핑몰', legend=alt.Legend(labelColor="#d1d5db", titleColor="#9ca3af")),
-                detail='title:N',
-                tooltip=[
-                    alt.Tooltip('date:N', title='날짜'),
-                    alt.Tooltip('mall:N', title='쇼핑몰'),
-                    alt.Tooltip('price_num:Q', title='평균가(원)', format=',.0f'),
-                    alt.Tooltip('title:N', title='상품명')
-                ]
-            ).properties(height=400, background="transparent").interactive()
+            my_malls_pattern = "|".join(t_db + t_bit)
+            deathmatch_mask = (hist_df['keyword'] == target_kw) & (hist_df['mall'].str.contains(f"{my_malls_pattern}|{rival}", na=False, regex=True))
+            dm_df = hist_df[deathmatch_mask].copy()
             
-            st.altair_chart(p_chart, use_container_width=True, theme="streamlit")
-            st.info(f"💡 만약 우측 범례에 '드론뷰', '다다사' 등의 특정 경쟁사가 뜨지 않는다면, 좌측 하단 [🔑 환경 변수 설정] 탭에 기재된 '경쟁사' 텍스트({competitors})와 동일한 쇼핑몰 정보가 구글 시트(DB) 내에 아예 없는 상태입니다.")
-        else:
-            st.info("해당 키워드에 대한 타겟 브랜드들의 올바른 가격 변동 데이터가 충분히 누적되지 않았습니다.")
+            if not dm_df.empty:
+                dm_trend = dm_df.groupby(['date', 'mall'], as_index=False)['rank'].min().sort_values('date')
+                
+                max_rank_dm = int(dm_trend['rank'].max() + 2)
+                if max_rank_dm < 5: max_rank_dm = 5
+                
+                dm_chart = alt.Chart(dm_trend).mark_line(point=True, strokeWidth=4).encode(
+                    x=alt.X('date:O', title='날짜', axis=alt.Axis(labelAngle=-45, labelColor="#9ca3af", titleColor="#9ca3af", tickColor="#9ca3af")),
+                    y=alt.Y('rank:Q', title='최고 노출 순위 (1위에 가까울수록 위)', scale=alt.Scale(reverse=True, domain=[max_rank_dm, 1], nice=False), axis=alt.Axis(labelColor="#9ca3af", titleColor="#9ca3af", tickColor="#9ca3af")),
+                    color=alt.Color('mall:N', title='쇼핑몰', legend=alt.Legend(orient="bottom", labelColor="#d1d5db", titleColor="#9ca3af")),
+                    tooltip=[
+                        alt.Tooltip('date:N', title='날짜'),
+                        alt.Tooltip('mall:N', title='쇼핑몰'),
+                        alt.Tooltip('rank:Q', title='최고 랭킹')
+                    ]
+                ).properties(height=450, background="transparent").interactive()
+                st.altair_chart(dm_chart, use_container_width=True, theme="streamlit")
+            else:
+                st.info(f"해당 키워드에 대한 타사({rival})의 최근 비교 데이터가 부족하여 분석할 수 없습니다.")
+                
+        with tab2:
+            st.markdown(f"###### **{latest_date}** 기준, 네이버 쇼핑 1페이지(1~40위) 검색 결과 내에 각 쇼핑몰이 고유 상품을 몇 개나 심어버렸는지(매대 장악력) 파악합니다.")
+            share_df = hist_df[(hist_df['date'] == latest_date) & (hist_df['keyword'] == target_kw) & (hist_df['rank'] <= 40)].copy()
+            
+            # 자사 및 추적 타사(다다사/효로로/드론뷰 등)만 엄격히 걸러내어 비중 계산
+            all_brands_pattern = "|".join(t_db + t_bit + t_comp)
+            share_df = share_df[share_df['mall'].str.contains(all_brands_pattern, na=False, regex=True)]
+            
+            if not share_df.empty:
+                share_counts = share_df.groupby('mall').size().reset_index(name='1페이지 노출 상품 개수(파이)')
+                share_counts = share_counts.sort_values(by='1페이지 노출 상품 개수(파이)', ascending=False)
+                
+                pie_chart = alt.Chart(share_counts).mark_arc(innerRadius=60, cornerRadius=4, stroke="#1e1e2d", strokeWidth=2).encode(
+                    theta=alt.Theta(field="1페이지 노출 상품 개수(파이)", type="quantitative"),
+                    color=alt.Color(field="mall", type="nominal", title="쇼핑몰", legend=alt.Legend(orient="right", labelColor="#d1d5db", titleColor="#9ca3af")),
+                    tooltip=['mall:N', '1페이지 노출 상품 개수(파이):Q']
+                ).properties(height=400, background="transparent")
+                
+                col1, col2 = st.columns([1, 1])
+                with col1:
+                    st.altair_chart(pie_chart, use_container_width=True, theme="streamlit")
+                with col2:
+                    st.markdown("<br><br>", unsafe_allow_html=True)
+                    st.dataframe(share_counts.reset_index(drop=True), use_container_width=True)
+            else:
+                st.info("해당 키워드의 최근 시간대에 1페이지(40위 이내)에 진입한 브랜드의 누적 상품 데이터가 없습니다.")
+                
+        with tab3:
+            st.markdown(f"###### 검색량 전쟁터에서 최상위 **20위(Top 20)** 안에 안착한 경쟁사들이 상품명(`title`)에 어떤 후킹 단어를 우선 배치하고 있는지, 마법의 단어를 탈탈 털어냅니다.")
+            title_df = hist_df[(hist_df['date'] == latest_date) & (hist_df['keyword'] == target_kw) & (hist_df['rank'] <= 20)].copy()
+            
+            if not title_df.empty:
+                import re
+                from collections import Counter
+                words = []
+                for title in title_df['title'].dropna():
+                    clean_title = re.sub(r'[^가-힣a-zA-Z0-9\s]', ' ', title)
+                    words.extend([w for w in clean_title.split() if w])
+                    
+                target_word = target_kw.split()[0].lower() # 기준 단어
+                stop_words = ["dji", "및", "등", "용", "수", "할", "정품", "드론", "전용", "dji온라인판매점", "dji공식판매점", target_word]
+                filtered_words = [w for w in words if len(w) > 1 and w.lower() not in stop_words]
+                
+                word_counts = Counter(filtered_words).most_common(15)
+                word_df = pd.DataFrame(word_counts, columns=["경쟁사들이 선택한 '마법 단어'", '최상위권 등장 횟수(Top20 내)'])
+                
+                if len(word_counts) > 0:
+                    bar_w = alt.Chart(word_df).mark_bar(color="#60a5fa", cornerRadiusTopRight=4, cornerRadiusBottomRight=4).encode(
+                        x=alt.X('최상위권 등장 횟수(Top20 내):Q', axis=alt.Axis(labelColor="#9ca3af", titleColor="#9ca3af", tickColor="#9ca3af")),
+                        y=alt.Y("경쟁사들이 선택한 '마법 단어':N", sort='-x', axis=alt.Axis(title='추출된 단어', labelColor="#d1d5db", titleColor="#9ca3af", tickColor="#9ca3af")),
+                        tooltip=["경쟁사들이 선택한 '마법 단어'", '최상위권 등장 횟수(Top20 내)']
+                    ).properties(height=400, background="transparent")
+                    st.altair_chart(bar_w, use_container_width=True, theme="streamlit")
+                else:
+                    st.info("유의미한 단어 추출 결과가 없습니다.")
+            else:
+                st.info("해당 키워드는 현재 추적 가능한 상위 20위 경쟁사 데이터가 존재하지 않습니다.")
 
 # --- 4. 틈새 키워드 발굴기 ---
 elif selected_menu == "틈새 키워드 발굴기":
