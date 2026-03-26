@@ -681,18 +681,21 @@ elif selected_menu == "경쟁사 집중 분석":
             st.markdown(f"###### **{latest_date}** 기준, 네이버 쇼핑 1페이지(1~40위) 검색 결과 내에 각 쇼핑몰이 고유 상품을 몇 개나 심어버렸는지(매대 장악력) 파악합니다.")
             share_df = hist_df[(hist_df['date'] == latest_date) & (hist_df['keyword'] == target_kw) & (hist_df['rank'] <= 40)].copy()
             
-            # 자사 및 추적 타사(다다사/효로로/드론뷰 등)만 엄격히 걸러내어 비중 계산
+            # 자사 및 추적 타사(다다사/효로로/드론뷰 단어)만 엄격히 걸러내어 비중 계산
             all_brands_pattern = "|".join(t_db + t_bit + t_comp)
             share_df = share_df[share_df['mall'].str.contains(all_brands_pattern, na=False, regex=True)]
             
+            # [수정] 동일한 제품명(title)이 일반 노출과 파워링크 광고로 중복 수집되어 파이가 과장되는 것을 방지하기 위해 title 기준으로 고유 항목만 남김
+            share_df = share_df.drop_duplicates(subset=['mall', 'title'])
+            
             if not share_df.empty:
-                share_counts = share_df.groupby('mall').size().reset_index(name='1페이지 노출 상품 개수(파이)')
-                share_counts = share_counts.sort_values(by='1페이지 노출 상품 개수(파이)', ascending=False)
+                share_counts = share_df.groupby('mall').size().reset_index(name='1페이지 고유 상품 개수')
+                share_counts = share_counts.sort_values(by='1페이지 고유 상품 개수', ascending=False)
                 
                 pie_chart = alt.Chart(share_counts).mark_arc(innerRadius=60, cornerRadius=4, stroke="#1e1e2d", strokeWidth=2).encode(
-                    theta=alt.Theta(field="1페이지 노출 상품 개수(파이)", type="quantitative"),
+                    theta=alt.Theta(field="1페이지 고유 상품 개수", type="quantitative"),
                     color=alt.Color(field="mall", type="nominal", title="쇼핑몰", legend=alt.Legend(orient="right", labelColor="#d1d5db", titleColor="#9ca3af")),
-                    tooltip=['mall:N', '1페이지 노출 상품 개수(파이):Q']
+                    tooltip=['mall:N', '1페이지 고유 상품 개수:Q']
                 ).properties(height=400, background="transparent")
                 
                 col1, col2 = st.columns([1, 1])
@@ -721,13 +724,14 @@ elif selected_menu == "경쟁사 집중 분석":
                 filtered_words = [w for w in words if len(w) > 1 and w.lower() not in stop_words]
                 
                 word_counts = Counter(filtered_words).most_common(15)
-                word_df = pd.DataFrame(word_counts, columns=["경쟁사들이 선택한 '마법 단어'", '최상위권 등장 횟수(Top20 내)'])
+                # 알테어 렌더링 에러 방지를 위해 변수명에서 따옴표(')를 제거합니다.
+                word_df = pd.DataFrame(word_counts, columns=["추출된 마법 단어", "Top 20 내 등장 횟수"])
                 
                 if len(word_counts) > 0:
                     bar_w = alt.Chart(word_df).mark_bar(color="#60a5fa", cornerRadiusTopRight=4, cornerRadiusBottomRight=4).encode(
-                        x=alt.X('최상위권 등장 횟수(Top20 내):Q', axis=alt.Axis(labelColor="#9ca3af", titleColor="#9ca3af", tickColor="#9ca3af")),
-                        y=alt.Y("경쟁사들이 선택한 '마법 단어':N", sort='-x', axis=alt.Axis(title='추출된 단어', labelColor="#d1d5db", titleColor="#9ca3af", tickColor="#9ca3af")),
-                        tooltip=["경쟁사들이 선택한 '마법 단어'", '최상위권 등장 횟수(Top20 내)']
+                        x=alt.X('Top 20 내 등장 횟수:Q', axis=alt.Axis(labelColor="#9ca3af", titleColor="#9ca3af", tickColor="#9ca3af")),
+                        y=alt.Y("추출된 마법 단어:N", sort='-x', axis=alt.Axis(title='추출된 단어', labelColor="#d1d5db", titleColor="#9ca3af", tickColor="#9ca3af")),
+                        tooltip=["추출된 마법 단어", "Top 20 내 등장 횟수"]
                     ).properties(height=400, background="transparent")
                     st.altair_chart(bar_w, use_container_width=True, theme="streamlit")
                 else:
