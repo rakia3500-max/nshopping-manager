@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-[최종 통합 완성본 v7] BitDrone_Manager_Web.py
+[최종 통합 완성본 v7 260327] BitDrone_Manager_Web.py
 - Update: AI 프롬프트 고도화 (검색량/클릭률 기반 실무자 맞춤형 '액션 플랜' 제안 기능 추가)
 - Update: 차트 렌더링 랙 해결 (기본 14일 조회 + 달력 필터)
 - Update: Gemini API 404 에러 방지를 위한 다중 모델 Fallback 로직 적용 (2.5 -> 2.0 -> 1.5 -> pro)
@@ -811,9 +811,23 @@ elif selected_menu == "SEO태그 생성기":
     
     col1, col2 = st.columns([1, 1])
     with col1:
-        kw_options = sorted(hist_df['keyword'].dropna().unique().tolist()) if not hist_df.empty else ["기본키워드"]
-        idx = kw_options.index(st.session_state.save_target_kw) if st.session_state.save_target_kw in kw_options else 0
-        target_kw = st.selectbox("🎯 타겟 키워드 (1위 벤치마킹 대상)", options=kw_options, index=idx)
+        kw_options = sorted(hist_df['keyword'].dropna().unique().tolist()) if not hist_df.empty else []
+        kw_options.insert(0, "신규 제품 (직접 입력)")
+        
+        if st.session_state.save_target_kw in kw_options:
+            idx = kw_options.index(st.session_state.save_target_kw)
+            default_new_kw = ""
+        else:
+            idx = 0
+            default_new_kw = st.session_state.save_target_kw
+            
+        selected_kw_option = st.selectbox("🎯 타겟 키워드 (1위 벤치마킹 대상)", options=kw_options, index=idx)
+        
+        if selected_kw_option == "신규 제품 (직접 입력)":
+            target_kw = st.text_input("💡 검색할 신규 타겟 키워드 직접 입력", value=default_new_kw, placeholder="예: 미니드론 프로")
+        else:
+            target_kw = selected_kw_option
+            
         st.session_state.save_target_kw = target_kw
         
         target_product = st.text_input("📦 내 상품명 (선택)", placeholder="예: DJI 네오 2 플라이모어 콤보", value=st.session_state.save_target_product)
@@ -838,6 +852,17 @@ elif selected_menu == "SEO태그 생성기":
                     if not top1_df.empty:
                         latest_top1 = top1_df.sort_values('date', ascending=False).iloc[0]
                         top1_title = f"{latest_top1['mall']}: {latest_top1['title']}"
+                
+                # 신규 제품(직접 입력)이거나 기존 DB에 1위 데이터가 없는 경우 네이버 API로 동적 조회
+                if top1_title == "조회된 1위 데이터 없음" and target_kw:
+                    try:
+                        items = get_rank(target_kw, naver_cid, naver_csec)
+                        if items and len(items) > 0:
+                            top_item = items[0]
+                            parsed_title = top_item['title'].replace('<b>', '').replace('</b>', '')
+                            top1_title = f"{top_item['mallName']}: {parsed_title}"
+                    except Exception:
+                        pass
                         
                 # 2. 제미나이 프롬프트 생성
                 prompt = f"""
