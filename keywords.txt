@@ -97,3 +97,5 @@ dji mavic 4 pro
 avata 360
 dji avata 360
 dji 아바타 360
+micasense
+미카센스
