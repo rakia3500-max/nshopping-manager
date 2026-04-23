@@ -9,9 +9,9 @@ jobs:
   run_script:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Set up Python
-        uses: uses: actions/setup-python@v5
+  - uses: actions/checkout@v4          # v4로 업데이트하여 Node.js 경고 해결
+  - name: Set up Python
+    uses: actions/setup-python@v5      # 중복된 'uses:' 제거
         with:
           python-version: '3.9'
       - name: Install dependencies
