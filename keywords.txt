@@ -19,11 +19,9 @@ DJI 오즈모 360
 DJI 미니 5 프로
 mini 5 pro
 dji mic 3
-dji mic 2
-dji mic mini
+dji mic mini 2
 dji 마이크3
-dji 마이크2
-dji 마이크 미니
+dji 마이크 미니 2
 dji terra
 dji 테라
 픽스포디
