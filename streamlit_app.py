@@ -1841,7 +1841,7 @@ elif selected_menu == "AI Report":
             st.session_state.ai_reports_cache[TODAY_ISO] = st.session_state.ai_report_text
     hist_df = st.session_state.history_df
     if hist_df.empty:
-        st.warning("과거 데이터가 없습니다. [Run & Sync] 메뉴에서 순위 수집 후 Notion에 저장하거나, [Dashboard]에서 새로고침 해주세요.")
+        st.warning("과거 데이터가 없습니다. [Dashboard]에서 새로고침하거나, [Run & Sync] 메뉴에서 순위 수집을 먼저 실행해주세요.")
     else:
         available_dates = sorted(hist_df['date'].dropna().unique().tolist(), reverse=True)
         if not available_dates:
