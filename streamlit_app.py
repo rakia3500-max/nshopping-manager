@@ -733,16 +733,21 @@ if selected_menu == "Dashboard":
     with _hcol2:
         st.markdown("<div style='margin-top:4px;'>", unsafe_allow_html=True)
         if st.button("새로고침", use_container_width=True, type="primary"):
-            if notion_token and notion_db_id:
-                with st.spinner("불러오는 중..."):
-                    _df_r, _err_r = load_from_notion(notion_token, notion_db_id, days=30)
-                    if not _df_r.empty:
-                        st.session_state.history_df = _df_r
-                        st.rerun()
-                    else:
-                        st.error(f"실패: {_err_r}")
+            if apps_script_url:
+                with st.spinner("Google Sheets에서 불러오는 중..."):
+                    try:
+                        import requests as _r
+                        _gs_res = _r.get(apps_script_url, params={"token": apps_script_token}, timeout=20)
+                        _gs_df = pd.DataFrame(_gs_res.json())
+                        if not _gs_df.empty:
+                            st.session_state.history_df = _gs_df
+                            st.rerun()
+                        else:
+                            st.warning("Google Sheets에 데이터가 없습니다.")
+                    except Exception as _e:
+                        st.error(f"실패: {_e}")
             else:
-                st.warning("사이드바에서 Notion 설정을 먼저 입력해주세요.")
+                st.warning("설정에서 GAS URL을 먼저 입력해주세요.")
         st.markdown("</div>", unsafe_allow_html=True)
 
     # ── 데이터 준비 ────────────────────────────────────────────────────────────
