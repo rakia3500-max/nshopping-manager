@@ -1,7 +1,24 @@
-streamlit
-pandas
-requests
-xlsxwriter
-google-generativeai
-streamlit-option-menu
-altair
+# nshopping-manager dependencies
+# Versions pinned on 2026-05-23 -- do NOT remove version numbers
+# To update: test locally first, then update version here
+
+streamlit==1.45.1
+pandas==2.2.3
+requests==2.32.3
+xlsxwriter==3.2.0
+# google-generativeai 제거 (Python 3.14 비호환) — genai 기능은 조건부 처리
+# streamlit-option-menu 제거 (Python 3.14 비호환)
+altair==5.3.0
+
+# [AUTH] 인증 및 암호화
+cryptography>=44.0.3
+bcrypt>=4.3.0
+
+# [DB] Google Sheets 백엔드
+gspread>=6.1.4
+google-auth>=2.38.0
+
+# [INTEGRATIONS] Notion + Slack
+notion-client==2.3.0
+extra-streamlit-components>=0.1.60
+python-telegram-bot==20.7
