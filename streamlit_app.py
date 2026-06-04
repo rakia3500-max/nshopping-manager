@@ -1905,4 +1905,4 @@ elif selected_menu == "⚙️ 설정":
             if _ok:
                 st.session_state.user_keys = _auth_load_keys(st.session_state.current_user["id"])
                 st.success("✅ 설정이 저장되었습니다.")
-                _obs_log_change("API 키 저장", f"- Notion: {'있음' if _s_notion_tok else '없음'} / Slack: {'있음' if _s_slack else '
+                _obs_log_change("API 키 저장", f"- Notion: {'있음' if _s_notion_tok else '없음'} / Slack: {'있음' if _s_slack else '없음'}")
