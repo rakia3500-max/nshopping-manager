@@ -6,7 +6,6 @@ from .db import init_db, _conn
 from .encrypt import encrypt, decrypt
 
 log = logging.getLogger(__name__)
-EMAIL_RE = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
 
 try:
     import bcrypt as _bcrypt; _BCRYPT_OK = True
@@ -38,13 +37,13 @@ _KEY_FIELDS = [
 
 def register(email, password, display_name=""):
     init_db()
-    email = email.strip().lower()
-    if not EMAIL_RE.match(email): return False, "이메일 형식이 올바르지 않습니다."
-    if len(password) < 8: return False, "비밀번호는 8자 이상이어야 합니다."
+    email = email.strip()
+    if not email: return False, "아이디를 입력해주세요."
+    if not password: return False, "비밀번호를 입력해주세요."
     try:
         with _conn() as c:
             if c.execute("SELECT 1 FROM users WHERE email=?", (email,)).fetchone():
-                return False, "이미 가입된 이메일입니다."
+                return False, "이미 사용 중인 아이디입니다."
             import uuid
             uid = str(uuid.uuid4())[:8]
             now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -57,7 +56,7 @@ def register(email, password, display_name=""):
 
 def login(email, password):
     init_db()
-    email = email.strip().lower()
+    email = email.strip()
     try:
         with _conn() as c:
             row = c.execute("SELECT * FROM users WHERE email=?", (email,)).fetchone()

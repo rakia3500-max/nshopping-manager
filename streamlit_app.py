@@ -553,7 +553,7 @@ if not st.session_state.authenticated:
             _saved_email = _load_saved_email()
             with st.form("login_form"):
                 _l_email = st.text_input(
-                    "이메일", placeholder="your@email.com",
+                    "아이디", placeholder="아이디 입력",
                     value=_saved_email,
                     key="_l_email"
                 )
@@ -568,7 +568,7 @@ if not st.session_state.authenticated:
 
             if _submitted:
                 if not _l_email or not _l_pw:
-                    st.error("이메일과 비밀번호를 입력해주세요.")
+                    st.error("아이디와 비밀번호를 입력해주세요.")
                 else:
                     _ok, _msg, _user = _auth_login(_l_email, _l_pw)
                     if _ok:
@@ -592,13 +592,13 @@ if not st.session_state.authenticated:
         # ── 회원가입 탭 ────────────────────────────────────────
         with _tab_signup:
             _s_name  = st.text_input("쇼핑몰 이름 (표시명)", key="_s_name")
-            _s_email = st.text_input("이메일", placeholder="your@email.com", key="_s_email")
-            _s_pw  = st.text_input("비밀번호 (8자 이상)", type="password", key="_s_pw")
-            _s_pw2 = st.text_input("비밀번호 확인",       type="password", key="_s_pw2")
+            _s_email = st.text_input("아이디", placeholder="사용할 아이디 입력", key="_s_email")
+            _s_pw  = st.text_input("비밀번호", type="password", key="_s_pw")
+            _s_pw2 = st.text_input("비밀번호 확인", type="password", key="_s_pw2")
             st.markdown("<div style='height:4px'></div>", unsafe_allow_html=True)
             if st.button("회원가입", type="primary", use_container_width=True, key="_s_btn"):
                 if not _s_email or not _s_pw:
-                    st.error("이메일과 비밀번호를 입력해주세요.")
+                    st.error("아이디와 비밀번호를 입력해주세요.")
                 elif _s_pw != _s_pw2:
                     st.error("비밀번호가 일치하지 않습니다.")
                 else:
