@@ -1905,18 +1905,4 @@ elif selected_menu == "⚙️ 설정":
             if _ok:
                 st.session_state.user_keys = _auth_load_keys(st.session_state.current_user["id"])
                 st.success("✅ 설정이 저장되었습니다.")
-                _obs_log_change("API 키 저장", "Notion/Slack 설정 업데이트")
-            else:
-                st.error(f"저장 실패: {_msg}")
-    with _btn_c2:
-        if st.button("🚪 로그아웃", type="secondary", use_container_width=True, key="s_logout"):
-            if _COOKIE_OK and _cookie_manager:
-                try:
-                    _tok = _cookie_manager.get("km_auto_token")
-                    if _tok: _delete_token(_tok)
-                    _cookie_manager.delete("km_auto_token")
-                except Exception: pass
-            st.session_state.authenticated = False
-            st.session_state.current_user  = None
-            st.session_state.user_keys     = {}
-            st.rerun()
+                _obs_log_change("API 키 저장", f"- Notion: {'있음' if _s_notion_tok else '없음'} / Slack: {'있음' if _s_slack else '

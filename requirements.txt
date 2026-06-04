@@ -14,9 +14,9 @@ altair==5.3.0
 cryptography>=44.0.3
 bcrypt>=4.3.0
 
-# [DB] Google Sheets 백엔드
-gspread>=6.1.4
-google-auth>=2.38.0
+# [DB] SQLite 사용 (Google Sheets 불필요)
+# gspread>=6.1.4
+# google-auth>=2.38.0
 
 # [INTEGRATIONS] Notion + Slack
 notion-client==2.3.0
