@@ -704,7 +704,7 @@ if st.session_state.history_df.empty and apps_script_url:
     with st.spinner("Google Sheets에서 데이터를 불러오는 중..."):
         try:
             import requests as _r
-            _gs_res = _r.get(apps_script_url, params={"token": apps_script_token}, timeout=20)
+            _gs_res = _r.get(apps_script_url, params={"token": apps_script_token}, timeout=40)
             _gs_json = _gs_res.json()
             if _gs_json:
                 _gs_df = pd.DataFrame(_gs_json)
@@ -737,7 +737,7 @@ if selected_menu == "Dashboard":
                 with st.spinner("Google Sheets에서 불러오는 중..."):
                     try:
                         import requests as _r
-                        _gs_res = _r.get(apps_script_url, params={"token": apps_script_token}, timeout=20)
+                        _gs_res = _r.get(apps_script_url, params={"token": apps_script_token}, timeout=40)
                         _gs_df = pd.DataFrame(_gs_res.json())
                         if not _gs_df.empty:
                             st.session_state.history_df = _gs_df
