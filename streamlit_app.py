@@ -1725,6 +1725,13 @@ elif selected_menu == "Run & Sync":
             ai_raw = "".join(ai_raw_parts)
             df = pd.DataFrame(results)
             st.session_state.crawled_df = df
+            # AI Report 등에서 바로 사용할 수 있도록 history_df에도 병합
+            if not df.empty:
+                _prev = st.session_state.history_df
+                if _prev.empty:
+                    st.session_state.history_df = df.copy()
+                else:
+                    st.session_state.history_df = pd.concat([_prev, df], ignore_index=True).drop_duplicates(subset=["date","keyword","rank","mall"], keep="last")
             import threading as _threading
             _sync_status = {"done": False, "success": False, "msg": ""}
             _history_df_copy = st.session_state.history_df.copy() if not st.session_state.history_df.empty else pd.DataFrame()
