@@ -311,6 +311,7 @@ if _AUTH_DIR not in sys.path:
 from auth.users import (
     register as _auth_register,
     login as _auth_login,
+    reset_password as _auth_reset_password,
     save_keys as _auth_save_keys,
     load_keys as _auth_load_keys,
 )
@@ -553,7 +554,7 @@ if not st.session_state.authenticated:
             _saved_email = _load_saved_email()
             with st.form("login_form"):
                 _l_email = st.text_input(
-                    "아이디", placeholder="아이디 입력",
+                    "이메일", placeholder="your@email.com",
                     value=_saved_email,
                     key="_l_email"
                 )
@@ -568,7 +569,7 @@ if not st.session_state.authenticated:
 
             if _submitted:
                 if not _l_email or not _l_pw:
-                    st.error("아이디와 비밀번호를 입력해주세요.")
+                    st.error("이메일과 비밀번호를 입력해주세요.")
                 else:
                     _ok, _msg, _user = _auth_login(_l_email, _l_pw)
                     if _ok:
@@ -592,13 +593,13 @@ if not st.session_state.authenticated:
         # ── 회원가입 탭 ────────────────────────────────────────
         with _tab_signup:
             _s_name  = st.text_input("쇼핑몰 이름 (표시명)", key="_s_name")
-            _s_email = st.text_input("아이디", placeholder="사용할 아이디 입력", key="_s_email")
-            _s_pw  = st.text_input("비밀번호", type="password", key="_s_pw")
-            _s_pw2 = st.text_input("비밀번호 확인", type="password", key="_s_pw2")
+            _s_email = st.text_input("이메일", placeholder="your@email.com", key="_s_email")
+            _s_pw  = st.text_input("비밀번호 (8자 이상)", type="password", key="_s_pw")
+            _s_pw2 = st.text_input("비밀번호 확인",       type="password", key="_s_pw2")
             st.markdown("<div style='height:4px'></div>", unsafe_allow_html=True)
             if st.button("회원가입", type="primary", use_container_width=True, key="_s_btn"):
                 if not _s_email or not _s_pw:
-                    st.error("아이디와 비밀번호를 입력해주세요.")
+                    st.error("이메일과 비밀번호를 입력해주세요.")
                 elif _s_pw != _s_pw2:
                     st.error("비밀번호가 일치하지 않습니다.")
                 else:
@@ -607,6 +608,21 @@ if not st.session_state.authenticated:
                         st.success(_msg)
                     else:
                         st.error(_msg)
+
+        # ── 비밀번호 찾기 ──────────────────────────────────────
+        with st.expander("🔑 비밀번호를 잊으셨나요?"):
+            _r_email = st.text_input("가입한 이메일 입력", placeholder="your@email.com", key="_r_email")
+            if st.button("임시 비밀번호 발급", use_container_width=True, key="_r_btn"):
+                if not _r_email:
+                    st.error("이메일을 입력해주세요.")
+                else:
+                    _r_ok, _r_msg, _r_tmp = _auth_reset_password(_r_email)
+                    if _r_ok:
+                        st.success("✅ 임시 비밀번호가 발급됐습니다. 로그인 후 반드시 변경해주세요.")
+                        st.code(_r_tmp, language=None)
+                        st.caption("위 임시 비밀번호로 로그인 후 ⚙️ 설정에서 비밀번호를 변경하세요.")
+                    else:
+                        st.error(_r_msg)
 
         st.markdown(
             "<p style='text-align:center; color:#4b5563; font-size:12px; margin-top:20px;'>"
@@ -672,7 +688,7 @@ competitors       = _k.get("competitors", "다다사, 효로로, 드론뷰")
 # ── 상단 네비게이션 탭 ─────────────────────────────────────────────────────────
 _u = st.session_state.current_user or {}
 _api_set = bool(_k.get("naver_client_id"))
-_menu_items = ["Dashboard", "Run & Sync", "경쟁사 집중 분석", "AI Report", "일자별 순위 추이", "SEO태그 생성기", "틈새 키워드 발굴기", "⚙️ 설정"]
+_menu_items = ["Dashboard", "Run & Sync", "경쟁사 집중 분석", "AI Report", "일자별 순위 추이", "SEO태그 생성기", "틈새 키워드 발굴기", "GEO/AEO 가이드", "상세페이지 제작기", "⚙️ 설정"]
 st.markdown('<div class="km-topnav-wrap">', unsafe_allow_html=True)
 selected_menu = st.radio("메뉴", _menu_items, horizontal=True, label_visibility="collapsed")
 st.markdown('</div>', unsafe_allow_html=True)
@@ -704,7 +720,7 @@ if st.session_state.history_df.empty and apps_script_url:
     with st.spinner("Google Sheets에서 데이터를 불러오는 중..."):
         try:
             import requests as _r
-            _gs_res = _r.get(apps_script_url, params={"token": apps_script_token}, timeout=40)
+            _gs_res = _r.get(apps_script_url, params={"token": apps_script_token}, timeout=20)
             _gs_json = _gs_res.json()
             if _gs_json:
                 _gs_df = pd.DataFrame(_gs_json)
@@ -733,21 +749,16 @@ if selected_menu == "Dashboard":
     with _hcol2:
         st.markdown("<div style='margin-top:4px;'>", unsafe_allow_html=True)
         if st.button("새로고침", use_container_width=True, type="primary"):
-            if apps_script_url:
-                with st.spinner("Google Sheets에서 불러오는 중..."):
-                    try:
-                        import requests as _r
-                        _gs_res = _r.get(apps_script_url, params={"token": apps_script_token}, timeout=40)
-                        _gs_df = pd.DataFrame(_gs_res.json())
-                        if not _gs_df.empty:
-                            st.session_state.history_df = _gs_df
-                            st.rerun()
-                        else:
-                            st.warning("Google Sheets에 데이터가 없습니다.")
-                    except Exception as _e:
-                        st.error(f"실패: {_e}")
+            if notion_token and notion_db_id:
+                with st.spinner("불러오는 중..."):
+                    _df_r, _err_r = load_from_notion(notion_token, notion_db_id, days=30)
+                    if not _df_r.empty:
+                        st.session_state.history_df = _df_r
+                        st.rerun()
+                    else:
+                        st.error(f"실패: {_err_r}")
             else:
-                st.warning("설정에서 GAS URL을 먼저 입력해주세요.")
+                st.warning("사이드바에서 Notion 설정을 먼저 입력해주세요.")
         st.markdown("</div>", unsafe_allow_html=True)
 
     # ── 데이터 준비 ────────────────────────────────────────────────────────────
@@ -1730,13 +1741,6 @@ elif selected_menu == "Run & Sync":
             ai_raw = "".join(ai_raw_parts)
             df = pd.DataFrame(results)
             st.session_state.crawled_df = df
-            # AI Report 등에서 바로 사용할 수 있도록 history_df에도 병합
-            if not df.empty:
-                _prev = st.session_state.history_df
-                if _prev.empty:
-                    st.session_state.history_df = df.copy()
-                else:
-                    st.session_state.history_df = pd.concat([_prev, df], ignore_index=True).drop_duplicates(subset=["date","keyword","rank","mall"], keep="last")
             import threading as _threading
             _sync_status = {"done": False, "success": False, "msg": ""}
             _history_df_copy = st.session_state.history_df.copy() if not st.session_state.history_df.empty else pd.DataFrame()
@@ -1841,7 +1845,7 @@ elif selected_menu == "AI Report":
             st.session_state.ai_reports_cache[TODAY_ISO] = st.session_state.ai_report_text
     hist_df = st.session_state.history_df
     if hist_df.empty:
-        st.warning("과거 데이터가 없습니다. [Dashboard]에서 새로고침하거나, [Run & Sync] 메뉴에서 순위 수집을 먼저 실행해주세요.")
+        st.warning("과거 데이터가 없습니다. [Run & Sync] 메뉴에서 순위 수집 후 Notion에 저장하거나, [Dashboard]에서 새로고침 해주세요.")
     else:
         available_dates = sorted(hist_df['date'].dropna().unique().tolist(), reverse=True)
         if not available_dates:
@@ -1854,6 +1858,35 @@ elif selected_menu == "AI Report":
             if selected_date in st.session_state.ai_reports_cache:
                 st.success(f"✅ {selected_date} 기준 캐싱된 SEO 리포트")
                 st.markdown(st.session_state.ai_reports_cache[selected_date])
+            else:
+                if gemini_key:
+                    if st.button("📝 AI 리포트 생성", type="primary", key="_ai_report_gen"):
+                        _date_df = hist_df[hist_df['date'] == selected_date].copy()
+                        if _date_df.empty:
+                            st.warning("해당 날짜의 데이터가 없습니다.")
+                        else:
+                            _ai_raw2 = _date_df[['keyword','rank','vol','ctr','mall']].to_csv(index=False)
+                            _prompt2 = f"""[날짜] {selected_date}
+네이버 쇼핑 당사(드론박스/빛드론) 키워드별 순위 데이터입니다.
+실무자가 즉시 실행할 수 있는 '구체적인 액션 플랜' 위주로 SEO 전략 보고서를 작성해주세요.
+
+[수집 데이터]
+{_ai_raw2}
+
+[필수 항목]
+1. 📊 오늘 순위 현황 요약
+2. 🚨 긴급 조치 타겟 키워드 TOP 3
+3. 🛠️ 즉시 실행 액션 플랜 (상품명/태그 수정, 광고 입찰가, 리뷰 유도)
+4. 🛡️ 상위권 안착 및 방어 전략"""
+                            try:
+                                with st.spinner("🤖 AI 리포트 생성 중..."):
+                                    _report_text = _gemini_generate(gemini_key, _prompt2)
+                                st.session_state.ai_reports_cache[selected_date] = _report_text
+                                st.rerun()
+                            except Exception as _e:
+                                st.error(f"AI 생성 실패: {_e}")
+                else:
+                    st.info("💡 AI 리포트 생성을 위해 사이드바에서 Gemini API 키를 설정해주세요.")
 
 # ── ⚙️ 설정 ────────────────────────────────────────────────────────────────────
 elif selected_menu == "⚙️ 설정":
@@ -1917,4 +1950,441 @@ elif selected_menu == "⚙️ 설정":
             if _ok:
                 st.session_state.user_keys = _auth_load_keys(st.session_state.current_user["id"])
                 st.success("✅ 설정이 저장되었습니다.")
-                _obs_log_change("API 키 저장", f"- Notion: {'있음' if _s_notion_tok else '없음'} / Slack: {'있음' if _s_slack else '없음'}")
+                _obs_log_change("API 키 저장", "Notion/Slack 설정 업데이트")
+            else:
+                st.error(f"저장 실패: {_msg}")
+    with _btn_c2:
+        if st.button("🚪 로그아웃", type="secondary", use_container_width=True, key="s_logout"):
+            if _COOKIE_OK and _cookie_manager:
+                try:
+                    _tok = _cookie_manager.get("km_auto_token")
+                    if _tok: _delete_token(_tok)
+                    _cookie_manager.delete("km_auto_token")
+                except Exception: pass
+            st.session_state.authenticated = False
+            st.session_state.current_user  = None
+            st.session_state.user_keys     = {}
+            st.rerun()
+
+    st.markdown("<div style='height:8px;'></div>", unsafe_allow_html=True)
+    with st.expander("🔐 비밀번호 변경"):
+        _cp_cur  = st.text_input("현재 비밀번호", type="password", key="cp_cur")
+        _cp_new  = st.text_input("새 비밀번호 (8자 이상)", type="password", key="cp_new")
+        _cp_new2 = st.text_input("새 비밀번호 확인", type="password", key="cp_new2")
+        if st.button("비밀번호 변경", type="primary", key="cp_btn"):
+            if not _cp_cur or not _cp_new:
+                st.error("모든 항목을 입력해주세요.")
+            elif _cp_new != _cp_new2:
+                st.error("새 비밀번호가 일치하지 않습니다.")
+            elif len(_cp_new) < 8:
+                st.error("비밀번호는 8자 이상이어야 합니다.")
+            else:
+                try:
+                    from auth.users import change_password as _auth_change_pw
+                    _cp_ok, _cp_msg = _auth_change_pw(
+                        st.session_state.current_user["email"], _cp_cur, _cp_new
+                    )
+                    if _cp_ok:
+                        st.success("✅ 비밀번호가 변경됐습니다.")
+                    else:
+                        st.error(_cp_msg)
+                except Exception as _e:
+                    st.error(f"변경 중 오류: {_e}")
+
+# ── 8. GEO/AEO 가이드 ──────────────────────────────────────────────────────────
+elif selected_menu == "GEO/AEO 가이드":
+    st.markdown("""
+    <div style='font-size:1.5rem;font-weight:800;color:#111;letter-spacing:-0.03em;margin-bottom:0.2rem;'>GEO/AEO 가이드</div>
+    <div style='font-size:0.82rem;color:#AAA;margin-bottom:1.4rem;'>Generative Engine Optimization · Answer Engine Optimization 공식 문서 기반 참고자료</div>
+    """, unsafe_allow_html=True)
+
+    st.info("📌 **핵심 주장**: Google 공식 문서에 따르면 GEO/AEO는 별도의 최적화 시스템이 아니라 새로운 답변 서비스에 적용된 **기초 SEO**입니다. 모든 주장은 1차 출처(공식 문서)에 링크됩니다.")
+
+    # ── 용어 맵 ──
+    with st.expander("📖 용어 맵 (Terminology Map)", expanded=True):
+        _term_data = {
+            "용어": ["SEO", "AEO", "GEO", "LLMO / AI SEO / AIO"],
+            "풀네임": ["Search Engine Optimization", "Answer Engine Optimization", "Generative Engine Optimization", "LLM Optimization 등"],
+            "성격": [
+                "기본 시스템: 검색엔진이 콘텐츠를 이해하고 사용자가 찾을 수 있도록 지원",
+                "AI/직접/음성 답변에서 인용되기 위한 업계 용어",
+                "생성형 답변에서 가시성 및 귀속을 위한 업계/학문 용어",
+                "마케팅 신조어"
+            ],
+            "Google 공식 입장": [
+                "공식. Google Search Central 문서의 핵심",
+                "'온라인에서 흔한' 용어로 언급. 별도의 Google 시스템 아님",
+                "'온라인에서 흔한' 용어로 언급. Google Search에서는 SEO 기반으로 처리",
+                "Google 공식 프레임워크 아님 — 각 출처별로 확인 필요"
+            ]
+        }
+        st.dataframe(pd.DataFrame(_term_data), use_container_width=True, hide_index=True)
+
+    # ── Google 공식 문서 ──
+    with st.expander("🔵 Google 공식 문서", expanded=True):
+        _google_docs = [
+            ("Optimizing for generative AI features on Google Search",
+             "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide",
+             "GEO/AEO 질문에 대한 Google의 공식 답변. Google Search의 생성형 AI 최적화 = SEO. llms.txt, 청킹, 특별 AI 마크업 불필요"),
+            ("AI features and your website",
+             "https://developers.google.com/search/docs/appearance/ai-features",
+             "AI Overviews / AI Mode 작동 방식. 추가 기술 요구사항 없음 — 색인 가능 + 스니펫 대상이면 충분"),
+            ("SEO Starter Guide",
+             "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+             "기본 원칙: 구조, 콘텐츠, 링크, 제목, 스니펫, 이미지/동영상, 홍보"),
+            ("Google Search Essentials",
+             "https://developers.google.com/search/docs/essentials",
+             "Google Search 등장을 위한 최소 기준: 기술 요건, 스팸 정책, 주요 모범 사례"),
+            ("Structured data intro",
+             "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+             "구조화된 데이터의 공식 역할: 리치 결과 적격성 — 특별한 'AI 검색' 스키마 아님"),
+            ("Google-Extended",
+             "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers#google-extended",
+             "Gemini/Vertex AI 학습 및 그라운딩 제어 토큰. Google Search 포함/순위에 영향 없음"),
+        ]
+        for _title, _url, _why in _google_docs:
+            _c1, _c2 = st.columns([2, 3])
+            with _c1:
+                st.markdown(f"**[{_title}]({_url})**")
+            with _c2:
+                st.caption(_why)
+            st.divider()
+
+    # ── 엔진별 공식 입장 ──
+    with st.expander("🌐 AI 검색엔진별 공식 입장 비교"):
+        _engine_data = {
+            "엔진/제품": ["Google AI Overviews / AI Mode", "ChatGPT search (OpenAI)", "Perplexity", "Claude web search (Anthropic)", "Microsoft Bing / Copilot"],
+            "검색 백엔드": ["Google 인덱스", "OAI-SearchBot + 서드파티", "PerplexityBot + Perplexity-User", "서드파티 검색(Brave 등)", "Bing 인덱스"],
+            "공식 퍼블리셔 가이드": [
+                "Search Essentials + SEO 기본. llms.txt 불필요",
+                "OAI-SearchBot robots.txt 허용; noindex로 거부. 별도 콘텐츠 최적화 가이드 없음",
+                "PerplexityBot + IP 허용. 기술 접근만, 콘텐츠 전략 없음",
+                "퍼블리셔 최적화 문서 없음. 검색 공급자 인덱스의 신뢰할 수 있는 1차 출처 권장",
+                "스키마가 LLM에 도움 + IndexNow 최신성 + 명확한 헤딩/표/FAQ 공식 권장"
+            ],
+            "Google 'SEO로 충분' 대비": ["기준선", "사실상 동일", "사실상 동일", "사실상 동일", "⚠️ 다름 — 생성형 특화 가이드 발행"]
+        }
+        st.dataframe(pd.DataFrame(_engine_data), use_container_width=True, hide_index=True)
+        st.caption("출처: OpenAI Publishers FAQ, Perplexity crawlers docs, Anthropic web search tool docs, Bing Webmaster Blog")
+
+    # ── llms.txt ──
+    with st.expander("📄 llms.txt — 실제 정체"):
+        st.markdown("""
+**출처**: 2024-09-03 Jeremy Howard(fast.ai / Answer.AI)가 제안. 사이트 루트 `/llms.txt`에 LLM이 추론 시 사이트를 활용할 수 있도록 정리된 마크다운 인덱스.
+
+**지원 현황 (2026 Q1 기준)**:
+- 🔴 **Google** — 공식 미지원. John Mueller & Gary Illyes: "현재 어떤 AI 시스템도 llms.txt를 사용하지 않으며, 지원 계획 없음"
+- 🟡 **OpenAI / 기타** — GPTBot/ChatGPT가 llms.txt를 파싱한다는 공식 발표 없음
+- ⚠️ **"Anthropic/Perplexity 지원 확인"** — 일부 SEO 블로그 주장이나, 주요 플랫폼이 무시한다는 보고도 있음. **1차 확인 안됨 → 사실로 승격 안함**
+
+**결론**: llms.txt는 커뮤니티 관례이지, 공식 표준이 아닙니다.
+        """)
+
+    # ── 무시할 것들 ──
+    with st.expander("🚫 무시해야 할 과대 주장들"):
+        _ignore_list = [
+            "Google Search를 위해 llms.txt가 필요하다",
+            "AI 검색에는 특별/비밀 스키마가 필요하다",
+            "AI를 위해 콘텐츠를 작은 청크로 나눠야 한다",
+            "AI 시스템만을 위한 어색한 재작성",
+            "인위적인 언급 파밍",
+            "'AI Overview 1위 보장' 영업 멘트",
+        ]
+        for _item in _ignore_list:
+            st.markdown(f"❌ {_item}")
+
+        st.success("✅ **AI 검색 공통 안전 기준**: 공개 접근 가능한 소스 텍스트 · 명확한 작성자/조직/날짜/근거 · 정규 비중복 URL · 신뢰할 수 있는 외부 인용 · 최신 제품/가격/정책/FAQ")
+
+    # ── 학술/업계 참고 ──
+    with st.expander("📚 업계 & 학술 참고 자료 (Secondary)"):
+        _ref_data = {
+            "출처": [
+                "arXiv — GEO: Generative Engine Optimization",
+                "Semrush — Answer Engine Optimization",
+                "Ahrefs — Answer Engine Optimization",
+                "Search Engine Journal — Google 가이드",
+            ],
+            "링크": [
+                "https://arxiv.org/abs/2311.09735",
+                "https://www.semrush.com/blog/answer-engine-optimization/",
+                "https://ahrefs.com/blog/answer-engine-optimization/",
+                "https://www.searchenginejournal.com/googles-new-ai-search-guide-calls-aeo-and-geo-still-seo/575026/",
+            ],
+            "활용": [
+                "'GEO' 용어를 공식화한 논문. KDD 2024 채택",
+                "AI 답변에서 브랜드 가시성을 위한 마케팅 관행으로 AEO 설명",
+                "직접 답변 서비스의 SEO 보완으로 AEO 설명",
+                "Google 공식 가이드의 업계 해석. Google 문서를 1차 출처로 유지",
+            ]
+        }
+        _ref_df = pd.DataFrame(_ref_data)
+        for _, _row in _ref_df.iterrows():
+            st.markdown(f"**[{_row['출처']}]({_row['링크']})** — {_row['활용']}")
+
+    st.caption("데이터 출처: [awesome-geo](https://github.com/aldegad/awesome-geo) (CC0-1.0)")
+
+# ── 9. 상세페이지 제작기 ────────────────────────────────────────────────────────
+elif selected_menu == "상세페이지 제작기":
+    st.markdown("""
+    <div style='font-size:1.5rem;font-weight:800;color:#111;letter-spacing:-0.03em;margin-bottom:0.2rem;'>상세페이지 제작기</div>
+    <div style='font-size:0.82rem;color:#AAA;margin-bottom:1.4rem;'>네이버 쇼핑 최적화 상품 상세페이지 콘텐츠 자동 생성</div>
+    """, unsafe_allow_html=True)
+
+    if not gemini_key:
+        st.warning("⚠️ 상세페이지 생성을 위해 사이드바에서 Gemini API 키를 먼저 설정해주세요.")
+    else:
+        _dp_tab1, _dp_tab2, _dp_tab3 = st.tabs(["✏️ 상품 정보 입력", "📄 생성된 상세페이지", "🎯 GEO 준비도 평가"])
+
+        with _dp_tab1:
+            _dp_c1, _dp_c2 = st.columns(2)
+            with _dp_c1:
+                _dp_name = st.text_input("상품명 *", placeholder="예: DJI 매빅3 프로 드론 (플라이모어 콤보)")
+                _dp_category = st.text_input("카테고리", placeholder="예: 촬영용 드론 / 소비자 드론")
+                _dp_price = st.text_input("판매가", placeholder="예: 3,890,000원")
+                _dp_brand = st.text_input("브랜드", placeholder="예: DJI")
+            with _dp_c2:
+                _dp_keywords = st.text_area("타겟 키워드 (줄바꿈 구분)", placeholder="드론\n4K드론\n매빅3프로\n촬영드론", height=110)
+                _dp_features = st.text_area("주요 특징/스펙 (줄바꿈 구분)", placeholder="1인치 CMOS 센서\n4K/60fps 촬영\n최대 43분 비행\n전방위 장애물 감지", height=110)
+
+            _dp_tone = st.selectbox("글쓰기 톤", ["전문가/신뢰감", "친근/쉬운 설명", "스펙 중심 간결체"])
+            _dp_sections = st.multiselect(
+                "생성할 섹션 선택",
+                ["상품 소개 (Hero 문구)", "주요 특징 상세 설명", "스펙 표", "FAQ", "SEO 메타 태그 (title/description)", "네이버 쇼핑 상품명 최적화 예시"],
+                default=["상품 소개 (Hero 문구)", "주요 특징 상세 설명", "스펙 표", "SEO 메타 태그 (title/description)"]
+            )
+
+            if st.button("🚀 상세페이지 생성", type="primary", use_container_width=True):
+                if not _dp_name:
+                    st.error("상품명을 입력해주세요.")
+                else:
+                    # ── awesome-geo 기반 GEO/AEO 시스템 지식 ──
+                    _GEO_KNOWLEDGE = """
+[GEO/AEO 최적화 원칙 — awesome-geo 기반]
+Google, ChatGPT, Perplexity, Claude, Bing/Copilot 등 AI 검색 엔진에 인용되려면:
+
+핵심 원칙 (엔진 공통):
+- 공개적으로 크롤/인덱싱 가능한 콘텐츠
+- 명확한 작성자/브랜드/날짜/근거 명시
+- 중복 없는 정규 URL
+- 신뢰할 수 있는 외부 인용 포함
+- 최신 상품정보/가격/정책/FAQ 유지
+- 브랜드·핵심 엔티티 명칭 일관성
+
+구조 최적화 (특히 Bing/Copilot에 효과적):
+- 명확한 제목 계층(H1→H2→H3) 사용
+- 표(Table) 형식으로 스펙/비교 정보 제공
+- FAQ 섹션: 질문-답변 쌍으로 직접 답변 제공
+- 구조화 데이터(Schema.org) 권장: Product, FAQ, BreadcrumbList
+
+SEO 메타 최적화 (Google AI Overviews / AI Mode 기준):
+- title: 60자 이내, 핵심 키워드 앞배치
+- meta description: 160자 이내, 스니펫 소환력 있게
+- 스니펫 최적화: 핵심 답변을 문단 앞줄에 배치 (position zero 타겟)
+
+피해야 할 것:
+- AI만을 위한 어색한 문체 재작성
+- 인위적 키워드 반복 (키워드 스터핑)
+- 과장·미확인 주장
+- "AI 검색 보장" 식의 과대 문구
+"""
+                    _dp_prompt = f"""당신은 네이버 쇼핑 SEO + GEO/AEO 전문가입니다. 아래 GEO/AEO 원칙과 상품 정보를 바탕으로 AI 검색 엔진에도 잘 인용되는 상품 상세페이지 콘텐츠를 작성해주세요.
+
+{_GEO_KNOWLEDGE}
+
+[상품 정보]
+- 상품명: {_dp_name}
+- 카테고리: {_dp_category or '미입력'}
+- 브랜드: {_dp_brand or '미입력'}
+- 판매가: {_dp_price or '미입력'}
+- 타겟 키워드: {_dp_keywords or '미입력'}
+- 주요 특징/스펙: {_dp_features or '미입력'}
+- 글쓰기 톤: {_dp_tone}
+
+[생성할 섹션]
+{chr(10).join(f'- {s}' for s in _dp_sections)}
+
+[작성 지침]
+1. 네이버 쇼핑 SEO + GEO/AEO 원칙을 동시에 적용
+2. 타겟 키워드를 자연스럽게 포함 (스터핑 금지)
+3. 브랜드명·모델명·핵심 엔티티를 일관되게 사용
+4. FAQ 섹션은 실제 구매자 질문 형식으로 작성 (AI 직접 답변 타겟)
+5. 스펙 표는 마크다운 표(|col|col|) 형식 사용
+6. SEO 메타 태그: title 60자 이내, description 160자 이내
+7. 각 섹션 첫 문장에 핵심 정보 배치 (스니펫 최적화)
+8. 네이버 쇼핑 상품명: [브랜드] + [주요 키워드] + [모델명] + [옵션] 순서
+
+마크다운 형식으로 작성해주세요."""
+
+                    with st.spinner("📝 상세페이지 생성 중..."):
+                        try:
+                            _dp_result = _gemini_generate(gemini_key, _dp_prompt)
+                            st.session_state['_dp_result'] = _dp_result
+                            st.session_state['_dp_name_saved'] = _dp_name
+                            st.session_state['_dp_brand_saved'] = _dp_brand
+                            st.success("✅ 생성 완료! '생성된 상세페이지' 탭에서 확인하세요.")
+                        except Exception as _e:
+                            st.error(f"생성 실패: {_e}")
+
+        with _dp_tab2:
+            if '_dp_result' in st.session_state and st.session_state['_dp_result']:
+                _dp_name_saved = st.session_state.get('_dp_name_saved', '상품')
+                st.markdown(f"### {_dp_name_saved}")
+                st.markdown("---")
+                st.markdown(st.session_state['_dp_result'])
+                st.markdown("---")
+                _dp_col1, _dp_col2 = st.columns(2)
+                with _dp_col1:
+                    st.download_button(
+                        "📥 마크다운 다운로드",
+                        data=st.session_state['_dp_result'].encode('utf-8'),
+                        file_name=f"상세페이지_{_dp_name_saved[:20]}.md",
+                        mime="text/markdown",
+                        use_container_width=True
+                    )
+                with _dp_col2:
+                    _dp_html = f"""<!DOCTYPE html>
+<html lang="ko">
+<head><meta charset="UTF-8"><title>{_dp_name_saved}</title>
+<style>body{{font-family:'Noto Sans KR',sans-serif;max-width:900px;margin:40px auto;padding:20px;line-height:1.7;color:#333;}}
+h1,h2,h3{{color:#111;}}table{{border-collapse:collapse;width:100%;}}td,th{{border:1px solid #ddd;padding:8px 12px;}}th{{background:#f5f5f5;}}</style>
+</head><body>
+<h1>{_dp_name_saved}</h1>
+<pre style="white-space:pre-wrap;font-family:inherit;">{st.session_state['_dp_result']}</pre>
+</body></html>"""
+                    st.download_button(
+                        "📥 HTML 다운로드",
+                        data=_dp_html.encode('utf-8'),
+                        file_name=f"상세페이지_{_dp_name_saved[:20]}.html",
+                        mime="text/html",
+                        use_container_width=True
+                    )
+            else:
+                st.info("💡 '상품 정보 입력' 탭에서 정보를 입력하고 생성 버튼을 눌러주세요.")
+
+        with _dp_tab3:
+            st.markdown("#### 🎯 GEO 준비도 평가 — awesome-geo 기준")
+            st.caption("생성된 상세페이지가 AI 검색 엔진(Google AI Overviews, ChatGPT, Perplexity, Bing/Copilot)에 인용될 준비가 됐는지 평가합니다.")
+
+            if '_dp_result' not in st.session_state or not st.session_state['_dp_result']:
+                st.info("💡 먼저 상세페이지를 생성하면 자동으로 평가됩니다.")
+            else:
+                _content = st.session_state['_dp_result']
+                _content_lower = _content.lower()
+
+                # ── 체크리스트 항목 정의 ──
+                _geo_checks = [
+                    # (카테고리, 항목명, 통과조건함수, 실패시 개선안)
+                    ("📋 구조", "명확한 헤딩(##) 사용",
+                     lambda c: c.count("##") >= 2,
+                     "## 헤딩을 2개 이상 사용해 콘텐츠 구조를 명확히 하세요."),
+                    ("📋 구조", "스펙/비교 표(Table) 포함",
+                     lambda c: "|" in c and "---" in c,
+                     "마크다운 표(|컬럼|컬럼|)로 스펙을 정리하면 AI가 구조화 데이터로 인식합니다."),
+                    ("📋 구조", "FAQ 섹션 포함",
+                     lambda c: "faq" in c.lower() or "자주 묻는" in c or "Q:" in c or "**Q" in c,
+                     "FAQ 섹션을 추가하면 AI 직접 답변(Featured Snippet) 노출에 유리합니다."),
+                    ("🔍 SEO", "SEO 메타 태그(title/description) 포함",
+                     lambda c: "title" in c.lower() and "description" in c.lower(),
+                     "SEO 메타 태그(title, meta description)를 포함해주세요."),
+                    ("🔍 SEO", "타겟 키워드 포함",
+                     lambda c: bool(st.session_state.get('_dp_name_saved','')) and
+                               st.session_state.get('_dp_name_saved','').split()[0].lower() in c.lower(),
+                     "상품명의 핵심 키워드가 본문에 자연스럽게 포함돼야 합니다."),
+                    ("🔍 SEO", "브랜드명 일관 사용",
+                     lambda c: (not st.session_state.get('_dp_brand_saved','')) or
+                               st.session_state.get('_dp_brand_saved','').lower() in c.lower(),
+                     "브랜드명을 일관되게 사용해 AI 엔진이 엔티티를 정확히 인식하게 하세요."),
+                    ("🤖 AI 최적화", "첫 문단에 핵심 정보 배치",
+                     lambda c: len(c.split('\n')[0]) > 20 or (len(c.split('\n')) > 2 and len(c.split('\n')[2]) > 30),
+                     "첫 문단에 상품의 핵심 가치를 배치하면 AI 스니펫 소환 가능성이 높아집니다."),
+                    ("🤖 AI 최적화", "구체적 수치/스펙 포함",
+                     lambda c: any(ch.isdigit() for ch in c),
+                     "구체적인 수치(해상도, 용량, 크기 등)가 있으면 AI가 사실 기반 답변으로 인용합니다."),
+                    ("🤖 AI 최적화", "과장 표현 없음 (신뢰도)",
+                     lambda c: not any(w in c for w in ["세계 최고", "완벽한", "100% 보장", "무조건"]),
+                     "과장 표현을 제거하면 AI 엔진의 신뢰도 평가가 높아집니다."),
+                    ("🌐 Bing/Copilot", "명확한 소제목+내용 쌍 구조",
+                     lambda c: c.count("##") >= 3,
+                     "Bing/Copilot은 ##소제목 + 내용 쌍 구조를 특히 중요시합니다. 섹션을 3개 이상 사용하세요."),
+                ]
+
+                # ── 평가 실행 ──
+                _passed = []
+                _failed = []
+                for _cat, _name, _check_fn, _fix in _geo_checks:
+                    try:
+                        if _check_fn(_content):
+                            _passed.append((_cat, _name))
+                        else:
+                            _failed.append((_cat, _name, _fix))
+                    except Exception:
+                        _failed.append((_cat, _name, _fix))
+
+                _score = len(_passed)
+                _total = len(_geo_checks)
+                _pct = int(_score / _total * 100)
+
+                # ── 점수 표시 ──
+                if _pct >= 80:
+                    _score_color = "#22c55e"
+                    _score_label = "우수"
+                    _score_emoji = "🏆"
+                elif _pct >= 60:
+                    _score_color = "#f59e0b"
+                    _score_label = "보통"
+                    _score_emoji = "⚡"
+                else:
+                    _score_color = "#ef4444"
+                    _score_label = "개선 필요"
+                    _score_emoji = "⚠️"
+
+                st.markdown(f"""
+<div style='background:linear-gradient(135deg,#f8fafc,#f1f5f9);border-radius:16px;padding:24px;margin-bottom:20px;text-align:center;'>
+  <div style='font-size:3rem;font-weight:900;color:{_score_color};'>{_score_emoji} {_pct}점</div>
+  <div style='font-size:1.1rem;color:#555;margin-top:4px;'>GEO 준비도 <b style='color:{_score_color};'>{_score_label}</b> &nbsp;|&nbsp; {_score}/{_total} 항목 통과</div>
+  <div style='background:#e5e7eb;border-radius:99px;height:10px;margin:14px auto;max-width:320px;'>
+    <div style='background:{_score_color};width:{_pct}%;height:10px;border-radius:99px;transition:width 0.5s;'></div>
+  </div>
+  <div style='font-size:0.78rem;color:#aaa;'>기준: awesome-geo (Google·ChatGPT·Perplexity·Bing/Copilot 공식 문서 기반)</div>
+</div>
+""", unsafe_allow_html=True)
+
+                # ── 통과 항목 ──
+                if _passed:
+                    with st.expander(f"✅ 통과 항목 ({len(_passed)}개)", expanded=False):
+                        for _cat, _name in _passed:
+                            st.markdown(f"✅ **{_cat}** · {_name}")
+
+                # ── 미흡 항목 + 개선안 ──
+                if _failed:
+                    with st.expander(f"🔧 개선 필요 항목 ({len(_failed)}개)", expanded=True):
+                        for _cat, _name, _fix in _failed:
+                            st.markdown(f"""
+<div style='background:#fff7ed;border-left:4px solid #f59e0b;border-radius:8px;padding:12px 16px;margin-bottom:10px;'>
+  <div style='font-size:0.85rem;font-weight:700;color:#92400e;'>{_cat} · {_name}</div>
+  <div style='font-size:0.82rem;color:#78350f;margin-top:4px;'>💡 {_fix}</div>
+</div>
+""", unsafe_allow_html=True)
+
+                # ── AI 재생성 버튼 ──
+                st.markdown("---")
+                if _failed and st.button("🔄 개선안 반영해서 재생성", use_container_width=True):
+                    _fix_notes = "\n".join([f"- {n}: {f}" for _, n, f in _failed])
+                    _dp_reprompt = f"""아래는 이전에 작성한 상세페이지 콘텐츠입니다. GEO/AEO 평가에서 미흡한 항목이 발견됐습니다. 개선안을 반영해 전체 콘텐츠를 다시 작성해주세요.
+
+[미흡 항목 및 개선 방향]
+{_fix_notes}
+
+[기존 콘텐츠]
+{_content}
+
+위 개선사항을 모두 반영해 마크다운 형식으로 다시 작성해주세요. 기존 내용은 유지하되 개선안만 적용하세요."""
+                    with st.spinner("🔄 개선된 상세페이지 재생성 중..."):
+                        try:
+                            _dp_improved = _gemini_generate(gemini_key, _dp_reprompt)
+                            st.session_state['_dp_result'] = _dp_improved
+                            st.success("✅ 재생성 완료! '생성된 상세페이지' 탭에서 확인하세요.")
+                            st.rerun()
+                        except Exception as _e:
+                            st.error(f"재생성 실패: {_e}")
+>>>>>>> eabb184 (feat: 상세페이지 — GEO/AEO 지식 주입 + 준비도 스코어)
