@@ -2387,4 +2387,3 @@ h1,h2,h3{{color:#111;}}table{{border-collapse:collapse;width:100%;}}td,th{{borde
                             st.rerun()
                         except Exception as _e:
                             st.error(f"재생성 실패: {_e}")
->>>>>>> eabb184 (feat: 상세페이지 — GEO/AEO 지식 주입 + 준비도 스코어)
