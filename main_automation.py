@@ -151,6 +151,26 @@ def run_automation():
             logging.info("구글 시트 전송 완료")
         except Exception as e:
             logging.error(f"[P3] 구글 시트 전송 실패: {type(e).__name__}: {e}")
+
+        # [ALERTS] 순위 변동 이벤트 알림 (SLACK_WEBHOOK_URL 설정 시에만 동작)
+        _slack_url = os.environ.get("SLACK_WEBHOOK_URL", "")
+        if _slack_url:
+            try:
+                from integrations.rank_alerts import (
+                    detect_events, format_alert_message,
+                    load_prev_from_apps_script, send_slack_webhook)
+                prev_df = load_prev_from_apps_script(APPS_SCRIPT_URL, APPS_SCRIPT_TOKEN, today_iso)
+                if prev_df is None:
+                    logging.info("[ALERTS] 비교할 전일 데이터 없음 — 알림 생략")
+                else:
+                    events = detect_events(df, prev_df)
+                    msg = format_alert_message(events, today_iso)
+                    if msg and send_slack_webhook(_slack_url, msg):
+                        logging.info(f"[ALERTS] 이벤트 {len(events)}건 Slack 발송 완료")
+                    elif not msg:
+                        logging.info("[ALERTS] 감지된 이벤트 없음")
+            except Exception as e:
+                logging.warning(f"[ALERTS] 알림 처리 실패(크롤은 정상): {type(e).__name__}: {e}")
     else:
         logging.warning("[P3] 수집 결과 없음 또는 APPS_SCRIPT_URL 미설정")
 

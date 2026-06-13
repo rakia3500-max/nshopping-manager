@@ -41,7 +41,14 @@ def _load_master_key() -> bytes:
         if os.path.exists(key_file):
             with open(key_file, "rb") as f:
                 return f.read().strip()
-        # 최초 실행 시 키 자동 생성 (개발 전용)
+        # [SECURITY] 운영 환경에서는 키 자동 생성 금지 -- 즉시 중단
+        # 개발 환경에서만 DEV_MODE=1 설정 후 임시 키 자동 생성 허용
+        if os.getenv("DEV_MODE") != "1":
+            raise RuntimeError(
+                "ENCRYPT_KEY 미설정 -- 운영 환경에서는 Streamlit Secrets 또는 "
+                "환경변수에 ENCRYPT_KEY를 반드시 설정해야 합니다. "
+                "(로컬 개발 시에만 DEV_MODE=1 설정으로 임시 키 자동 생성 가능)"
+            )
         if not _CRYPTO_OK:
             return b""
         new_key = Fernet.generate_key()
@@ -83,7 +90,11 @@ def encrypt(plain: str) -> str:
     if not plain:
         return ""
     if not _CRYPTO_OK:
-        return plain  # 암호화 불가 시 평문 저장
+        # [SECURITY] 평문 저장 금지 -- 암호화 불가 시 저장 자체를 거부
+        raise RuntimeError(
+            "cryptography 패키지가 없어 API 키를 암호화할 수 없습니다. "
+            "pip install cryptography 후 다시 시도하세요."
+        )
     try:
         return _get_fernet().encrypt(plain.encode("utf-8")).decode("utf-8")
     except Exception as e:

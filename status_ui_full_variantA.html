@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>키워드맵 — 시안 A 적용 전체 화면</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; font-family: 'Inter', -apple-system, sans-serif; margin: 0; padding: 0; -webkit-font-smoothing: antialiased; }
+  body { background: #F4F2EE; color: #111; padding: 0 0 80px; }
+  .app { max-width: 1080px; margin: 0 auto; padding: 24px 28px; }
+
+  /* 상단 네비 (실제 km-topnav 재현) */
+  .topnav { background: #111; border-radius: 8px; padding: 4px 6px; display: flex; gap: 2px; overflow-x: auto; box-shadow: 4px 4px 0 #333; }
+  .topnav .item { color: rgba(255,255,255,0.6); font-size: 0.8rem; font-weight: 500; padding: 11px 13px; white-space: nowrap; cursor: pointer; border-bottom: 3px solid transparent; }
+  .topnav .item:hover { color: rgba(255,255,255,0.85); }
+  .topnav .item.active { color: #fff; border-bottom: 3px solid #FF6B2B; font-weight: 600; }
+
+  /* ───── 시안 A: 상태 바 (네비 바로 아래) ───── */
+  .statusbar { display: flex; align-items: center; gap: 14px; background: #fff; border: 2.5px solid #111;
+    border-radius: 8px; box-shadow: 4px 4px 0 #111; padding: 10px 16px; margin-top: 14px; flex-wrap: wrap; }
+  .sb-status { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 0.9rem; }
+  .sb-divider { width: 2px; height: 20px; background: #E5E2DC; }
+  .sb-pills { display: flex; gap: 6px; flex-wrap: wrap; flex: 1; }
+  .sb-pill { display: flex; align-items: center; gap: 5px; font-size: 0.74rem; color: #555;
+    background: #F7F5F1; border: 1.5px solid #E0DCD4; border-radius: 20px; padding: 3px 9px; }
+  .sb-pill.bad { background: #FFF0E8; border-color: #FF6B2B; color: #C03800; font-weight: 600; }
+  .sb-test { background: #fff; border: 2px solid #111; border-radius: 6px; box-shadow: 2px 2px 0 #555;
+    padding: 5px 11px; font-size: 0.72rem; font-weight: 700; cursor: pointer; white-space: nowrap; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
+  .g { background: #44BB44; } .y { background: #E6A000; } .r { background: #FF5555; } .x { background: #C9C4BB; }
+
+  /* 페이지 헤더 */
+  .page-header { display: flex; justify-content: space-between; align-items: flex-start; margin: 24px 0 20px; padding-bottom: 14px; border-bottom: 2px solid #111; }
+  .page-title { font-size: 1.3rem; font-weight: 700; letter-spacing: -0.02em; border-bottom: 3px solid #FF6B2B; padding-bottom: 4px; }
+  .page-sub { font-size: 0.8rem; color: #888; margin-top: 6px; }
+  .refresh-btn { background: #FF6B2B; color: #fff; border: 2px solid #111; border-radius: 6px; box-shadow: 3px 3px 0 #111; padding: 8px 16px; font-weight: 700; font-size: 0.82rem; cursor: pointer; }
+
+  /* 브랜드 패널 */
+  .brand-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 18px; }
+  .brand-panel { border: 2.5px solid #111; border-radius: 8px; overflow: hidden; box-shadow: 4px 4px 0 #111; }
+  .brand-head { padding: 9px 16px; display: flex; align-items: center; gap: 10px; border-bottom: 2px solid #111; }
+  .brand-panel.db .brand-head { background: #FF6B2B; }
+  .brand-panel.bit .brand-head { background: #111; }
+  .brand-name { font-size: 13px; font-weight: 600; color: #fff; }
+  .brand-tag { font-size: 10px; padding: 2px 8px; border-radius: 4px; border: 1.5px solid rgba(255,255,255,0.3); color: rgba(255,255,255,0.75); margin-left: auto; }
+  .brand-body { background: #fff; display: grid; grid-template-columns: repeat(4, 1fr); }
+  .brand-stat { padding: 13px 10px; text-align: center; border-right: 1.5px solid #F0EDE8; }
+  .brand-stat:last-child { border-right: none; }
+  .stat-label { font-size: 9px; font-weight: 600; color: #999; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 5px; }
+  .stat-num { font-size: 26px; font-weight: 700; line-height: 1; }
+  .stat-num.up { color: #1A7A2A; } .stat-num.dn { color: #C0392B; } .stat-num.ms { color: #C07A00; }
+  .stat-sub { font-size: 9px; color: #CCC; margin-top: 3px; }
+
+  /* 섹션 블록 */
+  .block { background: #fff; border: 2.5px solid #111; border-radius: 8px; overflow: hidden; margin-bottom: 14px; box-shadow: 4px 4px 0 #111; }
+  .block-head { display: flex; align-items: center; gap: 8px; padding: 10px 16px; border-bottom: 2px solid #111; background: #111; }
+  .block-title { font-size: 12px; font-weight: 600; color: #fff; }
+  .badge { font-size: 10px; padding: 2px 9px; border-radius: 4px; font-weight: 600; margin-left: auto; }
+  .badge-rd { background: #FF5555; color: #fff; } .badge-am { background: #FFD000; color: #111; }
+  .block-body { padding: 4px 0; }
+  .kw-row { display: flex; align-items: center; padding: 10px 16px; border-bottom: 1px solid #F4F1EB; font-size: 0.84rem; }
+  .kw-row:last-child { border-bottom: none; }
+  .kw-name { flex: 1; font-weight: 600; }
+  .kw-rank { font-size: 0.78rem; color: #888; }
+  .kw-move { font-size: 0.74rem; font-weight: 700; margin-left: 12px; }
+  .kw-move.dn { color: #C0392B; } .kw-move.ms { color: #C07A00; }
+  .caption { font-size: 0.72rem; color: #aaa; margin: 14px 2px; }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <!-- 상단 네비게이션 -->
+  <div class="topnav">
+    <span class="item active">Dashboard</span>
+    <span class="item">Run &amp; Sync</span>
+    <span class="item">경쟁사 분석</span>
+    <span class="item">AI Report</span>
+    <span class="item">순위 추이</span>
+    <span class="item">SEO태그</span>
+    <span class="item">틈새 키워드</span>
+    <span class="item">키워드 인텐트</span>
+    <span class="item">시즌성 분석</span>
+    <span class="item">AI 인용 추적</span>
+    <span class="item">스키마·FAQ</span>
+    <span class="item">GEO 진단</span>
+    <span class="item">엔티티 감사</span>
+    <span class="item">⚙️ 설정</span>
+  </div>
+
+  <!-- ★ 시안 A 상태 바 ★ -->
+  <div class="statusbar">
+    <div class="sb-status"><span class="dot y"></span>일부 미설정</div>
+    <div class="sb-divider"></div>
+    <div class="sb-pills">
+      <span class="sb-pill"><span class="dot g"></span>암호화</span>
+      <span class="sb-pill"><span class="dot g"></span>네이버 API</span>
+      <span class="sb-pill bad"><span class="dot y"></span>Gemini</span>
+      <span class="sb-pill"><span class="dot x"></span>광고 API</span>
+      <span class="sb-pill"><span class="dot x"></span>저장소</span>
+      <span class="sb-pill"><span class="dot x"></span>Slack</span>
+      <span class="sb-pill"><span class="dot x"></span>Notion</span>
+    </div>
+    <button class="sb-test">🔌 연결 테스트</button>
+  </div>
+
+  <!-- 페이지 헤더 -->
+  <div class="page-header">
+    <div>
+      <div class="page-title">오늘의 현황</div>
+      <div class="page-sub">2026-06-13 (금) 기준 · 네이버 쇼핑 자사 순위</div>
+    </div>
+    <button class="refresh-btn">새로고침</button>
+  </div>
+
+  <!-- 브랜드 패널 -->
+  <div class="brand-grid">
+    <div class="brand-panel db">
+      <div class="brand-head"><span class="brand-name">드론박스</span><span class="brand-tag">DroneBox</span></div>
+      <div class="brand-body">
+        <div class="brand-stat"><div class="stat-label">노출</div><div class="stat-num">12</div><div class="stat-sub">키워드</div></div>
+        <div class="brand-stat"><div class="stat-label">상승</div><div class="stat-num up">5</div><div class="stat-sub">▲ 키워드</div></div>
+        <div class="brand-stat"><div class="stat-label">하락</div><div class="stat-num dn">3</div><div class="stat-sub">▼ 키워드</div></div>
+        <div class="brand-stat"><div class="stat-label">1페이지</div><div class="stat-num up">8</div><div class="stat-sub">진입</div></div>
+      </div>
+    </div>
+    <div class="brand-panel bit">
+      <div class="brand-head"><span class="brand-name">빛드론</span><span class="brand-tag">BitDrone</span></div>
+      <div class="brand-body">
+        <div class="brand-stat"><div class="stat-label">노출</div><div class="stat-num">9</div><div class="stat-sub">키워드</div></div>
+        <div class="brand-stat"><div class="stat-label">상승</div><div class="stat-num up">4</div><div class="stat-sub">▲ 키워드</div></div>
+        <div class="brand-stat"><div class="stat-label">하락</div><div class="stat-num dn">2</div><div class="stat-sub">▼ 키워드</div></div>
+        <div class="brand-stat"><div class="stat-label">미노출</div><div class="stat-num ms">3</div><div class="stat-sub">키워드</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 순위 하락 블록 -->
+  <div class="block">
+    <div class="block-head"><span class="block-title">📉 순위 하락 키워드</span><span class="badge badge-rd">3개</span></div>
+    <div class="block-body">
+      <div class="kw-row"><span class="kw-name">입문용 드론</span><span class="kw-rank">드론박스 · 2위 → 7위</span><span class="kw-move dn">▼5</span></div>
+      <div class="kw-row"><span class="kw-name">촬영용 드론</span><span class="kw-rank">빛드론 · 5위 → 8위</span><span class="kw-move dn">▼3</span></div>
+      <div class="kw-row"><span class="kw-name">짐벌 카메라</span><span class="kw-rank">드론박스 · 11위 → 14위</span><span class="kw-move dn">▼3</span></div>
+    </div>
+  </div>
+
+  <!-- 미노출 블록 -->
+  <div class="block">
+    <div class="block-head"><span class="block-title">🔍 미노출 키워드</span><span class="badge badge-am">3개</span></div>
+    <div class="block-body">
+      <div class="kw-row"><span class="kw-name">FPV 드론</span><span class="kw-rank">빛드론 · 1페이지 밖</span><span class="kw-move ms">순위 밖</span></div>
+      <div class="kw-row"><span class="kw-name">농업용 드론</span><span class="kw-rank">빛드론 · 1페이지 밖</span><span class="kw-move ms">순위 밖</span></div>
+      <div class="kw-row"><span class="kw-name">드론 배터리</span><span class="kw-rank">빛드론 · 1페이지 밖</span><span class="kw-move ms">순위 밖</span></div>
+    </div>
+  </div>
+
+  <div class="caption">💡 시스템 상태 바의 항목을 누르면 해당 설정으로 이동합니다. "Gemini 미설정"이라 AI 리포트·인용 추적 메뉴는 비활성 상태입니다.</div>
+
+</div>
+</body>
+</html>

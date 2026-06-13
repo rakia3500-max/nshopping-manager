@@ -232,9 +232,12 @@ def _sched_start(keys):
 def _sched_stop():
     _SCHED_SINGLETON["stop"] = True
 
-_OBSIDIAN_VAULT = r"C:\Users\binde\Documents\Obsidian Vault\10_Projects\키워드맵"
+# [P2] 하드코딩 경로 제거 -- 환경변수로 주입 (미설정 시 Obsidian 로깅 자동 비활성화)
+_OBSIDIAN_VAULT = _os.getenv("OBSIDIAN_VAULT_DIR", "")
 
 def _obs_log_change(title: str, detail: str):
+    if not _OBSIDIAN_VAULT:
+        return
     try:
         path = _os.path.join(_OBSIDIAN_VAULT, "변경_이력.md")
         now  = (dt.datetime.now(dt.timezone.utc) + dt.timedelta(hours=9)).strftime("%Y-%m-%d %H:%M")
@@ -245,6 +248,8 @@ def _obs_log_change(title: str, detail: str):
         pass
 
 def _obs_log_error(title: str, symptom: str, cause: str = "", fix: str = ""):
+    if not _OBSIDIAN_VAULT:
+        return
     try:
         path = _os.path.join(_OBSIDIAN_VAULT, "에러_로그.md")
         now  = (dt.datetime.now(dt.timezone.utc) + dt.timedelta(hours=9)).strftime("%Y-%m-%d %H:%M")
@@ -612,11 +617,12 @@ if not st.session_state.authenticated:
         # ── 비밀번호 찾기 ──────────────────────────────────────
         with st.expander("🔑 비밀번호를 잊으셨나요?"):
             _r_email = st.text_input("가입한 이메일 입력", placeholder="your@email.com", key="_r_email")
+            _r_name  = st.text_input("가입 시 등록한 이름", placeholder="본인 확인용", key="_r_name")
             if st.button("임시 비밀번호 발급", use_container_width=True, key="_r_btn"):
-                if not _r_email:
-                    st.error("이메일을 입력해주세요.")
+                if not _r_email or not _r_name:
+                    st.error("이메일과 가입 시 등록한 이름을 모두 입력해주세요.")
                 else:
-                    _r_ok, _r_msg, _r_tmp = _auth_reset_password(_r_email)
+                    _r_ok, _r_msg, _r_tmp = _auth_reset_password(_r_email, _r_name)
                     if _r_ok:
                         st.success("✅ 임시 비밀번호가 발급됐습니다. 로그인 후 반드시 변경해주세요.")
                         st.code(_r_tmp, language=None)
@@ -688,7 +694,50 @@ competitors       = _k.get("competitors", "다다사, 효로로, 드론뷰")
 # ── 상단 네비게이션 탭 ─────────────────────────────────────────────────────────
 _u = st.session_state.current_user or {}
 _api_set = bool(_k.get("naver_client_id"))
-_menu_items = ["Dashboard", "Run & Sync", "경쟁사 집중 분석", "AI Report", "일자별 순위 추이", "SEO태그 생성기", "틈새 키워드 발굴기", "GEO/AEO 가이드", "상세페이지 제작기", "⚙️ 설정"]
+
+# 전 화면 공통 상태 바 — 시안 A (한눈에 시스템 상태 + 항목별 신호)
+try:
+    from integrations.system_status import check_config as _cc, overall_level as _ol, DOT as _DOT
+    try:
+        from auth.encrypt import _get_fernet as _gf
+        _mini_enc = _gf() is not None
+    except Exception:
+        _mini_enc = False
+    _mini_items = _cc(_k, _mini_enc)
+    _mini_lv = _ol(_mini_items)
+    _mini_txt = {"green": "정상", "yellow": "일부 미설정", "red": "필수 누락"}[_mini_lv]
+    _mini_color = {"green": "#44BB44", "yellow": "#E6A000", "red": "#FF5555"}[_mini_lv]
+    # 항목별 알약: 짧은 라벨 매핑
+    _pill_label = {
+        "암호화 (ENCRYPT_KEY)": "암호화", "네이버 검색 API": "네이버 API",
+        "네이버 광고 API": "광고 API", "Gemini AI": "Gemini",
+        "데이터 저장소 (GAS)": "저장소", "Slack 알림": "Slack", "Notion 연동": "Notion"}
+    _dot_hex = {"green": "#44BB44", "yellow": "#E6A000", "red": "#FF5555", "gray": "#C9C4BB"}
+    _pills_html = ""
+    for _it in _mini_items:
+        _bad = _it["level"] in ("red", "yellow")
+        _pstyle = ("background:#FFF0E8;border-color:#FF6B2B;color:#C03800;font-weight:600;"
+                   if _bad else "background:#F7F5F1;border-color:#E0DCD4;color:#555;")
+        _pills_html += (
+            f"<span style='display:inline-flex;align-items:center;gap:5px;font-size:0.72rem;"
+            f"border:1.5px solid;border-radius:20px;padding:3px 9px;{_pstyle}'>"
+            f"<span style='width:9px;height:9px;border-radius:50%;background:{_dot_hex[_it['level']]};'></span>"
+            f"{_pill_label.get(_it['name'], _it['name'])}</span>")
+    st.markdown(
+        f"<div style='display:flex;align-items:center;gap:12px;background:#fff;border:2.5px solid #111;"
+        f"border-radius:8px;box-shadow:4px 4px 0 #111;padding:9px 14px;margin:10px 0 4px;flex-wrap:wrap;'>"
+        f"<span style='display:flex;align-items:center;gap:7px;font-weight:700;font-size:0.85rem;white-space:nowrap;'>"
+        f"<span style='width:10px;height:10px;border-radius:50%;background:{_mini_color};'></span>"
+        f"시스템 {_mini_txt}</span>"
+        f"<span style='width:2px;height:18px;background:#E5E2DC;'></span>"
+        f"<span style='display:flex;gap:6px;flex-wrap:wrap;'>{_pills_html}</span>"
+        f"</div>", unsafe_allow_html=True)
+    if _mini_lv == "red":
+        st.caption("🔴 필수 설정이 누락됐습니다. Dashboard 또는 ⚙️ 설정에서 확인하세요.")
+except Exception:
+    pass
+
+_menu_items = ["Dashboard", "Run & Sync", "경쟁사 집중 분석", "AI Report", "일자별 순위 추이", "SEO태그 생성기", "틈새 키워드 발굴기", "키워드 인텐트", "시즌성 분석", "GEO/AEO 가이드", "AI 인용 추적", "스키마·FAQ 생성기", "GEO 진단", "엔티티 감사", "상세페이지 제작기", "⚙️ 설정"]
 st.markdown('<div class="km-topnav-wrap">', unsafe_allow_html=True)
 selected_menu = st.radio("메뉴", _menu_items, horizontal=True, label_visibility="collapsed")
 st.markdown('</div>', unsafe_allow_html=True)
@@ -760,6 +809,39 @@ if selected_menu == "Dashboard":
             else:
                 st.warning("사이드바에서 Notion 설정을 먼저 입력해주세요.")
         st.markdown("</div>", unsafe_allow_html=True)
+
+    # ── 시스템 상태 상세 (상단 바와 연동, 실제 연결 테스트) ───────────────────
+    from integrations.system_status import (
+        check_config, overall_level, overall_summary, DOT,
+        live_naver, live_gemini, live_apps_script)
+    try:
+        from auth.encrypt import _get_fernet
+        _enc_ok = _get_fernet() is not None
+    except Exception:
+        _enc_ok = False
+    _sys_items = check_config(_k, _enc_ok)
+    _sys_lv = overall_level(_sys_items)
+
+    with st.expander(f"{DOT[_sys_lv]} 시스템 상태 상세 — {overall_summary(_sys_items)}",
+                     expanded=(_sys_lv == "red")):
+        _stat_cols = st.columns(2)
+        for _i, _it in enumerate(_sys_items):
+            with _stat_cols[_i % 2]:
+                _req = " *(필수)*" if _it["required"] else ""
+                st.markdown(f"{DOT[_it['level']]} **{_it['name']}**{_req}  \n"
+                            f"<span style='font-size:0.8rem;color:#888;'>{_it['detail']}</span>",
+                            unsafe_allow_html=True)
+        st.markdown("<div style='height:6px;'></div>", unsafe_allow_html=True)
+        if st.button("🔌 실제 연결 테스트 (네이버·Gemini·저장소)", key="_sys_live"):
+            with st.spinner("실제 API 연결 확인 중…"):
+                _lv1, _d1 = live_naver(naver_cid, naver_csec)
+                _lv2, _d2 = live_gemini(gemini_key)
+                _lv3, _d3 = live_apps_script(apps_script_url, apps_script_token)
+            st.markdown(f"{DOT[_lv1]} **네이버 검색 API** — {_d1}")
+            st.markdown(f"{DOT[_lv2]} **Gemini AI** — {_d2}")
+            st.markdown(f"{DOT[_lv3]} **데이터 저장소** — {_d3}")
+        if _sys_lv == "red":
+            st.caption("🔴 필수 항목은 ⚙️ 설정 메뉴에서 키를 등록하거나, ENCRYPT_KEY는 Streamlit Secrets에 추가하세요.")
 
     # ── 데이터 준비 ────────────────────────────────────────────────────────────
     _today_df = metric_df.copy() if not metric_df.empty else pd.DataFrame()
@@ -1810,7 +1892,7 @@ elif selected_menu == "Run & Sync":
                 def _color_roi(val):
                     if isinstance(val, str) and "%" in val:
                         n = float(val.replace("%","").replace("+",""))
-                        return "color: #16A34A; font-weight:700" if n > 0 else "color: #DC2626; font-weight:700"
+                        return "color: #1A7A2A; font-weight:700" if n > 0 else "color: #C0392B; font-weight:700"
                     return ""
                 st.dataframe(_roi_df.drop(columns=["_roi_raw"]).style.applymap(_color_roi, subset=["ROI"]), use_container_width=True, hide_index=True)
                 st.caption("💡 ROAS > 1이면 광고비 이상 회수.")
@@ -1828,7 +1910,8 @@ elif selected_menu == "Run & Sync":
 1. 📊 오늘 순위 현황 요약
 2. 🚨 긴급 조치 타겟 키워드 TOP 3
 3. 🛠️ 즉시 실행 액션 플랜 (상품명/태그 수정, 광고 입찰가, 리뷰 유도)
-4. 🛡️ 상위권 안착 및 방어 전략"""
+4. 🛡️ 상위권 안착 및 방어 전략
+5. ✅ 이번 주 액션 3가지 — 담당자가 바로 체크리스트로 옮길 수 있게 '한 줄 = 한 작업' 형식, 각 항목에 대상 키워드와 기대 효과 명시"""
                 try:
                     st.session_state.ai_report_text = "\n" + _gemini_generate(gemini_key, ai_prompt)
                 except Exception as e:
@@ -1877,7 +1960,8 @@ elif selected_menu == "AI Report":
 1. 📊 오늘 순위 현황 요약
 2. 🚨 긴급 조치 타겟 키워드 TOP 3
 3. 🛠️ 즉시 실행 액션 플랜 (상품명/태그 수정, 광고 입찰가, 리뷰 유도)
-4. 🛡️ 상위권 안착 및 방어 전략"""
+4. 🛡️ 상위권 안착 및 방어 전략
+5. ✅ 이번 주 액션 3가지 — 담당자가 바로 체크리스트로 옮길 수 있게 '한 줄 = 한 작업' 형식, 각 항목에 대상 키워드와 기대 효과 명시"""
                             try:
                                 with st.spinner("🤖 AI 리포트 생성 중..."):
                                     _report_text = _gemini_generate(gemini_key, _prompt2)
@@ -2387,3 +2471,615 @@ h1,h2,h3{{color:#111;}}table{{border-collapse:collapse;width:100%;}}td,th{{borde
                             st.rerun()
                         except Exception as _e:
                             st.error(f"재생성 실패: {_e}")
+
+# ── 10. AI 인용 추적 (GEO) ──────────────────────────────────────────────────────
+elif selected_menu == "AI 인용 추적":
+    from integrations.geo_tracker import (
+        run_geo_check, compute_share, save_geo_results, load_geo_history,
+        build_brand_groups, DEFAULT_PROMPT_TEMPLATES,
+    )
+
+    st.markdown("""
+    <div style='font-size:1.5rem;font-weight:800;color:#111;letter-spacing:-0.03em;margin-bottom:0.2rem;'>AI 인용 추적</div>
+    <div style='font-size:0.82rem;color:#AAA;margin-bottom:1.4rem;'>네이버 순위 추적의 GEO 버전 — AI에게 구매 추천을 물었을 때 우리 브랜드가 인용되는가</div>
+    """, unsafe_allow_html=True)
+
+    st.info("🤖 소비자가 AI에게 물어볼 법한 질의(추천/구매처)를 키워드별로 보내고, "
+            "응답에서 **드론박스·빛드론 vs 경쟁사**의 인용 여부와 언급 순서를 기록합니다. "
+            "매일 실행하면 '일자별 순위 추이'처럼 **AI 답변 점유율 추이**가 쌓입니다.")
+
+    if not gemini_key:
+        st.warning("⚙️ 설정에서 Gemini API 키를 먼저 등록해주세요.")
+    else:
+        _geo_uid = (_u.get("id") or _u.get("email") or "unknown")
+
+        # ── 키워드 입력 (기존 추적 키워드 재사용) ──
+        _geo_default_kws = []
+        try:
+            if not hist_df.empty and "keyword" in hist_df.columns:
+                _geo_default_kws = list(pd.Series(hist_df["keyword"]).dropna().unique())[:8]
+        except Exception:
+            pass
+        if not _geo_default_kws:
+            _geo_default_kws = ["입문용 드론", "촬영용 드론", "DJI 미니4 프로"]
+
+        _geo_col1, _geo_col2 = st.columns([3, 2])
+        with _geo_col1:
+            _geo_kw_text = st.text_area(
+                "검사할 키워드 (줄바꿈 구분)",
+                value="\n".join(_geo_default_kws),
+                height=140,
+                help="키워드 1개당 질의 2회(추천/구매처)가 실행됩니다. Gemini 무료 쿼터를 고려해 5~10개 권장."
+            )
+        with _geo_col2:
+            with st.expander("📋 사용되는 질의 시나리오", expanded=True):
+                for _pt, _tm in DEFAULT_PROMPT_TEMPLATES:
+                    st.caption(f"**[{_pt}]** {_tm.format(kw='〈키워드〉')}")
+            _geo_groups_preview = build_brand_groups(my_brand_1, my_brand_2, competitors)
+            st.caption("추적 브랜드: " + " · ".join(_geo_groups_preview.keys()))
+
+        _geo_kws = [k.strip() for k in _geo_kw_text.split("\n") if k.strip()]
+        _geo_total_calls = len(_geo_kws) * len(DEFAULT_PROMPT_TEMPLATES)
+
+        if st.button(f"🤖 AI 인용 체크 실행 ({_geo_total_calls}회 질의)", type="primary",
+                     use_container_width=True, disabled=not _geo_kws):
+            _geo_bar = st.progress(0, text="준비 중…")
+            def _geo_prog(done, total, msg):
+                _geo_bar.progress(min(done / max(total, 1), 1.0), text=f"({done}/{total}) {msg}")
+
+            _geo_rows, _geo_errs = run_geo_check(
+                generate_fn=lambda p: _gemini_generate(gemini_key, p),
+                keywords=_geo_kws,
+                brand1_str=my_brand_1, brand2_str=my_brand_2, competitors_str=competitors,
+                progress_cb=_geo_prog,
+            )
+            _geo_bar.empty()
+
+            if _geo_errs:
+                with st.expander(f"⚠️ 질의 실패 {len(_geo_errs)}건"):
+                    for _ek, _ep, _em in _geo_errs:
+                        st.caption(f"- {_ek} [{_ep}]: {_em}")
+
+            if _geo_rows:
+                st.session_state["_geo_today_df"] = pd.DataFrame(_geo_rows)
+                if save_geo_results(_geo_uid, _geo_rows):
+                    st.success(f"✅ {len(_geo_rows)}행 기록 완료 — Google Sheets `geo_results` 시트에 저장됐습니다.")
+                else:
+                    st.warning("결과는 화면에 표시되지만 시트 저장에 실패했습니다 (GSHEET 설정 확인). 아래 CSV로 백업하세요.")
+            else:
+                st.error("수집된 결과가 없습니다. Gemini 키와 쿼터를 확인해주세요.")
+
+        # ── 오늘 결과 표시 ──
+        _geo_today = st.session_state.get("_geo_today_df", pd.DataFrame())
+        if not _geo_today.empty:
+            st.markdown("#### 📊 이번 실행 결과")
+            _geo_share_now = compute_share(_geo_today)
+            _geo_mcols = st.columns(min(len(_geo_share_now), 5) or 1)
+            for _i, (_idx, _r) in enumerate(_geo_share_now.sort_values("share", ascending=False).iterrows()):
+                if _i >= len(_geo_mcols):
+                    break
+                _is_mine = _r["brand"] in list(_geo_groups_preview.keys())[:2]
+                _geo_mcols[_i].metric(
+                    ("🏠 " if _is_mine else "") + str(_r["brand"]),
+                    f"{_r['share']}%",
+                    f"{int(_r['mentions'])}/{int(_r['queries'])} 질의 인용",
+                    delta_color="off",
+                )
+
+            # 키워드 × 브랜드 매트릭스 (언급 순서 표시)
+            _geo_mat = _geo_today[_geo_today["mentioned"] == 1].copy()
+            if not _geo_mat.empty:
+                _geo_mat["표시"] = _geo_mat["mention_order"].apply(lambda o: f"✓ {o}번째")
+                _geo_pivot = _geo_mat.pivot_table(
+                    index=["keyword", "prompt_type"], columns="brand",
+                    values="표시", aggfunc="first", fill_value="—",
+                )
+                st.dataframe(_geo_pivot, use_container_width=True)
+            else:
+                st.caption("이번 실행에서 인용된 브랜드가 없습니다.")
+
+            # 인용 문맥 스니펫
+            _geo_snip = _geo_today[(_geo_today["mentioned"] == 1) & (_geo_today["snippet"] != "")]
+            if not _geo_snip.empty:
+                with st.expander(f"💬 인용 문맥 보기 ({len(_geo_snip)}건)"):
+                    for _idx, _r in _geo_snip.iterrows():
+                        st.markdown(f"**{_r['brand']}** · {_r['keyword']} [{_r['prompt_type']}]")
+                        st.caption(_r["snippet"])
+
+            st.download_button(
+                "📥 이번 실행 결과 CSV",
+                _geo_today.to_csv(index=False).encode("utf-8-sig"),
+                file_name=f"geo_check_{dt.date.today().isoformat()}.csv",
+                mime="text/csv", use_container_width=True,
+            )
+
+        # ── 일자별 인용률 추이 ──
+        st.markdown("#### 📈 일자별 AI 인용률 추이")
+        try:
+            _geo_hist = load_geo_history(_geo_uid, days=90)
+        except Exception:
+            _geo_hist = pd.DataFrame()
+        if _geo_hist.empty:
+            st.caption("아직 누적 이력이 없습니다. 매일(또는 주 2~3회) 실행하면 추이 그래프가 그려집니다.")
+        else:
+            _geo_share_hist = compute_share(_geo_hist)
+            _geo_chart = (
+                alt.Chart(_geo_share_hist)
+                .mark_line(point=True)
+                .encode(
+                    x=alt.X("date:O", title="날짜"),
+                    y=alt.Y("share:Q", title="인용률 (%)", scale=alt.Scale(domain=[0, 100])),
+                    color=alt.Color("brand:N", title="브랜드"),
+                    tooltip=["date", "brand", "share", "mentions", "queries"],
+                )
+                .properties(height=320)
+            )
+            st.altair_chart(_geo_chart, use_container_width=True)
+            with st.expander("📄 이력 원본 데이터"):
+                st.dataframe(_geo_hist.drop(columns=["user_id"], errors="ignore"),
+                             use_container_width=True, height=260)
+
+# ── 11. 스키마·FAQ 생성기 (GEO/AEO) ─────────────────────────────────────────────
+elif selected_menu == "스키마·FAQ 생성기":
+    from integrations.schema_gen import (
+        build_product_schema, build_faq_schema, build_howto_schema,
+        build_breadcrumb_schema, to_script_tag, validate_schema,
+        faq_to_html, reviews_to_faq,
+    )
+    import json as _sg_json
+
+    st.markdown("""
+    <div style='font-size:1.5rem;font-weight:800;color:#111;letter-spacing:-0.03em;margin-bottom:0.2rem;'>스키마·FAQ 생성기</div>
+    <div style='font-size:0.82rem;color:#AAA;margin-bottom:1.4rem;'>Schema.org JSON-LD 자동 생성 + 리뷰 기반 FAQ 변환 — 자사몰·블로그의 GEO/AEO 기술 토대</div>
+    """, unsafe_allow_html=True)
+
+    _sg_tab1, _sg_tab2 = st.tabs(["🧩 JSON-LD 스키마 생성", "💬 리뷰 → FAQ 변환 (AEO)"])
+
+    # ════════ 탭 1: JSON-LD 스키마 생성 ════════
+    with _sg_tab1:
+        st.caption("스키마 구조는 AI 없이 규격대로 생성됩니다(환각 없음). 완성된 `<script>` 태그를 자사몰/블로그 `<head>` 또는 본문에 붙여넣으세요.")
+        _sg_type = st.selectbox("스키마 유형", ["Product (상품)", "FAQPage (자주 묻는 질문)", "HowTo (사용법/가이드)", "BreadcrumbList (탐색 경로)"])
+
+        _sg_schema = None
+        if _sg_type.startswith("Product"):
+            _pc1, _pc2 = st.columns(2)
+            with _pc1:
+                _p_name  = st.text_input("상품명 *", placeholder="DJI Mini 4 Pro 플라이 모어 콤보")
+                _p_brand = st.text_input("브랜드", value="DJI")
+                _p_price = st.text_input("판매가 (숫자만)", placeholder="1139000")
+                _p_sku   = st.text_input("SKU/모델번호", placeholder="CP.MA.00000735.01")
+            with _pc2:
+                _p_url   = st.text_input("상품 페이지 URL", placeholder="https://dronebox.co.kr/...")
+                _p_img   = st.text_input("이미지 URL (쉼표로 여러 개)", placeholder="https://.../main.jpg")
+                _p_rat   = st.text_input("평점 (선택, 예: 4.8)")
+                _p_cnt   = st.text_input("리뷰 수 (선택, 예: 127)")
+            _p_desc = st.text_area("상품 설명", height=90, placeholder="249g 초경량 4K 촬영 드론…")
+            if st.button("스키마 생성", type="primary", key="_sg_btn_p"):
+                if not _p_name.strip():
+                    st.error("상품명은 필수입니다.")
+                else:
+                    _sg_schema = build_product_schema(
+                        _p_name, _p_desc, _p_brand, _p_price, "KRW",
+                        _p_url, _p_img, _p_sku, "InStock", _p_rat, _p_cnt)
+
+        elif _sg_type.startswith("FAQPage"):
+            st.caption("질문|답변 형식으로 한 줄에 하나씩 입력 (리뷰에서 자동 생성하려면 옆 탭 이용)")
+            _f_text = st.text_area("Q&A 목록", height=180,
+                placeholder="드론 자격증이 필요한가요?|250g 미만 드론은 4종 온라인 교육만 이수하면 됩니다. 자세한 기준은…\n배송은 얼마나 걸리나요?|평일 오후 2시 이전 주문 시 당일 출고됩니다.")
+            if st.button("스키마 생성", type="primary", key="_sg_btn_f"):
+                _f_qa = []
+                for _ln in _f_text.split("\n"):
+                    if "|" in _ln:
+                        _q, _a = _ln.split("|", 1)
+                        _f_qa.append({"q": _q, "a": _a})
+                if not _f_qa:
+                    st.error("'질문|답변' 형식의 줄이 없습니다.")
+                else:
+                    _sg_schema = build_faq_schema(_f_qa)
+
+        elif _sg_type.startswith("HowTo"):
+            _h_name = st.text_input("가이드 제목", placeholder="DJI Mini 4 Pro 첫 비행 준비 방법")
+            _h_steps = st.text_area("단계 (한 줄에 하나)", height=150,
+                placeholder="기체와 조종기를 완충합니다.\nDJI Fly 앱을 설치하고 계정에 로그인합니다.\n…")
+            _h_time = st.number_input("총 소요 시간 (분, 선택)", min_value=0, value=0)
+            if st.button("스키마 생성", type="primary", key="_sg_btn_h"):
+                _h_list = [s for s in _h_steps.split("\n") if s.strip()]
+                if not _h_name.strip() or len(_h_list) < 2:
+                    st.error("제목과 2개 이상의 단계를 입력해주세요.")
+                else:
+                    _sg_schema = build_howto_schema(_h_name, _h_list, _h_time or "")
+
+        else:  # BreadcrumbList
+            st.caption("이름|URL 형식, 상위 → 하위 순서로 입력 (URL 생략 가능)")
+            _b_text = st.text_area("경로", height=120,
+                placeholder="홈|https://dronebox.co.kr\n드론|https://dronebox.co.kr/drone\nDJI Mini 4 Pro|")
+            if st.button("스키마 생성", type="primary", key="_sg_btn_b"):
+                _b_items = []
+                for _ln in _b_text.split("\n"):
+                    if _ln.strip():
+                        _parts = _ln.split("|", 1)
+                        _b_items.append((_parts[0], _parts[1] if len(_parts) > 1 else ""))
+                if len(_b_items) < 2:
+                    st.error("2개 이상의 경로 항목을 입력해주세요.")
+                else:
+                    _sg_schema = build_breadcrumb_schema(_b_items)
+
+        if _sg_schema:
+            _sg_issues = validate_schema(_sg_schema)
+            if _sg_issues:
+                for _is in _sg_issues:
+                    st.warning(f"⚠️ {_is}")
+            else:
+                st.success("✅ 필수 항목 검증 통과")
+            _sg_tag = to_script_tag(_sg_schema)
+            st.code(_sg_tag, language="html")
+            st.download_button("📥 스키마 파일 다운로드", _sg_tag.encode("utf-8"),
+                file_name="schema_jsonld.html", mime="text/html", use_container_width=True)
+            st.caption("검증: [Google 리치 결과 테스트](https://search.google.com/test/rich-results)에 붙여넣어 확인하세요.")
+
+    # ════════ 탭 2: 리뷰 → FAQ 변환 ════════
+    with _sg_tab2:
+        st.caption("고객 리뷰·문의를 붙여넣으면 실제 고객 언어 기반 Q&A를 생성합니다. "
+                   "답변은 AEO 적격 형식(질문형 헤딩 + 40~60자 직접 답변 우선)으로 작성됩니다.")
+        if not gemini_key:
+            st.warning("⚙️ 설정에서 Gemini API 키를 먼저 등록해주세요.")
+        else:
+            _rf_product = st.text_input("상품명", placeholder="DJI Mini 4 Pro", key="_rf_p")
+            _rf_reviews = st.text_area("고객 리뷰/문의 붙여넣기 (최대 8,000자)", height=220,
+                placeholder="배터리가 생각보다 오래가요. 35분은 너무하고 한 28분?\n초보인데 조작이 쉬워요. 근데 자격증 필요한가요?\n…")
+            _rf_n = st.slider("생성할 Q&A 개수", 5, 15, 10)
+
+            if st.button("💬 FAQ 생성", type="primary", use_container_width=True, key="_rf_btn"):
+                with st.spinner("리뷰 분석 및 FAQ 생성 중…"):
+                    _rf_qa, _rf_err = reviews_to_faq(
+                        lambda p: _gemini_generate(gemini_key, p),
+                        _rf_product, _rf_reviews, _rf_n)
+                if _rf_err:
+                    st.error(_rf_err)
+                else:
+                    st.session_state["_rf_qa"] = _rf_qa
+                    st.success(f"✅ Q&A {len(_rf_qa)}개 생성 완료 — 아래에서 수정 후 내보내세요.")
+
+            _rf_qa_state = st.session_state.get("_rf_qa")
+            if _rf_qa_state:
+                _rf_df = pd.DataFrame(_rf_qa_state)
+                _rf_edited = st.data_editor(
+                    _rf_df, use_container_width=True, num_rows="dynamic",
+                    column_config={"q": st.column_config.TextColumn("질문", width="medium"),
+                                   "a": st.column_config.TextColumn("답변", width="large")},
+                    key="_rf_editor")
+                _rf_final = _rf_edited.to_dict("records")
+
+                _rf_schema = build_faq_schema(_rf_final)
+                _rf_issues = validate_schema(_rf_schema)
+                for _is in _rf_issues:
+                    st.warning(f"⚠️ {_is}")
+
+                _rf_c1, _rf_c2 = st.columns(2)
+                with _rf_c1:
+                    st.markdown("**FAQPage 스키마 (head 삽입)**")
+                    _rf_tag = to_script_tag(_rf_schema)
+                    st.code(_rf_tag, language="html")
+                    st.download_button("📥 스키마 다운로드", _rf_tag.encode("utf-8"),
+                        file_name="faq_schema.html", mime="text/html",
+                        use_container_width=True, key="_rf_dl1")
+                with _rf_c2:
+                    st.markdown("**HTML FAQ 블록 (본문 삽입)**")
+                    _rf_html = faq_to_html(_rf_final, title=f"{_rf_product or '상품'} 자주 묻는 질문")
+                    st.code(_rf_html, language="html")
+                    st.download_button("📥 HTML 다운로드", _rf_html.encode("utf-8"),
+                        file_name="faq_block.html", mime="text/html",
+                        use_container_width=True, key="_rf_dl2")
+                st.caption("💡 두 파일을 함께 사용하세요: 스키마는 `<head>`, FAQ 블록은 상세페이지 본문에. "
+                           "상세페이지 제작기로 만든 페이지에도 그대로 삽입할 수 있습니다.")
+
+# ── 12. GEO 진단 (자사 vs 경쟁사 + AI 크롤러 점검) ──────────────────────────────
+elif selected_menu == "GEO 진단":
+    from integrations.geo_audit import audit_url, check_ai_crawlers, AI_CRAWLERS
+
+    st.markdown("""
+    <div style='font-size:1.5rem;font-weight:800;color:#111;letter-spacing:-0.03em;margin-bottom:0.2rem;'>GEO 진단</div>
+    <div style='font-size:0.82rem;color:#AAA;margin-bottom:1.4rem;'>자사 vs 경쟁사 상세페이지 상대 평가 + AI 크롤러 접근성 점검</div>
+    """, unsafe_allow_html=True)
+
+    _ga_tab1, _ga_tab2 = st.tabs(["⚖️ 페이지 비교 진단", "🕷️ AI 크롤러 점검"])
+
+    with _ga_tab1:
+        st.caption("같은 6개 기준(사실 밀도·구조화 데이터·FAQ 구조·메타/OG·이미지 alt·콘텐츠 분량)으로 "
+                   "두 페이지를 채점해 비교합니다. AI를 쓰지 않는 결정적 측정입니다.")
+        _ga_c1, _ga_c2 = st.columns(2)
+        with _ga_c1:
+            _ga_mine = st.text_input("🏠 자사 페이지 URL", placeholder="https://dronebox.co.kr/product/...")
+        with _ga_c2:
+            _ga_comp = st.text_input("👀 경쟁사 페이지 URL (선택)", placeholder="https://...")
+
+        if st.button("⚖️ 진단 실행", type="primary", use_container_width=True, key="_ga_btn"):
+            _ga_results = []
+            for _label, _u_in in [("자사", _ga_mine), ("경쟁사", _ga_comp)]:
+                if not _u_in.strip():
+                    continue
+                with st.spinner(f"{_label} 페이지 분석 중…"):
+                    _a, _err = audit_url(_u_in.strip())
+                if _err:
+                    st.error(f"{_label} 페이지 로드 실패: {_err} — 로그인 필요/봇 차단 페이지일 수 있습니다.")
+                elif _a:
+                    _ga_results.append((_label, _a))
+            st.session_state["_ga_results"] = _ga_results
+
+        _ga_results = st.session_state.get("_ga_results", [])
+        if _ga_results:
+            _ga_mcols = st.columns(len(_ga_results))
+            for _i, (_label, _a) in enumerate(_ga_results):
+                _ga_mcols[_i].metric(f"{'🏠' if _label=='자사' else '👀'} {_label} 종합", f"{_a['total']}점")
+
+            # 영역별 점수 비교 표
+            _ga_rows = []
+            for _area in next(iter(_ga_results))[1]["scores"].keys():
+                _row = {"진단 영역": _area}
+                for _label, _a in _ga_results:
+                    _row[_label] = _a["scores"][_area]
+                if len(_ga_results) == 2:
+                    _row["격차"] = _ga_rows_diff = _ga_results[0][1]["scores"][_area] - _ga_results[1][1]["scores"][_area]
+                _ga_rows.append(_row)
+            st.dataframe(pd.DataFrame(_ga_rows), use_container_width=True, hide_index=True)
+
+            if len(_ga_results) == 2:
+                _ga_chart_df = pd.DataFrame([
+                    {"영역": a, "페이지": lbl, "점수": res["scores"][a]}
+                    for lbl, res in _ga_results for a in res["scores"]
+                ])
+                st.altair_chart(
+                    alt.Chart(_ga_chart_df).mark_bar().encode(
+                        x=alt.X("점수:Q", scale=alt.Scale(domain=[0, 100])),
+                        y=alt.Y("영역:N", title=None),
+                        color=alt.Color("페이지:N"),
+                        yOffset="페이지:N",
+                        tooltip=["영역", "페이지", "점수"],
+                    ).properties(height=260),
+                    use_container_width=True)
+                # 열세 영역 안내
+                _weak = [r["진단 영역"] for r in _ga_rows if r.get("격차", 0) < 0]
+                if _weak:
+                    st.warning("📌 경쟁사 대비 열세 영역: " + ", ".join(_weak) +
+                               " — 스키마·FAQ 생성기와 상세페이지 제작기로 보강하세요.")
+                else:
+                    st.success("✅ 전 영역에서 경쟁사 이상입니다.")
+
+            for _label, _a in _ga_results:
+                with st.expander(f"📄 {_label} 상세 측정값 — {_a['url']}"):
+                    st.table(pd.DataFrame(list(_a["detail"].items()), columns=["항목", "값"]))
+            st.caption("⚠️ 네이버 스마트스토어 등 JS 렌더링/봇 차단 페이지는 측정값이 실제보다 낮게 나올 수 있습니다. "
+                       "자사몰·블로그 페이지 비교에 가장 정확합니다.")
+
+    with _ga_tab2:
+        st.caption("robots.txt에서 주요 AI 크롤러(GPTBot, ClaudeBot, PerplexityBot 등) 허용 여부와 "
+                   "llms.txt 존재를 점검합니다. AI 검색에 인용되려면 크롤러가 들어올 수 있어야 합니다.")
+        _cr_url = st.text_input("사이트 주소", placeholder="dronebox.co.kr", key="_cr_url")
+        if st.button("🕷️ 점검 실행", type="primary", use_container_width=True, key="_cr_btn") and _cr_url.strip():
+            with st.spinner("robots.txt / llms.txt 점검 중…"):
+                _cr = check_ai_crawlers(_cr_url.strip())
+            if _cr.get("error"):
+                st.warning(_cr["error"])
+            _cr_df = pd.DataFrame(_cr["crawlers"])
+            def _cr_color(v):
+                if "전체 차단" in str(v): return "color:#C0392B;font-weight:700"
+                if "부분" in str(v): return "color:#C07A00;font-weight:700"
+                return "color:#1A7A2A;font-weight:700"
+            st.dataframe(_cr_df.style.applymap(_cr_color, subset=["상태"]),
+                         use_container_width=True, hide_index=True)
+            _cc1, _cc2 = st.columns(2)
+            _cc1.metric("robots.txt", "있음" if _cr["robots_found"] else "없음(전체 허용)")
+            _cc2.metric("llms.txt", "있음 ✅" if _cr["llms_txt"] else "없음")
+            if not _cr["llms_txt"]:
+                st.info("💡 llms.txt는 AI 엔진에게 사이트 핵심 정보를 알려주는 신생 표준입니다. "
+                        "사이트 소개·주요 페이지·연락처를 마크다운으로 정리해 루트에 올려두면 GEO에 유리합니다.")
+
+# ── 13. 키워드 인텐트 분류 ──────────────────────────────────────────────────────
+elif selected_menu == "키워드 인텐트":
+    from integrations.intent_classify import classify_keywords, INTENT_LABELS
+
+    st.markdown("""
+    <div style='font-size:1.5rem;font-weight:800;color:#111;letter-spacing:-0.03em;margin-bottom:0.2rem;'>키워드 인텐트 분류</div>
+    <div style='font-size:0.82rem;color:#AAA;margin-bottom:1.4rem;'>검색 의도(정보형/비교형/거래형) 분류 → 콘텐츠 기획으로 연결</div>
+    """, unsafe_allow_html=True)
+
+    if not gemini_key:
+        st.warning("⚙️ 설정에서 Gemini API 키를 먼저 등록해주세요.")
+    else:
+        _ic_default = []
+        try:
+            if not hist_df.empty and "keyword" in hist_df.columns:
+                _ic_default = list(pd.Series(hist_df["keyword"]).dropna().unique())[:30]
+        except Exception:
+            pass
+        _ic_text = st.text_area("분류할 키워드 (줄바꿈 구분, 최대 60개)",
+                                value="\n".join(_ic_default), height=160)
+        if st.button("🧭 인텐트 분류 실행", type="primary", use_container_width=True, key="_ic_btn"):
+            _ic_kws = [k for k in _ic_text.split("\n") if k.strip()]
+            with st.spinner(f"{len(_ic_kws)}개 키워드 분류 중…"):
+                _ic_res, _ic_err = classify_keywords(
+                    lambda p: _gemini_generate(gemini_key, p), _ic_kws)
+            if _ic_err:
+                st.error(_ic_err)
+            else:
+                st.session_state["_ic_res"] = _ic_res
+
+        _ic_res = st.session_state.get("_ic_res")
+        if _ic_res:
+            _ic_df = pd.DataFrame(_ic_res)
+            _ic_counts = _ic_df["intent"].value_counts()
+            _ic_cols = st.columns(3)
+            for _i, _lb in enumerate(INTENT_LABELS):
+                _ic_cols[_i].metric(_lb, f"{int(_ic_counts.get(_lb, 0))}개")
+
+            _ic_filter = st.multiselect("의도 필터", INTENT_LABELS, default=INTENT_LABELS)
+            st.dataframe(
+                _ic_df[_ic_df["intent"].isin(_ic_filter)].rename(columns={
+                    "keyword": "키워드", "intent": "의도",
+                    "suggestion": "제안 (콘텐츠/액션)", "confidence": "확신도"}),
+                use_container_width=True, hide_index=True)
+
+            # 콘텐츠 캘린더 초안: 정보형+비교형 → 주차 배정
+            _ic_content = _ic_df[_ic_df["intent"].isin(["정보형", "비교형"])].reset_index(drop=True)
+            if not _ic_content.empty:
+                st.markdown("#### 🗓️ 콘텐츠 캘린더 초안 (주 2건 기준)")
+                _ic_content["주차"] = [f"{_w // 2 + 1}주차" for _w in range(len(_ic_content))]
+                st.dataframe(_ic_content.rename(columns={
+                    "keyword": "타겟 키워드", "suggestion": "콘텐츠 주제", "intent": "유형"})[
+                    ["주차", "타겟 키워드", "유형", "콘텐츠 주제"]],
+                    use_container_width=True, hide_index=True)
+                st.download_button("📥 캘린더 CSV",
+                    _ic_content.to_csv(index=False).encode("utf-8-sig"),
+                    file_name="content_calendar.csv", mime="text/csv", use_container_width=True)
+
+# ── 14. 시즌성 분석 (데이터랩) ──────────────────────────────────────────────────
+elif selected_menu == "시즌성 분석":
+    from integrations.seasonality import (
+        fetch_trend, analyze_seasonality, recommend_timing, MONTH_NAMES)
+
+    st.markdown("""
+    <div style='font-size:1.5rem;font-weight:800;color:#111;letter-spacing:-0.03em;margin-bottom:0.2rem;'>시즌성 분석</div>
+    <div style='font-size:0.82rem;color:#AAA;margin-bottom:1.4rem;'>네이버 데이터랩 검색 추이로 성수기·비수기 파악 → 캠페인 타이밍 추천</div>
+    """, unsafe_allow_html=True)
+
+    if not naver_cid or not naver_csec:
+        st.warning("⚙️ 설정에서 Naver Client ID/Secret을 먼저 등록해주세요. (데이터랩은 검색 API와 동일한 키 사용)")
+    else:
+        st.caption("드론처럼 계절을 타는 카테고리에서 특히 유용합니다. 값은 데이터랩 상대지수(기간 내 최댓값=100)입니다.")
+        _sn_default = []
+        try:
+            if not hist_df.empty and "keyword" in hist_df.columns:
+                _sn_default = list(pd.Series(hist_df["keyword"]).dropna().unique())[:5]
+        except Exception:
+            pass
+        if not _sn_default:
+            _sn_default = ["입문용 드론"]
+        _sn_text = st.text_area("분석할 키워드 (최대 5개, 줄바꿈 구분)",
+                                value="\n".join(_sn_default[:5]), height=120)
+
+        if st.button("📅 시즌성 분석 실행", type="primary", use_container_width=True, key="_sn_btn"):
+            _sn_kws = [k for k in _sn_text.split("\n") if k.strip()][:5]
+            with st.spinner("데이터랩 검색 추이 수집 중…"):
+                _sn_res, _sn_err = fetch_trend(naver_cid, naver_csec, _sn_kws)
+            if _sn_err:
+                st.error(_sn_err)
+            else:
+                st.session_state["_sn_res"] = _sn_res
+
+        _sn_res = st.session_state.get("_sn_res")
+        if _sn_res:
+            # 월별 지수 차트 (전체 키워드)
+            _sn_chart_rows = []
+            for _kw, _series in _sn_res.items():
+                _an = analyze_seasonality(_series)
+                for _m, _v in _an.get("monthly_index", {}).items():
+                    _sn_chart_rows.append({"월": MONTH_NAMES[_m - 1], "_mo": _m, "키워드": _kw, "검색지수": _v})
+            if _sn_chart_rows:
+                _sn_cdf = pd.DataFrame(_sn_chart_rows).sort_values("_mo")
+                st.altair_chart(
+                    alt.Chart(_sn_cdf).mark_line(point=True).encode(
+                        x=alt.X("월:N", sort=MONTH_NAMES, title="월"),
+                        y=alt.Y("검색지수:Q", title="평균 검색지수 (최댓월=100)"),
+                        color=alt.Color("키워드:N"),
+                        tooltip=["키워드", "월", "검색지수"],
+                    ).properties(height=320),
+                    use_container_width=True)
+
+            # 키워드별 타이밍 추천
+            st.markdown("#### 🎯 키워드별 캠페인 타이밍")
+            for _kw, _series in _sn_res.items():
+                _an = analyze_seasonality(_series)
+                if not _an:
+                    st.caption(f"**{_kw}**: 데이터 부족")
+                    continue
+                _peaks = ", ".join(MONTH_NAMES[m - 1] for m in _an["peak_months"]) or "뚜렷하지 않음"
+                _lows = ", ".join(MONTH_NAMES[m - 1] for m in _an["low_months"]) or "뚜렷하지 않음"
+                with st.container():
+                    st.markdown(f"**🔑 {_kw}**")
+                    _sc1, _sc2 = st.columns(2)
+                    _sc1.metric("성수기", _peaks)
+                    _sc2.metric("비수기", _lows)
+                    st.info(recommend_timing(_an))
+            st.caption("💡 SEO 콘텐츠는 검색 노출까지 4~8주 걸립니다. 성수기 2개월 전 발행이 이상적입니다. "
+                       "→ '키워드 인텐트' 메뉴와 함께 쓰면 어떤 콘텐츠를 언제 낼지 계획할 수 있습니다.")
+
+# ── 15. 엔티티 감사 (브랜드 일관성) ─────────────────────────────────────────────
+elif selected_menu == "엔티티 감사":
+    from integrations.entity_audit import audit_entity, build_organization_schema
+    from integrations.schema_gen import to_script_tag
+    from utils.brand import parse_brand_list
+
+    st.markdown("""
+    <div style='font-size:1.5rem;font-weight:800;color:#111;letter-spacing:-0.03em;margin-bottom:0.2rem;'>엔티티 감사</div>
+    <div style='font-size:0.82rem;color:#AAA;margin-bottom:1.4rem;'>채널별 브랜드 정보(NAP·표기) 일관성 점검 → AI 엔진의 엔티티 인식 강화</div>
+    """, unsafe_allow_html=True)
+
+    _ea_tab1, _ea_tab2 = st.tabs(["🔍 일관성 점검", "🏢 Organization 스키마 생성"])
+
+    with _ea_tab1:
+        st.caption("자사 정보가 노출되는 여러 채널 URL을 입력하면, 전화번호·사업자번호·브랜드 표기가 "
+                   "채널마다 일치하는지 점검합니다. AI는 일관된 엔티티를 더 신뢰·인용합니다.")
+        _ea_urls_text = st.text_area("채널 URL (줄바꿈 구분)", height=120,
+            placeholder="https://dronebox.co.kr\nhttps://blog.naver.com/...\nhttps://smartstore.naver.com/...")
+        _ea_alias_default = " ".join(filter(None, [my_brand_1, my_brand_2]))
+        _ea_aliases = st.text_input("브랜드 표기 변형 (쉼표 구분)",
+            value=_ea_alias_default or "빛드론, 드론박스",
+            help="탐지 기준이 되는 브랜드명들. 띄어쓰기/대소문자 변형은 자동 감지됩니다.")
+
+        if st.button("🔍 감사 실행", type="primary", use_container_width=True, key="_ea_btn"):
+            _ea_urls = [u for u in _ea_urls_text.split("\n") if u.strip()]
+            _ea_alias_list = parse_brand_list(_ea_aliases)
+            if not _ea_urls:
+                st.error("점검할 URL을 1개 이상 입력해주세요.")
+            else:
+                with st.spinner(f"{len(_ea_urls)}개 채널 점검 중…"):
+                    _ea_res = audit_entity(_ea_urls, _ea_alias_list)
+                st.session_state["_ea_res"] = _ea_res
+
+        _ea_res = st.session_state.get("_ea_res")
+        if _ea_res:
+            _ea_s = _ea_res["summary"]
+            _es1, _es2, _es3 = st.columns(3)
+            _es1.metric("점검 채널", f"{_ea_s['점검 채널 수']}개")
+            _es2.metric("브랜드 표기 변형", f"{_ea_s['브랜드 표기 변형']}종")
+            _es3.metric("일관성", _ea_s["일관성"])
+
+            _ea_valid = [c for c in _ea_res["channels"] if "error" not in c]
+            if _ea_valid:
+                st.dataframe(pd.DataFrame(_ea_valid), use_container_width=True, hide_index=True)
+            for _c in _ea_res["channels"]:
+                if "error" in _c:
+                    st.caption(f"⚠️ {_c['url']} — 로드 실패: {_c['error']}")
+
+            if _ea_res["issues"]:
+                for _label, _msg in _ea_res["issues"]:
+                    st.warning(f"**{_label}**: {_msg}")
+            else:
+                st.success("✅ 채널 간 브랜드 정보가 일관됩니다.")
+
+    with _ea_tab2:
+        st.caption("모든 채널 URL을 sameAs에 넣은 Organization/LocalBusiness 스키마를 생성합니다. "
+                   "자사몰 메인에 삽입하면 AI 엔진이 분산된 채널을 같은 엔티티로 묶어 인식합니다.")
+        _oc1, _oc2 = st.columns(2)
+        with _oc1:
+            _o_name  = st.text_input("브랜드/상호명 *", value=my_brand_1 or "빛드론")
+            _o_url   = st.text_input("대표 홈페이지 URL")
+            _o_phone = st.text_input("대표 전화번호")
+        with _oc2:
+            _o_logo  = st.text_input("로고 이미지 URL")
+            _o_addr  = st.text_input("주소")
+            _o_local = st.checkbox("오프라인 매장 있음 (LocalBusiness)", value=True)
+        _o_same = st.text_area("연결할 채널 URL (sameAs, 줄바꿈 구분)", height=100,
+            placeholder="https://blog.naver.com/...\nhttps://smartstore.naver.com/...\nhttps://instagram.com/...")
+        if st.button("스키마 생성", type="primary", key="_o_btn"):
+            if not _o_name.strip():
+                st.error("상호명은 필수입니다.")
+            else:
+                _o_schema = build_organization_schema(
+                    _o_name, _o_url, _o_logo, _o_phone, _o_addr,
+                    [s for s in _o_same.split("\n") if s.strip()], _o_local)
+                _o_tag = to_script_tag(_o_schema)
+                st.code(_o_tag, language="html")
+                st.download_button("📥 스키마 다운로드", _o_tag.encode("utf-8"),
+                    file_name="organization_schema.html", mime="text/html",
+                    use_container_width=True, key="_o_dl")

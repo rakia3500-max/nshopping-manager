@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>시스템 상태 신호등 — UI 시안</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; font-family: 'Inter', -apple-system, sans-serif; margin: 0; padding: 0; }
+  body { background: #F4F2EE; color: #111; padding: 32px 20px 80px; }
+  .wrap { max-width: 880px; margin: 0 auto; }
+  h1 { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 4px; }
+  .sub { color: #999; font-size: 0.85rem; margin-bottom: 28px; }
+  .variant-label { display: inline-block; background: #111; color: #fff; font-size: 0.72rem; font-weight: 700;
+    padding: 4px 10px; border-radius: 4px; margin: 36px 0 12px; letter-spacing: 0.02em; }
+  .variant-desc { font-size: 0.82rem; color: #777; margin-bottom: 14px; line-height: 1.5; }
+
+  /* 공통 토큰 */
+  .dot { width: 11px; height: 11px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
+  .g { background: #44BB44; } .y { background: #E6A000; } .r { background: #FF5555; } .x { background: #C9C4BB; }
+  .pulse { animation: pulse 1.6s infinite; }
+  @keyframes pulse { 0%,100% { box-shadow: 0 0 0 0 rgba(220,38,38,.5);} 50% { box-shadow: 0 0 0 5px rgba(220,38,38,0);} }
+
+  /* ───────── 시안 A: 가로 바 (메뉴 위 한 줄) ───────── */
+  .a-bar { display: flex; align-items: center; gap: 14px; background: #fff; border: 2.5px solid #111;
+    border-radius: 8px; box-shadow: 4px 4px 0 #111; padding: 10px 16px; }
+  .a-status { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 0.9rem; }
+  .a-divider { width: 2px; height: 20px; background: #E5E2DC; }
+  .a-pills { display: flex; gap: 6px; flex-wrap: wrap; }
+  .a-pill { display: flex; align-items: center; gap: 5px; font-size: 0.74rem; color: #555;
+    background: #F7F5F1; border: 1.5px solid #E0DCD4; border-radius: 20px; padding: 3px 9px; }
+  .a-pill.bad { background: #FFF0F0; border-color: #FF5555; color: #C03800; font-weight: 600; }
+
+  /* ───────── 시안 B: 카드 그리드 (대시보드 패널) ───────── */
+  .b-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+  .b-card { background: #fff; border: 2.5px solid #111; border-radius: 8px; box-shadow: 3px 3px 0 #111;
+    padding: 14px; position: relative; }
+  .b-card.req::before { content: "필수"; position: absolute; top: -9px; right: 10px; background: #FF6B2B;
+    color: #fff; font-size: 0.62rem; font-weight: 700; padding: 2px 7px; border-radius: 3px; border: 1.5px solid #111; }
+  .b-top { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+  .b-name { font-weight: 700; font-size: 0.86rem; }
+  .b-detail { font-size: 0.74rem; color: #888; line-height: 1.45; }
+
+  /* ───────── 시안 C: 컴팩트 리스트 (사이드 위젯) ───────── */
+  .c-box { background: #fff; border: 2.5px solid #111; border-radius: 8px; box-shadow: 4px 4px 0 #111;
+    overflow: hidden; max-width: 380px; }
+  .c-head { background: #111; color: #fff; padding: 10px 14px; font-weight: 700; font-size: 0.85rem;
+    display: flex; align-items: center; gap: 8px; justify-content: space-between; }
+  .c-badge { font-size: 0.68rem; background: #44BB44; padding: 2px 8px; border-radius: 4px; }
+  .c-badge.r { background: #FF5555; } .c-badge.y { background: #E6A000; }
+  .c-row { display: flex; align-items: center; gap: 9px; padding: 9px 14px; border-bottom: 1px solid #F0EDE7; font-size: 0.82rem; }
+  .c-row:last-child { border-bottom: none; }
+  .c-row .nm { font-weight: 600; flex: 1; }
+  .c-row .st { font-size: 0.72rem; color: #999; }
+
+  /* ───────── 시안 D: 통합 헤더 배너 (상태색 배경) ───────── */
+  .d-banner { border: 2.5px solid #111; border-radius: 8px; box-shadow: 4px 4px 0 #111; overflow: hidden; }
+  .d-banner.green { background: #EAF7EE; } .d-banner.yellow { background: #FFF8E6; } .d-banner.red { background: #FFF0F0; }
+  .d-main { display: flex; align-items: center; gap: 12px; padding: 14px 18px; }
+  .d-big { font-size: 1.6rem; }
+  .d-text { flex: 1; }
+  .d-title { font-weight: 800; font-size: 0.98rem; }
+  .d-summary { font-size: 0.78rem; color: #666; margin-top: 2px; }
+  .d-btn { background: #fff; border: 2px solid #111; border-radius: 6px; box-shadow: 2px 2px 0 #555;
+    padding: 6px 12px; font-size: 0.76rem; font-weight: 700; cursor: pointer; }
+  .d-strip { display: flex; border-top: 2px solid #111; }
+  .d-seg { flex: 1; padding: 8px 6px; text-align: center; font-size: 0.7rem; border-right: 1px solid rgba(0,0,0,.1);
+    display: flex; flex-direction: column; align-items: center; gap: 4px; }
+  .d-seg:last-child { border-right: none; }
+  .d-seg .nm { color: #555; font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>시스템 상태 신호등 — UI 시안 4종</h1>
+  <div class="sub">앱의 네오브루탈리즘 톤(검정 보더 · 오프셋 그림자 · 주황 #FF6B2B 액센트)에 맞춤. 예시 상태는 "Gemini 미설정"으로 통일.</div>
+
+  <!-- 시안 A -->
+  <div class="variant-label">시안 A · 가로 바</div>
+  <div class="variant-desc">메뉴 위 한 줄에 종합 상태 + 항목별 알약(pill). 공간을 적게 쓰면서 모든 항목이 한눈에. 현재 미니 신호등의 확장형.</div>
+  <div class="a-bar">
+    <div class="a-status"><span class="dot y"></span>일부 미설정</div>
+    <div class="a-divider"></div>
+    <div class="a-pills">
+      <span class="a-pill"><span class="dot g"></span>암호화</span>
+      <span class="a-pill"><span class="dot g"></span>네이버 API</span>
+      <span class="a-pill bad"><span class="dot y"></span>Gemini</span>
+      <span class="a-pill"><span class="dot x"></span>광고 API</span>
+      <span class="a-pill"><span class="dot x"></span>저장소</span>
+      <span class="a-pill"><span class="dot x"></span>Slack</span>
+    </div>
+  </div>
+
+  <!-- 시안 B -->
+  <div class="variant-label">시안 B · 카드 그리드</div>
+  <div class="variant-desc">대시보드 패널용. 항목마다 카드 1개, 필수 항목엔 주황 "필수" 태그. 정보량이 가장 많고 시원시원함.</div>
+  <div class="b-grid">
+    <div class="b-card req"><div class="b-top"><span class="dot g"></span><span class="b-name">암호화</span></div><div class="b-detail">정상 — API 키가 암호화 저장됩니다.</div></div>
+    <div class="b-card req"><div class="b-top"><span class="dot g"></span><span class="b-name">네이버 검색 API</span></div><div class="b-detail">설정됨 — 순위·검색량 수집 가능.</div></div>
+    <div class="b-card"><div class="b-top"><span class="dot y"></span><span class="b-name">Gemini AI</span></div><div class="b-detail">미설정 — AI 기능 비활성.</div></div>
+    <div class="b-card"><div class="b-top"><span class="dot x"></span><span class="b-name">광고 API</span></div><div class="b-detail">미설정 — 검색량 정밀도 하락(선택).</div></div>
+    <div class="b-card"><div class="b-top"><span class="dot x"></span><span class="b-name">데이터 저장소</span></div><div class="b-detail">미설정 — 이력 누적 안 됨(선택).</div></div>
+    <div class="b-card"><div class="b-top"><span class="dot x"></span><span class="b-name">Slack 알림</span></div><div class="b-detail">미설정 — 알림 비활성(선택).</div></div>
+  </div>
+
+  <!-- 시안 C -->
+  <div class="variant-label">시안 C · 컴팩트 리스트</div>
+  <div class="variant-desc">접이식 위젯용. 헤더에 종합 배지, 아래로 항목이 쌓이는 리스트. 좁은 폭에서 깔끔하고 모바일 친화적.</div>
+  <div class="c-box">
+    <div class="c-head"><span>🚦 시스템 상태</span><span class="c-badge y">일부 미설정</span></div>
+    <div class="c-row"><span class="dot g"></span><span class="nm">암호화 <small style="color:#FF6B2B">필수</small></span><span class="st">정상</span></div>
+    <div class="c-row"><span class="dot g"></span><span class="nm">네이버 검색 API <small style="color:#FF6B2B">필수</small></span><span class="st">설정됨</span></div>
+    <div class="c-row"><span class="dot y"></span><span class="nm">Gemini AI</span><span class="st">미설정</span></div>
+    <div class="c-row"><span class="dot x"></span><span class="nm">광고 API</span><span class="st">선택</span></div>
+    <div class="c-row"><span class="dot x"></span><span class="nm">데이터 저장소</span><span class="st">선택</span></div>
+  </div>
+
+  <!-- 시안 D -->
+  <div class="variant-label">시안 D · 통합 헤더 배너</div>
+  <div class="variant-desc">상태색이 배경 전체에 입혀지는 배너 + 하단 미니 신호등 띠 + 연결 테스트 버튼. 가장 눈에 띄고 "신호등" 느낌이 강함.</div>
+  <div class="d-banner yellow">
+    <div class="d-main">
+      <span class="d-big">🟡</span>
+      <div class="d-text">
+        <div class="d-title">필수 기능은 정상, 일부 선택 기능이 비활성입니다</div>
+        <div class="d-summary">Gemini를 설정하면 AI 리포트·인용 추적·FAQ·인텐트를 쓸 수 있습니다.</div>
+      </div>
+      <button class="d-btn">🔌 연결 테스트</button>
+    </div>
+    <div class="d-strip">
+      <div class="d-seg"><span class="dot g"></span><span class="nm">암호화</span></div>
+      <div class="d-seg"><span class="dot g"></span><span class="nm">네이버</span></div>
+      <div class="d-seg"><span class="dot y"></span><span class="nm">Gemini</span></div>
+      <div class="d-seg"><span class="dot x"></span><span class="nm">광고</span></div>
+      <div class="d-seg"><span class="dot x"></span><span class="nm">저장소</span></div>
+      <div class="d-seg"><span class="dot x"></span><span class="nm">Slack</span></div>
+      <div class="d-seg"><span class="dot x"></span><span class="nm">Notion</span></div>
+    </div>
+  </div>
+
+  <!-- red 상태 예시 -->
+  <div class="variant-label">시안 D · 빨강(필수 누락) 상태 예시</div>
+  <div class="variant-desc">ENCRYPT_KEY 누락 같은 치명 상황. 배경이 붉어지고 종합 신호등이 깜빡입니다.</div>
+  <div class="d-banner red">
+    <div class="d-main">
+      <span class="d-big"><span class="dot r pulse" style="width:22px;height:22px;"></span></span>
+      <div class="d-text">
+        <div class="d-title">필수 설정 누락: 암호화(ENCRYPT_KEY)</div>
+        <div class="d-summary">Streamlit Secrets에 ENCRYPT_KEY를 추가해야 정상 작동합니다.</div>
+      </div>
+      <button class="d-btn">⚙️ 설정 열기</button>
+    </div>
+    <div class="d-strip">
+      <div class="d-seg"><span class="dot r"></span><span class="nm">암호화</span></div>
+      <div class="d-seg"><span class="dot g"></span><span class="nm">네이버</span></div>
+      <div class="d-seg"><span class="dot y"></span><span class="nm">Gemini</span></div>
+      <div class="d-seg"><span class="dot x"></span><span class="nm">광고</span></div>
+      <div class="d-seg"><span class="dot x"></span><span class="nm">저장소</span></div>
+      <div class="d-seg"><span class="dot x"></span><span class="nm">Slack</span></div>
+      <div class="d-seg"><span class="dot x"></span><span class="nm">Notion</span></div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

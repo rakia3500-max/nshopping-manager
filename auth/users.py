@@ -127,18 +127,46 @@ _KEY_FIELDS = [
 ]
 
 # ── 비밀번호 재설정 ───────────────────────────────────────────────────────────
-def reset_password(email):
-    """이메일로 임시 비밀번호를 생성해 Google Sheets에 저장하고 임시 비밀번호를 반환"""
+_RESET_ATTEMPTS = {}  # {email: [timestamp, ...]} -- 무차별 대입 방지용 (프로세스 메모리)
+_RESET_MAX_PER_HOUR = 3
+
+def _reset_throttled(email):
+    """시간당 재설정 시도 횟수 제한"""
+    import time as _t
+    now = _t.time()
+    attempts = [t for t in _RESET_ATTEMPTS.get(email, []) if now - t < 3600]
+    _RESET_ATTEMPTS[email] = attempts
+    if len(attempts) >= _RESET_MAX_PER_HOUR:
+        return True
+    attempts.append(now)
+    return False
+
+def reset_password(email, display_name=""):
+    """본인 확인(가입 시 등록한 이름) 후 임시 비밀번호를 생성해 반환.
+
+    [SECURITY] 이메일만으로 재설정을 허용하면 타인이 이메일 주소만 알아도
+    계정을 탈취할 수 있으므로, 가입 시 입력한 이름(display_name)이
+    정확히 일치해야만 임시 비밀번호를 발급한다.
+    또한 시간당 3회로 시도를 제한해 무차별 대입을 차단한다.
+    """
     import random, string
     init_db()
     email = email.strip().lower()
     if not _valid_email(email):
         return False, "이메일 형식이 올바르지 않습니다.", None
+    if _reset_throttled(email):
+        return False, "재설정 시도가 너무 많습니다. 1시간 후 다시 시도해주세요.", None
     try:
         ws_users = get_users_sheet()
         row, row_num = _find_user_row(ws_users, email)
+        # [SECURITY] 계정 존재 여부를 노출하지 않도록 실패 메시지를 통일
+        _fail_msg = "입력하신 정보와 일치하는 계정을 찾을 수 없습니다."
         if not row:
-            return False, "가입되지 않은 이메일입니다.", None
+            return False, _fail_msg, None
+        stored_name = str(row.get("display_name", "") or "").strip()
+        if not stored_name or stored_name != display_name.strip():
+            log.warning("[users] 비밀번호 재설정 본인확인 실패: %s", email)
+            return False, _fail_msg, None
         # 임시 비밀번호 생성 (영문 대소문자 + 숫자 10자리)
         tmp_pw = "".join(random.choices(string.ascii_letters + string.digits, k=10))
         new_hash = _hash_pw(tmp_pw)
