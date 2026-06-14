@@ -361,7 +361,7 @@ section[data-testid="stMain"] { margin-left: 0 !important; padding-left: 0 !impo
    상단 네비게이션 (horizontal radio)
 ══════════════════════════════ */
 /* 상단 네비 전체 래퍼 */
-.km-topnav-wrap { background: #111; margin: -1px calc(-50vw + 50%) 1.5rem; padding: 0 2rem; border-bottom: 2.5px solid #333; }
+.km-topnav-wrap { background: #111; margin: -1px calc(-50vw + 50%) 0; padding: 0 2rem; border-bottom: 2.5px solid #333; }
 /* horizontal radio 탭 스타일 */
 .km-topnav-wrap [data-testid="stRadio"] > div[role="radiogroup"] {
     display: flex !important; flex-direction: row !important; gap: 0 !important;
@@ -382,6 +382,28 @@ section[data-testid="stMain"] { margin-left: 0 !important; padding-left: 0 !impo
 .km-topnav-wrap [data-testid="stRadio"] label > div:first-child { display: none !important; }
 .km-topnav-wrap [data-testid="stRadio"] input { display: none !important; }
 .km-topnav-wrap [data-testid="stRadio"] { width: 100% !important; }
+
+/* ── 하위 네비게이션 (선택된 카테고리의 세부 메뉴) ── */
+.km-subnav-wrap { background: #F4F2EE; margin: 0 calc(-50vw + 50%) 1.5rem; padding: 0 2rem; border-bottom: 2px solid #111; }
+.km-subnav-wrap [data-testid="stRadio"] > div[role="radiogroup"] {
+    display: flex !important; flex-direction: row !important; gap: 0 !important;
+    align-items: center !important; height: 42px !important; flex-wrap: nowrap !important; overflow-x: auto !important;
+}
+.km-subnav-wrap [data-testid="stRadio"] label {
+    padding: 0 14px !important; height: 42px !important;
+    display: flex !important; align-items: center !important;
+    color: #888 !important; font-size: 0.8rem !important; font-weight: 500 !important;
+    border-radius: 0 !important; border-bottom: 3px solid transparent !important;
+    white-space: nowrap !important; cursor: pointer !important; transition: color 0.12s !important;
+    border-top: none !important; border-left: none !important; border-right: none !important;
+}
+.km-subnav-wrap [data-testid="stRadio"] label:hover { color: #FF6B2B !important; }
+.km-subnav-wrap [data-testid="stRadio"] label:has(input:checked) {
+    color: #111 !important; border-bottom: 3px solid #FF6B2B !important; font-weight: 700 !important;
+}
+.km-subnav-wrap [data-testid="stRadio"] label > div:first-child { display: none !important; }
+.km-subnav-wrap [data-testid="stRadio"] input { display: none !important; }
+.km-subnav-wrap [data-testid="stRadio"] { width: 100% !important; }
 
 /* ── 페이지 헤더 ── */
 .km-page-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.2rem; padding-bottom: 1rem; border-bottom: 2px solid #111; }
@@ -737,10 +759,33 @@ try:
 except Exception:
     pass
 
-_menu_items = ["Dashboard", "Run & Sync", "경쟁사 집중 분석", "AI Report", "일자별 순위 추이", "SEO태그 생성기", "틈새 키워드 발굴기", "키워드 인텐트", "시즌성 분석", "GEO/AEO 가이드", "AI 인용 추적", "스키마·FAQ 생성기", "GEO 진단", "엔티티 감사", "상세페이지 제작기", "⚙️ 설정"]
+_menu_groups = {
+    "📊 현황": ["Dashboard", "일자별 순위 추이", "경쟁사 집중 분석"],
+    "🔍 키워드": ["틈새 키워드 발굴기", "키워드 인텐트", "시즌성 분석"],
+    "🤖 AI 분석": ["AI Report", "AI 인용 추적", "GEO 진단", "엔티티 감사"],
+    "✍️ 콘텐츠 제작": ["SEO태그 생성기", "스키마·FAQ 생성기", "상세페이지 제작기", "GEO/AEO 가이드"],
+    "⚙️ 운영": ["Run & Sync", "⚙️ 설정"],
+}
+# 직전 선택 메뉴가 속한 그룹을 기본 활성 그룹으로 (없으면 첫 그룹)
+_prev_menu = st.session_state.get("_active_menu", "Dashboard")
+_default_group = next((g for g, items in _menu_groups.items() if _prev_menu in items),
+                      list(_menu_groups)[0])
+
 st.markdown('<div class="km-topnav-wrap">', unsafe_allow_html=True)
-selected_menu = st.radio("메뉴", _menu_items, horizontal=True, label_visibility="collapsed")
+_active_group = st.radio("카테고리", list(_menu_groups.keys()), horizontal=True,
+                         label_visibility="collapsed",
+                         index=list(_menu_groups).index(_default_group))
 st.markdown('</div>', unsafe_allow_html=True)
+
+# 하위 메뉴: 선택된 그룹의 항목만 표시 (그룹 전환 시 첫 항목 자동 선택)
+_sub_items = _menu_groups[_active_group]
+_sub_index = _sub_items.index(_prev_menu) if _prev_menu in _sub_items else 0
+st.markdown('<div class="km-subnav-wrap">', unsafe_allow_html=True)
+selected_menu = st.radio("메뉴", _sub_items, horizontal=True,
+                         label_visibility="collapsed", index=_sub_index,
+                         key=f"_sub_{_active_group}")
+st.markdown('</div>', unsafe_allow_html=True)
+st.session_state["_active_menu"] = selected_menu
 
 def get_clean_df(df_target):
     if df_target.empty: return df_target

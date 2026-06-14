@@ -15,10 +15,14 @@
   .topnav .item { color: rgba(255,255,255,0.6); font-size: 0.8rem; font-weight: 500; padding: 11px 13px; white-space: nowrap; cursor: pointer; border-bottom: 3px solid transparent; }
   .topnav .item:hover { color: rgba(255,255,255,0.85); }
   .topnav .item.active { color: #fff; border-bottom: 3px solid #FF6B2B; font-weight: 600; }
+  .subnav { background: #fff; border: 2.5px solid #111; border-top: none; border-radius: 0 0 8px 8px; padding: 2px 10px; display: flex; gap: 2px; margin-bottom: 4px; }
+  .subnav .sitem { color: #888; font-size: 0.78rem; font-weight: 500; padding: 9px 12px; white-space: nowrap; cursor: pointer; border-bottom: 3px solid transparent; }
+  .subnav .sitem:hover { color: #FF6B2B; }
+  .subnav .sitem.active { color: #111; border-bottom: 3px solid #FF6B2B; font-weight: 700; }
 
   /* ───── 시안 A: 상태 바 (네비 바로 아래) ───── */
   .statusbar { display: flex; align-items: center; gap: 14px; background: #fff; border: 2.5px solid #111;
-    border-radius: 8px; box-shadow: 4px 4px 0 #111; padding: 10px 16px; margin-top: 14px; flex-wrap: wrap; }
+    border-radius: 8px; box-shadow: 4px 4px 0 #111; padding: 10px 16px; margin-top: 10px; flex-wrap: wrap; }
   .sb-status { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 0.9rem; }
   .sb-divider { width: 2px; height: 20px; background: #E5E2DC; }
   .sb-pills { display: flex; gap: 6px; flex-wrap: wrap; flex: 1; }
@@ -71,22 +75,18 @@
 <body>
 <div class="app">
 
-  <!-- 상단 네비게이션 -->
+  <!-- 상단 네비게이션 (2단: 카테고리 + 세부메뉴) -->
   <div class="topnav">
-    <span class="item active">Dashboard</span>
-    <span class="item">Run &amp; Sync</span>
-    <span class="item">경쟁사 분석</span>
-    <span class="item">AI Report</span>
-    <span class="item">순위 추이</span>
-    <span class="item">SEO태그</span>
-    <span class="item">틈새 키워드</span>
-    <span class="item">키워드 인텐트</span>
-    <span class="item">시즌성 분석</span>
-    <span class="item">AI 인용 추적</span>
-    <span class="item">스키마·FAQ</span>
-    <span class="item">GEO 진단</span>
-    <span class="item">엔티티 감사</span>
-    <span class="item">⚙️ 설정</span>
+    <span class="item active">📊 현황</span>
+    <span class="item">🔍 키워드</span>
+    <span class="item">🤖 AI 분석</span>
+    <span class="item">✍️ 콘텐츠 제작</span>
+    <span class="item">⚙️ 운영</span>
+  </div>
+  <div class="subnav">
+    <span class="sitem active">Dashboard</span>
+    <span class="sitem">일자별 순위 추이</span>
+    <span class="sitem">경쟁사 집중 분석</span>
   </div>
 
   <!-- ★ 시안 A 상태 바 ★ -->
