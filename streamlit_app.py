@@ -369,39 +369,55 @@ section[data-testid="stMain"] { margin-left: 0 !important; padding-left: 0 !impo
 }
 .km-topnav-wrap [data-testid="stRadio"] label {
     padding: 0 16px !important; height: 48px !important;
-    display: flex !important; align-items: center !important;
+    display: flex !important; align-items: center !important; gap: 0 !important;
     color: rgba(255,255,255,0.42) !important; font-size: 0.82rem !important; font-weight: 400 !important;
     border-radius: 0 !important; border-bottom: 3px solid transparent !important;
     white-space: nowrap !important; cursor: pointer !important; transition: color 0.12s !important;
     border-top: none !important; border-left: none !important; border-right: none !important;
 }
+.km-topnav-wrap [data-testid="stRadio"] label > div { gap: 0 !important; }
 .km-topnav-wrap [data-testid="stRadio"] label:hover { color: rgba(255,255,255,0.75) !important; }
 .km-topnav-wrap [data-testid="stRadio"] label:has(input:checked) {
     color: #fff !important; border-bottom: 3px solid #FF6B2B !important; font-weight: 600 !important;
 }
-.km-topnav-wrap [data-testid="stRadio"] label > div:first-child { display: none !important; }
+/* 라디오 동그라미(마커) 완전 숨김 — Streamlit 버전별 DOM 모두 대응 */
+.km-topnav-wrap [data-testid="stRadio"] label > div:first-child,
+.km-topnav-wrap [data-testid="stRadio"] label [data-baseweb="radio"] > div:first-child,
+.km-topnav-wrap [data-testid="stRadio"] [role="radio"],
+.km-topnav-wrap [data-testid="stRadio"] svg {
+    display: none !important; width: 0 !important; height: 0 !important;
+    margin: 0 !important; padding: 0 !important; opacity: 0 !important; overflow: hidden !important;
+}
 .km-topnav-wrap [data-testid="stRadio"] input { display: none !important; }
 .km-topnav-wrap [data-testid="stRadio"] { width: 100% !important; }
 
 /* ── 하위 네비게이션 (선택된 카테고리의 세부 메뉴) ── */
-.km-subnav-wrap { background: #F4F2EE; margin: 0 calc(-50vw + 50%) 1.5rem; padding: 0 2rem; border-bottom: 2px solid #111; }
+.km-subnav-wrap { background: #FFF; margin: 0 calc(-50vw + 50%) 1.5rem; padding: 0 2rem;
+    border-bottom: 2.5px solid #111; box-shadow: inset 0 6px 8px -8px rgba(0,0,0,0.25); }
 .km-subnav-wrap [data-testid="stRadio"] > div[role="radiogroup"] {
     display: flex !important; flex-direction: row !important; gap: 0 !important;
     align-items: center !important; height: 42px !important; flex-wrap: nowrap !important; overflow-x: auto !important;
 }
 .km-subnav-wrap [data-testid="stRadio"] label {
     padding: 0 14px !important; height: 42px !important;
-    display: flex !important; align-items: center !important;
+    display: flex !important; align-items: center !important; gap: 0 !important;
     color: #888 !important; font-size: 0.8rem !important; font-weight: 500 !important;
     border-radius: 0 !important; border-bottom: 3px solid transparent !important;
     white-space: nowrap !important; cursor: pointer !important; transition: color 0.12s !important;
     border-top: none !important; border-left: none !important; border-right: none !important;
 }
+.km-subnav-wrap [data-testid="stRadio"] label > div { gap: 0 !important; }
 .km-subnav-wrap [data-testid="stRadio"] label:hover { color: #FF6B2B !important; }
 .km-subnav-wrap [data-testid="stRadio"] label:has(input:checked) {
     color: #111 !important; border-bottom: 3px solid #FF6B2B !important; font-weight: 700 !important;
 }
-.km-subnav-wrap [data-testid="stRadio"] label > div:first-child { display: none !important; }
+.km-subnav-wrap [data-testid="stRadio"] label > div:first-child,
+.km-subnav-wrap [data-testid="stRadio"] label [data-baseweb="radio"] > div:first-child,
+.km-subnav-wrap [data-testid="stRadio"] [role="radio"],
+.km-subnav-wrap [data-testid="stRadio"] svg {
+    display: none !important; width: 0 !important; height: 0 !important;
+    margin: 0 !important; padding: 0 !important; opacity: 0 !important; overflow: hidden !important;
+}
 .km-subnav-wrap [data-testid="stRadio"] input { display: none !important; }
 .km-subnav-wrap [data-testid="stRadio"] { width: 100% !important; }
 
