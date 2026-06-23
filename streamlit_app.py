@@ -360,14 +360,15 @@ section[data-testid="stMain"] { margin-left: 0 !important; padding-left: 0 !impo
 /* ══════════════════════════════
    상단 네비게이션 (horizontal radio)
 ══════════════════════════════ */
-/* 상단 네비 전체 래퍼 */
-.km-topnav-wrap { background: #111; margin: -1px calc(-50vw + 50%) 0; padding: 0 2rem; border-bottom: 2.5px solid #333; position: relative; }
+/* 상단 네비 전체 래퍼 — st.container(key="km_topnav")가 실제로 감싸는 진짜 DOM 부모 (st.markdown 태그 분리 방식은
+   Streamlit이 호출별로 별도 컨테이너를 만들어서 실제로는 중첩되지 않아 폐기) */
+div.st-key-km_topnav { background: #111; margin: -1px calc(-50vw + 50%) 0; padding: 0 2rem; border-bottom: 2.5px solid #333; position: relative; }
 /* horizontal radio 탭 스타일 */
-.km-topnav-wrap [data-testid="stRadio"] > div[role="radiogroup"] {
+div.st-key-km_topnav [data-testid="stRadio"] > div[role="radiogroup"] {
     display: flex !important; flex-direction: row !important; gap: 0 !important;
     align-items: center !important; height: 48px !important; flex-wrap: nowrap !important; overflow-x: auto !important;
 }
-.km-topnav-wrap [data-testid="stRadio"] label {
+div.st-key-km_topnav [data-testid="stRadio"] label {
     padding: 0 16px !important; height: 48px !important;
     display: flex !important; align-items: center !important; gap: 0 !important;
     color: rgba(255,255,255,0.42) !important; font-size: 0.82rem !important; font-weight: 400 !important;
@@ -375,21 +376,21 @@ section[data-testid="stMain"] { margin-left: 0 !important; padding-left: 0 !impo
     white-space: nowrap !important; cursor: pointer !important; transition: color 0.12s !important;
     border-top: none !important; border-left: none !important; border-right: none !important;
 }
-.km-topnav-wrap [data-testid="stRadio"] label > div { gap: 0 !important; }
-.km-topnav-wrap [data-testid="stRadio"] label:hover { color: rgba(255,255,255,0.75) !important; }
-.km-topnav-wrap [data-testid="stRadio"] label:has(input:checked) {
+div.st-key-km_topnav [data-testid="stRadio"] label > div { gap: 0 !important; }
+div.st-key-km_topnav [data-testid="stRadio"] label:hover { color: rgba(255,255,255,0.75) !important; }
+div.st-key-km_topnav [data-testid="stRadio"] label:has(input:checked) {
     color: #fff !important; border-bottom: 3px solid #FF6B2B !important; font-weight: 600 !important;
 }
 /* 라디오 동그라미(마커) 완전 숨김 — Streamlit 버전별 DOM 모두 대응 */
-.km-topnav-wrap [data-testid="stRadio"] label > div:first-child,
-.km-topnav-wrap [data-testid="stRadio"] label [data-baseweb="radio"] > div:first-child,
-.km-topnav-wrap [data-testid="stRadio"] [role="radio"],
-.km-topnav-wrap [data-testid="stRadio"] svg {
+div.st-key-km_topnav [data-testid="stRadio"] label > div:first-child,
+div.st-key-km_topnav [data-testid="stRadio"] label [data-baseweb="radio"] > div:first-child,
+div.st-key-km_topnav [data-testid="stRadio"] [role="radio"],
+div.st-key-km_topnav [data-testid="stRadio"] svg {
     display: none !important; width: 0 !important; height: 0 !important;
     margin: 0 !important; padding: 0 !important; opacity: 0 !important; overflow: hidden !important;
 }
-.km-topnav-wrap [data-testid="stRadio"] input { display: none !important; }
-.km-topnav-wrap [data-testid="stRadio"] { width: 100% !important; }
+div.st-key-km_topnav [data-testid="stRadio"] input { display: none !important; }
+div.st-key-km_topnav [data-testid="stRadio"] { width: 100% !important; }
 
 /* 상단 네비 우측 — 압축 상태 표시 (카테고리 줄과 한 줄로 통합) */
 .km-topnav-status {
@@ -400,14 +401,14 @@ section[data-testid="stMain"] { margin-left: 0 !important; padding-left: 0 !impo
 }
 .km-topnav-status .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
 
-/* ── 하위 네비게이션 (선택된 카테고리의 세부 메뉴) ── */
-.km-subnav-wrap { background: #FFF; margin: 0 calc(-50vw + 50%) 1.5rem; padding: 0 2rem;
+/* ── 하위 네비게이션 (선택된 카테고리의 세부 메뉴) — st.container(key="km_subnav")로 실제 중첩 ── */
+div.st-key-km_subnav { background: #FFF; margin: 0 calc(-50vw + 50%) 1.5rem; padding: 0 2rem;
     border-bottom: 2.5px solid #111; box-shadow: inset 0 6px 8px -8px rgba(0,0,0,0.25); }
-.km-subnav-wrap [data-testid="stRadio"] > div[role="radiogroup"] {
+div.st-key-km_subnav [data-testid="stRadio"] > div[role="radiogroup"] {
     display: flex !important; flex-direction: row !important; gap: 0 !important;
     align-items: center !important; height: 42px !important; flex-wrap: nowrap !important; overflow-x: auto !important;
 }
-.km-subnav-wrap [data-testid="stRadio"] label {
+div.st-key-km_subnav [data-testid="stRadio"] label {
     padding: 0 14px !important; height: 42px !important;
     display: flex !important; align-items: center !important; gap: 0 !important;
     color: #888 !important; font-size: 0.8rem !important; font-weight: 500 !important;
@@ -415,20 +416,20 @@ section[data-testid="stMain"] { margin-left: 0 !important; padding-left: 0 !impo
     white-space: nowrap !important; cursor: pointer !important; transition: color 0.12s !important;
     border-top: none !important; border-left: none !important; border-right: none !important;
 }
-.km-subnav-wrap [data-testid="stRadio"] label > div { gap: 0 !important; }
-.km-subnav-wrap [data-testid="stRadio"] label:hover { color: #FF6B2B !important; }
-.km-subnav-wrap [data-testid="stRadio"] label:has(input:checked) {
+div.st-key-km_subnav [data-testid="stRadio"] label > div { gap: 0 !important; }
+div.st-key-km_subnav [data-testid="stRadio"] label:hover { color: #FF6B2B !important; }
+div.st-key-km_subnav [data-testid="stRadio"] label:has(input:checked) {
     color: #111 !important; border-bottom: 3px solid #FF6B2B !important; font-weight: 700 !important;
 }
-.km-subnav-wrap [data-testid="stRadio"] label > div:first-child,
-.km-subnav-wrap [data-testid="stRadio"] label [data-baseweb="radio"] > div:first-child,
-.km-subnav-wrap [data-testid="stRadio"] [role="radio"],
-.km-subnav-wrap [data-testid="stRadio"] svg {
+div.st-key-km_subnav [data-testid="stRadio"] label > div:first-child,
+div.st-key-km_subnav [data-testid="stRadio"] label [data-baseweb="radio"] > div:first-child,
+div.st-key-km_subnav [data-testid="stRadio"] [role="radio"],
+div.st-key-km_subnav [data-testid="stRadio"] svg {
     display: none !important; width: 0 !important; height: 0 !important;
     margin: 0 !important; padding: 0 !important; opacity: 0 !important; overflow: hidden !important;
 }
-.km-subnav-wrap [data-testid="stRadio"] input { display: none !important; }
-.km-subnav-wrap [data-testid="stRadio"] { width: 100% !important; }
+div.st-key-km_subnav [data-testid="stRadio"] input { display: none !important; }
+div.st-key-km_subnav [data-testid="stRadio"] { width: 100% !important; }
 
 /* ── 페이지 헤더 ── */
 .km-page-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.2rem; padding-bottom: 1rem; border-bottom: 2px solid #111; }
@@ -770,23 +771,24 @@ _prev_menu = st.session_state.get("_active_menu", "Dashboard")
 _default_group = next((g for g, items in _menu_groups.items() if _prev_menu in items),
                       list(_menu_groups)[0])
 
-st.markdown('<div class="km-topnav-wrap">', unsafe_allow_html=True)
-st.markdown(
-    f"<div class='km-topnav-status'><span class='dot' style='background:{_mini_color};'></span>"
-    f"{_mini_txt}</div>", unsafe_allow_html=True)
-_active_group = st.radio("카테고리", list(_menu_groups.keys()), horizontal=True,
-                         label_visibility="collapsed",
-                         index=list(_menu_groups).index(_default_group))
-st.markdown('</div>', unsafe_allow_html=True)
+# st.markdown('<div>')...st.markdown('</div>')로 태그를 분리해서 감싸는 방식은 Streamlit이 호출마다
+# 별도 컨테이너를 만들어 실제로는 중첩되지 않음(형제 노드로 렌더링) — st.container(key=...)를 써야
+# 진짜 부모 div(class="st-key-...")가 생겨서 CSS 하위 선택자가 정상 동작함.
+with st.container(key="km_topnav"):
+    st.markdown(
+        f"<div class='km-topnav-status'><span class='dot' style='background:{_mini_color};'></span>"
+        f"{_mini_txt}</div>", unsafe_allow_html=True)
+    _active_group = st.radio("카테고리", list(_menu_groups.keys()), horizontal=True,
+                             label_visibility="collapsed",
+                             index=list(_menu_groups).index(_default_group))
 
 # 하위 메뉴: 선택된 그룹의 항목만 표시 (그룹 전환 시 첫 항목 자동 선택)
 _sub_items = _menu_groups[_active_group]
 _sub_index = _sub_items.index(_prev_menu) if _prev_menu in _sub_items else 0
-st.markdown('<div class="km-subnav-wrap">', unsafe_allow_html=True)
-selected_menu = st.radio("메뉴", _sub_items, horizontal=True,
-                         label_visibility="collapsed", index=_sub_index,
-                         key=f"_sub_{_active_group}")
-st.markdown('</div>', unsafe_allow_html=True)
+with st.container(key="km_subnav"):
+    selected_menu = st.radio("메뉴", _sub_items, horizontal=True,
+                             label_visibility="collapsed", index=_sub_index,
+                             key=f"_sub_{_active_group}")
 st.session_state["_active_menu"] = selected_menu
 if _mini_lv == "red":
     st.caption("🔴 필수 설정이 누락됐습니다. Dashboard 또는 ⚙️ 설정에서 확인하세요.")
