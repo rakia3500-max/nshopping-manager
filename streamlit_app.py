@@ -361,7 +361,7 @@ section[data-testid="stMain"] { margin-left: 0 !important; padding-left: 0 !impo
    상단 네비게이션 (horizontal radio)
 ══════════════════════════════ */
 /* 상단 네비 전체 래퍼 */
-.km-topnav-wrap { background: #111; margin: -1px calc(-50vw + 50%) 0; padding: 0 2rem; border-bottom: 2.5px solid #333; }
+.km-topnav-wrap { background: #111; margin: -1px calc(-50vw + 50%) 0; padding: 0 2rem; border-bottom: 2.5px solid #333; position: relative; }
 /* horizontal radio 탭 스타일 */
 .km-topnav-wrap [data-testid="stRadio"] > div[role="radiogroup"] {
     display: flex !important; flex-direction: row !important; gap: 0 !important;
@@ -390,6 +390,15 @@ section[data-testid="stMain"] { margin-left: 0 !important; padding-left: 0 !impo
 }
 .km-topnav-wrap [data-testid="stRadio"] input { display: none !important; }
 .km-topnav-wrap [data-testid="stRadio"] { width: 100% !important; }
+
+/* 상단 네비 우측 — 압축 상태 표시 (카테고리 줄과 한 줄로 통합) */
+.km-topnav-status {
+    position: absolute; top: 0; right: 2rem; height: 48px;
+    display: flex; align-items: center; gap: 6px;
+    font-size: 0.76rem; font-weight: 600; color: rgba(255,255,255,0.85);
+    white-space: nowrap; pointer-events: none; z-index: 2;
+}
+.km-topnav-status .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
 
 /* ── 하위 네비게이션 (선택된 카테고리의 세부 메뉴) ── */
 .km-subnav-wrap { background: #FFF; margin: 0 calc(-50vw + 50%) 1.5rem; padding: 0 2rem;
@@ -733,9 +742,10 @@ competitors       = _k.get("competitors", "다다사, 효로로, 드론뷰")
 _u = st.session_state.current_user or {}
 _api_set = bool(_k.get("naver_client_id"))
 
-# 전 화면 공통 상태 바 — 시안 A (한눈에 시스템 상태 + 항목별 신호)
+# 전 화면 공통 상태 — 시안 1: 카테고리 줄 우측에 압축 표시 (상세는 Dashboard에서 확인)
+_mini_lv, _mini_txt, _mini_color = "gray", "확인 중", "#C9C4BB"
 try:
-    from integrations.system_status import check_config as _cc, overall_level as _ol, DOT as _DOT
+    from integrations.system_status import check_config as _cc, overall_level as _ol
     try:
         from auth.encrypt import _get_fernet as _gf
         _mini_enc = _gf() is not None
@@ -745,33 +755,6 @@ try:
     _mini_lv = _ol(_mini_items)
     _mini_txt = {"green": "정상", "yellow": "일부 미설정", "red": "필수 누락"}[_mini_lv]
     _mini_color = {"green": "#44BB44", "yellow": "#E6A000", "red": "#FF5555"}[_mini_lv]
-    # 항목별 알약: 짧은 라벨 매핑
-    _pill_label = {
-        "암호화 (ENCRYPT_KEY)": "암호화", "네이버 검색 API": "네이버 API",
-        "네이버 광고 API": "광고 API", "Gemini AI": "Gemini",
-        "데이터 저장소 (GAS)": "저장소", "Slack 알림": "Slack", "Notion 연동": "Notion"}
-    _dot_hex = {"green": "#44BB44", "yellow": "#E6A000", "red": "#FF5555", "gray": "#C9C4BB"}
-    _pills_html = ""
-    for _it in _mini_items:
-        _bad = _it["level"] in ("red", "yellow")
-        _pstyle = ("background:#FFF0E8;border-color:#FF6B2B;color:#C03800;font-weight:600;"
-                   if _bad else "background:#F7F5F1;border-color:#E0DCD4;color:#555;")
-        _pills_html += (
-            f"<span style='display:inline-flex;align-items:center;gap:5px;font-size:0.72rem;"
-            f"border:1.5px solid;border-radius:20px;padding:3px 9px;{_pstyle}'>"
-            f"<span style='width:9px;height:9px;border-radius:50%;background:{_dot_hex[_it['level']]};'></span>"
-            f"{_pill_label.get(_it['name'], _it['name'])}</span>")
-    st.markdown(
-        f"<div style='display:flex;align-items:center;gap:12px;background:#fff;border:2.5px solid #111;"
-        f"border-radius:8px;box-shadow:4px 4px 0 #111;padding:9px 14px;margin:10px 0 4px;flex-wrap:wrap;'>"
-        f"<span style='display:flex;align-items:center;gap:7px;font-weight:700;font-size:0.85rem;white-space:nowrap;'>"
-        f"<span style='width:10px;height:10px;border-radius:50%;background:{_mini_color};'></span>"
-        f"시스템 {_mini_txt}</span>"
-        f"<span style='width:2px;height:18px;background:#E5E2DC;'></span>"
-        f"<span style='display:flex;gap:6px;flex-wrap:wrap;'>{_pills_html}</span>"
-        f"</div>", unsafe_allow_html=True)
-    if _mini_lv == "red":
-        st.caption("🔴 필수 설정이 누락됐습니다. Dashboard 또는 ⚙️ 설정에서 확인하세요.")
 except Exception:
     pass
 
@@ -788,6 +771,9 @@ _default_group = next((g for g, items in _menu_groups.items() if _prev_menu in i
                       list(_menu_groups)[0])
 
 st.markdown('<div class="km-topnav-wrap">', unsafe_allow_html=True)
+st.markdown(
+    f"<div class='km-topnav-status'><span class='dot' style='background:{_mini_color};'></span>"
+    f"{_mini_txt}</div>", unsafe_allow_html=True)
 _active_group = st.radio("카테고리", list(_menu_groups.keys()), horizontal=True,
                          label_visibility="collapsed",
                          index=list(_menu_groups).index(_default_group))
@@ -802,6 +788,8 @@ selected_menu = st.radio("메뉴", _sub_items, horizontal=True,
                          key=f"_sub_{_active_group}")
 st.markdown('</div>', unsafe_allow_html=True)
 st.session_state["_active_menu"] = selected_menu
+if _mini_lv == "red":
+    st.caption("🔴 필수 설정이 누락됐습니다. Dashboard 또는 ⚙️ 설정에서 확인하세요.")
 
 def get_clean_df(df_target):
     if df_target.empty: return df_target
