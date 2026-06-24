@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-[최종 통합 완성본 v7 260327] BitDrone_Manager_Web.py
+[최종 통합 완성본 v8 260624]
+- Update: 상단/서브 네비 중앙 정렬 CSS 수정 (radiogroup에 width:100% 추가 — flex centering 미적용 버그 해결)
 - Update: AI 프롬프트 고도화 (검색량/클릭률 기반 실무자 맞춤형 '액션 플랜' 제안 기능 추가)
 - Update: 차트 렌더링 랙 해결 (기본 14일 조회 + 달력 필터)
 - Update: Gemini API 404 에러 방지를 위한 다중 모델 Fallback 로직 적용 (2.5 -> 2.0 -> 1.5 -> pro)
@@ -367,6 +368,7 @@ div.st-key-km_topnav { background: #111; margin: -1px calc(-50vw + 50%) 0; paddi
 div.st-key-km_topnav [data-testid="stRadio"] > div[role="radiogroup"] {
     display: flex !important; flex-direction: row !important; gap: 0 !important;
     align-items: center !important; justify-content: center !important;
+    width: 100% !important;
     height: 48px !important; flex-wrap: nowrap !important; overflow-x: auto !important;
 }
 div.st-key-km_topnav [data-testid="stRadio"] label {
@@ -408,6 +410,7 @@ div.st-key-km_subnav { background: #FFF; margin: 0 calc(-50vw + 50%) 1.5rem; pad
 div.st-key-km_subnav [data-testid="stRadio"] > div[role="radiogroup"] {
     display: flex !important; flex-direction: row !important; gap: 0 !important;
     align-items: center !important; justify-content: center !important;
+    width: 100% !important;
     height: 42px !important; flex-wrap: nowrap !important; overflow-x: auto !important;
 }
 div.st-key-km_subnav [data-testid="stRadio"] label {
