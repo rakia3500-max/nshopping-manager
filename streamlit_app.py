@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-[최종 통합 완성본 v9 260624] streamlit_app.py
+[최종 통합 완성본 v10 260624] streamlit_app.py
+- Update: 상단/서브 네비 바 좌측 치우침 수정 — calc(-50vw + 50%) 뷰포트 bleed 방식이 block-container 중앙
+  정렬 가정에 의존하다보니 어긋나는 문제가 있어서, bleed 제거하고 본문(block-container)과 동일한 폭/정렬로 변경.
 - Update: 상단/서브 네비 — 시안 A(st.segmented_control 네이티브 세그먼트 탭)로 전면 교체. 기존 st.radio + 커스텀 CSS 방식은
   Streamlit 내부 DOM 구조가 바뀔 때마다 깨지기 쉬워서, 네이티브 위젯 자체가 탭처럼 렌더링되는 방식으로 변경.
 - Update: 상단/서브 네비 중앙 정렬 CSS 수정 (radiogroup에 width:100% 추가 — flex centering 미적용 버그 해결)
@@ -365,7 +367,10 @@ section[data-testid="stMain"] { margin-left: 0 !important; padding-left: 0 !impo
    라디오 동그라미 숨김 등 fragile한 커스텀 CSS 없이, 위젯 자체가 이미 알약형 탭으로 렌더링됨.
    data-testid="stBaseButton-segmented_control" / "...Active" 는 Streamlit 1.45 기준 안정적인 hook.
 ══════════════════════════════ */
-div.st-key-km_topnav { background: #111; margin: -1px calc(-50vw + 50%) 0; padding: 10px 2rem; border-bottom: 2.5px solid #333; position: relative; }
+/* 시안 A 1차 버전은 calc(-50vw + 50%)로 뷰포트 끝까지 bleed시켰는데, block-container가 항상 정확히
+   뷰포트 중앙에 위치한다는 가정이 깨지면(사이드바 숨김 등으로) 네비 바가 본문 콘텐츠 기준과 어긋나게
+   좌측으로 치우쳐 보이는 문제가 있었음 — bleed 제거하고 block-container 폭에 맞춰 본문과 동일하게 정렬. */
+div.st-key-km_topnav { background: #111; margin: -1px 0 0; padding: 10px 2rem; border-bottom: 2.5px solid #333; position: relative; }
 div.st-key-km_topnav [data-testid="stElementContainer"]:has([data-testid^="stBaseButton-segmented_control"]) {
     display: flex !important; flex-direction: column !important; align-items: center !important;
 }
@@ -391,7 +396,7 @@ div.st-key-km_topnav [data-testid="stBaseButton-segmented_controlActive"] {
 .km-topnav-status .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
 
 /* ── 하위 네비게이션 (선택된 카테고리의 세부 메뉴) — 마찬가지로 st.segmented_control ── */
-div.st-key-km_subnav { background: #FFF; margin: 0 calc(-50vw + 50%) 1.5rem; padding: 8px 2rem 10px;
+div.st-key-km_subnav { background: #FFF; margin: 0 0 1.5rem; padding: 8px 2rem 10px;
     border-bottom: 2.5px solid #111; box-shadow: inset 0 6px 8px -8px rgba(0,0,0,0.25); }
 div.st-key-km_subnav [data-testid="stElementContainer"]:has([data-testid^="stBaseButton-segmented_control"]) {
     display: flex !important; flex-direction: column !important; align-items: center !important;
