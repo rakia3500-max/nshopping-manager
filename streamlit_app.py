@@ -366,7 +366,8 @@ div.st-key-km_topnav { background: #111; margin: -1px calc(-50vw + 50%) 0; paddi
 /* horizontal radio 탭 스타일 */
 div.st-key-km_topnav [data-testid="stRadio"] > div[role="radiogroup"] {
     display: flex !important; flex-direction: row !important; gap: 0 !important;
-    align-items: center !important; height: 48px !important; flex-wrap: nowrap !important; overflow-x: auto !important;
+    align-items: center !important; justify-content: center !important;
+    height: 48px !important; flex-wrap: nowrap !important; overflow-x: auto !important;
 }
 div.st-key-km_topnav [data-testid="stRadio"] label {
     padding: 0 16px !important; height: 48px !important;
@@ -406,7 +407,8 @@ div.st-key-km_subnav { background: #FFF; margin: 0 calc(-50vw + 50%) 1.5rem; pad
     border-bottom: 2.5px solid #111; box-shadow: inset 0 6px 8px -8px rgba(0,0,0,0.25); }
 div.st-key-km_subnav [data-testid="stRadio"] > div[role="radiogroup"] {
     display: flex !important; flex-direction: row !important; gap: 0 !important;
-    align-items: center !important; height: 42px !important; flex-wrap: nowrap !important; overflow-x: auto !important;
+    align-items: center !important; justify-content: center !important;
+    height: 42px !important; flex-wrap: nowrap !important; overflow-x: auto !important;
 }
 div.st-key-km_subnav [data-testid="stRadio"] label {
     padding: 0 14px !important; height: 42px !important;
