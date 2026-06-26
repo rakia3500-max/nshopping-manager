@@ -10,6 +10,8 @@ dji air 3s
 mavic air 3s
 dji avata2
 dji 아바타2
+dji 아바타360
+dji avata360
 dji 네오2
 dji neo2
 dji 플립
@@ -54,12 +56,10 @@ DJI TB100
 DJI TB65
 rs4 mini
 rs4 미니
-dji mini 4k
-dji 미니 4k
 osmo action 6
 오즈모 액션 6
-osmo pocket 3
-오즈모 포켓 3
+osmo pocket 4
+오즈모 포켓 4
 오즈모 모바일 8
 osmo mobile 8
 dji osmo
@@ -91,14 +91,10 @@ dji mavic 4 pro
 농업용 드론 
 농업용 드론 배터리
 드론 배터리
-아바타 360
-avata 360
 dji avata 360
 dji 아바타 360
 micasense
 미카센스
-osmo pocket 4
-osmo pocket4
 오즈모 포켓4
 오즈모포켓4
 DJI 오즈모 포켓 4
@@ -109,3 +105,5 @@ Lito
 Lito X1
 리토 
 리토 X1
+DJI O4 
+O4 스테이션
