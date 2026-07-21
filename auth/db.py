@@ -41,6 +41,8 @@ KEYS_HEADERS  = [
     "my_brand_1", "my_brand_2", "competitors",
     "notion_token", "notion_database_id", "slack_webhook_url",
     "updated_at",
+    # 트래픽 연동 (2026-07-21) — 기존 데이터 보존을 위해 반드시 맨 뒤에 추가
+    "gcp_sa_json", "gsc_site_url", "gsc_site_url2", "ga4_property_id",
 ]
 
 _client      = None
@@ -137,6 +139,16 @@ def get_keys_sheet():
         ss = get_spreadsheet()
         try:
             _ws_keys = ss.worksheet("user_keys")
+            # 헤더 마이그레이션: 새 열(트래픽 연동)이 없으면 시트 확장 + 헤더 갱신
+            try:
+                header = _ws_keys.row_values(1)
+                if len(header) < len(KEYS_HEADERS):
+                    if _ws_keys.col_count < len(KEYS_HEADERS):
+                        _ws_keys.resize(cols=len(KEYS_HEADERS))
+                    _ws_keys.update("A1", [KEYS_HEADERS], value_input_option="RAW")
+                    log.info("[db] user_keys 헤더 확장: %d → %d열", len(header), len(KEYS_HEADERS))
+            except Exception as _me:
+                log.error("[db] user_keys 헤더 마이그레이션 오류: %s", _me)
         except gspread.WorksheetNotFound:
             log.info("[db] 'user_keys' 시트 생성")
             _ws_keys = ss.add_worksheet(title="user_keys", rows=1000, cols=len(KEYS_HEADERS))

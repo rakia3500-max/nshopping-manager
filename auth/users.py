@@ -125,6 +125,8 @@ _KEY_FIELDS = [
     "my_brand_1", "my_brand_2", "competitors",
     "notion_token", "notion_database_id", "slack_webhook_url",
 ]
+# 트래픽 연동 필드 — 시트에서 updated_at 뒤(맨 뒤)에 위치 (2026-07-21)
+_KEY_FIELDS_EXT = ["gcp_sa_json", "gsc_site_url", "gsc_site_url2", "ga4_property_id"]
 
 # ── 비밀번호 재설정 ───────────────────────────────────────────────────────────
 _RESET_ATTEMPTS = {}  # {email: [timestamp, ...]} -- 무차별 대입 방지용 (프로세스 메모리)
@@ -209,7 +211,8 @@ def save_keys(user_id, keys):
         ws_keys = get_keys_sheet()
         _, row_num = _find_keys_row(ws_keys, user_id)
         updated_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        new_row = [str(user_id)] + [encrypt(keys.get(f, "")) for f in _KEY_FIELDS] + [updated_at]
+        new_row = ([str(user_id)] + [encrypt(keys.get(f, "")) for f in _KEY_FIELDS]
+                   + [updated_at] + [encrypt(keys.get(f, "")) for f in _KEY_FIELDS_EXT])
         if row_num == -1:
             ws_keys.append_row(new_row, value_input_option="RAW")
         else:
@@ -222,14 +225,14 @@ def save_keys(user_id, keys):
         return False, "저장 중 오류: " + str(e)
 
 def load_keys(user_id):
-    empty = {f: "" for f in _KEY_FIELDS}
+    empty = {f: "" for f in _KEY_FIELDS + _KEY_FIELDS_EXT}
     try:
         init_db()
         ws_keys = get_keys_sheet()
         row, _ = _find_keys_row(ws_keys, user_id)
         if not row:
             return empty
-        return {f: decrypt(str(row.get(f, ""))) for f in _KEY_FIELDS}
+        return {f: decrypt(str(row.get(f, ""))) for f in _KEY_FIELDS + _KEY_FIELDS_EXT}
     except Exception as e:
         log.error("[users] API 키 조회 오류: %s", e)
         return empty
