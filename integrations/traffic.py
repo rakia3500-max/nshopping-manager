@@ -139,8 +139,8 @@ def render(user_keys: dict):
         with st.expander(f"전체 검색어 {len(q_rows)}개"):
             st.dataframe(_df(q_rows[:100], "검색어"), use_container_width=True, hide_index=True)
 
-    # ── GA4 (드론박스 방문) ──
-    if ga4_pid:
+    # ── GA4 (드론박스 방문) — 드론박스 사이트를 선택했을 때만 표시 ──
+    if ga4_pid and site2 and site == site2:
         st.markdown("### 드론박스 방문 (GA4)")
         try:
             daily = _ga4_report(sa_json, ga4_pid, ("activeUsers", "screenPageViews"),
