@@ -337,16 +337,15 @@ if _COOKIE_OK and _cookie_manager is None:
 
 st.markdown("""
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-*, *::before, *::after { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important; -webkit-font-smoothing: antialiased; }
+@import url('https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css');
+*, *::before, *::after { font-family: 'Wanted Sans Variable', 'Wanted Sans', Pretendard, 'Noto Sans KR', -apple-system, sans-serif !important; -webkit-font-smoothing: antialiased; }
 
-/* ── 전체 배경 ── */
-div[data-testid="stAppViewContainer"], div[data-testid="stMain"] { background: #FFFBF5 !important; }
+/* == 클린 SaaS 테마 (2026-07-21) — 네이버클라우드·메이크샵 참조: 흰 바탕 + 딥블루 + 헤어라인 == */
+div[data-testid="stAppViewContainer"], div[data-testid="stMain"] { background: #FFFFFF !important; }
 header[data-testid="stHeader"] { display: none !important; }
 #MainMenu, footer, [data-testid="stToolbar"] { display: none !important; }
 .block-container { padding-top: 0 !important; padding-bottom: 3rem !important; max-width: 1320px; }
 
-/* ── 사이드바 완전 숨김 ── */
 section[data-testid="stSidebar"],
 section[data-testid="stSidebar"] > div,
 [data-testid="collapsedControl"],
@@ -358,154 +357,150 @@ button[aria-label="사이드바 열기"],
 button[aria-label="사이드바 닫기"],
 [class*="collapsedControl"],
 [class*="SidebarCollapsed"] { display: none !important; visibility: hidden !important; width: 0 !important; min-width: 0 !important; max-width: 0 !important; overflow: hidden !important; }
-/* 사이드바 공간 제거 — 메인 콘텐츠 왼쪽 여백 없애기 */
 .main .block-container { padding-left: 1rem !important; }
 section[data-testid="stMain"] { margin-left: 0 !important; padding-left: 0 !important; }
 
-/* ══════════════════════════════
-   상단 네비게이션 — 시안 A: 네이티브 세그먼트 탭형 (st.segmented_control)
-   라디오 동그라미 숨김 등 fragile한 커스텀 CSS 없이, 위젯 자체가 이미 알약형 탭으로 렌더링됨.
-   data-testid="stBaseButton-segmented_control" / "...Active" 는 Streamlit 1.45 기준 안정적인 hook.
-══════════════════════════════ */
-/* 시안 A 1차 버전은 calc(-50vw + 50%)로 뷰포트 끝까지 bleed시켰는데, block-container가 항상 정확히
-   뷰포트 중앙에 위치한다는 가정이 깨지면(사이드바 숨김 등으로) 네비 바가 본문 콘텐츠 기준과 어긋나게
-   좌측으로 치우쳐 보이는 문제가 있었음 — bleed 제거하고 block-container 폭에 맞춰 본문과 동일하게 정렬. */
-div.st-key-km_topnav { background: #111; margin: -1px 0 0; padding: 10px 2rem; border-bottom: 2.5px solid #333; position: relative; }
+/* -- 상단 네비: 흰 바탕 + 헤어라인, 활성 = 딥네이비 알약 -- */
+div.st-key-km_topnav { background: #FFFFFF; margin: -1px 0 0; padding: 12px 2rem 10px; border-bottom: 1px solid #E8EBF1; position: relative; }
 div.st-key-km_topnav [data-testid="stElementContainer"]:has([data-testid^="stBaseButton-segmented_control"]) {
     display: flex !important; flex-direction: column !important; align-items: center !important;
 }
 div.st-key-km_topnav [data-testid^="stBaseButton-segmented_control"] {
-    background: rgba(255,255,255,0.06) !important; border-color: rgba(255,255,255,0.18) !important;
-    color: rgba(255,255,255,0.55) !important; font-size: 0.82rem !important;
+    background: #FFFFFF !important; border-color: #E8EBF1 !important;
+    color: #7C8698 !important; font-size: 0.82rem !important; border-radius: 20px !important;
 }
 div.st-key-km_topnav [data-testid^="stBaseButton-segmented_control"]:hover {
-    color: #fff !important; background: rgba(255,255,255,0.12) !important;
+    color: #0B1B3F !important; background: #F4F6FA !important;
 }
 div.st-key-km_topnav [data-testid="stBaseButton-segmented_controlActive"] {
-    background: rgba(255,107,43,0.2) !important; border-color: #FF6B2B !important;
-    color: #fff !important; font-weight: 700 !important;
+    background: #0E2A6E !important; border-color: #0E2A6E !important;
+    color: #FFFFFF !important; font-weight: 700 !important;
 }
 
-/* 상단 네비 우측 — 압축 상태 표시 (카테고리 줄과 한 줄로 통합) */
 .km-topnav-status {
     position: absolute; top: 50%; right: 2rem; transform: translateY(-50%);
     display: flex; align-items: center; gap: 6px;
-    font-size: 0.76rem; font-weight: 600; color: rgba(255,255,255,0.85);
+    font-size: 0.76rem; font-weight: 600; color: #7C8698;
     white-space: nowrap; pointer-events: none; z-index: 2;
 }
 .km-topnav-status .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
 
-/* ── 하위 네비게이션 (선택된 카테고리의 세부 메뉴) — 마찬가지로 st.segmented_control ── */
-div.st-key-km_subnav { background: #FFF; margin: 0 0 1.5rem; padding: 8px 2rem 10px;
-    border-bottom: 2.5px solid #111; box-shadow: inset 0 6px 8px -8px rgba(0,0,0,0.25); }
+/* -- 하위 네비: 활성 = 연블루 알약 -- */
+div.st-key-km_subnav { background: #FFFFFF; margin: 0 0 1.5rem; padding: 8px 2rem 10px;
+    border-bottom: 1px solid #E8EBF1; }
 div.st-key-km_subnav [data-testid="stElementContainer"]:has([data-testid^="stBaseButton-segmented_control"]) {
     display: flex !important; flex-direction: column !important; align-items: center !important;
 }
 div.st-key-km_subnav [data-testid^="stBaseButton-segmented_control"] {
     font-size: 0.78rem !important; padding: 0.3rem 0.85rem !important;
+    background: #FFFFFF !important; border-color: transparent !important; color: #7C8698 !important;
+    border-radius: 18px !important;
 }
 div.st-key-km_subnav [data-testid="stBaseButton-segmented_controlActive"] {
-    font-weight: 700 !important;
+    font-weight: 700 !important; background: #EEF1FE !important;
+    color: #1B4DE4 !important; border-color: #EEF1FE !important;
 }
 
-/* ── 페이지 헤더 ── */
-.km-page-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.2rem; padding-bottom: 1rem; border-bottom: 2px solid #111; }
-.km-page-title { font-size: 1.3rem !important; font-weight: 700 !important; color: #111 !important; letter-spacing: -0.02em; display: inline-block; border-bottom: 3px solid #FF6B2B; padding-bottom: 4px; }
-.km-page-sub { font-size: 0.8rem; color: #888; margin-top: 4px; }
+/* -- 페이지 헤더 -- */
+.km-page-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.2rem; padding-bottom: 1rem; border-bottom: 1px solid #E8EBF1; }
+.km-page-title { font-size: 1.3rem !important; font-weight: 700 !important; color: #0B1B3F !important; letter-spacing: -0.02em; display: inline-block; border-bottom: 3px solid #1B4DE4; padding-bottom: 4px; }
+.km-page-sub { font-size: 0.8rem; color: #7C8698; margin-top: 4px; }
 
-/* ── 브랜드 패널 ── */
+/* -- 브랜드 패널 -- */
 .km-brand-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 1.2rem; }
-.km-brand-panel { border: 2.5px solid #111; border-radius: 8px; overflow: hidden; }
-.km-brand-panel.db { box-shadow: 4px 4px 0 #111; }
-.km-brand-panel.bit { box-shadow: 4px 4px 0 #111; }
-.km-brand-head { padding: 9px 16px; display: flex; align-items: center; gap: 10px; border-bottom: 2px solid #111; }
-.km-brand-panel.db .km-brand-head { background: #FF6B2B; }
-.km-brand-panel.bit .km-brand-head { background: #111; }
+.km-brand-panel { border: 1px solid #E8EBF1; border-radius: 14px; overflow: hidden; }
+.km-brand-panel.db { box-shadow: 0 3px 12px rgba(11,27,63,0.06); }
+.km-brand-panel.bit { box-shadow: 0 3px 12px rgba(11,27,63,0.06); }
+.km-brand-head { padding: 9px 16px; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid #E8EBF1; }
+.km-brand-panel.db .km-brand-head { background: #1B4DE4; }
+.km-brand-panel.bit .km-brand-head { background: #0E2A6E; }
 .km-brand-name { font-size: 13px; font-weight: 600; color: #fff; }
-.km-brand-tag { font-size: 10px; padding: 2px 8px; border-radius: 4px; border: 1.5px solid rgba(255,255,255,0.3); color: rgba(255,255,255,0.75); margin-left: auto; }
+.km-brand-tag { font-size: 10px; padding: 2px 8px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.35); color: rgba(255,255,255,0.85); margin-left: auto; }
 .km-brand-body { background: #fff; display: grid; grid-template-columns: repeat(4, 1fr); }
-.km-brand-stat { padding: 12px 10px; text-align: center; border-right: 1.5px solid #F0EDE8; }
+.km-brand-stat { padding: 12px 10px; text-align: center; border-right: 1px solid #F1F3F7; }
 .km-brand-stat:last-child { border-right: none; }
-.km-stat-label { font-size: 9px; font-weight: 600; color: #999; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 5px; }
-.km-stat-num { font-size: 26px; font-weight: 700; color: #111; line-height: 1; }
-.km-stat-num.up { color: #1A7A2A; }
-.km-stat-num.dn { color: #C0392B; }
-.km-stat-num.ms { color: #C07A00; }
-.km-stat-num.ok { color: #1A7A2A; }
-.km-stat-sub { font-size: 9px; color: #CCC; margin-top: 3px; }
+.km-stat-label { font-size: 9.5px; font-weight: 600; color: #A5AEBC; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 5px; }
+.km-stat-num { font-size: 26px; font-weight: 700; color: #0B1B3F; line-height: 1; }
+.km-stat-num.up { color: #1D9E75; }
+.km-stat-num.dn { color: #E24B4A; }
+.km-stat-num.ms { color: #BA7517; }
+.km-stat-num.ok { color: #1D9E75; }
+.km-stat-sub { font-size: 9.5px; color: #C6CCD6; margin-top: 3px; }
 
-/* ── 섹션 블록 ── */
-.km-block { background: #fff; border: 2.5px solid #111; border-radius: 8px; overflow: hidden; margin-bottom: 14px; box-shadow: 4px 4px 0 #111; }
-.km-block-head { display: flex; align-items: center; gap: 8px; padding: 10px 16px; border-bottom: 2px solid #111; background: #111; }
-.km-block-title { font-size: 12px; font-weight: 600; color: #fff; }
-.km-badge { font-size: 10px; padding: 2px 9px; border-radius: 4px; border: 1.5px solid; font-weight: 600; }
-.km-badge-rd { background: #FF5555; color: #fff; border-color: rgba(255,255,255,0.3); }
-.km-badge-am { background: #FFD000; color: #111; border-color: rgba(0,0,0,0.15); }
-.km-badge-gr { background: #44BB44; color: #fff; border-color: rgba(255,255,255,0.3); }
-.km-badge-pp { background: #9B59B6; color: #fff; border-color: rgba(255,255,255,0.3); }
-.km-badge-bl { background: #3498DB; color: #fff; border-color: rgba(255,255,255,0.3); }
-.km-section-header { display: flex; align-items: center; gap: 8px; padding: 14px 16px 8px; background: #FFFBF5; border-bottom: 1.5px solid #F0EDE8; }
-.km-section-title { font-size: 12px; font-weight: 600; color: #111; }
-.km-chip-db { font-size: 10px; padding: 3px 8px; border-radius: 4px; border: 1.5px solid #FF6B2B; background: #FFF0E8; color: #C03800; display: inline-block; font-weight: 600; }
-.km-chip-bit { font-size: 10px; padding: 3px 8px; border-radius: 4px; border: 1.5px solid #111; background: #F0F0F0; color: #111; display: inline-block; font-weight: 600; }
+/* -- 섹션 블록 -- */
+.km-block { background: #fff; border: 1px solid #E8EBF1; border-radius: 14px; overflow: hidden; margin-bottom: 14px; box-shadow: 0 3px 12px rgba(11,27,63,0.05); }
+.km-block-head { display: flex; align-items: center; gap: 8px; padding: 11px 16px; border-bottom: 1px solid #E8EBF1; background: #F7F9FC; }
+.km-block-title { font-size: 12.5px; font-weight: 700; color: #0B1B3F; }
+.km-badge { font-size: 10px; padding: 2px 9px; border-radius: 10px; border: none; font-weight: 600; }
+.km-badge-rd { background: #FCEBEB; color: #A32D2D; }
+.km-badge-am { background: #FAEEDA; color: #854F0B; }
+.km-badge-gr { background: #E1F5EE; color: #0F6E56; }
+.km-badge-pp { background: #EEEDFE; color: #534AB7; }
+.km-badge-bl { background: #EEF1FE; color: #1B4DE4; }
+.km-section-header { display: flex; align-items: center; gap: 8px; padding: 14px 16px 8px; background: #FBFCFE; border-bottom: 1px solid #F1F3F7; }
+.km-section-title { font-size: 12px; font-weight: 700; color: #0B1B3F; }
+.km-chip-db { font-size: 10px; padding: 3px 9px; border-radius: 10px; border: none; background: #EEF1FE; color: #1B4DE4; display: inline-block; font-weight: 600; }
+.km-chip-bit { font-size: 10px; padding: 3px 9px; border-radius: 10px; border: none; background: #E1F5EE; color: #0F6E56; display: inline-block; font-weight: 600; }
 
-/* ── 버튼 ── */
+/* -- 버튼 -- */
 div.stButton > button {
-    background: #111 !important; color: #fff !important;
-    border: 2px solid #111 !important; border-radius: 6px !important;
+    background: #FFFFFF !important; color: #0B1B3F !important;
+    border: 1px solid #D6DBE4 !important; border-radius: 10px !important;
     font-weight: 600 !important; font-size: 0.875rem !important;
-    padding: 0.5rem 1.2rem !important; box-shadow: 2px 2px 0 #555 !important;
-    transition: box-shadow 0.1s, transform 0.1s !important;
+    padding: 0.5rem 1.2rem !important; box-shadow: 0 1px 3px rgba(11,27,63,0.06) !important;
+    transition: all 0.15s !important;
 }
-div.stButton > button:hover { box-shadow: 3px 3px 0 #333 !important; }
-div.stButton > button:active { transform: translate(1px, 1px) !important; box-shadow: 1px 1px 0 #333 !important; }
+div.stButton > button:hover { border-color: #1B4DE4 !important; color: #1B4DE4 !important; box-shadow: 0 3px 10px rgba(27,77,228,0.12) !important; }
+div.stButton > button:active { transform: translateY(1px) !important; }
 div.stButton > button[kind="primary"] {
-    background: #FF6B2B !important; border-color: #111 !important; box-shadow: 3px 3px 0 #111 !important;
+    background: #1B4DE4 !important; color: #FFFFFF !important; border-color: #1B4DE4 !important;
+    box-shadow: 0 4px 12px rgba(27,77,228,0.28) !important;
 }
+div.stButton > button[kind="primary"]:hover { background: #1640BE !important; color: #FFFFFF !important; }
 div.stButton > button[kind="secondary"] {
-    background: #fff !important; color: #111 !important;
-    border: 2px solid #111 !important; box-shadow: 2px 2px 0 #999 !important;
+    background: #fff !important; color: #0B1B3F !important;
+    border: 1px solid #D6DBE4 !important; box-shadow: 0 1px 3px rgba(11,27,63,0.06) !important;
 }
 
-/* ── 인풋 ── */
+/* -- 인풋 -- */
 [data-testid="stTextInput"] input, [data-testid="stTextArea"] textarea {
-    background: #FFFFFF !important; border: 2px solid #D1D5DB !important;
-    border-radius: 6px !important; color: #111 !important; font-size: 0.9rem !important;
+    background: #FFFFFF !important; border: 1px solid #D6DBE4 !important;
+    border-radius: 10px !important; color: #0B1B3F !important; font-size: 0.9rem !important;
 }
 [data-testid="stTextInput"] input:focus, [data-testid="stTextArea"] textarea:focus {
-    border-color: #FF6B2B !important; box-shadow: 3px 3px 0 rgba(255,107,43,0.2) !important;
+    border-color: #1B4DE4 !important; box-shadow: 0 0 0 3px rgba(27,77,228,0.14) !important;
 }
-[data-testid="stTextInput"] label, [data-testid="stTextArea"] label { color: #111 !important; font-weight: 600 !important; font-size: 0.85rem !important; }
-[data-testid="stSelectbox"] > div > div { background: #fff !important; border: 2px solid #111 !important; border-radius: 6px !important; }
+[data-testid="stTextInput"] label, [data-testid="stTextArea"] label { color: #0B1B3F !important; font-weight: 600 !important; font-size: 0.85rem !important; }
+[data-testid="stSelectbox"] > div > div { background: #fff !important; border: 1px solid #D6DBE4 !important; border-radius: 10px !important; }
 
-/* ── 테이블/데이터프레임 ── */
-[data-testid="stDataFrame"] { border: 2px solid #111 !important; border-radius: 6px !important; box-shadow: 3px 3px 0 #111 !important; overflow: hidden; background: #fff; }
+/* -- 테이블/데이터프레임 -- */
+[data-testid="stDataFrame"] { border: 1px solid #E8EBF1 !important; border-radius: 12px !important; box-shadow: 0 2px 8px rgba(11,27,63,0.05) !important; overflow: hidden; background: #fff; }
 
-/* ── 알림 ── */
-[data-testid="stAlert"] { border-radius: 6px !important; border: 2px solid #111 !important; border-left-width: 4px !important; box-shadow: 3px 3px 0 #999 !important; }
+/* -- 알림 -- */
+[data-testid="stAlert"] { border-radius: 12px !important; border: 1px solid #E8EBF1 !important; border-left-width: 4px !important; box-shadow: none !important; }
 
-/* ── Expander ── */
-[data-testid="stExpander"] { background: #FFFFFF !important; border: 2px solid #111 !important; border-radius: 6px !important; box-shadow: 3px 3px 0 #999 !important; }
+/* -- Expander -- */
+[data-testid="stExpander"] { background: #FFFFFF !important; border: 1px solid #E8EBF1 !important; border-radius: 12px !important; box-shadow: 0 2px 8px rgba(11,27,63,0.05) !important; }
 
-/* ── 탭 ── */
-[data-testid="stTabs"] button { color: #888 !important; font-weight: 500 !important; border-bottom: 2.5px solid transparent !important; }
-[data-testid="stTabs"] button[aria-selected="true"] { color: #111 !important; border-bottom: 2.5px solid #FF6B2B !important; font-weight: 700 !important; }
+/* -- 탭 -- */
+[data-testid="stTabs"] button { color: #7C8698 !important; font-weight: 500 !important; border-bottom: 2.5px solid transparent !important; }
+[data-testid="stTabs"] button[aria-selected="true"] { color: #1B4DE4 !important; border-bottom: 2.5px solid #1B4DE4 !important; font-weight: 700 !important; }
 
-/* ── 타이포 ── */
-h1 { font-size: 1.5rem !important; font-weight: 700 !important; color: #111 !important; }
-h2 { font-size: 1.2rem !important; font-weight: 700 !important; color: #111 !important; }
-h3 { font-size: 1rem !important; font-weight: 600 !important; color: #111 !important; }
-hr { border-color: #E8E4DE !important; border-width: 1.5px !important; }
+/* -- 타이포 -- */
+h1 { font-size: 1.5rem !important; font-weight: 700 !important; color: #0B1B3F !important; }
+h2 { font-size: 1.2rem !important; font-weight: 700 !important; color: #0B1B3F !important; }
+h3 { font-size: 1rem !important; font-weight: 600 !important; color: #0B1B3F !important; }
+hr { border-color: #E8EBF1 !important; border-width: 1px !important; }
 
-/* ── KPI metric ── */
+/* -- KPI metric -- */
 [data-testid="stMetric"] {
-    background: #fff !important; border: 2px solid #111 !important; border-radius: 6px !important;
-    padding: 1rem 1.2rem !important; box-shadow: 3px 3px 0 #111 !important;
+    background: #fff !important; border: 1px solid #E8EBF1 !important; border-radius: 14px !important;
+    padding: 1rem 1.2rem !important; box-shadow: 0 3px 12px rgba(11,27,63,0.05) !important;
 }
-[data-testid="stMetricValue"] { font-size: 2rem !important; font-weight: 700 !important; color: #111 !important; }
-[data-testid="stMetricLabel"] { font-size: 0.78rem !important; font-weight: 600 !important; color: #888 !important; text-transform: uppercase !important; letter-spacing: 0.06em !important; }
+[data-testid="stMetricValue"] { font-size: 2rem !important; font-weight: 700 !important; color: #0B1B3F !important; }
+[data-testid="stMetricLabel"] { font-size: 0.78rem !important; font-weight: 600 !important; color: #7C8698 !important; letter-spacing: 0.02em !important; }
 
-/* ── 반응형 ── */
+/* -- 반응형 -- */
 @media (max-width: 768px) {
     .block-container { padding: 0 0.8rem 3rem !important; }
     .km-brand-grid { grid-template-columns: 1fr !important; }
