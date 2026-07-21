@@ -737,7 +737,7 @@ except Exception:
     pass
 
 _menu_groups = {
-    "📊 현황": ["Dashboard", "일자별 순위 추이", "경쟁사 집중 분석"],
+    "📊 현황": ["Dashboard", "트래픽", "일자별 순위 추이", "경쟁사 집중 분석"],
     "🔍 키워드": ["틈새 키워드 발굴기", "키워드 인텐트", "시즌성 분석"],
     "🤖 AI 분석": ["AI Report", "AI 인용 추적", "GEO 진단", "엔티티 감사"],
     "✍️ 콘텐츠 제작": ["SEO태그 생성기", "스키마·FAQ 생성기", "상세페이지 제작기", "GEO/AEO 가이드"],
@@ -1208,6 +1208,11 @@ if selected_menu == "Dashboard":
     st.markdown('</div>', unsafe_allow_html=True)
 
 # ── 2. 일자별 순위 추이 ────────────────────────────────────────────────────────
+elif selected_menu == "트래픽":
+    st.markdown("### 🚦 트래픽 — 구글 검색·방문 실측")
+    from integrations import traffic as _traffic
+    _traffic.render(_k)
+
 elif selected_menu == "일자별 순위 추이":
     st.markdown("<div style='font-size:1.5rem;font-weight:800;color:#111;letter-spacing:-0.03em;margin-bottom:0.2rem;'>일자별 순위 추이</div><div style='font-size:0.82rem;color:#AAA;margin-bottom:1.4rem;'>키워드별 날짜 순위 변화 추적</div>", unsafe_allow_html=True)
     if not hist_df.empty:
@@ -2044,6 +2049,14 @@ elif selected_menu == "⚙️ 설정":
         _s_slack       = st.text_input("Slack Webhook URL",  value=_k.get("slack_webhook_url", ""),   type="password", key="s_slack")
         _s_gas_url     = st.text_input("GAS URL (레거시)",   value=_k.get("apps_script_url", ""),     type="password", key="s_gas_url")
         _s_gas_tok     = st.text_input("GAS Token (레거시)", value=_k.get("apps_script_token", ""),   type="password", key="s_gas_tok")
+        _s_gcp_sa      = st.text_area("GCP 서비스 계정 JSON (트래픽)", value=_k.get("gcp_sa_json", ""), height=68, key="s_gcp_sa",
+                                      help="서치콘솔 '사용자'·GA4 '뷰어'로 추가한 서비스 계정의 키 JSON 전체")
+        _s_gsc_url1    = st.text_input("서치콘솔 속성 1", value=_k.get("gsc_site_url", ""), key="s_gsc1",
+                                       placeholder="sc-domain:bit-drone.shop")
+        _s_gsc_url2    = st.text_input("서치콘솔 속성 2 (선택)", value=_k.get("gsc_site_url2", ""), key="s_gsc2",
+                                       placeholder="https://www.drone-box.co.kr/")
+        _s_ga4_pid     = st.text_input("GA4 속성 ID (선택)", value=_k.get("ga4_property_id", ""), key="s_ga4",
+                                       placeholder="546412171")
         st.markdown('</div>', unsafe_allow_html=True)
 
         st.markdown('<div class="km-block" style="margin-top:14px;"><div class="km-block-head"><span class="km-block-title">🏪 브랜드 설정</span></div>', unsafe_allow_html=True)
@@ -2064,6 +2077,8 @@ elif selected_menu == "⚙️ 설정":
                 "my_brand_1": _s_brand1, "my_brand_2": _s_brand2, "competitors": _s_comp,
                 "notion_token": _s_notion_tok, "notion_database_id": _s_notion_db,
                 "slack_webhook_url": _s_slack,
+                "gcp_sa_json": _s_gcp_sa, "gsc_site_url": _s_gsc_url1,
+                "gsc_site_url2": _s_gsc_url2, "ga4_property_id": _s_ga4_pid,
             })
             if _ok:
                 st.session_state.user_keys = _auth_load_keys(st.session_state.current_user["id"])
