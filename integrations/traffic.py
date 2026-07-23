@@ -180,8 +180,11 @@ def render(user_keys: dict):
                          use_container_width=True, hide_index=True)
         with t2:
             st.markdown("#### 유입 채널")
-            ch = {"Organic Search": "검색 유입", "Direct": "직접 방문", "Referral": "링크 타고",
-                  "Organic Social": "SNS", "Paid Search": "검색 광고", "Unassigned": "기타"}
+            ch = {"Organic Shopping": "쇼핑 유입 (네이버쇼핑 등)", "Paid Shopping": "쇼핑 광고",
+                  "Organic Search": "검색 유입", "Paid Search": "검색 광고",
+                  "Organic Video": "영상 유입 (유튜브 등)", "Organic Social": "SNS",
+                  "Direct": "직접 방문", "Referral": "링크 타고",
+                  "Email": "이메일", "Unassigned": "기타"}
             st.dataframe(pd.DataFrame([{"채널": ch.get(r["dims"][0], r["dims"][0]),
                                         "세션": int(r["metrics"][0])} for r in chans]),
                          use_container_width=True, hide_index=True)
