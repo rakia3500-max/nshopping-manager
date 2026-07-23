@@ -734,7 +734,7 @@ except Exception:
     pass
 
 _menu_groups = {
-    "📊 현황": ["Dashboard", "트래픽", "일자별 순위 추이", "경쟁사 집중 분석"],
+    "📊 현황": ["Dashboard", "트래픽", "일자별 순위 추이", "경쟁사 집중 분석", "경쟁사 벤치마킹"],
     "🔍 키워드": ["틈새 키워드 발굴기", "키워드 인텐트", "시즌성 분석"],
     "🤖 AI 분석": ["AI Report", "AI 인용 추적", "GEO 진단", "엔티티 감사"],
     "✍️ 콘텐츠 제작": ["SEO태그 생성기", "스키마·FAQ 생성기", "상세페이지 제작기", "GEO/AEO 가이드"],
@@ -777,6 +777,7 @@ _NAV_ITEM_TIPS = {
     "트래픽": "구글 검색 노출·클릭과 방문자 실측 데이터",
     "일자별 순위 추이": "키워드 순위가 날짜별로 어떻게 변했는지 그래프",
     "경쟁사 집중 분석": "경쟁 쇼핑몰과 우리 순위를 비교",
+    "경쟁사 벤치마킹": "1위 경쟁사 상세페이지를 AI가 분석해 따라잡기 액션 제시",
     "틈새 키워드 발굴기": "경쟁은 적고 검색은 있는 노려볼 만한 키워드 찾기",
     "키워드 인텐트": "검색어에 담긴 의도(구매/정보탐색 등) 분류",
     "시즌성 분석": "계절·시기에 따라 검색량이 어떻게 움직이는지 분석",
@@ -1253,6 +1254,10 @@ elif selected_menu == "트래픽":
     st.markdown("### 🚦 트래픽 — 구글 검색·방문 실측")
     from integrations import traffic as _traffic
     _traffic.render(_k)
+
+elif selected_menu == "경쟁사 벤치마킹":
+    from integrations import competitor as _competitor
+    _competitor.render(_k)
 
 elif selected_menu == "일자별 순위 추이":
     st.markdown("<div style='font-size:1.5rem;font-weight:800;color:#111;letter-spacing:-0.03em;margin-bottom:0.2rem;'>일자별 순위 추이</div><div style='font-size:0.82rem;color:#AAA;margin-bottom:1.4rem;'>키워드별 날짜 순위 변화 추적</div>", unsafe_allow_html=True)
