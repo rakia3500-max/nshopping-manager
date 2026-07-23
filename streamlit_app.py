@@ -337,8 +337,10 @@ if _COOKIE_OK and _cookie_manager is None:
 
 st.markdown("""
 <style>
-@import url('https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css');
-*, *::before, *::after { font-family: 'Wanted Sans Variable', 'Wanted Sans', Pretendard, 'Noto Sans KR', -apple-system, sans-serif !important; -webkit-font-smoothing: antialiased; }
+@import url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/subsets/Paperlogy-dynamic-subset.css");
+*, *::before, *::after { font-family: 'Paperlogy', Pretendard, 'Noto Sans KR', -apple-system, 'Segoe UI', sans-serif !important; -webkit-font-smoothing: antialiased; }
+/* 아이콘 폰트는 Paperlogy로 덮어쓰지 않기 (머티리얼 심볼 깨짐 방지) */
+.material-icons, .material-symbols-rounded, .material-symbols-outlined, [class*="material-symbols"], span[aria-label$="icon"], [data-testid="stIconMaterial"] { font-family: 'Material Symbols Rounded', 'Material Symbols Outlined', 'Material Icons' !important; }
 
 /* == 클린 SaaS 테마 (2026-07-21) — 네이버클라우드·메이크샵 참조: 흰 바탕 + 딥블루 + 헤어라인 == */
 div[data-testid="stAppViewContainer"], div[data-testid="stMain"] { background: #FFFFFF !important; }
@@ -768,6 +770,50 @@ with st.container(key="km_subnav"):
                              key=f"_sub_{_active_group}")
     selected_menu = _menu_sel if _menu_sel is not None else _sub_default
 st.session_state["_active_menu"] = selected_menu
+
+# ── 네비 호버 툴팁: 카테고리 = 하위 메뉴 목록, 하위 메뉴 = 쉬운 말 설명 (2026-07-21) ──
+_NAV_ITEM_TIPS = {
+    "Dashboard": "오늘의 순위·수집 상태를 한눈에 요약",
+    "트래픽": "구글 검색 노출·클릭과 방문자 실측 데이터",
+    "일자별 순위 추이": "키워드 순위가 날짜별로 어떻게 변했는지 그래프",
+    "경쟁사 집중 분석": "경쟁 쇼핑몰과 우리 순위를 비교",
+    "틈새 키워드 발굴기": "경쟁은 적고 검색은 있는 노려볼 만한 키워드 찾기",
+    "키워드 인텐트": "검색어에 담긴 의도(구매/정보탐색 등) 분류",
+    "시즌성 분석": "계절·시기에 따라 검색량이 어떻게 움직이는지 분석",
+    "AI Report": "AI가 데이터를 읽고 써주는 분석 보고서",
+    "AI 인용 추적": "챗GPT 같은 AI 답변에 우리 쇼핑몰이 등장하는지 확인",
+    "GEO 진단": "AI 검색(챗GPT·퍼플렉시티)에 잘 노출되도록 사이트 점검",
+    "엔티티 감사": "우리 브랜드·상품 정보를 검색엔진과 AI가 정확히 아는지 점검",
+    "SEO태그 생성기": "검색에 잘 걸리는 상품명·태그 자동 생성",
+    "스키마·FAQ 생성기": "검색엔진이 읽는 구조화 데이터(스키마)와 자주 묻는 질문 코드 생성",
+    "상세페이지 제작기": "상품 상세페이지 문구·구성 제작 도우미",
+    "GEO/AEO 가이드": "AI 검색 최적화가 무엇인지 설명서",
+    "Run & Sync": "순위 수집을 실행하고 구글 시트에 동기화",
+    "⚙️ 설정": "API 키·브랜드·연동 설정",
+}
+_NAV_GROUP_TIPS = {
+    g: "\n".join(f"· {m} — {_NAV_ITEM_TIPS.get(m, '')}" for m in items)
+    for g, items in _menu_groups.items()
+}
+import json as _json
+import streamlit.components.v1 as _stc
+_stc.html(f"""<script>
+const GROUPS = {_json.dumps(_NAV_GROUP_TIPS, ensure_ascii=False)};
+const ITEMS = {_json.dumps(_NAV_ITEM_TIPS, ensure_ascii=False)};
+function applyTips() {{
+  try {{
+    const doc = window.parent.document;
+    doc.querySelectorAll('[data-testid^="stBaseButton-segmented_control"]').forEach(b => {{
+      const t = (b.innerText || '').trim();
+      if (GROUPS[t]) b.title = GROUPS[t];
+      else if (ITEMS[t]) b.title = ITEMS[t];
+    }});
+  }} catch (e) {{}}
+}}
+applyTips();
+new MutationObserver(applyTips).observe(window.parent.document.body,
+                                        {{subtree: true, childList: true}});
+</script>""", height=0)
 if _mini_lv == "red":
     st.caption("🔴 필수 설정이 누락됐습니다. Dashboard 또는 ⚙️ 설정에서 확인하세요.")
 
