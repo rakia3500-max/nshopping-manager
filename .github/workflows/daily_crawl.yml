@@ -25,4 +25,6 @@ jobs:
           NAVER_CUSTOMER_ID: ${{ secrets.NAVER_CUSTOMER_ID }}
           APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
           APPS_SCRIPT_TOKEN: ${{ secrets.APPS_SCRIPT_TOKEN }}
+          # 순위 변동 슬랙 알림 — 이 변수가 없으면 main_automation.py의 알림 코드가 건너뛰어짐
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: python main_automation.py

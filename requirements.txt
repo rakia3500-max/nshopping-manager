@@ -21,4 +21,4 @@ google-auth>=2.38.0
 # [INTEGRATIONS] Notion + Slack
 notion-client==2.3.0
 extra-streamlit-components>=0.1.60
-python-telegram-bot==20.7
+# python-telegram-bot 제거 (2026-07-30) — 코드 어디에서도 사용하지 않음(전수 grep 0건)

@@ -47,7 +47,7 @@ def _gemini_generate(api_key: str, prompt: str, models=None) -> str:
             if "flash" in name and "generateContent" in str(m.get("supportedGenerationMethods",[])):
                 available.append(name)
     if not available:
-        available = ['gemini-1.5-flash', 'gemini-2.0-flash']
+        available = ['gemini-2.5-flash', 'gemini-flash-latest', 'gemini-2.0-flash']  # 1.5는 은퇴 (2026-07-30)
     last_err = ""
     for model in available[:4]:
         url = (f"https://generativelanguage.googleapis.com/v1beta/models/"
