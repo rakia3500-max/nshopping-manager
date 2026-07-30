@@ -107,3 +107,14 @@ Lito X1
 리토 X1
 DJI O4 
 O4 스테이션
+# Vol.2(GAS)에서 통합 (2026-07-30 순위 수집 일원화)
+avata 360
+dji mic 2
+dji mic mini
+dji mini 4k
+dji 마이크 미니
+dji 마이크2
+dji 미니 4k
+osmo pocket 3
+아바타 360
+오즈모 포켓 3
