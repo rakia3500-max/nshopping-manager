@@ -140,15 +140,20 @@ def run_automation():
     if results and APPS_SCRIPT_URL:
         df = pd.DataFrame(results)
         csv_bytes = df.to_csv(index=False).encode('utf-8')
+        # DB_Archive가 16만 행까지 커져 Apps Script 처리가 30초를 넘긴다.
+        # 2026-07-31에 ReadTimeout이 났지만 시트에는 정상 저장돼 있었다 —
+        # 응답을 못 받은 것이지 전송이 실패한 게 아니라서, 타임아웃은 경고로만 남긴다.
         try:
             requests.post(
                 APPS_SCRIPT_URL,
                 params={"token": APPS_SCRIPT_TOKEN, "type": "auto_daily"},
                 data=csv_bytes,
                 headers={'Content-Type': 'text/plain; charset=utf-8'},
-                timeout=30
+                timeout=180
             )
             logging.info("구글 시트 전송 완료")
+        except requests.exceptions.ReadTimeout:
+            logging.warning("[P3] 시트 응답 지연(180초 초과) — 저장은 진행됐을 수 있으니 시트를 확인할 것")
         except Exception as e:
             logging.error(f"[P3] 구글 시트 전송 실패: {type(e).__name__}: {e}")
 
