@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000001544</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>ZZ 테스트 상품 (삭제예정)</goodsNm>
+<goodsDisplayFl>n</goodsDisplayFl>
+<goodsDisplayMobileFl>n</goodsDisplayMobileFl>
+<goodsSellFl>n</goodsSellFl>
+<goodsSellMobileFl>n</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002|002019|002019007</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>y</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>a</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>Y</imageUpdate>
+<goodsImageMain>https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20260918/e30f61b7d90204632e328e98bee08315.jpg</goodsImageMain>
+<imageNmMain>https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20260918/e30f61b7d90204632e328e98bee08315.jpg</imageNmMain>
+<mainImage>https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20260918/e30f61b7d90204632e328e98bee08315.jpg</mainImage>
+<imageMain>https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20260918/e30f61b7d90204632e328e98bee08315.jpg</imageMain>
+<goodsImage>https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20260918/e30f61b7d90204632e328e98bee08315.jpg</goodsImage>
+<imageMainNm>https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20260918/e30f61b7d90204632e328e98bee08315.jpg</imageMainNm>
+<imageNm>https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20260918/e30f61b7d90204632e328e98bee08315.jpg</imageNm>
+</goods_data>
+</data>
