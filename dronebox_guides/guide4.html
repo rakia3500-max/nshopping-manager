@@ -1,0 +1,76 @@
+{*** 드론 가이드 04 비행 전 확인 3가지 | issuecommunity/guide4.php ***}
+{ # header }
+<style>
+.dbxg{max-width:860px;margin:0 auto;padding:30px 16px 60px;font-family:'Noto Sans KR','Malgun Gothic',sans-serif;color:#1d2733;line-height:1.75;background:#fff;color-scheme:light}
+.dbxg *{box-sizing:border-box}
+.dbxg .hero{border-radius:16px;overflow:hidden;position:relative;height:220px;margin-bottom:26px}
+.dbxg .hero svg{position:absolute;inset:0;width:100%;height:100%}
+.dbxg .hero .no{position:absolute;left:18px;top:16px;font:800 14px/1 Arial;color:#fff;background:rgba(0,0,0,.25);border-radius:999px;padding:7px 12px;z-index:2}
+.dbxg .crumb{font-size:13px;color:#8a94a0;margin-bottom:6px}.dbxg .crumb a{color:#198acb;text-decoration:none}
+.dbxg article .tag{display:inline-block;background:#f5f8fb;color:#198acb;font-size:12px;font-weight:700;border-radius:999px;padding:3px 11px}
+.dbxg article h2{font-size:28px;line-height:1.35;margin:10px 0 8px;color:#1d2733}
+.dbxg article .lead{color:#5b6673;font-size:16px;margin:0 0 20px}
+.dbxg article h3{font-size:19px;margin:30px 0 10px;padding-left:10px;border-left:4px solid #198acb;color:#1d2733}
+.dbxg article p,.dbxg article li{font-size:15px;color:#1d2733}
+.dbxg article ol,.dbxg article ul{padding-left:22px;margin:8px 0}
+.dbxg article li{margin:5px 0}
+.dbxg article table{width:100%;border-collapse:collapse;margin:10px 0 8px;font-size:14px}
+.dbxg article th,.dbxg article td{border:1px solid #e6eaef;padding:10px;text-align:left;background:#fff;color:#1d2733;vertical-align:top}
+.dbxg article th{background:#f5f8fb;font-weight:700}
+.dbxg .box{background:#f5f8fb;border-radius:10px;padding:14px 16px;margin:16px 0;font-size:14px;color:#1d2733}
+.dbxg .box.warn{background:#fff4f4;border-left:4px solid #e5484d}
+.dbxg .faq h3{border-left-color:#8a94a0}
+.dbxg .faq dt{font-weight:700;margin-top:14px}
+.dbxg .faq dd{margin:4px 0 0;color:#3d4753;font-size:15px}
+.dbxg .meta{font-size:12px;color:#8a94a0;border-top:1px solid #e6eaef;margin-top:24px;padding-top:12px}
+.dbxg .prod{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.dbxg .prod a{border:1px solid #e6eaef;border-radius:999px;padding:7px 14px;font-size:13px;color:#198acb;text-decoration:none;background:#fff}
+.dbxg a{color:#198acb}
+.dbxg .others{margin-top:40px}
+.dbxg .others h4{font-size:17px;margin:0 0 12px}
+.dbxg .og{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.dbxg .og a{display:flex;align-items:center;gap:10px;border:1px solid #e6eaef;border-radius:12px;padding:10px 12px;text-decoration:none;color:#1d2733;font-size:13px;font-weight:700;background:#fff}
+.dbxg .og a span{font:800 12px/1 Arial;color:#fff;border-radius:999px;padding:5px 8px;background:#198acb}
+.dbxg .og a.on{border-color:#198acb;background:#f2f9fd}
+@media(max-width:700px){.dbxg{padding:18px 14px 40px}.dbxg .hero{height:160px}.dbxg article h2{font-size:22px}.dbxg .og{grid-template-columns:1fr 1fr}}
+</style>
+<div class="dbxg">
+<div class="crumb"><a href="/">드론박스</a> › 드론 가이드</div>
+<div class="hero" style="background:#fdeee3"><span class="no">04</span><svg viewBox="0 0 320 170" preserveAspectRatio="xMidYMid slice"><rect width="320" height="170" fill="#fdeee3"/>
+        <path d="M0 120 C60 100 110 140 170 118 S270 96 320 112 V170 H0z" fill="#f8d9c2"/>
+        <path d="M60 30 l40 18 50-16 40 18 50-16 v96 l-50 16 -40-18 -50 16 -40-18z" fill="#fff" stroke="#c4601f" stroke-width="3" stroke-linejoin="round"/>
+        <circle cx="175" cy="78" r="30" fill="rgba(232,94,107,.18)" stroke="#e85e6b" stroke-width="3"/><path d="M154 57l42 42" stroke="#e85e6b" stroke-width="4"/>
+        <path d="M110 70c0 16 18 32 18 32s18-16 18-32a18 18 0 0 0-36 0z" fill="#f08a45"/><circle cx="128" cy="70" r="6" fill="#fff"/></svg></div>
+<article id="g4">
+  <span class="tag">비행 전 확인</span>
+  <h2>비행 전 꼭 확인할 3가지: 비행금지구역 · 비행승인 · 촬영허가</h2>
+  <p class="lead">드론을 날리기 전에는 <b>어디서, 얼마나 높이, 무엇을 찍는지</b>를 확인해야 합니다. 세 가지 모두 <a href="https://drone.onestop.go.kr/common/flightArea" target="_blank" rel="noopener">드론원스톱</a>에서 확인하고 신청할 수 있습니다.</p>
+
+  <h3>1. 비행금지구역 확인</h3>
+  <p>공항 주변(관제권), 휴전선 인근, 청와대·국회 등 주요 시설 주변은 비행이 금지되거나 제한됩니다. 드론원스톱 <b>비행구역 지도</b>에서 날리려는 곳을 검색해 확인하세요. DJI Fly 앱에도 비행 제한 구역이 표시됩니다.</p>
+
+  <h3>2. 비행승인이 필요한 경우</h3>
+  <ul>
+    <li>관제권·비행금지구역·비행제한구역 안에서 비행할 때</li>
+    <li>지상에서 150m 이상 높이로 비행할 때</li>
+    <li>야간이나 사람이 많이 모인 곳 위를 비행할 때(특별비행승인)</li>
+  </ul>
+
+  <h3>3. 항공촬영 허가</h3>
+  <p>국가 보안시설이 보이는 곳 등 촬영이 제한된 지역에서 촬영하려면 별도의 촬영 허가가 필요합니다. 역시 드론원스톱에서 신청합니다.</p>
+
+  <h3>드론원스톱 처리 기간 (평일 기준)</h3>
+  <table>
+    <tr><th>민원</th><th>처리 기간</th></tr>
+    <tr><td>비행장치 신고서 등록</td><td>약 7일</td></tr>
+    <tr><td>사업등록 신고서 등록</td><td>약 14일</td></tr>
+    <tr><td>비행승인 신청</td><td>약 3일</td></tr>
+    <tr><td>특별비행 승인 (야간·가시권 밖 등)</td><td><b>약 30일</b></td></tr>
+    <tr><td>항공 촬영 신청</td><td>약 4일</td></tr>
+  </table>
+  <div class="box warn">주말·공휴일은 빠지므로 <b>비행 예정일보다 넉넉히 앞서</b> 신청하세요. 특히 특별비행 승인은 한 달 가까이 걸립니다.</div>
+  <p class="meta">드론박스 · 2026년 9월 기준 · 최신 기준은 드론원스톱 공지를 확인하세요</p>
+</article>
+<div class="others"><h4>다른 드론 가이드</h4><div class="og"><a href="/main/html.php?htmid=issuecommunity/guide1.html" class=""><span>01</span>DJI 드론 첫 비행 준비</a><a href="/main/html.php?htmid=issuecommunity/guide2.html" class=""><span>02</span>드론 자격증 1~4종 총정리</a><a href="/main/html.php?htmid=issuecommunity/guide3.html" class=""><span>03</span>내 드론, 기체신고 해야 할까?</a><a href="/main/html.php?htmid=issuecommunity/guide4.html" class="on"><span>04</span>비행 전 확인 3가지</a><a href="/main/html.php?htmid=issuecommunity/guide5.html" class=""><span>05</span>중고 드론 사기 예방 체크리스트</a><a href="/main/html.php?htmid=issuecommunity/guide6.html" class=""><span>06</span>입문용 드론 고르는 법</a></div></div>
+</div>
+{ # footer }
