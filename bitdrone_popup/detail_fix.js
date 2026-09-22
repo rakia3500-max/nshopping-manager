@@ -78,10 +78,18 @@
     });
   }
 
+  /* 상세 안의 사진이 칸보다 넓으면 줄임 (드론박스 figure.img-block 등) */
+  var st = document.createElement('style');
+  st.appendChild(document.createTextNode(ROOT.split(',').map(function (s) { return s.trim() + ' img'; }).join(',') +
+    '{max-width:100%!important;height:auto!important}'));
+  (document.head || document.documentElement).appendChild(st);
+
   function run() {
     fixVideo();
     Array.prototype.forEach.call(document.querySelectorAll(ROOT), fixWide);
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run); else run();
   window.addEventListener('load', run);
+  /* 드론박스 모바일은 상세설명을 늦게 불러오므로 몇 번 더 */
+  setTimeout(run, 1500); setTimeout(run, 4000); setTimeout(run, 8000);
 })();
