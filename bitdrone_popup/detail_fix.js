@@ -46,6 +46,20 @@
       if (/(?:^|;)\s*height:\s*\d+px/.test(st) && e.textContent.trim() && getComputedStyle(e).position !== 'absolute')
         e.style.setProperty('height', 'auto', 'important');
     });
+    /* 스타일 규칙(class)로 폭이 정해진 요소 — DJI 사이트 복사본 등. 가로 스크롤 상자 안은 건드리지 않음 */
+    var rw = root.getBoundingClientRect().width;
+    Array.prototype.forEach.call(root.querySelectorAll('*'), function (e) {
+      if (/^(IMG|IFRAME|VIDEO|SVG|PATH)$/i.test(e.tagName)) return;
+      if (e.getBoundingClientRect().width <= rw + 2) return;
+      for (var p = e.parentElement; p && p !== root; p = p.parentElement)
+        if (getComputedStyle(p).overflowX !== 'visible') return;
+      e.style.setProperty('width', 'auto', 'important');
+      e.style.setProperty('max-width', '100%', 'important');
+      e.style.setProperty('min-width', '0', 'important');
+      e.style.setProperty('box-sizing', 'border-box', 'important');
+      var cs = getComputedStyle(e);
+      if (/flex/.test(cs.display)) e.style.setProperty('flex-wrap', 'wrap', 'important');
+    });
     /* 줄바꿈 금지 글줄이 화면보다 넓은 경우 */
     Array.prototype.forEach.call(root.querySelectorAll('span, p, div, td, th, li, strong, b, font, h1, h2, h3, h4'), function (e) {
       if (e.getBoundingClientRect().width > vw && !e.querySelector('img, iframe, table, video') &&
