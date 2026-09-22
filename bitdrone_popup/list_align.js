@@ -3,6 +3,7 @@
  * 1) 사진 칸 정사각형 고정 (가로로 긴 사진 때문에 이름이 위로 올라가던 문제)
  * 2) 상품명 2줄 높이 고정
  * 3) 가격을 이름 바로 아래로 (모델명·요약 문구 유무에 따라 가격이 밀리던 문제)
+ * 4) 메인 '매트리스 400 RTK' 진열만 '상품명 :' '판매가 :' 항목명이 켜져 있어 숨김 (2026-09-22)
  */
 (function () {
   if (document.getElementById('bd-list-align')) return;
@@ -16,7 +17,8 @@
     '.prdList__item .spec li[rel="소비자가"]{order:-3}',          /* 소비자가 */
     '.prdList__item .spec li[rel="판매가"]{order:-2}',                /* 판매가 */
     '.prdList__item .spec li[rel="할인판매가"]{order:-1}',    /* 할인판매가 */
-    '.prdList__item .spec li[rel="상품요약정보"] .m_item{display:-webkit-box!important;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}' /* 상품요약정보 */
+    '.prdList__item .spec li[rel="상품요약정보"] .m_item{display:-webkit-box!important;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}' /* 상품요약정보 */,
+    '.prdList__item .description .title{display:none!important}' /* 항목명(상품명 :, 판매가 :) 숨김 통일 */
   ].join('\n');
   var st = document.createElement('style');
   st.id = 'bd-list-align';
