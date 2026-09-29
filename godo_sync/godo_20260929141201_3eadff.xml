@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000001242</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 에어3S 단품 (DJI RC-N3) 촬영용 드론</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019001|002019001029|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>y</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>y</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>y</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>a</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>y</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<addGoodsData idx="1"><title><![CDATA[DJI 케어 리플레쉬]]></title><mustFl>n</mustFl><goodsNoData idx="1">1000000949</goodsNoData><goodsNoData idx="2">1000000948</goodsNoData></addGoodsData>
+<addGoodsData idx="2"><title><![CDATA[추가 악세사리]]></title><mustFl>n</mustFl><goodsNoData idx="1">1000000952</goodsNoData><goodsNoData idx="2">1000000916</goodsNoData></addGoodsData>
+<goodsDescription><![CDATA[<p style=\"text-align: center; \" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/241016/aad11223d63a90ab3c4875d708ca0027_130900.jpg\" title=\"aad11223d63a90ab3c4875d708ca0027_130900.jpg\" class=\"js-smart-img\"><br style=\"clear: both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/241016/c81e728d9d4c2f636f067f89cc14862c_130905.jpg\" title=\"c81e728d9d4c2f636f067f89cc14862c_130905.jpg\" class=\"js-smart-img\"><br style=\"clear: both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/241016/eccbc87e4b5ce2fe28308fd9f2a7baf3_130911.jpg\" title=\"eccbc87e4b5ce2fe28308fd9f2a7baf3_130911.jpg\" class=\"js-smart-img\"><br style=\"clear: both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/241016/a87ff679a2f3e71d9181a67b7542122c_130918.jpg\" title=\"a87ff679a2f3e71d9181a67b7542122c_130918.jpg\" class=\"js-smart-img\"><br style=\"clear: both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/241016/e4da3b7fbbce2345d7772b0674a318d5_130927.jpg\" title=\"e4da3b7fbbce2345d7772b0674a318d5_130927.jpg\" class=\"js-smart-img\"><br style=\"clear: both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/241016/1679091c5a880faf6fb5e6087eb1b2dc_130935.jpg\" title=\"1679091c5a880faf6fb5e6087eb1b2dc_130935.jpg\" class=\"js-smart-img\"><br style=\"clear: both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/241016/8f14e45fceea167a5a36dedd4bea2543_130942.jpg\" title=\"8f14e45fceea167a5a36dedd4bea2543_130942.jpg\" class=\"js-smart-img\"><br style=\"clear: both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/241016/c9f0f895fb98ab9159f51fd0297e236d_130948.jpg\" title=\"c9f0f895fb98ab9159f51fd0297e236d_130948.jpg\" class=\"js-smart-img\"><br style=\"clear: both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/241016/45c48cce2e2d7fbdea1afc51c7c6ad26_130954.jpg\" title=\"45c48cce2e2d7fbdea1afc51c7c6ad26_130954.jpg\" class=\"js-smart-img\"><br style=\"clear: both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/241016/d3d9446802a44259755d38e6d163e820_131005.jpg\" title=\"d3d9446802a44259755d38e6d163e820_131005.jpg\" class=\"js-smart-img\"><br style=\"clear: both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/241016/6512bd43d9caa6e02c990b0a82652dca_131013.jpg\" title=\"6512bd43d9caa6e02c990b0a82652dca_131013.jpg\" class=\"js-smart-img\"><br style=\"clear: both;\"> </p>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+</goods_data>
+</data>
