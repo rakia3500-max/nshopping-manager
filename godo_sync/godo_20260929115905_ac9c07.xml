@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000001220</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI Osmo Action 5 Pro 스탠더드 콤보 오즈모 액션5 프로</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019012|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>y</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>y</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<addGoodsData idx="1"><title><![CDATA[구매 이벤트]]></title><mustFl>n</mustFl><goodsNoData idx="1">1000000960</goodsNoData><goodsNoData idx="2">1000000906</goodsNoData></addGoodsData>
+<addGoodsData idx="2"><title><![CDATA[DJI 케어]]></title><mustFl>n</mustFl><goodsNoData idx="1">1000000943</goodsNoData><goodsNoData idx="2">1000000942</goodsNoData></addGoodsData>
+<goodsDescription><![CDATA[<div style=\"text-align: center;\" align=\"center\"><br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/240920/c4ca4238a0b923820dcc509a6f75849b_091115.jpg\" title=\"c4ca4238a0b923820dcc509a6f75849b_091115.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/240920/c81e728d9d4c2f636f067f89cc14862c_091115.jpg\" title=\"c81e728d9d4c2f636f067f89cc14862c_091115.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/240920/eccbc87e4b5ce2fe28308fd9f2a7baf3_091116.jpg\" title=\"eccbc87e4b5ce2fe28308fd9f2a7baf3_091116.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/240920/a87ff679a2f3e71d9181a67b7542122c_091126.jpg\" title=\"a87ff679a2f3e71d9181a67b7542122c_091126.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"> </div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+</goods_data>
+</data>
