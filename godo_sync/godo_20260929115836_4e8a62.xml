@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000001281</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 플립 단품 RC-N3 조종기 촬영 입문용 미니 셀피 셀카드론</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002|002019|002019017</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>y</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>y</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>y</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>a</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>y</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<addGoodsData idx="1"><title><![CDATA[DJI 케어]]></title><mustFl>n</mustFl><goodsNoData idx="1">1000000970</goodsNoData><goodsNoData idx="2">1000000969</goodsNoData></addGoodsData>
+<addGoodsData idx="2"><title><![CDATA[악세사리]]></title><mustFl>n</mustFl><goodsNoData idx="1">1000000968</goodsNoData><goodsNoData idx="2">1000000967</goodsNoData></addGoodsData>
+<goodsDescription><![CDATA[<div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/250115/bc49b995805894e23c6d1faabccabc0c_091949.jpg\" title=\"bc49b995805894e23c6d1faabccabc0c_091949.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"><br style=\"clear:both;\"> </div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+</goods_data>
+</data>
