@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000001395</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 오즈모 나노 (Osmo Nano) 128GB 초경량 웨어러블 액션캠</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019006|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>y</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<addGoodsData idx="1"><title>DJI 케어</title><mustFl>n</mustFl><goodsNoData idx="1">1000001012</goodsNoData><goodsNoData idx="2">1000001011</goodsNoData></addGoodsData>
+<addGoodsData idx="2"><title>추가 상품</title><mustFl>n</mustFl><goodsNoData idx="1">1000001014</goodsNoData><goodsNoData idx="2">1000001013</goodsNoData></addGoodsData>
+<goodsDescription><![CDATA[<style>\r\n    /* DJI Osmo Nano Detailed Style */\r\n    .nano-full-wrapper {\r\n        width: 100%; \r\n        max-width: 1000px;\r\n        margin: 0 auto;\r\n        background-color: #fff;\r\n        font-family: \'Pretendard\', \'Malgun Gothic\', sans-serif;\r\n        color: #333;\r\n        line-height: 1.6;\r\n    }\r\n    .nano-section { margin-bottom: 60px; text-align: center; padding: 0 20px; }\r\n    .nano-header { font-size: 38px; font-weight: 800; margin-bottom: 20px; color: #111; letter-spacing: -1px; }\r\n    .nano-sub { font-size: 20px; color: #FF7B00; font-weight: 700; margin-bottom: 15px; display: block; text-transform: uppercase; }\r\n    .nano-text { font-size: 17px; color: #555; max-width: 700px; margin: 0 auto 40px; word-break: keep-all; }\r\n    .nano-img { width: 100%; max-width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 12px; }\r\n    .nano-video-box { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: 12px; margin-bottom: 50px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }\r\n    .nano-video-box iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }\r\n    .nano-divider { height: 1px; background: #eee; margin: 60px auto; max-width: 800px; border: none; }\r\n</style>\r\n\r\n<div class=\"nano-full-wrapper\">\r\n\r\n    <div class=\"nano-section\" style=\"margin-top: 50px;\">\r\n        <span class=\"nano-sub\">NEW ARRIVAL</span>\r\n        <h1 class=\"nano-header\">다양한 시점을 위한<br>웨어러블 카메라</h1>\r\n        <p class=\"nano-text\">작지만 강력한 1/1.3인치 센서. 52g의 가벼움.<br>DJI Osmo Nano로 일상의 모든 순간을 영화처럼 기록하세요.</p>\r\n        <img src=\"http://dronetr7262.godomall.com/data/goods/260115/Osmo%20nano/JPG_1.jpg\" class=\"nano-img\" alt=\"메인 이미지\">\r\n    </div>\r\n\r\n    <div class=\"nano-section\">\r\n        <div class=\"nano-video-box\">\r\n            <iframe src=\"https://www.youtube.com/embed/yECD9TzmW-A?rel=0&amp;modestbranding=1\" title=\"DJI Osmo Nano Intro\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"></iframe>\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"nano-section\">\r\n        <h2 class=\"nano-header\" style=\"font-size: 30px;\">선택해야 하는 <span style=\"color:#FF7B00;\">8가지 이유</span></h2>\r\n        <img src=\"http://dronetr7262.godomall.com/data/goods/260115/Osmo%20nano/JPG_2.jpg\" class=\"nano-img\" alt=\"8가지 특징\">\r\n    </div>\r\n\r\n    <hr class=\"nano-divider\">\r\n\r\n    <div class=\"nano-section\">\r\n        <h3 class=\"nano-header\" style=\"font-size: 28px;\">초경량 디자인, 자유로운 착용</h3>\r\n        <p class=\"nano-text\">1인칭 시점(POV) 촬영에 최적화되었습니다.<br>자석 마그네틱으로 옷, 가방, 모자 어디든 간편하게 부착하세요.</p>\r\n        <img src=\"http://dronetr7262.godomall.com/data/goods/260115/Osmo%20nano/JPG_3.jpg\" class=\"nano-img\" alt=\"착용 샷\">\r\n    </div>\r\n\r\n    <div class=\"nano-section\">\r\n        <h3 class=\"nano-header\" style=\"font-size: 28px;\">컴팩트한 바디, 넓은 화면</h3>\r\n        <p class=\"nano-text\">동급 최강 1/1.3인치 센서가 선사하는 놀라운 야간 화질.<br>4K/60fps의 부드러운 영상미를 경험해보세요.</p>\r\n        <img src=\"http://dronetr7262.godomall.com/data/goods/260115/Osmo%20nano/JPG_4.jpg\" class=\"nano-img\" alt=\"화질 성능\">\r\n    </div>\r\n\r\n    <div class=\"nano-section\">\r\n        <h3 class=\"nano-header\" style=\"font-size: 28px;\">어떤 촬영에도 완벽하게 준비</h3>\r\n        <p class=\"nano-text\">최대 200분 촬영(케이스 포함). 방수 기능 탑재로<br>비 오는 날에도, 물놀이 중에도 걱정 없습니다.</p>\r\n        <img src=\"http://dronetr7262.godomall.com/data/goods/260115/Osmo%20nano/JPG_5.jpg\" class=\"nano-img\" alt=\"배터리 방수\">\r\n    </div>\r\n\r\n    <div class=\"nano-section\">\r\n        <img src=\"http://dronetr7262.godomall.com/data/goods/260115/Osmo%20nano/JPG_6.jpg\" class=\"nano-img\" alt=\"액세서리 호환\">\r\n    </div>\r\n\r\n    <hr class=\"nano-divider\">\r\n\r\n    <div class=\"nano-section\">\r\n        <h3 class=\"nano-header\" style=\"font-size: 28px;\">창의적인 순간을 위한 기능</h3>\r\n        <img src=\"http://dronetr7262.godomall.com/data/goods/260115/Osmo%20nano/JPG_7.jpg\" class=\"nano-img\" alt=\"다양한 모드\">\r\n    </div>\r\n\r\n    <div class=\"nano-section\">\r\n        <img src=\"http://dronetr7262.godomall.com/data/goods/260115/Osmo%20nano/JPG_8.jpg\" class=\"nano-img\" alt=\"액세서리 종류\">\r\n    </div>\r\n\r\n    <hr class=\"nano-divider\">\r\n\r\n    <div class=\"nano-section\">\r\n        <h3 class=\"nano-header\" style=\"font-size: 28px;\">구성품 (In the Box)</h3>\r\n        <p class=\"nano-text\">구매 전 옵션별 구성품을 확인하세요.</p>\r\n        <img src=\"http://dronetr7262.godomall.com/data/goods/260115/Osmo%20nano/JPG_9.jpg\" class=\"nano-img\" alt=\"구성품 목록\">\r\n    </div>\r\n\r\n    <div class=\"nano-section\">\r\n        <h3 class=\"nano-header\" style=\"font-size: 24px; color:#888;\">상세 사양</h3>\r\n        <img src=\"http://dronetr7262.godomall.com/data/goods/260115/Osmo%20nano/JPG_10.jpg\" class=\"nano-img\" alt=\"스펙 테이블\">\r\n    </div>\r\n\r\n    <div style=\"text-align: center; padding: 50px 20px; background-color: #f9f9f9; border-radius: 12px; margin-top: 40px;\">\r\n        <p style=\"color: #666; font-size: 14px; margin-bottom: 10px;\">※ 본 페이지의 제품 사양 및 구성은 제조사의 정책에 따라 예고 없이 변경될 수 있습니다.</p>\r\n        <p style=\"font-weight: bold; font-size: 16px; color: #333;\">DJI 공식 판매점 [드론박스]</p>\r\n    </div>\r\n\r\n</div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<naverTag><![CDATA[오즈모 나노|dji 오즈모 나노|osmo nano|웨어러블카메라|초경량액션캠|브이로그|유튜브촬영|1인칭시점|여행용카메라|반려동물촬영]]></naverTag>
+<goodsSearchWord><![CDATA[오즈모나노,OsmoNano,DJI나노,초소형카메라,웨어러블카메라,브이로그카메라,유튜버카메라,바디캠,1인치센서,액션캠추천,DJI,드론박스, 오즈모 나노]]></goodsSearchWord>
+</goods_data>
+</data>
