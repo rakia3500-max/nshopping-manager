@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000001232</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 매트리스 3D 시리즈 프로펠러</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019001|002019001022|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>y</addGoodsFl>
+<deliverySno>6</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>y</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<brandCd>001</brandCd>
+<goodsNmMain><![CDATA[]]></goodsNmMain>
+<goodsNmList><![CDATA[]]></goodsNmList>
+<goodsNmDetail><![CDATA[]]></goodsNmDetail>
+<goodsNmPartner><![CDATA[]]></goodsNmPartner>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<div style=\"text-align: center;\" align=\"center\"></div><p align=\"center\" style=\"text-align: center;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/240927/2c8e1481400aec6d31aca2cd029ce10c_155233.png\" title=\"2c8e1481400aec6d31aca2cd029ce10c_155233.png\" class=\"js-smart-img\"><br style=\"clear:both;\"><br style=\"clear:both;\"> </p><p align=\"center\" style=\"text-align: center;\"><span style=\"font-size: 32px;\"><b>구성품</b></span></p><p align=\"center\" style=\"text-align: center;\"><br></p><p align=\"center\" style=\"text-align: center;\"><span style=\"font-size: 14pt;\"><b>CCW x1</b></span></p><p align=\"center\" style=\"text-align: center;\"><span style=\"font-size: 14pt;\"><b>CW x1</b></span></p>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<naverTag><![CDATA[드론 스테이션|매핑용 드론|PIX4D|DJI TERRA|산업용 드론|측량용드론|DJI 매빅3 엔터프라이즈 RTK 모듈|DJI|매빅3 엔터프라이즈 배터리키트|M3E]]></naverTag>
+<goodsSearchWord><![CDATA[매트리스 3D, 3D, 3TD, 매트리스 3D, 매트리스 3TD]]></goodsSearchWord>
+</goods_data>
+</data>
