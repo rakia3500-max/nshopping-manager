@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000000789</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 매빅3 엔터프라이즈 RTK 모듈(측량 매핑)</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019001|002019001022|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>y</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>0</detailInfoDelivery>
+<detailInfoAS>0</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>0</detailInfoExchange>
+<brandCd>001</brandCd>
+<goodsNmMain><![CDATA[]]></goodsNmMain>
+<goodsNmList><![CDATA[]]></goodsNmList>
+<goodsNmDetail><![CDATA[]]></goodsNmDetail>
+<goodsNmPartner><![CDATA[]]></goodsNmPartner>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p align=\"center\" style=\"text-align: center;\">&nbsp;</p><p>&nbsp;<img src=\"http://dronetr7262.godomall.com/data/editor/goods/221007/RTK_152855.jpg\" title=\"RTK_152855.jpg\" class=\"js-smart-img\">&nbsp;</p><div style=\"text-align: center;\" align=\"center\"><br></div><div style=\"text-align: center;\" align=\"center\"><br></div><div style=\"text-align: center;\" align=\"center\"><br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/221007/1f3c249fb6d69301b1f6e907f64b1878_140147.png\" title=\"1f3c249fb6d69301b1f6e907f64b1878_140147.png\" class=\"js-smart-img\"><br style=\"clear:both;\"><br style=\"clear:both;\"><br style=\"clear:both;\"><br style=\"clear:both;\"><br style=\"clear:both;\"><br style=\"clear:both;\"><br style=\"clear:both;\"><br style=\"clear:both;\"><br style=\"clear:both;\"> </div><div style=\"text-align: center;\"><br></div><p>&nbsp;</p><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<naverTag><![CDATA[DJI 매빅3 엔터프라이즈 RTK 모듈(측량 매핑)]]></naverTag>
+<goodsSearchWord><![CDATA[DJI 매빅3 엔터프라이즈 RTK 모듈(측량)]]></goodsSearchWord>
+</goods_data>
+</data>
