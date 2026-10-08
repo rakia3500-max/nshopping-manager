@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000001244</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI Care Refresh 1년 플랜 에어3S 케어</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019001029|002019001|002|002019</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>y</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>y</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>a</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<brandCd>001</brandCd>
+<goodsNmMain><![CDATA[]]></goodsNmMain>
+<goodsNmList><![CDATA[]]></goodsNmList>
+<goodsNmDetail><![CDATA[]]></goodsNmDetail>
+<goodsNmPartner><![CDATA[]]></goodsNmPartner>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/241231/40e25b50e08c769b756d6ff117da20a3_091118.jpg\" title=\"40e25b50e08c769b756d6ff117da20a3_091118.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"> </div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<naverTag><![CDATA[DJI|매빅3엔터프라이즈|매트리스 30|매트리스 350 RTK|산업용드론|DJI CARE|care|교환서비스]]></naverTag>
+<goodsSearchWord><![CDATA[에어, AIR, 에어3S, 에어 3S, AIR 3S, AIR3S]]></goodsSearchWord>
+</goods_data>
+</data>
