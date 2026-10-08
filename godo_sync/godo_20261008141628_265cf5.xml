@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000000755</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI Care Refresh 2년 플랜 (DJI 아바타2)</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019003|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>y</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>y</externalVideoFl>
+<detailInfoDelivery>0</detailInfoDelivery>
+<detailInfoAS>0</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>0</detailInfoExchange>
+<goodsNmMain><![CDATA[DJI Care Refresh 2년 플랜 (DJI 아바타2)]]></goodsNmMain>
+<goodsNmList><![CDATA[DJI Care Refresh 2년 플랜 (DJI 아바타2)]]></goodsNmList>
+<goodsNmDetail><![CDATA[DJI Care Refresh 2년 플랜 (DJI 아바타2)]]></goodsNmDetail>
+<goodsNmPartner><![CDATA[DJI Care Refresh 2년 플랜 (DJI 아바타2)]]></goodsNmPartner>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p style=\"text-align: center; \" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/241024/62e6cde83be8dea3fcf48d5af7ba230f_140234.jpg\" title=\"62e6cde83be8dea3fcf48d5af7ba230f_140234.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"> </p>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<naverTag><![CDATA[DJI 아바타2 케어 2년]]></naverTag>
+<goodsSearchWord><![CDATA[avata, 아바타, 케어, care]]></goodsSearchWord>
+</goods_data>
+</data>
