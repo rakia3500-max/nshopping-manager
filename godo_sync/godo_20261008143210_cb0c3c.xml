@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000001216</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 매트리스 350 RTK 1년 케어 (Matrice 350 RTK)</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019008001|002019|002019008|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>y</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>a</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<brandCd>001</brandCd>
+<goodsNmMain><![CDATA[]]></goodsNmMain>
+<goodsNmList><![CDATA[]]></goodsNmList>
+<goodsNmDetail><![CDATA[]]></goodsNmDetail>
+<goodsNmPartner><![CDATA[]]></goodsNmPartner>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/231012/77df013008ff311e4d0e05917a93d8d0_134321.jpg\" title=\"77df013008ff311e4d0e05917a93d8d0_134321.jpg\" class=\"js-smart-img\"><br style=\"clear: both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/231012/02df7fab185c6953f088b099b3fbc161_134325.jpg\" title=\"02df7fab185c6953f088b099b3fbc161_134325.jpg\" class=\"js-smart-img\"><br style=\"clear: both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/231012/32c02af49d977d3aa550ce2d6676299d_134326.jpg\" title=\"32c02af49d977d3aa550ce2d6676299d_134326.jpg\" class=\"js-smart-img\"><br style=\"clear: both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/231012/d39bd4f95582c9d81534ad0a1f6b96fa_134327.jpg\" title=\"d39bd4f95582c9d81534ad0a1f6b96fa_134327.jpg\" class=\"js-smart-img\"><br style=\"clear: both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/231012/8c77a0f43d70f25abe3c631583b9916d_134327.jpg\" title=\"8c77a0f43d70f25abe3c631583b9916d_134327.jpg\" class=\"js-smart-img\"><br style=\"clear: both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/231012/02f362823255ad1adc18fb2690e2c887_134328.jpg\" title=\"02f362823255ad1adc18fb2690e2c887_134328.jpg\" class=\"js-smart-img\"> </div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<naverTag><![CDATA[DJI|매빅3엔터프라이즈|매트리스 30|매트리스 350 RTK|산업용드론|DJI CARE|care|교환서비스]]></naverTag>
+<goodsSearchWord><![CDATA[매트리스, MATRICE, MATRICE 350 RTK,]]></goodsSearchWord>
+</goods_data>
+</data>
