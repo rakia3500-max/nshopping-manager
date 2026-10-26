@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000001570</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 독4 케어 엔터프라이즈 플러스 1년 Dock 4 Care Enterprise Plus</goodsNm>
+<goodsDisplayFl>n</goodsDisplayFl>
+<goodsDisplayMobileFl>n</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002|002019|002019008|002019008003</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>url</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<goodsPrice>1358500.00</goodsPrice>
+<imageUpdate>Y</imageUpdate>
+<magnifyImageData idx="1">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261026/b40ba3c3268c37a1155e60bf9d408828.jpg</magnifyImageData>
+<magnifyImageData idx="2">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261026/9ccfe5bae67cf01ff4cf03d75620a0f5.jpg</magnifyImageData>
+<detailImageData idx="1">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261026/b40ba3c3268c37a1155e60bf9d408828.jpg</detailImageData>
+<detailImageData idx="2">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261026/9ccfe5bae67cf01ff4cf03d75620a0f5.jpg</detailImageData>
+<listImageData idx="1">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261026/b40ba3c3268c37a1155e60bf9d408828.jpg</listImageData>
+<mainImageData idx="1">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261026/b40ba3c3268c37a1155e60bf9d408828.jpg</mainImageData>
+</goods_data>
+</data>
