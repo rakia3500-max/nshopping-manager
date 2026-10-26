@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000001564</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 오즈모포켓4P 화이트 스탠다드 콤보 Osmo Pocket 4P White 펄 화이트 짐벌 카메라</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002|002019|002019006|002019006003</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>y</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>url</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>y</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<goodsPrice>895000.00</goodsPrice>
+<imageUpdate>Y</imageUpdate>
+<magnifyImageData idx="1">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261026/beed6212235d0b39090e2a02226720ec.jpg</magnifyImageData>
+<magnifyImageData idx="2">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261026/4d2a8327cdcfbff2e493ac9ce47f3d02.jpg</magnifyImageData>
+<magnifyImageData idx="3">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261026/0e8f25916ebb6d7c0bcab413855a5b09.jpg</magnifyImageData>
+<magnifyImageData idx="4">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261026/eb76413cdbf8c0c26c8618ab8c2fe5fb.jpg</magnifyImageData>
+<magnifyImageData idx="5">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261026/b0576489b115158b809217001750644e.jpg</magnifyImageData>
+<magnifyImageData idx="6">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261026/e0b0f14f91cbdf73526165c995b9c75d.jpg</magnifyImageData>
+<magnifyImageData idx="7">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261026/ca38cb1b75e1b676b43037eff8a1f27e.jpg</magnifyImageData>
+<magnifyImageData idx="8">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261026/17047eea7fdb41d6034db6580df6276f.jpg</magnifyImageData>
+<detailImageData idx="1">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261026/beed6212235d0b39090e2a02226720ec.jpg</detailImageData>
+<detailImageData idx="2">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261026/4d2a8327cdcfbff2e493ac9ce47f3d02.jpg</detailImageData>
+<detailImageData idx="3">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261026/0e8f25916ebb6d7c0bcab413855a5b09.jpg</detailImageData>
+<detailImageData idx="4">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261026/eb76413cdbf8c0c26c8618ab8c2fe5fb.jpg</detailImageData>
+<detailImageData idx="5">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261026/b0576489b115158b809217001750644e.jpg</detailImageData>
+<detailImageData idx="6">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261026/e0b0f14f91cbdf73526165c995b9c75d.jpg</detailImageData>
+<detailImageData idx="7">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261026/ca38cb1b75e1b676b43037eff8a1f27e.jpg</detailImageData>
+<detailImageData idx="8">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261026/17047eea7fdb41d6034db6580df6276f.jpg</detailImageData>
+<listImageData idx="1">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261026/beed6212235d0b39090e2a02226720ec.jpg</listImageData>
+<mainImageData idx="1">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261026/beed6212235d0b39090e2a02226720ec.jpg</mainImageData>
+</goods_data>
+</data>
