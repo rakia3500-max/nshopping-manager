@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000001571</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 매트리스 5TD 케어 플러스 1년 Matrice 5TD M5TD Care</goodsNm>
+<goodsDisplayFl>n</goodsDisplayFl>
+<goodsDisplayMobileFl>n</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002|002019|002019008|002019008003</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>url</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<!-- bd-care-m5td v1 드론박스 -->
+<style>
+.p4pw-card, .p4pw-step { transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease, background .22s ease; }
+.p4pw-card:hover, .p4pw-step:hover { transform: translateY(-4px); box-shadow: 0 10px 24px rgba(25,31,40,.10); border-color: #2F7DF6 !important; background: #FFFFFF !important; }
+.p4pw-card:hover > p:first-child, .p4pw-step:hover > p:first-child { color: #2F7DF6 !important; }
+.p4pw-faq { transition: background .2s ease; border-radius: 8px; padding: 6px 8px; margin: 0 -8px 12px; }
+.p4pw-faq:hover { background: #F2F6FF; }
+@media (hover: none) { .p4pw-card:hover, .p4pw-step:hover { transform: none; box-shadow: none; } }
+</style>
+<div style="background:#FFFFFF; color:#191F28; color-scheme:light only;"><div style="max-width:1000px; margin:0 auto; padding:0; font-family:inherit; color:#191F28; background:#FFFFFF; line-height:1.7;">
+<p style="margin:0; text-align:center; line-height:0;"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261026/53487511200b51bd8ad9495dbfeea5c2.jpg" alt="DJI Care Enterprise Basic·Plus 비교" style="max-width:100%; width:100%; display:block; margin:0 auto;"></p>
+<p style="font-size:14px; color:#4E5968; margin:0 0 6px;">DJI 정품 판매점 <b>드론박스</b> · DJI Matrice 5TD 보증 서비스</p><h2 style="font-size:24px; font-weight:700; margin:0 0 12px; color:#191F28;">DJI Care Enterprise Plus (Matrice 5TD) 케어 엔터프라이즈 플러스 1년</h2><div style="height:12px;"></div>
+<div itemscope itemtype="https://schema.org/Article" style="margin:0 0 8px; padding:24px 20px 10px; border:1px solid #E3E6EB; border-radius:12px; background:#FFFFFF;"><h3 itemprop="headline" style="font-size:21px; font-weight:700; margin:32px 0 14px; padding-bottom:8px; border-bottom:2px solid #E3E6EB; color:#191F28; margin-top:0;">이런 플랜입니다</h3><div itemprop="articleBody"><p style="font-size:15px; color:#333D4B; margin:0 0 10px; line-height:1.75;">DJI Matrice 5TD용 DJI 공식 유상 보증 플랜(1년)입니다.</p><p style="font-size:15px; color:#333D4B; margin:0 0 10px; line-height:1.75;">DJI Matrice 5TD SP Plus 상품에는 첫 1년이 이미 들어 있습니다. 이 플랜은 <b>2년째 갱신</b>하거나, SP Plus가 아닌 경로로 구매한 제품에 가입할 때 씁니다.</p></div></div>
+<div itemscope itemtype="https://schema.org/Article" style="margin:0 0 8px; padding:24px 20px 10px; border:1px solid #E3E6EB; border-radius:12px; background:#FFFFFF;"><h3 itemprop="headline" style="font-size:21px; font-weight:700; margin:32px 0 14px; padding-bottom:8px; border-bottom:2px solid #E3E6EB; color:#191F28; margin-top:0;">주요 보장 (DJI 공식)</h3><div itemprop="articleBody"><div style="overflow-x:auto;"><table style="border-collapse:collapse; width:100%;">
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">무상 수리</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">보장 한도 안에서 횟수 제한 없음</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">배터리</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">연 1회 무상 교체</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">플라이어웨이 보상</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">연 1회 (DJI Enterprise 앱에 계정 연결·Dock/O4 Ground Station 바인딩 필요)</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">왕복 배송비</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">무료 (보장 범위 밖 비용·관세는 고객 부담)</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">보장 공유</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">30일 안에 같은 명의로 활성화한 DJI 산업용 제품과 보장 한도 공유</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">전문가 서비스</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">DJI 기술 전문가 대응</td></tr>
+</table></div></div></div>
+<div itemscope itemtype="https://schema.org/Article" style="margin:0 0 8px; padding:24px 20px 10px; border:1px solid #E3E6EB; border-radius:12px; background:#FFFFFF;"><h3 itemprop="headline" style="font-size:21px; font-weight:700; margin:32px 0 14px; padding-bottom:8px; border-bottom:2px solid #E3E6EB; color:#191F28; margin-top:0;">가입 조건</h3><div itemprop="articleBody"><div style="overflow-x:auto;"><table style="border-collapse:collapse; width:100%;">
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">가입 시기</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">새 제품 활성화 후 15일 안 (DJI 정책)</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">갱신</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">만료 후 15일 안, 최대 3년 (Basic·Plus 서로 바꿔 갱신 불가)</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">보장 기준</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">DJI Care Enterprise 약관·국가별 정책을 따름</td></tr>
+</table></div></div></div>
+<p style="margin:0; text-align:center; line-height:0;"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261026/5b26a6b24579186d31c1943a403b40e4.jpg" alt="DJI Matrice 5TD 기체" style="max-width:100%; width:100%; display:block; margin:0 auto;"></p>
+<div style="margin:0 0 8px; padding:24px 20px 10px; border:1px solid #E3E6EB; border-radius:12px; background:#FFFFFF;"><h3 style="font-size:21px; font-weight:700; margin:32px 0 14px; padding-bottom:8px; border-bottom:2px solid #E3E6EB; color:#191F28; margin-top:0;">FAQ</h3><div itemscope itemtype="https://schema.org/FAQPage">
+<div class="p4pw-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom:18px;"><p itemprop="name" style="font-weight:700; font-size:16px; margin:0 0 6px; color:#191F28;">Q. SP Plus 상품을 샀는데 또 가입해야 하나요?</p><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-size:15px; color:#333D4B; margin:0; line-height:1.7;">A. 첫 1년은 이미 들어 있으니 지금은 필요 없습니다. 1년이 끝날 때 이어서 갱신하실 때 이 상품을 쓰시면 됩니다.</p></div></div>
+<div class="p4pw-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom:18px;"><p itemprop="name" style="font-weight:700; font-size:16px; margin:0 0 6px; color:#191F28;">Q. 가입 기한을 놓치면 어떻게 되나요?</p><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-size:15px; color:#333D4B; margin:0; line-height:1.7;">A. DJI 정책상 활성화 후 15일, 갱신은 만료 후 15일 안이어야 합니다. 기한이 지나면 가입이 제한될 수 있어 미리 문의해 주세요.</p></div></div>
+<div class="p4pw-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom:18px;"><p itemprop="name" style="font-weight:700; font-size:16px; margin:0 0 6px; color:#191F28;">Q. 보장 금액은 얼마인가요?</p><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-size:15px; color:#333D4B; margin:0; line-height:1.7;">A. DJI Matrice 5TD Plus 보장 금액은 DJI가 공지하는 금액 기준입니다. 정확한 금액은 상품 문의 게시판로 확인해 드립니다.</p></div></div>
+<div class="p4pw-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom:18px;"><p itemprop="name" style="font-weight:700; font-size:16px; margin:0 0 6px; color:#191F28;">Q. 정품인가요?</p><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-size:15px; color:#333D4B; margin:0; line-height:1.7;">A. 드론박스는 DJI 정품만 판매합니다. 문의는 상품 문의 게시판으로 남겨 주세요.</p></div></div>
+</div></div>
+<p style="font-size:13px; color:#8B95A1; margin:20px 0 14px; text-align:center;">드론박스는 DJI 정품만 판매합니다 · 문의는 상품 문의 게시판 · 사양·사진은 DJI 자료(enterprise.dji.com/kr)</p>
+</div></div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<goodsSearchWord><![CDATA[매트리스 5TD 케어, Matrice 5TD Care, Care Enterprise, 케어 엔터프라이즈 플러스, DJI 케어, 매트리스 5TD, M5TD 케어, 드론 보증, 독4, DJI Care Enterprise Plus, 산업용 드론 케어, Care Enterprise Plus]]></goodsSearchWord>
+<seoTagTitle><![CDATA[DJI 매트리스 5TD 케어 플러스 1년 Matrice 5TD M5TD Care]]></seoTagTitle>
+</goods_data>
+</data>
