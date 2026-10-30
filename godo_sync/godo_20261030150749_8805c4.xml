@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000001569</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 매트리스 5TD 스포트라이트 스피커 세트 Matrice 5TD 독4 드론 조명</goodsNm>
+<goodsDisplayFl>n</goodsDisplayFl>
+<goodsDisplayMobileFl>n</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002|002019|002019008|002019008003</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>url</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>6</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>y</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<!-- bd-al2d-as2d v1 드론박스 -->
+<style>
+.p4pw-card, .p4pw-step { transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease, background .22s ease; }
+.p4pw-card:hover, .p4pw-step:hover { transform: translateY(-4px); box-shadow: 0 10px 24px rgba(25,31,40,.10); border-color: #2F7DF6 !important; background: #FFFFFF !important; }
+.p4pw-card:hover > p:first-child, .p4pw-step:hover > p:first-child { color: #2F7DF6 !important; }
+.p4pw-faq { transition: background .2s ease; border-radius: 8px; padding: 6px 8px; margin: 0 -8px 12px; }
+.p4pw-faq:hover { background: #F2F6FF; }
+@media (hover: none) { .p4pw-card:hover, .p4pw-step:hover { transform: none; box-shadow: none; } }
+</style>
+<div style="background:#FFFFFF; color:#191F28; color-scheme:light only;"><div style="max-width:1000px; margin:0 auto; padding:0; font-family:inherit; color:#191F28; background:#FFFFFF; line-height:1.7;">
+<p style="margin:0; text-align:center; line-height:0;"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261026/228d3327d90a50dbe12fab5001d217df.jpg" alt="야간 수색 중 스포트라이트를 켠 Matrice 5TD" style="max-width:100%; width:100%; display:block; margin:0 auto;"></p>
+<p style="font-size:14px; color:#4E5968; margin:0 0 6px;">DJI 정품 판매점 <b>드론박스</b> · Matrice 5TD 액세서리</p><h2 style="font-size:24px; font-weight:700; margin:0 0 12px; color:#191F28;">DJI AL2D 스포트라이트 + AS2D 스피커 세트 (Matrice 5TD 액세서리 마운트 포함)</h2><div style="height:12px;"></div>
+<div itemscope itemtype="https://schema.org/Article" style="margin:0 0 8px; padding:24px 20px 10px; border:1px solid #E3E6EB; border-radius:12px; background:#FFFFFF;"><h3 itemprop="headline" style="font-size:21px; font-weight:700; margin:32px 0 14px; padding-bottom:8px; border-bottom:2px solid #E3E6EB; color:#191F28; margin-top:0;">구성과 특징</h3><div itemprop="articleBody"><p style="font-size:15px; color:#333D4B; margin:0 0 10px; line-height:1.75;">Matrice 5TD에 다는 스포트라이트(AL2D)와 스피커(AS2D) 세트입니다. 장착에 필요한 <b>Matrice 5TD 액세서리 마운트</b>가 함께 들어 있습니다.</p><p style="font-size:15px; color:#333D4B; margin:0 0 10px; line-height:1.75;">스포트라이트는 기체 오른쪽, 스피커는 왼쪽에 답니다. AP1 낙하산(상단)과 함께 달아 야간 수색 중 조명·안내 방송·지상 안전을 한 번에 챙길 수 있습니다.</p></div></div>
+<p style="margin:0; text-align:center; line-height:0;"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261026/a88c9dbf30457782847157f7ed8c0d13.jpg" alt="DJI AL2D 스포트라이트" style="max-width:100%; width:100%; display:block; margin:0 auto;"></p>
+<div itemscope itemtype="https://schema.org/Article" style="margin:0 0 8px; padding:24px 20px 10px; border:1px solid #E3E6EB; border-radius:12px; background:#FFFFFF;"><h3 itemprop="headline" style="font-size:21px; font-weight:700; margin:32px 0 14px; padding-bottom:8px; border-bottom:2px solid #E3E6EB; color:#191F28; margin-top:0;">AL2D 스포트라이트</h3><div itemprop="articleBody"><div style="overflow-x:auto;"><table style="border-collapse:collapse; width:100%;">
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">밝기</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">이전 세대보다 2.6배 밝음 · 스포트 40W / 투광 18W / 동시 48W</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">조도</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">스포트 11.2lux @100m · 투광 2.7lux @100m</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">비추는 범위</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">스포트 약 500m² / 투광 약 1,300m² (100m 거리)</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">모드</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">항상 켜짐(스포트·투광·동시·자동), 스트로브(느림·빠름), 짐벌 팔로우</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">짐벌</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">틸트 -90° ~ +90° 제어, 최대 120°/s</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">무게 · 크기</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">115g · 91×54×60mm (브래킷 제외)</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">방진방수 · 온도</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">IP55 · -40°C ~ 50°C</td></tr>
+</table></div></div></div>
+<p style="margin:0; text-align:center; line-height:0;"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261026/c41564670d29800f0c8efefceccda116.jpg" alt="DJI AS2D 스피커" style="max-width:100%; width:100%; display:block; margin:0 auto;"></p>
+<div itemscope itemtype="https://schema.org/Article" style="margin:0 0 8px; padding:24px 20px 10px; border:1px solid #E3E6EB; border-radius:12px; background:#FFFFFF;"><h3 itemprop="headline" style="font-size:21px; font-weight:700; margin:32px 0 14px; padding-bottom:8px; border-bottom:2px solid #E3E6EB; color:#191F28; margin-top:0;">AS2D 스피커</h3><div itemprop="articleBody"><div style="overflow-x:auto;"><table style="border-collapse:collapse; width:100%;">
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">음량</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">최대 120.5dB (1m)</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">유효 방송 거리</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">400m</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">방송</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">실시간, 녹음 후 방송, 파일 가져오기, 문자→음성(TTS)</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">TTS 언어</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">한국어·중국어·영어·일본어·프랑스어·스페인어·독일어 (FlightHub 2 공용 클라우드)</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">PTT</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">핸드헬드 마이크 버튼 매핑</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">무게 · 크기</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">188g · 132×47×54mm (브래킷 제외)</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">최대 전력 · 방진방수</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">30W · IP55</td></tr>
+</table></div></div></div>
+<div itemscope itemtype="https://schema.org/Article" style="margin:0 0 8px; padding:24px 20px 10px; border:1px solid #E3E6EB; border-radius:12px; background:#FFFFFF;"><h3 itemprop="headline" style="font-size:21px; font-weight:700; margin:32px 0 14px; padding-bottom:8px; border-bottom:2px solid #E3E6EB; color:#191F28; margin-top:0;">Matrice 5TD 액세서리 마운트</h3><div itemprop="articleBody"><div style="overflow-x:auto;"><table style="border-collapse:collapse; width:100%;">
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">무게 · 크기</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">40g · 117×126×70mm</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">장착 포인트</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">3곳 (측면 2, 상단 1)</td></tr>
+</table></div></div></div>
+<p style="margin:0; text-align:center; line-height:0;"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261026/b210fa2e8dd2d8856fd1a962992f54c3.jpg" alt="최대 450g 페이로드를 장착한 Matrice 5TD" style="max-width:100%; width:100%; display:block; margin:0 auto;"></p>
+<div style="margin:0 0 8px; padding:24px 20px 10px; border:1px solid #E3E6EB; border-radius:12px; background:#FFFFFF;"><h3 style="font-size:21px; font-weight:700; margin:32px 0 14px; padding-bottom:8px; border-bottom:2px solid #E3E6EB; color:#191F28; margin-top:0;">FAQ</h3><div itemscope itemtype="https://schema.org/FAQPage">
+<div class="p4pw-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom:18px;"><p itemprop="name" style="font-weight:700; font-size:16px; margin:0 0 6px; color:#191F28;">Q. 어떤 기체에 쓰나요?</p><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-size:15px; color:#333D4B; margin:0; line-height:1.7;">A. DJI Matrice 5TD 전용입니다. 함께 든 Matrice 5TD 액세서리 마운트로 장착합니다.</p></div></div>
+<div class="p4pw-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom:18px;"><p itemprop="name" style="font-weight:700; font-size:16px; margin:0 0 6px; color:#191F28;">Q. 스포트라이트를 켜면 주의할 점이 있나요?</p><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-size:15px; color:#333D4B; margin:0; line-height:1.7;">A. 스포트라이트를 켜면 비전 장애물 감지가 꺼지고 레이더·LiDAR만 동작합니다. 비행에 주의하고 사람 눈에 직접 비추지 마세요. 오래 켜면 본체가 뜨거워집니다.</p></div></div>
+<div class="p4pw-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom:18px;"><p itemprop="name" style="font-weight:700; font-size:16px; margin:0 0 6px; color:#191F28;">Q. 스피커는 어디서나 써도 되나요?</p><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-size:15px; color:#333D4B; margin:0; line-height:1.7;">A. 음량이 매우 크므로 가까운 거리나 소음에 민감한 도심에서는 쓰지 마세요. 장착 후 활성화와 콤파스 캘리브레이션이 필요합니다.</p></div></div>
+<div class="p4pw-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom:18px;"><p itemprop="name" style="font-weight:700; font-size:16px; margin:0 0 6px; color:#191F28;">Q. 비행시간에 영향이 있나요?</p><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-size:15px; color:#333D4B; margin:0; line-height:1.7;">A. 액세서리를 달면 추진 성능과 비행시간에 영향이 있습니다. 기체 최대 페이로드는 450g입니다.</p></div></div>
+<div class="p4pw-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom:18px;"><p itemprop="name" style="font-weight:700; font-size:16px; margin:0 0 6px; color:#191F28;">Q. 정품인가요?</p><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-size:15px; color:#333D4B; margin:0; line-height:1.7;">A. 드론박스는 DJI 정품만 판매합니다. 문의는 상품 문의 게시판으로 남겨 주세요.</p></div></div>
+</div></div>
+<p style="font-size:13px; color:#8B95A1; margin:20px 0 14px; text-align:center;">드론박스는 DJI 정품만 판매합니다 · 문의는 상품 문의 게시판 · 사양·사진은 DJI 자료(enterprise.dji.com/kr)</p>
+</div></div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<goodsSearchWord><![CDATA[AL2D, AS2D, 드론 스포트라이트, 드론 스피커, 매트리스 5TD, Matrice 5TD, 독4, 드론 조명, 드론 방송, 산업용드론, AL2D 스포트라이트, AS2D 스피커, 액세서리 마운트, M5TD]]></goodsSearchWord>
+<seoTagTitle><![CDATA[DJI 매트리스 5TD 스포트라이트 스피커 세트 Matrice 5TD 독4 드론 조명]]></seoTagTitle>
+</goods_data>
+</data>
