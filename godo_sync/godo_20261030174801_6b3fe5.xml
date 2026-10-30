@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000001361</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI Osmo 360 캐리어 백</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019006|002019006002|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>y</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>y</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<goodsPrice>26500</goodsPrice>
+<goodsNmMain><![CDATA[]]></goodsNmMain>
+<goodsNmList><![CDATA[]]></goodsNmList>
+<goodsNmDetail><![CDATA[]]></goodsNmDetail>
+<goodsNmPartner><![CDATA[]]></goodsNmPartner>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/250801/181aad09082982b4306d4c7afed9db67_090231.jpg\" title=\"181aad09082982b4306d4c7afed9db67_090231.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"><br style=\"clear:both;\"> </div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<naverTag><![CDATA[DJI|오즈모360|액션캠|유튜브카메라|인스타용카메라|스탠다드콤보|djiosmo|djiosm360|dji오즈모|어드벤처콤보|osmo360|osmo|]]></naverTag>
+<goodsSearchWord><![CDATA[오즈모 360, 360, 인스타 360, Osmo, Osmo 360]]></goodsSearchWord>
+</goods_data>
+</data>
