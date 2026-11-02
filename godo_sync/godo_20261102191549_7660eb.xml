@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000001391</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 미니5 프로 양방향 충전 허브</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019001|002019001028|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>n</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>y</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>n</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<div style=\"text-align: center;\"><div align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/250917/fb999bb204ac360e236a82454a3b0e99_214000.jpg\" title=\"fb999bb204ac360e236a82454a3b0e99_214000.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"> </div></div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<kcmarkInfo><![CDATA[{"0": {"kcmarkDt": "2025-05-12", "kcmarkFl": "y", "kcmarkNo": "R-R-dji-CHXNN5", "kcmarkDivFl": "kcCd05"}}]]></kcmarkInfo>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[소형전자(전자기기)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[DJI 미니5 프로 양방향 충전 허브]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[KC 인증 필 유무]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[정격전압, 소비전력]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[출시년월]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[DJI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="7"><stepData idx="1"><infoTitle><![CDATA[제조국]]></infoTitle><infoValue><![CDATA[중국]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="8"><stepData idx="1"><infoTitle><![CDATA[크기, 무게]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="9"><stepData idx="1"><infoTitle><![CDATA[주요 사양]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="10"><stepData idx="1"><infoTitle><![CDATA[품질보증기준]]></infoTitle><infoValue><![CDATA[제조사 품질보증 기준 및 소비자분쟁해결기준(공정거래위원회 고시)에 따름]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="11"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+</data>
