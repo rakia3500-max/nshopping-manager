@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000000386</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 인스파이어2 TB50 인텔리전트 배터리</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>001|002019005|002|002019</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>y</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/210405/2_170212.jpg\" title=\"2_170212.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\">&nbsp;</p>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[소형전자(전자기기)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[DJI 인스파이어2 TB50 인텔리전트 배터리]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[KC 인증 필 유무]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[정격전압, 소비전력]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[출시년월]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[DJI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="7"><stepData idx="1"><infoTitle><![CDATA[제조국]]></infoTitle><infoValue><![CDATA[중국]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="8"><stepData idx="1"><infoTitle><![CDATA[크기, 무게]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="9"><stepData idx="1"><infoTitle><![CDATA[주요 사양]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="10"><stepData idx="1"><infoTitle><![CDATA[품질보증기준]]></infoTitle><infoValue><![CDATA[제조사 품질보증 기준 및 소비자분쟁해결기준(공정거래위원회 고시)에 따름]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="11"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="2">
+<goodsNo>1000000385</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 젠뮤즈 P1 (매트리스 M300/M350/M400 호환) Zenmuse P1 풀프레임 센서 항공 측량 매핑</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>001|002020|002019008001|002019008|002019|002|002019019</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p style=\"text-align: center;\" align=\"center\"><br></p><p style=\"text-align: center;\" align=\"center\"><span style=\"font-size: 36pt; background-color: rgb(0, 117, 200); color: rgb(255, 255, 255); font-family: 돋움체, DotumChe, AppleGothic;\"><b>-﻿구성품 안내-</b></span> </p><p style=\"text-align: center;\" align=\"center\"><br></p><p style=\"text-align: center;\" align=\"center\"><b><span style=\"font-size: 18pt;\">​기본 35mm 랜즈는 포함되어 있습니다.</span></b><span style=\"font-size: 18pt;\"> </span></p><p style=\"text-align: center;\" align=\"center\"><b><span style=\"font-size: 18pt;\">추가로 24mm,50mm 구입하시려면 별도로 문의 부탁드립니다.</span></b></p><p style=\"text-align: center;\" align=\"center\"><b><span style=\"font-size: 18pt;\">DJI Terra S/W 6개월 이용권도 무상으로 증정됩니다.&nbsp;</span></b></p><p style=\"text-align: center;\" align=\"center\"><b><span style=\"font-size: 18pt;\"><br></span></b></p><p align=\"center\" style=\"text-align: center;\"><span style=\"font-size: 24pt; color: rgb(255, 0, 0);\"><b>&lt;호환가능 드론&gt;</b></span></p><p style=\"text-align: center;\" align=\"center\"><b style=\"color: rgb(255, 0, 0); font-size: 24pt;\">해당 제품은 M350, M300, M400과 호환됩니다.</b><span style=\"font-size: 24px;\"><b>&nbsp;</b></span></p><p style=\"text-align: center;\" align=\"center\"><b><br></b></p><p style=\"text-align: center;\" align=\"center\"><b><br></b></p><p style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/210405/2_165816.jpg\" title=\"2_165816.jpg\" class=\"js-smart-img\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/210405/3_165823.jpg\" title=\"3_165823.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"><br style=\"clear:both;\">&nbsp;</p>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<kcmarkInfo><![CDATA[{"0": {"kcmarkDt": "2021-01-27", "kcmarkFl": "y", "kcmarkNo": "R-R-dji-ZP1", "kcmarkDivFl": "kcCd05"}}]]></kcmarkInfo>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[소형전자(전자기기)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[DJI 젠뮤즈 P1 (매트리스 M300/M350/M400 호환) Zenmuse P1 풀프레임 센서 항공 측량 매핑]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[KC 인증 필 유무]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[정격전압, 소비전력]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[출시년월]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[DJI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="7"><stepData idx="1"><infoTitle><![CDATA[제조국]]></infoTitle><infoValue><![CDATA[중국]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="8"><stepData idx="1"><infoTitle><![CDATA[크기, 무게]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="9"><stepData idx="1"><infoTitle><![CDATA[주요 사양]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="10"><stepData idx="1"><infoTitle><![CDATA[품질보증기준]]></infoTitle><infoValue><![CDATA[제조사 품질보증 기준 및 소비자분쟁해결기준(공정거래위원회 고시)에 따름]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="11"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="3">
+<goodsNo>1000000368</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>D-RTK 2 GNSS 모바일 스테이션</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>001|002019001|002019001018|002019010|002019008|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p>&nbsp;</p><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/210405/2_133716.jpg\" title=\"2_133716.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/210405/3_133716.jpg\" title=\"3_133716.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/210405/4_133717.jpg\" title=\"4_133717.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/210405/5_133717.jpg\" title=\"5_133717.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/210405/6_133717.jpg\" title=\"6_133717.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><br></div><p>&nbsp;</p><p align=\"center\" style=\"text-align: center;\"><span style=\"color: rgb(70, 70, 70); font-family: SimHei; font-size: 29.33px;\">D-RTK 2 모바일 스테이션&nbsp;</span><span style=\"color: rgb(0, 117, 200); font-family: SimHei; font-size: 29.33px;\">사양</span></p><div style=\"margin: 0px; padding: 0px; list-style: none; color: rgb(51, 51, 51); text-align: -webkit-center; font-family: &quot;Nanum Gothic&quot;, Verdana, Dotum, AppleGothic, sans-serif;\"><span style=\"color: rgb(0, 117, 200); font-family: SimHei; font-size: 29.33px;\"><br></span></div><p style=\"list-style: none; color: rgb(51, 51, 51); font-family: dotum; text-align: -webkit-center;\"><span class=\"parent\" style=\"margin: 0px 14px 0px 0px; padding: 0px; outline: 0px; border: 0px currentcolor; color: rgb(112, 116, 115); text-transform: uppercase; font-family: inherit; font-size: 36px; font-style: inherit; font-weight: inherit; vertical-align: baseline; display: inline-block; box-sizing: border-box;\"></span></p><div style=\"margin: 0px; padding: 0px; list-style: none; color: rgb(51, 51, 51); text-align: -webkit-center; font-family: &quot;Nanum Gothic&quot;, Verdana, Dotum, AppleGothic, sans-serif;\"><h3 class=\"section-title\" style=\"margin: 0px 0px 15px; padding: 0px; list-style: none; outline: 0px; border: 0px currentcolor; color: rgb(112, 116, 115); text-transform: uppercase; line-height: 1.1; font-family: Gotham, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, Arial, sans-serif; font-size: 20px; font-weight: 400; word-spacing: -1px; vertical-align: baseline; box-sizing: border-box;\"><span>GNSS 수신기</span></h3><table class=\"table-specs __se_tbl_ext\" style=\"width: 570px; border: 0px currentcolor; border-spacing: 0px; border-collapse: collapse; margin: 0px 0px 60px; padding: 0px; outline: 0px; color: rgb(112, 116, 115); font-family: \'Open Sans\', \'PingFang SC\', \'Microsoft YaHei\', \'Helvetica Neue\', \'Hiragino Sans GB\', \'WenQuanYi Micro Hei\', Arial, sans-serif; font-size: 14px; word-spacing: -1px; vertical-align: middle;\"><tbody style=\"margin: 0px; padding: 0px; outline: 0px; border: 0px currentcolor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline; box-sizing: border-box;\"><tr style=\"margin: 0px; padding: 0px; outline: 0px; border: 0px currentcolor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline; box-sizing: border-box;\"><th style=\"margin: 0px; padding: 6px 0px; border: 0px currentcolor; vertical-align: top; list-style: none; outline: 0px; width: 228px; text-align: left; color: rgb(68, 168, 242); line-height: 1.4em; font-family: inherit; font-size: 12px; font-style: inherit; font-weight: 400; box-sizing: border-box;\"><span>위성 수신 주파수</span></th><td style=\"margin: 0px; padding: 6px 0px 6px 10px; border: 0px currentcolor; vertical-align: top; list-style: none; zoom: 1; color: rgb(51, 51, 51); -webkit-font-smoothing: antialiased; text-size-adjust: 100%; font-style: inherit; font-size: 12px; line-height: 1.4em; font-family: inherit; outline: 0px; width: 342px; box-sizing: border-box; font-variant-numeric: normal !important; font-variant-east-asian: normal !important; font-stretch: normal !important;\"><span>동시 수신 :</span><br style=\"box-sizing: border-box;\"><span>GPS : L1 C / A, L2, L5</span><br style=\"box-sizing: border-box;\"><span>BEIDOU : B1, B2, B3</span><br style=\"box-sizing: border-box;\"><span>GLONASS : F1, F2</span><br style=\"box-sizing: border-box;\"><span>갈릴레오 : E1, E5A, E5B</span></td></tr><tr style=\"margin: 0px; padding: 0px; outline: 0px; border: 0px currentcolor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline; box-sizing: border-box;\"><th style=\"margin: 0px; padding: 6px 0px; border: 0px currentcolor; vertical-align: top; list-style: none; outline: 0px; width: 228px; text-align: left; color: rgb(68, 168, 242); line-height: 1.4em; font-family: inherit; font-size: 12px; font-style: inherit; font-weight: 400; box-sizing: border-box;\"><span>위치 결정 정확도</span></th><td style=\"margin: 0px; padding: 6px 0px 6px 10px; border: 0px currentcolor; vertical-align: top; list-style: none; zoom: 1; color: rgb(51, 51, 51); -webkit-font-smoothing: antialiased; text-size-adjust: 100%; font-style: inherit; font-size: 12px; line-height: 1.4em; font-family: inherit; outline: 0px; width: 342px; box-sizing: border-box; font-variant-numeric: normal !important; font-variant-east-asian: normal !important; font-stretch: normal !important;\"><span>단일 포인트</span><br style=\"box-sizing: border-box;\"><span>레벨 : 1.5 m (RMS)</span><br style=\"box-sizing: border-box;\"><span>세로 : 3.0 m합니다 (RMS)</span><br style=\"box-sizing: border-box;\"><span>RTK의</span><br style=\"box-sizing: border-box;\"><span>레벨 : 1cm + 1 PPM (RMS )</span><br style=\"box-sizing: border-box;\"><span>세로 2 ㎝-+ 1 PPM합니다 (RMS)는.</span><br style=\"box-sizing: border-box;\"><span><span>1 PPM :. 모든 1km위한 정밀도가 1 mm로 저하된다.&nbsp;</span><span>예를 들어, 기지국에서 1km 거리에있는 정확도는 1.1cm입니다.</span></span></td></tr><tr style=\"margin: 0px; padding: 0px; outline: 0px; border: 0px currentcolor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline; box-sizing: border-box;\"><th style=\"margin: 0px; padding: 6px 0px; border: 0px currentcolor; vertical-align: top; list-style: none; outline: 0px; width: 228px; text-align: left; color: rgb(68, 168, 242); line-height: 1.4em; font-family: inherit; font-size: 12px; font-style: inherit; font-weight: 400; box-sizing: border-box;\"><span>위치 업데이트 속도</span></th><td style=\"margin: 0px; padding: 6px 0px 6px 10px; border: 0px currentcolor; vertical-align: top; list-style: none; zoom: 1; color: rgb(51, 51, 51); -webkit-font-smoothing: antialiased; text-size-adjust: 100%; font-style: inherit; font-size: 12px; line-height: 1.4em; font-family: inherit; outline: 0px; width: 342px; box-sizing: border-box; font-variant-numeric: normal !important; font-variant-east-asian: normal !important; font-stretch: normal !important;\"><span>1 Hz, 2 Hz, 5 Hz, 10 Hz 및 20 Hz</span></td></tr><tr style=\"margin: 0px; padding: 0px; outline: 0px; border: 0px currentcolor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline; box-sizing: border-box;\"><th style=\"margin: 0px; padding: 6px 0px; border: 0px currentcolor; vertical-align: top; list-style: none; outline: 0px; width: 228px; text-align: left; color: rgb(68, 168, 242); line-height: 1.4em; font-family: inherit; font-size: 12px; font-style: inherit; font-weight: 400; box-sizing: border-box;\"><span>콜드 스타트</span></th><td style=\"margin: 0px; padding: 6px 0px 6px 10px; border: 0px currentcolor; vertical-align: top; list-style: none; zoom: 1; color: rgb(51, 51, 51); -webkit-font-smoothing: antialiased; text-size-adjust: 100%; font-style: inherit; font-size: 12px; line-height: 1.4em; font-family: inherit; outline: 0px; width: 342px; box-sizing: border-box; font-variant-numeric: normal !important; font-variant-east-asian: normal !important; font-stretch: normal !important;\"><span>&lt;45 초</span></td></tr><tr style=\"margin: 0px; padding: 0px; outline: 0px; border: 0px currentcolor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline; box-sizing: border-box;\"><th style=\"margin: 0px; padding: 6px 0px; border: 0px currentcolor; vertical-align: top; list-style: none; outline: 0px; width: 228px; text-align: left; color: rgb(68, 168, 242); line-height: 1.4em; font-family: inherit; font-size: 12px; font-style: inherit; font-weight: 400; box-sizing: border-box;\"><span>뜨거운 시작</span></th><td style=\"margin: 0px; padding: 6px 0px 6px 10px; border: 0px currentcolor; vertical-align: top; list-style: none; zoom: 1; color: rgb(51, 51, 51); -webkit-font-smoothing: antialiased; text-size-adjust: 100%; font-style: inherit; font-size: 12px; line-height: 1.4em; font-family: inherit; outline: 0px; width: 342px; box-sizing: border-box; font-variant-numeric: normal !important; font-variant-east-asian: normal !important; font-stretch: normal !important;\"><span>10 초 미만</span></td></tr><tr style=\"margin: 0px; padding: 0px; outline: 0px; border: 0px currentcolor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline; box-sizing: border-box;\"><th style=\"margin: 0px; padding: 6px 0px; border: 0px currentcolor; vertical-align: top; list-style: none; outline: 0px; width: 228px; text-align: left; color: rgb(68, 168, 242); line-height: 1.4em; font-family: inherit; font-size: 12px; font-style: inherit; font-weight: 400; box-sizing: border-box;\"><span>탈환</span></th><td style=\"margin: 0px; padding: 6px 0px 6px 10px; border: 0px currentcolor; vertical-align: top; list-style: none; zoom: 1; color: rgb(51, 51, 51); -webkit-font-smoothing: antialiased; text-size-adjust: 100%; font-style: inherit; font-size: 12px; line-height: 1.4em; font-family: inherit; outline: 0px; width: 342px; box-sizing: border-box; font-variant-numeric: normal !important; font-variant-east-asian: normal !important; font-stretch: normal !important;\"><span>1 초 미만</span></td></tr><tr style=\"margin: 0px; padding: 0px; outline: 0px; border: 0px currentcolor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline; box-sizing: border-box;\"><th style=\"margin: 0px; padding: 6px 0px; border: 0px currentcolor; vertical-align: top; list-style: none; outline: 0px; width: 228px; text-align: left; color: rgb(68, 168, 242); line-height: 1.4em; font-family: inherit; font-size: 12px; font-style: inherit; font-weight: 400; box-sizing: border-box;\"><span>초기화 안정성</span></th><td style=\"margin: 0px; padding: 6px 0px 6px 10px; border: 0px currentcolor; vertical-align: top; list-style: none; zoom: 1; color: rgb(51, 51, 51); -webkit-font-smoothing: antialiased; text-size-adjust: 100%; font-style: inherit; font-size: 12px; line-height: 1.4em; font-family: inherit; outline: 0px; width: 342px; box-sizing: border-box; font-variant-numeric: normal !important; font-variant-east-asian: normal !important; font-stretch: normal !important;\"><span>&gt; 99.9 %</span></td></tr><tr style=\"margin: 0px; padding: 0px; outline: 0px; border: 0px currentcolor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline; box-sizing: border-box;\"><th style=\"margin: 0px; padding: 6px 0px; border: 0px currentcolor; vertical-align: top; list-style: none; outline: 0px; width: 228px; text-align: left; color: rgb(68, 168, 242); line-height: 1.4em; font-family: inherit; font-size: 12px; font-style: inherit; font-weight: 400; box-sizing: border-box;\"><span>차동 데이터 전송 형식</span></th><td style=\"margin: 0px; padding: 6px 0px 6px 10px; border: 0px currentcolor; vertical-align: top; list-style: none; zoom: 1; color: rgb(51, 51, 51); -webkit-font-smoothing: antialiased; text-size-adjust: 100%; font-style: inherit; font-size: 12px; line-height: 1.4em; font-family: inherit; outline: 0px; width: 342px; box-sizing: border-box; font-variant-numeric: normal !important; font-variant-east-asian: normal !important; font-stretch: normal !important;\"><span>RTCM 2.X / 3.X</span></td></tr></tbody></table><h3 class=\"section-title\" style=\"margin: 0px 0px 15px; padding: 0px; list-style: none; outline: 0px; border: 0px currentcolor; color: rgb(112, 116, 115); text-transform: uppercase; line-height: 1.1; font-family: Gotham, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, Arial, sans-serif; font-size: 20px; font-weight: 400; word-spacing: -1px; vertical-align: baseline; box-sizing: border-box;\"><span>관성 측정 장치</span></h3><table class=\"table-specs __se_tbl_ext\" style=\"width: 570px; border: 0px currentcolor; border-spacing: 0px; border-collapse: collapse; margin: 0px 0px 60px; padding: 0px; outline: 0px; color: rgb(112, 116, 115); font-family: \'Open Sans\', \'PingFang SC\', \'Microsoft YaHei\', \'Helvetica Neue\', \'Hiragino Sans GB\', \'WenQuanYi Micro Hei\', Arial, sans-serif; font-size: 14px; word-spacing: -1px; vertical-align: middle;\"><tbody style=\"margin: 0px; padding: 0px; outline: 0px; border: 0px currentcolor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline; box-sizing: border-box;\"><tr style=\"margin: 0px; padding: 0px; outline: 0px; border: 0px currentcolor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline; box-sizing: border-box;\"><th style=\"margin: 0px; padding: 6px 0px; border: 0px currentcolor; vertical-align: top; list-style: none; outline: 0px; width: 228px; text-align: left; color: rgb(68, 168, 242); line-height: 1.4em; font-family: inherit; font-size: 12px; font-style: inherit; font-weight: 400; box-sizing: border-box;\"><span>기능적 특성</span></th><td style=\"margin: 0px; padding: 6px 0px 6px 10px; border: 0px currentcolor; vertical-align: top; list-style: none; zoom: 1; color: rgb(51, 51, 51); -webkit-font-smoothing: antialiased; text-size-adjust: 100%; font-style: inherit; font-size: 12px; line-height: 1.4em; font-family: inherit; outline: 0px; width: 342px; box-sizing: border-box; font-variant-numeric: normal !important; font-variant-east-asian: normal !important; font-stretch: normal !important;\"><span>내장 된 고정밀 6 축 가속도계</span><br style=\"box-sizing: border-box;\"><span>D-RTK 2 모바일 모니터링</span><br style=\"box-sizing: border-box;\"><span>틸트 측정</span><br style=\"box-sizing: border-box;\"><span>전자 버블</span></td></tr></tbody></table><h3 class=\"section-title\" style=\"margin: 0px 0px 15px; padding: 0px; list-style: none; outline: 0px; border: 0px currentcolor; color: rgb(112, 116, 115); text-transform: uppercase; line-height: 1.1; font-family: Gotham, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, Arial, sans-serif; font-size: 20px; font-weight: 400; word-spacing: -1px; vertical-align: baseline; box-sizing: border-box;\"><span>물리적 특성</span></h3><table class=\"table-specs __se_tbl_ext\" style=\"width: 570px; border: 0px currentcolor; border-spacing: 0px; border-collapse: collapse; margin: 0px 0px 60px; padding: 0px; outline: 0px; color: rgb(112, 116, 115); font-family: \'Open Sans\', \'PingFang SC\', \'Microsoft YaHei\', \'Helvetica Neue\', \'Hiragino Sans GB\', \'WenQuanYi Micro Hei\', Arial, sans-serif; font-size: 14px; word-spacing: -1px; vertical-align: middle;\"><tbody style=\"margin: 0px; padding: 0px; outline: 0px; border: 0px currentcolor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline; box-sizing: border-box;\"><tr style=\"margin: 0px; padding: 0px; outline: 0px; border: 0px currentcolor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline; box-sizing: border-box;\"><th style=\"margin: 0px; padding: 6px 0px; border: 0px currentcolor; vertical-align: top; list-style: none; outline: 0px; width: 228px; text-align: left; color: rgb(68, 168, 242); line-height: 1.4em; font-family: inherit; font-size: 12px; font-style: inherit; font-weight: 400; box-sizing: border-box;\"><span>치수 (D-RTK 2 본체 + 연장로드)</span></th><td style=\"margin: 0px; padding: 6px 0px 6px 10px; border: 0px currentcolor; vertical-align: top; list-style: none; zoom: 1; color: rgb(51, 51, 51); -webkit-font-smoothing: antialiased; text-size-adjust: 100%; font-style: inherit; font-size: 12px; line-height: 1.4em; font-family: inherit; outline: 0px; width: 342px; box-sizing: border-box; font-variant-numeric: normal !important; font-variant-east-asian: normal !important; font-stretch: normal !important;\"><span>68mm × 168mm × 1708mm</span></td></tr><tr style=\"margin: 0px; padding: 0px; outline: 0px; border: 0px currentcolor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline; box-sizing: border-box;\"><th style=\"margin: 0px; padding: 6px 0px; border: 0px currentcolor; vertical-align: top; list-style: none; outline: 0px; width: 228px; text-align: left; color: rgb(68, 168, 242); line-height: 1.4em; font-family: inherit; font-size: 12px; font-style: inherit; font-weight: 400; box-sizing: border-box;\"><span>방진 및 방수</span></th><td style=\"margin: 0px; padding: 6px 0px 6px 10px; border: 0px currentcolor; vertical-align: top; list-style: none; zoom: 1; color: rgb(51, 51, 51); -webkit-font-smoothing: antialiased; text-size-adjust: 100%; font-style: inherit; font-size: 12px; line-height: 1.4em; font-family: inherit; outline: 0px; width: 342px; box-sizing: border-box; font-variant-numeric: normal !important; font-variant-east-asian: normal !important; font-stretch: normal !important;\"><span>IP67</span></td></tr></tbody></table><h3 class=\"section-title\" style=\"margin: 0px 0px 15px; padding: 0px; list-style: none; outline: 0px; border: 0px currentcolor; color: rgb(112, 116, 115); text-transform: uppercase; line-height: 1.1; font-family: Gotham, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, Arial, sans-serif; font-size: 20px; font-weight: 400; word-spacing: -1px; vertical-align: baseline; box-sizing: border-box;\"><span>통신 및 데이터 저장</span></h3><table class=\"table-specs __se_tbl_ext\" style=\"width: 570px; border: 0px currentcolor; border-spacing: 0px; border-collapse: collapse; margin: 0px 0px 60px; padding: 0px; outline: 0px; color: rgb(112, 116, 115); font-family: \'Open Sans\', \'PingFang SC\', \'Microsoft YaHei\', \'Helvetica Neue\', \'Hiragino Sans GB\', \'WenQuanYi Micro Hei\', Arial, sans-serif; font-size: 14px; word-spacing: -1px; vertical-align: middle;\"><tbody style=\"margin: 0px; padding: 0px; outline: 0px; border: 0px currentcolor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline; box-sizing: border-box;\"><tr style=\"margin: 0px; padding: 0px; outline: 0px; border: 0px currentcolor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline; box-sizing: border-box;\"><th style=\"margin: 0px; padding: 6px 0px; border: 0px currentcolor; vertical-align: top; list-style: none; outline: 0px; width: 228px; text-align: left; color: rgb(68, 168, 242); line-height: 1.4em; font-family: inherit; font-size: 12px; font-style: inherit; font-weight: 400; box-sizing: border-box;\"><span>데이터 링크</span></th><td style=\"margin: 0px; padding: 6px 0px 6px 10px; border: 0px currentcolor; vertical-align: top; list-style: none; zoom: 1; color: rgb(51, 51, 51); -webkit-font-smoothing: antialiased; text-size-adjust: 100%; font-style: inherit; font-size: 12px; line-height: 1.4em; font-family: inherit; outline: 0px; width: 342px; box-sizing: border-box; font-variant-numeric: normal !important; font-variant-east-asian: normal !important; font-stretch: normal !important;\"><span>OcuSync, Wi-Fi, LAN, 4G</span></td></tr><tr style=\"margin: 0px; padding: 0px; outline: 0px; border: 0px currentcolor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline; box-sizing: border-box;\"><th style=\"margin: 0px; padding: 6px 0px; border: 0px currentcolor; vertical-align: top; list-style: none; outline: 0px; width: 228px; text-align: left; color: rgb(68, 168, 242); line-height: 1.4em; font-family: inherit; font-size: 12px; font-style: inherit; font-weight: 400; box-sizing: border-box;\"><span>근무 빈도</span></th><td style=\"margin: 0px; padding: 6px 0px 6px 10px; border: 0px currentcolor; vertical-align: top; list-style: none; zoom: 1; color: rgb(51, 51, 51); -webkit-font-smoothing: antialiased; text-size-adjust: 100%; font-style: inherit; font-size: 12px; line-height: 1.4em; font-family: inherit; outline: 0px; width: 342px; box-sizing: border-box; font-variant-numeric: normal !important; font-variant-east-asian: normal !important; font-stretch: normal !important;\"><br style=\"box-sizing: border-box;\"><span><span>2.400GHz&nbsp;</span><span>~&nbsp;</span><span>2.48GHz&nbsp;</span><span>(중국, 미국, 호주, 유럽, 일본, 한국)</span><span>5.725GHz&nbsp;</span><span>~&nbsp;</span><span>5.850GHz (중국, 미국, 호주)</span></span></td></tr><tr style=\"margin: 0px; padding: 0px; outline: 0px; border: 0px currentcolor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline; box-sizing: border-box;\"><th style=\"margin: 0px; padding: 6px 0px; border: 0px currentcolor; vertical-align: top; list-style: none; outline: 0px; width: 228px; text-align: left; color: rgb(68, 168, 242); line-height: 1.4em; font-family: inherit; font-size: 12px; font-style: inherit; font-weight: 400; box-sizing: border-box;\"><span>동등한 등방성 복사 전력 (EIRP)</span></th><td style=\"margin: 0px; padding: 6px 0px 6px 10px; border: 0px currentcolor; vertical-align: top; list-style: none; zoom: 1; color: rgb(51, 51, 51); -webkit-font-smoothing: antialiased; text-size-adjust: 100%; font-style: inherit; font-size: 12px; line-height: 1.4em; font-family: inherit; outline: 0px; width: 342px; box-sizing: border-box; font-variant-numeric: normal !important; font-variant-east-asian: normal !important; font-stretch: normal !important;\"><span>OcuSync</span><br style=\"box-sizing: border-box;\"><span>2.4 GHz의</span><br style=\"box-sizing: border-box;\"><span>SRRC (중국) / CE (유럽) / MIC (일본) / KCC (한국) : &lt;20 dBm의</span><br style=\"box-sizing: border-box;\"><span>는 FCC의 (미국, 호주) / NCC (중국 대만) : &lt;26 dBm의</span><br style=\"box-sizing: border-box;\"><span>5.8 GHz의</span><br style=\"box-sizing: border-box;\"><span>SRRC (중국 본토) / NCC (중국 대만) / FCC (미국, 호주) : &lt;26 dBm의</span><br style=\"box-sizing: border-box;\"><span>와이파이</span><br style=\"box-sizing: border-box;\"><span>2.4 GHz의</span><br style=\"box-sizing: border-box;\"><span>SRRC (중국) / CE (유럽) / MIC (일본) / KCC (한국) : &lt;20 dBm의</span><br style=\"box-sizing: border-box;\"><span>는 FCC (미국, 호주) / NCC (대만, 중국) : &lt;26 dBm</span><br style=\"box-sizing: border-box;\"><span>5.8 GHz</span><br style=\"box-sizing: border-box;\"><span>SRRC (중국 본토) / NCC (대만, 중국) / FCC (미국, 호주) : &lt;22 dBm</span></td></tr><tr style=\"margin: 0px; padding: 0px; outline: 0px; border: 0px currentcolor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline; box-sizing: border-box;\"><th style=\"margin: 0px; padding: 6px 0px; border: 0px currentcolor; vertical-align: top; list-style: none; outline: 0px; width: 228px; text-align: left; color: rgb(68, 168, 242); line-height: 1.4em; font-family: inherit; font-size: 12px; font-style: inherit; font-weight: 400; box-sizing: border-box;\"><span>통신 거리</span></th><td style=\"margin: 0px; padding: 6px 0px 6px 10px; border: 0px currentcolor; vertical-align: top; list-style: none; zoom: 1; color: rgb(51, 51, 51); -webkit-font-smoothing: antialiased; text-size-adjust: 100%; font-style: inherit; font-size: 12px; line-height: 1.4em; font-family: inherit; outline: 0px; width: 342px; box-sizing: border-box; font-variant-numeric: normal !important; font-variant-east-asian: normal !important; font-stretch: normal !important;\"><span>OcuSync 2 km (탁 간섭, D-RTK 2 이동국 안테나 높이를 설정, 즉 삼각대의 단부가 1.8 m, 리모트 컨트롤러 내의 고저차는 2 m,지면으로부터 높이 원격 1.2 m)</span></td></tr><tr style=\"margin: 0px; padding: 0px; outline: 0px; border: 0px currentcolor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline; box-sizing: border-box;\"><th style=\"margin: 0px; padding: 6px 0px; border: 0px currentcolor; vertical-align: top; list-style: none; outline: 0px; width: 228px; text-align: left; color: rgb(68, 168, 242); line-height: 1.4em; font-family: inherit; font-size: 12px; font-style: inherit; font-weight: 400; box-sizing: border-box;\"><span>메모리 용량</span></th><td style=\"margin: 0px; padding: 6px 0px 6px 10px; border: 0px currentcolor; vertical-align: top; list-style: none; zoom: 1; color: rgb(51, 51, 51); -webkit-font-smoothing: antialiased; text-size-adjust: 100%; font-style: inherit; font-size: 12px; line-height: 1.4em; font-family: inherit; outline: 0px; width: 342px; box-sizing: border-box; font-variant-numeric: normal !important; font-variant-east-asian: normal !important; font-stretch: normal !important;\"><span>16GB</span></td></tr></tbody></table><h3 class=\"section-title\" style=\"margin: 0px 0px 15px; padding: 0px; list-style: none; outline: 0px; border: 0px currentcolor; color: rgb(112, 116, 115); text-transform: uppercase; line-height: 1.1; font-family: Gotham, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, Arial, sans-serif; font-size: 20px; font-weight: 400; word-spacing: -1px; vertical-align: baseline; box-sizing: border-box;\"><span>전기적 특성</span></h3><table class=\"table-specs __se_tbl_ext\" style=\"width: 570px; border: 0px currentcolor; border-spacing: 0px; border-collapse: collapse; margin: 0px 0px 60px; padding: 0px; outline: 0px; color: rgb(112, 116, 115); font-family: \'Open Sans\', \'PingFang SC\', \'Microsoft YaHei\', \'Helvetica Neue\', \'Hiragino Sans GB\', \'WenQuanYi Micro Hei\', Arial, sans-serif; font-size: 14px; word-spacing: -1px; vertical-align: middle;\"><tbody style=\"margin: 0px; padding: 0px; outline: 0px; border: 0px currentcolor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline; box-sizing: border-box;\"><tr style=\"margin: 0px; padding: 0px; outline: 0px; border: 0px currentcolor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline; box-sizing: border-box;\"><th style=\"margin: 0px; padding: 6px 0px; border: 0px currentcolor; vertical-align: top; list-style: none; outline: 0px; width: 228px; text-align: left; color: rgb(68, 168, 242); line-height: 1.4em; font-family: inherit; font-size: 12px; font-style: inherit; font-weight: 400; box-sizing: border-box;\"><span>소비 전력</span></th><td style=\"margin: 0px; padding: 6px 0px 6px 10px; border: 0px currentcolor; vertical-align: top; list-style: none; zoom: 1; color: rgb(51, 51, 51); -webkit-font-smoothing: antialiased; text-size-adjust: 100%; font-style: inherit; font-size: 12px; line-height: 1.4em; font-family: inherit; outline: 0px; width: 342px; box-sizing: border-box; font-variant-numeric: normal !important; font-variant-east-asian: normal !important; font-stretch: normal !important;\"><span>12W</span></td></tr><tr style=\"margin: 0px; padding: 0px; outline: 0px; border: 0px currentcolor; font-family: inherit; font-style: inherit; font-weight: inherit; vertical-align: baseline; box-sizing: border-box;\"><th style=\"margin: 0px; padding: 6px 0px; border: 0px currentcolor; vertical-align: top; list-style: none; outline: 0px; width: 228px; text-align: left; color: rgb(68, 168, 242); line-height: 1.4em; font-family: inherit; font-size: 12px; font-style: inherit; font-weight: 400; box-sizing: border-box;\"><span>전원 입력</span></th><td style=\"margin: 0px; padding: 6px 0px 6px 10px; border: 0px currentcolor; vertical-align: top; list-style: none; zoom: 1; color: rgb(51, 51, 51); -webkit-font-smoothing: antialiased; text-size-adjust: 100%; font-style: inherit; font-size: 12px; line-height: 1.4em; font-family: inherit; outline: 0px; width: 342px; box-sizing: border-box; font-variant-numeric: normal !important; font-variant-east-asian: normal !important; font-stretch: normal !important;\"><p><span>DC 16.5V ~ 58.8V</span></p><p><span><br></span></p><p><span><br></span></p><p><span><br></span></p><p><span><br></span></p><p><span><br></span></p></td></tr></tbody></table></div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[소형전자(전자기기)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[D-RTK 2 GNSS 모바일 스테이션]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[KC 인증 필 유무]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[정격전압, 소비전력]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[출시년월]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[DJI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="7"><stepData idx="1"><infoTitle><![CDATA[제조국]]></infoTitle><infoValue><![CDATA[중국]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="8"><stepData idx="1"><infoTitle><![CDATA[크기, 무게]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="9"><stepData idx="1"><infoTitle><![CDATA[주요 사양]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="10"><stepData idx="1"><infoTitle><![CDATA[품질보증기준]]></infoTitle><infoValue><![CDATA[제조사 품질보증 기준 및 소비자분쟁해결기준(공정거래위원회 고시)에 따름]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="11"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="4">
+<goodsNo>1000000282</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>매트리스300 RTK 젠뮤즈 H20T - 매트리스 300RTK</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002020|002019008001|002019008|002019|002|002019019</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p><br></p><div><b><span style=\"font-size: 14pt; font-family: 나눔명조, NanumMyeongjo; background-color: rgb(255, 232, 232);\"><br></span></b></div><div><b><span style=\"font-size: 14pt; font-family: 나눔명조, NanumMyeongjo; background-color: rgb(255, 232, 232);\"><br></span></b></div><div><p align=\"center\" style=\"text-align: center; background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 돋움, Dotum;\"><b>안녕하세요 드론박스입니다.</b></span></span></p><p align=\"center\" style=\"text-align: center; background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 돋움, Dotum;\"><b>엔터프라이즈 자주 묻는 질문을 올려드립니다.</b></span></span></p><p align=\"center\" style=\"text-align: center; background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px;\"><b><br></b></span></span></p><p align=\"center\" style=\"text-align: center; background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 돋움, Dotum;\"><b>FAQ</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px;\"><b><br></b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 돋움, Dotum;\"><b>1. 정품이여서 AS가 가능한가요?</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 돋움, Dotum;\"><b>- DJI 국내수입 된 미개봉 정품으로 DJI AS서비스를 받으실 수 있습니다.</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px;\"><b><br></b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 돋움, Dotum;\"><b>2. 4종 자격증을 취득해야나요?&nbsp;</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 돋움, Dotum;\"><b>- 250g 넘는 드론은 4종 자격을 의무적으로 취득해야 합니다.</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 돋움, Dotum;\"><b>- 2KG이 넘는 드론은 3종 자격을 의무적으로 취득해야 합니다.&nbsp;</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 돋움, Dotum;\"><b>- 자세한 경로는 드론박스 메인 &gt; 추천 컨텐츠 &gt; 4종 자격증 신청방법을 참조바랍니다.</b></span></span></p><p align=\"center\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: 돋움, Dotum;\">&nbsp;</span></p><p align=\"center\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: 돋움, Dotum;\">&nbsp;</span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 돋움, Dotum;\"><b>3. 아무 메모리 카드만 끼워도 되나요?&nbsp;</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 돋움, Dotum;\"><b>- 권장하는 샌디스크 EXTREM 메모리카드를 끼우셔야 4K 까지 촬영이 가능합니다.</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: 돋움, Dotum;\">&nbsp;</span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 돋움, Dotum;\"><b>4. 앱을 어떻게 다운 받나요?&nbsp;</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 돋움, Dotum;\"><b>- 상품별로 상이하며 엔터프라이즈 상품의 경우 별도로 안내를 드리고 있습니다.&nbsp;</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px;\"><b><br></b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 돋움, Dotum;\"><b>6. 한글 지원은 되나요?&nbsp;</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 돋움, Dotum;\"><b>- 대다수의 상품이 가능하나 불가한 상품도 있으니 별도로 문의바라겠습니다.</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><b style=\"font-family: 나눔명조, NanumMyeongjo; font-size: 24px; color: rgb(17, 17, 17);\"><br></b></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><b style=\"font-family: 나눔명조, NanumMyeongjo; font-size: 24px; color: rgb(17, 17, 17);\"><span style=\"font-family: 돋움, Dotum;\">7. 그 외의 궁금하신 사항은 드론박스 고객센터로 문의바라겠습니다.&nbsp;</span></b></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><b style=\"font-family: 나눔명조, NanumMyeongjo; font-size: 24px; color: rgb(17, 17, 17);\"><br></b></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><b style=\"font-family: 나눔명조, NanumMyeongjo; font-size: 24px; color: rgb(17, 17, 17);\"><span style=\"font-family: 돋움, Dotum;\"> </span></b></p></div><p><span style=\"font-family: 돋움, Dotum;\">&nbsp;</span></p><p><img src=\"http://dronetr7262.godomall.com/data/editor/goods/210405/06f4b44f35a3047a139a557033e76c1d_104639.jpg\" title=\"06f4b44f35a3047a139a557033e76c1d_104639.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"><span style=\"font-family: 돋움, Dotum;\">&nbsp;</span></p>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<seoTagTitle><![CDATA[DJI 젠뮤즈 H20T (Zenmuse H20T) 매트리스 300 RTK용]]></seoTagTitle>
+<seoTagDescription><![CDATA[DJI 매트리스 300 RTK용 젠뮤즈 H20T 짐벌 카메라. 줌·광각 카메라와 레이저 거리 측정기에 열화상(서멀) 카메라를 더했습니다. DJI 정품만 판매하는 드론박스.]]></seoTagDescription>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[소형전자(전자기기)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[매트리스300 RTK 젠뮤즈 H20T - 매트리스 300RTK]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[KC 인증 필 유무]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[정격전압, 소비전력]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[출시년월]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[DJI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="7"><stepData idx="1"><infoTitle><![CDATA[제조국]]></infoTitle><infoValue><![CDATA[중국]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="8"><stepData idx="1"><infoTitle><![CDATA[크기, 무게]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="9"><stepData idx="1"><infoTitle><![CDATA[주요 사양]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="10"><stepData idx="1"><infoTitle><![CDATA[품질보증기준]]></infoTitle><infoValue><![CDATA[제조사 품질보증 기준 및 소비자분쟁해결기준(공정거래위원회 고시)에 따름]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="11"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="5">
+<goodsNo>1000000281</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>매트리스300 RTK 젠뮤즈 H20 - 매트릭스 300RTK</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002020|002019008001|002019008|002019|002|002019019</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p><br></p><div><b><span style=\"font-size: 14pt; font-family: 나눔명조, NanumMyeongjo; background-color: rgb(255, 232, 232);\"><br></span></b></div><div><p align=\"center\" style=\"text-align: center; background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 나눔명조, NanumMyeongjo;\"><b>안녕하세요 드론박스입니다.</b></span></span></p><p align=\"center\" style=\"text-align: center; background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 나눔명조, NanumMyeongjo;\"><b>엔터프라이즈 자주 묻는 질문을 올려드립니다.</b></span></span></p><p align=\"center\" style=\"text-align: center; background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px;\"><b><br></b></span></span></p><p align=\"center\" style=\"text-align: center; background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 나눔명조, NanumMyeongjo;\"><b>FAQ</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px;\"><b><br></b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 나눔명조, NanumMyeongjo;\"><b>1. 정품이여서 AS가 가능한가요?</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 나눔명조, NanumMyeongjo;\"><b>- DJI 국내수입 된 미개봉 정품으로 DJI AS서비스를 받으실 수 있습니다.</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px;\"><b><br></b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 나눔명조, NanumMyeongjo;\"><b>2. 4종 자격증을 취득해야나요?&nbsp;</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 나눔명조, NanumMyeongjo;\"><b>- 250g 넘는 드론은 4종 자격을 의무적으로 취득해야 합니다.</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 나눔명조, NanumMyeongjo;\"><b>- 2KG이 넘는 드론은 3종 자격을 의무적으로 취득해야 합니다.&nbsp;</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 나눔명조, NanumMyeongjo;\"><b>- 자세한 경로는 드론박스 메인 &gt; 추천 컨텐츠 &gt; 4종 자격증 신청방법을 참조바랍니다.</b></span></span></p><p align=\"center\" style=\"background-color: rgb(255, 255, 255);\">&nbsp;</p><p align=\"center\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: 나눔명조, NanumMyeongjo;\">&nbsp;</span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 나눔명조, NanumMyeongjo;\"><b>3. 아무 메모리 카드만 끼워도 되나요?&nbsp;</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 나눔명조, NanumMyeongjo;\"><b>- 권장하는 샌디스크 EXTREM 메모리카드를 끼우셔야 4K 까지 촬영이 가능합니다.</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: 나눔명조, NanumMyeongjo;\">&nbsp;</span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 나눔명조, NanumMyeongjo;\"><b>4. 앱을 어떻게 다운 받나요?&nbsp;</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 나눔명조, NanumMyeongjo;\"><b>- 상품별로 상이하며 엔터프라이즈 상품의 경우 별도로 안내를 드리고 있습니다.&nbsp;</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px;\"><b><br></b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 나눔명조, NanumMyeongjo;\"><b>6. 한글 지원은 되나요?&nbsp;</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 나눔명조, NanumMyeongjo;\"><b>- 대다수의 상품이 가능하나 불가한 상품도 있으니 별도로 문의바라겠습니다.</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><b style=\"font-family: 나눔명조, NanumMyeongjo; font-size: 24px; color: rgb(17, 17, 17);\"><br></b></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><b style=\"font-family: 나눔명조, NanumMyeongjo; font-size: 24px; color: rgb(17, 17, 17);\">7. 그 외의 궁금하신 사항은 드론박스 고객센터로 문의바라겠습니다.&nbsp;</b></p></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/210405/06f4b44f35a3047a139a557033e76c1d_094217.jpg\" title=\"06f4b44f35a3047a139a557033e76c1d_094217.jpg\" class=\"js-smart-img\"></div>&nbsp;<p>&nbsp;</p>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<kcmarkInfo><![CDATA[{"0": {"kcmarkDt": "2020-05-06", "kcmarkFl": "y", "kcmarkNo": "R-R-dji-ZH20", "kcmarkDivFl": "kcCd05"}}]]></kcmarkInfo>
+<seoTagTitle><![CDATA[DJI 젠뮤즈 H20 (Zenmuse H20) 매트리스 300 RTK용]]></seoTagTitle>
+<seoTagDescription><![CDATA[DJI 매트리스 300 RTK용 젠뮤즈 H20 짐벌 카메라. 줌 카메라·광각 카메라·레이저 거리 측정기를 하나로 묶었습니다. DJI 정품만 판매하는 드론박스.]]></seoTagDescription>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[소형전자(전자기기)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[매트리스300 RTK 젠뮤즈 H20 - 매트릭스 300RTK]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[KC 인증 필 유무]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[정격전압, 소비전력]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[출시년월]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[DJI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="7"><stepData idx="1"><infoTitle><![CDATA[제조국]]></infoTitle><infoValue><![CDATA[중국]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="8"><stepData idx="1"><infoTitle><![CDATA[크기, 무게]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="9"><stepData idx="1"><infoTitle><![CDATA[주요 사양]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="10"><stepData idx="1"><infoTitle><![CDATA[품질보증기준]]></infoTitle><infoValue><![CDATA[제조사 품질보증 기준 및 소비자분쟁해결기준(공정거래위원회 고시)에 따름]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="11"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="6">
+<goodsNo>1000000262</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI Avata 2 양방향 충전 허브(아바타2)</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002|002019|002019003</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>y</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>y</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p><img src=\"http://dronetr7262.godomall.com/data/editor/goods/241024/796e993ee8936df4a24fa050eae75465_144739.jpg\" title=\"796e993ee8936df4a24fa050eae75465_144739.jpg\" class=\"js-smart-img\"> </p><div class=\"style__temp-specs-tr___FKseD\" style=\"padding: 0px; margin: 0px 0px 20px; box-sizing: inherit; letter-spacing: -0.32px; border: 0px; font-size: 16px; vertical-align: baseline; background: 0px 0px rgb(255, 255, 255); color: rgb(59, 62, 64); font-family: &quot;Open Sans&quot;, blinkmacsystemfont, &quot;Segoe UI&quot;, roboto, &quot;Helvetica Neue&quot;, helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, simsun, sans-serif;\"><div class=\"style__name___56hU3\" style=\"padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; vertical-align: baseline; background: 0px 0px; line-height: 20px;\">개요</div><div class=\"style__value___QYH7G\" style=\"padding: 0px; margin: 8px 0px 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 14px; vertical-align: baseline; background: 0px 0px; color: rgba(0, 0, 0, 0.65); line-height: 20px;\"><p style=\"margin-top: 8px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;\">배터리를 보관, 충전하고 전하 축적 기능을 제공합니다. DJI 65W 휴대용 충전기와 함께 사용하면, 인텔리전트 플라이트 배터리를 완전히 충전하는 데 단 45분이면 충분합니다. 배터리 3개를 순차적으로 충전할 수 있어 1개씩 충전하는 불편함을 없앴죠. 휴대용 보조 배터리로써 DJI Goggles 및 스마트폰과 같은 기기를 충전할 수도 있습니다.</p></div></div><div class=\"style__temp-specs-tr___FKseD\" style=\"padding: 0px; margin: 0px 0px 20px; box-sizing: inherit; letter-spacing: -0.32px; border: 0px; font-size: 16px; vertical-align: baseline; background: 0px 0px rgb(255, 255, 255); color: rgb(59, 62, 64); font-family: &quot;Open Sans&quot;, blinkmacsystemfont, &quot;Segoe UI&quot;, roboto, &quot;Helvetica Neue&quot;, helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, simsun, sans-serif;\"><div class=\"style__name___56hU3\" style=\"padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; vertical-align: baseline; background: 0px 0px; line-height: 20px;\">구성품</div><div class=\"style__value___QYH7G\" style=\"padding: 0px; margin: 8px 0px 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 14px; vertical-align: baseline; background: 0px 0px; color: rgba(0, 0, 0, 0.65); line-height: 20px;\"><p style=\"margin-top: 8px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;\">‌DJI Avata 2 양방향 충전 허브 × 1</p></div></div><div class=\"style__temp-specs-tr___FKseD\" style=\"padding: 0px; margin: 0px 0px 20px; box-sizing: inherit; letter-spacing: -0.32px; border: 0px; font-size: 16px; vertical-align: baseline; background: 0px 0px rgb(255, 255, 255); color: rgb(59, 62, 64); font-family: &quot;Open Sans&quot;, blinkmacsystemfont, &quot;Segoe UI&quot;, roboto, &quot;Helvetica Neue&quot;, helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, simsun, sans-serif;\"><div class=\"style__name___56hU3\" style=\"padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; vertical-align: baseline; background: 0px 0px; line-height: 20px;\">사양</div><div class=\"style__value___QYH7G\" style=\"padding: 0px; margin: 8px 0px 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 14px; vertical-align: baseline; background: 0px 0px; color: rgba(0, 0, 0, 0.65); line-height: 20px;\"><p style=\"margin-top: 8px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;\">입력: 5~20 V, 최대 3 A</p><p style=\"margin-top: 8px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;\">입력 (전하 축적): 최대 65 W</p><p style=\"margin-top: 8px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;\">출력 (충전): 최대 17 V</p><p style=\"margin-top: 8px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;\">출력 (USB): 5 V ⎓ 2 A</p><p style=\"margin-top: 8px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;\">충전 방법: 3개 배터리를 순차적으로 충전</p><p style=\"margin-top: 8px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;\">권장 충전기: DJI 65W 휴대용 충전기, DJI 65W 차량용 충전기 또는 기타 USB PD 충전기</p></div></div><div class=\"style__temp-specs-tr___FKseD\" style=\"padding: 0px; margin: 0px 0px 20px; box-sizing: inherit; letter-spacing: -0.32px; border: 0px; font-size: 16px; vertical-align: baseline; background: 0px 0px rgb(255, 255, 255); color: rgb(59, 62, 64); font-family: &quot;Open Sans&quot;, blinkmacsystemfont, &quot;Segoe UI&quot;, roboto, &quot;Helvetica Neue&quot;, helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, simsun, sans-serif;\"><div class=\"style__name___56hU3\" style=\"padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; vertical-align: baseline; background: 0px 0px; line-height: 20px;\">호환 제품</div><div class=\"style__value___QYH7G\" style=\"padding: 0px; margin: 8px 0px 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 14px; vertical-align: baseline; background: 0px 0px; color: rgba(0, 0, 0, 0.65); line-height: 20px;\"><p style=\"margin-top: 8px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;\">DJI Avata 2</p></div></div><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<kcmarkInfo><![CDATA[{"0": {"kcmarkDt": "2024-02-06", "kcmarkFl": "y", "kcmarkNo": "R-R-dji-CHX520", "kcmarkDivFl": "kcCd05"}}]]></kcmarkInfo>
+<brandCd><![CDATA[001]]></brandCd>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[소형전자(전자기기)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[DJI Avata 2 양방향 충전 허브(아바타2)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[KC 인증 필 유무]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[정격전압, 소비전력]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[출시년월]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[DJI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="7"><stepData idx="1"><infoTitle><![CDATA[제조국]]></infoTitle><infoValue><![CDATA[중국]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="8"><stepData idx="1"><infoTitle><![CDATA[크기, 무게]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="9"><stepData idx="1"><infoTitle><![CDATA[주요 사양]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="10"><stepData idx="1"><infoTitle><![CDATA[품질보증기준]]></infoTitle><infoValue><![CDATA[제조사 품질보증 기준 및 소비자분쟁해결기준(공정거래위원회 고시)에 따름]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="11"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="7">
+<goodsNo>1000000199</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>[정품-당일발송] 로닌 R 트위스트 그립 듀얼 핸들(Twist Grip Dual Handle)</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019007|002|002019</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p style=\"text-align: center;\" align=\"right\"><span style=\"font-size: 36pt; font-family: 나눔명조, NanumMyeongjo;\"><b>RS2 / RSC2 / RS3 / RSC3&nbsp;</b></span></p><p style=\"text-align: center;\" align=\"right\"><b><span style=\"font-size: 36pt; font-family: 나눔명조, NanumMyeongjo;\">사용이 가능합니다.</span><span style=\"font-family: 나눔명조, NanumMyeongjo; font-size: 36pt;\">&nbsp;</span></b></p><p style=\"text-align: center;\" align=\"right\"><span style=\"font-family: 나눔명조, NanumMyeongjo;\"><span style=\"font-size: 48px;\"><b>재고보유 당일발송</b></span></span></p><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/210329/4_105645.jpg\" title=\"4_105645.jpg\" class=\"js-smart-img\"></div>&nbsp;<p>&nbsp;</p><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[기타 재화]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[로닌 R 트위스트 그립 듀얼 핸들(Twist Grip Dual Handle)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[법에 의한 인증·허가 등을 받았음을 확인할 수 있는 경우 그에 대한 사항]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[제조국 또는 원산지]]></infoTitle><infoValue><![CDATA[중국]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[DJI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="8">
+<goodsNo>1000000173</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>[정품-당일발송] 매빅에어2 보험- 만료 후 재가입 Care Refresh + (Mavic Air 2) KR</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>001|002019001|002019001010|002|002019</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p>&nbsp;</p><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/210329/6_095330.jpg\" title=\"6_095330.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><br></div><div style=\"text-align: center;\" align=\"center\"><br></div><div style=\"text-align: center;\" align=\"center\">&nbsp;</div><p>&nbsp;</p><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<brandCd><![CDATA[001]]></brandCd>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[기타 용역(제조사 보증·파손 보상 서비스)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[상품명]]></infoTitle><infoValue><![CDATA[매빅에어2 보험- 만료 후 재가입 Care Refresh + (Mavic Air 2) KR]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[서비스 제공 사업자]]></infoTitle><infoValue><![CDATA[DJI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[법에 의한 인증·허가 등]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[이용조건]]></infoTitle><infoValue><![CDATA[대상 기종·기간은 상품명 및 상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[취소·중도해약·해지 조건 및 환불기준]]></infoTitle><infoValue><![CDATA[교환 및 반품안내 및 상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="7"><stepData idx="1"><infoTitle><![CDATA[취소·환불방법]]></infoTitle><infoValue><![CDATA[교환 및 반품안내 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="8"><stepData idx="1"><infoTitle><![CDATA[소비자상담 관련 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="9">
+<goodsNo>1000000172</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>[당일발송-정품] DJI 매빅에어2 보험- Care Refresh (Mavic Air 2) KR</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>001|002019001|002019001010|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p>&nbsp;</p><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/210329/4_094628.jpg\" title=\"4_094628.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><br></div><div style=\"text-align: center;\" align=\"center\">&nbsp;</div><p>&nbsp;</p>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<brandCd><![CDATA[001]]></brandCd>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[기타 용역(제조사 보증·파손 보상 서비스)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[상품명]]></infoTitle><infoValue><![CDATA[DJI 매빅에어2 보험- Care Refresh (Mavic Air 2) KR]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[서비스 제공 사업자]]></infoTitle><infoValue><![CDATA[DJI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[법에 의한 인증·허가 등]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[이용조건]]></infoTitle><infoValue><![CDATA[대상 기종·기간은 상품명 및 상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[취소·중도해약·해지 조건 및 환불기준]]></infoTitle><infoValue><![CDATA[교환 및 반품안내 및 상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="7"><stepData idx="1"><infoTitle><![CDATA[취소·환불방법]]></infoTitle><infoValue><![CDATA[교환 및 반품안내 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="8"><stepData idx="1"><infoTitle><![CDATA[소비자상담 관련 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="10">
+<goodsNo>1000000114</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 매빅2 엔터프라이즈 배터리 (매빅2 시리즈, 매빅2 엔터프라이즈 호환)</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019001|002019001018|002019|002|002019001017|002019001016</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>y</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>a</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<!-- 매빅2 엔터프라이즈 인텔리전트 플라이트 배터리 — 상세설명 (2026-09-15). JSON-LD 없음, 마이크로데이터만. -->\r\n<div style=\"max-width:860px; margin:0 auto; font-family:inherit; color:#191F28; line-height:1.7;\">\r\n\r\n<div style=\"text-align:center; padding:40px 0 24px;\">\r\n  <p style=\"font-size:14px; color:#6B7684; margin:0 0 6px;\">DJI Mavic 2 Enterprise</p>\r\n  <h2 style=\"font-size:30px; font-weight:700; margin:0 0 4px;\">매빅2 엔터프라이즈</h2>\r\n  <p style=\"font-size:20px; color:#333D4B; margin:0;\">인텔리전트 플라이트 배터리</p>\r\n</div>\r\n\r\n<h3 style=\"font-size:20px; font-weight:700; margin:36px 0 12px; border-bottom:2px solid #E3E6EB; padding-bottom:8px;\">제품 설명</h3>\r\n<p style=\"font-size:15px; color:#333D4B; margin:0 0 12px;\">\r\n매빅 2 엔터프라이즈의 인텔리전트 플라이트 배터리는 최대 용량 59.29 Wh로 최대 비행 시간 31분을 제공합니다.\r\n영하의 온도에서도 작동하는 자체 발열 배터리로, 까다로운 기후 조건에서도 안정적인 비행이 가능합니다.\r\n내장된 DJI 인텔리전트 배터리 관리 시스템이 배터리 상태를 실시간으로 모니터링하고 보고하므로,\r\n배터리 잔량에 신경 쓸 필요 없이 비행에 집중할 수 있습니다.\r\n</p>\r\n\r\n<div style=\"text-align:center; margin:40px 0;\">\r\n  <p style=\"font-size:26px; font-weight:700; margin:0;\">혹한의 환경에서도 작동하는<br>자체 발열 배터리</p>\r\n  <p style=\"font-size:15px; color:#6B7684; margin:10px 0 0;\">-10°C ~ 6°C 구간에서 수동 또는 자동으로 발열해 저온 비행을 지원합니다.</p>\r\n</div>\r\n\r\n<h3 style=\"font-size:20px; font-weight:700; margin:36px 0 12px; border-bottom:2px solid #E3E6EB; padding-bottom:8px;\">주요 스펙</h3>\r\n<table style=\"border-collapse:collapse; width:100%; font-size:15px;\">\r\n  <tr><th style=\"padding:10px 14px; border:1px solid #E3E6EB; text-align:left; background:#F7F8FA; width:34%;\">용량</th><td style=\"padding:10px 14px; border:1px solid #E3E6EB;\">3850 mAh</td></tr>\r\n  <tr><th style=\"padding:10px 14px; border:1px solid #E3E6EB; text-align:left; background:#F7F8FA;\">전압</th><td style=\"padding:10px 14px; border:1px solid #E3E6EB;\">15.4 V</td></tr>\r\n  <tr><th style=\"padding:10px 14px; border:1px solid #E3E6EB; text-align:left; background:#F7F8FA;\">최대 충전 전압</th><td style=\"padding:10px 14px; border:1px solid #E3E6EB;\">17.6 V</td></tr>\r\n  <tr><th style=\"padding:10px 14px; border:1px solid #E3E6EB; text-align:left; background:#F7F8FA;\">배터리 유형</th><td style=\"padding:10px 14px; border:1px solid #E3E6EB;\">LiPo</td></tr>\r\n  <tr><th style=\"padding:10px 14px; border:1px solid #E3E6EB; text-align:left; background:#F7F8FA;\">에너지</th><td style=\"padding:10px 14px; border:1px solid #E3E6EB;\">59.29 Wh</td></tr>\r\n  <tr><th style=\"padding:10px 14px; border:1px solid #E3E6EB; text-align:left; background:#F7F8FA;\">순 중량</th><td style=\"padding:10px 14px; border:1px solid #E3E6EB;\">297 g</td></tr>\r\n  <tr><th style=\"padding:10px 14px; border:1px solid #E3E6EB; text-align:left; background:#F7F8FA;\">충전 온도</th><td style=\"padding:10px 14px; border:1px solid #E3E6EB;\">5°C ~ 40°C</td></tr>\r\n  <tr><th style=\"padding:10px 14px; border:1px solid #E3E6EB; text-align:left; background:#F7F8FA;\">작동 온도 범위</th><td style=\"padding:10px 14px; border:1px solid #E3E6EB;\">-10°C ~ 40°C</td></tr>\r\n  <tr><th style=\"padding:10px 14px; border:1px solid #E3E6EB; text-align:left; background:#F7F8FA;\">발열 방식</th><td style=\"padding:10px 14px; border:1px solid #E3E6EB;\">수동 발열 · 자동 발열</td></tr>\r\n  <tr><th style=\"padding:10px 14px; border:1px solid #E3E6EB; text-align:left; background:#F7F8FA;\">발열 온도</th><td style=\"padding:10px 14px; border:1px solid #E3E6EB;\">-10°C ~ 6°C</td></tr>\r\n  <tr><th style=\"padding:10px 14px; border:1px solid #E3E6EB; text-align:left; background:#F7F8FA;\">발열 기간</th><td style=\"padding:10px 14px; border:1px solid #E3E6EB;\">최대 500초</td></tr>\r\n  <tr><th style=\"padding:10px 14px; border:1px solid #E3E6EB; text-align:left; background:#F7F8FA;\">발열 전력</th><td style=\"padding:10px 14px; border:1px solid #E3E6EB;\">최대 55 W</td></tr>\r\n  <tr><th style=\"padding:10px 14px; border:1px solid #E3E6EB; text-align:left; background:#F7F8FA;\">충전 시간</th><td style=\"padding:10px 14px; border:1px solid #E3E6EB;\">90분</td></tr>\r\n  <tr><th style=\"padding:10px 14px; border:1px solid #E3E6EB; text-align:left; background:#F7F8FA;\">최대 충전 전력</th><td style=\"padding:10px 14px; border:1px solid #E3E6EB;\">80 W</td></tr>\r\n  <tr><th style=\"padding:10px 14px; border:1px solid #E3E6EB; text-align:left; background:#F7F8FA;\">최대 비행 시간</th><td style=\"padding:10px 14px; border:1px solid #E3E6EB;\">31분</td></tr>\r\n</table>\r\n\r\n<h3 style=\"font-size:20px; font-weight:700; margin:36px 0 12px; border-bottom:2px solid #E3E6EB; padding-bottom:8px;\">호환 제품</h3>\r\n<ul style=\"font-size:15px; color:#333D4B; margin:0; padding-left:20px;\">\r\n  <li>매빅 2 엔터프라이즈 (Mavic 2 Enterprise / Enterprise Dual / Enterprise Advanced)</li>\r\n  <li>매빅 2 Pro</li>\r\n  <li>매빅 2 Zoom</li>\r\n  <li>매빅 2 충전기</li>\r\n  <li>매빅 2 차량용 충전기</li>\r\n  <li>매빅 2 충전 허브</li>\r\n  <li>매빅 2 배터리용 보조 배터리 어댑터</li>\r\n</ul>\r\n\r\n<h3 style=\"font-size:20px; font-weight:700; margin:36px 0 12px; border-bottom:2px solid #E3E6EB; padding-bottom:8px;\">자주 묻는 질문</h3>\r\n<div itemscope itemtype=\"https://schema.org/FAQPage\">\r\n  <div itemscope itemprop=\"mainEntity\" itemtype=\"https://schema.org/Question\" style=\"margin-bottom:16px;\">\r\n    <p itemprop=\"name\" style=\"font-weight:700; font-size:16px; margin:0 0 6px;\">Q. 일반 매빅 2 배터리와 무엇이 다른가요?</p>\r\n    <div itemscope itemprop=\"acceptedAnswer\" itemtype=\"https://schema.org/Answer\"><p itemprop=\"text\" style=\"font-size:15px; color:#333D4B; margin:0;\">A. 용량(3850 mAh)과 비행 시간(31분)은 같지만, 엔터프라이즈 배터리는 자체 발열 기능이 있어 -10°C의 저온에서도 비행할 수 있습니다. 매빅 2 Pro·Zoom에도 장착됩니다.</p></div>\r\n  </div>\r\n  <div itemscope itemprop=\"mainEntity\" itemtype=\"https://schema.org/Question\" style=\"margin-bottom:16px;\">\r\n    <p itemprop=\"name\" style=\"font-weight:700; font-size:16px; margin:0 0 6px;\">Q. 자체 발열은 어떻게 작동하나요?</p>\r\n    <div itemscope itemprop=\"acceptedAnswer\" itemtype=\"https://schema.org/Answer\"><p itemprop=\"text\" style=\"font-size:15px; color:#333D4B; margin:0;\">A. 배터리 온도가 -10°C ~ 6°C 구간이면 자동으로 발열하고, 전원 버튼을 길게 눌러 수동으로 켤 수도 있습니다. 발열은 최대 500초, 최대 55 W로 이루어집니다.</p></div>\r\n  </div>\r\n  <div itemscope itemprop=\"mainEntity\" itemtype=\"https://schema.org/Question\" style=\"margin-bottom:16px;\">\r\n    <p itemprop=\"name\" style=\"font-weight:700; font-size:16px; margin:0 0 6px;\">Q. 충전은 얼마나 걸리나요?</p>\r\n    <div itemscope itemprop=\"acceptedAnswer\" itemtype=\"https://schema.org/Answer\"><p itemprop=\"text\" style=\"font-size:15px; color:#333D4B; margin:0;\">A. 매빅 2 정품 충전기 기준 약 90분입니다. 충전은 5°C ~ 40°C에서 해야 하며, 저온에서는 발열 후 충전됩니다.</p></div>\r\n  </div>\r\n  <div itemscope itemprop=\"mainEntity\" itemtype=\"https://schema.org/Question\" style=\"margin-bottom:16px;\">\r\n    <p itemprop=\"name\" style=\"font-weight:700; font-size:16px; margin:0 0 6px;\">Q. 정품이며 A/S가 되나요?</p>\r\n    <div itemscope itemprop=\"acceptedAnswer\" itemtype=\"https://schema.org/Answer\"><p itemprop=\"text\" style=\"font-size:15px; color:#333D4B; margin:0;\">A. DJI 정품입니다. 드론박스 고객센터를 통해 점검과 A/S 접수가 가능하며, 공공기관·기업 납품 서류도 발급됩니다.</p></div>\r\n  </div>\r\n</div>\r\n\r\n<p style=\"font-size:13px; color:#8B95A1; margin:32px 0 0;\">2026년 9월 작성 · 사양은 DJI 공식 자료 기준</p>\r\n</div>]]></goodsDescription>
+<goodsDescriptionSameFl>n</goodsDescriptionSameFl>
+<goodsDescriptionMobile><![CDATA[<!-- 매빅2 엔터프라이즈 인텔리전트 플라이트 배터리 — 상세설명 (2026-09-15). JSON-LD 없음, 마이크로데이터만. -->\r\n<div style=\"max-width:860px; margin:0 auto; font-family:inherit; color:#191F28; line-height:1.7;\">\r\n\r\n<div style=\"text-align:center; padding:40px 0 24px;\">\r\n  <p style=\"font-size:14px; color:#6B7684; margin:0 0 6px;\">DJI Mavic 2 Enterprise</p>\r\n  <h2 style=\"font-size:30px; font-weight:700; margin:0 0 4px;\">매빅2 엔터프라이즈</h2>\r\n  <p style=\"font-size:20px; color:#333D4B; margin:0;\">인텔리전트 플라이트 배터리</p>\r\n</div>\r\n\r\n<h3 style=\"font-size:20px; font-weight:700; margin:36px 0 12px; border-bottom:2px solid #E3E6EB; padding-bottom:8px;\">제품 설명</h3>\r\n<p style=\"font-size:15px; color:#333D4B; margin:0 0 12px;\">\r\n매빅 2 엔터프라이즈의 인텔리전트 플라이트 배터리는 최대 용량 59.29 Wh로 최대 비행 시간 31분을 제공합니다.\r\n영하의 온도에서도 작동하는 자체 발열 배터리로, 까다로운 기후 조건에서도 안정적인 비행이 가능합니다.\r\n내장된 DJI 인텔리전트 배터리 관리 시스템이 배터리 상태를 실시간으로 모니터링하고 보고하므로,\r\n배터리 잔량에 신경 쓸 필요 없이 비행에 집중할 수 있습니다.\r\n</p>\r\n\r\n<div style=\"text-align:center; margin:40px 0;\">\r\n  <p style=\"font-size:26px; font-weight:700; margin:0;\">혹한의 환경에서도 작동하는<br>자체 발열 배터리</p>\r\n  <p style=\"font-size:15px; color:#6B7684; margin:10px 0 0;\">-10°C ~ 6°C 구간에서 수동 또는 자동으로 발열해 저온 비행을 지원합니다.</p>\r\n</div>\r\n\r\n<h3 style=\"font-size:20px; font-weight:700; margin:36px 0 12px; border-bottom:2px solid #E3E6EB; padding-bottom:8px;\">주요 스펙</h3>\r\n<table style=\"border-collapse:collapse; width:100%; font-size:15px;\">\r\n  <tr><th style=\"padding:10px 14px; border:1px solid #E3E6EB; text-align:left; background:#F7F8FA; width:34%;\">용량</th><td style=\"padding:10px 14px; border:1px solid #E3E6EB;\">3850 mAh</td></tr>\r\n  <tr><th style=\"padding:10px 14px; border:1px solid #E3E6EB; text-align:left; background:#F7F8FA;\">전압</th><td style=\"padding:10px 14px; border:1px solid #E3E6EB;\">15.4 V</td></tr>\r\n  <tr><th style=\"padding:10px 14px; border:1px solid #E3E6EB; text-align:left; background:#F7F8FA;\">최대 충전 전압</th><td style=\"padding:10px 14px; border:1px solid #E3E6EB;\">17.6 V</td></tr>\r\n  <tr><th style=\"padding:10px 14px; border:1px solid #E3E6EB; text-align:left; background:#F7F8FA;\">배터리 유형</th><td style=\"padding:10px 14px; border:1px solid #E3E6EB;\">LiPo</td></tr>\r\n  <tr><th style=\"padding:10px 14px; border:1px solid #E3E6EB; text-align:left; background:#F7F8FA;\">에너지</th><td style=\"padding:10px 14px; border:1px solid #E3E6EB;\">59.29 Wh</td></tr>\r\n  <tr><th style=\"padding:10px 14px; border:1px solid #E3E6EB; text-align:left; background:#F7F8FA;\">순 중량</th><td style=\"padding:10px 14px; border:1px solid #E3E6EB;\">297 g</td></tr>\r\n  <tr><th style=\"padding:10px 14px; border:1px solid #E3E6EB; text-align:left; background:#F7F8FA;\">충전 온도</th><td style=\"padding:10px 14px; border:1px solid #E3E6EB;\">5°C ~ 40°C</td></tr>\r\n  <tr><th style=\"padding:10px 14px; border:1px solid #E3E6EB; text-align:left; background:#F7F8FA;\">작동 온도 범위</th><td style=\"padding:10px 14px; border:1px solid #E3E6EB;\">-10°C ~ 40°C</td></tr>\r\n  <tr><th style=\"padding:10px 14px; border:1px solid #E3E6EB; text-align:left; background:#F7F8FA;\">발열 방식</th><td style=\"padding:10px 14px; border:1px solid #E3E6EB;\">수동 발열 · 자동 발열</td></tr>\r\n  <tr><th style=\"padding:10px 14px; border:1px solid #E3E6EB; text-align:left; background:#F7F8FA;\">발열 온도</th><td style=\"padding:10px 14px; border:1px solid #E3E6EB;\">-10°C ~ 6°C</td></tr>\r\n  <tr><th style=\"padding:10px 14px; border:1px solid #E3E6EB; text-align:left; background:#F7F8FA;\">발열 기간</th><td style=\"padding:10px 14px; border:1px solid #E3E6EB;\">최대 500초</td></tr>\r\n  <tr><th style=\"padding:10px 14px; border:1px solid #E3E6EB; text-align:left; background:#F7F8FA;\">발열 전력</th><td style=\"padding:10px 14px; border:1px solid #E3E6EB;\">최대 55 W</td></tr>\r\n  <tr><th style=\"padding:10px 14px; border:1px solid #E3E6EB; text-align:left; background:#F7F8FA;\">충전 시간</th><td style=\"padding:10px 14px; border:1px solid #E3E6EB;\">90분</td></tr>\r\n  <tr><th style=\"padding:10px 14px; border:1px solid #E3E6EB; text-align:left; background:#F7F8FA;\">최대 충전 전력</th><td style=\"padding:10px 14px; border:1px solid #E3E6EB;\">80 W</td></tr>\r\n  <tr><th style=\"padding:10px 14px; border:1px solid #E3E6EB; text-align:left; background:#F7F8FA;\">최대 비행 시간</th><td style=\"padding:10px 14px; border:1px solid #E3E6EB;\">31분</td></tr>\r\n</table>\r\n\r\n<h3 style=\"font-size:20px; font-weight:700; margin:36px 0 12px; border-bottom:2px solid #E3E6EB; padding-bottom:8px;\">호환 제품</h3>\r\n<ul style=\"font-size:15px; color:#333D4B; margin:0; padding-left:20px;\">\r\n  <li>매빅 2 엔터프라이즈 (Mavic 2 Enterprise / Enterprise Dual / Enterprise Advanced)</li>\r\n  <li>매빅 2 Pro</li>\r\n  <li>매빅 2 Zoom</li>\r\n  <li>매빅 2 충전기</li>\r\n  <li>매빅 2 차량용 충전기</li>\r\n  <li>매빅 2 충전 허브</li>\r\n  <li>매빅 2 배터리용 보조 배터리 어댑터</li>\r\n</ul>\r\n\r\n<h3 style=\"font-size:20px; font-weight:700; margin:36px 0 12px; border-bottom:2px solid #E3E6EB; padding-bottom:8px;\">자주 묻는 질문</h3>\r\n<div itemscope itemtype=\"https://schema.org/FAQPage\">\r\n  <div itemscope itemprop=\"mainEntity\" itemtype=\"https://schema.org/Question\" style=\"margin-bottom:16px;\">\r\n    <p itemprop=\"name\" style=\"font-weight:700; font-size:16px; margin:0 0 6px;\">Q. 일반 매빅 2 배터리와 무엇이 다른가요?</p>\r\n    <div itemscope itemprop=\"acceptedAnswer\" itemtype=\"https://schema.org/Answer\"><p itemprop=\"text\" style=\"font-size:15px; color:#333D4B; margin:0;\">A. 용량(3850 mAh)과 비행 시간(31분)은 같지만, 엔터프라이즈 배터리는 자체 발열 기능이 있어 -10°C의 저온에서도 비행할 수 있습니다. 매빅 2 Pro·Zoom에도 장착됩니다.</p></div>\r\n  </div>\r\n  <div itemscope itemprop=\"mainEntity\" itemtype=\"https://schema.org/Question\" style=\"margin-bottom:16px;\">\r\n    <p itemprop=\"name\" style=\"font-weight:700; font-size:16px; margin:0 0 6px;\">Q. 자체 발열은 어떻게 작동하나요?</p>\r\n    <div itemscope itemprop=\"acceptedAnswer\" itemtype=\"https://schema.org/Answer\"><p itemprop=\"text\" style=\"font-size:15px; color:#333D4B; margin:0;\">A. 배터리 온도가 -10°C ~ 6°C 구간이면 자동으로 발열하고, 전원 버튼을 길게 눌러 수동으로 켤 수도 있습니다. 발열은 최대 500초, 최대 55 W로 이루어집니다.</p></div>\r\n  </div>\r\n  <div itemscope itemprop=\"mainEntity\" itemtype=\"https://schema.org/Question\" style=\"margin-bottom:16px;\">\r\n    <p itemprop=\"name\" style=\"font-weight:700; font-size:16px; margin:0 0 6px;\">Q. 충전은 얼마나 걸리나요?</p>\r\n    <div itemscope itemprop=\"acceptedAnswer\" itemtype=\"https://schema.org/Answer\"><p itemprop=\"text\" style=\"font-size:15px; color:#333D4B; margin:0;\">A. 매빅 2 정품 충전기 기준 약 90분입니다. 충전은 5°C ~ 40°C에서 해야 하며, 저온에서는 발열 후 충전됩니다.</p></div>\r\n  </div>\r\n  <div itemscope itemprop=\"mainEntity\" itemtype=\"https://schema.org/Question\" style=\"margin-bottom:16px;\">\r\n    <p itemprop=\"name\" style=\"font-weight:700; font-size:16px; margin:0 0 6px;\">Q. 정품이며 A/S가 되나요?</p>\r\n    <div itemscope itemprop=\"acceptedAnswer\" itemtype=\"https://schema.org/Answer\"><p itemprop=\"text\" style=\"font-size:15px; color:#333D4B; margin:0;\">A. DJI 정품입니다. 드론박스 고객센터를 통해 점검과 A/S 접수가 가능하며, 공공기관·기업 납품 서류도 발급됩니다.</p></div>\r\n  </div>\r\n</div>\r\n\r\n<p style=\"font-size:13px; color:#8B95A1; margin:32px 0 0;\">2026년 9월 작성 · 사양은 DJI 공식 자료 기준</p>\r\n</div>]]></goodsDescriptionMobile>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[소형전자(전자기기)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[DJI 매빅2 엔터프라이즈 배터리 (매빅2 시리즈, 매빅2 엔터프라이즈 호환)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[KC 인증 필 유무]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[정격전압, 소비전력]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[출시년월]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[DJI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="7"><stepData idx="1"><infoTitle><![CDATA[제조국]]></infoTitle><infoValue><![CDATA[중국]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="8"><stepData idx="1"><infoTitle><![CDATA[크기, 무게]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="9"><stepData idx="1"><infoTitle><![CDATA[주요 사양]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="10"><stepData idx="1"><infoTitle><![CDATA[품질보증기준]]></infoTitle><infoValue><![CDATA[제조사 품질보증 기준 및 소비자분쟁해결기준(공정거래위원회 고시)에 따름]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="11"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="11">
+<goodsNo>1000000113</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 매빅2 엔터프라이즈 프로펠러 (벌크상품)</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>001|002019001|002019001018|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>y</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>y</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>a</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p style=\"text-align: center; \" align=\"center\"><span style=\"font-size: 18pt; font-family: 바탕체, batangche;\">&nbsp;cw/ccw 각각 1pc씩 총 2pc 가 들어있습니다.&nbsp;</span></p><div style=\"text-align: center;\" align=\"center\"><br></div><div style=\"text-align: center;\" align=\"center\"><br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/210316/3_111931.jpg\" title=\"3_111931.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"> </div><div style=\"text-align: center;\" align=\"center\"><br style=\"clear:both;\"> </div><div style=\"text-align: center;\" align=\"center\"><br></div><div style=\"text-align: center;\" align=\"center\">&nbsp;</div><p>&nbsp;</p><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<brandCd><![CDATA[001]]></brandCd>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[기타 재화]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[DJI 매빅2 엔터프라이즈 프로펠러 (벌크상품)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[법에 의한 인증·허가 등을 받았음을 확인할 수 있는 경우 그에 대한 사항]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[제조국 또는 원산지]]></infoTitle><infoValue><![CDATA[중국]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[DJI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="12">
+<goodsNo>1000000098</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI Avata 2 프로펠러</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019003|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>y</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>a</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/241024/c2fbb2333ae2020d63233307d7f61f5c_145129.jpg\" title=\"c2fbb2333ae2020d63233307d7f61f5c_145129.jpg\" class=\"js-smart-img\"> </p><div class=\"style__temp-specs-tr___FKseD\" style=\"padding: 0px; margin: 0px 0px 20px; box-sizing: inherit; letter-spacing: -0.32px; border: 0px; font-size: 16px; vertical-align: baseline; background: 0px 0px rgb(255, 255, 255); color: rgb(59, 62, 64); font-family: &quot;Open Sans&quot;, blinkmacsystemfont, &quot;Segoe UI&quot;, roboto, &quot;Helvetica Neue&quot;, helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, simsun, sans-serif;\"><div class=\"style__name___56hU3\" style=\"padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; vertical-align: baseline; background: 0px 0px; line-height: 20px;\">개요</div><div class=\"style__value___QYH7G\" style=\"padding: 0px; margin: 8px 0px 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 14px; vertical-align: baseline; background: 0px 0px; color: rgba(0, 0, 0, 0.65); line-height: 20px;\"><p style=\"margin-top: 8px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;\">기체에 효율적이고 안정적인 추진력을 제공합니다.</p></div></div><div class=\"style__temp-specs-tr___FKseD\" style=\"padding: 0px; margin: 0px 0px 20px; box-sizing: inherit; letter-spacing: -0.32px; border: 0px; font-size: 16px; vertical-align: baseline; background: 0px 0px rgb(255, 255, 255); color: rgb(59, 62, 64); font-family: &quot;Open Sans&quot;, blinkmacsystemfont, &quot;Segoe UI&quot;, roboto, &quot;Helvetica Neue&quot;, helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, simsun, sans-serif;\"><div class=\"style__name___56hU3\" style=\"padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; vertical-align: baseline; background: 0px 0px; line-height: 20px;\">유의</div><div class=\"style__value___QYH7G\" style=\"padding: 0px; margin: 8px 0px 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 14px; vertical-align: baseline; background: 0px 0px; color: rgba(0, 0, 0, 0.65); line-height: 20px;\"><p style=\"margin-top: 8px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;\">1. 인접한 모터의 프로펠러는 시계방향(CW), 역 시계 방향(CCW)으로 나뉘어져 있습니다. 오렌지색으로 표시된 프로펠러는 암에 동일한 오렌지색으로 표시된 모터에 장착해야 하고, 표시가 없는 프로펠러는 표시가 없는 암의 모터에 장착해야 합니다.</p><p style=\"margin-top: 8px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;\">2. 패키지에 포함된 스크루드라이버를 사용해 설치 및 분리할 것을 권장합니다. 다른 크기의 스크루드라이버를 사용하면, 나사 손상 또는 분리 불가능의 결과를 초래할 수 있습니다.</p><p style=\"margin-top: 8px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;\">3. 비행 안전을 위해, 프로펠러 나사도 프로펠러와 함께 교체해야 합니다.</p></div></div><div class=\"style__temp-specs-tr___FKseD\" style=\"padding: 0px; margin: 0px 0px 20px; box-sizing: inherit; letter-spacing: -0.32px; border: 0px; font-size: 16px; vertical-align: baseline; background: 0px 0px rgb(255, 255, 255); color: rgb(59, 62, 64); font-family: &quot;Open Sans&quot;, blinkmacsystemfont, &quot;Segoe UI&quot;, roboto, &quot;Helvetica Neue&quot;, helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, simsun, sans-serif;\"><div class=\"style__name___56hU3\" style=\"padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; vertical-align: baseline; background: 0px 0px; line-height: 20px;\">구성품</div><div class=\"style__value___QYH7G\" style=\"padding: 0px; margin: 8px 0px 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 14px; vertical-align: baseline; background: 0px 0px; color: rgba(0, 0, 0, 0.65); line-height: 20px;\"><p style=\"margin-top: 8px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;\">DJI Avata 2 프로펠러 (1쌍) × 2</p><p style=\"margin-top: 8px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;\">M2×8.7mm 나사 × 8</p></div></div><div class=\"style__temp-specs-tr___FKseD\" style=\"padding: 0px; margin: 0px 0px 20px; box-sizing: inherit; letter-spacing: -0.32px; border: 0px; font-size: 16px; vertical-align: baseline; background: 0px 0px rgb(255, 255, 255); color: rgb(59, 62, 64); font-family: &quot;Open Sans&quot;, blinkmacsystemfont, &quot;Segoe UI&quot;, roboto, &quot;Helvetica Neue&quot;, helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, simsun, sans-serif;\"><div class=\"style__name___56hU3\" style=\"padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; vertical-align: baseline; background: 0px 0px; line-height: 20px;\">사양</div><div class=\"style__value___QYH7G\" style=\"padding: 0px; margin: 8px 0px 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 14px; vertical-align: baseline; background: 0px 0px; color: rgba(0, 0, 0, 0.65); line-height: 20px;\"><p style=\"margin-top: 8px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;\">모델명: 3032S</p><p style=\"margin-top: 8px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;\">지름: 75.66 mm</p><p style=\"margin-top: 8px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;\">무게: 약 1.74 g</p></div></div><div class=\"style__temp-specs-tr___FKseD\" style=\"padding: 0px; margin: 0px 0px 20px; box-sizing: inherit; letter-spacing: -0.32px; border: 0px; font-size: 16px; vertical-align: baseline; background: 0px 0px rgb(255, 255, 255); color: rgb(59, 62, 64); font-family: &quot;Open Sans&quot;, blinkmacsystemfont, &quot;Segoe UI&quot;, roboto, &quot;Helvetica Neue&quot;, helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, simsun, sans-serif;\"><div class=\"style__name___56hU3\" style=\"padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; vertical-align: baseline; background: 0px 0px; line-height: 20px;\">호환 제품</div><div class=\"style__value___QYH7G\" style=\"padding: 0px; margin: 8px 0px 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 14px; vertical-align: baseline; background: 0px 0px; color: rgba(0, 0, 0, 0.65); line-height: 20px;\"><p style=\"margin-top: 8px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;\">DJI Avata 2</p></div></div><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[기타 재화]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[DJI Avata 2 프로펠러]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[법에 의한 인증·허가 등을 받았음을 확인할 수 있는 경우 그에 대한 사항]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[제조국 또는 원산지]]></infoTitle><infoValue><![CDATA[중국]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[DJI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="13">
+<goodsNo>1000000092</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>[정품] DJI 매빅미니2 배터리</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>001|002019001|002019001014|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>a</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p>&nbsp;</p><div style=\"text-align: center;\" align=\"center\"><br></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/210315/8_145858.jpg\" title=\"8_145858.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"> </div><div style=\"text-align: center;\" align=\"center\"><br></div><div style=\"text-align: center;\" align=\"center\"><br></div><div style=\"text-align: center;\" align=\"center\">&nbsp;</div><p>&nbsp;</p><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<brandCd><![CDATA[001]]></brandCd>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[소형전자(전자기기)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[DJI 매빅미니2 배터리]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[KC 인증 필 유무]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[정격전압, 소비전력]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[출시년월]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[DJI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="7"><stepData idx="1"><infoTitle><![CDATA[제조국]]></infoTitle><infoValue><![CDATA[중국]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="8"><stepData idx="1"><infoTitle><![CDATA[크기, 무게]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="9"><stepData idx="1"><infoTitle><![CDATA[주요 사양]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="10"><stepData idx="1"><infoTitle><![CDATA[품질보증기준]]></infoTitle><infoValue><![CDATA[제조사 품질보증 기준 및 소비자분쟁해결기준(공정거래위원회 고시)에 따름]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="11"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="14">
+<goodsNo>1000000090</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>[정품-당일발송] DJI 매빅미니2 프로펠러</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>001|002019001|002019001014|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>y</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>a</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p>&nbsp;</p><div style=\"text-align: center;\" align=\"center\"><br></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/210315/4_145657.jpg\" title=\"4_145657.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"><br></div><div style=\"text-align: center;\" align=\"center\"><br></div><div style=\"text-align: center;\" align=\"center\"><br></div><div style=\"text-align: center;\" align=\"center\">&nbsp;</div><p>&nbsp;</p><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<brandCd><![CDATA[001]]></brandCd>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[기타 재화]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[DJI 매빅미니2 프로펠러]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[법에 의한 인증·허가 등을 받았음을 확인할 수 있는 경우 그에 대한 사항]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[제조국 또는 원산지]]></infoTitle><infoValue><![CDATA[중국]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[DJI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="15">
+<goodsNo>1000000088</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>[정품-당일발송] DJI 매빅2 저소음프로펠러 (벌크상품)</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019001|002019001016|002019001017|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>y</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>a</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p>&nbsp;</p><div style=\"text-align: center;\" align=\"center\"><span style=\"font-size: 24pt;\">﻿해당 상품은&nbsp;</span><span style=\"font-size: 24pt;\">정품, 미사용이나</span></div><div style=\"text-align: center;\" align=\"center\"><span style=\"font-size: 24pt;\">개봉이 되어 있는 벌크상품입니다.</span></div><div style=\"text-align: center;\" align=\"center\"><span style=\"font-size: 24pt;\">(사용에는 문제가 전혀 없습니다.)</span></div><div style=\"text-align: center;\" align=\"center\"><br></div><div style=\"text-align: center;\" align=\"center\"><br></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/210312/10_175215.jpg\" title=\"10_175215.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"><br></div><div style=\"text-align: center;\" align=\"center\"><br></div><div style=\"text-align: center;\" align=\"center\"><br></div><div style=\"text-align: center;\" align=\"center\">&nbsp;</div><p>&nbsp;</p><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<brandCd><![CDATA[001]]></brandCd>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[기타 재화]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[DJI 매빅2 저소음프로펠러 (벌크상품)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[법에 의한 인증·허가 등을 받았음을 확인할 수 있는 경우 그에 대한 사항]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[제조국 또는 원산지]]></infoTitle><infoValue><![CDATA[중국]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[DJI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="16">
+<goodsNo>1000000083</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 매빅 에어2 인텔리전트 배터리(에어2s 동일)</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019001|002019001010|002019001019|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>a</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p>&nbsp;</p><div style=\"text-align: center;\" align=\"center\"><br></div><div style=\"text-align: center;\" align=\"center\"><br></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/210312/1_144100.jpg\" title=\"1_144100.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"><br style=\"clear:both;\"> </div><div style=\"text-align: center;\" align=\"center\">&nbsp;</div><p>&nbsp;</p><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<brandCd><![CDATA[001]]></brandCd>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[소형전자(전자기기)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[DJI 매빅 에어2 인텔리전트 배터리(에어2s 동일)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[KC 인증 필 유무]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[정격전압, 소비전력]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[출시년월]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[DJI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="7"><stepData idx="1"><infoTitle><![CDATA[제조국]]></infoTitle><infoValue><![CDATA[중국]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="8"><stepData idx="1"><infoTitle><![CDATA[크기, 무게]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="9"><stepData idx="1"><infoTitle><![CDATA[주요 사양]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="10"><stepData idx="1"><infoTitle><![CDATA[품질보증기준]]></infoTitle><infoValue><![CDATA[제조사 품질보증 기준 및 소비자분쟁해결기준(공정거래위원회 고시)에 따름]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="11"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="17">
+<goodsNo>1000000074</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 팬텀4 시리즈 배터리 (v 2.0/프로/어드밴스용/RTK)</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019010|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>y</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>a</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p>&nbsp;</p><p style=\"text-align: center; \" align=\"center\"><span style=\"font-family: 나눔명조, NanumMyeongjo; font-size: 18pt;\">﻿팬텀4 시리즈는 전부 동일한 대용량 5870mAh 배터리를 사용합니다.</span></p><p style=\"text-align: center; \" align=\"center\"><span style=\"font-family: 나눔명조, NanumMyeongjo; font-size: 18pt;\">(팬텀4, 팬텀4 어드밴스, 팬텀4 프로, 팬텀4 프로 v2.0, 팬텀4 RTK 사용가능)</span></p><p style=\"text-align: center; \" align=\"center\"><span style=\"font-family: 나눔명조, NanumMyeongjo; font-size: 18pt;\">&nbsp;</span></p><p style=\"text-align: center; \" align=\"center\"><span style=\"font-family: 나눔명조, NanumMyeongjo; font-size: 18pt;\">미개봉 정품으로 1년간 워런티가 적용되어 불량시 새것으로 교체됩니다.&nbsp; &nbsp;</span>&nbsp;</p><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/210312/4_132846.jpg\" title=\"4_132846.jpg\" class=\"js-smart-img\"></div><br style=\"clear:both;\"><br style=\"clear:both;\"><p>&nbsp;</p><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[소형전자(전자기기)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[DJI 팬텀4 시리즈 배터리 (v 2.0/프로/어드밴스용/RTK)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[KC 인증 필 유무]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[정격전압, 소비전력]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[출시년월]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[DJI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="7"><stepData idx="1"><infoTitle><![CDATA[제조국]]></infoTitle><infoValue><![CDATA[중국]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="8"><stepData idx="1"><infoTitle><![CDATA[크기, 무게]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="9"><stepData idx="1"><infoTitle><![CDATA[주요 사양]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="10"><stepData idx="1"><infoTitle><![CDATA[품질보증기준]]></infoTitle><infoValue><![CDATA[제조사 품질보증 기준 및 소비자분쟁해결기준(공정거래위원회 고시)에 따름]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="11"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="18">
+<goodsNo>1000000073</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 팬텀4프로 저소음 프로펠러(2.0과도 동일) (벌크상품)</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019010|002|002019</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>y</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>a</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p style=\"text-align: center; \" align=\"center\"><b><span style=\"font-size: 18pt;\">&nbsp;팬텀4, 팬텀4 어드밴스, 팬텀4 프로, 팬텀4 프로 v2.0</span></b></p><p style=\"text-align: center; \" align=\"center\"><b><span style=\"font-size: 18pt;\">팬텀4 RTK에 사용가능</span></b></p><p style=\"text-align: center; \" align=\"center\"><b><br></b></p><p style=\"text-align: center; \" align=\"center\"><b><span style=\"font-size: 18pt;\">팬텀4 시리즈 전부 사용 가능</span></b></p><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/210312/1_132617.jpg\" title=\"1_132617.jpg\" class=\"js-smart-img\"></div><br style=\"clear:both;\"><p>&nbsp;</p><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<brandCd><![CDATA[001]]></brandCd>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[기타 재화]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[DJI 팬텀4프로 저소음 프로펠러(2.0과도 동일) (벌크상품)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[법에 의한 인증·허가 등을 받았음을 확인할 수 있는 경우 그에 대한 사항]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[제조국 또는 원산지]]></infoTitle><infoValue><![CDATA[중국]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[DJI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="19">
+<goodsNo>1000001175</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 아바타2 플라이모어콤보 (배터리 1개) DJI Goggles 3/ RC Motion 3</goodsNm>
+<goodsDisplayFl>n</goodsDisplayFl>
+<goodsDisplayMobileFl>n</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019003|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>y</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>n</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>y</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>y</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>n</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<addGoodsData idx="1"><title>DJI 케어 리플레쉬</title><mustFl>n</mustFl><goodsNoData idx="1">1000000931</goodsNoData><goodsNoData idx="2">1000000930</goodsNoData></addGoodsData>
+<addGoodsData idx="2"><title>추가 악세사리</title><mustFl>n</mustFl><goodsNoData idx="1">1000000957</goodsNoData><goodsNoData idx="2">1000000956</goodsNoData><goodsNoData idx="3">1000000955</goodsNoData><goodsNoData idx="4">1000000954</goodsNoData></addGoodsData>
+<addGoodsData idx="3"><title>FPV 조종기</title><mustFl>n</mustFl><goodsNoData idx="1">1000000928</goodsNoData></addGoodsData>
+<addGoodsData idx="4"><title>예약 판매</title><mustFl>y</mustFl><goodsNoData idx="1">1000000944</goodsNoData></addGoodsData>
+<goodsDescription><![CDATA[<p style=\"text-align: center; \" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/240412/953fc8b362f4d569316455f8b8d7b8d6_090904.jpg\" title=\"953fc8b362f4d569316455f8b8d7b8d6_090904.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"><br style=\"clear:both;\"> </p>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<kcmarkInfo><![CDATA[{"0": {"kcmarkDt": "2024-03-07", "kcmarkFl": "y", "kcmarkNo": "R-R-dji-QF3W4K", "kcmarkDivFl": "kcCd05"}, "1": {"kcmarkDt": "2024-03-12", "kcmarkFl": "y", "kcmarkNo": "R-C-dji-TKGS3", "kcmarkDivFl": "kcCd06"}, "2": {"kcmarkDt": "2024-03-22", "kcmarkFl": "y", "kcmarkNo": "R-C-dji-TKMO3", "kcmarkDivFl": "kcCd06"}}]]></kcmarkInfo>
+</goods_data>
+<goods_data idx="20">
+<goodsNo>1000001281</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 플립 단품 RC-N3 조종기 촬영 입문용 미니 셀피 셀카드론</goodsNm>
+<goodsDisplayFl>n</goodsDisplayFl>
+<goodsDisplayMobileFl>n</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002|002019|002019017</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>y</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>y</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>y</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>a</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>y</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<addGoodsData idx="1"><title>DJI 케어</title><mustFl>n</mustFl><goodsNoData idx="1">1000000970</goodsNoData><goodsNoData idx="2">1000000969</goodsNoData></addGoodsData>
+<addGoodsData idx="2"><title>악세사리</title><mustFl>n</mustFl><goodsNoData idx="1">1000000968</goodsNoData><goodsNoData idx="2">1000000967</goodsNoData></addGoodsData>
+<goodsDescription><![CDATA[<div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/250115/bc49b995805894e23c6d1faabccabc0c_091949.jpg\" title=\"bc49b995805894e23c6d1faabccabc0c_091949.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"><br style=\"clear:both;\"> </div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<kcmarkInfo><![CDATA[{"0": {"kcmarkDt": "2024-11-25", "kcmarkFl": "y", "kcmarkNo": "R-R-dji-DF1A0424", "kcmarkDivFl": "kcCd05"}, "1": {"kcmarkDt": "2023-07-14", "kcmarkFl": "y", "kcmarkNo": "R-C-dji-RC151", "kcmarkDivFl": "kcCd06"}}]]></kcmarkInfo>
+</goods_data>
+</data>
