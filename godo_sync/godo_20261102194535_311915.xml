@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000000755</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI Care Refresh 2년 플랜 (DJI 아바타2)</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019003|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>url</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>y</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>y</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>Y</imageUpdate>
+<magnifyImageData idx="1">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261102/d3cdd0528a724ac50a76d5c9da929897.jpg</magnifyImageData>
+<detailImageData idx="1">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261102/d3cdd0528a724ac50a76d5c9da929897.jpg</detailImageData>
+<listImageData idx="1">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261102/d3cdd0528a724ac50a76d5c9da929897.jpg</listImageData>
+<mainImageData idx="1">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261102/d3cdd0528a724ac50a76d5c9da929897.jpg</mainImageData>
+<goodsDescription><![CDATA[<p style=\"text-align: center; \" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/241024/62e6cde83be8dea3fcf48d5af7ba230f_140234.jpg\" title=\"62e6cde83be8dea3fcf48d5af7ba230f_140234.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"> </p>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+</goods_data>
+</data>
