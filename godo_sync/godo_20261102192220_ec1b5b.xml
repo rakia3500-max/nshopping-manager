@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000000718</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI TB30 배터리 매트리스 30 시리즈 배터리</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019008002|002019008|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>y</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p style=\"text-align: center;\" align=\"center\">&nbsp;</p><p align=\"center\" style=\"text-align: center;\">&nbsp;</p><p style=\"text-align: center;\" align=\"center\">&nbsp;<img src=\"http://dronetr7262.godomall.com/data/editor/goods/220725/5dd567e8607f212ce6f12f1d21727fa9_171509.jpg\" title=\"5dd567e8607f212ce6f12f1d21727fa9_171509.jpg\" class=\"js-smart-img\">&nbsp;</p>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[소형전자(전자기기)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[DJI TB30 배터리 매트리스 30 시리즈 배터리]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[KC 인증 필 유무]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[정격전압, 소비전력]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[출시년월]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[DJI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="7"><stepData idx="1"><infoTitle><![CDATA[제조국]]></infoTitle><infoValue><![CDATA[중국]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="8"><stepData idx="1"><infoTitle><![CDATA[크기, 무게]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="9"><stepData idx="1"><infoTitle><![CDATA[주요 사양]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="10"><stepData idx="1"><infoTitle><![CDATA[품질보증기준]]></infoTitle><infoValue><![CDATA[제조사 품질보증 기준 및 소비자분쟁해결기준(공정거래위원회 고시)에 따름]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="11"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="2">
+<goodsNo>1000000715</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>[견적상품] DJI Zenmuse H20N</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002020|002019008|002019|002|002019019</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p style=\"text-align: center; \" align=\"center\">&nbsp;<b style=\"text-align: center; color: rgb(255, 255, 255); font-family: 돋움체, DotumChe, AppleGothic; font-size: 48px;\"><span style=\"background-color: rgb(0, 117, 200);\">-﻿상품안내-</span></b></p><div align=\"center\" style=\"text-align: center;\"><p align=\"center\" style=\"text-align: center;\"><br></p><p align=\"center\" style=\"text-align: center;\"><span style=\"font-size: 24px;\"><b>M300 RTK / M350 RTK에&nbsp; 둘 다 사용이 가능합니다.</b></span><b style=\"font-size: 24px;\">&nbsp;</b></p><p align=\"center\" style=\"text-align: center;\"><b style=\"font-size: 24px;\">자세한 내용은 드론박스 고객센터로 문의주시면 됩니다.&nbsp;</b><b style=\"font-size: 24px;\">&nbsp;&nbsp;</b></p></div><div align=\"center\" style=\"text-align: center;\"><b><span style=\"font-size: 18pt; font-family: 나눔명조, NanumMyeongjo; background-color: rgb(255, 232, 232);\"><br style=\"clear: both;\"></span></b></div><p align=\"center\" style=\"text-align: center;\">&nbsp;</p><p style=\"text-align: center;\" align=\"center\">&nbsp;<img src=\"http://dronetr7262.godomall.com/data/editor/goods/220725/182e5edcc393dbb0c71e9d5297dda0dd_165033.jpg\" title=\"182e5edcc393dbb0c71e9d5297dda0dd_165033.jpg\" class=\"js-smart-img\">&nbsp;</p>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<kcmarkInfo><![CDATA[{"0": {"kcmarkDt": "2022-03-04", "kcmarkFl": "y", "kcmarkNo": "R-R-dji-ZH20N", "kcmarkDivFl": "kcCd05"}}]]></kcmarkInfo>
+<seoTagTitle><![CDATA[DJI 젠뮤즈 H20N (Zenmuse H20N) 견적 문의]]></seoTagTitle>
+<seoTagDescription><![CDATA[DJI 젠뮤즈 H20N 짐벌 카메라. 매트리스 300 RTK·매트리스 350 RTK 모두 사용할 수 있습니다. 견적 문의 상품입니다. DJI 정품만 판매하는 드론박스.]]></seoTagDescription>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[소형전자(전자기기)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[DJI Zenmuse H20N]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[KC 인증 필 유무]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[정격전압, 소비전력]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[출시년월]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[DJI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="7"><stepData idx="1"><infoTitle><![CDATA[제조국]]></infoTitle><infoValue><![CDATA[중국]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="8"><stepData idx="1"><infoTitle><![CDATA[크기, 무게]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="9"><stepData idx="1"><infoTitle><![CDATA[주요 사양]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="10"><stepData idx="1"><infoTitle><![CDATA[품질보증기준]]></infoTitle><infoValue><![CDATA[제조사 품질보증 기준 및 소비자분쟁해결기준(공정거래위원회 고시)에 따름]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="11"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="3">
+<goodsNo>1000000659</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>CZI GL60 PLUS (M300/350 전용 서치라이트)</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002020|002019008|002019019|002019008001|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<div align=\"center\" style=\"text-align: center;\"><p align=\"center\"><b style=\"color: rgb(255, 255, 255); font-family: 돋움체, DotumChe, AppleGothic; font-size: 48px;\"><span style=\"background-color: rgb(0, 117, 200);\">-﻿상품안내-</span></b><br></p><p align=\"center\"><br></p><p align=\"center\"><span style=\"font-size: 24px;\"><b>M300 RTK / M350 RTK에&nbsp; 둘 다 사용이 가능합니다.</b></span><b style=\"font-size: 24px;\">&nbsp;</b></p><p align=\"center\"><b style=\"font-size: 24px;\">자세한 내용은 드론박스 고객센터로 문의주시면 됩니다.&nbsp;</b><b style=\"font-size: 24px;\">&nbsp;&nbsp;</b></p></div><div align=\"center\" style=\"text-align: center;\"><b><span style=\"font-size: 18pt; font-family: 나눔명조, NanumMyeongjo; background-color: rgb(255, 232, 232);\"><br style=\"clear: both;\"></span></b><p align=\"center\" noto=\"\" sans=\"\" kr\",=\"\" \"nanum=\"\" gothic\",=\"\" \"malgun=\"\" \"맑은=\"\" 고딕\",=\"\" applegothic,=\"\" dotum,=\"\" 돋움,=\"\" sans-serif;=\"\" background-color:=\"\" rgb(255,=\"\" 255,=\"\" 255);=\"\" text-align:=\"\" center;\"=\"\" style=\"color: rgb(51, 51, 51); font-family: &quot;Noto Sans KR&quot;, &quot;Nanum Gothic&quot;, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);\"><br></p><p align=\"center\" noto=\"\" sans=\"\" kr\",=\"\" \"nanum=\"\" gothic\",=\"\" \"malgun=\"\" \"맑은=\"\" 고딕\",=\"\" applegothic,=\"\" dotum,=\"\" 돋움,=\"\" sans-serif;=\"\" background-color:=\"\" rgb(255,=\"\" 255,=\"\" 255);=\"\" text-align:=\"\" center;\"=\"\" style=\"color: rgb(51, 51, 51); font-family: &quot;Noto Sans KR&quot;, &quot;Nanum Gothic&quot;, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);\"><b><span noto=\"\" sans=\"\" kr\",=\"\" \"nanum=\"\" gothic\",=\"\" \"malgun=\"\" \"맑은=\"\" 고딕\",=\"\" applegothic,=\"\" dotum,=\"\" 돋움,=\"\" sans-serif;=\"\" text-align:=\"\" left;=\"\" background-color:=\"\" rgb(255,=\"\" 255,=\"\" 255);=\"\" font-size:=\"\" 12pt;\"=\"\" style=\"font-family: 돋움, Dotum;\"> </span></b></p></div><h2 style=\"box-sizing: border-box; font-family: Montserrat, Helvetica, Arial, sans-serif; font-weight: 400; line-height: 20px; margin-top: 20px; margin-bottom: 10px; font-size: 18px; text-transform: uppercase;\">DESCRIPTION</h2><p style=\"box-sizing: border-box; margin-bottom: 20px; font-family: Lato, Helvetica, Arial, sans-serif; font-size: 16px;\">The GL60 Plus DJI Matrice 300 drone spotlight based on DJI Payload SDK, compatible with DJI M300 drone, powered by DJI Skyport V2.0, super brightness up to 13400LM, max lighting area to 1225m², Max power 120W. The aerial illumination effect of drones during night operations has been raised to a whole new level. The overall design is ultra-lightweight, only 750g, the DJI M300 spotlight is widely used for night patrols, surveillance, power line inspection, search and rescue, and other night operations.</p><p style=\"box-sizing: border-box; margin-bottom: 20px; font-family: Lato, Helvetica, Arial, sans-serif; font-size: 16px;\">Features:</p><ul style=\"box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; font-family: Lato, Helvetica, Arial, sans-serif; font-size: 16px;\"><li style=\"box-sizing: border-box;\">Spotlights develop on DJI SDK Payload, compatible with DJI M300 drone.</li><li style=\"box-sizing: border-box;\">Easy to install and use, just plug and play, mount to the gimbal port, just like you install the H20 camera.</li><li style=\"box-sizing: border-box;\">Follow the gimbal camera (H20/H20T)&nbsp; rotation synchronization.</li><li style=\"box-sizing: border-box;\">High power up to 120W, super brightness to 13400LM.</li><li style=\"box-sizing: border-box;\">Non-reflective bowl design, reducing effective brightness loss, with strong light flash mode, silently driving away and indicating direction.</li><li style=\"box-sizing: border-box;\">Imaging-grade optical technology, 4 sets of optical lens groups, 1 group of 4 lenses, 15-degree luminous angle.</li><li style=\"box-sizing: border-box;\"><span style=\"box-sizing: border-box; font-weight: bolder;\">Compare with GL60 Zoom, it is much better than GL60 Zoom spotlights.</span></li></ul><p style=\"box-sizing: border-box; margin-bottom: 20px; font-family: Lato, Helvetica, Arial, sans-serif; font-size: 16px;\"><span style=\"box-sizing: border-box; font-weight: bolder;\">The spotlights performance:&nbsp; GL60 Plus ＞ GL60 Zoom ＞ GL60.</span></p><p style=\"box-sizing: border-box; margin-bottom: 20px; font-family: Lato, Helvetica, Arial, sans-serif; font-size: 16px;\">Specs:</p><table class=\"__se_tbl_ext\" border=\"1\" width=\"816\" style=\"border-collapse: collapse; border-spacing: 0px; font-family: Lato, Helvetica, Arial, sans-serif; font-size: 16px; height: 629px;\"><tbody style=\"box-sizing: border-box;\"><tr style=\"box-sizing: border-box;\"><td width=\"195\" style=\"box-sizing: border-box; padding: 0px;\">Product Model</td><td colspan=\"6\" width=\"434\" style=\"box-sizing: border-box; padding: 0px;\">GL60 Plus Spotlight</td></tr><tr style=\"box-sizing: border-box;\"><td style=\"box-sizing: border-box; padding: 0px;\">Powered By</td><td colspan=\"6\" width=\"434\" style=\"box-sizing: border-box; padding: 0px;\">DJI Skyport V2.0</td></tr><tr style=\"box-sizing: border-box;\"><td style=\"box-sizing: border-box; padding: 0px;\">Weight</td><td colspan=\"6\" width=\"434\" style=\"box-sizing: border-box; padding: 0px;\">750g</td></tr><tr style=\"box-sizing: border-box;\"><td style=\"box-sizing: border-box; padding: 0px;\">Size</td><td colspan=\"6\" width=\"434\" style=\"box-sizing: border-box; padding: 0px;\">126*131*167mm</td></tr><tr style=\"box-sizing: border-box;\"><td style=\"box-sizing: border-box; padding: 0px;\">FOV</td><td colspan=\"6\" width=\"434\" style=\"box-sizing: border-box; padding: 0px;\">15°</td></tr><tr style=\"box-sizing: border-box;\"><td style=\"box-sizing: border-box; padding: 0px;\">Voltage</td><td colspan=\"3\" width=\"218\" style=\"box-sizing: border-box; padding: 0px;\">PSDK 17V+OSDK 24V</td><td colspan=\"3\" width=\"216\" style=\"box-sizing: border-box; padding: 0px;\">PSDK 17V</td></tr><tr style=\"box-sizing: border-box;\"><td style=\"box-sizing: border-box; padding: 0px;\">Led Power</td><td colspan=\"3\" width=\"218\" style=\"box-sizing: border-box; padding: 0px;\">120W</td><td colspan=\"3\" width=\"216\" style=\"box-sizing: border-box; padding: 0px;\">60W</td></tr><tr style=\"box-sizing: border-box;\"><td style=\"box-sizing: border-box; padding: 0px;\">Luminous flux</td><td colspan=\"3\" width=\"218\" style=\"box-sizing: border-box; padding: 0px;\">13400lm±3%</td><td colspan=\"3\" width=\"216\" style=\"box-sizing: border-box; padding: 0px;\">8000lm±3%</td></tr><tr style=\"box-sizing: border-box;\"><td style=\"box-sizing: border-box; padding: 0px;\">LM effect</td><td colspan=\"3\" width=\"218\" style=\"box-sizing: border-box; padding: 0px;\">111.67lm/W</td><td colspan=\"3\" width=\"216\" style=\"box-sizing: border-box; padding: 0px;\">133.33lm/W</td></tr><tr style=\"box-sizing: border-box;\"><td style=\"box-sizing: border-box; padding: 0px;\">Drone Flight&nbsp; Height</td><td style=\"box-sizing: border-box; padding: 0px;\">50M</td><td style=\"box-sizing: border-box; padding: 0px;\">100M</td><td style=\"box-sizing: border-box; padding: 0px;\">150M</td><td style=\"box-sizing: border-box; padding: 0px;\">50M</td><td style=\"box-sizing: border-box; padding: 0px;\">100M</td><td style=\"box-sizing: border-box; padding: 0px;\">150M</td></tr><tr style=\"box-sizing: border-box;\"><td style=\"box-sizing: border-box; padding: 0px;\">Lighjting Spot diameter</td><td style=\"box-sizing: border-box; padding: 0px;\">13.2m</td><td style=\"box-sizing: border-box; padding: 0px;\">26.4m</td><td style=\"box-sizing: border-box; padding: 0px;\">39.5m</td><td style=\"box-sizing: border-box; padding: 0px;\">13.2m</td><td style=\"box-sizing: border-box; padding: 0px;\">26.4m</td><td style=\"box-sizing: border-box; padding: 0px;\">39.5m</td></tr><tr style=\"box-sizing: border-box;\"><td style=\"box-sizing: border-box; padding: 0px;\">Lighting area</td><td style=\"box-sizing: border-box; padding: 0px;\">136m²</td><td style=\"box-sizing: border-box; padding: 0px;\">544m²</td><td style=\"box-sizing: border-box; padding: 0px;\">1225m²</td><td style=\"box-sizing: border-box; padding: 0px;\">136m²</td><td style=\"box-sizing: border-box; padding: 0px;\">544m²</td><td style=\"box-sizing: border-box; padding: 0px;\">1225m²</td></tr><tr style=\"box-sizing: border-box;\"><td style=\"box-sizing: border-box; padding: 0px;\">Central illuminance</td><td style=\"box-sizing: border-box; padding: 0px;\">85Lux</td><td style=\"box-sizing: border-box; padding: 0px;\">24Lux</td><td style=\"box-sizing: border-box; padding: 0px;\">11Lux</td><td style=\"box-sizing: border-box; padding: 0px;\">45Lux</td><td style=\"box-sizing: border-box; padding: 0px;\">12Lux</td><td style=\"box-sizing: border-box; padding: 0px;\">6Lux</td></tr><tr style=\"box-sizing: border-box;\"><td style=\"box-sizing: border-box; padding: 0px;\">Function mode</td><td colspan=\"6\" width=\"434\" style=\"box-sizing: border-box; padding: 0px;\">Lighting<br style=\"box-sizing: border-box;\">Flashing<br style=\"box-sizing: border-box;\">gimbal angle adjustment<br style=\"box-sizing: border-box;\">Auto-follow<br style=\"box-sizing: border-box;\">bright adjustment</td></tr><tr style=\"box-sizing: border-box;\"><td rowspan=\"2\" width=\"195\" style=\"box-sizing: border-box; padding: 0px;\">Gimbal rotation range</td><td colspan=\"3\" width=\"218\" style=\"box-sizing: border-box; padding: 0px;\">Pitch</td><td colspan=\"3\" width=\"216\" style=\"box-sizing: border-box; padding: 0px;\">horizontal</td></tr><tr style=\"box-sizing: border-box;\"><td colspan=\"3\" width=\"218\" style=\"box-sizing: border-box; padding: 0px;\">&nbsp;-110°~+30°</td><td colspan=\"3\" width=\"216\" style=\"box-sizing: border-box; padding: 0px;\">±200°</td></tr><tr style=\"box-sizing: border-box;\"><td style=\"box-sizing: border-box; padding: 0px;\">Working temperature</td><td colspan=\"6\" width=\"434\" style=\"box-sizing: border-box; padding: 0px;\">&nbsp;-20°C~+50°C</td></tr></tbody></table><p style=\"box-sizing: border-box; margin-bottom: 40px; line-height: 22px; color: rgb(53, 53, 53); font-family: Montserrat, sans-serif; font-size: 15px; background-color: rgb(255, 255, 255);\"><img class=\"alignnone size-full wp-image-6782\" src=\"https://www.uavfordrone.com/wp-content/uploads/2021/10/GL60-Plus%E6%90%AD%E8%BD%BD.png\" alt=\"GL60 Plus DJI M300 drone spotlights\" width=\"2343\" height=\"1072\" srcset=\"https://www.uavfordrone.com/wp-content/uploads/2021/10/GL60-Plus搭载.png 2343w, https://www.uavfordrone.com/wp-content/uploads/2021/10/GL60-Plus搭载-300x137.png 300w, https://www.uavfordrone.com/wp-content/uploads/2021/10/GL60-Plus搭载-1024x469.png 1024w, https://www.uavfordrone.com/wp-content/uploads/2021/10/GL60-Plus搭载-768x351.png 768w, https://www.uavfordrone.com/wp-content/uploads/2021/10/GL60-Plus搭载-1536x703.png 1536w, https://www.uavfordrone.com/wp-content/uploads/2021/10/GL60-Plus搭载-2048x937.png 2048w, https://www.uavfordrone.com/wp-content/uploads/2021/10/GL60-Plus搭载-280x128.png 280w, https://www.uavfordrone.com/wp-content/uploads/2021/10/GL60-Plus搭载-1800x824.png 1800w, https://www.uavfordrone.com/wp-content/uploads/2021/10/GL60-Plus搭载-600x275.png 600w\" sizes=\"(max-width: 2343px) 100vw, 2343px\" style=\"font-family: Lato, Helvetica, Arial, sans-serif; font-size: 16px; box-sizing: border-box; height: auto; max-width: 100%; border: 0px none; vertical-align: middle;\">&nbsp;</p>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<makerNm><![CDATA[CZI]]></makerNm>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[소형전자(전자기기)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[CZI GL60 PLUS (M300/350 전용 서치라이트)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[KC 인증 필 유무]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[정격전압, 소비전력]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[출시년월]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[CZI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="7"><stepData idx="1"><infoTitle><![CDATA[제조국]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="8"><stepData idx="1"><infoTitle><![CDATA[크기, 무게]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="9"><stepData idx="1"><infoTitle><![CDATA[주요 사양]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="10"><stepData idx="1"><infoTitle><![CDATA[품질보증기준]]></infoTitle><infoValue><![CDATA[제조사 품질보증 기준 및 소비자분쟁해결기준(공정거래위원회 고시)에 따름]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="11"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="4">
+<goodsNo>1000000656</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>[견적상품] G-PORT for PIXY F (FLIR DUO PRO R)</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002020|002019008|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p style=\"text-align: center; \" align=\"center\">&nbsp;<img src=\"http://dronetr7262.godomall.com/data/editor/goods/220630/9490d7ff90f2a4ae8ed92d95045ace44_120248.jpg\" title=\"9490d7ff90f2a4ae8ed92d95045ace44_120248.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/220630/1932d8451ac0b2856c156adb28962902_120248.jpg\" title=\"1932d8451ac0b2856c156adb28962902_120248.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/220630/00f7c02a2d9d912d65bbf9d4e6f9ab53_120248.jpg\" title=\"00f7c02a2d9d912d65bbf9d4e6f9ab53_120248.jpg\" class=\"js-smart-img\">&nbsp;</p>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[소형전자(전자기기)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[G-PORT for PIXY F (FLIR DUO PRO R)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[KC 인증 필 유무]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[정격전압, 소비전력]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[출시년월]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[Gremsy]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="7"><stepData idx="1"><infoTitle><![CDATA[제조국]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="8"><stepData idx="1"><infoTitle><![CDATA[크기, 무게]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="9"><stepData idx="1"><infoTitle><![CDATA[주요 사양]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="10"><stepData idx="1"><infoTitle><![CDATA[품질보증기준]]></infoTitle><infoValue><![CDATA[제조사 품질보증 기준 및 소비자분쟁해결기준(공정거래위원회 고시)에 따름]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="11"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="5">
+<goodsNo>1000000655</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>[견적상품] Gremsy PIXY U Bundle for RedEdge MX</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002020|002019008|002|002019</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p>&nbsp;</p><p style=\"text-align: center; \" align=\"center\">&nbsp;</p><p style=\"text-align: center; \" align=\"center\">&nbsp;<img src=\"http://dronetr7262.godomall.com/data/editor/goods/220630/e996b7b9dd407dfdefe01ad8db81e4a9_115725.jpg\" title=\"e996b7b9dd407dfdefe01ad8db81e4a9_115725.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/220630/copy-1636422080-bundleforrededgemx_115725.jpg\" title=\"copy-1636422080-bundleforrededgemx_115725.jpg\" class=\"js-smart-img\">&nbsp;</p>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[소형전자(전자기기)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[Gremsy PIXY U Bundle for RedEdge MX]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[KC 인증 필 유무]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[정격전압, 소비전력]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[출시년월]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[Gremsy]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="7"><stepData idx="1"><infoTitle><![CDATA[제조국]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="8"><stepData idx="1"><infoTitle><![CDATA[크기, 무게]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="9"><stepData idx="1"><infoTitle><![CDATA[주요 사양]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="10"><stepData idx="1"><infoTitle><![CDATA[품질보증기준]]></infoTitle><infoValue><![CDATA[제조사 품질보증 기준 및 소비자분쟁해결기준(공정거래위원회 고시)에 따름]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="11"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="6">
+<goodsNo>1000000653</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>[견적상품] MicaSense RedEdge-P 다중분광 카메라</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002020|002019008|002|002019</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p style=\"text-align: center;\" align=\"center\">&nbsp;</p><p style=\"text-align: center; \" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/220630/94313e5f4e3657c824cf46bcaf11c3c3_114825.jpg\" title=\"94313e5f4e3657c824cf46bcaf11c3c3_114825.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/220630/ac0567eabad39c6f307f9e591593b862_114825.jpg\" title=\"ac0567eabad39c6f307f9e591593b862_114825.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/220630/c8dd80ab7d6d991f00839cd4fc6777bb_114825.jpg\" title=\"c8dd80ab7d6d991f00839cd4fc6777bb_114825.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/220630/copy-1648710347-22133120MICA20SENSE20EBA088EB939CEC97A3ECA780p20EC9BB9EC8381EC84B8_114826.jpg\" title=\"copy-1648710347-22133120MICA20SENSE20EBA088EB939CEC97A3ECA780p20EC9BB9EC8381EC84B8_114826.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\">&nbsp;</p>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[소형전자(전자기기)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[MicaSense RedEdge-P 다중분광 카메라]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[KC 인증 필 유무]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[정격전압, 소비전력]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[출시년월]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[MicaSense]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="7"><stepData idx="1"><infoTitle><![CDATA[제조국]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="8"><stepData idx="1"><infoTitle><![CDATA[크기, 무게]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="9"><stepData idx="1"><infoTitle><![CDATA[주요 사양]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="10"><stepData idx="1"><infoTitle><![CDATA[품질보증기준]]></infoTitle><infoValue><![CDATA[제조사 품질보증 기준 및 소비자분쟁해결기준(공정거래위원회 고시)에 따름]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="11"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="7">
+<goodsNo>1000000652</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>[견적상품] MicaSense RedEdge-MX</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002020|002019008|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p style=\"text-align: center;\" align=\"center\">&nbsp;</p><p style=\"text-align: center; \" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/220630/micasense_02_114212.jpg\" title=\"micasense_02_114212.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/220630/micasense-rededge-mx_web_01_114212.jpg\" title=\"micasense-rededge-mx_web_01_114212.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/220630/micasense-rededge-mx_web_02_114212.jpg\" title=\"micasense-rededge-mx_web_02_114212.jpg\" class=\"js-smart-img\">&nbsp;</p>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[소형전자(전자기기)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[MicaSense RedEdge-MX]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[KC 인증 필 유무]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[정격전압, 소비전력]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[출시년월]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[MicaSense]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="7"><stepData idx="1"><infoTitle><![CDATA[제조국]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="8"><stepData idx="1"><infoTitle><![CDATA[크기, 무게]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="9"><stepData idx="1"><infoTitle><![CDATA[주요 사양]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="10"><stepData idx="1"><infoTitle><![CDATA[품질보증기준]]></infoTitle><infoValue><![CDATA[제조사 품질보증 기준 및 소비자분쟁해결기준(공정거래위원회 고시)에 따름]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="11"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="8">
+<goodsNo>1000000651</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>[견적상품] Gremsy PIXY U Bundle For WORKSWELL CWSI/WIRIS PRO</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002020|002019008|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p>&nbsp;</p><p style=\"text-align: center; \" align=\"center\">&nbsp;</p><p style=\"text-align: center; \" align=\"center\">&nbsp;</p><p style=\"text-align: center; \" align=\"center\">&nbsp;</p><p style=\"text-align: center; \" align=\"center\">&nbsp;</p><p style=\"text-align: center; \" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/220630/21e557fb2da644f7b4fd54ccc75b5cdf_113612.jpg\" title=\"21e557fb2da644f7b4fd54ccc75b5cdf_113612.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/220630/f2bf1c3732c93ca3a94d4d6a4106b8d0_113612.jpg\" title=\"f2bf1c3732c93ca3a94d4d6a4106b8d0_113612.jpg\" class=\"js-smart-img\">&nbsp;</p><p style=\"text-align: center; \" align=\"center\">&nbsp;</p>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[소형전자(전자기기)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[Gremsy PIXY U Bundle For WORKSWELL CWSI/WIRIS PRO]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[KC 인증 필 유무]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[정격전압, 소비전력]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[출시년월]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[Gremsy]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="7"><stepData idx="1"><infoTitle><![CDATA[제조국]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="8"><stepData idx="1"><infoTitle><![CDATA[크기, 무게]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="9"><stepData idx="1"><infoTitle><![CDATA[주요 사양]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="10"><stepData idx="1"><infoTitle><![CDATA[품질보증기준]]></infoTitle><infoValue><![CDATA[제조사 품질보증 기준 및 소비자분쟁해결기준(공정거래위원회 고시)에 따름]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="11"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="9">
+<goodsNo>1000000650</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>[견적상품] Gremsy PIXY SM 짐벌</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002020|002019008|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p>&nbsp;</p><p style=\"text-align: center; \" align=\"center\">&nbsp;</p><p style=\"text-align: center; \" align=\"center\">&nbsp;</p><p style=\"text-align: center; \" align=\"center\">&nbsp;</p><p style=\"text-align: center; \" align=\"center\">&nbsp;</p><p style=\"text-align: center; \" align=\"center\">&nbsp;</p><p style=\"text-align: center; \" align=\"center\">&nbsp;</p><div area=\"before\" draggable=\"false\" sp-edit=\"text\" sp-sort-nodrop=\"\" class=\"initialize\" style=\"margin: 0px; padding: 4rem 0px 0px; list-style: none; line-height: 1; position: relative; cursor: auto; word-break: break-all; max-width: 100%; font-family: Roboto, &quot;Noto Sans KR&quot;, &quot;Apple SD Gothic Neo&quot;, arial, &quot;sans-serif&quot;, &quot;serif&quot;, &quot;Noto Color Emoji&quot;, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; color: rgb(51, 51, 51); font-size: 16px; text-align: center; box-sizing: border-box !important;\" align=\"center\"><span draggable=\"false\" style=\"box-sizing: border-box !important; line-height: inherit; max-width: 100%; display: inline-block; vertical-align: middle; font-family: inherit; font-size: 48px; font-weight: 700;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/220630/c49381666b38b218557475a22abe21fb_112049.jpg\" title=\"c49381666b38b218557475a22abe21fb_112049.jpg\" class=\"js-smart-img\" style=\"font-family: 돋움, Dotum, Helvetica, sans-serif; font-size: 12px;\">항공 매핑을&nbsp;</span></div><div area=\"before\" draggable=\"false\" sp-edit=\"text\" sp-sort-nodrop=\"\" class=\"initialize\" style=\"margin: 0px; padding: 4rem 0px 0px; list-style: none; line-height: 1; position: relative; cursor: auto; word-break: break-all; max-width: 100%; font-family: Roboto, &quot;Noto Sans KR&quot;, &quot;Apple SD Gothic Neo&quot;, arial, &quot;sans-serif&quot;, &quot;serif&quot;, &quot;Noto Color Emoji&quot;, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; color: rgb(51, 51, 51); font-size: 16px; text-align: center; box-sizing: border-box !important;\" align=\"center\"><span style=\"font-family: inherit; font-size: 48px; font-weight: 700;\">새로운 차원으로 끌어올리다</span></div><div area=\"before\" draggable=\"false\" sp-edit=\"text\" sp-sort-nodrop=\"\" class=\"initialize\" style=\"margin: 0px; padding: 4rem 0px 0px; list-style: none; line-height: 1; position: relative; cursor: auto; word-break: break-all; max-width: 100%; font-family: Roboto, &quot;Noto Sans KR&quot;, &quot;Apple SD Gothic Neo&quot;, arial, &quot;sans-serif&quot;, &quot;serif&quot;, &quot;Noto Color Emoji&quot;, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; color: rgb(51, 51, 51); font-size: 16px; text-align: center; box-sizing: border-box !important;\" align=\"center\"><span style=\"font-family: inherit; font-size: 1rem;\">M300 RTK 및 Sony α7R IV와 함께 Pixy SM은 지리 공간 전문가를 위한 최고의 매핑 솔루션을 제공합니다.</span></div><p style=\"text-align: center; \" align=\"center\"><span style=\"color: rgb(51, 51, 51); font-family: Roboto, &quot;Noto Sans KR&quot;, &quot;Apple SD Gothic Neo&quot;, arial, &quot;sans-serif&quot;, &quot;serif&quot;, &quot;Noto Color Emoji&quot;, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; font-size: 16px;\">&nbsp;</span></p><p style=\"text-align: center; \" align=\"center\"><span style=\"color: rgb(51, 51, 51); font-family: Roboto, &quot;Noto Sans KR&quot;, &quot;Apple SD Gothic Neo&quot;, arial, &quot;sans-serif&quot;, &quot;serif&quot;, &quot;Noto Color Emoji&quot;, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; font-size: 16px;\">&nbsp;</span></p><p style=\"text-align: center; \" align=\"center\"><span style=\"color: rgb(51, 51, 51); font-family: Roboto, &quot;Noto Sans KR&quot;, &quot;Apple SD Gothic Neo&quot;, arial, &quot;sans-serif&quot;, &quot;serif&quot;, &quot;Noto Color Emoji&quot;, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; font-size: 16px;\">&nbsp;</span></p><p style=\"text-align: center; \" align=\"center\"><span style=\"color: rgb(51, 51, 51); font-family: Roboto, &quot;Noto Sans KR&quot;, &quot;Apple SD Gothic Neo&quot;, arial, &quot;sans-serif&quot;, &quot;serif&quot;, &quot;Noto Color Emoji&quot;, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; font-size: 16px;\">&nbsp;</span></p><p style=\"text-align: center; \" align=\"center\"><span style=\"color: rgb(51, 51, 51); font-family: Roboto, &quot;Noto Sans KR&quot;, &quot;Apple SD Gothic Neo&quot;, arial, &quot;sans-serif&quot;, &quot;serif&quot;, &quot;Noto Color Emoji&quot;, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; font-size: 16px;\">&nbsp;</span></p><p style=\"text-align: center; \" align=\"center\"><span style=\"color: rgb(51, 51, 51); font-family: Roboto, &quot;Noto Sans KR&quot;, &quot;Apple SD Gothic Neo&quot;, arial, &quot;sans-serif&quot;, &quot;serif&quot;, &quot;Noto Color Emoji&quot;, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; font-size: 16px;\">&nbsp;</span></p><p style=\"text-align: center; \" align=\"center\"><span style=\"color: rgb(51, 51, 51); font-family: Roboto, &quot;Noto Sans KR&quot;, &quot;Apple SD Gothic Neo&quot;, arial, &quot;sans-serif&quot;, &quot;serif&quot;, &quot;Noto Color Emoji&quot;, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; font-size: 16px;\">DJI 파일럿 앱의 카메라/짐벌 컨트롤 및 설정</span></p><p style=\"text-align: center; \" align=\"center\">&nbsp;</p><p style=\"text-align: center; \" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/220630/camera-control_112049.png\" title=\"camera-control_112049.png\" class=\"js-smart-img\"><span style=\"font-family: Roboto, &quot;Noto Sans KR&quot;, &quot;Apple SD Gothic Neo&quot;, arial, sans-serif, serif, &quot;Noto Color Emoji&quot;, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; color: rgb(51, 51, 51);\"><span style=\"font-size: 16px;\"> </span></span></p><p style=\"text-align: center; \" align=\"center\">&nbsp;</p><p style=\"text-align: center; \" align=\"center\">&nbsp;</p><div area=\"after\" draggable=\"false\" sp-edit=\"text\" sp-sort-nodrop=\"\" class=\"mo-8F85B12301--nopad initialize\" style=\"margin: 3.8rem auto 0rem; padding: 0.5rem 0rem 0rem; list-style: none; line-height: inherit; position: relative; cursor: auto; word-break: break-all; max-width: 100%; font-family: Roboto, &quot;Noto Sans KR&quot;, &quot;Apple SD Gothic Neo&quot;, arial, &quot;sans-serif&quot;, &quot;serif&quot;, &quot;Noto Color Emoji&quot;, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; color: rgb(51, 51, 51); font-size: 16px; text-align: center; box-sizing: border-box !important;\">GPS에 의한 자동 지오태깅</div><div><br></div><p style=\"text-align: center; \" align=\"center\">&nbsp;</p><p style=\"text-align: center; \" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/220630/geotagging_112049.png\" title=\"geotagging_112049.png\" class=\"js-smart-img\">&nbsp;</p><p style=\"text-align: center; \" align=\"center\">&nbsp;</p><p style=\"text-align: center; \" align=\"center\">&nbsp;</p><p style=\"text-align: center; \" align=\"center\">&nbsp;</p><p style=\"text-align: center; \" align=\"center\">&nbsp;</p><p style=\"text-align: center; \" align=\"center\">&nbsp;</p><p style=\"text-align: center; \" align=\"center\">&nbsp;</p><p style=\"text-align: center; \" align=\"center\">&nbsp;</p><p style=\"text-align: center; \" align=\"center\"><span style=\"color: rgb(51, 51, 51); font-family: Roboto, &quot;Noto Sans KR&quot;, &quot;Apple SD Gothic Neo&quot;, arial, &quot;sans-serif&quot;, &quot;serif&quot;, &quot;Noto Color Emoji&quot;, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; font-size: 16px;\">M300 RTK에서 사진 및 라이브 스트리밍 비디오 촬영</span>&nbsp;</p><p style=\"text-align: center; \" align=\"center\">&nbsp;</p><p style=\"text-align: center; \" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/220630/streaming_112050.png\" title=\"streaming_112050.png\" class=\"js-smart-img\"><br style=\"clear:both;\">&nbsp;</p>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[소형전자(전자기기)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[Gremsy PIXY SM 짐벌]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[KC 인증 필 유무]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[정격전압, 소비전력]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[출시년월]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[Gremsy]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="7"><stepData idx="1"><infoTitle><![CDATA[제조국]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="8"><stepData idx="1"><infoTitle><![CDATA[크기, 무게]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="9"><stepData idx="1"><infoTitle><![CDATA[주요 사양]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="10"><stepData idx="1"><infoTitle><![CDATA[품질보증기준]]></infoTitle><infoValue><![CDATA[제조사 품질보증 기준 및 소비자분쟁해결기준(공정거래위원회 고시)에 따름]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="11"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="10">
+<goodsNo>1000000649</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>[견적상품] Gremsy PIXY F 짐벌</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002020|002019008|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/220630/211020-GREMSY-PIXY-F-ECA790EBB28C_EC9BB9EC8381EC84B828EB82B4EBB3B4EB82B4EAB8B029_03_110526.jpg\" title=\"211020-GREMSY-PIXY-F-ECA790EBB28C_EC9BB9EC8381EC84B828EB82B4EBB3B4EB82B4EAB8B029_03_110526.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/220630/211020-GREMSY-PIXY-F-ECA790EBB28C_gif28229EB82B4EBB3B4EB82B4EAB8B0_110526.gif\" title=\"211020-GREMSY-PIXY-F-ECA790EBB28C_gif28229EB82B4EBB3B4EB82B4EAB8B0_110526.gif\" class=\"js-smart-img\"><br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/220630/211020-GREMSY-PIXY-F-ECA790EBB28C_gif28329EB82B4EBB3B4EB82B4EAB8B0_110526.gif\" title=\"211020-GREMSY-PIXY-F-ECA790EBB28C_gif28329EB82B4EBB3B4EB82B4EAB8B0_110526.gif\" class=\"js-smart-img\"><br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/220630/220214-GREMSY-PIXY-F-web_05_110526.jpg\" title=\"220214-GREMSY-PIXY-F-web_05_110526.jpg\" class=\"js-smart-img\"></p><p style=\"text-align: center;\" align=\"center\"><strong style=\"color: rgb(51, 51, 51); font-family: dotum;\"><span style=\"font-size: 20pt;\"><span style=\"color: rgb(255, 0, 0);\"><br></span></span></strong></p><p style=\"text-align: center;\" align=\"center\"><strong style=\"color: rgb(51, 51, 51); font-family: dotum;\"><span style=\"font-size: 20pt;\"><span style=\"color: rgb(255, 0, 0);\"><br></span></span></strong></p><p style=\"text-align: center;\" align=\"center\"><strong style=\"color: rgb(51, 51, 51); font-family: dotum;\"><span style=\"font-size: 20pt;\"><span style=\"color: rgb(255, 0, 0);\">** Pixy Damping은 별도 구매 상품입니다.</span></span></strong></p><p style=\"text-align: center;\" align=\"center\"><strong style=\"color: rgb(51, 51, 51); font-family: dotum;\"><span style=\"font-size: 20pt;\"><span style=\"color: rgb(255, 0, 0);\"><br></span></span></strong></p><p style=\"text-align: center;\" align=\"center\"><strong style=\"color: rgb(51, 51, 51); font-family: dotum;\"><span style=\"font-size: 20pt;\"><span style=\"color: rgb(255, 0, 0);\"><br></span></span></strong></p><p style=\"text-align: center;\" align=\"center\">&nbsp;</p><p style=\"text-align: center;\" align=\"center\">&nbsp;</p><p style=\"text-align: center;\" align=\"center\"><br style=\"clear:both;\">&nbsp;</p>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<makerNm><![CDATA[GREMSY]]></makerNm>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[소형전자(전자기기)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[Gremsy PIXY F 짐벌]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[KC 인증 필 유무]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[정격전압, 소비전력]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[출시년월]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[Gremsy]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="7"><stepData idx="1"><infoTitle><![CDATA[제조국]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="8"><stepData idx="1"><infoTitle><![CDATA[크기, 무게]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="9"><stepData idx="1"><infoTitle><![CDATA[주요 사양]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="10"><stepData idx="1"><infoTitle><![CDATA[품질보증기준]]></infoTitle><infoValue><![CDATA[제조사 품질보증 기준 및 소비자분쟁해결기준(공정거래위원회 고시)에 따름]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="11"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="11">
+<goodsNo>1000000590</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>미카센스 MicaSense RedEdge-P SKYPORT 다중분광 카메라</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002020|002019008001|002019008|002|002019|002019019</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p>&nbsp;</p><p><br></p><p><br></p><div><div style=\"text-align: center;\" align=\"center\"><b><span style=\"font-size: 14pt; font-family: 나눔명조, NanumMyeongjo; background-color: rgb(255, 232, 232);\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/220527/99f8f5f0270dccc36cff558810d2821e_084334.jpg\" title=\"99f8f5f0270dccc36cff558810d2821e_084334.jpg\" class=\"js-smart-img\"></span></b></div><b><div style=\"text-align: center;\" align=\"center\"><b><span style=\"font-size: 14pt; font-family: 나눔명조, NanumMyeongjo; background-color: rgb(255, 232, 232);\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/220527/80d9d738163dc67c1f0bd8d7530249b4_084413.jpg\" title=\"80d9d738163dc67c1f0bd8d7530249b4_084413.jpg\" class=\"js-smart-img\"></span></b></div><span style=\"font-size: 14pt; font-family: 나눔명조, NanumMyeongjo; background-color: rgb(255, 232, 232);\"><div style=\"text-align: center;\" align=\"center\"><b style=\"font-family: 돋움, Dotum, Helvetica, sans-serif; font-size: 12px;\"><span style=\"font-size: 14pt; font-family: 나눔명조, NanumMyeongjo;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/220527/33_084452.jpg\" title=\"33_084452.jpg\" class=\"js-smart-img\"></span></b></div></span></b></div><div><b><span style=\"font-size: 14pt; font-family: 나눔명조, NanumMyeongjo; background-color: rgb(255, 232, 232);\"><br></span></b></div><div><p align=\"center\" style=\"text-align: center; background-color: rgb(255, 255, 255);\">&nbsp;</p></div><p>&nbsp;</p>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<makerNm><![CDATA[MicaSense]]></makerNm>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[소형전자(전자기기)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[미카센스 MicaSense RedEdge-P SKYPORT 다중분광 카메라]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[KC 인증 필 유무]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[정격전압, 소비전력]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[출시년월]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[MicaSense]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="7"><stepData idx="1"><infoTitle><![CDATA[제조국]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="8"><stepData idx="1"><infoTitle><![CDATA[크기, 무게]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="9"><stepData idx="1"><infoTitle><![CDATA[주요 사양]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="10"><stepData idx="1"><infoTitle><![CDATA[품질보증기준]]></infoTitle><infoValue><![CDATA[제조사 품질보증 기준 및 소비자분쟁해결기준(공정거래위원회 고시)에 따름]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="11"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="12">
+<goodsNo>1000000587</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 미니3 프로 / 미니4 프로 플러스 배터리</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019001|002019001028|002019001023|002019001021|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>y</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>y</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>y</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p style=\"text-align: center;\" align=\"center\"><br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/231101/a31494bd4c4c19484aa7fa06a20bb31b_104113.jpg\" title=\"a31494bd4c4c19484aa7fa06a20bb31b_104113.jpg\" class=\"js-smart-img\">&nbsp;</p><div class=\"temp-specs-tr\" style=\"padding: 0px; margin: 0px 0px 20px; box-sizing: inherit; letter-spacing: -0.28px; border: 0px; font-size: 14px; vertical-align: baseline; background: 0px 0px rgb(255, 255, 255); display: flex; color: rgb(112, 116, 115); font-family: &quot;Open Sans&quot;, helvetica, arial, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif;\"><div class=\"temp-specs-td name\" style=\"padding: 30px 0px; margin: 0px; box-sizing: border-box; letter-spacing: -0.02em; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(221, 221, 221); border-left-color: initial; border-image: initial; font-size: 18px; vertical-align: middle; background: 0px 0px; line-height: 1.6em; min-width: 240px;\">개요</div><div class=\"temp-specs-td value\" style=\"padding: 30px 0px 30px 10px; margin: 8px 0px 0px; box-sizing: border-box; letter-spacing: -0.02em; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(221, 221, 221); border-left-color: initial; border-image: initial; font-size: 16px; vertical-align: middle; background: 0px 0px; color: rgb(51, 51, 51); line-height: 1.8em; -webkit-box-flex: 1; flex-grow: 1;\"><p style=\"margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">최대 비행시간 45분(Mini 4 Pro), 47분(Mini 3 Pro), 51분(Mini 3)을 제공*합니다. 더 많이 오래도록 비행 장소를 편안히 살펴보세요.</p></div></div><div class=\"temp-specs-tr\" style=\"padding: 0px; margin: 0px 0px 20px; box-sizing: inherit; letter-spacing: -0.28px; border: 0px; font-size: 14px; vertical-align: baseline; background: 0px 0px rgb(255, 255, 255); display: flex; color: rgb(112, 116, 115); font-family: &quot;Open Sans&quot;, helvetica, arial, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif;\"><div class=\"temp-specs-td name\" style=\"padding: 30px 0px; margin: 0px; box-sizing: border-box; letter-spacing: -0.02em; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(221, 221, 221); border-left-color: initial; border-image: initial; font-size: 18px; vertical-align: middle; background: 0px 0px; line-height: 1.6em; min-width: 240px;\">유의</div><div class=\"temp-specs-td value\" style=\"padding: 30px 0px 30px 10px; margin: 8px 0px 0px; box-sizing: border-box; letter-spacing: -0.02em; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(221, 221, 221); border-left-color: initial; border-image: initial; font-size: 16px; vertical-align: middle; background: 0px 0px; color: rgb(51, 51, 51); line-height: 1.8em; -webkit-box-flex: 1; flex-grow: 1;\"><p style=\"margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">* 통제된 실험실 환경에서 측정된 값. 측정 테스트 조건: 무풍 환경의 실험실 환경, 해발 20m 고도에서 21.6km/h 일정한 속도로 전진 비행, 사진 모드(비행 중 사진 촬영 작업 안 함), 장애물 회피 기능 꺼짐, 배터리 잔량 100%에서 0%까지 사용. 결과는 환경, 실제 사용 방법, 펌웨어 버전에 따라 달라질 수 있습니다. 인텔리전트 플라이트 배터리 플러스 사용 시, 기체 이륙 무게는 249g을 초과합니다. 비행 전, 항시 현지 법률과 규정을 필히 확인해야 합니다.</p></div></div><div class=\"temp-specs-tr\" style=\"padding: 0px; margin: 0px 0px 20px; box-sizing: inherit; letter-spacing: -0.28px; border: 0px; font-size: 14px; vertical-align: baseline; background: 0px 0px rgb(255, 255, 255); display: flex; color: rgb(112, 116, 115); font-family: &quot;Open Sans&quot;, helvetica, arial, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif;\"><div class=\"temp-specs-td name\" style=\"padding: 30px 0px; margin: 0px; box-sizing: border-box; letter-spacing: -0.02em; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(221, 221, 221); border-left-color: initial; border-image: initial; font-size: 18px; vertical-align: middle; background: 0px 0px; line-height: 1.6em; min-width: 240px;\">구성품</div><div class=\"temp-specs-td value\" style=\"padding: 30px 0px 30px 10px; margin: 8px 0px 0px; box-sizing: border-box; letter-spacing: -0.02em; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(221, 221, 221); border-left-color: initial; border-image: initial; font-size: 16px; vertical-align: middle; background: 0px 0px; color: rgb(51, 51, 51); line-height: 1.8em; -webkit-box-flex: 1; flex-grow: 1;\"><p style=\"margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">인텔리전트 플라이트 배터리 플러스 × 1</p></div></div><div class=\"temp-specs-tr\" style=\"padding: 0px; margin: 0px 0px 20px; box-sizing: inherit; letter-spacing: -0.28px; border: 0px; font-size: 14px; vertical-align: baseline; background: 0px 0px rgb(255, 255, 255); display: flex; color: rgb(112, 116, 115); font-family: &quot;Open Sans&quot;, helvetica, arial, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif;\"><div class=\"temp-specs-td name\" style=\"padding: 30px 0px; margin: 0px; box-sizing: border-box; letter-spacing: -0.02em; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(221, 221, 221); border-left-color: initial; border-image: initial; font-size: 18px; vertical-align: middle; background: 0px 0px; line-height: 1.6em; min-width: 240px;\">사양</div><div class=\"temp-specs-td value\" style=\"padding: 30px 0px 30px 10px; margin: 8px 0px 0px; box-sizing: border-box; letter-spacing: -0.02em; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(221, 221, 221); border-left-color: initial; border-image: initial; font-size: 16px; vertical-align: middle; background: 0px 0px; color: rgb(51, 51, 51); line-height: 1.8em; -webkit-box-flex: 1; flex-grow: 1;\"><p style=\"margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">모델명: BWX162-3850-7.38</p><p style=\"margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">무게: 약 121 g</p><p style=\"margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">용량: 3850 mAh</p><p style=\"margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">공칭 전압: 7.38 V</p><p style=\"margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">최대 충전 전압: 8.5 V</p><p style=\"margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">배터리 유형: Li-ion</p><p style=\"margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">에너지: 28.4 Wh</p><p style=\"margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">충전 시간: 101분 (DJI 30W USB-C 충전기 사용, 기체에 삽입된 배터리)</p><p style=\"margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">78분 (DJI 30W USB-C 충전기 사용, 양방향 충전 허브에 삽입된 배터리)&nbsp;</p><p style=\"margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">충전 온도: 5~40 °C</p><p style=\"margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">권장 충전기: DJI 30W USB-C 충전기 또는 기타 USB PD 충전기</p></div></div><div class=\"temp-specs-tr\" style=\"padding: 0px; margin: 0px 0px 20px; box-sizing: inherit; letter-spacing: -0.28px; border: 0px; font-size: 14px; vertical-align: baseline; background: 0px 0px rgb(255, 255, 255); display: flex; color: rgb(112, 116, 115); font-family: &quot;Open Sans&quot;, helvetica, arial, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif;\"><div class=\"temp-specs-td name\" style=\"padding: 30px 0px; margin: 0px; box-sizing: border-box; letter-spacing: -0.02em; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(221, 221, 221); border-left-color: initial; border-image: initial; font-size: 18px; vertical-align: middle; background: 0px 0px; line-height: 1.6em; min-width: 240px;\">호환 제품</div><div class=\"temp-specs-td value\" style=\"padding: 30px 0px 30px 10px; margin: 8px 0px 0px; box-sizing: border-box; letter-spacing: -0.02em; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(221, 221, 221); border-left-color: initial; border-image: initial; font-size: 16px; vertical-align: middle; background: 0px 0px; color: rgb(51, 51, 51); line-height: 1.8em; -webkit-box-flex: 1; flex-grow: 1;\"><p style=\"margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">DJI Mini 4 Pro</p><p style=\"margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">DJI Mini 3 Pro</p><p style=\"margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">DJI Mini 3</p></div></div><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<brandCd><![CDATA[001]]></brandCd>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[소형전자(전자기기)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[DJI 미니3 프로 / 미니4 프로 플러스 배터리]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[KC 인증 필 유무]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[정격전압, 소비전력]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[출시년월]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[DJI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="7"><stepData idx="1"><infoTitle><![CDATA[제조국]]></infoTitle><infoValue><![CDATA[중국]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="8"><stepData idx="1"><infoTitle><![CDATA[크기, 무게]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="9"><stepData idx="1"><infoTitle><![CDATA[주요 사양]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="10"><stepData idx="1"><infoTitle><![CDATA[품질보증기준]]></infoTitle><infoValue><![CDATA[제조사 품질보증 기준 및 소비자분쟁해결기준(공정거래위원회 고시)에 따름]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="11"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="13">
+<goodsNo>1000000569</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>[정품-당일발송] DJI 매빅3 프로펠러 가드</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019001|002019001022|002019001020|002019001024|002|002019|002019001007</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>y</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>a</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p>&nbsp;</p><div style=\"text-align: center;\" align=\"center\"><br></div><div style=\"text-align: center;\" align=\"center\"><br style=\"clear:both;\"> </div><div style=\"text-align: center;\" align=\"center\"><br></div><div style=\"text-align: center;\" align=\"center\"></div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[기타 재화]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[DJI 매빅3 프로펠러 가드]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[법에 의한 인증·허가 등을 받았음을 확인할 수 있는 경우 그에 대한 사항]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[제조국 또는 원산지]]></infoTitle><infoValue><![CDATA[중국]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[DJI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="14">
+<goodsNo>1000000568</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 매빅3 저소음프로펠러</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019001|002019001020|002019001024|002019001025|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>y</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>y</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>a</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<addGoodsData idx="1"><title>예약 판매</title><mustFl>y</mustFl><goodsNoData idx="1">1000000944</goodsNoData></addGoodsData>
+<goodsDescription><![CDATA[<h3 class=\"style__title___PyMSD\" style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; padding: 0px; margin: 0px; box-sizing: inherit; color: rgb(59, 62, 64); font-size: 24px; line-height: 28px; border: 0px; vertical-align: baseline; background: 0px 0px rgb(255, 255, 255); letter-spacing: -0.03em; font-family: &quot;Open Sans&quot;, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, SimSun, sans-serif;\">자세히 살펴보기</h3><div class=\"style__body___hRZQQ layout-top-bottom section-container\" style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; padding: 0px; margin: 0px auto; box-sizing: inherit; letter-spacing: -0.32px; border: 0px; font-size: 16px; vertical-align: baseline; background: 0px 0px rgb(255, 255, 255); position: relative; max-width: 1200px; color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, SimSun, sans-serif;\"><article id=\"overview\" class=\"style__tab-content-item___feY-i style__overview-item___+Ra5W style__content-layout-show-hide___dH5fd style__active___z2rnN \" style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; padding: 0px; margin: 24px 0px 0px; box-sizing: inherit; border: 0px; font-size: 14px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; color: rgb(112, 116, 115);\"><div class=\"style__content-container___5Yesm\" style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; vertical-align: baseline; background: 0px 0px;\"><div style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; vertical-align: baseline; background: 0px 0px;\"><div style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; vertical-align: baseline; background: 0px 0px;\"><div class=\"product-detail-temp-specs\" style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; padding: 0px; margin: 0px auto; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; vertical-align: baseline; background: 0px 0px; max-width: 1200px;\"><div class=\"temp-specs-table\" style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; padding: 0px; margin: 0px auto; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; vertical-align: baseline; background: 0px 0px; border-collapse: collapse; max-width: 1000px;\"><div class=\"temp-specs-tbody\" style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; vertical-align: baseline; background: 0px 0px;\"><div class=\"temp-specs-tr\" style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; padding: 0px; margin: 0px 0px 20px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; vertical-align: baseline; background: 0px 0px;\"><div class=\"temp-specs-td name\" style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; padding: 20px 0px 10px; margin: 0px; box-sizing: border-box; letter-spacing: -0.02em; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: transparent; border-left-color: initial; border-image: initial; font-size: 16px; vertical-align: middle; background: 0px 0px; line-height: 1.6em; min-width: 240px; min-height: 20px; width: 437px;\">개요</div><div class=\"temp-specs-td value\" style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; padding: 0px 0px 20px; margin: 8px 0px 0px; box-sizing: border-box; letter-spacing: -0.02em; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(221, 221, 221); border-left-color: initial; border-image: initial; vertical-align: middle; background: 0px 0px; color: rgb(51, 51, 51); line-height: 24px; flex-grow: 1; min-height: 20px;\"><p style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">각 프로펠러 블레이드를 정교하고 다이내믹한 균형 테스트를 통해 공기역학적 효율성을 높이고 소음을 낮췄습니다.</p></div></div><div class=\"temp-specs-tr\" style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; padding: 0px; margin: 0px 0px 20px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; vertical-align: baseline; background: 0px 0px;\"><div class=\"temp-specs-td name\" style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; padding: 20px 0px 10px; margin: 0px; box-sizing: border-box; letter-spacing: -0.02em; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: transparent; border-left-color: initial; border-image: initial; font-size: 16px; vertical-align: middle; background: 0px 0px; line-height: 1.6em; min-width: 240px; min-height: 20px; width: 437px;\">특징</div><div class=\"temp-specs-td value\" style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; padding: 0px 0px 20px; margin: 8px 0px 0px; box-sizing: border-box; letter-spacing: -0.02em; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(221, 221, 221); border-left-color: initial; border-image: initial; vertical-align: middle; background: 0px 0px; color: rgb(51, 51, 51); line-height: 24px; flex-grow: 1; min-height: 20px;\"><p style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">소음은 적게, 더 오래 비행 가능.</p></div></div><div class=\"temp-specs-tr\" style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; padding: 0px; margin: 0px 0px 20px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; vertical-align: baseline; background: 0px 0px;\"><div class=\"temp-specs-td name\" style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; padding: 20px 0px 10px; margin: 0px; box-sizing: border-box; letter-spacing: -0.02em; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: transparent; border-left-color: initial; border-image: initial; font-size: 16px; vertical-align: middle; background: 0px 0px; line-height: 1.6em; min-width: 240px; min-height: 20px; width: 437px;\">유의</div><div class=\"temp-specs-td value\" style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; padding: 0px 0px 20px; margin: 8px 0px 0px; box-sizing: border-box; letter-spacing: -0.02em; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(221, 221, 221); border-left-color: initial; border-image: initial; vertical-align: middle; background: 0px 0px; color: rgb(51, 51, 51); line-height: 24px; flex-grow: 1; min-height: 20px;\"><p style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">1. 지침에 따라 올바르게 블레이드를 설치해야 합니다.</p><p style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">2. 손상된 프로펠러는 최대한 빨리 교체해야 합니다.</p></div></div><div class=\"temp-specs-tr\" style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; padding: 0px; margin: 0px 0px 20px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; vertical-align: baseline; background: 0px 0px;\"><div class=\"temp-specs-td name\" style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; padding: 20px 0px 10px; margin: 0px; box-sizing: border-box; letter-spacing: -0.02em; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: transparent; border-left-color: initial; border-image: initial; font-size: 16px; vertical-align: middle; background: 0px 0px; line-height: 1.6em; min-width: 240px; min-height: 20px; width: 437px;\">구성품</div><div class=\"temp-specs-td value\" style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; padding: 0px 0px 20px; margin: 8px 0px 0px; box-sizing: border-box; letter-spacing: -0.02em; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(221, 221, 221); border-left-color: initial; border-image: initial; vertical-align: middle; background: 0px 0px; color: rgb(51, 51, 51); line-height: 24px; flex-grow: 1; min-height: 20px;\"><p style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">DJI 매빅 3 저소음 프로펠러 (1쌍) × 1</p></div></div><div class=\"temp-specs-tr\" style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; padding: 0px; margin: 0px 0px 20px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; vertical-align: baseline; background: 0px 0px;\"><div class=\"temp-specs-td name\" style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; padding: 20px 0px 10px; margin: 0px; box-sizing: border-box; letter-spacing: -0.02em; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: transparent; border-left-color: initial; border-image: initial; font-size: 16px; vertical-align: middle; background: 0px 0px; line-height: 1.6em; min-width: 240px; min-height: 20px; width: 437px;\">사양</div><div class=\"temp-specs-td value\" style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; padding: 0px 0px 20px; margin: 8px 0px 0px; box-sizing: border-box; letter-spacing: -0.02em; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(221, 221, 221); border-left-color: initial; border-image: initial; vertical-align: middle; background: 0px 0px; color: rgb(51, 51, 51); line-height: 24px; flex-grow: 1; min-height: 20px;\"><p style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">지름×나사산 피치: 23.9×13.5 cm</p><p style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">무게 (단일 렌즈): 8.5 g</p></div></div><div class=\"temp-specs-tr\" style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; padding: 0px; margin: 0px 0px 20px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; vertical-align: baseline; background: 0px 0px;\"><div class=\"temp-specs-td name\" style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; padding: 20px 0px 10px; margin: 0px; box-sizing: border-box; letter-spacing: -0.02em; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: transparent; border-left-color: initial; border-image: initial; font-size: 16px; vertical-align: middle; background: 0px 0px; line-height: 1.6em; min-width: 240px; min-height: 20px; width: 437px;\">호환 제품</div><div class=\"temp-specs-td value\" style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; padding: 0px 0px 20px; margin: 8px 0px 0px; box-sizing: border-box; letter-spacing: -0.02em; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(221, 221, 221); border-left-color: initial; border-image: initial; vertical-align: middle; background: 0px 0px; color: rgb(51, 51, 51); line-height: 24px; flex-grow: 1; min-height: 20px;\"><p style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">DJI Mavic 3 Pro</p><p style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">DJI Mavic 3 Pro Cine</p><p style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">DJI 매빅 3 Classic</p><p style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">DJI Mavic 3</p><p style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(0, 112, 213, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">DJI Mavic 3 Cine</p></div></div></div></div></div></div></div></div></article></div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<brandCd><![CDATA[001]]></brandCd>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[기타 재화]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[DJI 매빅3 저소음프로펠러]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[법에 의한 인증·허가 등을 받았음을 확인할 수 있는 경우 그에 대한 사항]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[제조국 또는 원산지]]></infoTitle><infoValue><![CDATA[중국]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[DJI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="15">
+<goodsNo>1000000554</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>[정품] DJI 매빅3 배터리</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>001|002019001|002019001024|002019001025|002019001020|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<img src=\"http://dronetr7262.godomall.com/data/editor/goods/211124/221344130_77915700_143145.jpg\" title=\"221344130_77915700_143145.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"><br style=\"clear:both;\">]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[소형전자(전자기기)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[DJI 매빅3 배터리]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[KC 인증 필 유무]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[정격전압, 소비전력]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[출시년월]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[DJI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="7"><stepData idx="1"><infoTitle><![CDATA[제조국]]></infoTitle><infoValue><![CDATA[중국]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="8"><stepData idx="1"><infoTitle><![CDATA[크기, 무게]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="9"><stepData idx="1"><infoTitle><![CDATA[주요 사양]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="10"><stepData idx="1"><infoTitle><![CDATA[품질보증기준]]></infoTitle><infoValue><![CDATA[제조사 품질보증 기준 및 소비자분쟁해결기준(공정거래위원회 고시)에 따름]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="11"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="16">
+<goodsNo>1000000550</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 매트리스 M300 2110 프로펠러</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019008|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>y</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<div align=\"center\" style=\"text-align: center;\"><p align=\"center\"><b style=\"color: rgb(255, 255, 255); font-family: 돋움체, DotumChe, AppleGothic; font-size: 48px;\"><span style=\"background-color: rgb(0, 117, 200);\">-﻿상품안내-</span></b><br></p><p align=\"center\"><br></p><p align=\"center\"><span style=\"font-size: 24px;\"><b>M300 RTK / M350 RTK에&nbsp; 둘 다 사용이 가능합니다.</b></span><b style=\"font-size: 24px;\">&nbsp;</b></p><p align=\"center\"><b style=\"font-size: 24px;\">자세한 내용은 드론박스 고객센터로 문의주시면 됩니다.&nbsp;</b><b style=\"font-size: 24px;\">&nbsp;&nbsp;</b></p></div><div align=\"center\" style=\"text-align: center;\"><b><span style=\"font-size: 18pt; font-family: 나눔명조, NanumMyeongjo; background-color: rgb(255, 232, 232);\"><br style=\"clear: both;\"></span></b><p align=\"center\" noto=\"\" sans=\"\" kr\",=\"\" \"nanum=\"\" gothic\",=\"\" \"malgun=\"\" \"맑은=\"\" 고딕\",=\"\" applegothic,=\"\" dotum,=\"\" 돋움,=\"\" sans-serif;=\"\" background-color:=\"\" rgb(255,=\"\" 255,=\"\" 255);=\"\" text-align:=\"\" center;\"=\"\" style=\"color: rgb(51, 51, 51); font-family: &quot;Noto Sans KR&quot;, &quot;Nanum Gothic&quot;, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);\"><span style=\"font-size: 24px; font-family: 돋움, Dotum;\"><b>드론박스 고객센터</b></span></p><p align=\"center\" noto=\"\" sans=\"\" kr\",=\"\" \"nanum=\"\" gothic\",=\"\" \"malgun=\"\" \"맑은=\"\" 고딕\",=\"\" applegothic,=\"\" dotum,=\"\" 돋움,=\"\" sans-serif;=\"\" background-color:=\"\" rgb(255,=\"\" 255,=\"\" 255);=\"\" text-align:=\"\" center;\"=\"\" style=\"color: rgb(51, 51, 51); font-family: &quot;Noto Sans KR&quot;, &quot;Nanum Gothic&quot;, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);\"><span style=\"font-size: 24px; font-family: 돋움, Dotum;\"><b>TEL. 070-7811-4422&nbsp;</b></span></p><p align=\"center\" noto=\"\" sans=\"\" kr\",=\"\" \"nanum=\"\" gothic\",=\"\" \"malgun=\"\" \"맑은=\"\" 고딕\",=\"\" applegothic,=\"\" dotum,=\"\" 돋움,=\"\" sans-serif;=\"\" background-color:=\"\" rgb(255,=\"\" 255,=\"\" 255);=\"\" text-align:=\"\" center;\"=\"\" style=\"color: rgb(51, 51, 51); font-family: &quot;Noto Sans KR&quot;, &quot;Nanum Gothic&quot;, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);\"><b><span noto=\"\" sans=\"\" kr\",=\"\" \"nanum=\"\" gothic\",=\"\" \"malgun=\"\" \"맑은=\"\" 고딕\",=\"\" applegothic,=\"\" dotum,=\"\" 돋움,=\"\" sans-serif;=\"\" text-align:=\"\" left;=\"\" background-color:=\"\" rgb(255,=\"\" 255,=\"\" 255);=\"\" font-size:=\"\" 12pt;\"=\"\" style=\"font-family: 돋움, Dotum;\">상담가능시간 :: 평일</span><span class=\"ff_mont\" noto=\"\" sans=\"\" kr\",=\"\" \"nanum=\"\" gothic\",=\"\" \"malgun=\"\" \"맑은=\"\" 고딕\",=\"\" applegothic,=\"\" dotum,=\"\" 돋움,=\"\" sans-serif;=\"\" text-align:=\"\" left;=\"\" background-color:=\"\" rgb(255,=\"\" 255,=\"\" 255);=\"\" font-size:=\"\" 12pt;\"=\"\" style=\"font-family: 돋움, Dotum;\">: &nbsp; 09:00 - 18:00 /&nbsp;</span><span noto=\"\" sans=\"\" kr\",=\"\" \"nanum=\"\" gothic\",=\"\" \"malgun=\"\" \"맑은=\"\" 고딕\",=\"\" applegothic,=\"\" dotum,=\"\" 돋움,=\"\" sans-serif;=\"\" text-align:=\"\" left;=\"\" background-color:=\"\" rgb(255,=\"\" 255,=\"\" 255);=\"\" font-size:=\"\" 12pt;\"=\"\" style=\"font-family: 돋움, Dotum;\">점심</span><span class=\"ff_mont\" noto=\"\" sans=\"\" kr\",=\"\" \"nanum=\"\" gothic\",=\"\" \"malgun=\"\" \"맑은=\"\" 고딕\",=\"\" applegothic,=\"\" dotum,=\"\" 돋움,=\"\" sans-serif;=\"\" text-align:=\"\" left;=\"\" background-color:=\"\" rgb(255,=\"\" 255,=\"\" 255);=\"\" font-size:=\"\" 12pt;\"=\"\" style=\"font-family: 돋움, Dotum;\">: &nbsp; 12:00 - 13:00 /&nbsp;</span><span noto=\"\" sans=\"\" kr\",=\"\" \"nanum=\"\" gothic\",=\"\" \"malgun=\"\" \"맑은=\"\" 고딕\",=\"\" applegothic,=\"\" dotum,=\"\" 돋움,=\"\" sans-serif;=\"\" text-align:=\"\" left;=\"\" background-color:=\"\" rgb(255,=\"\" 255,=\"\" 255);=\"\" font-size:=\"\" 12pt;\"=\"\" style=\"font-family: 돋움, Dotum;\">토,일,공휴일 휴무</span></b></p></div><p><img src=\"http://dronetr7262.godomall.com/data/editor/goods/211123/EBA7A4ED8AB8EBA6ACEC8AA4300RTK_2110ED9484EBA19CED8EA0EB9FAC1000_091400.jpg\" title=\"EBA7A4ED8AB8EBA6ACEC8AA4300RTK_2110ED9484EBA19CED8EA0EB9FAC1000_091400.jpg\" class=\"js-smart-img\">&nbsp;</p><div class=\"temp-specs-tr\" style=\"box-sizing: inherit; letter-spacing: -0.28px; margin: 0px 0px 20px; padding: 0px; border: 0px; font-size: 14px; vertical-align: baseline; background: rgb(255, 255, 255); display: flex; color: rgb(112, 116, 115); font-family: &quot;Open Sans&quot;, arial, sans-serif;\"><div class=\"temp-specs-td name\" style=\"box-sizing: border-box; letter-spacing: -0.02em; margin: 0px; padding: 30px 0px; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(221, 221, 221); border-left-color: initial; border-image: initial; font-size: 18px; vertical-align: middle; background: transparent; line-height: 1.6em; min-width: 240px;\">개요</div><div class=\"temp-specs-td value\" style=\"box-sizing: border-box; letter-spacing: -0.02em; margin: 8px 0px 0px; padding: 30px 0px 30px 10px; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(221, 221, 221); border-left-color: initial; border-image: initial; font-size: 16px; vertical-align: middle; background: transparent; color: rgb(51, 51, 51); line-height: 1.8em; -webkit-box-flex: 1; flex-grow: 1;\"><p style=\"box-sizing: inherit; margin-bottom: 20px; border: 0px; font-size: 14px; vertical-align: baseline; background: transparent; letter-spacing: -0.02em; color: rgba(0, 0, 0, 0.65); line-height: 20px;\">매트리스 300 RTK 드론에 대한 정품 프로펠러 표준</p></div></div><div class=\"temp-specs-tr\" style=\"box-sizing: inherit; letter-spacing: -0.28px; margin: 0px 0px 20px; padding: 0px; border: 0px; font-size: 14px; vertical-align: baseline; background: rgb(255, 255, 255); display: flex; color: rgb(112, 116, 115); font-family: &quot;Open Sans&quot;, arial, sans-serif;\"><div class=\"temp-specs-td name\" style=\"box-sizing: border-box; letter-spacing: -0.02em; margin: 0px; padding: 30px 0px; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(221, 221, 221); border-left-color: initial; border-image: initial; font-size: 18px; vertical-align: middle; background: transparent; line-height: 1.6em; min-width: 240px;\">유의</div><div class=\"temp-specs-td value\" style=\"box-sizing: border-box; letter-spacing: -0.02em; margin: 8px 0px 0px; padding: 30px 0px 30px 10px; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(221, 221, 221); border-left-color: initial; border-image: initial; font-size: 16px; vertical-align: middle; background: transparent; color: rgb(51, 51, 51); line-height: 1.8em; -webkit-box-flex: 1; flex-grow: 1;\"><p style=\"box-sizing: inherit; margin-bottom: 20px; border: 0px; font-size: 14px; vertical-align: baseline; background: transparent; letter-spacing: -0.02em; color: rgba(0, 0, 0, 0.65); line-height: 20px;\">실외 상황에서는 비상시에만 프로펠러를 교체할 것을 권장합니다. 프로펠러의 두께가 얇습니다. 스크래치가 생기기 않도록 주의하여 작동하세요.</p></div></div><div class=\"temp-specs-tr\" style=\"box-sizing: inherit; letter-spacing: -0.28px; margin: 0px 0px 20px; padding: 0px; border: 0px; font-size: 14px; vertical-align: baseline; background: rgb(255, 255, 255); display: flex; color: rgb(112, 116, 115); font-family: &quot;Open Sans&quot;, arial, sans-serif;\"><div class=\"temp-specs-td name\" style=\"box-sizing: border-box; letter-spacing: -0.02em; margin: 0px; padding: 30px 0px; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(221, 221, 221); border-left-color: initial; border-image: initial; font-size: 18px; vertical-align: middle; background: transparent; line-height: 1.6em; min-width: 240px;\">구성품</div><div class=\"temp-specs-td value\" style=\"box-sizing: border-box; letter-spacing: -0.02em; margin: 8px 0px 0px; padding: 30px 0px 30px 10px; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(221, 221, 221); border-left-color: initial; border-image: initial; font-size: 16px; vertical-align: middle; background: transparent; color: rgb(51, 51, 51); line-height: 1.8em; -webkit-box-flex: 1; flex-grow: 1;\"><p style=\"box-sizing: inherit; margin-bottom: 20px; border: 0px; font-size: 14px; vertical-align: baseline; background: transparent; letter-spacing: -0.02em; color: rgba(0, 0, 0, 0.65); line-height: 20px;\">CCW 프로펠러 1개</p><p style=\"box-sizing: inherit; margin-bottom: 20px; border: 0px; font-size: 14px; vertical-align: baseline; background: transparent; letter-spacing: -0.02em; color: rgba(0, 0, 0, 0.65); line-height: 20px;\">CW 프로펠러 1개</p><p style=\"box-sizing: inherit; margin-bottom: 20px; border: 0px; font-size: 14px; vertical-align: baseline; background: transparent; letter-spacing: -0.02em; color: rgba(0, 0, 0, 0.65); line-height: 20px;\">나사 6개</p></div></div><div class=\"temp-specs-tr\" style=\"box-sizing: inherit; letter-spacing: -0.28px; margin: 0px 0px 20px; padding: 0px; border: 0px; font-size: 14px; vertical-align: baseline; background: rgb(255, 255, 255); display: flex; color: rgb(112, 116, 115); font-family: &quot;Open Sans&quot;, arial, sans-serif;\"><div class=\"temp-specs-td name\" style=\"box-sizing: border-box; letter-spacing: -0.02em; margin: 0px; padding: 30px 0px; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(221, 221, 221); border-left-color: initial; border-image: initial; font-size: 18px; vertical-align: middle; background: transparent; line-height: 1.6em; min-width: 240px;\">사양</div><div class=\"temp-specs-td value\" style=\"box-sizing: border-box; letter-spacing: -0.02em; margin: 8px 0px 0px; padding: 30px 0px 30px 10px; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(221, 221, 221); border-left-color: initial; border-image: initial; font-size: 16px; vertical-align: middle; background: transparent; color: rgb(51, 51, 51); line-height: 1.8em; -webkit-box-flex: 1; flex-grow: 1;\"><p style=\"box-sizing: inherit; margin-bottom: 20px; border: 0px; font-size: 14px; vertical-align: baseline; background: transparent; letter-spacing: -0.02em; color: rgba(0, 0, 0, 0.65); line-height: 20px;\">프로펠러 지름: 53 cm</p><p style=\"box-sizing: inherit; margin-bottom: 20px; border: 0px; font-size: 14px; vertical-align: baseline; background: transparent; letter-spacing: -0.02em; color: rgba(0, 0, 0, 0.65); line-height: 20px;\">피치: 25 cm</p></div></div><div class=\"temp-specs-tr\" style=\"box-sizing: inherit; letter-spacing: -0.28px; margin: 0px 0px 20px; padding: 0px; border: 0px; font-size: 14px; vertical-align: baseline; background: rgb(255, 255, 255); display: flex; color: rgb(112, 116, 115); font-family: &quot;Open Sans&quot;, arial, sans-serif;\"><div class=\"temp-specs-td name\" style=\"box-sizing: border-box; letter-spacing: -0.02em; margin: 0px; padding: 30px 0px; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(221, 221, 221); border-left-color: initial; border-image: initial; font-size: 18px; vertical-align: middle; background: transparent; line-height: 1.6em; min-width: 240px;\">호환 제품</div><div class=\"temp-specs-td value\" style=\"box-sizing: border-box; letter-spacing: -0.02em; margin: 8px 0px 0px; padding: 30px 0px 30px 10px; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(221, 221, 221); border-left-color: initial; border-image: initial; font-size: 16px; vertical-align: middle; background: transparent; color: rgb(51, 51, 51); line-height: 1.8em; -webkit-box-flex: 1; flex-grow: 1;\"><p style=\"box-sizing: inherit; margin-bottom: 20px; border: 0px; font-size: 14px; vertical-align: baseline; background: transparent; letter-spacing: -0.02em; color: rgba(0, 0, 0, 0.65); line-height: 20px;\">매트리스 300 RTK</p></div></div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[기타 재화]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[DJI 매트리스 M300 2110 프로펠러]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[법에 의한 인증·허가 등을 받았음을 확인할 수 있는 경우 그에 대한 사항]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[제조국 또는 원산지]]></infoTitle><infoValue><![CDATA[중국]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[DJI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="17">
+<goodsNo>1000000513</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 에어2S 프로펠러 (에어2 호환) [벌크상품]</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019001|002019001019|002019|002|002019001010</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>a</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p style=\"text-align: center; \" align=\"center\">&nbsp;</p><p style=\"text-align: center;\" align=\"center\">&nbsp;<img src=\"http://dronetr7262.godomall.com/data/editor/goods/210630/291151260_31895900_193424.jpg\" title=\"291151260_31895900_193424.jpg\" class=\"js-smart-img\">&nbsp;</p><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<brandCd><![CDATA[001]]></brandCd>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[기타 재화]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[DJI 에어2S 프로펠러 (에어2 호환) [벌크상품]]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[법에 의한 인증·허가 등을 받았음을 확인할 수 있는 경우 그에 대한 사항]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[제조국 또는 원산지]]></infoTitle><infoValue><![CDATA[중국]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[DJI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="18">
+<goodsNo>1000000509</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 매트리스200 시리즈 TB55 인텔리전트 배터리</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019008|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>y</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/210617/170907_01_170638.jpg\" title=\"170907_01_170638.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"><br style=\"clear:both;\">]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[소형전자(전자기기)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[DJI 매트리스200 시리즈 TB55 인텔리전트 배터리]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[KC 인증 필 유무]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[정격전압, 소비전력]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[출시년월]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[DJI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="7"><stepData idx="1"><infoTitle><![CDATA[제조국]]></infoTitle><infoValue><![CDATA[중국]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="8"><stepData idx="1"><infoTitle><![CDATA[크기, 무게]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="9"><stepData idx="1"><infoTitle><![CDATA[주요 사양]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="10"><stepData idx="1"><infoTitle><![CDATA[품질보증기준]]></infoTitle><infoValue><![CDATA[제조사 품질보증 기준 및 소비자분쟁해결기준(공정거래위원회 고시)에 따름]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="11"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="19">
+<goodsNo>1000000457</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 매빅2 엔터프라이즈 어드밴스 RTK 모듈</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002019001018</cateCd>
+<allCateCd>001|001003|002019001|002019001018|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>y</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<div style=\"text-align: center;\" align=\"center\"><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/-476TDoP7As\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"></iframe></div><div style=\"text-align: center;\"><br></div><p style=\"text-align: center;\">&nbsp;<img src=\"http://dronetr7262.godomall.com/data/editor/goods/210514/5d8fac41eb3091fc2b844cba226c952b_091028.png\" title=\"5d8fac41eb3091fc2b844cba226c952b_091028.png\" class=\"js-smart-img\">&nbsp;</p><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[소형전자(전자기기)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[DJI 매빅2 엔터프라이즈 어드밴스 RTK 모듈]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[KC 인증 필 유무]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[정격전압, 소비전력]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[출시년월]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[DJI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="7"><stepData idx="1"><infoTitle><![CDATA[제조국]]></infoTitle><infoValue><![CDATA[중국]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="8"><stepData idx="1"><infoTitle><![CDATA[크기, 무게]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="9"><stepData idx="1"><infoTitle><![CDATA[주요 사양]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="10"><stepData idx="1"><infoTitle><![CDATA[품질보증기준]]></infoTitle><infoValue><![CDATA[제조사 품질보증 기준 및 소비자분쟁해결기준(공정거래위원회 고시)에 따름]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="11"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+<goods_data idx="20">
+<goodsNo>1000000388</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>인스파이어 2 퀵 릴리즈 프로펠러 (고공 비행용)</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd></cateCd>
+<allCateCd></allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>y</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>n</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p style=\"text-align: center; \" align=\"center\">&nbsp;</p><p style=\"text-align: center; \" align=\"center\">&nbsp;</p><p style=\"text-align: center; \" align=\"center\"><b><span style=\"font-size: 11pt; color: rgb(0, 0, 0);\">고공용 프로펠러로</span></b></p><p style=\"text-align: center; \" align=\"center\"><span style=\"color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, SimSun, sans-serif; font-size: 11pt; letter-spacing: -0.28px; text-align: start; background-color: rgb(255, 255, 255);\"><b>넓은 프로펠러 피치는 공기 밀도가 낮은 고도에서 기체의 추진력을 향상시킵니다.</b></span>&nbsp;</p><p style=\"text-align: center; \" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/210405/30_171233.jpg\" title=\"30_171233.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\">&nbsp;</p>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle><![CDATA[고시 분류]]></infoTitle><infoValue><![CDATA[기타 재화]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle><![CDATA[품명 및 모델명]]></infoTitle><infoValue><![CDATA[인스파이어 2 퀵 릴리즈 프로펠러 (고공 비행용)]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle><![CDATA[법에 의한 인증·허가 등을 받았음을 확인할 수 있는 경우 그에 대한 사항]]></infoTitle><infoValue><![CDATA[상세페이지 참조]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle><![CDATA[제조국 또는 원산지]]></infoTitle><infoValue><![CDATA[중국]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle><![CDATA[제조자(수입자)]]></infoTitle><infoValue><![CDATA[DJI]]></infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle><![CDATA[A/S 책임자와 전화번호]]></infoTitle><infoValue><![CDATA[드론박스 070-7811-4422]]></infoValue></stepData></goodsMustInfoData>
+</goods_data>
+</data>
