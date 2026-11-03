@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000000457</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 매빅2 엔터프라이즈 어드밴스 RTK 모듈</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002019001018</cateCd>
+<allCateCd>001|001003|002019001|002019001018|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>y</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p style=\"text-align: center;\">&nbsp;<img src=\"http://dronetr7262.godomall.com/data/editor/goods/210514/5d8fac41eb3091fc2b844cba226c952b_091028.png\" title=\"5d8fac41eb3091fc2b844cba226c952b_091028.png\" class=\"js-smart-img\">&nbsp;</p><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/aes.js\"></script><script type=\"text/javascript\" charset=\"UTF-8\" src=\"chrome-extension://aefibgbaijilanbphdomgjlogkldhlpm/vendor/crypto/pad-zeropadding-min.js\"></script>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+</goods_data>
+</data>
