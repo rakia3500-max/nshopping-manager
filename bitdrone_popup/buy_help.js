@@ -2,6 +2,7 @@
    A: 가격 밑 '네이버페이구매' 회색 줄을 숨기고, 같은 안내를 네이버페이 버튼 바로 위에
    B: 산업용(경로에 '산업용' 또는 300만 원 이상) 상품은 구매 버튼 아래 체크 카드 + [카톡으로 견적 요청하기][전화]
       카톡 단추: 빛드론 카카오톡 채널 채팅을 열고 '[견적 요청] 상품·링크·수량' 글을 복사(채팅창에 붙여넣기)
+   D: 휴대폰 후기·문의 탭이 상세정보 칸에 갇히던 것 바로잡기(2026-11-05)
    C: 가격 아래 정보 표를 아이콘 타일 4칸으로(정품·무료배송/방문 납품·적립·직영 A/S) — 2026-11-05 사장님 승인
    되돌리기: 카페24 스크립트 태그에서 이 파일만 빼면 원래대로 */
 (function () {
@@ -56,7 +57,17 @@
   table.parentNode.insertBefore(box, table);
   [rShip, rPt, rDoc, rTech, rCs, rMaker, rVisit].forEach(function (r) { if (r) r.style.display = 'none'; });
   }
+
+  // 2026-11-05 휴대폰 '상품후기·상품문의·구매안내' 탭이 안 열리던 문제: 공통 하단(구매시 유의사항 그림)의 <center><div>가 안 닫혀
+  //   후기·문의 칸이 상세정보 칸 안으로 들어감 → 상세정보 칸 밖(바로 뒤)으로 꺼내 제자리에 둔다. 스킨을 고치면 이 부분은 할 일이 없어짐.
+  function fixTabs() {
+    var dt = document.getElementById('detail');
+    if (!dt || !dt.parentNode) return;
+    var ref = dt;
+    [].slice.call(dt.querySelectorAll('div[class*="prd_tab0"]')).forEach(function (s) { ref.parentNode.insertBefore(s, ref.nextSibling); ref = s; });
+  }
   function run() {
+    try { fixTabs(); } catch (e) {}
     try { infoTiles(); } catch (e) {}
     var npay = document.getElementById('NaverChk_Button');
     if (!npay || !npay.parentNode) return;              // 상품 상세가 아니면 아무것도 안 함
