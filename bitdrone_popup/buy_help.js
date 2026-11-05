@@ -2,11 +2,62 @@
    A: 가격 밑 '네이버페이구매' 회색 줄을 숨기고, 같은 안내를 네이버페이 버튼 바로 위에
    B: 산업용(경로에 '산업용' 또는 300만 원 이상) 상품은 구매 버튼 아래 체크 카드 + [카톡으로 견적 요청하기][전화]
       카톡 단추: 빛드론 카카오톡 채널 채팅을 열고 '[견적 요청] 상품·링크·수량' 글을 복사(채팅창에 붙여넣기)
+   C: 가격 아래 정보 표를 아이콘 타일 4칸으로(정품·무료배송/방문 납품·적립·직영 A/S) — 2026-11-05 사장님 승인
    되돌리기: 카페24 스크립트 태그에서 이 파일만 빼면 원래대로 */
 (function () {
   if (window.__bdBuyHelp) return; window.__bdBuyHelp = 1;
   var KAKAO = 'https://pf.kakao.com/_xfExiyd/chat', TEL = '070-5176-7075';
+
+  // 2026-11-05 정보 표 C안: 배송·적립·제조사·방문납품·서류·지원·상담 줄 → 아이콘 타일 4칸(+컨슈머 서류·상담 띠)
+  function infoTiles() {
+  function rowOf(label) {
+    var rs = document.querySelectorAll('tr');
+    for (var i = 0; i < rs.length; i++) { var th = rs[i].querySelector('th'); if (th && th.textContent.replace(/\s/g, '') === label) return rs[i]; }
+    return null;
+  }
+  function val(r) { var td = r && r.querySelector('td'); return td ? td.textContent.replace(/\s+/g, ' ').trim() : ''; }
+  var rShip = rowOf('배송비'), rPt = rowOf('적립금'), rDoc = rowOf('구매서류'), rTech = rowOf('기술지원'), rCs = rowOf('고객상담'), rMaker = rowOf('제조사');
+  var rVisit = null; [].forEach.call(document.querySelectorAll('tr'), function (r) { var td = r.querySelector('td'); if (!rVisit && td && /방문\s*납품/.test(td.textContent + ((r.querySelector('th img') || {}).alt || ''))) rVisit = r; });
+  if (!rShip) return;
+  var table = rShip.closest('table');
+  var pv = val(rPt), amt = (pv.match(/^[\d,]+원/) || [''])[0], pct = (pv.match(/\(([\d.]+%)\)/) || [])[1] || '';
+  var path = (document.querySelector('.xans-product-headcategory, .path, .location') || {}).textContent || '';
+  var price = parseInt(window.product_price || '0', 10) || 0;
+  var ind = path.indexOf('산업용') >= 0 || price >= 3000000;
+  function ic(d) { return '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">' + d + '</svg>'; }
+  var maker = val(rMaker) || 'DJI', visit = rVisit ? val(rVisit).replace(/방문\s*납품\s*시\s*/, '').replace(/\s*및\s*/, '·') : '';
+  var I = {
+    badge: ic('<path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/>'),
+    truck: ic('<path d="M3 6h11v9H3zM14 9h4l3 3v3h-7"/><circle cx="7" cy="17" r="1.8"/><circle cx="17" cy="17" r="1.8"/>'),
+    coin: ic('<circle cx="12" cy="12" r="8"/><path d="M9.5 9.5h4a1.8 1.8 0 0 1 0 3.6h-3a1.8 1.8 0 0 0 0 3.6h4M12 8v1.5M12 16.7v1.3"/>'),
+    tool: ic('<path d="M14.5 6.5a4 4 0 0 0-5 5L4 17l3 3 5.5-5.5a4 4 0 0 0 5-5l-2.5 2.5-2.5-.5-.5-2.5z"/>'),
+    doc: ic('<path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/>'),
+    van: ic('<path d="M2 7h12v8H2zM14 10h4l3 3v2h-7"/><circle cx="6" cy="17" r="1.8"/><circle cx="17" cy="17" r="1.8"/><path d="M5 10.5h5"/>'),
+    phone: ic('<path d="M6 3h3l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2z"/>')
+  };
+  var css = document.createElement('style');
+  css.textContent =
+    '.ivc{margin:8px 0 14px}.ivc-t{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}' +
+    '.ivc-t div{border:1.5px solid #E5E8EB;border-radius:10px;padding:12px 8px 11px;text-align:center;background:#fff}' +
+    '.ivc-t i{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:#F2F4F6;color:#191F28;margin-bottom:6px}' +
+    '.ivc-t b{display:block;font-size:14px;color:#191F28;line-height:1.3}.ivc-t em{display:block;font-style:normal;font-size:12px;color:#6B7684;margin-top:2px;line-height:1.35}' +
+    '.ivc-t .pt{border-color:#7BD4A0;background:#F0FBF4}.ivc-t .pt i{background:#D3F5DF;color:#0B7A3B}.ivc-t .pt b{color:#0B7A3B;font-size:15px}' +
+    '.ivc-s{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:10px;padding:10px 12px;background:#F9FAFB;border-radius:8px;font-size:12.5px;color:#333D4B}' +
+    '.ivc-s span{display:inline-flex;align-items:center;gap:6px}.ivc-s svg{width:16px;height:16px}.ivc-s a{color:#191F28;font-weight:700}' +
+    '@media (max-width:640px){.ivc-t{grid-template-columns:repeat(2,minmax(0,1fr))}}';
+  document.head.appendChild(css);
+  var box = document.createElement('div'); box.className = 'ivc';
+  box.innerHTML = '<div class="ivc-t">' +
+    '<div><i>' + I.badge + '</i><b>' + maker + ' 정품</b><em>제조사 ' + maker + ' 공식 딜러</em></div>' +
+    (rVisit ? '<div><i>' + I.van + '</i><b>방문 납품</b><em>' + (visit || '무료 교육·초기 세팅') + '</em></div>' : '<div><i>' + I.truck + '</i><b>무료배송</b><em>5만 원 이상 구매 시</em></div>') +
+    '<div class="pt"><i>' + I.coin + '</i><b>' + (amt || '적립') + '</b><em>회원 적립 ' + pct + '</em></div>' +
+    '<div><i>' + I.tool + '</i><b>직영 A/S</b><em>전주 수리센터</em></div></div>' +
+    (ind ? '' : '<div class="ivc-s"><span>' + I.doc + '공공기관·학교·기업 납품 서류 가능</span><span>' + I.phone + '상담 <a href="tel:070-5176-7075">070-5176-7075</a></span></div>');
+  table.parentNode.insertBefore(box, table);
+  [rShip, rPt, rDoc, rTech, rCs, rMaker, rVisit].forEach(function (r) { if (r) r.style.display = 'none'; });
+  }
   function run() {
+    try { infoTiles(); } catch (e) {}
     var npay = document.getElementById('NaverChk_Button');
     if (!npay || !npay.parentNode) return;              // 상품 상세가 아니면 아무것도 안 함
     var css = document.createElement('style');
