@@ -58,13 +58,17 @@
   //   소프트웨어(S/W 분류)는 무료배송·직영 A/S 대신 정품 라이선스·납품 서류·기술 지원
   var hasPt = !!(amt && pct && !/^0(\.0+)?%$/.test(pct)) && price >= 1000;
   var isSw = /S\/W|소프트웨어/.test(path);
+  var DRONES = [513, 514, 535, 536, 550, 307, 308, 309, 534, 507];   // 산업용 드론 본체만 (사장님 11-06): 4E·4T·4TD·4D·M400·매빅3E/3T/3M·독3 세트·플라이카트30
+  var isDrone = !isSw && DRONES.indexOf(parseInt(window.iProductNo || '0', 10)) >= 0;
   var mk = maker.trim(), isDji = /^dji$/i.test(mk), plain = /자체|^$/.test(mk);
   var T = [];
   if (isSw) T.push('<div><i>' + I.badge + '</i><b>정품 라이선스</b><em>' + (isDji ? 'DJI 공식 딜러' : plain ? '정품만 판매' : '제조사 ' + mk) + '</em></div>');
   else T.push('<div><i>' + I.badge + '</i>' + (isDji ? '<b>DJI 정품</b><em>제조사 DJI 공식 딜러</em>' : plain ? '<b>정품 보증</b><em>정품만 판매합니다</em>' : '<b>' + mk + ' 정품</b><em>제조사 ' + mk + '</em>') + '</div>');
   if (isSw) T.push('<div><i>' + I.doc + '</i><b>납품 서류</b><em>공공기관·학교·기업</em></div>');
+  // 2026-11-06 사장님: 산업용 드론 본체는 '무료배송' 대신 '방문납품(무료)'. 본체 목록은 상품 번호로 관리(새 드론 등록 시 DRONES에 추가)
+  else if (isDrone) T.push('<div class="vis"><i>' + I.van + '</i><b>방문납품 (무료)</b><em>' + (rVisit ? '교육·초기 세팅 포함' : '택배 무료배송도 가능') + '</em></div>');
   else T.push('<div><i>' + I.truck + '</i><b>무료배송</b><em>5만 원 이상 구매 시</em></div>');
-  if (rVisit) T.push('<div class="edu"><i>' + I.cap + '</i><b>무료 교육·세팅</b><em>방문 납품 시 제공</em></div>');   // 2026-11-06 사장님: 방문납품은 무료 교육·초기 세팅 때문
+  if (rVisit && !isDrone) T.push('<div class="edu"><i>' + I.cap + '</i><b>무료 교육·세팅</b><em>방문 납품 시 제공</em></div>');   // 2026-11-06 사장님: 방문납품은 무료 교육·초기 세팅 때문
   if (hasPt) T.push('<div class="pt"><i>' + I.coin + '</i><b>' + amt + '</b><em>회원 적립 ' + pct + '</em></div>');
   T.push(isSw ? '<div><i>' + I.phone + '</i><b>기술 지원</b><em>빛드론 고객센터 상담</em></div>' : '<div><i>' + I.tool + '</i><b>직영 A/S</b><em>전주 수리센터</em></div>');
   var n = T.length;
