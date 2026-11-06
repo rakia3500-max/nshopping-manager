@@ -153,6 +153,33 @@
       o.innerHTML = '상품 정보를 복사했어요 📋<br>열린 카카오톡 채팅창에 <b>붙여넣기</b>만 하시면 됩니다.';
       document.body.appendChild(o); setTimeout(function () { o.remove(); }, 6000);
     });
+    try { jumpLinks(q); } catch (e) {}
+  }
+  // 2026-11-06 G·H (산업용·견적 카드가 있는 상품만): 위쪽 막힌 클릭 줄이기
+  //   G: 회색 요약 글 끝 "구성·사양 자세히 ↓" (요약 글 눌러도 상세설명으로)
+  //   H: 가격 옆 "견적 요청 ↓" (가격·단추 누르면 견적 카드로 내려가 노란 테두리 한 번)
+  function jumpLinks(q) {
+    var css = document.createElement('style');
+    css.textContent =
+      '.bdh-more{display:inline-block;margin-left:6px;color:#1B64DA!important;font-weight:700;text-decoration:none;white-space:nowrap;border-bottom:1px solid #A9C7F5}' +
+      '.bdh-more:hover{border-bottom-color:#1B64DA}.summary_desc.bdh-click{cursor:pointer}' +
+      '.bdh-qchip{display:inline-flex;align-items:center;gap:4px;margin-left:10px;padding:5px 11px;border:1.5px solid #191F28;border-radius:999px;font-size:13px;font-weight:700;color:#191F28!important;background:#fff;text-decoration:none;vertical-align:middle;line-height:1.2;white-space:nowrap}' +
+      '.bdh-qchip:hover{background:#191F28;color:#fff!important}.bdh-pclick{cursor:pointer}' +
+      '.bdh-flash{animation:bdhflash 1.6s ease-out 1}@keyframes bdhflash{0%{box-shadow:0 0 0 0 rgba(255,212,59,0)}15%{box-shadow:0 0 0 4px #FFD43B}100%{box-shadow:0 0 0 0 rgba(255,212,59,0)}}';
+    document.head.appendChild(css);
+    var s = document.querySelector('.summary_desc'), tgt = document.getElementById('prdDetail') || document.getElementById('detail');
+    if (s && tgt && !s.querySelector('.bdh-more')) {
+      var go = function (e) { e.preventDefault(); tgt.scrollIntoView({ behavior: 'smooth', block: 'start' }); };
+      var a = document.createElement('a'); a.href = '#prdDetail'; a.className = 'bdh-more'; a.textContent = '구성·사양 자세히 ↓';
+      a.addEventListener('click', go); s.appendChild(a); s.classList.add('bdh-click'); s.addEventListener('click', go);
+    }
+    var p = document.getElementById('span_product_price_text');
+    if (p && q && !document.querySelector('.bdh-qchip')) {
+      var jump = function (e) { e.preventDefault(); q.scrollIntoView({ behavior: 'smooth', block: 'center' }); q.classList.remove('bdh-flash'); void q.offsetWidth; q.classList.add('bdh-flash'); };
+      var c = document.createElement('a'); c.href = '#'; c.className = 'bdh-qchip'; c.textContent = '견적 요청 ↓';
+      c.addEventListener('click', jump); p.parentNode.insertBefore(c, p.nextSibling);
+      p.classList.add('bdh-pclick'); p.title = '기관·법인 견적 안내 보기'; p.addEventListener('click', jump);
+    }
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run); else run();
 })();
