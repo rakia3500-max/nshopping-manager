@@ -115,24 +115,31 @@
       var th = rows[i].querySelector('th');
       if (th && th.textContent.replace(/\s/g, '') === '네이버페이구매') rows[i].style.display = 'none';
     }
+    // 2026-11-06 견적 상품(가격 대체 문구 사용, 토스 500만원 제한 대응 57개 등): 구매 버튼이 없으니
+    //   네이버페이 안내·'총 상품금액 0원' 줄을 숨기고, 견적 요청 카드를 가격 안내 타일 바로 아래에 둔다.
+    var quote = String(window.product_price_content || '') === '1';
     var note = document.createElement('div');
     note.className = 'bdh-np';
     note.innerHTML = '<b>로그인 없이</b> 아래 네이버페이로 바로 구매할 수 있어요.<br><span style="color:#6B7684">(회원 로그인 상태에서는 일반결제 · 적립금 적립)</span>';
-    npay.parentNode.insertBefore(note, npay);
+    if (quote) { var tp = document.getElementById('totalPrice'); if (tp) tp.style.display = 'none'; }
+    else npay.parentNode.insertBefore(note, npay);
 
-    // B. 산업용·고가 상품
+    // B. 산업용·고가 상품 (+ 견적 상품)
     var path = (document.querySelector('.xans-product-headcategory, .path, .location') || {}).textContent || '';
     var price = parseInt(window.product_price || '0', 10) || 0;
-    if (path.indexOf('산업용') < 0 && price < 3000000) return;
+    if (!quote && path.indexOf('산업용') < 0 && price < 3000000) return;
     var no = window.iProductNo || '';
     var mob = /Mobi|Android|iPhone/i.test(navigator.userAgent);
     var q = document.createElement('div');
     q.className = 'bdh-q';
-    q.innerHTML = '<h4>기관·법인 담당자님, 이렇게 도와드려요</h4>' +
+    q.innerHTML = '<h4>' + (quote ? '이 상품은 상담 후 견적으로 구매하실 수 있어요' : '기관·법인 담당자님, 이렇게 도와드려요') + '</h4>' +
       '<ul><li>견적서·세금계산서</li><li>방문 납품</li><li>사용 교육</li><li>전주 직영 수리센터 A/S</li></ul>' +
       '<div class="r"><a class="q" href="' + KAKAO + '" target="_blank" rel="noopener"><i class="bdh-kk"></i>카톡으로<span class="bdh-mbr"></span> 견적 요청하기</a>' +
       '<a class="t" href="tel:' + TEL + '">' + (mob ? '전화 걸기' : TEL) + '</a></div>';
-    npay.parentNode.insertBefore(q, note);
+    if (quote) {
+      var at = document.querySelector('.ivc') || document.getElementById('totalPrice');
+      if (at && at.parentNode) at.parentNode.insertBefore(q, at.nextSibling); else npay.parentNode.insertBefore(q, npay);
+    } else npay.parentNode.insertBefore(q, note);
     q.querySelector('.q').addEventListener('click', function () {
       var name = ((document.querySelector('meta[property="og:title"]') || {}).content || document.title).replace(/\s*\|.*$/, '');
       var qty = (document.querySelector('#quantity') || {}).value || 1;
