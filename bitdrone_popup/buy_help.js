@@ -18,7 +18,10 @@
   }
   function val(r) { var td = r && r.querySelector('td'); return td ? td.textContent.replace(/\s+/g, ' ').trim() : ''; }
   var rShip = rowOf('배송비'), rPt = rowOf('적립금'), rDoc = rowOf('구매서류'), rTech = rowOf('기술지원'), rCs = rowOf('고객상담'), rMaker = rowOf('제조사');
-  var rVisit = null; [].forEach.call(document.querySelectorAll('tr'), function (r) { var td = r.querySelector('td'); if (!rVisit && td && /방문\s*납품/.test(td.textContent + ((r.querySelector('th img') || {}).alt || ''))) rVisit = r; });
+  var rVisit = null; [].forEach.call(document.querySelectorAll('tr'), function (r) { var td = r.querySelector('td'), th = r.querySelector('th'); if (rVisit || !td || !th) return;
+    var img = th.querySelector('img'), key = th.textContent + ' ' + (img ? (img.alt || '') + ' ' + decodeURIComponent(img.getAttribute('src') || '') : '');
+    if (/방문\s*납품/.test(key + td.textContent) || (img && /(초기\s*세팅|무료\s*교육)/.test(td.textContent))) rVisit = r; });
+  var rModel = rowOf('모델명');
   if (!rShip) return;
   var table = rShip.closest('table');
   var pv = val(rPt), amt = (pv.match(/^[\d,]+원/) || [''])[0], pct = (pv.match(/\(([\d.]+%)\)/) || [])[1] || '';
@@ -34,10 +37,13 @@
     tool: ic('<path d="M14.5 6.5a4 4 0 0 0-5 5L4 17l3 3 5.5-5.5a4 4 0 0 0 5-5l-2.5 2.5-2.5-.5-.5-2.5z"/>'),
     doc: ic('<path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/>'),
     van: ic('<path d="M2 7h12v8H2zM14 10h4l3 3v2h-7"/><circle cx="6" cy="17" r="1.8"/><circle cx="17" cy="17" r="1.8"/><path d="M5 10.5h5"/>'),
+    cap: ic('<path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c2 2 10 2 12 0v-5M22 9v5"/>'),
     phone: ic('<path d="M6 3h3l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2z"/>')
   };
   var css = document.createElement('style');
   css.textContent =
+    '.ivc-m{display:flex;align-items:baseline;gap:12px;margin:4px 0 10px;font-size:14px}.ivc-m span{flex:0 0 auto;min-width:120px;color:#191F28;font-weight:600}.ivc-m b{font-weight:500;color:#4E5968}' +
+    '.ivc-t.n5{grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}.ivc-t.n5 div{padding:11px 4px 10px}.ivc-t.n5 b{font-size:13px}.ivc-t.n5 .pt b{font-size:14px}.ivc-t.n5 em{font-size:11.5px}' +
     '.ivc{margin:8px 0 14px}.ivc-t{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}' +
     '.ivc-t div{border:1.5px solid #E5E8EB;border-radius:10px;padding:12px 8px 11px;text-align:center;background:#fff}' +
     '.ivc-t i{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:#F2F4F6;color:#191F28;margin-bottom:6px}' +
@@ -45,17 +51,23 @@
     '.ivc-t .pt{border-color:#7BD4A0;background:#F0FBF4}.ivc-t .pt i{background:#D3F5DF;color:#0B7A3B}.ivc-t .pt b{color:#0B7A3B;font-size:15px}' +
     '.ivc-s{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:10px;padding:10px 12px;background:#F9FAFB;border-radius:8px;font-size:12.5px;color:#333D4B}' +
     '.ivc-s span{display:inline-flex;align-items:center;gap:6px}.ivc-s svg{width:16px;height:16px}.ivc-s a{color:#191F28;font-weight:700}' +
-    '@media (max-width:640px){.ivc-t{grid-template-columns:repeat(2,minmax(0,1fr))}}';
+    '@media (max-width:640px){.ivc-t{grid-template-columns:repeat(2,minmax(0,1fr))}.ivc-t.n5{grid-template-columns:repeat(2,minmax(0,1fr))}.ivc-t.n5 .pt{grid-column:1/-1;order:9}}';
   document.head.appendChild(css);
   var box = document.createElement('div'); box.className = 'ivc';
-  box.innerHTML = '<div class="ivc-t">' +
+  box.innerHTML = '<div class="ivc-t' + (rVisit ? ' n5' : '') + '">' +
     '<div><i>' + I.badge + '</i><b>' + maker + ' 정품</b><em>제조사 ' + maker + ' 공식 딜러</em></div>' +
-    (rVisit ? '<div><i>' + I.van + '</i><b>방문 납품</b><em>' + (visit || '무료 교육·초기 세팅') + '</em></div>' : '<div><i>' + I.truck + '</i><b>무료배송</b><em>5만 원 이상 구매 시</em></div>') +
+    '<div><i>' + I.truck + '</i><b>무료배송</b><em>5만 원 이상 구매 시</em></div>' +
+    (rVisit ? '<div class="edu"><i>' + I.cap + '</i><b>무료 교육·세팅</b><em>방문 납품 시 제공</em></div>' : '') +   // 2026-11-06 사장님: 방문납품은 무료 교육·초기 세팅 때문
     '<div class="pt"><i>' + I.coin + '</i><b>' + (amt || '적립') + '</b><em>회원 적립 ' + pct + '</em></div>' +
     '<div><i>' + I.tool + '</i><b>직영 A/S</b><em>전주 수리센터</em></div></div>' +
     (ind ? '' : '<div class="ivc-s"><span>' + I.doc + '공공기관·학교·기업 납품 서류 가능</span><span>' + I.phone + '상담 <a href="tel:070-5176-7075">070-5176-7075</a></span></div>');
+  if (rModel && val(rModel)) {                         // 2026-11-06 사장님: 모델명 → 타일 순서
+    var mdl = document.createElement('div'); mdl.className = 'ivc-m';
+    mdl.innerHTML = '<span>모델명</span><b></b>'; mdl.querySelector('b').textContent = val(rModel);
+    table.parentNode.insertBefore(mdl, table);
+  }
   table.parentNode.insertBefore(box, table);
-  [rShip, rPt, rDoc, rTech, rCs, rMaker, rVisit].forEach(function (r) { if (r) r.style.display = 'none'; });
+  [rShip, rPt, rDoc, rTech, rCs, rMaker, rVisit, rModel].forEach(function (r) { if (r) r.style.display = 'none'; });
   }
 
   // 2026-11-05 휴대폰 '상품후기·상품문의·구매안내' 탭이 안 열리던 문제: 공통 하단(구매시 유의사항 그림)의 <center><div>가 안 닫혀
