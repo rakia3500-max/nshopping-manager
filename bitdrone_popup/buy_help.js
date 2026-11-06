@@ -44,23 +44,32 @@
   css.textContent =
     '.ivc-m{display:flex;align-items:baseline;gap:12px;margin:4px 0 10px;font-size:14px}.ivc-m span{flex:0 0 auto;min-width:120px;color:#191F28;font-weight:600}.ivc-m b{font-weight:500;color:#4E5968}' +
     '.ivc-t.n5{grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}.ivc-t.n5 div{padding:11px 4px 10px}.ivc-t.n5 b{font-size:13px}.ivc-t.n5 .pt b{font-size:14px}.ivc-t.n5 em{font-size:11.5px}' +
-    '.ivc{margin:8px 0 14px}.ivc-t{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}' +
+    '.ivc{margin:8px 0 14px}.ivc-t{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.ivc-t.n3{grid-template-columns:repeat(3,minmax(0,1fr))}' +
     '.ivc-t div{border:1.5px solid #E5E8EB;border-radius:10px;padding:12px 8px 11px;text-align:center;background:#fff}' +
     '.ivc-t i{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:#F2F4F6;color:#191F28;margin-bottom:6px}' +
     '.ivc-t b{display:block;font-size:14px;color:#191F28;line-height:1.3}.ivc-t em{display:block;font-style:normal;font-size:12px;color:#6B7684;margin-top:2px;line-height:1.35}' +
     '.ivc-t .pt{border-color:#7BD4A0;background:#F0FBF4}.ivc-t .pt i{background:#D3F5DF;color:#0B7A3B}.ivc-t .pt b{color:#0B7A3B;font-size:15px}' +
     '.ivc-s{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:10px;padding:10px 12px;background:#F9FAFB;border-radius:8px;font-size:12.5px;color:#333D4B}' +
     '.ivc-s span{display:inline-flex;align-items:center;gap:6px}.ivc-s svg{width:16px;height:16px}.ivc-s a{color:#191F28;font-weight:700}' +
-    '@media (max-width:640px){.ivc-t{grid-template-columns:repeat(2,minmax(0,1fr))}.ivc-t.n5{grid-template-columns:repeat(2,minmax(0,1fr))}.ivc-t.n5 .pt{grid-column:1/-1;order:9}}';
+    '@media (max-width:640px){.ivc-t{grid-template-columns:repeat(2,minmax(0,1fr))}.ivc-t.n5{grid-template-columns:repeat(2,minmax(0,1fr))}.ivc-t.n5 .pt{grid-column:1/-1;order:9}.ivc-t.n3{grid-template-columns:repeat(3,minmax(0,1fr))}}';
   document.head.appendChild(css);
   var box = document.createElement('div'); box.className = 'ivc';
-  box.innerHTML = '<div class="ivc-t' + (rVisit ? ' n5' : '') + '">' +
-    '<div><i>' + I.badge + '</i><b>' + maker + ' 정품</b><em>제조사 ' + maker + ' 공식 딜러</em></div>' +
-    '<div><i>' + I.truck + '</i><b>무료배송</b><em>5만 원 이상 구매 시</em></div>' +
-    (rVisit ? '<div class="edu"><i>' + I.cap + '</i><b>무료 교육·세팅</b><em>방문 납품 시 제공</em></div>' : '') +   // 2026-11-06 사장님: 방문납품은 무료 교육·초기 세팅 때문
-    '<div class="pt"><i>' + I.coin + '</i><b>' + (amt || '적립') + '</b><em>회원 적립 ' + pct + '</em></div>' +
-    '<div><i>' + I.tool + '</i><b>직영 A/S</b><em>전주 수리센터</em></div></div>' +
-    (ind ? '' : '<div class="ivc-s"><span>' + I.doc + '공공기관·학교·기업 납품 서류 가능</span><span>' + I.phone + '상담 <a href="tel:070-5176-7075">070-5176-7075</a></span></div>');
+  // 2026-11-06 전 상품 점검 반영: 적립 없는 상품·견적 상품(가격 1,000원 미만)은 적립 칸 빼기, DJI 아닌 제조사엔 '공식 딜러' 안 씀,
+  //   소프트웨어(S/W 분류)는 무료배송·직영 A/S 대신 정품 라이선스·납품 서류·기술 지원
+  var hasPt = !!(amt && pct && !/^0(\.0+)?%$/.test(pct)) && price >= 1000;
+  var isSw = /S\/W|소프트웨어/.test(path);
+  var mk = maker.trim(), isDji = /^dji$/i.test(mk), plain = /자체|^$/.test(mk);
+  var T = [];
+  if (isSw) T.push('<div><i>' + I.badge + '</i><b>정품 라이선스</b><em>' + (isDji ? 'DJI 공식 딜러' : plain ? '정품만 판매' : '제조사 ' + mk) + '</em></div>');
+  else T.push('<div><i>' + I.badge + '</i>' + (isDji ? '<b>DJI 정품</b><em>제조사 DJI 공식 딜러</em>' : plain ? '<b>정품 보증</b><em>정품만 판매합니다</em>' : '<b>' + mk + ' 정품</b><em>제조사 ' + mk + '</em>') + '</div>');
+  if (isSw) T.push('<div><i>' + I.doc + '</i><b>납품 서류</b><em>공공기관·학교·기업</em></div>');
+  else T.push('<div><i>' + I.truck + '</i><b>무료배송</b><em>5만 원 이상 구매 시</em></div>');
+  if (rVisit) T.push('<div class="edu"><i>' + I.cap + '</i><b>무료 교육·세팅</b><em>방문 납품 시 제공</em></div>');   // 2026-11-06 사장님: 방문납품은 무료 교육·초기 세팅 때문
+  if (hasPt) T.push('<div class="pt"><i>' + I.coin + '</i><b>' + amt + '</b><em>회원 적립 ' + pct + '</em></div>');
+  T.push(isSw ? '<div><i>' + I.phone + '</i><b>기술 지원</b><em>빛드론 고객센터 상담</em></div>' : '<div><i>' + I.tool + '</i><b>직영 A/S</b><em>전주 수리센터</em></div>');
+  var n = T.length;
+  box.innerHTML = '<div class="ivc-t n' + n + '">' + T.join('') + '</div>' +
+    (ind || isSw ? '' : '<div class="ivc-s"><span>' + I.doc + '공공기관·학교·기업 납품 서류 가능</span><span>' + I.phone + '상담 <a href="tel:070-5176-7075">070-5176-7075</a></span></div>');
   if (rModel && val(rModel)) {                         // 2026-11-06 사장님: 모델명 → 타일 순서
     var mdl = document.createElement('div'); mdl.className = 'ivc-m';
     mdl.innerHTML = '<span>모델명</span><b></b>'; mdl.querySelector('b').textContent = val(rModel);
