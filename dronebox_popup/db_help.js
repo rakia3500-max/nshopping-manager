@@ -37,6 +37,7 @@
   // B: 상세 구매 칸(펼침 칸) 단추 위
   function buyNote() {
     if (path.indexOf('goods_view') < 0 || document.querySelector('.dbh-b')) return;
+    if (!document.querySelector('.js_btn_add_order')) return;   // 견적·구매불가 상품(바로구매 단추 없음)은 안내 안 함
     var bar = document.querySelector('.ly_buy_dn .detail_prd_btn, .ly_buy_dn.js_goods_view_buy_btn .detail_prd_btn');
     var outer = [].filter.call(document.querySelectorAll('.detail_prd_btn.st_btn_buy_outer'), function (e) { return !e.closest('.detail_buy_top_btn'); })[0] || bar;
     if (!outer || !outer.parentNode) return;
