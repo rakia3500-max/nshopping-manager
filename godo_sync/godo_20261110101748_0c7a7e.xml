@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000001585</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI FlightHub 2 플라이트허브 엔터프라이즈 온라인 기기 확장 (1대)</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002|002026|002026002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>url</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>g</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<goodsPrice>4301000.00</goodsPrice>
+<imageUpdate>N</imageUpdate>
+</goods_data>
+</data>
