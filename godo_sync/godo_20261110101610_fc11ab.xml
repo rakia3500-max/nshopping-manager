@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 젠뮤즈 H30T ND 필터 Zenmuse H30T Density Filter 열화상</goodsNm>
+<goodsDisplayFl>n</goodsDisplayFl>
+<goodsDisplayMobileFl>n</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019008003|002|002019|002019008</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>url</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>g</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>6</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>y</externalVideoFl>
+<detailInfoDelivery>002002</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>Y</imageUpdate>
+<magnifyImageData idx="1">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/product/big/20251230/737090c4c05ce5e617b2d2ee9d8d44ef.jpg</magnifyImageData>
+<detailImageData idx="1">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/product/big/20251230/737090c4c05ce5e617b2d2ee9d8d44ef.jpg</detailImageData>
+<listImageData idx="1">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/product/big/20251230/737090c4c05ce5e617b2d2ee9d8d44ef.jpg</listImageData>
+<mainImageData idx="1">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/product/big/20251230/737090c4c05ce5e617b2d2ee9d8d44ef.jpg</mainImageData>
+<goodsPrice>200000</goodsPrice>
+<fixedPrice>0</fixedPrice>
+<goodsDescription><![CDATA[<!-- bd-xcopy v1 godo from-c24 632 -->
+<div class="edibot-product-detail" style="width:1000px;max-width:100%;margin:0 auto;"><div data-api="1.0.0" data-classid="etc_0" data-created="2025-11-13 16:12:09" data-groupid="null" data-projectid="N251113_1611" data-sessionid="1" data-shoplang="ko_KR" data-shopno="1" data-version="2.0.0" type="application/json" class="-edibot-metadata"><!--{"api":"1.0.0","classid":"etc_0","groupid":null,"mallid":"dronebox2","projectid":"N251113_1611","sessionid":1,"version":"2.0.0","shopno":1,"shoplang":"ko_KR","created":"2025-11-13 16:12:09"}--></div>
+<style>.edibot-product-detail .edb-img-tag-w:has(img[ec-data-src]:first-child) > div:has(div[data-aos] img[ec-data-src]) {visibility: hidden;}.edibot-product-detail .edb-img-tag-w > div:has(div[data-aos] img[ec-data-src]) { position:absolute; top: 0% !important; left: 50% !important; transform:translate(0%, 0%) rotate(0deg) !important;}.edibot-product-detail .edb-img-tag-w > div div[data-aos] div:has(img[ec-data-src]) { position:absolute !important; top: 0 !important; left: 0 !important; transform: none !important;}.edibot-product-detail *{ font-family:inherit; font-size:inherit; }.edibot-product-detail img[src=""], .edibot-product-detail img:not([src]) {visibility: hidden !important; height: 1px !important;}.edibot-product-detail div#edb-img-tag,.edibot-product-detail div#edb-img-tag *{position:unset;border:0;border-radius:0;box-sizing:content-box;height:auto;line-height:normal;min-height:auto;text-align:left;transform:none;margin:0;opacity:1;padding:0;transition:opacity .15s linear,background .15s linear,border .15s linear}.edibot-product-detail div#edb-img-tag .edb-tag{position:absolute;display:block;background:rgba(0,0,0,.3);border-radius:50%;border:1px solid transparent;box-shadow:0 4px 6px rgba(0,0,0,.2);box-sizing:border-box;cursor:pointer;height:32px;text-decoration:none;transform:translate(-50%,-50%);width:32px}.edibot-product-detail .edb-img-tag-w.hover div#edb-img-tag .edb-tag{opacity:0;visibility:hidden}.edibot-product-detail div#edb-img-tag .edb-tag:before{content:'';position:absolute;top:-1px;left:-1px;right:-1px;bottom:-1px}.edibot-product-detail div#edb-img-tag .edb-tag:after{content:"";position:absolute;top:0;left:0;right:0;bottom:0;display:block;background-color:#fff;border-radius:50%;box-shadow:0 4px 6px rgba(0,0,0,.2);height:10px;margin:auto;transition:transform .15s linear;width:10px}.edibot-product-detail div#edb-img-tag .edb-tag .edb-tag-name{position:absolute;display:block;align-items:center;background:#fff;box-shadow:0 6px 10px rgba(0,0,0,.2);color:#000;font-family:-apple-system,Apple SD Gothic Neo,malgun gothic,arial,sans-serif;font-size:12px;font-style:normal;line-height:36px;margin:50% 0 0 50%;max-width:201px;opacity:0;overflow:hidden;padding:0 28px 0 11px;text-decoration:none;text-overflow:ellipsis;transform:translate(-50%,-100%) translateY(-26px);visibility:hidden;white-space:nowrap}.edibot-product-detail div#edb-img-tag .edb-tag .edb-tag-name:after{content:'';position:absolute;top:0;bottom:1px;right:10px;margin:auto 0;background:url(//img.cafe24.com/csdstatic/edibot/v2/img/ui/ec/bg_tag.png) no-repeat;background-size:5px 9px;height:9px;margin-left:10px;width:5px}.edibot-product-detail div#edb-img-tag .edb-tag.top:before{margin-top:-10px}.edibot-product-detail div#edb-img-tag .edb-tag.right:before{margin-right:-10px}.edibot-product-detail div#edb-img-tag .edb-tag.right .edb-tag-name{transform:translate(26px,-50%)}.edibot-product-detail div#edb-img-tag .edb-tag.bottom:before{margin-bottom:-10px}.edibot-product-detail div#edb-img-tag .edb-tag.bottom .edb-tag-name{transform:translate(-50%,26px)}.edibot-product-detail div#edb-img-tag .edb-tag.left:before{margin-left:-10px}.edibot-product-detail div#edb-img-tag .edb-tag.left .edb-tag-name{transform:translate(-100%,-50%) translateX(-26px)}.edibot-product-detail .edb-img-tag-w.hover:hover div#edb-img-tag .edb-tag,.edibot-product-detail div#edb-img-tag .edb-tag:hover .edb-tag-name{opacity:1;visibility:visible}.edibot-product-detail div#edb-img-tag .edb-tag:hover{border:1px solid #eee;background-color:#009cff;box-shadow:none}.edibot-product-detail div#edb-img-tag .edb-tag:hover:after{transform:scale(.6)}.edibot-product-detail div#edb-img-tag .edb-tag .edb-tag-name:hover{text-decoration:underline}html:lang(ja) .edibot-product-detail div#edb-img-tag .edb-tag .edb-tag-name{font-family:-apple-system,verdana,Meiryo,"メイリオ",sans-serif}html:lang(en) .edibot-product-detail div#edb-img-tag .edb-tag .edb-tag-name,html:lang(vi) .edibot-product-detail div#edb-img-tag .edb-tag .edb-tag-name{font-family:-apple-system,Helvetica Neue,Helvetica,Arial,Sans-serif}@media only screen and (hover:none) and (pointer:coarse){.edibot-product-detail .edb-img-tag-w.hover div#edb-img-tag .edb-tag{opacity:1;visibility:visible}}</style>
+<div style="position:relative;" class="edb-img-tag-w"><img alt="악세사리 상품 이미지-S1L3" src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20251113/ebda6cc278416cd8c2dd5ddc85a9bb40.jpg" style="margin:0 auto; display: block; max-width:100%;min-height: 213px;"></div><div style="display: block;content: ' ';height:100px!important;"></div>
+</div>
+<!-- bit-ai-cite v1 -->
+<div style='max-width:860px; margin:0 auto; font-family:inherit;'>
+<h3 style='font-size:20px; font-weight:700; margin:36px 0 12px; color:#191F28;'>DJI 젠뮤즈 H30T 열화상 카메라 ND필터 주요 스펙</h3>
+<table style='border-collapse:collapse; width:100%;'>
+<tr><th style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#F7F8FA; width:34%;'>호환 기종</th><td style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left;'>DJI Zenmuse H30T 카메라</td></tr>
+<tr><th style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#F7F8FA; width:34%;'>필터 종류</th><td style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left;'>ND (Neutral Density) 필터</td></tr>
+<tr><th style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#F7F8FA; width:34%;'>주요 기능</th><td style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left;'>밝은 환경에서 센서로 유입되는 빛의 양 감소, 과다 노출 방지</td></tr>
+
+
+
+</table>
+<h3 style='font-size:20px; font-weight:700; margin:36px 0 12px; color:#191F28;'>자주 묻는 질문</h3>
+<div itemscope itemtype='https://schema.org/FAQPage'>
+<div itemscope itemprop='mainEntity' itemtype='https://schema.org/Question' style='margin-bottom:16px;'><p itemprop='name' style='font-weight:700; font-size:16px; margin:0 0 6px;'>Q. 이 ND 필터는 어떤 DJI 카메라와 호환되나요?</p><div itemscope itemprop='acceptedAnswer' itemtype='https://schema.org/Answer'><p itemprop='text' style='font-size:15px; color:#333D4B; margin:0;'>A. 본 ND 필터는 DJI 젠뮤즈 H30T 카메라 전용 액세서리입니다. H30T의 광학 카메라 부분에만 장착 및 사용이 가능하며, 다른 DJI 카메라 모델과는 호환되지 않습니다.</p></div></div>
+<div itemscope itemprop='mainEntity' itemtype='https://schema.org/Question' style='margin-bottom:16px;'><p itemprop='name' style='font-weight:700; font-size:16px; margin:0 0 6px;'>Q. 판매하는 제품이 DJI 정품이 맞나요?</p><div itemscope itemprop='acceptedAnswer' itemtype='https://schema.org/Answer'><p itemprop='text' style='font-size:15px; color:#333D4B; margin:0;'>A. 네, 저희 매장은 DJI 정품 판매점로서 모든 상품은 DJI 정품만을 취급합니다. 정품 인증을 통해 안심하고 구매하실 수 있습니다.</p></div></div>
+<div itemscope itemprop='mainEntity' itemtype='https://schema.org/Question' style='margin-bottom:16px;'><p itemprop='name' style='font-weight:700; font-size:16px; margin:0 0 6px;'>Q. 제품 구매 후 배송은 얼마나 걸리나요?</p><div itemscope itemprop='acceptedAnswer' itemtype='https://schema.org/Answer'><p itemprop='text' style='font-size:15px; color:#333D4B; margin:0;'>A. 주문하신 상품은 영업일 기준 1~3일 이내에 배송이 시작됩니다. 재고 상황 및 택배사 사정에 따라 배송 일정이 다소 지연될 수 있습니다.</p></div></div>
+<div itemscope itemprop='mainEntity' itemtype='https://schema.org/Question' style='margin-bottom:16px;'><p itemprop='name' style='font-weight:700; font-size:16px; margin:0 0 6px;'>Q. 제품에 문제가 발생했을 경우 A/S는 어떻게 받을 수 있나요?</p><div itemscope itemprop='acceptedAnswer' itemtype='https://schema.org/Answer'><p itemprop='text' style='font-size:15px; color:#333D4B; margin:0;'>A. 저희 매장은 전북 전주 드론 수리센터를 직영하고 있어 신속하고 전문적인 A/S를 제공합니다. 제품 관련 문의나 수리 요청 시 언제든지 저희 고객센터로 연락 주시기 바랍니다.</p></div></div>
+<div itemscope itemprop='mainEntity' itemtype='https://schema.org/Question' style='margin-bottom:16px;'><p itemprop='name' style='font-weight:700; font-size:16px; margin:0 0 6px;'>Q. ND 필터는 주로 어떤 상황에서 사용해야 하나요?</p><div itemscope itemprop='acceptedAnswer' itemtype='https://schema.org/Answer'><p itemprop='text' style='font-size:15px; color:#333D4B; margin:0;'>A. ND 필터는 강한 햇빛 등 매우 밝은 환경에서 카메라 센서로 들어오는 빛의 양을 줄여주는 역할을 합니다. 이를 통해 과다 노출을 방지하고, 더 넓은 조리개나 느린 셔터 속도를 사용하여 영화 같은 영상미를 연출할 수 있습니다.</p></div></div>
+<div itemscope itemprop='mainEntity' itemtype='https://schema.org/Question' style='margin-bottom:16px;'><p itemprop='name' style='font-weight:700; font-size:16px; margin:0 0 6px;'>Q. 이 ND 필터가 젠뮤즈 H30T의 열화상 촬영에도 영향을 주나요?</p><div itemscope itemprop='acceptedAnswer' itemtype='https://schema.org/Answer'><p itemprop='text' style='font-size:15px; color:#333D4B; margin:0;'>A. 아니요, 이 ND 필터는 젠뮤즈 H30T의 가시광선 카메라(줌 카메라, 광각 카메라) 부분에 적용됩니다. 열화상 센서의 성능이나 열화상 촬영 결과에는 영향을 주지 않습니다.</p></div></div>
+</div>
+</div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<goodsSearchWord><![CDATA[H30T ND필터, 젠뮤즈 H30T, 열화상 필터, Zenmuse H30T, 적외선 감쇠 필터, DJI 필터, 산업용드론, 산업용 드론, 측량용 드론, 측량, dji 매트리스, 매트리스]]></goodsSearchWord>
+<seoTagTitle><![CDATA[Zenmuse H30T IR ND 필터]]></seoTagTitle>
+<seoTagDescription><![CDATA[Zenmuse H30T IR ND 필터]]></seoTagDescription>
+<seoTagKeyword><![CDATA[DJI H30, DJI H30T, DJI 젠뮤즈 H30, DJI 젠뮤즈 H30T, DJI ZENMUSE H30, DJI ZENMUSE H30T, ZENMUSE H30T, ZENMUSE H30, DJI 페이로드, 광각 카메라, 줌 카메라, 적외선 열화상 카메라, 레이저 거리 측정기, DJI 매트리스 350, DJI M350]]></seoTagKeyword>
+<seoTagAuthor><![CDATA[드론박스]]></seoTagAuthor>
+<seoTagFl><![CDATA[y]]></seoTagFl>
+<naverTag><![CDATA[H30T ND필터|젠뮤즈 H30T|열화상 필터|Zenmuse H30T|적외선 감쇠 필터|DJI 필터]]></naverTag>
+<naverFl><![CDATA[y]]></naverFl>
+<naverCategory><![CDATA[50006129]]></naverCategory>
+<brandCd><![CDATA[001]]></brandCd>
+<goodsModelNo><![CDATA[DJI 젠뮤즈 H30T]]></goodsModelNo>
+<goodsIconCd><![CDATA[icon0018]]></goodsIconCd>
+<makerNm><![CDATA[DJI]]></makerNm>
+<originNm><![CDATA[중국]]></originNm>
+</goods_data>
+</data>
