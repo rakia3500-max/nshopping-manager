@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000001573</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 매트리스 5 시리즈 배터리 Matrice 5 Battery M5T 215Wh</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002|002019|002019008|002019008003</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>url</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>g</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>6</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>y</externalVideoFl>
+<detailInfoDelivery>002002</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<goodsPrice>651200.00</goodsPrice>
+<mileageGoods>2</mileageGoods><mileageGoodsUnit>percent</mileageGoodsUnit>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<script data-bdinfo="v1">(function(){function run(){var L=document.querySelector('.item_detail_list');if(!L||L.querySelector('dl[data-bdinfo]'))return;var ref=null,model=null;L.querySelectorAll('dl').forEach(function(d){var t=d.querySelector('dt');if(!t)return;var s=t.textContent.trim();if(s==='배송비')ref=d;if(s==='모델명'&&!d.getAttribute('data-bdq'))model=d;});if(model)model.style.display='none';var rows='<dt>제조사</dt><dd>DJI (공식 수입상품)</dd>|<dt>구매서류</dt><dd>공공기관 · 학교 · 기업체 납품서류 가능</dd>|<dt>기술지원</dt><dd>드론박스 A/S센터 및 DJI공식센터 가능</dd>|<dt>구매시 방문 납품</dt><dd>초기세팅 및 사용법 교육</dd>|<dt>고객센터</dt><dd>드론박스 070-7811-4422</dd>'.split('|');var after=ref;rows.forEach(function(r){var d=document.createElement('dl');d.setAttribute('data-bdinfo','1');d.innerHTML=r;if(after&&after.parentNode){after.parentNode.insertBefore(d,after.nextSibling);after=d;}else{L.appendChild(d);}});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}else{run();}})();</script>
+<!-- bd-m5acc-battery v1 드론박스 -->
+<style>
+.p4pw-card, .p4pw-step { transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease, background .22s ease; }
+.p4pw-card:hover, .p4pw-step:hover { transform: translateY(-4px); box-shadow: 0 10px 24px rgba(25,31,40,.10); border-color: #2F7DF6 !important; background: #FFFFFF !important; }
+.p4pw-card:hover > p:first-child, .p4pw-step:hover > p:first-child { color: #2F7DF6 !important; }
+.p4pw-faq { transition: background .2s ease; border-radius: 8px; padding: 6px 8px; margin: 0 -8px 12px; }
+.p4pw-faq:hover { background: #F2F6FF; }
+@media (hover: none) { .p4pw-card:hover, .p4pw-step:hover { transform: none; box-shadow: none; } }
+</style>
+<div style="background:#FFFFFF; color:#191F28; color-scheme:light only;"><div style="max-width:1000px; margin:0 auto; padding:0; font-family:inherit; color:#191F28; background:#FFFFFF; line-height:1.7;">
+<p style="margin:0; text-align:center; line-height:0;"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261110/16e298ecdb1f89cc757b5e148b6eea13.jpg" alt="DJI Matrice 5 시리즈 충전 허브에 꽂힌 Matrice 5 시리즈 배터리" style="max-width:100%; width:100%; display:block; margin:0 auto;"></p>
+<p style="font-size:14px; color:#4E5968; margin:0 0 6px;">DJI 정품 판매점 <b>드론박스</b> · Matrice 5T 전용</p><h2 style="font-size:24px; font-weight:700; margin:0 0 12px; color:#191F28;">DJI 매트리스 5 시리즈 배터리 Matrice 5 Series Battery 215.2Wh</h2><div style="height:12px;"></div>
+<div itemscope itemtype="https://schema.org/Article" style="margin:0 0 8px; padding:24px 20px 10px; border:1px solid #E3E6EB; border-radius:12px; background:#FFFFFF;"><h3 itemprop="headline" style="font-size:21px; font-weight:700; margin:32px 0 14px; padding-bottom:8px; border-bottom:2px solid #E3E6EB; color:#191F28; margin-top:0;">DJI Matrice 5 시리즈 배터리</h3><div itemprop="articleBody"><p style="font-size:15px; color:#333D4B; margin:0 0 10px; line-height:1.75;">DJI Matrice 5T용 정품 인텔리전트 플라이트 배터리입니다. 215.2Wh 대용량으로 기체 최대 비행시간 59분(DJI 시험 조건)을 냅니다.</p><p style="font-size:15px; color:#333D4B; margin:0 0 10px; line-height:1.75;">Matrice 5T SP Plus 기본 구성에는 배터리가 별도 품목으로 안내되고 있어, 연속 운용이라면 기체 1대당 배터리 3개 이상을 권합니다. 160Wh를 넘는 배터리라 여객기 기내·위탁 반입은 되지 않습니다.</p></div></div>
+<p style="margin:0; text-align:center; line-height:0;"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261110/eaa5b978d6f03500dd8c5c08295c0e90.jpg" alt="DJI Matrice 5 시리즈 충전 허브와 배터리 (다른 각도)" style="max-width:100%; width:100%; display:block; margin:0 auto;"></p>
+<div itemscope itemtype="https://schema.org/Article" style="margin:0 0 8px; padding:24px 20px 10px; border:1px solid #E3E6EB; border-radius:12px; background:#FFFFFF;"><h3 itemprop="headline" style="font-size:21px; font-weight:700; margin:32px 0 14px; padding-bottom:8px; border-bottom:2px solid #E3E6EB; color:#191F28; margin-top:0;">사양 (DJI 공식)</h3><div itemprop="articleBody"><div style="overflow-x:auto;"><table style="border-collapse:collapse; width:100%;">
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">호환</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">DJI Matrice 5T (조종기 운용 기체) · Matrice 5 시리즈 충전 허브</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">용량 · 전압</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">10,073mAh · 21.36V</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">에너지 · 무게</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">215.2Wh · 768g</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">셀 · 종류</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">Li-ion 6S</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">충전 사이클</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">200회</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">충전 온도</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">5°C ~ 40°C · 저온 자체 발열 충전 지원</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">충전</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">Matrice 5 시리즈 충전 허브(515W)에서 3개 순차 충전</td></tr>
+</table></div><p style="font-size:13px; color:#8B95A1; margin:10px 0 0;">수치는 DJI 공식 사양(enterprise.dji.com/kr) 기준이며 환경·펌웨어에 따라 달라질 수 있습니다.</p></div></div>
+<p style="margin:0; text-align:center; line-height:0;"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261110/16a55c7f68a65344e1d77c3e7e425c0a.jpg" alt="DJI Matrice 5T 기체·조종기·충전 허브·액세서리 구성" style="max-width:100%; width:100%; display:block; margin:0 auto;"></p>
+<p style="font-size:13px; color:#8B95A1; margin:6px 0 0; text-align:center;">사진은 DJI 공식 자료이며 장착 모습·구성 장면을 포함합니다. 실제 구성은 품목 기준입니다.</p>
+<div style="margin:0 0 8px; padding:24px 20px 10px; border:1px solid #E3E6EB; border-radius:12px; background:#FFFFFF;"><h3 style="font-size:21px; font-weight:700; margin:32px 0 14px; padding-bottom:8px; border-bottom:2px solid #E3E6EB; color:#191F28; margin-top:0;">FAQ</h3><div itemscope itemtype="https://schema.org/FAQPage">
+<div class="p4pw-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom:18px;"><p itemprop="name" style="font-weight:700; font-size:16px; margin:0 0 6px; color:#191F28;">Q. 몇 개를 준비해야 하나요?</p><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-size:15px; color:#333D4B; margin:0; line-height:1.7;">A. 충전 허브가 3개를 순차 충전하므로 연속 비행이라면 3개를 한 묶음으로 운용하는 것이 편합니다. 임무 시간에 맞춰 상담해 드립니다.</p></div></div>
+<div class="p4pw-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom:18px;"><p itemprop="name" style="font-weight:700; font-size:16px; margin:0 0 6px; color:#191F28;">Q. Matrice 5TD(Dock 4용)·Matrice 4 시리즈 배터리와 같이 쓸 수 있나요?</p><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-size:15px; color:#333D4B; margin:0; line-height:1.7;">A. 아닙니다. DJI Matrice 5T 전용 품목이며 Matrice 5TD(Dock 4용)·Matrice 4 시리즈 배터리과는 호환되지 않습니다.</p></div></div>
+<div class="p4pw-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom:18px;"><p itemprop="name" style="font-weight:700; font-size:16px; margin:0 0 6px; color:#191F28;">Q. 겨울에도 충전되나요?</p><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-size:15px; color:#333D4B; margin:0; line-height:1.7;">A. 충전 온도는 5~40°C이며 저온 자체 발열 충전을 지원합니다. 영하에서는 배터리가 스스로 데운 뒤 충전을 시작합니다.</p></div></div>
+<div class="p4pw-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom:18px;"><p itemprop="name" style="font-weight:700; font-size:16px; margin:0 0 6px; color:#191F28;">Q. 비행기로 가져갈 수 있나요?</p><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-size:15px; color:#333D4B; margin:0; line-height:1.7;">A. 215.2Wh는 항공 운송 기준 160Wh를 넘어 일반 여객기 기내·위탁 반입이 안 됩니다. 제주·해외 현장은 별도 운송을 준비해 주세요.</p></div></div>
+<div class="p4pw-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom:18px;"><p itemprop="name" style="font-weight:700; font-size:16px; margin:0 0 6px; color:#191F28;">Q. 정품인가요?</p><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-size:15px; color:#333D4B; margin:0; line-height:1.7;">A. 드론박스는 DJI 정품만 판매합니다. 문의는 상품 문의 게시판으로 남겨 주세요.</p></div></div>
+</div></div>
+<p style="font-size:13px; color:#8B95A1; margin:20px 0 14px; text-align:center;">드론박스는 DJI 정품만 판매합니다 · 문의는 상품 문의 게시판 · 사양·사진은 DJI 자료(enterprise.dji.com/kr)</p>
+</div></div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+</goods_data>
+</data>
