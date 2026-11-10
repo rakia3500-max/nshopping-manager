@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000001604</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI D-RTK 3 다기능 스테이션 케어 엔터프라이즈 플러스 1년 D-RTK 3 Care</goodsNm>
+<goodsDisplayFl>n</goodsDisplayFl>
+<goodsDisplayMobileFl>n</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002|002019|002019008|002019008003</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>url</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>g</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<goodsPrice>316800.00</goodsPrice>
+<mileageGoods>2</mileageGoods><mileageGoodsUnit>percent</mileageGoodsUnit>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<script data-bdinfo="v1">(function(){function run(){var L=document.querySelector('.item_detail_list');if(!L||L.querySelector('dl[data-bdinfo]'))return;var ref=null,model=null;L.querySelectorAll('dl').forEach(function(d){var t=d.querySelector('dt');if(!t)return;var s=t.textContent.trim();if(s==='배송비')ref=d;if(s==='모델명'&&!d.getAttribute('data-bdq'))model=d;});if(model)model.style.display='none';var rows='<dt>제조사</dt><dd>DJI (공식 수입상품)</dd>|<dt>구매서류</dt><dd>공공기관 · 학교 · 기업체 납품서류 가능</dd>|<dt>기술지원</dt><dd>드론박스 A/S센터 및 DJI공식센터 가능</dd>|<dt>고객상담</dt><dd>드론박스 070-7811-4422</dd>'.split('|');var after=ref;rows.forEach(function(r){var d=document.createElement('dl');d.setAttribute('data-bdinfo','1');d.innerHTML=r;if(after&&after.parentNode){after.parentNode.insertBefore(d,after.nextSibling);after=d;}else{L.appendChild(d);}});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}else{run();}})();</script>
+<!-- bd-care-drtk3_plus v1 드론박스 -->
+<style>
+.p4pw-card, .p4pw-step { transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease, background .22s ease; }
+.p4pw-card:hover, .p4pw-step:hover { transform: translateY(-4px); box-shadow: 0 10px 24px rgba(25,31,40,.10); border-color: #2F7DF6 !important; background: #FFFFFF !important; }
+.p4pw-card:hover > p:first-child, .p4pw-step:hover > p:first-child { color: #2F7DF6 !important; }
+.p4pw-faq { transition: background .2s ease; border-radius: 8px; padding: 6px 8px; margin: 0 -8px 12px; }
+.p4pw-faq:hover { background: #F2F6FF; }
+@media (hover: none) { .p4pw-card:hover, .p4pw-step:hover { transform: none; box-shadow: none; } }
+</style>
+<div style="background:#FFFFFF; color:#191F28; color-scheme:light only;"><div style="max-width:1000px; margin:0 auto; padding:0; font-family:inherit; color:#191F28; background:#FFFFFF; line-height:1.7;">
+<p style="margin:0; text-align:center; line-height:0;"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261110/cdddab1d984a280db2a41be4eb4fa89c.jpg" alt="DJI Care Enterprise Plus (D-RTK 3)" style="max-width:100%; width:100%; display:block; margin:0 auto;"></p>
+<p style="font-size:14px; color:#4E5968; margin:0 0 6px;">DJI 정품 판매점 <b>드론박스</b> · D-RTK 3 보증 서비스</p><h2 style="font-size:24px; font-weight:700; margin:0 0 12px; color:#191F28;">DJI Care Enterprise Plus (D-RTK 3) D-RTK 3 다기능 스테이션 케어 엔터프라이즈 플러스 1년</h2><div style="height:12px;"></div>
+<div itemscope itemtype="https://schema.org/Article" style="margin:0 0 8px; padding:24px 20px 10px; border:1px solid #E3E6EB; border-radius:12px; background:#FFFFFF;"><h3 itemprop="headline" style="font-size:21px; font-weight:700; margin:32px 0 14px; padding-bottom:8px; border-bottom:2px solid #E3E6EB; color:#191F28; margin-top:0;">이런 플랜입니다</h3><div itemprop="articleBody"><p style="font-size:15px; color:#333D4B; margin:0 0 10px; line-height:1.75;">DJI D-RTK 3용 DJI 공식 유상 보증 플랜 <b>DJI Care Enterprise Plus</b>(1년)입니다.</p><p style="font-size:15px; color:#333D4B; margin:0 0 10px; line-height:1.75;">새 제품 활성화 후 15일 안에 가입하고, 만료 후 15일 안에 갱신할 수 있습니다(최대 3년, Basic과 Plus는 서로 바꿔 갱신할 수 없습니다).</p><p style="font-size:15px; color:#333D4B; margin:0 0 10px; line-height:1.75;">페이로드·장비도 기체와 같은 DJI Care Enterprise 조건으로 보장합니다. 기체와 같은 명의로 30일 안에 활성화하면 Plus 보장 한도를 함께 씁니다.</p></div></div>
+<div itemscope itemtype="https://schema.org/Article" style="margin:0 0 8px; padding:24px 20px 10px; border:1px solid #E3E6EB; border-radius:12px; background:#FFFFFF;"><h3 itemprop="headline" style="font-size:21px; font-weight:700; margin:32px 0 14px; padding-bottom:8px; border-bottom:2px solid #E3E6EB; color:#191F28; margin-top:0;">주요 내용 (DJI 공식)</h3><div itemprop="articleBody"><div style="overflow-x:auto;"><table style="border-collapse:collapse; width:100%;">
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">무상 수리</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">보장 금액 안에서 횟수 제한 없음</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">보장 공유</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">30일 안에 같은 명의로 활성화한 DJI 산업용 제품과 보장 한도 공유</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">전문가 서비스</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">DJI 기술 전문가 대응</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">보장 금액</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">D-RTK 3 Plus 보장 금액은 DJI 공식 금액표 기준 — 가입 전 안내</td></tr>
+</table></div></div></div>
+<div itemscope itemtype="https://schema.org/Article" style="margin:0 0 8px; padding:24px 20px 10px; border:1px solid #E3E6EB; border-radius:12px; background:#FFFFFF;"><h3 itemprop="headline" style="font-size:21px; font-weight:700; margin:32px 0 14px; padding-bottom:8px; border-bottom:2px solid #E3E6EB; color:#191F28; margin-top:0;">가입 조건</h3><div itemprop="articleBody"><div style="overflow-x:auto;"><table style="border-collapse:collapse; width:100%;">
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">가입 시기</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">새 제품 활성화 후 15일 안 · 공식 수리 후 72시간 · 워런티 기간 안 동영상 인증 후 72시간 (DJI 정책)</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">갱신</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">만료 후 15일 안, 최대 3년 (Basic·Plus 서로 바꿔 갱신 불가)</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">보장 기준</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">DJI Care Enterprise 약관·국가별 정책을 따름 · 기종별 보장 금액·교체 비용은 DJI 공식 표</td></tr>
+</table></div></div></div>
+<p style="margin:0; text-align:center; line-height:0;"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261110/c386ba42ce49babc28f9d49383fb4a63.jpg" alt="DJI Care Enterprise Basic·Plus 비교" style="max-width:100%; width:100%; display:block; margin:0 auto;"></p>
+<div style="margin:0 0 8px; padding:24px 20px 10px; border:1px solid #E3E6EB; border-radius:12px; background:#FFFFFF;"><h3 style="font-size:21px; font-weight:700; margin:32px 0 14px; padding-bottom:8px; border-bottom:2px solid #E3E6EB; color:#191F28; margin-top:0;">FAQ</h3><div itemscope itemtype="https://schema.org/FAQPage">
+<div class="p4pw-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom:18px;"><p itemprop="name" style="font-weight:700; font-size:16px; margin:0 0 6px; color:#191F28;">Q. Basic과 Plus는 무엇이 다른가요?</p><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-size:15px; color:#333D4B; margin:0; line-height:1.7;">A. Basic은 정해진 횟수(1년 2회) 안에서 교체 비용을 내고 교체하는 플랜이고, Plus는 보장 금액 안에서 횟수 제한 없이 무상 수리하며 보장 한도를 다른 DJI 산업용 제품과 나눠 쓰는 플랜입니다.</p></div></div>
+<div class="p4pw-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom:18px;"><p itemprop="name" style="font-weight:700; font-size:16px; margin:0 0 6px; color:#191F28;">Q. 가입 기한을 놓치면 어떻게 되나요?</p><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-size:15px; color:#333D4B; margin:0; line-height:1.7;">A. DJI 정책상 활성화 후 15일 안이어야 합니다. 기한이 지나면 공식 수리 후 72시간 또는 동영상 인증 절차로만 가입할 수 있어 미리 문의해 주세요.</p></div></div>
+<div class="p4pw-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom:18px;"><p itemprop="name" style="font-weight:700; font-size:16px; margin:0 0 6px; color:#191F28;">Q. 교체 비용이나 보장 금액은 얼마인가요?</p><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-size:15px; color:#333D4B; margin:0; line-height:1.7;">A. D-RTK 3의 교체 비용·보장 금액은 DJI가 공지하는 기종별 표 기준입니다. 정확한 금액은 상품 문의 게시판로 확인해 드립니다.</p></div></div>
+<div class="p4pw-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom:18px;"><p itemprop="name" style="font-weight:700; font-size:16px; margin:0 0 6px; color:#191F28;">Q. 정품인가요?</p><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-size:15px; color:#333D4B; margin:0; line-height:1.7;">A. 드론박스는 DJI 정품만 판매합니다. 문의는 상품 문의 게시판으로 남겨 주세요.</p></div></div>
+</div></div>
+<p style="font-size:13px; color:#8B95A1; margin:20px 0 14px; text-align:center;">드론박스는 DJI 정품만 판매합니다 · 문의는 상품 문의 게시판 · 사양·사진은 DJI 자료(enterprise.dji.com/kr)</p>
+</div></div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle>고시 분류</infoTitle><infoValue>기타 용역(제조사 보증&amp;middot;파손 보상 서비스)</infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle>상품명</infoTitle><infoValue>DJI D-RTK 3 다기능 스테이션 케어 엔터프라이즈 플러스 1년 D-RTK 3 Care</infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle>서비스 제공 사업자</infoTitle><infoValue>DJI</infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle>법에 의한 인증&amp;middot;허가 등</infoTitle><infoValue>상세페이지 참조</infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle>이용조건</infoTitle><infoValue>대상 기종&amp;middot;기간은 상품명 및 상세페이지 참조</infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle>취소&amp;middot;중도해약&amp;middot;해지 조건 및 환불기준</infoTitle><infoValue>교환 및 반품안내 및 상세페이지 참조</infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="7"><stepData idx="1"><infoTitle>취소&amp;middot;환불방법</infoTitle><infoValue>교환 및 반품안내 참조</infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="8"><stepData idx="1"><infoTitle>소비자상담 관련 전화번호</infoTitle><infoValue>드론박스 070-7811-4422</infoValue></stepData></goodsMustInfoData>
+</goods_data>
+</data>
