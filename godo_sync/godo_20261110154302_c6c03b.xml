@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000001588</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 매빅3 엔터프라이즈 Mavic 3E SP 케어 1년 포함 산업용 측량 드론</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002|002019|002019008|002019008003</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>url</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>g</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>6</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>y</externalVideoFl>
+<detailInfoDelivery>002002</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<goodsPrice>5513800.00</goodsPrice>
+<mileageGoods>2</mileageGoods><mileageGoodsUnit>percent</mileageGoodsUnit>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<script data-bdinfo="v1">(function(){function run(){var L=document.querySelector('.item_detail_list');if(!L||L.querySelector('dl[data-bdinfo]'))return;var ref=null,model=null;L.querySelectorAll('dl').forEach(function(d){var t=d.querySelector('dt');if(!t)return;var s=t.textContent.trim();if(s==='배송비')ref=d;if(s==='모델명'&&!d.getAttribute('data-bdq'))model=d;});if(model)model.style.display='none';var rows='<dt>제조사</dt><dd>DJI (공식 수입상품)</dd>|<dt>구매서류</dt><dd>공공기관 · 학교 · 기업체 납품서류 가능</dd>|<dt>기술지원</dt><dd>드론박스 A/S센터 및 DJI공식센터 가능</dd>|<dt>구매시 방문 납품</dt><dd>초기세팅 및 사용법 교육</dd>|<dt>고객센터</dt><dd>드론박스 070-7811-4422</dd>'.split('|');var after=ref;rows.forEach(function(r){var d=document.createElement('dl');d.setAttribute('data-bdinfo','1');d.innerHTML=r;if(after&&after.parentNode){after.parentNode.insertBefore(d,after.nextSibling);after=d;}else{L.appendChild(d);}});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}else{run();}})();</script>
+<!-- bd-xcopy v1 godo from-c24 307 -->
+<!-- bd-yt-start -->
+<div class="bd-yt-box" style="max-width:860px;margin:0 auto 36px;padding:8px 12px 0;text-align:center;">
+<p style="font-size:20px;font-weight:700;margin:20px 0 14px;color:#111;">영상으로 보기</p>
+<div style="max-width:760px;margin:0 auto 24px;"><div style="position:relative;width:100%;height:0;padding-bottom:56.25%;overflow:hidden;border-radius:10px;background:#000;aspect-ratio:16/9;"><iframe data-bd-yt="1" src="https://www.youtube.com/embed/-tAxtJBT9BA?rel=0" title="[3편] DJI Pilot2 세팅방법_2D,3D 미션비행 설정방법" loading="lazy" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe></div><p style="font-size:14px;color:#555;margin:8px 0 0;line-height:1.5;">[3편] DJI Pilot2 세팅방법_2D,3D 미션비행 설정방법</p></div>
+</div>
+<!-- bd-yt-end -->
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class="embed-container"><iframe src="https://www.youtube.com/embed/R1lT-NatLMA" frameborder="0" allowfullscreen=""></iframe></div>
+
+
+
+<h3 style="padding: 0px; margin: 0px; box-sizing: inherit; font-weight: 600; color: rgb(59, 62, 64); font-size: 32px; line-height: 40px; border: 0px; vertical-align: baseline; background: 0px 0px rgb(255, 255, 255); letter-spacing: -0.03em; text-align: center; font-family: &quot;Open Sans&quot;, blinkmacsystemfont, &quot;Segoe UI&quot;, roboto, &quot;Helvetica Neue&quot;, helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, simsun, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">구성품</h3>
+
+<div class="index__content___KDatN" style="padding: 0px; margin: 16px 0px 0px; box-sizing: inherit; letter-spacing: -0.32px; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px rgb(255, 255, 255); color: rgb(59, 62, 64); font-family: &quot;Open Sans&quot;, blinkmacsystemfont, &quot;Segoe UI&quot;, roboto, &quot;Helvetica Neue&quot;, helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, simsun, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+
+
+
+<ul class="index__list___r488k" style="padding: 0px; margin: 0px -8px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; list-style: none; letter-spacing: -0.02em; display: flex; flex-wrap: wrap;">
+
+<li class="index__item___M-+Ke" data-test-locator="sectionInTheBoxItem" style="padding: 0px 8px; margin: 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; list-style: none; flex: 0 0 16.6667%;">
+
+<div class="index__img-box___BzcF6" style="padding: 0px 0px 186.656px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px rgb(247, 249, 250); width: 186.656px; position: relative;"><span style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; position: absolute;"><img loading="lazy" src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241010/1728544016269.png" alt="Mavic 3E 기체" style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: bottom; background: 0px 0px; max-width: 100%; letter-spacing: -0.02em; height: 186.667px; width: 186.667px;" result="success" name="1728544016269.png" size="640px/640px" filesize="154,50 kB" error=""></span></div>
+
+<div class="index__info___KTELS" style="padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px;">
+
+
+
+<p class="index__title___pwyV3" style="padding: 0px; margin: 8px 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 600; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px; word-break: break-word;">Mavic 3E 기체</p>
+
+
+
+<p class="index__quantity___mYbs-" style="padding: 0px; margin: 4px 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 14px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;">×&nbsp;1</p>
+
+</div>
+
+</li>
+
+<li class="index__item___M-+Ke" data-test-locator="sectionInTheBoxItem" style="padding: 0px 8px; margin: 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; list-style: none; flex: 0 0 16.6667%;">
+
+<div class="index__img-box___BzcF6" style="padding: 0px 0px 186.656px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px rgb(247, 249, 250); width: 186.656px; position: relative;"><span style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; position: absolute;"><img loading="lazy" src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241010/1728544016501.png" alt="Mavic 3 인텔리전트 플라이트 배터리" style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: bottom; background: 0px 0px; max-width: 100%; letter-spacing: -0.02em; height: 186.667px; width: 186.667px;" result="success" name="1728544016501.png" size="640px/640px" filesize="183,86 kB" error=""></span></div>
+
+<div class="index__info___KTELS" style="padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px;">
+
+
+
+<p class="index__title___pwyV3" style="padding: 0px; margin: 8px 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 600; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px; word-break: break-word;">Mavic 3 인텔리전트 플라이트 배터리</p>
+
+
+
+<p class="index__quantity___mYbs-" style="padding: 0px; margin: 4px 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 14px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;">×&nbsp;1</p>
+
+</div>
+
+</li>
+
+<li class="index__item___M-+Ke" data-test-locator="sectionInTheBoxItem" style="padding: 0px 8px; margin: 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; list-style: none; flex: 0 0 16.6667%;">
+
+<div class="index__img-box___BzcF6" style="padding: 0px 0px 186.656px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px rgb(247, 249, 250); width: 186.656px; position: relative;"><span style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; position: absolute;"><img loading="lazy" src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241010/1728544016518.png" alt="microSD 카드 64GB" style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: bottom; background: 0px 0px; max-width: 100%; letter-spacing: -0.02em; height: 186.667px; width: 186.667px;" result="success" name="1728544016518.png" size="640px/640px" filesize="117,69 kB" error=""></span></div>
+
+<div class="index__info___KTELS" style="padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px;">
+
+
+
+<p class="index__title___pwyV3" style="padding: 0px; margin: 8px 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 600; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px; word-break: break-word;">microSD 카드 64GB</p>
+
+
+
+<p class="index__quantity___mYbs-" style="padding: 0px; margin: 4px 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 14px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;">×&nbsp;1</p>
+
+</div>
+
+</li>
+
+<li class="index__item___M-+Ke" data-test-locator="sectionInTheBoxItem" style="padding: 0px 8px; margin: 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; list-style: none; flex: 0 0 16.6667%;">
+
+<div class="index__img-box___BzcF6" style="padding: 0px 0px 186.656px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px rgb(247, 249, 250); width: 186.656px; position: relative;"><span style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; position: absolute;"><img loading="lazy" src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241010/1728544016117.png" alt="짐벌 보호대" style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: bottom; background: 0px 0px; max-width: 100%; letter-spacing: -0.02em; height: 186.667px; width: 186.667px;" result="success" name="1728544016117.png" size="640px/640px" filesize="87,40 kB" error=""></span></div>
+
+<div class="index__info___KTELS" style="padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px;">
+
+
+
+<p class="index__title___pwyV3" style="padding: 0px; margin: 8px 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 600; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px; word-break: break-word;">짐벌 보호대</p>
+
+
+
+<p class="index__quantity___mYbs-" style="padding: 0px; margin: 4px 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 14px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;">×&nbsp;1</p>
+
+</div>
+
+</li>
+
+<li class="index__item___M-+Ke" data-test-locator="sectionInTheBoxItem" style="padding: 0px 8px; margin: 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; list-style: none; flex: 0 0 16.6667%;">
+
+<div class="index__img-box___BzcF6" style="padding: 0px 0px 186.656px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px rgb(247, 249, 250); width: 186.656px; position: relative;"><span style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; position: absolute;"><img loading="lazy" src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241010/1728544015967.png" alt="Mavic 3 Enterprise 시리즈 프로펠러 (1쌍)" style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: bottom; background: 0px 0px; max-width: 100%; letter-spacing: -0.02em; height: 186.667px; width: 186.667px;" result="success" name="1728544015967.png" size="640px/640px" filesize="87,25 kB" error=""></span></div>
+
+<div class="index__info___KTELS" style="padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px;">
+
+
+
+<p class="index__title___pwyV3" style="padding: 0px; margin: 8px 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 600; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px; word-break: break-word;">Mavic 3 Enterprise 시리즈 프로펠러 (1쌍)</p>
+
+
+
+<p class="index__quantity___mYbs-" style="padding: 0px; margin: 4px 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 14px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;">×&nbsp;3</p>
+
+</div>
+
+</li>
+
+<li class="index__item___M-+Ke" data-test-locator="sectionInTheBoxItem" style="padding: 0px 8px; margin: 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; list-style: none; flex: 0 0 16.6667%;">
+
+<div class="index__img-box___BzcF6" style="padding: 0px 0px 186.656px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px rgb(247, 249, 250); width: 186.656px; position: relative;"><span style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; position: absolute;"><img loading="lazy" src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241010/1728544016534.png" alt="RC Pro Enterprise" style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: bottom; background: 0px 0px; max-width: 100%; letter-spacing: -0.02em; height: 186.667px; width: 186.667px;" result="success" name="1728544016534.png" size="640px/640px" filesize="189,01 kB" error=""></span></div>
+
+<div class="index__info___KTELS" style="padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px;">
+
+
+
+<p class="index__title___pwyV3" style="padding: 0px; margin: 8px 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 600; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px; word-break: break-word;">RC Pro Enterprise</p>
+
+
+
+<p class="index__quantity___mYbs-" style="padding: 0px; margin: 4px 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 14px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;">×&nbsp;1</p>
+
+</div>
+
+</li>
+
+<li class="index__item___M-+Ke" data-test-locator="sectionInTheBoxItem" style="padding: 0px 8px; margin: 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; list-style: none; flex: 0 0 16.6667%;">
+
+<div class="index__img-box___BzcF6" style="padding: 0px 0px 186.656px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px rgb(247, 249, 250); width: 186.656px; position: relative;"><span style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; position: absolute;"><img loading="lazy" src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241010/1728544017156.png" alt="스크루드라이버" style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: bottom; background: 0px 0px; max-width: 100%; letter-spacing: -0.02em; height: 186.667px; width: 186.667px;" result="success" name="1728544017156.png" size="640px/640px" filesize="30,87 kB" error=""></span></div>
+
+<div class="index__info___KTELS" style="padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px;">
+
+
+
+<p class="index__title___pwyV3" style="padding: 0px; margin: 8px 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 600; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px; word-break: break-word;">스크루드라이버</p>
+
+
+
+<p class="index__quantity___mYbs-" style="padding: 0px; margin: 4px 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 14px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;">×&nbsp;1</p>
+
+</div>
+
+</li>
+
+<li class="index__item___M-+Ke" data-test-locator="sectionInTheBoxItem" style="padding: 0px 8px; margin: 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; list-style: none; flex: 0 0 16.6667%;">
+
+<div class="index__img-box___BzcF6" style="padding: 0px 0px 186.656px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px rgb(247, 249, 250); width: 186.656px; position: relative;"><span style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; position: absolute;"><img loading="lazy" src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241010/1728544017172.png" alt="USB-C 전원 어댑터 (100W)" style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: bottom; background: 0px 0px; max-width: 100%; letter-spacing: -0.02em; height: 186.667px; width: 186.667px;" result="success" name="1728544017172.png" size="640px/640px" filesize="89,48 kB" error=""></span></div>
+
+<div class="index__info___KTELS" style="padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px;">
+
+
+
+<p class="index__title___pwyV3" style="padding: 0px; margin: 8px 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 600; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px; word-break: break-word;">USB-C 전원 어댑터 (100W)</p>
+
+
+
+<p class="index__quantity___mYbs-" style="padding: 0px; margin: 4px 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 14px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;">×&nbsp;1</p>
+
+</div>
+
+</li>
+
+<li class="index__item___M-+Ke" data-test-locator="sectionInTheBoxItem" style="padding: 0px 8px; margin: 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; list-style: none; flex: 0 0 16.6667%;">
+
+<div class="index__img-box___BzcF6" style="padding: 0px 0px 186.656px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px rgb(247, 249, 250); width: 186.656px; position: relative;"><span style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; position: absolute;"><img loading="lazy" src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241010/1728544017186.png" alt="100W 전원 어댑터 AC 케이블" style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: bottom; background: 0px 0px; max-width: 100%; letter-spacing: -0.02em; height: 186.667px; width: 186.667px;" result="success" name="1728544017186.png" size="640px/640px" filesize="94,80 kB" error=""></span></div>
+
+<div class="index__info___KTELS" style="padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px;">
+
+
+
+<p class="index__title___pwyV3" style="padding: 0px; margin: 8px 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 600; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px; word-break: break-word;">100W 전원 어댑터 AC 케이블</p>
+
+
+
+<p class="index__quantity___mYbs-" style="padding: 0px; margin: 4px 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 14px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;">×&nbsp;1</p>
+
+</div>
+
+</li>
+
+<li class="index__item___M-+Ke" data-test-locator="sectionInTheBoxItem" style="padding: 0px 8px; margin: 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; list-style: none; flex: 0 0 16.6667%;">
+
+<div class="index__img-box___BzcF6" style="padding: 0px 0px 186.656px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px rgb(247, 249, 250); width: 186.656px; position: relative;"><span style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; position: absolute;"><img loading="lazy" src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241010/1728544017228.png" alt="USB-C 케이블" style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: bottom; background: 0px 0px; max-width: 100%; letter-spacing: -0.02em; height: 186.667px; width: 186.667px;" result="success" name="1728544017228.png" size="640px/640px" filesize="90,16 kB" error=""></span></div>
+
+<div class="index__info___KTELS" style="padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px;">
+
+
+
+<p class="index__title___pwyV3" style="padding: 0px; margin: 8px 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 600; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px; word-break: break-word;">USB-C 케이블</p>
+
+
+
+<p class="index__quantity___mYbs-" style="padding: 0px; margin: 4px 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 14px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;">×&nbsp;1</p>
+
+</div>
+
+</li>
+
+<li class="index__item___M-+Ke" data-test-locator="sectionInTheBoxItem" style="padding: 0px 8px; margin: 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; list-style: none; flex: 0 0 16.6667%;">
+
+<div class="index__img-box___BzcF6" style="padding: 0px 0px 186.656px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px rgb(247, 249, 250); width: 186.656px; position: relative;"><span style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; position: absolute;"><img loading="lazy" src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241010/1728544017210.png" alt="USB-C to USB-C 케이블" style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: bottom; background: 0px 0px; max-width: 100%; letter-spacing: -0.02em; height: 186.667px; width: 186.667px;" result="success" name="1728544017210.png" size="640px/640px" filesize="88,06 kB" error=""></span></div>
+
+<div class="index__info___KTELS" style="padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px;">
+
+
+
+<p class="index__title___pwyV3" style="padding: 0px; margin: 8px 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 600; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px; word-break: break-word;">USB-C to USB-C 케이블</p>
+
+
+
+<p class="index__quantity___mYbs-" style="padding: 0px; margin: 4px 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 14px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;">×&nbsp;1</p>
+
+</div>
+
+</li>
+
+<li class="index__item___M-+Ke" data-test-locator="sectionInTheBoxItem" style="padding: 0px 8px; margin: 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; list-style: none; flex: 0 0 16.6667%;">
+
+<div class="index__img-box___BzcF6" style="padding: 0px 0px 186.656px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px rgb(247, 249, 250); width: 186.656px; position: relative;"><span style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; position: absolute;"><img loading="lazy" src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241010/1728544017368.png" alt="보호대 케이스" style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: bottom; background: 0px 0px; max-width: 100%; letter-spacing: -0.02em; height: 186.667px; width: 186.667px;" result="success" name="1728544017368.png" size="640px/640px" filesize="174,83 kB" error=""></span></div>
+
+<div class="index__info___KTELS" style="padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px;">
+
+
+
+<p class="index__title___pwyV3" style="padding: 0px; margin: 8px 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 600; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px; word-break: break-word;">보호대 케이스</p>
+
+
+
+<p class="index__quantity___mYbs-" style="padding: 0px; margin: 4px 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 14px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;">×&nbsp;1</p>
+
+</div>
+
+</li>
+
+</ul>
+
+</div>
+
+
+
+<p style="text-align: center;">
+
+<br><img src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241011/11_01.jpg" style="display: block; vertical-align: top; margin: 0px auto; text-align: center;" result="success" name="11_01.jpg" size="860px/1779px" filesize="472,78 kB" error=""><img src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241011/11_02.jpg" style="display: block; vertical-align: top; margin: 0px auto; text-align: center;" result="success" name="11_02.jpg" size="860px/1876px" filesize="464,10 kB" error=""><img src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241011/11_03.jpg" style="display: block; vertical-align: top; margin: 0px auto; text-align: center;" result="success" name="11_03.jpg" size="860px/1683px" filesize="325,24 kB" error=""><img src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241011/11_04.jpg" style="display: block; vertical-align: top; margin: 0px auto; text-align: center;" result="success" name="11_04.jpg" size="860px/2103px" filesize="490,63 kB" error=""><img src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241011/11_05.jpg" style="display: block; vertical-align: top; margin: 0px auto; text-align: center;" result="success" name="11_05.jpg" size="860px/1345px" filesize="162,19 kB" error=""><img src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241011/11_06.jpg" style="display: block; vertical-align: top; margin: 0px auto; text-align: center;" result="success" name="11_06.jpg" size="860px/1807px" filesize="203,78 kB" error=""><img src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241011/11_07.jpg" style="display: block; vertical-align: top; margin: 0px auto; text-align: center;" result="success" name="11_07.jpg" size="860px/1868px" filesize="311,90 kB" error=""><img src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241011/11_08.jpg" style="display: block; vertical-align: top; margin: 0px auto; text-align: center;" result="success" name="11_08.jpg" size="860px/1433px" filesize="222,12 kB" error=""></p>
+<!-- bit-ai-cite v1 -->
+<div style='max-width:860px; margin:0 auto; font-family:inherit;'>
+<h3 style='font-size:20px; font-weight:700; margin:36px 0 12px; color:#191F28;'>DJI 매빅3 엔터프라이즈 Care (DJI 케어 1년 포함) 산업용 측량드론 주요 스펙</h3>
+<table style='border-collapse:collapse; width:100%;'>
+<tr><th style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#F7F8FA; width:34%;'>최대 비행시간</th><td style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left;'>45분</td></tr>
+<tr><th style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#F7F8FA; width:34%;'>최대 이륙 중량 (기체)</th><td style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left;'>915g</td></tr>
+<tr><th style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#F7F8FA; width:34%;'>광각 카메라 센서</th><td style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left;'>4/3 CMOS</td></tr>
+<tr><th style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#F7F8FA; width:34%;'>줌 카메라</th><td style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left;'>12MP, 56배 하이브리드 줌</td></tr>
+<tr><th style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#F7F8FA; width:34%;'>영상 전송 시스템</th><td style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left;'>DJI O3 Enterprise (최대 15km FCC)</td></tr>
+<tr><th style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#F7F8FA; width:34%;'>장애물 감지</th><td style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left;'>전방향 비전 시스템</td></tr>
+<tr><th style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#F7F8FA; width:34%;'>내부 저장 공간</th><td style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left;'>8GB</td></tr>
+<tr><th style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#F7F8FA; width:34%;'>RTK 모듈 지원</th><td style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left;'>예</td></tr>
+</table>
+<h3 style='font-size:20px; font-weight:700; margin:36px 0 12px; color:#191F28;'>자주 묻는 질문</h3>
+<div itemscope itemtype='https://schema.org/FAQPage'>
+<div itemscope itemprop='mainEntity' itemtype='https://schema.org/Question' style='margin-bottom:16px;'><p itemprop='name' style='font-weight:700; font-size:16px; margin:0 0 6px;'>Q. DJI 케어 플랜은 어떻게 활성화되나요?</p><div itemscope itemprop='acceptedAnswer' itemtype='https://schema.org/Answer'><p itemprop='text' style='font-size:15px; color:#333D4B; margin:0;'>A. 본 상품에 포함된 DJI 케어 1년 플랜은 제품 활성화 시 자동으로 적용됩니다. 활성화 후 DJI 공식 홈페이지에서 케어 플랜의 상세 내용을 확인하실 수 있습니다.</p></div></div>
+<div itemscope itemprop='mainEntity' itemtype='https://schema.org/Question' style='margin-bottom:16px;'><p itemprop='name' style='font-weight:700; font-size:16px; margin:0 0 6px;'>Q. 구성품은 어떻게 되나요?</p><div itemscope itemprop='acceptedAnswer' itemtype='https://schema.org/Answer'><p itemprop='text' style='font-size:15px; color:#333D4B; margin:0;'>A. 기본 구성품은 Mavic 3E 기체, 인텔리전트 플라이트 배터리, 64GB microSD 카드, RC Pro Enterprise 조종기 등 상세 설명에 명시된 품목 일체입니다. 각 구성품의 정확한 수량은 상세 페이지를 참고해 주십시오.</p></div></div>
+<div itemscope itemprop='mainEntity' itemtype='https://schema.org/Question' style='margin-bottom:16px;'><p itemprop='name' style='font-weight:700; font-size:16px; margin:0 0 6px;'>Q. 제품이 DJI 정품인가요?</p><div itemscope itemprop='acceptedAnswer' itemtype='https://schema.org/Answer'><p itemprop='text' style='font-size:15px; color:#333D4B; margin:0;'>A. 네, 본 제품은 DJI 정품입니다. DJI 코리아 공식 수입원을 통해 정식으로 유통되며, 믿고 구매하실 수 있습니다.</p></div></div>
+<div itemscope itemprop='mainEntity' itemtype='https://schema.org/Question' style='margin-bottom:16px;'><p itemprop='name' style='font-weight:700; font-size:16px; margin:0 0 6px;'>Q. A/S는 어디서 받을 수 있나요?</p><div itemscope itemprop='acceptedAnswer' itemtype='https://schema.org/Answer'><p itemprop='text' style='font-size:15px; color:#333D4B; margin:0;'>A. 드론박스 A/S센터에서 수리 접수와 기술 지원을 도와드리며, DJI 케어 적용 수리는 DJI 공식 서비스 절차로 진행됩니다.</p></div></div>
+<div itemscope itemprop='mainEntity' itemtype='https://schema.org/Question' style='margin-bottom:16px;'><p itemprop='name' style='font-weight:700; font-size:16px; margin:0 0 6px;'>Q. 이 드론의 주요 특징은 무엇인가요?</p><div itemscope itemprop='acceptedAnswer' itemtype='https://schema.org/Answer'><p itemprop='text' style='font-size:15px; color:#333D4B; margin:0;'>A. DJI 매빅 3 엔터프라이즈는 4/3 CMOS 광각 카메라와 12MP 줌 카메라를 탑재하여 고정밀 측량 및 검사에 최적화되어 있습니다. 전방향 장애물 감지 시스템과 O3 Enterprise 전송 시스템으로 안정적인 비행 성능을 제공합니다.</p></div></div>
+</div>
+</div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<goodsMustInfoData idx="1"><stepData idx="1"><infoTitle>고시 분류</infoTitle><infoValue>소형전자(전자기기)</infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="2"><stepData idx="1"><infoTitle>품명 및 모델명</infoTitle><infoValue>DJI 매빅3 엔터프라이즈 Mavic 3E SP 케어 1년 포함 산업용 측량 드론</infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="3"><stepData idx="1"><infoTitle>KC 인증 필 유무</infoTitle><infoValue>상세페이지 참조</infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="4"><stepData idx="1"><infoTitle>정격전압, 소비전력</infoTitle><infoValue>상세페이지 참조</infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="5"><stepData idx="1"><infoTitle>출시년월</infoTitle><infoValue>상세페이지 참조</infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="6"><stepData idx="1"><infoTitle>제조자(수입자)</infoTitle><infoValue>DJI</infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="7"><stepData idx="1"><infoTitle>제조국</infoTitle><infoValue>중국</infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="8"><stepData idx="1"><infoTitle>크기, 무게</infoTitle><infoValue>상세페이지 참조</infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="9"><stepData idx="1"><infoTitle>주요 사양</infoTitle><infoValue>상세페이지 참조</infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="10"><stepData idx="1"><infoTitle>품질보증기준</infoTitle><infoValue>제조사 품질보증 기준 및 소비자분쟁해결기준(공정거래위원회 고시)에 따름</infoValue></stepData></goodsMustInfoData>
+<goodsMustInfoData idx="11"><stepData idx="1"><infoTitle>A/S 책임자와 전화번호</infoTitle><infoValue>드론박스 070-7811-4422</infoValue></stepData></goodsMustInfoData>
+</goods_data>
+</data>
