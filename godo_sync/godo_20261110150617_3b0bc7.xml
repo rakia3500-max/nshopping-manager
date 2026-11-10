@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000001572</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI Matrice 5T | DJI 매트리스 5T</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002|002019|002019008|002019008003</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>url</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>g</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>y</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>6</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>y</externalVideoFl>
+<detailInfoDelivery>002002</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<optionName><![CDATA[주의 사항]]></optionName>
+<optionDisplayFl>s</optionDisplayFl>
+<goodsPrice>10.00</goodsPrice>
+<goodsPriceString><![CDATA[견적 문의 070-7811-4422]]></goodsPriceString>
+<naverFl>n</naverFl>
+<imageUpdate>N</imageUpdate>
+<optionData idx="1"><sno>3315</sno><goodsNo>1000001572</goodsNo><optionNo>1</optionNo><optionValue1>이 제품은 상담 후 구매가 가능한 제품입니다.</optionValue1><optionValue2 /><optionValue3 /><optionValue4 /><optionValue5 /><optionPrice>0.00</optionPrice><optionCostPrice>0.00</optionCostPrice><optionViewFl>y</optionViewFl><optionSellFl>y</optionSellFl><optionSellCode /><optionDeliveryFl>normal</optionDeliveryFl><optionDeliveryCode /><optionCode /><stockCnt>9999</stockCnt><sellStopFl>n</sellStopFl><sellStopStock>0</sellStopStock><confirmRequestFl>n</confirmRequestFl><confirmRequestStock>0</confirmRequestStock><optionMemo /><deliverySmsSent>n</deliverySmsSent><regDt>2026-11-10 14:51:32</regDt><modDt /><optionImage /></optionData>
+<optionData idx="2"><sno>3316</sno><goodsNo>1000001572</goodsNo><optionNo>2</optionNo><optionValue1>이 제품에는 배터리가 포함되어 있지 않습니다 (Matrice 5 시리즈 배터리 별도).</optionValue1><optionValue2 /><optionValue3 /><optionValue4 /><optionValue5 /><optionPrice>0.00</optionPrice><optionCostPrice>0.00</optionCostPrice><optionViewFl>y</optionViewFl><optionSellFl>y</optionSellFl><optionSellCode /><optionDeliveryFl>normal</optionDeliveryFl><optionDeliveryCode /><optionCode /><stockCnt>9999</stockCnt><sellStopFl>n</sellStopFl><sellStopStock>0</sellStopStock><confirmRequestFl>n</confirmRequestFl><confirmRequestStock>0</confirmRequestStock><optionMemo /><deliverySmsSent>n</deliverySmsSent><regDt>2026-11-10 14:51:32</regDt><modDt /><optionImage /></optionData>
+<optionData idx="3"><sno>3317</sno><goodsNo>1000001572</goodsNo><optionNo>3</optionNo><optionValue1>이 페이지에서 결제하셔도 제품이 발송되지 않습니다.</optionValue1><optionValue2 /><optionValue3 /><optionValue4 /><optionValue5 /><optionPrice>0.00</optionPrice><optionCostPrice>0.00</optionCostPrice><optionViewFl>y</optionViewFl><optionSellFl>y</optionSellFl><optionSellCode /><optionDeliveryFl>normal</optionDeliveryFl><optionDeliveryCode /><optionCode /><stockCnt>9999</stockCnt><sellStopFl>n</sellStopFl><sellStopStock>0</sellStopStock><confirmRequestFl>n</confirmRequestFl><confirmRequestStock>0</confirmRequestStock><optionMemo /><deliverySmsSent>n</deliverySmsSent><regDt>2026-11-10 14:51:32</regDt><modDt /><optionImage /></optionData>
+<optionData idx="4"><sno>3318</sno><goodsNo>1000001572</goodsNo><optionNo>4</optionNo><optionValue1>견적 문의 또는 전화(070-7811-4422)로 문의해 주시기 바랍니다.</optionValue1><optionValue2 /><optionValue3 /><optionValue4 /><optionValue5 /><optionPrice>0.00</optionPrice><optionCostPrice>0.00</optionCostPrice><optionViewFl>y</optionViewFl><optionSellFl>y</optionSellFl><optionSellCode /><optionDeliveryFl>normal</optionDeliveryFl><optionDeliveryCode /><optionCode /><stockCnt>9999</stockCnt><sellStopFl>n</sellStopFl><sellStopStock>0</sellStopStock><confirmRequestFl>n</confirmRequestFl><confirmRequestStock>0</confirmRequestStock><optionMemo /><deliverySmsSent>n</deliverySmsSent><regDt>2026-11-10 14:51:32</regDt><modDt /><optionImage /></optionData>
+</goods_data>
+</data>
