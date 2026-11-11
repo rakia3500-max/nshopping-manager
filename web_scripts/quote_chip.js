@@ -31,9 +31,15 @@
       hits.push(t);
     }
     hits.forEach(function (n) {
+      var big = !!n.parentElement.closest(BIG);
       var s = document.createElement('span');
-      s.className = 'bdq-chip' + (n.parentElement.closest(BIG) ? ' bdq-big' : '');
+      s.className = 'bdq-chip' + (big ? ' bdq-big' : '');
       s.textContent = TXT;
+      // 쇼핑몰 스킨의 !important 가격 글자 규칙을 이기도록 요소에 직접(important) 넣는다
+      var st = { 'display': 'inline-block', 'font-size': big ? '16px' : '13px', 'font-weight': '700', 'line-height': '1.35',
+        'color': '#1B64DA', 'background': '#EEF4FF', 'border': '1px solid #D3E2FF', 'border-radius': big ? '7px' : '6px',
+        'padding': big ? '4px 12px' : '3px 9px', 'white-space': 'nowrap', 'letter-spacing': '-0.2px', 'vertical-align': 'middle', 'text-decoration': 'none' };
+      for (var k in st) s.style.setProperty(k, st[k], 'important');
       n.parentNode.replaceChild(s, n);
     });
   }
