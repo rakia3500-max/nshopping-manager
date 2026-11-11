@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000001085</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 포켓3 오즈모포켓3 유튜브 틱톡 릴스 동영상 촬영 짐벌 카메라</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019006|002019006003|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>y</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>y</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<goodsPrice>726000.00</goodsPrice>
+<imageUpdate>N</imageUpdate>
+<addGoodsData idx="1"><title>DJI 케어 리플레쉬</title><mustFl>n</mustFl><goodsNoData idx="1">1000000913</goodsNoData><goodsNoData idx="2">1000000912</goodsNoData></addGoodsData>
+<addGoodsData idx="2"><title>예약 판매</title><mustFl>y</mustFl><goodsNoData idx="1">1000000902</goodsNoData></addGoodsData>
+<goodsDescription><![CDATA[<script data-bd="cpanel">(function(){
+var D={"intro": "1인치 센서와 3축 짐벌을 단 179g 포켓 카메라. 4K/60fps, 슬로 모션 4K/120fps, 2.0인치 회전 화면, 최대 166분 촬영. microSD 최대 1TB 지원.", "chips": ["1인치 CMOS", "4K/60fps", "슬로 모션 4K/120fps", "3축 기계식 짐벌", "2.0인치 터치스크린", "최대 166분 촬영", "179g", "microSD 최대 1TB"], "badges": [{"text": "DJI 정품"}, {"text": "국내 A/S 접수"}, {"text": "Care Refresh 1·2년 가입 가능", "href": "https://www.drone-box.co.kr/goods/goods_view.php?goodsNo=1000001095"}, {"text": "기관·기업 납품서류 발급"}], "box": [], "ship": ""};
+var S_INTRO="font-size:13.5px;color:#333D4B;line-height:1.65;margin:0 0 8px;",
+S_CHIPS="display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px;",
+S_CHIP="font-size:12px;background:#F2F4F6;color:#333D4B;border-radius:999px;padding:4px 10px;line-height:1.4;",
+S_BADGES="display:flex;flex-wrap:wrap;gap:5px;margin:0 0 10px;",
+S_BADGE="font-size:11.5px;border:1px solid #D6E4FF;color:#1B64DA;background:#F2F6FF;border-radius:6px;padding:3px 8px;font-weight:600;line-height:1.4;text-decoration:none;white-space:nowrap;",
+S_FOLD="font-size:13px;color:#4E5968;border:1px dashed #D1D6DB;border-radius:8px;padding:9px 12px;margin:10px 0 4px;cursor:pointer;line-height:1.6;",
+S_FOLD_B="color:#191F28;font-weight:700;";
+function el(tag,html){var d=document.createElement(tag);if(html!=null)d.innerHTML=html;return d;}
+function introHtml(){var chips=D.chips.map(function(c){return '<span style="'+S_CHIP+'">'+c+'</span>';}).join('');
+return '<p data-bdc="intro" style="'+S_INTRO+'">'+D.intro+'</p><div data-bdc="chips" style="'+S_CHIPS+'">'+chips+'</div>';}
+function badgesHtml(){return '<div data-bdc="badges" style="'+S_BADGES+'">'+D.badges.map(function(b){return b.href?'<a href="'+b.href+'" style="'+S_BADGE+'">'+b.text+'</a>':'<span style="'+S_BADGE+'">'+b.text+'</span>';}).join('')+'</div>';}
+S_LI="font-size:12.5px;color:#4E5968;line-height:1.5;padding:2px 0 2px 11px;text-indent:-11px;break-inside:avoid;margin:0;",
+S_UL="display:none;margin:8px 0 0;padding:0;list-style:none;columns:2;column-gap:20px;";
+function foldHtml(){var items=D.box.map(function(b){return '<li style="'+S_LI+'">· '+b+'</li>';}).join('');
+return '<div data-bdc="fold" style="'+S_FOLD+'"><span style="'+S_FOLD_B+'">구성품 보기 ▾</span><span style="color:#8B95A1;font-size:12px;"> &nbsp;'+D.box.length+'개</span><ul data-bdc="foldbody" style="'+S_UL+'">'+items+(D.ship?'<li style="'+S_LI+'color:#8B95A1;">'+D.ship+'</li>':'')+'</ul></div>';}
+function bindFold(f){if(f.getAttribute('data-bound'))return;f.setAttribute('data-bound','1');f.onclick=function(){var b=f.querySelector('[data-bdc="foldbody"]'),t=f.querySelector('span');var open=b.style.display!=='none';b.style.display=open?'none':'block';t.textContent=open?'구성품 보기 ▾':'구성품 접기 ▴';};}
+var S_ROW=";clear:both;float:left;width:100%;box-sizing:border-box;";
+function css(){if(document.querySelector('style[data-bdc="css"]'))return;var s=document.createElement('style');s.setAttribute('data-bdc','css');
+s.textContent='.item_detail_tit, .item_detail_tit *{word-break:keep-all !important;overflow-wrap:normal !important;} .item_detail_list > dl{padding-top:3px !important;} .item_detail_list dt{width:100px !important;} .item_detail_list dd{width:400px !important;} .item_detail_list > dl > dt,.item_detail_list > dl > dd{line-height:20px !important;} .item_detail_list .item_delivery dd .delivery-detail{line-height:20px;} .item_detail_list [data-bdc="fold"]{margin:4px 0 0 !important;padding:6px 12px !important;}';document.head.appendChild(s);}
+function pc(){var list=document.querySelector('.item_detail_list');if(!list)return;css();
+if(!list.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText+=S_ROW;list.insertBefore(w,list.firstChild);}
+var dv=list.querySelector('.item_delivery');
+if(D.box&&D.box.length&&!list.querySelector('[data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;f.style.cssText+=S_ROW;if(dv&&dv.nextSibling)dv.parentNode.insertBefore(f,dv.nextSibling);else list.appendChild(f);}
+var fd=list.querySelector('[data-bdc="fold"]');if(fd)bindFold(fd);}
+function mo(){var top=document.querySelector('.detail_info_top');if(!top)return;
+var pb=top.querySelector('.price_box');
+if(pb&&!top.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText='padding:8px 0 4px;';var sub=pb.querySelector('.detail_sub_info');if(sub)pb.insertBefore(w,sub);else pb.appendChild(w);}
+var sub2=document.querySelector('.detail_sub_info');
+if(D.box&&D.box.length&&sub2&&!document.querySelector('[data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;sub2.parentNode.insertBefore(f,sub2.nextSibling);}
+var fd=document.querySelector('[data-bdc="fold"]');if(fd)bindFold(fd);}
+function fix(){try{pc();}catch(e){}try{mo();}catch(e){}}
+function start(){fix();try{new MutationObserver(function(){fix();}).observe(document.body,{childList:true,subtree:true});}catch(e){}
+var n=0,t=setInterval(function(){fix();if(++n>40)clearInterval(t);},500);}
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',start);}else{start();}
+})();</script>
+<p style=\"text-align: center; \" align=\"center\"><b><span style=\"font-size: 24pt; font-family: 나눔고딕, NanumGothic;\">DJI 오즈모포켓 3 구성품</span></b>&nbsp;</p><p style=\"text-align: center; \" align=\"center\">&nbsp;&nbsp;</p><p style=\"text-align: center; \" align=\"center\">&nbsp;</p><p style=\"text-align: center; \" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/231026/10854105be5fb47e4bd2eff6290c613d_164857.png\" title=\"10854105be5fb47e4bd2eff6290c613d_164857.png\" class=\"js-smart-img\"><br style=\"clear:both;\">&nbsp;</p><p style=\"text-align: center; \" align=\"center\">&nbsp;</p><p style=\"text-align: center; \" align=\"center\"><b><span style=\"font-size: 24pt; font-family: 나눔고딕, NanumGothic;\">DJI 오즈모포켓 3 메뉴얼</span></b><b><span style=\"font-size: 24pt; font-family: 나눔고딕, NanumGothic;\"> </span></b></p><p style=\"text-align: center; \" align=\"center\"><b><span style=\"font-size: 24pt; font-family: 나눔고딕, NanumGothic;\"><a href=\"https://www.dji.com/kr/osmo-pocket-3/downloads\" target=\"_self\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/231027/djimimo_153123.jpg\" title=\"djimimo_153123.jpg\" class=\"js-smart-img\"></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<a href=\"https://dl.djicdn.com/downloads/DJI_Osmo_Pocket_3/UM/20231020/DJI_Osmo_Pocket_3_User_Manual_v1.0_kr.pdf\" target=\"_self\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/231027/5efa2c2bbef49cd41a287372806e2f4a_153450.jpg\" title=\"5efa2c2bbef49cd41a287372806e2f4a_153450.jpg\" class=\"js-smart-img\"></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<a href=\"https://www.dji.com/kr/products/comparison-op\" target=\"_self\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/231027/5e940d9c0d3c4f369d69ea361ddd02a1_153133.jpg\" title=\"5e940d9c0d3c4f369d69ea361ddd02a1_153133.jpg\" class=\"js-smart-img\"></a></span></b></p><div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/231026/4dfc78bb2eaf338a45d471a72822ad40_100108.jpg\" title=\"4dfc78bb2eaf338a45d471a72822ad40_100108.jpg\" class=\"js-smart-img\"><br></div><span style=\"font-family: &quot;Open Sans&quot;, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, SimSun, sans-serif; color: rgb(59, 62, 64);\"><span style=\"font-size: 14px; letter-spacing: -0.28px;\"><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/231026/60afbfe96ab701e66ee7a19c2ba33d45_094451.jpg\" title=\"60afbfe96ab701e66ee7a19c2ba33d45_094451.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"> </div></span></span></div>]]></goodsDescription>
+<goodsDescriptionSameFl>n</goodsDescriptionSameFl>
+<goodsDescriptionMobile><![CDATA[<script data-bd="cpanel">(function(){
+var D={"intro": "1인치 센서와 3축 짐벌을 단 179g 포켓 카메라. 4K/60fps, 슬로 모션 4K/120fps, 2.0인치 회전 화면, 최대 166분 촬영. microSD 최대 1TB 지원.", "chips": ["1인치 CMOS", "4K/60fps", "슬로 모션 4K/120fps", "3축 기계식 짐벌", "2.0인치 터치스크린", "최대 166분 촬영", "179g", "microSD 최대 1TB"], "badges": [{"text": "DJI 정품"}, {"text": "국내 A/S 접수"}, {"text": "Care Refresh 1·2년 가입 가능", "href": "https://www.drone-box.co.kr/goods/goods_view.php?goodsNo=1000001095"}, {"text": "기관·기업 납품서류 발급"}], "box": [], "ship": ""};
+var S_INTRO="font-size:13.5px;color:#333D4B;line-height:1.65;margin:0 0 8px;",
+S_CHIPS="display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px;",
+S_CHIP="font-size:12px;background:#F2F4F6;color:#333D4B;border-radius:999px;padding:4px 10px;line-height:1.4;",
+S_BADGES="display:flex;flex-wrap:wrap;gap:5px;margin:0 0 10px;",
+S_BADGE="font-size:11.5px;border:1px solid #D6E4FF;color:#1B64DA;background:#F2F6FF;border-radius:6px;padding:3px 8px;font-weight:600;line-height:1.4;text-decoration:none;white-space:nowrap;",
+S_FOLD="font-size:13px;color:#4E5968;border:1px dashed #D1D6DB;border-radius:8px;padding:9px 12px;margin:10px 0 4px;cursor:pointer;line-height:1.6;",
+S_FOLD_B="color:#191F28;font-weight:700;";
+function el(tag,html){var d=document.createElement(tag);if(html!=null)d.innerHTML=html;return d;}
+function introHtml(){var chips=D.chips.map(function(c){return '<span style="'+S_CHIP+'">'+c+'</span>';}).join('');
+return '<p data-bdc="intro" style="'+S_INTRO+'">'+D.intro+'</p><div data-bdc="chips" style="'+S_CHIPS+'">'+chips+'</div>';}
+function badgesHtml(){return '<div data-bdc="badges" style="'+S_BADGES+'">'+D.badges.map(function(b){return b.href?'<a href="'+b.href+'" style="'+S_BADGE+'">'+b.text+'</a>':'<span style="'+S_BADGE+'">'+b.text+'</span>';}).join('')+'</div>';}
+S_LI="font-size:12.5px;color:#4E5968;line-height:1.5;padding:2px 0 2px 11px;text-indent:-11px;break-inside:avoid;margin:0;",
+S_UL="display:none;margin:8px 0 0;padding:0;list-style:none;columns:2;column-gap:20px;";
+function foldHtml(){var items=D.box.map(function(b){return '<li style="'+S_LI+'">· '+b+'</li>';}).join('');
+return '<div data-bdc="fold" style="'+S_FOLD+'"><span style="'+S_FOLD_B+'">구성품 보기 ▾</span><span style="color:#8B95A1;font-size:12px;"> &nbsp;'+D.box.length+'개</span><ul data-bdc="foldbody" style="'+S_UL+'">'+items+(D.ship?'<li style="'+S_LI+'color:#8B95A1;">'+D.ship+'</li>':'')+'</ul></div>';}
+function bindFold(f){if(f.getAttribute('data-bound'))return;f.setAttribute('data-bound','1');f.onclick=function(){var b=f.querySelector('[data-bdc="foldbody"]'),t=f.querySelector('span');var open=b.style.display!=='none';b.style.display=open?'none':'block';t.textContent=open?'구성품 보기 ▾':'구성품 접기 ▴';};}
+var S_ROW=";clear:both;float:left;width:100%;box-sizing:border-box;";
+function css(){if(document.querySelector('style[data-bdc="css"]'))return;var s=document.createElement('style');s.setAttribute('data-bdc','css');
+s.textContent='.item_detail_tit, .item_detail_tit *{word-break:keep-all !important;overflow-wrap:normal !important;} .item_detail_list > dl{padding-top:3px !important;} .item_detail_list dt{width:100px !important;} .item_detail_list dd{width:400px !important;} .item_detail_list > dl > dt,.item_detail_list > dl > dd{line-height:20px !important;} .item_detail_list .item_delivery dd .delivery-detail{line-height:20px;} .item_detail_list [data-bdc="fold"]{margin:4px 0 0 !important;padding:6px 12px !important;}';document.head.appendChild(s);}
+function pc(){var list=document.querySelector('.item_detail_list');if(!list)return;css();
+if(!list.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText+=S_ROW;list.insertBefore(w,list.firstChild);}
+var dv=list.querySelector('.item_delivery');
+if(D.box&&D.box.length&&!list.querySelector('[data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;f.style.cssText+=S_ROW;if(dv&&dv.nextSibling)dv.parentNode.insertBefore(f,dv.nextSibling);else list.appendChild(f);}
+var fd=list.querySelector('[data-bdc="fold"]');if(fd)bindFold(fd);}
+function mo(){var top=document.querySelector('.detail_info_top');if(!top)return;
+var pb=top.querySelector('.price_box');
+if(pb&&!top.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText='padding:8px 0 4px;';var sub=pb.querySelector('.detail_sub_info');if(sub)pb.insertBefore(w,sub);else pb.appendChild(w);}
+var sub2=document.querySelector('.detail_sub_info');
+if(D.box&&D.box.length&&sub2&&!document.querySelector('[data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;sub2.parentNode.insertBefore(f,sub2.nextSibling);}
+var fd=document.querySelector('[data-bdc="fold"]');if(fd)bindFold(fd);}
+function fix(){try{pc();}catch(e){}try{mo();}catch(e){}}
+function start(){fix();try{new MutationObserver(function(){fix();}).observe(document.body,{childList:true,subtree:true});}catch(e){}
+var n=0,t=setInterval(function(){fix();if(++n>40)clearInterval(t);},500);}
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',start);}else{start();}
+})();</script>
+<p align=\"center\" style=\"text-align: center;\">&nbsp;</p><p align=\"center\" style=\"text-align: center;\">&nbsp;</p><p align=\"center\" style=\"text-align: center;\">&nbsp;</p><p align=\"center\" style=\"text-align: center;\">&nbsp;<b><span style=\"font-size: 24pt; font-family: 나눔고딕, NanumGothic;\">DJI 오즈모포켓 3 구성품</span></b>&nbsp;</p><p align=\"center\" style=\"text-align: center;\">&nbsp;</p><p align=\"center\" style=\"text-align: center;\">&nbsp;</p><p align=\"center\" style=\"text-align: center;\">&nbsp;</p><p align=\"center\" style=\"text-align: center;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/231026/10854105be5fb47e4bd2eff6290c613d_164857.png\" title=\"10854105be5fb47e4bd2eff6290c613d_164857.png\" class=\"js-smart-img\"><b><span style=\"font-size: 24pt; font-family: 나눔고딕, NanumGothic;\">&nbsp; &nbsp;&nbsp;</span></b></p><div><span style=\"font-family: &quot;Open Sans&quot;, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, SimSun, sans-serif; color: rgb(59, 62, 64);\"><span style=\"font-size: 14px; letter-spacing: -0.28px;\"><br></span></span></div><div><div align=\"center\" style=\"text-align: center;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/231026/4dfc78bb2eaf338a45d471a72822ad40_100108.jpg\" title=\"4dfc78bb2eaf338a45d471a72822ad40_100108.jpg\" class=\"js-smart-img\"><br style=\"clear: both;\"><br></div><span style=\"font-family: &quot;Open Sans&quot;, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, SimSun, sans-serif; color: rgb(59, 62, 64);\"><span style=\"font-size: 14px; letter-spacing: -0.28px;\"><br style=\"clear: both;\"><div align=\"center\" style=\"text-align: center;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/231026/60afbfe96ab701e66ee7a19c2ba33d45_094451.jpg\" title=\"60afbfe96ab701e66ee7a19c2ba33d45_094451.jpg\" class=\"js-smart-img\"></div></span></span></div>]]></goodsDescriptionMobile>
+</goods_data>
+</data>
