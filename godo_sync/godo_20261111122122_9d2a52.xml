@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000000962</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 인스파이어 3 Inspire 3 산업용 촬영 드론</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019014|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>n</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>y</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>n</imgDetailViewFl>
+<externalVideoFl>y</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<goodsPrice>15000000.00</goodsPrice>
+<imageUpdate>N</imageUpdate>
+<addGoodsData idx="1"><title>추가상품</title><mustFl>n</mustFl><goodsNoData idx="1">1000000899</goodsNoData><goodsNoData idx="2">1000000901</goodsNoData><goodsNoData idx="3">1000000900</goodsNoData></addGoodsData>
+<goodsDescription><![CDATA[<script data-bd="cpanel">(function(){
+var D={"intro": "풀프레임 8K 카메라를 단 영화 촬영용 드론. RTK 센티미터급 위치 제어, O3 Pro 영상 전송, DL 렌즈 교체, 최대 약 28분 비행.", "chips": ["풀프레임 CMOS", "최대 8192×4320 (8K)", "O3 Pro 영상 전송", "RTK 1cm+1ppm", "최대 약 28분 비행", "최대 94km/h", "DL 렌즈 18~75mm", "PROSSD 1TB"], "badges": [{"text": "DJI 정품"}, {"text": "국내 A/S 접수"}, {"text": "Care 가입 문의", "href": "https://www.drone-box.co.kr/board/popup_goods_board_write.php?mode=write&bdId=goodsqa&goodsNo=1000000962&orderGoodsNo=0"}, {"text": "기관·기업 납품서류 발급"}], "box": [], "ship": ""};
+var S_INTRO="font-size:13.5px;color:#333D4B;line-height:1.65;margin:0 0 8px;",
+S_CHIPS="display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px;",
+S_CHIP="font-size:12px;background:#F2F4F6;color:#333D4B;border-radius:999px;padding:4px 10px;line-height:1.4;",
+S_BADGES="display:flex;flex-wrap:wrap;gap:5px;margin:0 0 10px;",
+S_BADGE="font-size:11.5px;border:1px solid #D6E4FF;color:#1B64DA;background:#F2F6FF;border-radius:6px;padding:3px 8px;font-weight:600;line-height:1.4;text-decoration:none;white-space:nowrap;",
+S_FOLD="font-size:13px;color:#4E5968;border:1px dashed #D1D6DB;border-radius:8px;padding:9px 12px;margin:10px 0 4px;cursor:pointer;line-height:1.6;",
+S_FOLD_B="color:#191F28;font-weight:700;";
+function el(tag,html){var d=document.createElement(tag);if(html!=null)d.innerHTML=html;return d;}
+function introHtml(){var chips=D.chips.map(function(c){return '<span style="'+S_CHIP+'">'+c+'</span>';}).join('');
+return '<p data-bdc="intro" style="'+S_INTRO+'">'+D.intro+'</p><div data-bdc="chips" style="'+S_CHIPS+'">'+chips+'</div>';}
+function badgesHtml(){return '<div data-bdc="badges" style="'+S_BADGES+'">'+D.badges.map(function(b){return b.href?'<a href="'+b.href+'" style="'+S_BADGE+'">'+b.text+'</a>':'<span style="'+S_BADGE+'">'+b.text+'</span>';}).join('')+'</div>';}
+S_LI="font-size:12.5px;color:#4E5968;line-height:1.5;padding:2px 0 2px 11px;text-indent:-11px;break-inside:avoid;margin:0;",
+S_UL="display:none;margin:8px 0 0;padding:0;list-style:none;columns:2;column-gap:20px;";
+function foldHtml(){var items=D.box.map(function(b){return '<li style="'+S_LI+'">· '+b+'</li>';}).join('');
+return '<div data-bdc="fold" style="'+S_FOLD+'"><span style="'+S_FOLD_B+'">구성품 보기 ▾</span><span style="color:#8B95A1;font-size:12px;"> &nbsp;'+D.box.length+'개</span><ul data-bdc="foldbody" style="'+S_UL+'">'+items+(D.ship?'<li style="'+S_LI+'color:#8B95A1;">'+D.ship+'</li>':'')+'</ul></div>';}
+function bindFold(f){if(f.getAttribute('data-bound'))return;f.setAttribute('data-bound','1');f.onclick=function(){var b=f.querySelector('[data-bdc="foldbody"]'),t=f.querySelector('span');var open=b.style.display!=='none';b.style.display=open?'none':'block';t.textContent=open?'구성품 보기 ▾':'구성품 접기 ▴';};}
+var S_ROW=";clear:both;float:left;width:100%;box-sizing:border-box;";
+function css(){if(document.querySelector('style[data-bdc="css"]'))return;var s=document.createElement('style');s.setAttribute('data-bdc','css');
+s.textContent='.item_detail_tit, .item_detail_tit *{word-break:keep-all !important;overflow-wrap:normal !important;} .item_detail_list > dl{padding-top:3px !important;} .item_detail_list dt{width:100px !important;} .item_detail_list dd{width:400px !important;} .item_detail_list > dl > dt,.item_detail_list > dl > dd{line-height:20px !important;} .item_detail_list .item_delivery dd .delivery-detail{line-height:20px;} .item_detail_list [data-bdc="fold"]{margin:4px 0 0 !important;padding:6px 12px !important;}';document.head.appendChild(s);}
+function pc(){var list=document.querySelector('.item_detail_list');if(!list)return;css();
+if(!list.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText+=S_ROW;list.insertBefore(w,list.firstChild);}
+var dv=list.querySelector('.item_delivery');
+if(D.box&&D.box.length&&!list.querySelector('[data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;f.style.cssText+=S_ROW;if(dv&&dv.nextSibling)dv.parentNode.insertBefore(f,dv.nextSibling);else list.appendChild(f);}
+var fd=list.querySelector('[data-bdc="fold"]');if(fd)bindFold(fd);}
+function mo(){var top=document.querySelector('.detail_info_top');if(!top)return;
+var pb=top.querySelector('.price_box');
+if(pb&&!top.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText='padding:8px 0 4px;';var sub=pb.querySelector('.detail_sub_info');if(sub)pb.insertBefore(w,sub);else pb.appendChild(w);}
+var sub2=document.querySelector('.detail_sub_info');
+if(D.box&&D.box.length&&sub2&&!document.querySelector('[data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;sub2.parentNode.insertBefore(f,sub2.nextSibling);}
+var fd=document.querySelector('[data-bdc="fold"]');if(fd)bindFold(fd);}
+function fix(){try{pc();}catch(e){}try{mo();}catch(e){}}
+function start(){fix();try{new MutationObserver(function(){fix();}).observe(document.body,{childList:true,subtree:true});}catch(e){}
+var n=0,t=setInterval(function(){fix();if(++n>40)clearInterval(t);},500);}
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',start);}else{start();}
+})();</script>
+<div style=\"text-align: center;\" align=\"center\">src=\"/data/editor/goods/230426/123132_03_141813.jpg\" title=\"123132_03_141813.jpg\" class=\"js-smart-img\"&gt;</div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/230426/123132_04_141814.jpg\" title=\"123132_04_141814.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/230426/123132_05_141815.jpg\" title=\"123132_05_141815.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/230426/123132_06_141816.jpg\" title=\"123132_06_141816.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/230426/123132_07_141816.jpg\" title=\"123132_07_141816.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/230426/123132_08_141817.jpg\" title=\"123132_08_141817.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/230426/123132_09_141818.jpg\" title=\"123132_09_141818.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/230426/123132_10_141818.jpg\" title=\"123132_10_141818.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/230426/123132_11_141853.jpg\" title=\"123132_11_141853.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/230426/123132_12_141854.jpg\" title=\"123132_12_141854.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/230426/123132_13_141855.jpg\" title=\"123132_13_141855.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/230426/b23479579b4b6252dab2d07590cba453_141855.jpg\" title=\"b23479579b4b6252dab2d07590cba453_141855.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/230426/12ef5747847a548cc6bfd9f5f1f3e755_141856.jpg\" title=\"12ef5747847a548cc6bfd9f5f1f3e755_141856.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/230426/7b9660c6e53ea9c6558e915d124ef0d4_141857.jpg\" title=\"7b9660c6e53ea9c6558e915d124ef0d4_141857.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/230426/85193d013cc754f8d9704001b574f7cc_141857.jpg\" title=\"85193d013cc754f8d9704001b574f7cc_141857.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/230426/6f7605352920fc6ac069dc586fbcfe32_141858.jpg\" title=\"6f7605352920fc6ac069dc586fbcfe32_141858.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/230426/cfd2e21377eb05197d45dae9968e83f1_141859.jpg\" title=\"cfd2e21377eb05197d45dae9968e83f1_141859.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/230426/8d27a8d94bc9c850107b97e94f0f7d48_141900.jpg\" title=\"8d27a8d94bc9c850107b97e94f0f7d48_141900.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/230426/91c31e97e7c205ba7060ff41e2bc4f39_141929.jpg\" title=\"91c31e97e7c205ba7060ff41e2bc4f39_141929.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/230426/568e20e308b1aa96c3712a5cb8080c23_141930.jpg\" title=\"568e20e308b1aa96c3712a5cb8080c23_141930.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/230426/c2ea3432ee3480e39020adb59980fa87_141931.jpg\" title=\"c2ea3432ee3480e39020adb59980fa87_141931.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/230426/ef3f758b33b73ba47d9ff48e0faf3b88_141932.jpg\" title=\"ef3f758b33b73ba47d9ff48e0faf3b88_141932.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/230426/cbd406733e1f67672a64bc1b71c60a7c_141932.jpg\" title=\"cbd406733e1f67672a64bc1b71c60a7c_141932.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/230426/54437c5eb790e900763d6302a5badcc6_141933.jpg\" title=\"54437c5eb790e900763d6302a5badcc6_141933.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/230426/33d021eb4f8d36585f86b70cf283a1c7_141934.jpg\" title=\"33d021eb4f8d36585f86b70cf283a1c7_141934.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/230426/7a502cb7cd610d2b2549c86780db4165_141934.jpg\" title=\"7a502cb7cd610d2b2549c86780db4165_141934.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/230426/4a7f8b00832edf32917fff69e0165212_141935.jpg\" title=\"4a7f8b00832edf32917fff69e0165212_141935.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/230426/807b02ee33f1f2fc42a4628156231e37_141936.jpg\" title=\"807b02ee33f1f2fc42a4628156231e37_141936.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/230426/6f924654bf3d501263c4c5bcbf7d3d55_141944.jpg\" title=\"6f924654bf3d501263c4c5bcbf7d3d55_141944.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/230426/beb5e5eacabcfec79ec8bfd8f1b0595d_141945.jpg\" title=\"beb5e5eacabcfec79ec8bfd8f1b0595d_141945.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/230426/6225134064aa9578cf4eba2f07eb709e_141945.jpg\" title=\"6225134064aa9578cf4eba2f07eb709e_141945.jpg\" class=\"js-smart-img\"></div><div style=\"text-align: center;\" align=\"center\">&nbsp;</div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+</goods_data>
+</data>
