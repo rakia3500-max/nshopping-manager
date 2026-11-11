@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000001589</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 매빅3 써멀 어드밴스드 Mavic 3TA SP 케어 1년 포함 열화상 산업용 드론</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002|002019|002019008003|002019008</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>url</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>g</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>6</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>y</externalVideoFl>
+<detailInfoDelivery>002002</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<goodsPrice>7520100.00</goodsPrice>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<script data-bd="cpanel">(function(){
+var D={"intro": "열화상 640×512 카메라와 48MP 광각, 56배 하이브리드 줌 망원을 단 920g 산업용 드론. 최대 45분 비행, DJI Care 1년 포함 구성.", "chips": ["열화상 640×512", "광각 1/2인치 48MP", "56배 하이브리드 줌", "최대 45분 비행", "920g", "O3 Enterprise 전송", "RC Pro Enterprise 포함"], "badges": [{"text": "DJI 정품"}, {"text": "국내 A/S 접수"}, {"text": "Care Enterprise Basic 1년 포함"}, {"text": "기관·기업 납품서류 발급"}], "box": [], "ship": ""};
+var S_INTRO="font-size:13.5px;color:#333D4B;line-height:1.65;margin:0 0 8px;",
+S_CHIPS="display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px;",
+S_CHIP="font-size:12px;background:#F2F4F6;color:#333D4B;border-radius:999px;padding:4px 10px;line-height:1.4;",
+S_BADGES="display:flex;flex-wrap:wrap;gap:5px;margin:0 0 10px;",
+S_BADGE="font-size:11.5px;border:1px solid #D6E4FF;color:#1B64DA;background:#F2F6FF;border-radius:6px;padding:3px 8px;font-weight:600;line-height:1.4;text-decoration:none;white-space:nowrap;",
+S_FOLD="font-size:13px;color:#4E5968;border:1px dashed #D1D6DB;border-radius:8px;padding:9px 12px;margin:10px 0 4px;cursor:pointer;line-height:1.6;",
+S_FOLD_B="color:#191F28;font-weight:700;";
+function el(tag,html){var d=document.createElement(tag);if(html!=null)d.innerHTML=html;return d;}
+function introHtml(){var chips=D.chips.map(function(c){return '<span style="'+S_CHIP+'">'+c+'</span>';}).join('');
+return '<p data-bdc="intro" style="'+S_INTRO+'">'+D.intro+'</p><div data-bdc="chips" style="'+S_CHIPS+'">'+chips+'</div>';}
+function badgesHtml(){return '<div data-bdc="badges" style="'+S_BADGES+'">'+D.badges.map(function(b){return b.href?'<a href="'+b.href+'" style="'+S_BADGE+'">'+b.text+'</a>':'<span style="'+S_BADGE+'">'+b.text+'</span>';}).join('')+'</div>';}
+S_LI="font-size:12.5px;color:#4E5968;line-height:1.5;padding:2px 0 2px 11px;text-indent:-11px;break-inside:avoid;margin:0;",
+S_UL="display:none;margin:8px 0 0;padding:0;list-style:none;columns:2;column-gap:20px;";
+function foldHtml(){var items=D.box.map(function(b){return '<li style="'+S_LI+'">· '+b+'</li>';}).join('');
+return '<div data-bdc="fold" style="'+S_FOLD+'"><span style="'+S_FOLD_B+'">구성품 보기 ▾</span><span style="color:#8B95A1;font-size:12px;"> &nbsp;'+D.box.length+'개</span><ul data-bdc="foldbody" style="'+S_UL+'">'+items+(D.ship?'<li style="'+S_LI+'color:#8B95A1;">'+D.ship+'</li>':'')+'</ul></div>';}
+function bindFold(f){if(f.getAttribute('data-bound'))return;f.setAttribute('data-bound','1');f.onclick=function(){var b=f.querySelector('[data-bdc="foldbody"]'),t=f.querySelector('span');var open=b.style.display!=='none';b.style.display=open?'none':'block';t.textContent=open?'구성품 보기 ▾':'구성품 접기 ▴';};}
+var S_ROW=";clear:both;float:left;width:100%;box-sizing:border-box;";
+function css(){if(document.querySelector('style[data-bdc="css"]'))return;var s=document.createElement('style');s.setAttribute('data-bdc','css');
+s.textContent='.item_detail_tit, .item_detail_tit *{word-break:keep-all !important;overflow-wrap:normal !important;} .item_detail_list > dl{padding-top:3px !important;} .item_detail_list dt{width:100px !important;} .item_detail_list dd{width:400px !important;} .item_detail_list > dl > dt,.item_detail_list > dl > dd{line-height:20px !important;} .item_detail_list .item_delivery dd .delivery-detail{line-height:20px;} .item_detail_list [data-bdc="fold"]{margin:4px 0 0 !important;padding:6px 12px !important;}';document.head.appendChild(s);}
+function pc(){var list=document.querySelector('.item_detail_list');if(!list)return;css();
+if(!list.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText+=S_ROW;list.insertBefore(w,list.firstChild);}
+var dv=list.querySelector('.item_delivery');
+if(D.box&&D.box.length&&!list.querySelector('[data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;f.style.cssText+=S_ROW;if(dv&&dv.nextSibling)dv.parentNode.insertBefore(f,dv.nextSibling);else list.appendChild(f);}
+var fd=list.querySelector('[data-bdc="fold"]');if(fd)bindFold(fd);}
+function mo(){var top=document.querySelector('.detail_info_top');if(!top)return;
+var pb=top.querySelector('.price_box');
+if(pb&&!top.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText='padding:8px 0 4px;';var sub=pb.querySelector('.detail_sub_info');if(sub)pb.insertBefore(w,sub);else pb.appendChild(w);}
+var sub2=document.querySelector('.detail_sub_info');
+if(D.box&&D.box.length&&sub2&&!document.querySelector('[data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;sub2.parentNode.insertBefore(f,sub2.nextSibling);}
+var fd=document.querySelector('[data-bdc="fold"]');if(fd)bindFold(fd);}
+function fix(){try{pc();}catch(e){}try{mo();}catch(e){}}
+function start(){fix();try{new MutationObserver(function(){fix();}).observe(document.body,{childList:true,subtree:true});}catch(e){}
+var n=0,t=setInterval(function(){fix();if(++n>40)clearInterval(t);},500);}
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',start);}else{start();}
+})();</script>
+<script data-bdinfo="v1">(function(){function run(){var L=document.querySelector('.item_detail_list');if(!L||L.querySelector('dl[data-bdinfo]'))return;var ref=null,model=null;L.querySelectorAll('dl').forEach(function(d){var t=d.querySelector('dt');if(!t)return;var s=t.textContent.trim();if(s==='배송비')ref=d;if(s==='모델명'&&!d.getAttribute('data-bdq'))model=d;});if(model)model.style.display='none';var rows='<dt>제조사</dt><dd>DJI (공식 수입상품)</dd>|<dt>구매서류</dt><dd>공공기관 · 학교 · 기업체 납품서류 가능</dd>|<dt>기술지원</dt><dd>드론박스 A/S센터 및 DJI공식센터 가능</dd>|<dt>구매시 방문 납품</dt><dd>초기세팅 및 사용법 교육</dd>|<dt>고객센터</dt><dd>드론박스 070-7811-4422</dd>'.split('|');var after=ref;rows.forEach(function(r){var d=document.createElement('dl');d.setAttribute('data-bdinfo','1');d.innerHTML=r;if(after&&after.parentNode){after.parentNode.insertBefore(d,after.nextSibling);after=d;}else{L.appendChild(d);}});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}else{run();}})();</script>
+<!-- bd-xcopy v1 godo from-c24 308 -->
+<!-- bd-yt-start -->
+<div class="bd-yt-box" style="max-width:860px;margin:0 auto 36px;padding:8px 12px 0;text-align:center;">
+<p style="font-size:20px;font-weight:700;margin:20px 0 14px;color:#111;">영상으로 보기</p>
+<div style="max-width:760px;margin:0 auto 24px;"><div style="position:relative;width:100%;height:0;padding-bottom:56.25%;overflow:hidden;border-radius:10px;background:#000;aspect-ratio:16/9;"><iframe data-bd-yt="1" src="https://www.youtube.com/embed/OpoL5gsmG6k?rel=0" title="열화상 드론 데이터 취득 방법 및 적외선 DJI Thermal Analysis Tool 사용법" loading="lazy" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe></div><p style="font-size:14px;color:#555;margin:8px 0 0;line-height:1.5;">열화상 드론 데이터 취득 방법 및 적외선 DJI Thermal Analysis Tool 사용법</p></div>
+</div>
+<!-- bd-yt-end -->
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class="embed-container"><iframe src="https://www.youtube.com/embed/R1lT-NatLMA" frameborder="0" allowfullscreen=""></iframe></div>
+
+
+
+<h3 style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; padding: 0px; margin: 0px; box-sizing: inherit; font-weight: 600; color: rgb(59, 62, 64); font-size: 32px; line-height: 40px; border: 0px; vertical-align: baseline; background: 0px 0px rgb(255, 255, 255); letter-spacing: -0.03em; text-align: center; font-family: &quot;Open Sans&quot;, blinkmacsystemfont, &quot;Segoe UI&quot;, roboto, &quot;Helvetica Neue&quot;, helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, simsun, sans-serif;">구성품</h3>
+
+<div class="index__content___KDatN" style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; padding: 0px; margin: 16px 0px 0px; box-sizing: inherit; letter-spacing: -0.32px; border: 0px; font-size: 16px; vertical-align: baseline; background: 0px 0px rgb(255, 255, 255); color: rgb(59, 62, 64); font-family: &quot;Open Sans&quot;, blinkmacsystemfont, &quot;Segoe UI&quot;, roboto, &quot;Helvetica Neue&quot;, helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, simsun, sans-serif;">
+
+
+
+<ul class="index__list___r488k" style="padding: 0px; margin: 0px -8px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; list-style: none; letter-spacing: -0.02em; display: flex; flex-wrap: wrap;">
+
+<li class="index__item___M-+Ke" data-test-locator="sectionInTheBoxItem" style="padding: 0px 8px; margin: 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; list-style: none; flex: 0 0 16.6667%;">
+
+<div class="index__img-box___BzcF6" style="padding: 0px 0px 186.656px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px rgb(247, 249, 250); width: 186.656px; position: relative;"><span style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; position: absolute;"><img loading="lazy" src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241120/1732067601786.png" alt="Mavic 3T 기체" name="1732067601786.png" filesize="160,03 kB" style="max-width: 100%; padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: bottom; background: 0px 0px; letter-spacing: -0.02em; height: 186.667px; width: 186.667px;" result="success" size="640px/640px" error=""></span></div>
+
+<div class="index__info___KTELS" style="padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px;">
+
+
+
+<p class="index__title___pwyV3" style="margin: 8px 16px 0px 0px; padding: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 600; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px; word-break: break-word;">Mavic 3T 기체</p>
+
+
+
+<p class="index__quantity___mYbs-" style="margin: 4px 16px 0px 0px; padding: 0px; box-sizing: inherit; border: 0px; font-size: 14px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;">×&nbsp;1</p>
+
+</div>
+
+</li>
+
+<li class="index__item___M-+Ke" data-test-locator="sectionInTheBoxItem" style="padding: 0px 8px; margin: 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; list-style: none; flex: 0 0 16.6667%;">
+
+<div class="index__img-box___BzcF6" style="padding: 0px 0px 186.656px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px rgb(247, 249, 250); width: 186.656px; position: relative;"><span style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; position: absolute;"><img loading="lazy" src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241120/1732067601868.png" alt="Mavic 3 인텔리전트 플라이트 배터리" name="1732067601868.png" filesize="183,86 kB" style="max-width: 100%; padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: bottom; background: 0px 0px; letter-spacing: -0.02em; height: 186.667px; width: 186.667px;" result="success" size="640px/640px" error=""></span></div>
+
+<div class="index__info___KTELS" style="padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px;">
+
+
+
+<p class="index__title___pwyV3" style="margin: 8px 16px 0px 0px; padding: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 600; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px; word-break: break-word;">Mavic 3 인텔리전트 플라이트 배터리</p>
+
+
+
+<p class="index__quantity___mYbs-" style="margin: 4px 16px 0px 0px; padding: 0px; box-sizing: inherit; border: 0px; font-size: 14px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;">×&nbsp;1</p>
+
+</div>
+
+</li>
+
+<li class="index__item___M-+Ke" data-test-locator="sectionInTheBoxItem" style="padding: 0px 8px; margin: 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; list-style: none; flex: 0 0 16.6667%;">
+
+<div class="index__img-box___BzcF6" style="padding: 0px 0px 186.656px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px rgb(247, 249, 250); width: 186.656px; position: relative;"><span style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; position: absolute;"><img loading="lazy" src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241120/1732067601701.png" alt="microSD 카드 64GB" name="1732067601701.png" filesize="117,69 kB" style="max-width: 100%; padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: bottom; background: 0px 0px; letter-spacing: -0.02em; height: 186.667px; width: 186.667px;" result="success" size="640px/640px" error=""></span></div>
+
+<div class="index__info___KTELS" style="padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px;">
+
+
+
+<p class="index__title___pwyV3" style="margin: 8px 16px 0px 0px; padding: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 600; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px; word-break: break-word;">microSD 카드 64GB</p>
+
+
+
+<p class="index__quantity___mYbs-" style="margin: 4px 16px 0px 0px; padding: 0px; box-sizing: inherit; border: 0px; font-size: 14px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;">×&nbsp;1</p>
+
+</div>
+
+</li>
+
+<li class="index__item___M-+Ke" data-test-locator="sectionInTheBoxItem" style="padding: 0px 8px; margin: 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; list-style: none; flex: 0 0 16.6667%;">
+
+<div class="index__img-box___BzcF6" style="padding: 0px 0px 186.656px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px rgb(247, 249, 250); width: 186.656px; position: relative;"><span style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; position: absolute;"><img loading="lazy" src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241120/1732067601501.png" alt="짐벌 보호대" name="1732067601501.png" filesize="87,40 kB" style="max-width: 100%; padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: bottom; background: 0px 0px; letter-spacing: -0.02em; height: 186.667px; width: 186.667px;" result="success" size="640px/640px" error=""></span></div>
+
+<div class="index__info___KTELS" style="padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px;">
+
+
+
+<p class="index__title___pwyV3" style="margin: 8px 16px 0px 0px; padding: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 600; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px; word-break: break-word;">짐벌 보호대</p>
+
+
+
+<p class="index__quantity___mYbs-" style="margin: 4px 16px 0px 0px; padding: 0px; box-sizing: inherit; border: 0px; font-size: 14px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;">×&nbsp;1</p>
+
+</div>
+
+</li>
+
+<li class="index__item___M-+Ke" data-test-locator="sectionInTheBoxItem" style="padding: 0px 8px; margin: 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; list-style: none; flex: 0 0 16.6667%;">
+
+<div class="index__img-box___BzcF6" style="padding: 0px 0px 186.656px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px rgb(247, 249, 250); width: 186.656px; position: relative;"><span style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; position: absolute;"><img loading="lazy" src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241120/1732067601716.png" alt="Mavic 3 Enterprise 시리즈 프로펠러 (1쌍)" name="1732067601716.png" filesize="87,25 kB" style="max-width: 100%; padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: bottom; background: 0px 0px; letter-spacing: -0.02em; height: 186.667px; width: 186.667px;" result="success" size="640px/640px" error=""></span></div>
+
+<div class="index__info___KTELS" style="padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px;">
+
+
+
+<p class="index__title___pwyV3" style="margin: 8px 16px 0px 0px; padding: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 600; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px; word-break: break-word;">Mavic 3 Enterprise 시리즈 프로펠러 (1쌍)</p>
+
+
+
+<p class="index__quantity___mYbs-" style="margin: 4px 16px 0px 0px; padding: 0px; box-sizing: inherit; border: 0px; font-size: 14px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;">×&nbsp;3</p>
+
+</div>
+
+</li>
+
+<li class="index__item___M-+Ke" data-test-locator="sectionInTheBoxItem" style="padding: 0px 8px; margin: 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; list-style: none; flex: 0 0 16.6667%;">
+
+<div class="index__img-box___BzcF6" style="padding: 0px 0px 186.656px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px rgb(247, 249, 250); width: 186.656px; position: relative;"><span style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; position: absolute;"><img loading="lazy" src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241120/1732067601771.png" alt="RC Pro Enterprise" name="1732067601771.png" filesize="189,01 kB" style="max-width: 100%; padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: bottom; background: 0px 0px; letter-spacing: -0.02em; height: 186.667px; width: 186.667px;" result="success" size="640px/640px" error=""></span></div>
+
+<div class="index__info___KTELS" style="padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px;">
+
+
+
+<p class="index__title___pwyV3" style="margin: 8px 16px 0px 0px; padding: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 600; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px; word-break: break-word;">RC Pro Enterprise</p>
+
+
+
+<p class="index__quantity___mYbs-" style="margin: 4px 16px 0px 0px; padding: 0px; box-sizing: inherit; border: 0px; font-size: 14px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;">×&nbsp;1</p>
+
+</div>
+
+</li>
+
+<li class="index__item___M-+Ke" data-test-locator="sectionInTheBoxItem" style="padding: 0px 8px; margin: 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; list-style: none; flex: 0 0 16.6667%;">
+
+<div class="index__img-box___BzcF6" style="padding: 0px 0px 186.656px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px rgb(247, 249, 250); width: 186.656px; position: relative;"><span style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; position: absolute;"><img loading="lazy" src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241120/1732067603113.png" alt="스크루드라이버" name="1732067603113.png" filesize="30,87 kB" style="max-width: 100%; padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: bottom; background: 0px 0px; letter-spacing: -0.02em; height: 186.667px; width: 186.667px;" result="success" size="640px/640px" error=""></span></div>
+
+<div class="index__info___KTELS" style="padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px;">
+
+
+
+<p class="index__title___pwyV3" style="margin: 8px 16px 0px 0px; padding: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 600; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px; word-break: break-word;">스크루드라이버</p>
+
+
+
+<p class="index__quantity___mYbs-" style="margin: 4px 16px 0px 0px; padding: 0px; box-sizing: inherit; border: 0px; font-size: 14px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;">×&nbsp;1</p>
+
+</div>
+
+</li>
+
+<li class="index__item___M-+Ke" data-test-locator="sectionInTheBoxItem" style="padding: 0px 8px; margin: 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; list-style: none; flex: 0 0 16.6667%;">
+
+<div class="index__img-box___BzcF6" style="padding: 0px 0px 186.656px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px rgb(247, 249, 250); width: 186.656px; position: relative;"><span style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; position: absolute;"><img loading="lazy" src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241120/1732067603434.png" alt="USB-C 전원 어댑터 (100W)" name="1732067603434.png" filesize="89,48 kB" style="max-width: 100%; padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: bottom; background: 0px 0px; letter-spacing: -0.02em; height: 186.667px; width: 186.667px;" result="success" size="640px/640px" error=""></span></div>
+
+<div class="index__info___KTELS" style="padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px;">
+
+
+
+<p class="index__title___pwyV3" style="margin: 8px 16px 0px 0px; padding: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 600; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px; word-break: break-word;">USB-C 전원 어댑터 (100W)</p>
+
+
+
+<p class="index__quantity___mYbs-" style="margin: 4px 16px 0px 0px; padding: 0px; box-sizing: inherit; border: 0px; font-size: 14px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;">×&nbsp;1</p>
+
+</div>
+
+</li>
+
+<li class="index__item___M-+Ke" data-test-locator="sectionInTheBoxItem" style="padding: 0px 8px; margin: 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; list-style: none; flex: 0 0 16.6667%;">
+
+<div class="index__img-box___BzcF6" style="padding: 0px 0px 186.656px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px rgb(247, 249, 250); width: 186.656px; position: relative;"><span style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; position: absolute;"><img loading="lazy" src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241120/1732067602886.png" alt="100W 전원 어댑터 AC 케이블" name="1732067602886.png" filesize="94,80 kB" style="max-width: 100%; padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: bottom; background: 0px 0px; letter-spacing: -0.02em; height: 186.667px; width: 186.667px;" result="success" size="640px/640px" error=""></span></div>
+
+<div class="index__info___KTELS" style="padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px;">
+
+
+
+<p class="index__title___pwyV3" style="margin: 8px 16px 0px 0px; padding: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 600; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px; word-break: break-word;">100W 전원 어댑터 AC 케이블</p>
+
+
+
+<p class="index__quantity___mYbs-" style="margin: 4px 16px 0px 0px; padding: 0px; box-sizing: inherit; border: 0px; font-size: 14px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;">×&nbsp;1</p>
+
+</div>
+
+</li>
+
+<li class="index__item___M-+Ke" data-test-locator="sectionInTheBoxItem" style="padding: 0px 8px; margin: 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; list-style: none; flex: 0 0 16.6667%;">
+
+<div class="index__img-box___BzcF6" style="padding: 0px 0px 186.656px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px rgb(247, 249, 250); width: 186.656px; position: relative;"><span style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; position: absolute;"><img loading="lazy" src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241120/1732067603418.png" alt="USB-C 케이블" name="1732067603418.png" filesize="90,16 kB" style="max-width: 100%; padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: bottom; background: 0px 0px; letter-spacing: -0.02em; height: 186.667px; width: 186.667px;" result="success" size="640px/640px" error=""></span></div>
+
+<div class="index__info___KTELS" style="padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px;">
+
+
+
+<p class="index__title___pwyV3" style="margin: 8px 16px 0px 0px; padding: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 600; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px; word-break: break-word;">USB-C 케이블</p>
+
+
+
+<p class="index__quantity___mYbs-" style="margin: 4px 16px 0px 0px; padding: 0px; box-sizing: inherit; border: 0px; font-size: 14px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;">×&nbsp;1</p>
+
+</div>
+
+</li>
+
+<li class="index__item___M-+Ke" data-test-locator="sectionInTheBoxItem" style="padding: 0px 8px; margin: 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; list-style: none; flex: 0 0 16.6667%;">
+
+<div class="index__img-box___BzcF6" style="padding: 0px 0px 186.656px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px rgb(247, 249, 250); width: 186.656px; position: relative;"><span style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; position: absolute;"><img loading="lazy" src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241120/1732067603784.png" alt="USB-C to USB-C 케이블" name="1732067603784.png" filesize="88,06 kB" style="max-width: 100%; padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: bottom; background: 0px 0px; letter-spacing: -0.02em; height: 186.667px; width: 186.667px;" result="success" size="640px/640px" error=""></span></div>
+
+<div class="index__info___KTELS" style="padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px;">
+
+
+
+<p class="index__title___pwyV3" style="margin: 8px 16px 0px 0px; padding: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 600; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px; word-break: break-word;">USB-C to USB-C 케이블</p>
+
+
+
+<p class="index__quantity___mYbs-" style="margin: 4px 16px 0px 0px; padding: 0px; box-sizing: inherit; border: 0px; font-size: 14px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;">×&nbsp;1</p>
+
+</div>
+
+</li>
+
+<li class="index__item___M-+Ke" data-test-locator="sectionInTheBoxItem" style="padding: 0px 8px; margin: 16px 0px 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; list-style: none; flex: 0 0 16.6667%;">
+
+<div class="index__img-box___BzcF6" style="padding: 0px 0px 186.656px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px rgb(247, 249, 250); width: 186.656px; position: relative;"><span style="padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; position: absolute;"><img loading="lazy" src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241120/1732067604405.png" alt="보호대 케이스" name="1732067604405.png" filesize="173,15 kB" style="max-width: 100%; padding: 0px; margin: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 400; vertical-align: bottom; background: 0px 0px; letter-spacing: -0.02em; height: 186.667px; width: 186.667px;" result="success" size="640px/640px" error=""></span></div>
+
+<div class="index__info___KTELS" style="padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; font-size: 16px; font-weight: 400; vertical-align: baseline; background: 0px 0px;">
+
+
+
+<p class="index__title___pwyV3" style="margin: 8px 16px 0px 0px; padding: 0px; box-sizing: inherit; border: 0px; font-size: 16px; font-weight: 600; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px; word-break: break-word;">보호대 케이스</p>
+
+
+
+<p class="index__quantity___mYbs-" style="margin: 4px 16px 0px 0px; padding: 0px; box-sizing: inherit; border: 0px; font-size: 14px; font-weight: 400; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 20px;">×&nbsp;1</p>
+
+</div>
+
+</li>
+
+</ul>
+
+</div>
+
+
+
+<p style="margin: 0px; padding: 0px; color: rgb(0, 0, 0); font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, Dotum; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: center;">
+
+<br><img src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241120/1732067603510.jpeg" title="8f1809159894b2f80a17ed96f681f82c_174424.jpg" alt="8f1809159894b2f80a17ed96f681f82c_174424.jpg" class="js-smart-img" name="1732067603510.jpeg" filesize="335,94 kB" style="max-width: 100%; border: 0px none; vertical-align: top; color: rgb(51, 51, 51); font-family: &quot;Noto Sans KR&quot;, &quot;Nanum Gothic&quot;, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, AppleGothic, Dotum, 돋움, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;" result="success" size="863px/2652px" error=""><img src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241120/1732067604726.jpeg" title="52bae8386f7e7ac4c97e328f78c00c33_174425.jpg" alt="52bae8386f7e7ac4c97e328f78c00c33_174425.jpg" class="js-smart-img" name="1732067604726.jpeg" filesize="289,03 kB" style="max-width: 100%; border: 0px none; vertical-align: top; color: rgb(51, 51, 51); font-family: &quot;Noto Sans KR&quot;, &quot;Nanum Gothic&quot;, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, AppleGothic, Dotum, 돋움, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;" result="success" size="863px/2768px" error=""><img src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241120/1732067604421.jpeg" title="a82c77716ada55414eeb00f34ed548d4_174426.jpg" alt="a82c77716ada55414eeb00f34ed548d4_174426.jpg" class="js-smart-img" name="1732067604421.jpeg" filesize="272,71 kB" style="max-width: 100%; border: 0px none; vertical-align: top; color: rgb(51, 51, 51); font-family: &quot;Noto Sans KR&quot;, &quot;Nanum Gothic&quot;, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, AppleGothic, Dotum, 돋움, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;" result="success" size="863px/2540px" error=""><img src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241120/1732067604923.png" title="ddacae1ab802775750f0a7f0aa46495e_174054.gif" alt="ddacae1ab802775750f0a7f0aa46495e_174054.gif" class="js-smart-img" name="1732067604923.png" filesize="329,59 kB" style="max-width: 100%; border: 0px none; vertical-align: top; color: rgb(51, 51, 51); font-family: &quot;Noto Sans KR&quot;, &quot;Nanum Gothic&quot;, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, AppleGothic, Dotum, 돋움, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;" result="success" size="863px/1469px" error=""><img src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241120/1732067604741.png" title="5dab17390d380c6da9f41115203cbbe2_174055.gif" alt="5dab17390d380c6da9f41115203cbbe2_174055.gif" class="js-smart-img" name="1732067604741.png" filesize="257,65 kB" style="max-width: 100%; border: 0px none; vertical-align: top; color: rgb(51, 51, 51); font-family: &quot;Noto Sans KR&quot;, &quot;Nanum Gothic&quot;, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, AppleGothic, Dotum, 돋움, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;" result="success" size="863px/1129px" error=""><img src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241120/1732067604901.png" title="e78050b7c1efbd513b7d5796f1a4b9bb_174056.gif" alt="e78050b7c1efbd513b7d5796f1a4b9bb_174056.gif" class="js-smart-img" name="1732067604901.png" filesize="297,88 kB" style="max-width: 100%; border: 0px none; vertical-align: top; color: rgb(51, 51, 51); font-family: &quot;Noto Sans KR&quot;, &quot;Nanum Gothic&quot;, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, AppleGothic, Dotum, 돋움, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;" result="success" size="863px/1082px" error=""><img src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241120/1732067604576.png" title="48cf465365005dca161bcc82a6136a4d_174056.gif" alt="48cf465365005dca161bcc82a6136a4d_174056.gif" class="js-smart-img" name="1732067604576.png" filesize="322,72 kB" style="max-width: 100%; border: 0px none; vertical-align: top; color: rgb(51, 51, 51); font-family: &quot;Noto Sans KR&quot;, &quot;Nanum Gothic&quot;, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, AppleGothic, Dotum, 돋움, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;" result="success" size="863px/1163px" error=""><img src="//ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20241120/1732067604230.jpeg" title="aa1cdf4937a605d0d2615653131db8dc_154239.jpg" alt="aa1cdf4937a605d0d2615653131db8dc_154239.jpg" class="js-smart-img" name="1732067604230.jpeg" filesize="179,56 kB" style="max-width: 100%; border: 0px none; vertical-align: top; color: rgb(51, 51, 51); font-family: &quot;Noto Sans KR&quot;, &quot;Nanum Gothic&quot;, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, AppleGothic, Dotum, 돋움, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;" result="success" size="860px/1972px" error=""></p>
+
+
+
+<p>
+
+<br>
+
+</p>
+<!-- bit-ai-cite v1 -->
+<div style='max-width:860px; margin:0 auto; font-family:inherit;'>
+<h3 style='font-size:20px; font-weight:700; margin:36px 0 12px; color:#191F28;'>DJI 매빅3 엔터프라이즈 Care (DJI 케어 1년 포함) 열화상 산업용 드론 주요 스펙</h3>
+<table style='border-collapse:collapse; width:100%;'>
+<tr><th style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#F7F8FA; width:34%;'>제품 모델</th><td style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left;'>DJI Mavic 3 Enterprise Thermal (Mavic 3T)</td></tr>
+
+
+
+
+
+
+<tr><th style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#F7F8FA; width:34%;'>DJI Care 포함</th><td style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left;'>DJI Care Enterprise Basic 1년</td></tr>
+</table>
+<h3 style='font-size:20px; font-weight:700; margin:36px 0 12px; color:#191F28;'>자주 묻는 질문</h3>
+<div itemscope itemtype='https://schema.org/FAQPage'>
+<div itemscope itemprop='mainEntity' itemtype='https://schema.org/Question' style='margin-bottom:16px;'><p itemprop='name' style='font-weight:700; font-size:16px; margin:0 0 6px;'>Q. 이 제품은 DJI 정품인가요?</p><div itemscope itemprop='acceptedAnswer' itemtype='https://schema.org/Answer'><p itemprop='text' style='font-size:15px; color:#333D4B; margin:0;'>A. 네, 본 제품은 DJI 공식 한국총판을 통해 공급되는 100% DJI 정품입니다. 믿을 수 있는 제품과 서비스를 제공하오니 안심하고 구매하실 수 있습니다.</p></div></div>
+<div itemscope itemprop='mainEntity' itemtype='https://schema.org/Question' style='margin-bottom:16px;'><p itemprop='name' style='font-weight:700; font-size:16px; margin:0 0 6px;'>Q. 제품 구매 후 A/S는 어떻게 받을 수 있나요?</p><div itemscope itemprop='acceptedAnswer' itemtype='https://schema.org/Answer'><p itemprop='text' style='font-size:15px; color:#333D4B; margin:0;'>A. 드론박스 A/S센터에서 수리 접수와 기술 지원을 도와드리며, DJI 케어 적용 수리는 DJI 공식 서비스 절차로 진행됩니다. 제품 사용 중 문의사항이나 문제 발생 시 언제든지 연락 주시면 최선을 다해 도움을 드리겠습니다.</p></div></div>
+<div itemscope itemprop='mainEntity' itemtype='https://schema.org/Question' style='margin-bottom:16px;'><p itemprop='name' style='font-weight:700; font-size:16px; margin:0 0 6px;'>Q. DJI Care 서비스가 포함되어 있나요?</p><div itemscope itemprop='acceptedAnswer' itemtype='https://schema.org/Answer'><p itemprop='text' style='font-size:15px; color:#333D4B; margin:0;'>A. 네, 본 제품에는 DJI 케어 엔터프라이즈 베이직 1년 플랜이 기본으로 포함되어 있습니다. 서비스 활성화를 통해 비행 중 발생할 수 있는 우발적인 손상에 대한 보상 서비스를 받으실 수 있습니다.</p></div></div>
+<div itemscope itemprop='mainEntity' itemtype='https://schema.org/Question' style='margin-bottom:16px;'><p itemprop='name' style='font-weight:700; font-size:16px; margin:0 0 6px;'>Q. 기본 구성품에 조종기와 배터리가 포함되어 있나요?</p><div itemscope itemprop='acceptedAnswer' itemtype='https://schema.org/Answer'><p itemprop='text' style='font-size:15px; color:#333D4B; margin:0;'>A. 네, DJI RC Pro Enterprise 조종기와 Mavic 3 인텔리전트 플라이트 배터리, 그리고 64GB microSD 카드와 보호 케이스 등이 기본 구성품에 포함되어 있습니다. 제품 페이지의 상세 구성품 목록을 참고해주세요.</p></div></div>
+<div itemscope itemprop='mainEntity' itemtype='https://schema.org/Question' style='margin-bottom:16px;'><p itemprop='name' style='font-weight:700; font-size:16px; margin:0 0 6px;'>Q. 이 드론은 열화상 기능이 있나요?</p><div itemscope itemprop='acceptedAnswer' itemtype='https://schema.org/Answer'><p itemprop='text' style='font-size:15px; color:#333D4B; margin:0;'>A. 네, 본 제품은 열화상 카메라를 탑재한 산업용 드론으로, 온도 측정 및 분석을 포함한 다양한 열화상 임무 수행에 최적화되어 있습니다. 산업 현장에서 높은 활용도를 제공합니다.</p></div></div>
+</div>
+</div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+</goods_data>
+</data>
