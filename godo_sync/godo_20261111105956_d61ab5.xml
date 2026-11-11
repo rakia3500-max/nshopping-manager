@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000001269</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI DL 24mm F2.8 LS ASPH 렌즈 (인스파이어3 및 젠뮤즈 P1)</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019014|002|002019</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>n</restockFl>
+<mileageFl>c</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>n</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<goodsPrice>1650000.00</goodsPrice>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<script data-bd="cpanel">(function(){
+var D={"intro": "DL 마운트 24mm F2.8 단렌즈. 가벼운 탄소 섬유 모노코크 바디, 화각 84°. Zenmuse P1과 Inspire 3 카메라에 씁니다.", "chips": ["초점 거리 24mm", "조리개 F2.8", "화각 84°", "LS (리프 셔터)", "ASPH (비구면)", "탄소 섬유 모노코크 바디", "Zenmuse P1 · X7 · X9 호환"], "badges": [{"text": "DJI 정품"}, {"text": "국내 A/S 접수"}, {"text": "기관·기업 납품서류 발급"}], "box": ["렌즈", "렌즈 보호대"], "ship": ""};
+var S_INTRO="font-size:13.5px;color:#333D4B;line-height:1.65;margin:0 0 8px;",
+S_CHIPS="display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px;",
+S_CHIP="font-size:12px;background:#F2F4F6;color:#333D4B;border-radius:999px;padding:4px 10px;line-height:1.4;",
+S_BADGES="display:flex;flex-wrap:wrap;gap:5px;margin:0 0 10px;",
+S_BADGE="font-size:11.5px;border:1px solid #D6E4FF;color:#1B64DA;background:#F2F6FF;border-radius:6px;padding:3px 8px;font-weight:600;line-height:1.4;text-decoration:none;white-space:nowrap;",
+S_FOLD="font-size:13px;color:#4E5968;border:1px dashed #D1D6DB;border-radius:8px;padding:9px 12px;margin:10px 0 4px;cursor:pointer;line-height:1.6;",
+S_FOLD_B="color:#191F28;font-weight:700;";
+function el(tag,html){var d=document.createElement(tag);if(html!=null)d.innerHTML=html;return d;}
+function introHtml(){var chips=D.chips.map(function(c){return '<span style="'+S_CHIP+'">'+c+'</span>';}).join('');
+return '<p data-bdc="intro" style="'+S_INTRO+'">'+D.intro+'</p><div data-bdc="chips" style="'+S_CHIPS+'">'+chips+'</div>';}
+function badgesHtml(){return '<div data-bdc="badges" style="'+S_BADGES+'">'+D.badges.map(function(b){return b.href?'<a href="'+b.href+'" style="'+S_BADGE+'">'+b.text+'</a>':'<span style="'+S_BADGE+'">'+b.text+'</span>';}).join('')+'</div>';}
+S_LI="font-size:12.5px;color:#4E5968;line-height:1.5;padding:2px 0 2px 11px;text-indent:-11px;break-inside:avoid;margin:0;",
+S_UL="display:none;margin:8px 0 0;padding:0;list-style:none;columns:2;column-gap:20px;";
+function foldHtml(){var items=D.box.map(function(b){return '<li style="'+S_LI+'">· '+b+'</li>';}).join('');
+return '<div data-bdc="fold" style="'+S_FOLD+'"><span style="'+S_FOLD_B+'">구성품 보기 ▾</span><span style="color:#8B95A1;font-size:12px;"> &nbsp;'+D.box.length+'개</span><ul data-bdc="foldbody" style="'+S_UL+'">'+items+(D.ship?'<li style="'+S_LI+'color:#8B95A1;">'+D.ship+'</li>':'')+'</ul></div>';}
+function bindFold(f){if(f.getAttribute('data-bound'))return;f.setAttribute('data-bound','1');f.onclick=function(){var b=f.querySelector('[data-bdc="foldbody"]'),t=f.querySelector('span');var open=b.style.display!=='none';b.style.display=open?'none':'block';t.textContent=open?'구성품 보기 ▾':'구성품 접기 ▴';};}
+var S_ROW=";clear:both;float:left;width:100%;box-sizing:border-box;";
+function css(){if(document.querySelector('style[data-bdc="css"]'))return;var s=document.createElement('style');s.setAttribute('data-bdc','css');
+s.textContent='.item_detail_tit, .item_detail_tit *{word-break:keep-all !important;overflow-wrap:normal !important;} .item_detail_list > dl{padding-top:3px !important;} .item_detail_list dt{width:100px !important;} .item_detail_list dd{width:400px !important;} .item_detail_list > dl > dt,.item_detail_list > dl > dd{line-height:20px !important;} .item_detail_list .item_delivery dd .delivery-detail{line-height:20px;} .item_detail_list [data-bdc="fold"]{margin:4px 0 0 !important;padding:6px 12px !important;}';document.head.appendChild(s);}
+function pc(){var list=document.querySelector('.item_detail_list');if(!list)return;css();
+if(!list.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText+=S_ROW;list.insertBefore(w,list.firstChild);}
+var dv=list.querySelector('.item_delivery');
+if(D.box&&D.box.length&&!list.querySelector('[data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;f.style.cssText+=S_ROW;if(dv&&dv.nextSibling)dv.parentNode.insertBefore(f,dv.nextSibling);else list.appendChild(f);}
+var fd=list.querySelector('[data-bdc="fold"]');if(fd)bindFold(fd);}
+function mo(){var top=document.querySelector('.detail_info_top');if(!top)return;
+var pb=top.querySelector('.price_box');
+if(pb&&!top.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText='padding:8px 0 4px;';var sub=pb.querySelector('.detail_sub_info');if(sub)pb.insertBefore(w,sub);else pb.appendChild(w);}
+var sub2=document.querySelector('.detail_sub_info');
+if(D.box&&D.box.length&&sub2&&!document.querySelector('.detail_info_top [data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;sub2.parentNode.insertBefore(f,sub2.nextSibling);}
+var fd=document.querySelector('.detail_info_top [data-bdc="fold"]');if(fd)bindFold(fd);}
+function fix(){try{pc();}catch(e){}try{mo();}catch(e){}}
+function start(){fix();try{new MutationObserver(function(){fix();}).observe(document.body,{childList:true,subtree:true});}catch(e){}
+var n=0,t=setInterval(function(){fix();if(++n>40)clearInterval(t);},500);}
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',start);}else{start();}
+})();</script>
+<p style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/250102/26edad793efbcef38a810d15bbcbbf4f_093858.jpg\" title=\"26edad793efbcef38a810d15bbcbbf4f_093858.jpg\" class=\"js-smart-img\"> </p><h3 class=\"style__title___PyMSD\" style=\"text-align: center; padding: 0px; margin: 0px; box-sizing: inherit; color: rgb(59, 62, 64); font-size: 24px; line-height: 28px; border: 0px; vertical-align: baseline; background: 0px 0px rgb(255, 255, 255); letter-spacing: -0.03em; font-family: &quot;Open Sans&quot;, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, SimSun, sans-serif;\">자세히 살펴보기</h3><div class=\"style__body___hRZQQ layout-top-bottom section-container\" style=\"padding: 0px; margin: 0px auto; box-sizing: inherit; letter-spacing: -0.32px; border: 0px; font-size: 16px; vertical-align: baseline; background: 0px 0px rgb(255, 255, 255); position: relative; max-width: 1200px; color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, SimSun, sans-serif;\"><article id=\"overview\" class=\"style__tab-content-item___feY-i style__overview-item___+Ra5W style__content-layout-show-hide___dH5fd style__active___z2rnN \" style=\"padding: 0px; margin: 24px 0px 0px; box-sizing: inherit; border: 0px; font-size: 14px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; color: rgb(112, 116, 115);\"><div class=\"style__content-container___5Yesm\" style=\"padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; vertical-align: baseline; background: 0px 0px;\"><div style=\"padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; vertical-align: baseline; background: 0px 0px;\"><div style=\"padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; vertical-align: baseline; background: 0px 0px;\"><div class=\"product-detail-temp-specs\" style=\"padding: 0px; margin: 0px auto; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; vertical-align: baseline; background: 0px 0px; max-width: 1200px;\"><div class=\"temp-specs-table\" style=\"padding: 0px; margin: 0px auto; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; vertical-align: baseline; background: 0px 0px; border-collapse: collapse; max-width: 1000px;\"><div class=\"temp-specs-tbody\" style=\"padding: 0px; margin: 0px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; vertical-align: baseline; background: 0px 0px;\"><div class=\"temp-specs-tr\" style=\"padding: 0px; margin: 0px 0px 20px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; vertical-align: baseline; background: 0px 0px;\"><div class=\"temp-specs-td name\" style=\"padding: 20px 0px 10px; margin: 0px; box-sizing: border-box; letter-spacing: -0.02em; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: transparent; border-left-color: initial; border-image: initial; font-size: 16px; vertical-align: middle; background: 0px 0px; line-height: 1.6em; min-width: 240px; min-height: 20px; width: 435px;\">개요</div><div class=\"temp-specs-td value\" style=\"padding: 0px 0px 20px; margin: 8px 0px 0px; box-sizing: border-box; letter-spacing: -0.02em; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(221, 221, 221); border-left-color: initial; border-image: initial; vertical-align: middle; background: 0px 0px; color: rgb(51, 51, 51); line-height: 24px; flex-grow: 1; min-height: 20px;\"><p style=\"margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">항공 시네마토그래피를 위해 특별 제작했고, DL 마운트 네이티브 호환을 지원합니다. 가벼운 탄소 섬유 소재의 모노코크 바디로 만들어져 촬영 안정성을 확보하고 DJI Inspire 3의 고기동성 요건을 충족합니다.</p></div></div><div class=\"temp-specs-tr\" style=\"padding: 0px; margin: 0px 0px 20px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; vertical-align: baseline; background: 0px 0px;\"><div class=\"temp-specs-td name\" style=\"padding: 20px 0px 10px; margin: 0px; box-sizing: border-box; letter-spacing: -0.02em; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: transparent; border-left-color: initial; border-image: initial; font-size: 16px; vertical-align: middle; background: 0px 0px; line-height: 1.6em; min-width: 240px; min-height: 20px; width: 435px;\">구성품</div><div class=\"temp-specs-td value\" style=\"padding: 0px 0px 20px; margin: 8px 0px 0px; box-sizing: border-box; letter-spacing: -0.02em; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(221, 221, 221); border-left-color: initial; border-image: initial; vertical-align: middle; background: 0px 0px; color: rgb(51, 51, 51); line-height: 24px; flex-grow: 1; min-height: 20px;\"><p style=\"margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">렌즈 × 1</p><p style=\"margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">렌즈 보호대 × 1</p></div></div><div class=\"temp-specs-tr\" style=\"padding: 0px; margin: 0px 0px 20px; box-sizing: inherit; letter-spacing: -0.02em; border: 0px; vertical-align: baseline; background: 0px 0px;\"><div class=\"temp-specs-td name\" style=\"padding: 20px 0px 10px; margin: 0px; box-sizing: border-box; letter-spacing: -0.02em; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: transparent; border-left-color: initial; border-image: initial; font-size: 16px; vertical-align: middle; background: 0px 0px; line-height: 1.6em; min-width: 240px; min-height: 20px; width: 435px;\">호환 제품</div><div class=\"temp-specs-td value\" style=\"padding: 0px 0px 20px; margin: 8px 0px 0px; box-sizing: border-box; letter-spacing: -0.02em; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-bottom-style: solid; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-bottom-color: rgb(221, 221, 221); border-left-color: initial; border-image: initial; vertical-align: middle; background: 0px 0px; color: rgb(51, 51, 51); line-height: 24px; flex-grow: 1; min-height: 20px;\"><p style=\"margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">젠뮤즈 X7 짐벌 카메라</p><p style=\"margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">젠뮤즈 X9-8K Air 짐벌 카메라</p><p style=\"margin-bottom: 20px; box-sizing: inherit; border: 0px; vertical-align: baseline; background: 0px 0px; letter-spacing: -0.02em; line-height: 24px;\">젠뮤즈 X9-8K 짐벌 카메라</p></div></div></div></div></div></div></div></div></article></div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+</goods_data>
+</data>
