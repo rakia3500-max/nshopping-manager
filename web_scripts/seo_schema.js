@@ -23,7 +23,7 @@
   } : {
     name: '드론박스',
     url: 'https://www.drone-box.co.kr/',
-    desc: 'DJI 정품 드론·오즈모 카메라와 농업·산업용 드론 부품 쇼핑몰 (전주)',
+    desc: 'DJI 정품 드론·오즈모 카메라와 농업·산업용 드론 부품 쇼핑몰',
     search: 'https://www.drone-box.co.kr/goods/goods_search.php?keyword={search_term_string}'
   };
 
