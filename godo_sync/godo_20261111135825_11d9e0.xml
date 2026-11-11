@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000000649</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>[견적상품] Gremsy PIXY F 짐벌</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002020|002019|002019008|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>g</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<goodsPrice>10.00</goodsPrice>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<script data-bd="cpanel">(function(){
+var D={"intro": "FLIR Duo Pro R 열화상 카메라에 맞춰 만든 Gremsy 3축 짐벌 Pixy F. Pixy Damping(진동 흡수 장치)은 별도 구매입니다.", "chips": ["3축 짐벌", "FLIR Duo Pro R용", "약 370g"], "badges": [{"text": "Gremsy 제품"}, {"text": "견적 · 호환 문의", "href": "https://www.drone-box.co.kr/board/popup_goods_board_write.php?mode=write&bdId=goodsqa&goodsNo=1000000649&orderGoodsNo=0"}, {"text": "기관·기업 납품서류 발급"}], "box": [], "ship": ""};
+var S_INTRO="font-size:13.5px;color:#333D4B;line-height:1.65;margin:0 0 8px;",
+S_CHIPS="display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px;",
+S_CHIP="font-size:12px;background:#F2F4F6;color:#333D4B;border-radius:999px;padding:4px 10px;line-height:1.4;",
+S_BADGES="display:flex;flex-wrap:wrap;gap:5px;margin:0 0 10px;",
+S_BADGE="font-size:11.5px;border:1px solid #D6E4FF;color:#1B64DA;background:#F2F6FF;border-radius:6px;padding:3px 8px;font-weight:600;line-height:1.4;text-decoration:none;white-space:nowrap;",
+S_FOLD="font-size:13px;color:#4E5968;border:1px dashed #D1D6DB;border-radius:8px;padding:9px 12px;margin:10px 0 4px;cursor:pointer;line-height:1.6;",
+S_FOLD_B="color:#191F28;font-weight:700;";
+function el(tag,html){var d=document.createElement(tag);if(html!=null)d.innerHTML=html;return d;}
+function introHtml(){var chips=D.chips.map(function(c){return '<span style="'+S_CHIP+'">'+c+'</span>';}).join('');
+return '<p data-bdc="intro" style="'+S_INTRO+'">'+D.intro+'</p><div data-bdc="chips" style="'+S_CHIPS+'">'+chips+'</div>';}
+function badgesHtml(){return '<div data-bdc="badges" style="'+S_BADGES+'">'+D.badges.map(function(b){return b.href?'<a href="'+b.href+'" style="'+S_BADGE+'">'+b.text+'</a>':'<span style="'+S_BADGE+'">'+b.text+'</span>';}).join('')+'</div>';}
+S_LI="font-size:12.5px;color:#4E5968;line-height:1.5;padding:2px 0 2px 11px;text-indent:-11px;break-inside:avoid;margin:0;",
+S_UL="display:none;margin:8px 0 0;padding:0;list-style:none;columns:2;column-gap:20px;";
+function foldHtml(){var items=D.box.map(function(b){return '<li style="'+S_LI+'">· '+b+'</li>';}).join('');
+return '<div data-bdc="fold" style="'+S_FOLD+'"><span style="'+S_FOLD_B+'">구성품 보기 ▾</span><span style="color:#8B95A1;font-size:12px;"> &nbsp;'+D.box.length+'개</span><ul data-bdc="foldbody" style="'+S_UL+'">'+items+(D.ship?'<li style="'+S_LI+'color:#8B95A1;">'+D.ship+'</li>':'')+'</ul></div>';}
+function bindFold(f){if(f.getAttribute('data-bound'))return;f.setAttribute('data-bound','1');f.onclick=function(){var b=f.querySelector('[data-bdc="foldbody"]'),t=f.querySelector('span');var open=b.style.display!=='none';b.style.display=open?'none':'block';t.textContent=open?'구성품 보기 ▾':'구성품 접기 ▴';};}
+var S_ROW=";clear:both;float:left;width:100%;box-sizing:border-box;";
+function css(){if(document.querySelector('style[data-bdc="css"]'))return;var s=document.createElement('style');s.setAttribute('data-bdc','css');
+s.textContent='.item_detail_tit, .item_detail_tit *{word-break:keep-all !important;overflow-wrap:normal !important;} .item_detail_list > dl{padding-top:3px !important;} .item_detail_list dt{width:100px !important;} .item_detail_list dd{width:400px !important;} .item_detail_list > dl > dt,.item_detail_list > dl > dd{line-height:20px !important;} .item_detail_list .item_delivery dd .delivery-detail{line-height:20px;} .item_detail_list [data-bdc="fold"]{margin:4px 0 0 !important;padding:6px 12px !important;}';document.head.appendChild(s);}
+function pc(){var list=document.querySelector('.item_detail_list');if(!list)return;css();
+if(!list.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText+=S_ROW;list.insertBefore(w,list.firstChild);}
+var dv=list.querySelector('.item_delivery');
+if(D.box&&D.box.length&&!list.querySelector('[data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;f.style.cssText+=S_ROW;if(dv&&dv.nextSibling)dv.parentNode.insertBefore(f,dv.nextSibling);else list.appendChild(f);}
+var fd=list.querySelector('[data-bdc="fold"]');if(fd)bindFold(fd);}
+function mo(){var top=document.querySelector('.detail_info_top');if(!top)return;
+var pb=top.querySelector('.price_box');
+if(pb&&!top.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText='padding:8px 0 4px;';var sub=pb.querySelector('.detail_sub_info');if(sub)pb.insertBefore(w,sub);else pb.appendChild(w);}
+var sub2=document.querySelector('.detail_sub_info');
+if(D.box&&D.box.length&&sub2&&!document.querySelector('[data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;sub2.parentNode.insertBefore(f,sub2.nextSibling);}
+var fd=document.querySelector('[data-bdc="fold"]');if(fd)bindFold(fd);}
+function fix(){try{pc();}catch(e){}try{mo();}catch(e){}}
+function start(){fix();try{new MutationObserver(function(){fix();}).observe(document.body,{childList:true,subtree:true});}catch(e){}
+var n=0,t=setInterval(function(){fix();if(++n>40)clearInterval(t);},500);}
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',start);}else{start();}
+})();</script>
+<p style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/220630/211020-GREMSY-PIXY-F-ECA790EBB28C_EC9BB9EC8381EC84B828EB82B4EBB3B4EB82B4EAB8B029_03_110526.jpg\" title=\"211020-GREMSY-PIXY-F-ECA790EBB28C_EC9BB9EC8381EC84B828EB82B4EBB3B4EB82B4EAB8B029_03_110526.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/220630/211020-GREMSY-PIXY-F-ECA790EBB28C_gif28229EB82B4EBB3B4EB82B4EAB8B0_110526.gif\" title=\"211020-GREMSY-PIXY-F-ECA790EBB28C_gif28229EB82B4EBB3B4EB82B4EAB8B0_110526.gif\" class=\"js-smart-img\"><br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/220630/211020-GREMSY-PIXY-F-ECA790EBB28C_gif28329EB82B4EBB3B4EB82B4EAB8B0_110526.gif\" title=\"211020-GREMSY-PIXY-F-ECA790EBB28C_gif28329EB82B4EBB3B4EB82B4EAB8B0_110526.gif\" class=\"js-smart-img\"><br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/220630/220214-GREMSY-PIXY-F-web_05_110526.jpg\" title=\"220214-GREMSY-PIXY-F-web_05_110526.jpg\" class=\"js-smart-img\"></p><p style=\"text-align: center;\" align=\"center\"><strong style=\"color: rgb(51, 51, 51); font-family: dotum;\"><span style=\"font-size: 20pt;\"><span style=\"color: rgb(255, 0, 0);\"><br></span></span></strong></p><p style=\"text-align: center;\" align=\"center\"><strong style=\"color: rgb(51, 51, 51); font-family: dotum;\"><span style=\"font-size: 20pt;\"><span style=\"color: rgb(255, 0, 0);\"><br></span></span></strong></p><p style=\"text-align: center;\" align=\"center\"><strong style=\"color: rgb(51, 51, 51); font-family: dotum;\"><span style=\"font-size: 20pt;\"><span style=\"color: rgb(255, 0, 0);\">** Pixy Damping은 별도 구매 상품입니다.</span></span></strong></p><p style=\"text-align: center;\" align=\"center\"><strong style=\"color: rgb(51, 51, 51); font-family: dotum;\"><span style=\"font-size: 20pt;\"><span style=\"color: rgb(255, 0, 0);\"><br></span></span></strong></p><p style=\"text-align: center;\" align=\"center\"><strong style=\"color: rgb(51, 51, 51); font-family: dotum;\"><span style=\"font-size: 20pt;\"><span style=\"color: rgb(255, 0, 0);\"><br></span></span></strong></p><p style=\"text-align: center;\" align=\"center\">&nbsp;</p><p style=\"text-align: center;\" align=\"center\">&nbsp;</p><p style=\"text-align: center;\" align=\"center\"><br style=\"clear:both;\">&nbsp;</p>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+</goods_data>
+</data>
