@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000001585</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI FlightHub 2 플라이트허브 엔터프라이즈 온라인 기기 확장 (1대)</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002|002026|002026002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>url</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>g</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<goodsPrice>4301000.00</goodsPrice>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<script data-bd="cpanel">(function(){
+var D={"intro": "드론 원격 제어·비행 스케줄링·비행 경로 관리를 한곳에서 하는 드론 관리 플랫폼 DJI FlightHub 2. Enterprise 버전에 기기 1대를 더하는 확장 라이선스.", "chips": ["클라우드 기반 드론 관리", "원격 제어 · 비행 스케줄링", "비행 경로 관리", "Enterprise 기기 확장", "기기 1대 추가"], "badges": [{"text": "DJI 정품"}, {"text": "라이선스 · 설치 문의", "href": "https://www.drone-box.co.kr/board/popup_goods_board_write.php?mode=write&bdId=goodsqa&goodsNo=1000001585&orderGoodsNo=0"}, {"text": "기관·기업 납품서류 발급"}], "box": [], "ship": ""};
+var S_INTRO="font-size:13.5px;color:#333D4B;line-height:1.65;margin:0 0 8px;",
+S_CHIPS="display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px;",
+S_CHIP="font-size:12px;background:#F2F4F6;color:#333D4B;border-radius:999px;padding:4px 10px;line-height:1.4;",
+S_BADGES="display:flex;flex-wrap:wrap;gap:5px;margin:0 0 10px;",
+S_BADGE="font-size:11.5px;border:1px solid #D6E4FF;color:#1B64DA;background:#F2F6FF;border-radius:6px;padding:3px 8px;font-weight:600;line-height:1.4;text-decoration:none;white-space:nowrap;",
+S_FOLD="font-size:13px;color:#4E5968;border:1px dashed #D1D6DB;border-radius:8px;padding:9px 12px;margin:10px 0 4px;cursor:pointer;line-height:1.6;",
+S_FOLD_B="color:#191F28;font-weight:700;";
+function el(tag,html){var d=document.createElement(tag);if(html!=null)d.innerHTML=html;return d;}
+function introHtml(){var chips=D.chips.map(function(c){return '<span style="'+S_CHIP+'">'+c+'</span>';}).join('');
+return '<p data-bdc="intro" style="'+S_INTRO+'">'+D.intro+'</p><div data-bdc="chips" style="'+S_CHIPS+'">'+chips+'</div>';}
+function badgesHtml(){return '<div data-bdc="badges" style="'+S_BADGES+'">'+D.badges.map(function(b){return b.href?'<a href="'+b.href+'" style="'+S_BADGE+'">'+b.text+'</a>':'<span style="'+S_BADGE+'">'+b.text+'</span>';}).join('')+'</div>';}
+S_LI="font-size:12.5px;color:#4E5968;line-height:1.5;padding:2px 0 2px 11px;text-indent:-11px;break-inside:avoid;margin:0;",
+S_UL="display:none;margin:8px 0 0;padding:0;list-style:none;columns:2;column-gap:20px;";
+function foldHtml(){var items=D.box.map(function(b){return '<li style="'+S_LI+'">· '+b+'</li>';}).join('');
+return '<div data-bdc="fold" style="'+S_FOLD+'"><span style="'+S_FOLD_B+'">구성품 보기 ▾</span><span style="color:#8B95A1;font-size:12px;"> &nbsp;'+D.box.length+'개</span><ul data-bdc="foldbody" style="'+S_UL+'">'+items+(D.ship?'<li style="'+S_LI+'color:#8B95A1;">'+D.ship+'</li>':'')+'</ul></div>';}
+function bindFold(f){if(f.getAttribute('data-bound'))return;f.setAttribute('data-bound','1');f.onclick=function(){var b=f.querySelector('[data-bdc="foldbody"]'),t=f.querySelector('span');var open=b.style.display!=='none';b.style.display=open?'none':'block';t.textContent=open?'구성품 보기 ▾':'구성품 접기 ▴';};}
+var S_ROW=";clear:both;float:left;width:100%;box-sizing:border-box;";
+function css(){if(document.querySelector('style[data-bdc="css"]'))return;var s=document.createElement('style');s.setAttribute('data-bdc','css');
+s.textContent='.item_detail_tit, .item_detail_tit *{word-break:keep-all !important;overflow-wrap:normal !important;} .item_detail_list > dl{padding-top:3px !important;} .item_detail_list dt{width:100px !important;} .item_detail_list dd{width:400px !important;} .item_detail_list > dl > dt,.item_detail_list > dl > dd{line-height:20px !important;} .item_detail_list .item_delivery dd .delivery-detail{line-height:20px;} .item_detail_list [data-bdc="fold"]{margin:4px 0 0 !important;padding:6px 12px !important;}';document.head.appendChild(s);}
+function pc(){var list=document.querySelector('.item_detail_list');if(!list)return;css();
+if(!list.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText+=S_ROW;list.insertBefore(w,list.firstChild);}
+var dv=list.querySelector('.item_delivery');
+if(D.box&&D.box.length&&!list.querySelector('[data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;f.style.cssText+=S_ROW;if(dv&&dv.nextSibling)dv.parentNode.insertBefore(f,dv.nextSibling);else list.appendChild(f);}
+var fd=list.querySelector('[data-bdc="fold"]');if(fd)bindFold(fd);}
+function mo(){var top=document.querySelector('.detail_info_top');if(!top)return;
+var pb=top.querySelector('.price_box');
+if(pb&&!top.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText='padding:8px 0 4px;';var sub=pb.querySelector('.detail_sub_info');if(sub)pb.insertBefore(w,sub);else pb.appendChild(w);}
+var sub2=document.querySelector('.detail_sub_info');
+if(D.box&&D.box.length&&sub2&&!document.querySelector('.detail_info_top [data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;sub2.parentNode.insertBefore(f,sub2.nextSibling);}
+var fd=document.querySelector('.detail_info_top [data-bdc="fold"]');if(fd)bindFold(fd);}
+function fix(){try{pc();}catch(e){}try{mo();}catch(e){}}
+function start(){fix();try{new MutationObserver(function(){fix();}).observe(document.body,{childList:true,subtree:true});}catch(e){}
+var n=0,t=setInterval(function(){fix();if(++n>40)clearInterval(t);},500);}
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',start);}else{start();}
+})();</script>
+<script data-bdinfo="v1">(function(){function run(){var L=document.querySelector('.item_detail_list');if(!L||L.querySelector('dl[data-bdinfo]'))return;var ref=null,model=null;L.querySelectorAll('dl').forEach(function(d){var t=d.querySelector('dt');if(!t)return;var s=t.textContent.trim();if(s==='배송비')ref=d;if(s==='모델명'&&!d.getAttribute('data-bdq'))model=d;});if(model)model.style.display='none';var rows='<dt>제조사</dt><dd>DJI (공식 수입상품)</dd>|<dt>구매서류</dt><dd>공공기관 · 학교 · 기업체 납품서류 가능</dd>|<dt>기술지원</dt><dd>드론박스 A/S센터 및 DJI공식센터 가능</dd>|<dt>고객상담</dt><dd>드론박스 070-7811-4422</dd>'.split('|');var after=ref;rows.forEach(function(r){var d=document.createElement('dl');d.setAttribute('data-bdinfo','1');d.innerHTML=r;if(after&&after.parentNode){after.parentNode.insertBefore(d,after.nextSibling);after=d;}else{L.appendChild(d);}});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}else{run();}})();</script>
+<!-- bd-xcopy v1 godo from-c24 643 -->
+<!-- bd-yt-start -->
+<div class="bd-yt-box" style="max-width:860px;margin:0 auto 36px;padding:8px 12px 0;text-align:center;">
+<p style="font-size:20px;font-weight:700;margin:20px 0 14px;color:#111;">영상으로 보기</p>
+<div style="max-width:760px;margin:0 auto 24px;"><div style="position:relative;width:100%;height:0;padding-bottom:56.25%;overflow:hidden;border-radius:10px;background:#000;aspect-ratio:16/9;"><iframe data-bd-yt="1" src="https://www.youtube.com/embed/qjyOpN3W4K0?rel=0" title="클라우드? 사내 서버? 올인원? 질문 3개로 고르기｜DJI FlightHub 2 도입 방식 (클라우드·온프레미스·AIO)" loading="lazy" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe></div><p style="font-size:14px;color:#555;margin:8px 0 0;line-height:1.5;">클라우드? 사내 서버? 올인원? 질문 3개로 고르기｜DJI FlightHub 2 도입 방식 (클라우드·온프레미스·AIO)</p></div>
+<div style="max-width:760px;margin:0 auto 24px;"><div style="position:relative;width:100%;height:0;padding-bottom:56.25%;overflow:hidden;border-radius:10px;background:#000;aspect-ratio:16/9;"><iframe data-bd-yt="1" src="https://www.youtube.com/embed/1LfgmOACues?rel=0" title="현장 다시 안 나가도 됩니다｜드론 3D 모델로 거리·단면·면적·부피 재기 (DJI FlightHub 2 분석기)" loading="lazy" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe></div><p style="font-size:14px;color:#555;margin:8px 0 0;line-height:1.5;">현장 다시 안 나가도 됩니다｜드론 3D 모델로 거리·단면·면적·부피 재기 (DJI FlightHub 2 분석기)</p></div>
+</div>
+<!-- bd-yt-end -->
+<div class="edibot-product-detail" style="width:1000px;max-width:100%;margin:0 auto;"><div data-api="1.0.0" data-classid="jumper" data-created="2025-11-20 09:53:40" data-groupid="null" data-projectid="N251120_0948" data-sessionid="1" data-shoplang="ko_KR" data-shopno="1" data-version="2.0.0" type="application/json" class="-edibot-metadata"><!--{"api":"1.0.0","classid":"jumper","groupid":null,"mallid":"dronebox2","projectid":"N251120_0948","sessionid":1,"version":"2.0.0","shopno":1,"shoplang":"ko_KR","created":"2025-11-20 09:53:40"}--></div>
+
+<style>.edibot-product-detail .edb-img-tag-w:has(img[ec-data-src]:first-child) > div:has(div[data-aos] img[ec-data-src]) {visibility: hidden;}.edibot-product-detail .edb-img-tag-w > div:has(div[data-aos] img[ec-data-src]) { position:absolute; top: 0% !important; left: 50% !important; transform:translate(0%, 0%) rotate(0deg) !important;}.edibot-product-detail .edb-img-tag-w > div div[data-aos] div:has(img[ec-data-src]) { position:absolute !important; top: 0 !important; left: 0 !important; transform: none !important;}.edibot-product-detail *{ font-family:inherit; font-size:inherit; }.edibot-product-detail img[src=""], .edibot-product-detail img:not([src]) {visibility: hidden !important; height: 1px !important;}.edibot-product-detail div#edb-img-tag,.edibot-product-detail div#edb-img-tag *{position:unset;border:0;border-radius:0;box-sizing:content-box;height:auto;line-height:normal;min-height:auto;text-align:left;transform:none;margin:0;opacity:1;padding:0;transition:opacity .15s linear,background .15s linear,border .15s linear}.edibot-product-detail div#edb-img-tag .edb-tag{position:absolute;display:block;background:rgba(0,0,0,.3);border-radius:50%;border:1px solid transparent;box-shadow:0 4px 6px rgba(0,0,0,.2);box-sizing:border-box;cursor:pointer;height:32px;text-decoration:none;transform:translate(-50%,-50%);width:32px}.edibot-product-detail .edb-img-tag-w.hover div#edb-img-tag .edb-tag{opacity:0;visibility:hidden}.edibot-product-detail div#edb-img-tag .edb-tag:before{content:'';position:absolute;top:-1px;left:-1px;right:-1px;bottom:-1px}.edibot-product-detail div#edb-img-tag .edb-tag:after{content:"";position:absolute;top:0;left:0;right:0;bottom:0;display:block;background-color:#fff;border-radius:50%;box-shadow:0 4px 6px rgba(0,0,0,.2);height:10px;margin:auto;transition:transform .15s linear;width:10px}.edibot-product-detail div#edb-img-tag .edb-tag .edb-tag-name{position:absolute;display:block;align-items:center;background:#fff;box-shadow:0 6px 10px rgba(0,0,0,.2);color:#000;font-family:-apple-system,Apple SD Gothic Neo,malgun gothic,arial,sans-serif;font-size:12px;font-style:normal;line-height:36px;margin:50% 0 0 50%;max-width:201px;opacity:0;overflow:hidden;padding:0 28px 0 11px;text-decoration:none;text-overflow:ellipsis;transform:translate(-50%,-100%) translateY(-26px);visibility:hidden;white-space:nowrap}.edibot-product-detail div#edb-img-tag .edb-tag .edb-tag-name:after{content:'';position:absolute;top:0;bottom:1px;right:10px;margin:auto 0;background:url(//img.cafe24.com/csdstatic/edibot/v2/img/ui/ec/bg_tag.png) no-repeat;background-size:5px 9px;height:9px;margin-left:10px;width:5px}.edibot-product-detail div#edb-img-tag .edb-tag.top:before{margin-top:-10px}.edibot-product-detail div#edb-img-tag .edb-tag.right:before{margin-right:-10px}.edibot-product-detail div#edb-img-tag .edb-tag.right .edb-tag-name{transform:translate(26px,-50%)}.edibot-product-detail div#edb-img-tag .edb-tag.bottom:before{margin-bottom:-10px}.edibot-product-detail div#edb-img-tag .edb-tag.bottom .edb-tag-name{transform:translate(-50%,26px)}.edibot-product-detail div#edb-img-tag .edb-tag.left:before{margin-left:-10px}.edibot-product-detail div#edb-img-tag .edb-tag.left .edb-tag-name{transform:translate(-100%,-50%) translateX(-26px)}.edibot-product-detail .edb-img-tag-w.hover:hover div#edb-img-tag .edb-tag,.edibot-product-detail div#edb-img-tag .edb-tag:hover .edb-tag-name{opacity:1;visibility:visible}.edibot-product-detail div#edb-img-tag .edb-tag:hover{border:1px solid #eee;background-color:#009cff;box-shadow:none}.edibot-product-detail div#edb-img-tag .edb-tag:hover:after{transform:scale(.6)}.edibot-product-detail div#edb-img-tag .edb-tag .edb-tag-name:hover{text-decoration:underline}html:lang(ja) .edibot-product-detail div#edb-img-tag .edb-tag .edb-tag-name{font-family:-apple-system,verdana,Meiryo,"メイリオ",sans-serif}html:lang(en) .edibot-product-detail div#edb-img-tag .edb-tag .edb-tag-name,html:lang(vi) .edibot-product-detail div#edb-img-tag .edb-tag .edb-tag-name{font-family:-apple-system,Helvetica Neue,Helvetica,Arial,Sans-serif}@media only screen and (hover:none) and (pointer:coarse){.edibot-product-detail .edb-img-tag-w.hover div#edb-img-tag .edb-tag{opacity:1;visibility:visible}}</style>
+
+<div style="position:relative;" class="edb-img-tag-w"><div style="width:100%;height:100%;position:relative;font-family:&quot;malgun gothic&quot;,sans-serif;font-size:14px;color:#000000;font-style:normal;font-weight:400;text-align:center;line-height:1.5;letter-spacing:0;word-spacing:0;background-color:rgba(255,255,255,0);text-decoration-skip-ink:none;"><div><span data-mobile-font-size="13" data-pc-font-size="20" style="background-color: rgba(0, 0, 0, 0);"><br><span data-mobile-font-size="18" data-pc-font-size="28" style="font-family: &quot;arial black&quot;, sans-serif; font-size: 28px; background-color: rgba(0, 0, 0, 0);">원스톱 클라우드 기반 드론 관리 플랫폼</span></span></div><div><span data-mobile-font-size="13" data-pc-font-size="20" style="background-color: rgba(0, 0, 0, 0);"><span data-mobile-font-size="18" data-pc-font-size="28" style="font-family: &quot;arial black&quot;, sans-serif; font-size: 28px; background-color: rgba(0, 0, 0, 0);">DJI FLIGHTHUB 2</span><br></span><br></div></div></div><div style="display: block;content: ' ';height:0px!important;"></div>
+
+<div style="position:relative;" class="edb-img-tag-w"><div style="width:100%;height:100%;position:relative;font-family:&quot;malgun gothic&quot;,sans-serif;font-size:14px;color:#000000;font-style:normal;font-weight:400;text-align:center;line-height:1.5;letter-spacing:0;word-spacing:0;background-color:rgba(255,255,255,0);text-decoration-skip-ink:none;"><div><span data-mobile-font-size="12" data-pc-font-size="18" style="font-size: 18px; background-color: rgba(0, 0, 0, 0);"><span style="font-family: &quot;arial black&quot;, sans-serif;">DJI FlightHub 2는 원격 제어, 지능형 비행 스케줄링, 다용도 비행 경로 관리 및 원활한 개방형 통합을 제공하는&nbsp;</span></span></div><div><span data-mobile-font-size="12" data-pc-font-size="18" style="font-size: 18px; background-color: rgba(0, 0, 0, 0);"><span style="font-family: &quot;arial black&quot;, sans-serif;">드론 작업 관리를 위한 원스톱 클라우드 기반 플랫폼입니다.&nbsp;</span></span></div><div><span data-mobile-font-size="12" data-pc-font-size="18" style="font-size: 18px; background-color: rgba(0, 0, 0, 0);"><span style="font-family: &quot;arial black&quot;, sans-serif;">새롭게 도입된 지능형 알고리즘과 멀티모달 대규모 언어 모델(LLM)을 통해&nbsp;</span></span></div><div><span data-mobile-font-size="12" data-pc-font-size="18" style="font-size: 18px; background-color: rgba(0, 0, 0, 0);"><span style="font-family: &quot;arial black&quot;, sans-serif;">이 플랫폼은 엔지니어링 및 건설 워크플로우를 혁신하고,&nbsp;</span></span></div><div><span data-mobile-font-size="12" data-pc-font-size="18" style="font-size: 18px; background-color: rgba(0, 0, 0, 0);"><span style="font-family: &quot;arial black&quot;, sans-serif;">공공 안전, 비상 대응, 지리 공간 매핑 및 검사 전반에 걸쳐&nbsp;</span></span></div><div><span data-mobile-font-size="12" data-pc-font-size="18" style="font-size: 18px; background-color: rgba(0, 0, 0, 0);"><span style="font-family: &quot;arial black&quot;, sans-serif;">포괄적인 시각적 감독 및 제어 기능을 갖춘 공중-지상 통합 자동화 작업 시스템을 제공합니다.</span></span><br></div></div></div><div style="display: block;content: ' ';height:20px!important;"></div>
+
+<div style="position:relative;" class="edb-img-tag-w"><img alt="점퍼 상품상세 이미지-S1L4" src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20251120/a8490707e0d5cad5f5fdbf0c6d98ef39.jpg" style="margin:0 auto; display: block; max-width:100%;"><img alt="점퍼 상품상세 이미지-S1L4" src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20251120/7bc8894acf1a6dc98e93fd0360725ea9.jpg" style="margin:0 auto; display: block; max-width:100%;"></div><div style="display: block;content: ' ';height:100px!important;"></div>
+
+</div>
+<!-- bit-ai-cite v1 -->
+<div style='max-width:860px; margin:0 auto; font-family:inherit;'>
+<h3 style='font-size:20px; font-weight:700; margin:36px 0 12px; color:#191F28;'>DJI FlightHub 2 Enterprise Version Online Device Expansion (1 Device) 플라이트 허브2 주요 스펙</h3>
+<table style='border-collapse:collapse; width:100%;'>
+<tr><th style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#F7F8FA; width:34%;'>상품 종류</th><td style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left;'>소프트웨어/서비스 라이선스 (확장)</td></tr>
+<tr><th style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#F7F8FA; width:34%;'>플랫폼 명칭</th><td style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left;'>DJI FlightHub 2</td></tr>
+<tr><th style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#F7F8FA; width:34%;'>라이선스 버전</th><td style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left;'>Enterprise Version</td></tr>
+<tr><th style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#F7F8FA; width:34%;'>라이선스 유형</th><td style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left;'>Online Device Expansion</td></tr>
+<tr><th style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#F7F8FA; width:34%;'>확장 가능 기기 수</th><td style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left;'>1대</td></tr>
+<tr><th style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#F7F8FA; width:34%;'>플랫폼 기반</th><td style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left;'>클라우드 기반</td></tr>
+<tr><th style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#F7F8FA; width:34%;'>주요 기능</th><td style='padding:10px 14px; border:1px solid #E3E6EB; font-size:15px; text-align:left;'>원격 제어, 지능형 비행 스케줄링, 다용도 비행 경로 관리, 원활한 개방형 통합</td></tr>
+</table>
+<h3 style='font-size:20px; font-weight:700; margin:36px 0 12px; color:#191F28;'>자주 묻는 질문</h3>
+<div itemscope itemtype='https://schema.org/FAQPage'>
+<div itemscope itemprop='mainEntity' itemtype='https://schema.org/Question' style='margin-bottom:16px;'><p itemprop='name' style='font-weight:700; font-size:16px; margin:0 0 6px;'>Q. 이 제품은 DJI 정품인가요?</p><div itemscope itemprop='acceptedAnswer' itemtype='https://schema.org/Answer'><p itemprop='text' style='font-size:15px; color:#333D4B; margin:0;'>A. 네, 저희는 DJI 정품 판매점이며, 판매되는 모든 제품은 DJI 본사의 공식 정품입니다. 안심하고 구매하셔도 좋습니다.</p></div></div>
+<div itemscope itemprop='mainEntity' itemtype='https://schema.org/Question' style='margin-bottom:16px;'><p itemprop='name' style='font-weight:700; font-size:16px; margin:0 0 6px;'>Q. 구매한 제품의 A/S는 어떻게 받을 수 있나요?</p><div itemscope itemprop='acceptedAnswer' itemtype='https://schema.org/Answer'><p itemprop='text' style='font-size:15px; color:#333D4B; margin:0;'>A. 구매하신 DJI 제품은 국내 DJI 공식 서비스 정책에 따라 A/S를 받으실 수 있습니다. 전북 전주 드론 수리센터에서 직영으로 전문적인 수리 및 점검 서비스를 제공합니다.</p></div></div>
+<div itemscope itemprop='mainEntity' itemtype='https://schema.org/Question' style='margin-bottom:16px;'><p itemprop='name' style='font-weight:700; font-size:16px; margin:0 0 6px;'>Q. DJI FlightHub 2 Enterprise Version Online Device Expansion은 어떤 제품인가요?</p><div itemscope itemprop='acceptedAnswer' itemtype='https://schema.org/Answer'><p itemprop='text' style='font-size:15px; color:#333D4B; margin:0;'>A. 본 제품은 DJI FlightHub 2 Enterprise Version의 온라인 기기 확장 라이선스입니다. 기존 FlightHub 2 Enterprise 계정에 1대의 기기를 추가하여 클라우드 플랫폼 기능을 활용할 수 있도록 합니다.</p></div></div>
+<div itemscope itemprop='mainEntity' itemtype='https://schema.org/Question' style='margin-bottom:16px;'><p itemprop='name' style='font-weight:700; font-size:16px; margin:0 0 6px;'>Q. FlightHub 2 플랫폼은 어떤 기능을 제공하나요?</p><div itemscope itemprop='acceptedAnswer' itemtype='https://schema.org/Answer'><p itemprop='text' style='font-size:15px; color:#333D4B; margin:0;'>A. FlightHub 2는 드론 작업 관리를 위한 원스톱 클라우드 기반 플랫폼입니다. 원격 제어, 지능형 비행 스케줄링, 다용도 비행 경로 관리 및 원활한 개방형 통합 기능을 제공하여 업무 효율을 높입니다.</p></div></div>
+<div itemscope itemprop='mainEntity' itemtype='https://schema.org/Question' style='margin-bottom:16px;'><p itemprop='name' style='font-weight:700; font-size:16px; margin:0 0 6px;'>Q. 여러 대의 드론을 FlightHub 2에 등록하려면 어떻게 해야 하나요?</p><div itemscope itemprop='acceptedAnswer' itemtype='https://schema.org/Answer'><p itemprop='text' style='font-size:15px; color:#333D4B; margin:0;'>A. 이 제품은 1대의 기기 확장을 위한 라이선스입니다. 여러 대의 드론을 등록하시려면, 등록하고자 하는 기기 수량만큼 본 온라인 기기 확장 라이선스를 추가로 구매하셔야 합니다.</p></div></div>
+</div>
+</div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+</goods_data>
+</data>
