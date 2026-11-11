@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000001404</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 젠뮤즈 L3 라이다 Zenmuse L3 SP Plus (M400 호환)</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002020|002019008|002019019|002019|002|002019008004</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>g</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>6</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>y</externalVideoFl>
+<detailInfoDelivery>002002</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<goodsPrice>22385000.00</goodsPrice>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<script data-bd="cpanel">(function(){
+var D={"intro": "1535nm 장거리 LiDAR와 듀얼 100MP RGB 매핑 카메라를 합친 항공 측량 페이로드. 감지 거리 950m(반사율 10%, 100kHz).", "chips": ["LiDAR 1535nm", "감지 950m @반사율 10%", "최대 16중 반사", "듀얼 RGB 100MP", "수직 3cm · 수평 4cm @120m", "IP54", "1.60kg", "Matrice 400 호환"], "badges": [{"text": "DJI 정품"}, {"text": "국내 A/S 접수"}, {"text": "SP Plus · Care Plus 1년 포함"}, {"text": "기관·기업 납품서류 발급"}], "box": [], "ship": ""};
+var S_INTRO="font-size:13.5px;color:#333D4B;line-height:1.65;margin:0 0 8px;",
+S_CHIPS="display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px;",
+S_CHIP="font-size:12px;background:#F2F4F6;color:#333D4B;border-radius:999px;padding:4px 10px;line-height:1.4;",
+S_BADGES="display:flex;flex-wrap:wrap;gap:5px;margin:0 0 10px;",
+S_BADGE="font-size:11.5px;border:1px solid #D6E4FF;color:#1B64DA;background:#F2F6FF;border-radius:6px;padding:3px 8px;font-weight:600;line-height:1.4;text-decoration:none;white-space:nowrap;",
+S_FOLD="font-size:13px;color:#4E5968;border:1px dashed #D1D6DB;border-radius:8px;padding:9px 12px;margin:10px 0 4px;cursor:pointer;line-height:1.6;",
+S_FOLD_B="color:#191F28;font-weight:700;";
+function el(tag,html){var d=document.createElement(tag);if(html!=null)d.innerHTML=html;return d;}
+function introHtml(){var chips=D.chips.map(function(c){return '<span style="'+S_CHIP+'">'+c+'</span>';}).join('');
+return '<p data-bdc="intro" style="'+S_INTRO+'">'+D.intro+'</p><div data-bdc="chips" style="'+S_CHIPS+'">'+chips+'</div>';}
+function badgesHtml(){return '<div data-bdc="badges" style="'+S_BADGES+'">'+D.badges.map(function(b){return b.href?'<a href="'+b.href+'" style="'+S_BADGE+'">'+b.text+'</a>':'<span style="'+S_BADGE+'">'+b.text+'</span>';}).join('')+'</div>';}
+S_LI="font-size:12.5px;color:#4E5968;line-height:1.5;padding:2px 0 2px 11px;text-indent:-11px;break-inside:avoid;margin:0;",
+S_UL="display:none;margin:8px 0 0;padding:0;list-style:none;columns:2;column-gap:20px;";
+function foldHtml(){var items=D.box.map(function(b){return '<li style="'+S_LI+'">· '+b+'</li>';}).join('');
+return '<div data-bdc="fold" style="'+S_FOLD+'"><span style="'+S_FOLD_B+'">구성품 보기 ▾</span><span style="color:#8B95A1;font-size:12px;"> &nbsp;'+D.box.length+'개</span><ul data-bdc="foldbody" style="'+S_UL+'">'+items+(D.ship?'<li style="'+S_LI+'color:#8B95A1;">'+D.ship+'</li>':'')+'</ul></div>';}
+function bindFold(f){if(f.getAttribute('data-bound'))return;f.setAttribute('data-bound','1');f.onclick=function(){var b=f.querySelector('[data-bdc="foldbody"]'),t=f.querySelector('span');var open=b.style.display!=='none';b.style.display=open?'none':'block';t.textContent=open?'구성품 보기 ▾':'구성품 접기 ▴';};}
+var S_ROW=";clear:both;float:left;width:100%;box-sizing:border-box;";
+function css(){if(document.querySelector('style[data-bdc="css"]'))return;var s=document.createElement('style');s.setAttribute('data-bdc','css');
+s.textContent='.item_detail_tit, .item_detail_tit *{word-break:keep-all !important;overflow-wrap:normal !important;} .item_detail_list > dl{padding-top:3px !important;} .item_detail_list dt{width:100px !important;} .item_detail_list dd{width:400px !important;} .item_detail_list > dl > dt,.item_detail_list > dl > dd{line-height:20px !important;} .item_detail_list .item_delivery dd .delivery-detail{line-height:20px;} .item_detail_list [data-bdc="fold"]{margin:4px 0 0 !important;padding:6px 12px !important;}';document.head.appendChild(s);}
+function pc(){var list=document.querySelector('.item_detail_list');if(!list)return;css();
+if(!list.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText+=S_ROW;list.insertBefore(w,list.firstChild);}
+var dv=list.querySelector('.item_delivery');
+if(D.box&&D.box.length&&!list.querySelector('[data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;f.style.cssText+=S_ROW;if(dv&&dv.nextSibling)dv.parentNode.insertBefore(f,dv.nextSibling);else list.appendChild(f);}
+var fd=list.querySelector('[data-bdc="fold"]');if(fd)bindFold(fd);}
+function mo(){var top=document.querySelector('.detail_info_top');if(!top)return;
+var pb=top.querySelector('.price_box');
+if(pb&&!top.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText='padding:8px 0 4px;';var sub=pb.querySelector('.detail_sub_info');if(sub)pb.insertBefore(w,sub);else pb.appendChild(w);}
+var sub2=document.querySelector('.detail_sub_info');
+if(D.box&&D.box.length&&sub2&&!document.querySelector('[data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;sub2.parentNode.insertBefore(f,sub2.nextSibling);}
+var fd=document.querySelector('[data-bdc="fold"]');if(fd)bindFold(fd);}
+function fix(){try{pc();}catch(e){}try{mo();}catch(e){}}
+function start(){fix();try{new MutationObserver(function(){fix();}).observe(document.body,{childList:true,subtree:true});}catch(e){}
+var n=0,t=setInterval(function(){fix();if(++n>40)clearInterval(t);},500);}
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',start);}else{start();}
+})();</script>
+<div style=\"text-align: center;\" align=\"center\"><div align=\"center\"><p align=\"center\"><span style=\"color: rgb(29, 28, 29); font-family: NotoSansKR, Slack-Lato, Slack-Fractions, appleLogo, sans-serif; font-size: 15px; font-variant-ligatures: common-ligatures; text-align: left; background-color: rgb(255, 255, 255);\"><br></span></p><p align=\"center\"><span style=\"color: rgb(29, 28, 29); font-family: NotoSansKR, Slack-Lato, Slack-Fractions, appleLogo, sans-serif; font-size: 15px; font-variant-ligatures: common-ligatures; text-align: left; background-color: rgb(255, 255, 255);\"><br></span></p><p align=\"center\"><span style=\"color: rgb(29, 28, 29); font-family: NotoSansKR, Slack-Lato, Slack-Fractions, appleLogo, sans-serif; font-size: 18pt; font-variant-ligatures: common-ligatures; text-align: left; background-color: rgb(255, 255, 255);\">해당 제품은 구입시 DJI Terra에서 무료로 작업이 가능합니다.</span><br aria-hidden=\"true\" style=\"box-sizing: inherit; color: rgb(29, 28, 29); font-family: NotoSansKR, Slack-Lato, Slack-Fractions, appleLogo, sans-serif; font-size: 15px; font-variant-ligatures: common-ligatures; text-align: left; background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(29, 28, 29); font-family: NotoSansKR, Slack-Lato, Slack-Fractions, appleLogo, sans-serif; font-size: 18pt; font-variant-ligatures: common-ligatures; text-align: left; background-color: rgb(255, 255, 255);\">자세한 내용은 고객센터로 문의바라겠습니다.</span><span aria-label=\"&nbsp;\" class=\"c-mrkdwn__br\" data-stringify-type=\"paragraph-break\" style=\"box-sizing: inherit; height: 8px; display: block; color: rgb(29, 28, 29); font-family: NotoSansKR, Slack-Lato, Slack-Fractions, appleLogo, sans-serif; font-size: 15px; font-variant-ligatures: common-ligatures; text-align: left; background-color: rgb(255, 255, 255);\"></span><span style=\"color: rgb(29, 28, 29); font-family: NotoSansKR, Slack-Lato, Slack-Fractions, appleLogo, sans-serif; font-size: 18pt; font-variant-ligatures: common-ligatures; text-align: left; background-color: rgb(255, 255, 255);\">작업물에 대한 DATA 파일이 필요하신 경우 저희 고객센터로 문의해주시면 됩니다.</span></p><p align=\"center\"><span style=\"color: rgb(29, 28, 29); font-family: NotoSansKR, Slack-Lato, Slack-Fractions, appleLogo, sans-serif; font-size: 18pt; font-variant-ligatures: common-ligatures; text-align: left; background-color: rgb(255, 255, 255);\"><br></span></p><p align=\"center\"><span style=\"color: rgb(29, 28, 29); font-family: NotoSansKR, Slack-Lato, Slack-Fractions, appleLogo, sans-serif; font-size: 15px; font-variant-ligatures: common-ligatures; text-align: left; background-color: rgb(255, 255, 255);\"><br></span></p><p align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/251112/0f165c6c54bb82dbcdd5397d82a9d26c_133617.png\" title=\"0f165c6c54bb82dbcdd5397d82a9d26c_133617.png\" class=\"js-smart-img\"><br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/251112/3879c07f57a450ac41c8ae737c77ee3a_160718.jpg\" title=\"3879c07f57a450ac41c8ae737c77ee3a_160718.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/251112/9390f2edce5327048da486ef244fc58b_160721.gif\" title=\"9390f2edce5327048da486ef244fc58b_160721.gif\" class=\"js-smart-img\"><br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/251112/7aaed493555de1138771661135557ace_160726.gif\" title=\"7aaed493555de1138771661135557ace_160726.gif\" class=\"js-smart-img\"><br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/251112/bcab886805bb08705bb0afdb99fb1758_160732.jpg\" title=\"bcab886805bb08705bb0afdb99fb1758_160732.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/251112/39dd3cc2a55ab5d5b50a98422f3ddba7_160735.gif\" title=\"39dd3cc2a55ab5d5b50a98422f3ddba7_160735.gif\" class=\"js-smart-img\"><br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/251112/885865261a15bc77a0e482ae7f70a892_160737.jpg\" title=\"885865261a15bc77a0e482ae7f70a892_160737.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/251112/7f9a76af1e1be7362f2d264476c03797_160738.jpg\" title=\"7f9a76af1e1be7362f2d264476c03797_160738.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/251112/faf45eb39f94454bfb0c9683bbf9bd22_160741.jpg\" title=\"faf45eb39f94454bfb0c9683bbf9bd22_160741.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"><br style=\"clear:both;\"><br style=\"clear:both;\"><br style=\"clear:both;\"> </p></div></div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+</goods_data>
+</data>
