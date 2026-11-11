@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000000281</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 젠뮤즈 H20 (Zenmuse H20) 매트리스 300 RTK 호환</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002020|002019008001|002019008|002019|002|002019019</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>g</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<goodsPrice>3400000.00</goodsPrice>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<script data-bd="cpanel">(function(){
+var D={"intro": "줌·광각 카메라와 레이저 거리 측정기를 합친 페이로드. 20MP 줌 카메라 하이브리드 광학 23배, 최대 200배 줌.", "chips": ["줌 20MP · 광학 23배", "최대 200배 줌", "광각 12MP", "레이저 거리 측정 1200m", "IP44", "678g", "-20~50°C 작동", "Matrice 300 RTK 호환"], "badges": [{"text": "DJI 정품"}, {"text": "국내 A/S 접수"}, {"text": "Care Enterprise 가입 문의", "href": "https://www.drone-box.co.kr/board/popup_goods_board_write.php?mode=write&bdId=goodsqa&goodsNo=1000000281&orderGoodsNo=0"}, {"text": "기관·기업 납품서류 발급"}], "box": [], "ship": ""};
+var S_INTRO="font-size:13.5px;color:#333D4B;line-height:1.65;margin:0 0 8px;",
+S_CHIPS="display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px;",
+S_CHIP="font-size:12px;background:#F2F4F6;color:#333D4B;border-radius:999px;padding:4px 10px;line-height:1.4;",
+S_BADGES="display:flex;flex-wrap:wrap;gap:5px;margin:0 0 10px;",
+S_BADGE="font-size:11.5px;border:1px solid #D6E4FF;color:#1B64DA;background:#F2F6FF;border-radius:6px;padding:3px 8px;font-weight:600;line-height:1.4;text-decoration:none;white-space:nowrap;",
+S_FOLD="font-size:13px;color:#4E5968;border:1px dashed #D1D6DB;border-radius:8px;padding:9px 12px;margin:10px 0 4px;cursor:pointer;line-height:1.6;",
+S_FOLD_B="color:#191F28;font-weight:700;";
+function el(tag,html){var d=document.createElement(tag);if(html!=null)d.innerHTML=html;return d;}
+function introHtml(){var chips=D.chips.map(function(c){return '<span style="'+S_CHIP+'">'+c+'</span>';}).join('');
+return '<p data-bdc="intro" style="'+S_INTRO+'">'+D.intro+'</p><div data-bdc="chips" style="'+S_CHIPS+'">'+chips+'</div>';}
+function badgesHtml(){return '<div data-bdc="badges" style="'+S_BADGES+'">'+D.badges.map(function(b){return b.href?'<a href="'+b.href+'" style="'+S_BADGE+'">'+b.text+'</a>':'<span style="'+S_BADGE+'">'+b.text+'</span>';}).join('')+'</div>';}
+S_LI="font-size:12.5px;color:#4E5968;line-height:1.5;padding:2px 0 2px 11px;text-indent:-11px;break-inside:avoid;margin:0;",
+S_UL="display:none;margin:8px 0 0;padding:0;list-style:none;columns:2;column-gap:20px;";
+function foldHtml(){var items=D.box.map(function(b){return '<li style="'+S_LI+'">· '+b+'</li>';}).join('');
+return '<div data-bdc="fold" style="'+S_FOLD+'"><span style="'+S_FOLD_B+'">구성품 보기 ▾</span><span style="color:#8B95A1;font-size:12px;"> &nbsp;'+D.box.length+'개</span><ul data-bdc="foldbody" style="'+S_UL+'">'+items+(D.ship?'<li style="'+S_LI+'color:#8B95A1;">'+D.ship+'</li>':'')+'</ul></div>';}
+function bindFold(f){if(f.getAttribute('data-bound'))return;f.setAttribute('data-bound','1');f.onclick=function(){var b=f.querySelector('[data-bdc="foldbody"]'),t=f.querySelector('span');var open=b.style.display!=='none';b.style.display=open?'none':'block';t.textContent=open?'구성품 보기 ▾':'구성품 접기 ▴';};}
+var S_ROW=";clear:both;float:left;width:100%;box-sizing:border-box;";
+function css(){if(document.querySelector('style[data-bdc="css"]'))return;var s=document.createElement('style');s.setAttribute('data-bdc','css');
+s.textContent='.item_detail_tit, .item_detail_tit *{word-break:keep-all !important;overflow-wrap:normal !important;} .item_detail_list > dl{padding-top:3px !important;} .item_detail_list dt{width:100px !important;} .item_detail_list dd{width:400px !important;} .item_detail_list > dl > dt,.item_detail_list > dl > dd{line-height:20px !important;} .item_detail_list .item_delivery dd .delivery-detail{line-height:20px;} .item_detail_list [data-bdc="fold"]{margin:4px 0 0 !important;padding:6px 12px !important;}';document.head.appendChild(s);}
+function pc(){var list=document.querySelector('.item_detail_list');if(!list)return;css();
+if(!list.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText+=S_ROW;list.insertBefore(w,list.firstChild);}
+var dv=list.querySelector('.item_delivery');
+if(D.box&&D.box.length&&!list.querySelector('[data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;f.style.cssText+=S_ROW;if(dv&&dv.nextSibling)dv.parentNode.insertBefore(f,dv.nextSibling);else list.appendChild(f);}
+var fd=list.querySelector('[data-bdc="fold"]');if(fd)bindFold(fd);}
+function mo(){var top=document.querySelector('.detail_info_top');if(!top)return;
+var pb=top.querySelector('.price_box');
+if(pb&&!top.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText='padding:8px 0 4px;';var sub=pb.querySelector('.detail_sub_info');if(sub)pb.insertBefore(w,sub);else pb.appendChild(w);}
+var sub2=document.querySelector('.detail_sub_info');
+if(D.box&&D.box.length&&sub2&&!document.querySelector('.detail_info_top [data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;sub2.parentNode.insertBefore(f,sub2.nextSibling);}
+var fd=document.querySelector('.detail_info_top [data-bdc="fold"]');if(fd)bindFold(fd);}
+function fix(){try{pc();}catch(e){}try{mo();}catch(e){}}
+function start(){fix();try{new MutationObserver(function(){fix();}).observe(document.body,{childList:true,subtree:true});}catch(e){}
+var n=0,t=setInterval(function(){fix();if(++n>40)clearInterval(t);},500);}
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',start);}else{start();}
+})();</script>
+<p><br></p><div><b><span style=\"font-size: 14pt; font-family: 나눔명조, NanumMyeongjo; background-color: rgb(255, 232, 232);\"><br></span></b></div><div><p align=\"center\" style=\"text-align: center; background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 나눔명조, NanumMyeongjo;\"><b>안녕하세요 드론박스입니다.</b></span></span></p><p align=\"center\" style=\"text-align: center; background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 나눔명조, NanumMyeongjo;\"><b>엔터프라이즈 자주 묻는 질문을 올려드립니다.</b></span></span></p><p align=\"center\" style=\"text-align: center; background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px;\"><b><br></b></span></span></p><p align=\"center\" style=\"text-align: center; background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 나눔명조, NanumMyeongjo;\"><b>FAQ</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px;\"><b><br></b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 나눔명조, NanumMyeongjo;\"><b>1. 정품이여서 AS가 가능한가요?</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 나눔명조, NanumMyeongjo;\"><b>- DJI 국내수입 된 미개봉 정품으로 DJI AS서비스를 받으실 수 있습니다.</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px;\"><b><br></b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 나눔명조, NanumMyeongjo;\"><b>2. 4종 자격증을 취득해야나요?&nbsp;</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 나눔명조, NanumMyeongjo;\"><b>- 250g 넘는 드론은 4종 자격을 의무적으로 취득해야 합니다.</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 나눔명조, NanumMyeongjo;\"><b>- 2KG이 넘는 드론은 3종 자격을 의무적으로 취득해야 합니다.&nbsp;</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 나눔명조, NanumMyeongjo;\"><b>- 자세한 경로는 드론박스 메인 &gt; 추천 컨텐츠 &gt; 4종 자격증 신청방법을 참조바랍니다.</b></span></span></p><p align=\"center\" style=\"background-color: rgb(255, 255, 255);\">&nbsp;</p><p align=\"center\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: 나눔명조, NanumMyeongjo;\">&nbsp;</span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 나눔명조, NanumMyeongjo;\"><b>3. 아무 메모리 카드만 끼워도 되나요?&nbsp;</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 나눔명조, NanumMyeongjo;\"><b>- 권장하는 샌디스크 EXTREM 메모리카드를 끼우셔야 4K 까지 촬영이 가능합니다.</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: 나눔명조, NanumMyeongjo;\">&nbsp;</span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 나눔명조, NanumMyeongjo;\"><b>4. 앱을 어떻게 다운 받나요?&nbsp;</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 나눔명조, NanumMyeongjo;\"><b>- 상품별로 상이하며 엔터프라이즈 상품의 경우 별도로 안내를 드리고 있습니다.&nbsp;</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px;\"><b><br></b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 나눔명조, NanumMyeongjo;\"><b>6. 한글 지원은 되나요?&nbsp;</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><span style=\"font-family: &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, 돋움, dotum, sans-serif; color: rgb(17, 17, 17);\"><span style=\"font-size: 24px; font-family: 나눔명조, NanumMyeongjo;\"><b>- 대다수의 상품이 가능하나 불가한 상품도 있으니 별도로 문의바라겠습니다.</b></span></span></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><b style=\"font-family: 나눔명조, NanumMyeongjo; font-size: 24px; color: rgb(17, 17, 17);\"><br></b></p><p align=\"left\" style=\"background-color: rgb(255, 255, 255);\"><b style=\"font-family: 나눔명조, NanumMyeongjo; font-size: 24px; color: rgb(17, 17, 17);\">7. 그 외의 궁금하신 사항은 드론박스 고객센터로 문의바라겠습니다.&nbsp;</b></p></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/210405/06f4b44f35a3047a139a557033e76c1d_094217.jpg\" title=\"06f4b44f35a3047a139a557033e76c1d_094217.jpg\" class=\"js-smart-img\"></div>&nbsp;<p>&nbsp;</p>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+</goods_data>
+</data>
