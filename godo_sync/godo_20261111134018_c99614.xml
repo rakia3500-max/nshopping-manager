@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000001466</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>[픽스포디 매틱] Pix4D MATIC-STANDARD-MONTH</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002026|002|002026003</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>y</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>g</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<goodsPrice>730000.00</goodsPrice>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<script data-bd="cpanel">(function(){
+var D={"intro": "사진 측량 소프트웨어 PIX4Dmatic의 Standard 플랜. 드론·모바일·LiDAR 데이터를 한 프로젝트에서 처리하는 고정확도 3D 처리. 1개월 라이선스.", "chips": ["Standard 플랜", "포인트 클라우드 · 메시", "DSM · 정사영상", "드론 · 모바일 · LiDAR 통합", "1개월 라이선스"], "badges": [{"text": "Pix4D 소프트웨어 (스위스)"}, {"text": "라이선스 · 설치 문의", "href": "https://www.drone-box.co.kr/board/popup_goods_board_write.php?mode=write&bdId=goodsqa&goodsNo=1000001466&orderGoodsNo=0"}, {"text": "기관·기업 납품서류 발급"}], "box": [], "ship": ""};
+var S_INTRO="font-size:13.5px;color:#333D4B;line-height:1.65;margin:0 0 8px;",
+S_CHIPS="display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px;",
+S_CHIP="font-size:12px;background:#F2F4F6;color:#333D4B;border-radius:999px;padding:4px 10px;line-height:1.4;",
+S_BADGES="display:flex;flex-wrap:wrap;gap:5px;margin:0 0 10px;",
+S_BADGE="font-size:11.5px;border:1px solid #D6E4FF;color:#1B64DA;background:#F2F6FF;border-radius:6px;padding:3px 8px;font-weight:600;line-height:1.4;text-decoration:none;white-space:nowrap;",
+S_FOLD="font-size:13px;color:#4E5968;border:1px dashed #D1D6DB;border-radius:8px;padding:9px 12px;margin:10px 0 4px;cursor:pointer;line-height:1.6;",
+S_FOLD_B="color:#191F28;font-weight:700;";
+function el(tag,html){var d=document.createElement(tag);if(html!=null)d.innerHTML=html;return d;}
+function introHtml(){var chips=D.chips.map(function(c){return '<span style="'+S_CHIP+'">'+c+'</span>';}).join('');
+return '<p data-bdc="intro" style="'+S_INTRO+'">'+D.intro+'</p><div data-bdc="chips" style="'+S_CHIPS+'">'+chips+'</div>';}
+function badgesHtml(){return '<div data-bdc="badges" style="'+S_BADGES+'">'+D.badges.map(function(b){return b.href?'<a href="'+b.href+'" style="'+S_BADGE+'">'+b.text+'</a>':'<span style="'+S_BADGE+'">'+b.text+'</span>';}).join('')+'</div>';}
+S_LI="font-size:12.5px;color:#4E5968;line-height:1.5;padding:2px 0 2px 11px;text-indent:-11px;break-inside:avoid;margin:0;",
+S_UL="display:none;margin:8px 0 0;padding:0;list-style:none;columns:2;column-gap:20px;";
+function foldHtml(){var items=D.box.map(function(b){return '<li style="'+S_LI+'">· '+b+'</li>';}).join('');
+return '<div data-bdc="fold" style="'+S_FOLD+'"><span style="'+S_FOLD_B+'">구성품 보기 ▾</span><span style="color:#8B95A1;font-size:12px;"> &nbsp;'+D.box.length+'개</span><ul data-bdc="foldbody" style="'+S_UL+'">'+items+(D.ship?'<li style="'+S_LI+'color:#8B95A1;">'+D.ship+'</li>':'')+'</ul></div>';}
+function bindFold(f){if(f.getAttribute('data-bound'))return;f.setAttribute('data-bound','1');f.onclick=function(){var b=f.querySelector('[data-bdc="foldbody"]'),t=f.querySelector('span');var open=b.style.display!=='none';b.style.display=open?'none':'block';t.textContent=open?'구성품 보기 ▾':'구성품 접기 ▴';};}
+var S_ROW=";clear:both;float:left;width:100%;box-sizing:border-box;";
+function css(){if(document.querySelector('style[data-bdc="css"]'))return;var s=document.createElement('style');s.setAttribute('data-bdc','css');
+s.textContent='.item_detail_tit, .item_detail_tit *{word-break:keep-all !important;overflow-wrap:normal !important;} .item_detail_list > dl{padding-top:3px !important;} .item_detail_list dt{width:100px !important;} .item_detail_list dd{width:400px !important;} .item_detail_list > dl > dt,.item_detail_list > dl > dd{line-height:20px !important;} .item_detail_list .item_delivery dd .delivery-detail{line-height:20px;} .item_detail_list [data-bdc="fold"]{margin:4px 0 0 !important;padding:6px 12px !important;}';document.head.appendChild(s);}
+function pc(){var list=document.querySelector('.item_detail_list');if(!list)return;css();
+if(!list.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText+=S_ROW;list.insertBefore(w,list.firstChild);}
+var dv=list.querySelector('.item_delivery');
+if(D.box&&D.box.length&&!list.querySelector('[data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;f.style.cssText+=S_ROW;if(dv&&dv.nextSibling)dv.parentNode.insertBefore(f,dv.nextSibling);else list.appendChild(f);}
+var fd=list.querySelector('[data-bdc="fold"]');if(fd)bindFold(fd);}
+function mo(){var top=document.querySelector('.detail_info_top');if(!top)return;
+var pb=top.querySelector('.price_box');
+if(pb&&!top.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText='padding:8px 0 4px;';var sub=pb.querySelector('.detail_sub_info');if(sub)pb.insertBefore(w,sub);else pb.appendChild(w);}
+var sub2=document.querySelector('.detail_sub_info');
+if(D.box&&D.box.length&&sub2&&!document.querySelector('[data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;sub2.parentNode.insertBefore(f,sub2.nextSibling);}
+var fd=document.querySelector('[data-bdc="fold"]');if(fd)bindFold(fd);}
+function fix(){try{pc();}catch(e){}try{mo();}catch(e){}}
+function start(){fix();try{new MutationObserver(function(){fix();}).observe(document.body,{childList:true,subtree:true});}catch(e){}
+var n=0,t=setInterval(function(){fix();if(++n>40)clearInterval(t);},500);}
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',start);}else{start();}
+})();</script>
+<style>\r\n    /* 상세페이지 컨테이너 리셋 및 중앙 정렬 */\r\n    .pix4d-detail-container {\r\n        max-width: 860px; /* PC 환경 권장 최대 가로폭 */\r\n        margin: 0 auto;\r\n        padding: 0;\r\n        background-color: #1a1b20; /* 최상단 이미지 배경색과 연결되는 베이스 컬러 */\r\n        text-align: center;\r\n        overflow: hidden;\r\n        font-family: \'Noto Sans KR\', \'Malgun Gothic\', sans-serif;\r\n    }\r\n\r\n    /* 이미지 공백 완벽 제거 및 반응형 크기 조절 */\r\n    .pix4d-detail-container img {\r\n        width: 100%;\r\n        max-width: 100%;\r\n        height: auto;\r\n        display: block;\r\n        margin: 0;\r\n        padding: 0;\r\n        border: none;\r\n        vertical-align: top;\r\n    }\r\n\r\n    /* 플랜 비교 표 섹션 스타일 */\r\n    .plan-section {\r\n        background-color: #ffffff;\r\n        padding: 60px 20px;\r\n        text-align: left;\r\n    }\r\n\r\n    .plan-title {\r\n        font-size: 28px;\r\n        font-weight: 800;\r\n        color: #1a1b20;\r\n        margin-bottom: 40px;\r\n        text-align: center;\r\n    }\r\n\r\n    .plan-table-wrapper {\r\n        display: flex;\r\n        gap: 20px;\r\n        align-items: stretch;\r\n    }\r\n\r\n    .plan-card {\r\n        flex: 1;\r\n        background-color: #f9fbfb;\r\n        border: 1px solid #e0e5e7;\r\n        border-radius: 8px;\r\n        padding: 30px 20px;\r\n        display: flex;\r\n        flex-direction: column;\r\n    }\r\n\r\n    .plan-card-header {\r\n        font-size: 24px;\r\n        font-weight: 800;\r\n        color: #1a1b20;\r\n        margin-bottom: 15px;\r\n        border-bottom: 2px solid #b2d600; /* PIX4D 포인트 컬러 */\r\n        padding-bottom: 10px;\r\n    }\r\n\r\n    .plan-desc {\r\n        font-size: 14px;\r\n        color: #4a4a4a;\r\n        line-height: 1.6;\r\n        margin-bottom: 25px;\r\n        min-height: 80px; /* PC 환경에서 설명 박스 높이 통일 */\r\n    }\r\n\r\n    .plan-features-title {\r\n        font-size: 15px;\r\n        font-weight: 700;\r\n        color: #1a1b20;\r\n        margin-bottom: 15px;\r\n        display: flex;\r\n        align-items: center;\r\n        gap: 5px;\r\n    }\r\n\r\n    .plan-features-title::before {\r\n        content: \'⊕\';\r\n        font-size: 14px;\r\n    }\r\n\r\n    .plan-features {\r\n        list-style: none;\r\n        padding: 0;\r\n        margin: 0;\r\n        flex-grow: 1;\r\n    }\r\n\r\n    .plan-features li {\r\n        position: relative;\r\n        padding-left: 24px;\r\n        margin-bottom: 12px;\r\n        font-size: 14px;\r\n        color: #333333;\r\n        line-height: 1.5;\r\n        word-break: keep-all;\r\n    }\r\n\r\n    .plan-features li::before {\r\n        content: \'✔\';\r\n        position: absolute;\r\n        left: 0;\r\n        top: 0;\r\n        background-color: #1a1b20;\r\n        color: #ffffff;\r\n        font-size: 10px;\r\n        width: 16px;\r\n        height: 16px;\r\n        display: flex;\r\n        align-items: center;\r\n        justify-content: center;\r\n        border-radius: 3px;\r\n    }\r\n\r\n    /* 모바일 반응형 처리 */\r\n    @media (max-width: 768px) {\r\n        .plan-table-wrapper {\r\n            flex-direction: column;\r\n        }\r\n        .plan-desc {\r\n            min-height: auto; /* 모바일에서는 고정 높이 해제 */\r\n        }\r\n    }\r\n</style>\r\n\r\n\r\n\r\n<div class=\"pix4d-detail-container\">\r\n    \r\n    <!-- Section 1: Intro & Recommendation -->\r\n    <img src=\"https://res.cloudinary.com/dpchtcord/image/upload/v1777860054/01_matictop_kqjis0.jpg\" alt=\"Pix4Dmatic 이런 분들께 추천 드립니다! Pix4Dmapper에서 7,000장 이상의 대용량 사진을 맵핑할 때, 프로그램 자체가 무겁기 때문에 빠르게 작업이 완료 되지 않는 경우가 있습니다. Pix4Dmatic은 7,000장 이상의 대용량 사진을 빠르게 맵핑 하고 싶을 때 최적의 성능을 보여줍니다.\">\r\n    \r\n    <!-- Section 2: Core Features & Grid -->\r\n    <img src=\"https://res.cloudinary.com/dpchtcord/image/upload/v1777860055/02_shop1_134916_yl4rrd.jpg\" alt=\"대형 프로젝트 전용 사진측량 소프트웨어. 새로운 규모의 정확하고 빠른 드론 매핑. 더 큰 데이터세트와 정확한 결과물, 처리과정 간소화, 통합 워크플로우 지원. 아주 짧은 시간으로 정확한 데이터를 생성하다: 밀집 포인트 클라우드, Pix4Dsurvey와 함께 효율적인 작업, Orthomosaic, Digital surface model (DSM) 생성.\">\r\n    \r\n    <!-- Section 3: Detailed Specifications Table -->\r\n    <img src=\"https://res.cloudinary.com/dpchtcord/image/upload/v1777860055/03_ocr340.jpg\" alt=\"Pix4Dmatic 1.0 특장점 리스트. 입력 데이터 지원 (항공 이미지, 다중 카메라, 지상 기준점(GCP), 지오이드 지원). 프로세싱 (CPU+GPU 멀티 프로세서 속도 극대화, 카메라 파라미터 최적화, 밀집 포인트 클라우드 생성). rayCloud 프로젝트 시각화. 내보내기 형식 (.las, .bpc, .p4m). 영어 언어 옵션 지원.\">\r\n         \r\n    <!-- Section 4: Plan Descriptions (새로 추가된 섹션) -->\r\n    <div class=\"plan-section\">\r\n        <h2 class=\"plan-title\">플랜별 설명</h2>\r\n        <div class=\"plan-table-wrapper\">\r\n            \r\n            <!-- Analyst Plan -->\r\n            <div class=\"plan-card\">\r\n                <div class=\"plan-card-header\">Analyst</div>\r\n                <div class=\"plan-desc\">\r\n                    지형 및 CAD 워크플로, 자동 벡터화 기능. CAD 작업에 바로 사용할 수 있는 데이터가 필요한 전문가에게 이상적입니다.\r\n                </div>\r\n                <div class=\"plan-features-title\">포함내용</div>\r\n                <ul class=\"plan-features\">\r\n                    <li>통합 CAD 추출</li>\r\n                    <li>지형 분류</li>\r\n                    <li>Grid of points</li>\r\n                    <li>TIN</li>\r\n                    <li>DTM(디지털 지형 모델)</li>\r\n                    <li>등고선</li>\r\n                </ul>\r\n            </div>\r\n\r\n            <!-- Standard Plan -->\r\n            <div class=\"plan-card\">\r\n                <div class=\"plan-card-header\">Standard</div>\r\n                <div class=\"plan-desc\">\r\n                    높은 정확도의 3D 처리. 지도 제작 및 지리 공간 문서화에 이상적입니다.\r\n                </div>\r\n                <div class=\"plan-features-title\">포함내용</div>\r\n                <ul class=\"plan-features\">\r\n                    <li>드론, 모바일, LiDAR 데이터 처리를 하나의 프로젝트에 통합했습니다.</li>\r\n                    <li>지리 참조</li>\r\n                    <li>구경 측정</li>\r\n                    <li>포인트 클라우드 생성</li>\r\n                    <li>Mesh(망사)</li>\r\n                    <li>DSM(디지털 표면 모델)</li>\r\n                    <li>정사영상 및 정사평면</li>\r\n                </ul>\r\n            </div>\r\n\r\n            <!-- PRO Plan -->\r\n            <div class=\"plan-card\">\r\n                <div class=\"plan-card-header\">PRO</div>\r\n                <div class=\"plan-desc\">\r\n                    엔드투엔드 지리공간 및 CAD 워크플로우. 이미지를 정밀한 3D 데이터와 CAD 작업에 바로 사용할 수 있는 벡터로 변환하는 데 이상적입니다.\r\n                </div>\r\n                <div class=\"plan-features-title\">포함내용</div>\r\n                <ul class=\"plan-features\">\r\n                    <li>단일 플랫폼에서 공간정보 및 CAD 워크플로우를 처음부터 끝까지 구현합니다.</li>\r\n                    <li>완전히 통합된 데이터 모델 및 프로젝트 구조</li>\r\n                </ul>\r\n            </div>\r\n\r\n        </div>\r\n    </div>\r\n\r\n</div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+</goods_data>
+</data>
