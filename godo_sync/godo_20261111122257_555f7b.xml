@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000001577</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI AS2 스피커 Matrice 5T 매트리스 5T 드론 방송 스피커 400m</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002|002019|002019008003|002019008</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>url</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>g</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>6</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>y</externalVideoFl>
+<detailInfoDelivery>002002</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<goodsPrice>481800.00</goodsPrice>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<script data-bd="cpanel">(function(){
+var D={"intro": "Matrice 5T 하부에 다는 스피커. 1m 거리 120dB, 유효 방송 거리 400m, 글자 읽어 주기(TTS)·실시간 방송·반복 재생, IP55.", "chips": ["120dB @1m", "유효 방송 거리 400m", "TTS · 실시간 방송 · 반복 재생", "통합 경고등", "최대 35W", "194g", "IP55", "Matrice 5T 호환"], "badges": [{"text": "DJI 정품"}, {"text": "국내 A/S 접수"}, {"text": "기관·기업 납품서류 발급"}], "box": [], "ship": ""};
+var S_INTRO="font-size:13.5px;color:#333D4B;line-height:1.65;margin:0 0 8px;",
+S_CHIPS="display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px;",
+S_CHIP="font-size:12px;background:#F2F4F6;color:#333D4B;border-radius:999px;padding:4px 10px;line-height:1.4;",
+S_BADGES="display:flex;flex-wrap:wrap;gap:5px;margin:0 0 10px;",
+S_BADGE="font-size:11.5px;border:1px solid #D6E4FF;color:#1B64DA;background:#F2F6FF;border-radius:6px;padding:3px 8px;font-weight:600;line-height:1.4;text-decoration:none;white-space:nowrap;",
+S_FOLD="font-size:13px;color:#4E5968;border:1px dashed #D1D6DB;border-radius:8px;padding:9px 12px;margin:10px 0 4px;cursor:pointer;line-height:1.6;",
+S_FOLD_B="color:#191F28;font-weight:700;";
+function el(tag,html){var d=document.createElement(tag);if(html!=null)d.innerHTML=html;return d;}
+function introHtml(){var chips=D.chips.map(function(c){return '<span style="'+S_CHIP+'">'+c+'</span>';}).join('');
+return '<p data-bdc="intro" style="'+S_INTRO+'">'+D.intro+'</p><div data-bdc="chips" style="'+S_CHIPS+'">'+chips+'</div>';}
+function badgesHtml(){return '<div data-bdc="badges" style="'+S_BADGES+'">'+D.badges.map(function(b){return b.href?'<a href="'+b.href+'" style="'+S_BADGE+'">'+b.text+'</a>':'<span style="'+S_BADGE+'">'+b.text+'</span>';}).join('')+'</div>';}
+S_LI="font-size:12.5px;color:#4E5968;line-height:1.5;padding:2px 0 2px 11px;text-indent:-11px;break-inside:avoid;margin:0;",
+S_UL="display:none;margin:8px 0 0;padding:0;list-style:none;columns:2;column-gap:20px;";
+function foldHtml(){var items=D.box.map(function(b){return '<li style="'+S_LI+'">· '+b+'</li>';}).join('');
+return '<div data-bdc="fold" style="'+S_FOLD+'"><span style="'+S_FOLD_B+'">구성품 보기 ▾</span><span style="color:#8B95A1;font-size:12px;"> &nbsp;'+D.box.length+'개</span><ul data-bdc="foldbody" style="'+S_UL+'">'+items+(D.ship?'<li style="'+S_LI+'color:#8B95A1;">'+D.ship+'</li>':'')+'</ul></div>';}
+function bindFold(f){if(f.getAttribute('data-bound'))return;f.setAttribute('data-bound','1');f.onclick=function(){var b=f.querySelector('[data-bdc="foldbody"]'),t=f.querySelector('span');var open=b.style.display!=='none';b.style.display=open?'none':'block';t.textContent=open?'구성품 보기 ▾':'구성품 접기 ▴';};}
+var S_ROW=";clear:both;float:left;width:100%;box-sizing:border-box;";
+function css(){if(document.querySelector('style[data-bdc="css"]'))return;var s=document.createElement('style');s.setAttribute('data-bdc','css');
+s.textContent='.item_detail_tit, .item_detail_tit *{word-break:keep-all !important;overflow-wrap:normal !important;} .item_detail_list > dl{padding-top:3px !important;} .item_detail_list dt{width:100px !important;} .item_detail_list dd{width:400px !important;} .item_detail_list > dl > dt,.item_detail_list > dl > dd{line-height:20px !important;} .item_detail_list .item_delivery dd .delivery-detail{line-height:20px;} .item_detail_list [data-bdc="fold"]{margin:4px 0 0 !important;padding:6px 12px !important;}';document.head.appendChild(s);}
+function pc(){var list=document.querySelector('.item_detail_list');if(!list)return;css();
+if(!list.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText+=S_ROW;list.insertBefore(w,list.firstChild);}
+var dv=list.querySelector('.item_delivery');
+if(D.box&&D.box.length&&!list.querySelector('[data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;f.style.cssText+=S_ROW;if(dv&&dv.nextSibling)dv.parentNode.insertBefore(f,dv.nextSibling);else list.appendChild(f);}
+var fd=list.querySelector('[data-bdc="fold"]');if(fd)bindFold(fd);}
+function mo(){var top=document.querySelector('.detail_info_top');if(!top)return;
+var pb=top.querySelector('.price_box');
+if(pb&&!top.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText='padding:8px 0 4px;';var sub=pb.querySelector('.detail_sub_info');if(sub)pb.insertBefore(w,sub);else pb.appendChild(w);}
+var sub2=document.querySelector('.detail_sub_info');
+if(D.box&&D.box.length&&sub2&&!document.querySelector('[data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;sub2.parentNode.insertBefore(f,sub2.nextSibling);}
+var fd=document.querySelector('[data-bdc="fold"]');if(fd)bindFold(fd);}
+function fix(){try{pc();}catch(e){}try{mo();}catch(e){}}
+function start(){fix();try{new MutationObserver(function(){fix();}).observe(document.body,{childList:true,subtree:true});}catch(e){}
+var n=0,t=setInterval(function(){fix();if(++n>40)clearInterval(t);},500);}
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',start);}else{start();}
+})();</script>
+<script data-bdinfo="v1">(function(){function run(){var L=document.querySelector('.item_detail_list');if(!L||L.querySelector('dl[data-bdinfo]'))return;var ref=null,model=null;L.querySelectorAll('dl').forEach(function(d){var t=d.querySelector('dt');if(!t)return;var s=t.textContent.trim();if(s==='배송비')ref=d;if(s==='모델명'&&!d.getAttribute('data-bdq'))model=d;});if(model)model.style.display='none';var rows='<dt>제조사</dt><dd>DJI (공식 수입상품)</dd>|<dt>구매서류</dt><dd>공공기관 · 학교 · 기업체 납품서류 가능</dd>|<dt>기술지원</dt><dd>드론박스 A/S센터 및 DJI공식센터 가능</dd>|<dt>구매시 방문 납품</dt><dd>초기세팅 및 사용법 교육</dd>|<dt>고객센터</dt><dd>드론박스 070-7811-4422</dd>'.split('|');var after=ref;rows.forEach(function(r){var d=document.createElement('dl');d.setAttribute('data-bdinfo','1');d.innerHTML=r;if(after&&after.parentNode){after.parentNode.insertBefore(d,after.nextSibling);after=d;}else{L.appendChild(d);}});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}else{run();}})();</script>
+<!-- bd-m5acc-as2 v1 드론박스 -->
+<style>
+.p4pw-card, .p4pw-step { transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease, background .22s ease; }
+.p4pw-card:hover, .p4pw-step:hover { transform: translateY(-4px); box-shadow: 0 10px 24px rgba(25,31,40,.10); border-color: #2F7DF6 !important; background: #FFFFFF !important; }
+.p4pw-card:hover > p:first-child, .p4pw-step:hover > p:first-child { color: #2F7DF6 !important; }
+.p4pw-faq { transition: background .2s ease; border-radius: 8px; padding: 6px 8px; margin: 0 -8px 12px; }
+.p4pw-faq:hover { background: #F2F6FF; }
+@media (hover: none) { .p4pw-card:hover, .p4pw-step:hover { transform: none; box-shadow: none; } }
+</style>
+<div style="background:#FFFFFF; color:#191F28; color-scheme:light only;"><div style="max-width:1000px; margin:0 auto; padding:0; font-family:inherit; color:#191F28; background:#FFFFFF; line-height:1.7;">
+<p style="margin:0; text-align:center; line-height:0;"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261110/25d4d5e1ef7e0906ce73014e3050ae5d.jpg" alt="DJI Matrice 5T 하부에 장착된 DJI AS2 스피커" style="max-width:100%; width:100%; display:block; margin:0 auto;"></p>
+<p style="font-size:14px; color:#4E5968; margin:0 0 6px;">DJI 정품 판매점 <b>드론박스</b> · Matrice 5T 액세서리</p><h2 style="font-size:24px; font-weight:700; margin:0 0 12px; color:#191F28;">DJI AS2 스피커 Matrice 5T 드론 방송 스피커 400m 120dB</h2><div style="height:12px;"></div>
+<div itemscope itemtype="https://schema.org/Article" style="margin:0 0 8px; padding:24px 20px 10px; border:1px solid #E3E6EB; border-radius:12px; background:#FFFFFF;"><h3 itemprop="headline" style="font-size:21px; font-weight:700; margin:32px 0 14px; padding-bottom:8px; border-bottom:2px solid #E3E6EB; color:#191F28; margin-top:0;">DJI AS2 스피커</h3><div itemprop="articleBody"><p style="font-size:15px; color:#333D4B; margin:0 0 10px; line-height:1.75;">DJI Matrice 5T 하부에 장착하는 정품 스피커입니다. 1m 거리 120dB, 유효 방송 거리 400m로 수색·구조 안내와 질서 유지 방송을 공중에서 보냅니다.</p><p style="font-size:15px; color:#333D4B; margin:0 0 10px; line-height:1.75;">문자를 음성으로 바꾸는 TTS, 조종기 마이크 실시간 방송, 파일 반복 재생을 지원하고 경고등이 함께 들어 있어 야간 안내에도 쓸 수 있습니다. AL2 스포트라이트와 같이 달면 조명·방송을 한 번에 처리합니다.</p></div></div>
+<p style="margin:0; text-align:center; line-height:0;"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261110/aa2db711f6fdf633c34d30881eaea28a.jpg" alt="DJI AS2 스피커 장착 모습 (다른 각도)" style="max-width:100%; width:100%; display:block; margin:0 auto;"></p>
+<div itemscope itemtype="https://schema.org/Article" style="margin:0 0 8px; padding:24px 20px 10px; border:1px solid #E3E6EB; border-radius:12px; background:#FFFFFF;"><h3 itemprop="headline" style="font-size:21px; font-weight:700; margin:32px 0 14px; padding-bottom:8px; border-bottom:2px solid #E3E6EB; color:#191F28; margin-top:0;">사양 (DJI 공식)</h3><div itemprop="articleBody"><div style="overflow-x:auto;"><table style="border-collapse:collapse; width:100%;">
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">호환</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">DJI Matrice 5T (기체 하부 E 포트 장착)</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">무게</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">194g</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">최대 전력</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">35W</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">최대 음량</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">120dB @1m</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">유효 방송 거리</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">400m</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">방송 기능</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">텍스트 음성 변환(TTS) · 실시간 방송 · 반복 재생 · 통합 경고등</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">방진방수</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">IP55</td></tr>
+</table></div><p style="font-size:13px; color:#8B95A1; margin:10px 0 0;">수치는 DJI 공식 사양(enterprise.dji.com/kr) 기준이며 환경·펌웨어에 따라 달라질 수 있습니다.</p></div></div>
+<p style="margin:0; text-align:center; line-height:0;"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261110/e62d41f394b6ee6d6178bd6e8a53326b.jpg" alt="운반 케이스 위의 DJI Matrice 5T와 AL2 스포트라이트·AS2 스피커" style="max-width:100%; width:100%; display:block; margin:0 auto;"></p>
+<p style="font-size:13px; color:#8B95A1; margin:6px 0 0; text-align:center;">사진은 DJI 공식 자료이며 장착 모습·구성 장면을 포함합니다. 실제 구성은 품목 기준입니다.</p>
+<div style="margin:0 0 8px; padding:24px 20px 10px; border:1px solid #E3E6EB; border-radius:12px; background:#FFFFFF;"><h3 style="font-size:21px; font-weight:700; margin:32px 0 14px; padding-bottom:8px; border-bottom:2px solid #E3E6EB; color:#191F28; margin-top:0;">FAQ</h3><div itemscope itemtype="https://schema.org/FAQPage">
+<div class="p4pw-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom:18px;"><p itemprop="name" style="font-weight:700; font-size:16px; margin:0 0 6px; color:#191F28;">Q. Matrice 5TD용 AS2D·Matrice 4용 AS1와 같이 쓸 수 있나요?</p><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-size:15px; color:#333D4B; margin:0; line-height:1.7;">A. 아닙니다. DJI Matrice 5T 전용 품목이며 Matrice 5TD용 AS2D·Matrice 4용 AS1과는 호환되지 않습니다.</p></div></div>
+<div class="p4pw-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom:18px;"><p itemprop="name" style="font-weight:700; font-size:16px; margin:0 0 6px; color:#191F28;">Q. 비행시간에 영향이 있나요?</p><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-size:15px; color:#333D4B; margin:0; line-height:1.7;">A. 액세서리를 달면 무게가 늘어 비행시간이 줄어듭니다. Matrice 5T 최대 페이로드는 400g이며 AS2(194g)와 AL2(175g)를 함께 달 수 있습니다.</p></div></div>
+<div class="p4pw-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom:18px;"><p itemprop="name" style="font-weight:700; font-size:16px; margin:0 0 6px; color:#191F28;">Q. 어디서나 써도 되나요?</p><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-size:15px; color:#333D4B; margin:0; line-height:1.7;">A. 음량이 매우 크므로 소음에 민감한 도심·주거지 근처에서는 사용을 자제하고, 지역 규정을 확인하세요.</p></div></div>
+<div class="p4pw-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom:18px;"><p itemprop="name" style="font-weight:700; font-size:16px; margin:0 0 6px; color:#191F28;">Q. 정품인가요?</p><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-size:15px; color:#333D4B; margin:0; line-height:1.7;">A. 드론박스는 DJI 정품만 판매합니다. 문의는 상품 문의 게시판으로 남겨 주세요.</p></div></div>
+</div></div>
+<p style="font-size:13px; color:#8B95A1; margin:20px 0 14px; text-align:center;">드론박스는 DJI 정품만 판매합니다 · 문의는 상품 문의 게시판 · 사양·사진은 DJI 자료(enterprise.dji.com/kr)</p>
+</div></div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+</goods_data>
+</data>
