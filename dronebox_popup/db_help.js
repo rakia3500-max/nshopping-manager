@@ -4,7 +4,7 @@
    D: 휴대폰 상세·장바구니·주문·로그인 화면에서 '상담하기' 단추를 작은 동그라미로, 구매 단추 위쪽으로
    E: 장바구니 5만 원 미만이면 "○원 더 담으면 무료배송" 안내
    X: 비어 있는 '검수상품보기' 링크, 깨진 옛 쿠폰 그림(210831coupon.jpg) 숨김
-   Q(11-12): 비회원이 상품문의 쓰기를 누르면 [카톡 문의][로그인하고 글][전화] 작은 창, 문의 0건 칸에도 단추 (PC·휴대폰)
+   Q(11-12): 비회원이 상품문의 쓰기를 누르면 아래에서 올라오는 시트(B안) [카톡][로그인하고 글][전화], 문의 0건 칸은 자주 묻는 질문 3개+카톡(나안)
    R(11-12): 경로 글자 — 상세 'HOME'(#)과 펼쳐지지 않는 분류 이름을 실제 목록 주소로 (PC·휴대폰)
    개인정보·쿠키를 읽거나 밖으로 보내지 않음. 화면 글자·배치만 바꿈. 빼면 원래대로. */
 (function () {
@@ -88,21 +88,36 @@
     if (document.getElementById('dbh-css2')) return;
     var c = document.createElement('style'); c.id = 'dbh-css2';
     c.textContent =
-      '.dbh-qa{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;align-items:center;padding:6px 0}.dbh-qa p{width:100%;margin:0 0 4px;color:#4E5968;font-size:14px}' +
-      '.dbh-qb{display:inline-flex;align-items:center;gap:6px;padding:10px 16px;border-radius:6px;font-size:14px;font-weight:700;text-decoration:none;cursor:pointer;border:1.5px solid #1C88CB;background:#fff;color:#1C88CB!important}' +
+      /* 나: 문의 0건 칸 — 자주 묻는 질문 3개(누르면 답 펼침) + 카톡 단추 */
+      '.dbh-faq{max-width:620px;margin:0 auto;padding:4px 0 6px;text-align:left}.dbh-faq p.h{margin:0 0 8px;text-align:center;color:#4E5968;font-size:14px}' +
+      '.dbh-faq details{border:1px solid #E5E8EB;border-radius:8px;margin:6px 0;background:#fff}.dbh-faq summary{list-style:none;cursor:pointer;padding:11px 14px;font-size:14px;color:#333D4B;display:flex;justify-content:space-between;gap:10px}' +
+      '.dbh-faq summary::-webkit-details-marker{display:none}.dbh-faq summary:after{content:"+";color:#8B95A1;font-weight:700}.dbh-faq details[open] summary:after{content:"−"}' +
+      '.dbh-faq details div{padding:0 14px 12px;font-size:13.5px;line-height:1.6;color:#4E5968}' +
+      '.dbh-faq .r{display:flex;gap:8px;justify-content:center;margin-top:10px;flex-wrap:wrap}' +
+      '.dbh-qb{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:10px 16px;border-radius:6px;font-size:14px;font-weight:700;text-decoration:none;cursor:pointer;border:1.5px solid #1C88CB;background:#fff;color:#1C88CB!important}' +
       '.dbh-qb.k{background:#FEE500;border-color:#FEE500;color:#191F28!important}' +
-      '.dbh-ly{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:100000;display:flex;align-items:center;justify-content:center;padding:16px}' +
-      '.dbh-ly .in{background:#fff;border-radius:12px;max-width:340px;width:100%;padding:20px 18px 16px;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.2)}' +
-      '.dbh-ly h4{margin:0 0 6px;font-size:17px;color:#191F28}.dbh-ly p{margin:0 0 14px;font-size:13.5px;color:#4E5968;line-height:1.5}' +
-      '.dbh-ly .dbh-qb{display:flex;justify-content:center;width:100%;box-sizing:border-box;margin-top:8px}.dbh-ly .x{margin-top:10px;font-size:13px;color:#8B95A1;background:none;border:0;cursor:pointer}';
+      /* B: 아래에서 올라오는 시트(PC는 가운데 카드) */
+      '.dbh-ly{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:100000;display:flex;align-items:flex-end;justify-content:center}' +
+      '.dbh-ly .in{background:#fff;width:100%;max-width:480px;border-radius:16px 16px 0 0;padding:10px 16px 18px;box-sizing:border-box;animation:dbhUp .22s ease-out}' +
+      '@keyframes dbhUp{from{transform:translateY(40px);opacity:0}to{transform:none;opacity:1}}' +
+      '@media (min-width:768px){.dbh-ly{align-items:center}.dbh-ly .in{border-radius:14px;max-width:400px}.dbh-ly .grab{display:none}}' +
+      '.dbh-ly .grab{width:40px;height:4px;border-radius:2px;background:#D1D6DB;margin:0 auto 12px}' +
+      '.dbh-ly h4{margin:0 0 2px;font-size:17px;color:#191F28}.dbh-ly .sub{margin:0 0 8px;font-size:13px;color:#6B7684;line-height:1.5}' +
+      '.dbh-li{display:flex;align-items:center;gap:12px;padding:13px 4px;border-top:1px solid #F2F4F6;text-decoration:none;color:#191F28!important;cursor:pointer}' +
+      '.dbh-li i{flex:0 0 36px;width:36px;height:36px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-style:normal;font-size:13px;font-weight:800;background:#EAF6FC;color:#1C88CB}' +
+      '.dbh-li i.k{background:#FEE500;color:#3C1E1E}.dbh-li b{display:block;font-size:15px}.dbh-li small{display:block;font-size:12px;color:#8B95A1;margin-top:1px}.dbh-li .go{margin-left:auto;color:#B0B8C1;font-size:18px}' +
+      '.dbh-ly .x{display:block;width:100%;margin-top:6px;padding:10px;font-size:14px;color:#8B95A1;background:none;border:0;cursor:pointer}';
     (document.head || document.documentElement).appendChild(c);
   }
   function kakao() { try { if (typeof kakaoChatStart === 'function') { kakaoChatStart(); return; } } catch (e) {} location.href = 'tel:' + TEL; }
-  function qaLayer(goWrite) {
+  function qaLayer(goWrite) {                                     // 2026-11-12 사장님 B안: 아래에서 올라오는 시트
     var ly = document.createElement('div'); ly.className = 'dbh-ly';
-    ly.innerHTML = '<div class="in"><h4>상품 문의하기</h4><p>글로 남기는 상품문의는 회원만 쓸 수 있어요.<br>로그인 없이 카톡으로 바로 물어보세요.</p>' +
-      '<a class="dbh-qb k" data-a="k">카톡으로 바로 문의</a><a class="dbh-qb" data-a="w">로그인하고 글 남기기</a>' +
-      '<a class="dbh-qb" href="tel:' + TEL + '">전화 ' + TEL + '</a><button type="button" class="x" data-a="x">닫기</button></div>';
+    ly.innerHTML = '<div class="in" role="dialog" aria-label="상품 문의 방법"><div class="grab"></div><h4>어떻게 물어볼까요?</h4>' +
+      '<p class="sub">글로 남기는 상품문의는 회원만 쓸 수 있어요. 카톡·전화는 로그인 없이 바로 돼요.</p>' +
+      '<a class="dbh-li" data-a="k"><i class="k">톡</i><span><b>카톡으로 바로 문의</b><small>평일 9~18시 · 로그인 필요 없음</small></span><span class="go">›</span></a>' +
+      '<a class="dbh-li" data-a="w"><i>글</i><span><b>로그인하고 글 남기기</b><small>답변이 상품 페이지에 남아요</small></span><span class="go">›</span></a>' +
+      '<a class="dbh-li" href="tel:' + TEL + '"><i>전</i><span><b>전화 ' + TEL + '</b><small>평일 09:00~18:00 (점심 12~13시)</small></span><span class="go">›</span></a>' +
+      '<button type="button" class="x" data-a="x">닫기</button></div>';
     ly.addEventListener('click', function (e) {
       var a = e.target.closest('[data-a]'); if (!a && e.target !== ly) return;
       var k = a ? a.getAttribute('data-a') : 'x';
@@ -112,6 +127,11 @@
     });
     document.body.appendChild(ly);
   }
+  var FAQ = [                                                       // 답은 드론박스 상품정보·배송안내 문구 그대로
+    ['정품인가요? A/S는 어디서 받나요?', 'DJI 공식 수입 정품만 판매합니다. 고장·수리는 드론박스 A/S센터와 DJI 공식센터에서 받으실 수 있어요.'],
+    ['오늘 주문하면 언제 보내 주나요?', '공휴일을 제외하고 오후 3시 이전 주문은 당일 발송합니다. 받으시는 날은 택배사 사정에 따라 하루 이상 더 걸릴 수 있어요.'],
+    ['기관·기업 납품 서류도 되나요?', '공공기관·학교·기업체 납품 서류를 발급해 드려요. 필요한 서류는 카톡이나 전화로 말씀해 주세요.']
+  ];
   function qaHelp() {
     if (path.indexOf('goods_view') < 0) return;
     css2();
@@ -125,14 +145,16 @@
         qaLayer(function () { location.href = (mob ? '/member/login.php?returnUrl=' : '../member/login.php?returnUrl=') + nx; });
       }, true);
     }
-    var fill = function () {                                       // 문의 0건 칸 — 글자만 있던 자리에 단추
+    var fill = function () {                                       // 나안: 문의 0건 칸 — 자주 묻는 질문 먼저
       var nd = document.querySelector('#ajax-goods-goodsqa-list .no_data');
-      if (!nd || nd.querySelector('.dbh-qa')) return;
-      nd.innerHTML = '<div class="dbh-qa"><p>아직 문의가 없어요. 궁금한 점을 편하게 물어보세요.</p>' +
-        '<a class="dbh-qb k" href="#" data-k="1">카톡으로 바로 문의</a><a class="dbh-qb dbh-qw" href="#">문의 글 남기기</a></div>';
+      if (!nd || nd.querySelector('.dbh-faq')) return;
+      var h = '<div class="dbh-faq"><p class="h">아직 문의가 없어요. 많이 물어보시는 것부터 확인해 보세요.</p>';
+      FAQ.forEach(function (q) { h += '<details><summary>' + q[0] + '</summary><div>' + q[1] + '</div></details>'; });
+      h += '<div class="r"><a class="dbh-qb k" href="#" data-k="1">카톡으로 바로 문의</a><a class="dbh-qb dbh-qw" href="#">문의 글 남기기</a></div></div>';
+      nd.innerHTML = h;
       nd.querySelector('[data-k]').addEventListener('click', function (e) { e.preventDefault(); kakao(); });
       nd.querySelector('.dbh-qw').addEventListener('click', function (e) {
-        if (guest()) return;                                        // 비회원은 위 가로채기가 작은 창을 띄움
+        if (guest()) return;                                        // 비회원은 위 가로채기가 시트를 띄움
         e.preventDefault(); var w = document.querySelector('a.btn_qna_write'); if (w) w.click();
       });
     };
