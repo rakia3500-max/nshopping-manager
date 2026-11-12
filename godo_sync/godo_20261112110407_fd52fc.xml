@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000000660</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI U10 메탄 가스 감지기 Methane Gas Detector (견적상품)</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002020|002019|002|002019008</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>g</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<goodsPrice>10.00</goodsPrice>
+<goodsPriceString><![CDATA[견적 상담]]></goodsPriceString>
+<naverFl>y</naverFl>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<p data-bd="quote-btn" style="font-size:14px; color:#1B64DA; background:#E8F3FF; border-radius:8px; padding:10px 14px; margin:0 0 14px;">견적 상담 상품입니다. 가격·구성·납품 일정은 상품 문의 또는 전화(070-7811-4422)로 안내해 드립니다.</p>
+<script data-bd="quote-btn">(function(){
+var U="https://www.drone-box.co.kr/board/popup_goods_board_write.php?mode=write&bdId=goodsqa&goodsNo=1000000660&orderGoodsNo=0",TEL="tel:07078114422",PH="070-7811-4422";
+var S_B1="flex:1;display:block;text-align:center;background:#1B64DA;color:#fff;font-weight:700;font-size:16px;padding:15px 0;border-radius:6px;text-decoration:none;",
+S_B2="flex:1;display:block;text-align:center;background:#fff;color:#1B64DA;border:1px solid #1B64DA;font-weight:700;font-size:16px;padding:14px 0;border-radius:6px;text-decoration:none;",
+S_BADGE="display:inline-block;font-size:12.5px;font-weight:700;color:#1B64DA;background:#F2F6FF;border:1px solid #D6E4FF;border-radius:6px;padding:4px 10px;margin:0 0 8px;";
+function go(e){if(e&&e.preventDefault)e.preventDefault();window.open(U,"goodsqa","width=850,height=850,left=300,scrollbars=yes");return false;}
+function el(tag,h){var d=document.createElement(tag);if(h!=null)d.innerHTML=h;return d;}
+function badge(parent,first){if(!parent||parent.querySelector('[data-bdq2="badge"]'))return;var b=el('div','<span style="'+S_BADGE+'">견적 상담 상품 · 상담 후 구매 가능</span>');b.setAttribute('data-bdq2','badge');if(first&&parent.firstChild)parent.insertBefore(b,parent.firstChild);else parent.appendChild(b);}
+function note(dl){if(!dl||dl.querySelector('[data-bdq2="note"]'))return;var dd=dl.querySelector('dd');if(!dd)return;var s=el('div','상담 후 견적으로 진행됩니다 · 이 페이지에서 결제하셔도 발송되지 않습니다');s.setAttribute('data-bdq2','note');s.style.cssText='font-size:12px;color:#8B95A1;font-weight:400;line-height:1.5;margin-top:3px;';dd.appendChild(s);}
+function btnsHtml(){return '<div data-bdq2="btns" style="display:flex;gap:8px;"><a href="#quote" style="'+S_B1+'">견적 상담 요청</a><a href="'+TEL+'" style="'+S_B2+'">전화 '+PH+'</a></div>';}
+function pc(){var list=document.querySelector('.item_detail_list');if(!list)return;
+var cp=list.querySelector('[data-bd^="cpan"],[data-bdc="top"]');badge(list,!cp);
+var priceDl=null;list.querySelectorAll('dl').forEach(function(d){var dt=d.querySelector('dt');if(dt&&dt.textContent.trim()==='판매가'&&!priceDl)priceDl=d;});note(priceDl);
+var box=document.querySelector('.btn_choice_box.btn_restock_box')||document.querySelector('.btn_choice_box');
+if(box&&!box.querySelector('[data-bdq2="btns"]')){box.innerHTML=btnsHtml();}
+if(box){var a=box.querySelector('[data-bdq2="btns"] a');if(a)a.onclick=go;}
+document.querySelectorAll('.btn_add_soldout').forEach(function(b){if(b.closest('[data-bdq2="btns"]'))return;b.textContent='견적 상담 요청';b.disabled=false;b.removeAttribute('disabled');b.style.cssText+=';background:#1B64DA !important;border:1px solid #1B64DA !important;color:#fff !important;cursor:pointer;opacity:1;';b.onclick=go;});}
+function mo(){var top=document.querySelector('.detail_info_top');if(!top)return;var pb=top.querySelector('.price_box');if(pb)badge(pb,false);
+var sub=document.querySelector('.detail_sub_info');if(sub){sub.querySelectorAll('dl').forEach(function(d){var dt=d.querySelector('dt');if(dt&&dt.textContent.trim()==='판매가')note(d);});}
+document.querySelectorAll('.detail_prd_no_btn').forEach(function(m){if(m.getAttribute('data-quote')!=='1'||m.textContent.indexOf('견적')<0){m.textContent='견적 상담 요청';m.setAttribute('href','#quote');m.setAttribute('data-quote','1');m.style.cssText+=';background:#1B64DA !important;color:#fff !important;';m.onclick=go;}});}
+function fix(){try{pc();}catch(e){}try{mo();}catch(e){}}
+function start(){fix();try{new MutationObserver(function(){fix();}).observe(document.body,{childList:true,subtree:true});}catch(e){}
+var n=0,t=setInterval(function(){fix();if(++n>40)clearInterval(t);},500);}
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',start);}else{start();}
+})();</script>
+<script data-bd="cpanel">(function(){
+var D={"intro": "드론에 달아 최대 100m 떨어진 곳의 메탄 누출을 레이저로 찾는 가스 감지기 U10. 응답 25ms, 감지 한계 5ppm·m, 720p 카메라 내장.", "chips": ["메탄 (CH4) 감지", "감지 거리 최대 100m", "응답 25ms", "감지 한계 5ppm·m", "720p 카메라"], "badges": [{"text": "견적 · 호환 문의", "href": "https://www.drone-box.co.kr/board/popup_goods_board_write.php?mode=write&bdId=goodsqa&goodsNo=1000000660&orderGoodsNo=0"}, {"text": "기관·기업 납품서류 발급"}], "box": [], "ship": ""};
+var S_INTRO="font-size:13.5px;color:#333D4B;line-height:1.65;margin:0 0 8px;",
+S_CHIPS="display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px;",
+S_CHIP="font-size:12px;background:#F2F4F6;color:#333D4B;border-radius:999px;padding:4px 10px;line-height:1.4;",
+S_BADGES="display:flex;flex-wrap:wrap;gap:5px;margin:0 0 10px;",
+S_BADGE="font-size:11.5px;border:1px solid #D6E4FF;color:#1B64DA;background:#F2F6FF;border-radius:6px;padding:3px 8px;font-weight:600;line-height:1.4;text-decoration:none;white-space:nowrap;",
+S_FOLD="font-size:13px;color:#4E5968;border:1px dashed #D1D6DB;border-radius:8px;padding:9px 12px;margin:10px 0 4px;cursor:pointer;line-height:1.6;",
+S_FOLD_B="color:#191F28;font-weight:700;";
+function el(tag,html){var d=document.createElement(tag);if(html!=null)d.innerHTML=html;return d;}
+function introHtml(){var chips=D.chips.map(function(c){return '<span style="'+S_CHIP+'">'+c+'</span>';}).join('');
+return '<p data-bdc="intro" style="'+S_INTRO+'">'+D.intro+'</p><div data-bdc="chips" style="'+S_CHIPS+'">'+chips+'</div>';}
+function badgesHtml(){return '<div data-bdc="badges" style="'+S_BADGES+'">'+D.badges.map(function(b){return b.href?'<a href="'+b.href+'" style="'+S_BADGE+'">'+b.text+'</a>':'<span style="'+S_BADGE+'">'+b.text+'</span>';}).join('')+'</div>';}
+S_LI="font-size:12.5px;color:#4E5968;line-height:1.5;padding:2px 0 2px 11px;text-indent:-11px;break-inside:avoid;margin:0;",
+S_UL="display:none;margin:8px 0 0;padding:0;list-style:none;columns:2;column-gap:20px;";
+function foldHtml(){var items=D.box.map(function(b){return '<li style="'+S_LI+'">· '+b+'</li>';}).join('');
+return '<div data-bdc="fold" style="'+S_FOLD+'"><span style="'+S_FOLD_B+'">구성품 보기 ▾</span><span style="color:#8B95A1;font-size:12px;"> &nbsp;'+D.box.length+'개</span><ul data-bdc="foldbody" style="'+S_UL+'">'+items+(D.ship?'<li style="'+S_LI+'color:#8B95A1;">'+D.ship+'</li>':'')+'</ul></div>';}
+function bindFold(f){if(f.getAttribute('data-bound'))return;f.setAttribute('data-bound','1');f.onclick=function(){var b=f.querySelector('[data-bdc="foldbody"]'),t=f.querySelector('span');var open=b.style.display!=='none';b.style.display=open?'none':'block';t.textContent=open?'구성품 보기 ▾':'구성품 접기 ▴';};}
+var S_ROW=";clear:both;float:left;width:100%;box-sizing:border-box;";
+function css(){if(document.querySelector('style[data-bdc="css"]'))return;var s=document.createElement('style');s.setAttribute('data-bdc','css');
+s.textContent='.item_detail_tit, .item_detail_tit *{word-break:keep-all !important;overflow-wrap:normal !important;} .item_detail_list > dl{padding-top:3px !important;} .item_detail_list dt{width:100px !important;} .item_detail_list dd{width:400px !important;} .item_detail_list > dl > dt,.item_detail_list > dl > dd{line-height:20px !important;} .item_detail_list .item_delivery dd .delivery-detail{line-height:20px;} .item_detail_list [data-bdc="fold"]{margin:4px 0 0 !important;padding:6px 12px !important;}';document.head.appendChild(s);}
+function pc(){var list=document.querySelector('.item_detail_list');if(!list)return;css();
+if(!list.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText+=S_ROW;list.insertBefore(w,list.firstChild);}
+var dv=list.querySelector('.item_delivery');
+if(D.box&&D.box.length&&!list.querySelector('[data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;f.style.cssText+=S_ROW;if(dv&&dv.nextSibling)dv.parentNode.insertBefore(f,dv.nextSibling);else list.appendChild(f);}
+var fd=list.querySelector('[data-bdc="fold"]');if(fd)bindFold(fd);}
+function mo(){var top=document.querySelector('.detail_info_top');if(!top)return;
+var pb=top.querySelector('.price_box');
+if(pb&&!top.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText='padding:8px 0 4px;';var sub=pb.querySelector('.detail_sub_info');if(sub)pb.insertBefore(w,sub);else pb.appendChild(w);}
+var sub2=document.querySelector('.detail_sub_info');
+if(D.box&&D.box.length&&sub2&&!document.querySelector('[data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;sub2.parentNode.insertBefore(f,sub2.nextSibling);}
+var fd=document.querySelector('[data-bdc="fold"]');if(fd)bindFold(fd);}
+function fix(){try{pc();}catch(e){}try{mo();}catch(e){}}
+function start(){fix();try{new MutationObserver(function(){fix();}).observe(document.body,{childList:true,subtree:true});}catch(e){}
+var n=0,t=setInterval(function(){fix();if(++n>40)clearInterval(t);},500);}
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',start);}else{start();}
+})();</script>
+<p style=\"box-sizing: border-box; margin-bottom: 40px; line-height: 22px; color: rgb(53, 53, 53); font-family: Montserrat, sans-serif; font-size: 15px; background-color: rgb(255, 255, 255);\">&nbsp;</p><h1 class=\"font_2\" data-mce-style=\"text-align: center;\" style=\"box-sizing: border-box; margin-top: 0px; font-weight: 500; position: relative; font-family: Hind, sans-serif; color: rgb(25, 25, 25); margin-bottom: 0px; font-size: 46px; line-height: 60px; letter-spacing: 0.03em; padding-bottom: 17px; background-color: rgb(255, 255, 255); text-align: center;\"><span style=\"box-sizing: border-box;\">UAV BASED LASER METHANE LEAKAGE DETECTOR</span></h1><hr style=\"box-sizing: content-box; height: 0px; overflow: visible; border-right: 0px; border-bottom: 0px; border-left: 0px; border-image: initial; border-top-style: solid; border-top-color: rgb(233, 231, 231); margin-top: 53px; margin-bottom: 53px; color: rgb(119, 119, 119); font-family: Hind, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);\"><table class=\"__se_tbl_ext\" width=\"100%\" style=\"border-collapse: collapse; color: rgb(119, 119, 119); font-family: Hind, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);\"><tbody style=\"box-sizing: border-box;\"><tr style=\"box-sizing: border-box;\"><td data-mce-style=\"width: 22%; text-align: center;\" style=\"box-sizing: border-box; width: 285.266px; text-align: center;\"><p style=\"box-sizing: border-box; margin-top: 16px;\">&nbsp;Detects</p></td><td data-mce-style=\"width: 26.2781%; text-align: center;\" style=\"box-sizing: border-box; width: 340.75px; text-align: center;\"><p style=\"box-sizing: border-box; margin-top: 16px;\">Detection Distance</p></td><td data-mce-style=\"width: 22.7219%; text-align: center;\" style=\"box-sizing: border-box; width: 294.625px; text-align: center;\"><p style=\"box-sizing: border-box; margin-top: 16px;\">Response Time&nbsp;</p></td><td data-mce-style=\"width: 20%; text-align: center;\" style=\"box-sizing: border-box; width: 259.359px; text-align: center;\"><p style=\"box-sizing: border-box; margin-top: 16px;\">Stationary Detection Limit</p></td></tr><tr style=\"box-sizing: border-box;\"><td data-mce-style=\"width: 22%; text-align: center;\" style=\"box-sizing: border-box; width: 285.266px; text-align: center;\"><h2 style=\"box-sizing: border-box; margin-top: 0px; font-weight: 500; position: relative; color: rgb(25, 25, 25); margin-bottom: 0px; font-size: 34px; line-height: 44px; letter-spacing: 0.03em; padding-bottom: 23px;\"><span style=\"box-sizing: border-box; font-weight: bolder;\">CH4</span></h2></td><td data-mce-style=\"width: 26.2781%; text-align: center;\" style=\"box-sizing: border-box; width: 340.75px; text-align: center;\"><h2 style=\"box-sizing: border-box; margin-top: 0px; font-weight: 500; position: relative; color: rgb(25, 25, 25); margin-bottom: 0px; font-size: 34px; line-height: 44px; letter-spacing: 0.03em; padding-bottom: 23px;\"><span style=\"box-sizing: border-box; font-weight: bolder;\">100 m</span></h2></td><td data-mce-style=\"width: 22.7219%; text-align: center;\" style=\"box-sizing: border-box; width: 294.625px; text-align: center;\"><h2 style=\"box-sizing: border-box; margin-top: 0px; font-weight: 500; position: relative; color: rgb(25, 25, 25); margin-bottom: 0px; font-size: 34px; line-height: 44px; letter-spacing: 0.03em; padding-bottom: 23px;\"><span style=\"box-sizing: border-box; font-weight: bolder;\">25 ms</span></h2></td><td data-mce-style=\"width: 20%; text-align: center;\" style=\"box-sizing: border-box; width: 259.359px; text-align: center;\"><h2 style=\"box-sizing: border-box; margin-top: 0px; font-weight: 500; position: relative; color: rgb(25, 25, 25); margin-bottom: 0px; font-size: 34px; line-height: 44px; letter-spacing: 0.03em; padding-bottom: 23px;\"><span style=\"box-sizing: border-box; font-weight: bolder;\">5 ppm.m</span></h2></td></tr></tbody></table><hr style=\"box-sizing: content-box; height: 0px; overflow: visible; border-right: 0px; border-bottom: 0px; border-left: 0px; border-image: initial; border-top-style: solid; border-top-color: rgb(233, 231, 231); margin-top: 53px; margin-bottom: 53px; color: rgb(119, 119, 119); font-family: Hind, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);\"><p style=\"box-sizing: border-box; margin-top: 16px; color: rgb(119, 119, 119); font-family: Hind, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);\">&nbsp;</p><h4 style=\"box-sizing: border-box; margin-top: 0px; font-weight: 500; position: relative; font-family: Hind, sans-serif; color: rgb(25, 25, 25); margin-bottom: 0px; font-size: 24px; line-height: 34px; letter-spacing: 0.03em; padding-bottom: 24px; background-color: rgb(255, 255, 255);\">Accurate Results from Afar:</h4><p style=\"box-sizing: border-box; margin-top: 16px; color: rgb(119, 119, 119); font-family: Hind, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);\">Get real-time readings on the concentration of methane from up to 100 m away, adjust the pitch of the gimbal to pinpoint gas leaks in dangerous or hard-to-reach areas while keeping personnel safe.</p><p style=\"box-sizing: border-box; margin-top: 16px; color: rgb(119, 119, 119); font-family: Hind, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);\">&nbsp;</p><h4 style=\"box-sizing: border-box; margin-top: 0px; font-weight: 500; position: relative; font-family: Hind, sans-serif; color: rgb(25, 25, 25); margin-bottom: 0px; font-size: 24px; line-height: 34px; letter-spacing: 0.03em; padding-bottom: 24px; background-color: rgb(255, 255, 255);\">Visualize the Detection:</h4><p style=\"box-sizing: border-box; margin-top: 16px; color: rgb(119, 119, 119); font-family: Hind, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);\">The high sensitivity allows detection at a concentration as low as 5ppm.m. Receive concentration data in just 25 ms, so you can make decisions quickly. Gain an aerial overview of the suspected leakage site through the 720p visual camera.</p><p style=\"box-sizing: border-box; margin-top: 16px; color: rgb(119, 119, 119); font-family: Hind, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);\">&nbsp;</p><h4 style=\"box-sizing: border-box; margin-top: 0px; font-weight: 500; position: relative; font-family: Hind, sans-serif; color: rgb(25, 25, 25); margin-bottom: 0px; font-size: 24px; line-height: 34px; letter-spacing: 0.03em; padding-bottom: 24px; background-color: rgb(255, 255, 255);\">Automated Workflows:</h4><p style=\"box-sizing: border-box; margin-bottom: 40px; line-height: 22px; color: rgb(53, 53, 53); font-family: Montserrat, sans-serif; font-size: 15px; background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(119, 119, 119); font-family: Hind, sans-serif; font-size: 14px;\">Plan flight missions and view flight paths, monitor gas concentration levels and historical trends in real-time, and flag specific points along the flight route for abnormalities, and generate inspection reports – all through the α-ONE iOS application</span></p><p style=\"text-align: center; box-sizing: border-box; margin-bottom: 40px; line-height: 22px; color: rgb(53, 53, 53); font-family: Montserrat, sans-serif; font-size: 15px; background-color: rgb(255, 255, 255);\" align=\"center\"><img src=\"https://cdn.shopify.com/s/files/1/0331/3195/4221/files/methane_1200x1200_72d50c89-53be-4c3f-83dd-9f850341240e.png?v=1621722842\" alt=\"DJI U10 Methane Sensor for M300\"><span style=\"color: rgb(119, 119, 119); font-family: Hind, sans-serif; font-size: 14px;\">&nbsp;</span></p><p style=\"box-sizing: border-box; margin-bottom: 40px; line-height: 22px; color: rgb(53, 53, 53); font-family: Montserrat, sans-serif; font-size: 15px; background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(119, 119, 119); font-family: Hind, sans-serif; font-size: 14px;\">&nbsp;</span></p>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+</goods_data>
+</data>
