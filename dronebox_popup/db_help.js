@@ -5,6 +5,7 @@
    E: 장바구니 5만 원 미만이면 "○원 더 담으면 무료배송" 안내
    X: 비어 있는 '검수상품보기' 링크, 깨진 옛 쿠폰 그림(210831coupon.jpg) 숨김
    Q(11-12): 비회원이 상품문의 쓰기를 누르면 아래에서 올라오는 시트(B안) [카톡][로그인하고 글][전화], 문의 0건 칸은 자주 묻는 질문 3개+카톡(나안)
+   K(11-12): 비회원이 쿠폰적용을 누르면 같은 시트로 [로그인하고 쿠폰 쓰기][쿠폰 없이 바로 구매] (상세·장바구니, PC·휴대폰)
    R(11-12): 경로 글자 — 상세 'HOME'(#)과 펼쳐지지 않는 분류 이름을 실제 목록 주소로 (PC·휴대폰)
    개인정보·쿠키를 읽거나 밖으로 보내지 않음. 화면 글자·배치만 바꿈. 빼면 원래대로. */
 (function () {
@@ -127,6 +128,39 @@
     });
     document.body.appendChild(ly);
   }
+  // 2026-11-12 K: 비회원이 '쿠폰적용'을 누르면 로그인 화면으로 바로 넘어가 이탈(11-05·11-09·11-10 녹화 세 번)
+  //   → 같은 B안 시트로 [로그인하고 쿠폰 쓰기][쿠폰 없이 바로 구매] 고르게. 회원은 원래대로.
+  function couponLayer(onBuy) {
+    var nx = encodeURIComponent(location.pathname + location.search);
+    var ly = document.createElement('div'); ly.className = 'dbh-ly';
+    ly.innerHTML = '<div class="in" role="dialog" aria-label="쿠폰 안내"><div class="grab"></div><h4>쿠폰은 회원 전용이에요</h4>' +
+      '<p class="sub">네이버·카카오로 간편하게 가입하면 바로 쓸 수 있어요. 쿠폰 없이 지금 사셔도 됩니다.</p>' +
+      '<a class="dbh-li" data-a="l"><i>쿠</i><span><b>로그인하고 쿠폰 쓰기</b><small>네이버·카카오 간편 로그인 · 이 화면으로 돌아와요</small></span><span class="go">›</span></a>' +
+      '<a class="dbh-li" data-a="b"><i class="k">구</i><span><b>쿠폰 없이 바로 구매</b><small>로그인 없이 비회원·네이버페이로 주문</small></span><span class="go">›</span></a>' +
+      '<button type="button" class="x" data-a="x">닫기</button></div>';
+    ly.addEventListener('click', function (e) {
+      var a = e.target.closest('[data-a]'); if (!a && e.target !== ly) return;
+      var k = a ? a.getAttribute('data-a') : 'x';
+      e.preventDefault(); ly.remove();
+      if (k === 'l') location.href = '/member/login.php?returnUrl=' + nx;
+      else if (k === 'b') onBuy();
+    });
+    document.body.appendChild(ly);
+  }
+  function couponHelp() {
+    if (!/goods_view|\/order\/cart/.test(path) || window.__dbhCp) return;
+    window.__dbhCp = 1; css2();
+    document.addEventListener('click', function (e) {
+      var b = e.target.closest && e.target.closest('.coupon_apply_btn, .detail_coupon_btn, .btn_alert_login');
+      if (!b || !guest() || !(/쿠폰/.test(txt(b)) || /coupon/.test(b.className))) return;   // PC 쿠폰 받기는 그림 단추(글자 없음)
+      e.preventDefault(); e.stopPropagation(); if (e.stopImmediatePropagation) e.stopImmediatePropagation();
+      couponLayer(function () {
+        var vis = function (sel, re) { return [].filter.call(document.querySelectorAll(sel), function (x) { return x.offsetParent && (!re || re.test(txt(x))); })[0]; };
+        var go = path.indexOf('/order/cart') >= 0 ? vis('a,button', /^전체주문$/) : (vis('.js_btn_add_order') || vis('a,button,input', /^바로\s*구매/));
+        if (go) go.click();
+      });
+    }, true);
+  }
   var FAQ = [                                                       // 답은 드론박스 상품정보·배송안내 문구 그대로
     ['정품인가요? A/S는 어디서 받나요?', 'DJI 공식 수입 정품만 판매합니다. 고장·수리는 드론박스 A/S센터와 DJI 공식센터에서 받으실 수 있어요.'],
     ['오늘 주문하면 언제 보내 주나요?', '공휴일을 제외하고 오후 3시 이전 주문은 당일 발송합니다. 받으시는 날은 택배사 사정에 따라 하루 이상 더 걸릴 수 있어요.'],
@@ -176,7 +210,7 @@
 
   function run() {
     css();
-    [qaHelp, crumbFix].forEach(function (f) { try { f(); } catch (e) {} });   // PC·휴대폰 모두
+    [qaHelp, crumbFix, couponHelp].forEach(function (f) { try { f(); } catch (e) {} });   // PC·휴대폰 모두
     if (!mob) return;                         // B·C·D·E는 휴대폰 화면만 (X는 CSS로 PC도)
     [smallChat, buyNote, guestUp, freeShip].forEach(function (f) { try { f(); } catch (e) {} });
   }
