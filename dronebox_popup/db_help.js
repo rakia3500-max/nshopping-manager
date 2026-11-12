@@ -4,6 +4,8 @@
    D: 휴대폰 상세·장바구니·주문·로그인 화면에서 '상담하기' 단추를 작은 동그라미로, 구매 단추 위쪽으로
    E: 장바구니 5만 원 미만이면 "○원 더 담으면 무료배송" 안내
    X: 비어 있는 '검수상품보기' 링크, 깨진 옛 쿠폰 그림(210831coupon.jpg) 숨김
+   Q(11-12): 비회원이 상품문의 쓰기를 누르면 [카톡 문의][로그인하고 글][전화] 작은 창, 문의 0건 칸에도 단추 (PC·휴대폰)
+   R(11-12): 경로 글자 — 상세 'HOME'(#)과 펼쳐지지 않는 분류 이름을 실제 목록 주소로 (PC·휴대폰)
    개인정보·쿠키를 읽거나 밖으로 보내지 않음. 화면 글자·배치만 바꿈. 빼면 원래대로. */
 (function () {
   var FREE = 50000;
@@ -78,8 +80,81 @@
     var wrap = anchor.parentElement || row.parentElement; wrap.parentNode.insertBefore(el, wrap);
   }
 
+  // 2026-11-12 Q: 상품문의 — 쓰기는 회원 전용이라 비회원은 '로그인이 필요한 서비스' 경고만 보고 막힘(녹화 27분 손님)
+  //   → 비회원이 쓰기·문의하기를 누르면 [카톡으로 바로 문의][로그인하고 쓰기] 작은 창. 문의 0건 칸에도 같은 단추.
+  var TEL = '0507-1337-7089';
+  function guest() { return !!document.querySelector('a[href*="member/login.php"]') && !document.querySelector('a[href*="logout"]'); }
+  function css2() {
+    if (document.getElementById('dbh-css2')) return;
+    var c = document.createElement('style'); c.id = 'dbh-css2';
+    c.textContent =
+      '.dbh-qa{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;align-items:center;padding:6px 0}.dbh-qa p{width:100%;margin:0 0 4px;color:#4E5968;font-size:14px}' +
+      '.dbh-qb{display:inline-flex;align-items:center;gap:6px;padding:10px 16px;border-radius:6px;font-size:14px;font-weight:700;text-decoration:none;cursor:pointer;border:1.5px solid #1C88CB;background:#fff;color:#1C88CB!important}' +
+      '.dbh-qb.k{background:#FEE500;border-color:#FEE500;color:#191F28!important}' +
+      '.dbh-ly{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:100000;display:flex;align-items:center;justify-content:center;padding:16px}' +
+      '.dbh-ly .in{background:#fff;border-radius:12px;max-width:340px;width:100%;padding:20px 18px 16px;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.2)}' +
+      '.dbh-ly h4{margin:0 0 6px;font-size:17px;color:#191F28}.dbh-ly p{margin:0 0 14px;font-size:13.5px;color:#4E5968;line-height:1.5}' +
+      '.dbh-ly .dbh-qb{display:flex;justify-content:center;width:100%;box-sizing:border-box;margin-top:8px}.dbh-ly .x{margin-top:10px;font-size:13px;color:#8B95A1;background:none;border:0;cursor:pointer}';
+    (document.head || document.documentElement).appendChild(c);
+  }
+  function kakao() { try { if (typeof kakaoChatStart === 'function') { kakaoChatStart(); return; } } catch (e) {} location.href = 'tel:' + TEL; }
+  function qaLayer(goWrite) {
+    var ly = document.createElement('div'); ly.className = 'dbh-ly';
+    ly.innerHTML = '<div class="in"><h4>상품 문의하기</h4><p>글로 남기는 상품문의는 회원만 쓸 수 있어요.<br>로그인 없이 카톡으로 바로 물어보세요.</p>' +
+      '<a class="dbh-qb k" data-a="k">카톡으로 바로 문의</a><a class="dbh-qb" data-a="w">로그인하고 글 남기기</a>' +
+      '<a class="dbh-qb" href="tel:' + TEL + '">전화 ' + TEL + '</a><button type="button" class="x" data-a="x">닫기</button></div>';
+    ly.addEventListener('click', function (e) {
+      var a = e.target.closest('[data-a]'); if (!a && e.target !== ly) return;
+      var k = a ? a.getAttribute('data-a') : 'x';
+      if (k === 'k') { e.preventDefault(); ly.remove(); kakao(); }
+      else if (k === 'w') { e.preventDefault(); ly.remove(); goWrite(); }
+      else if (k === 'x') { ly.remove(); }
+    });
+    document.body.appendChild(ly);
+  }
+  function qaHelp() {
+    if (path.indexOf('goods_view') < 0) return;
+    css2();
+    if (!window.__dbhQa) {
+      window.__dbhQa = 1;
+      document.addEventListener('click', function (e) {          // 비회원만 가로챔(회원은 원래대로 글쓰기)
+        var b = e.target.closest && e.target.closest('a.btn_qna_write, a[href*="bdId=goodsqa"], .dbh-qw');
+        if (!b || !guest()) return;
+        e.preventDefault(); e.stopPropagation();
+        var nx = encodeURIComponent(location.pathname + location.search);
+        qaLayer(function () { location.href = (mob ? '/member/login.php?returnUrl=' : '../member/login.php?returnUrl=') + nx; });
+      }, true);
+    }
+    var fill = function () {                                       // 문의 0건 칸 — 글자만 있던 자리에 단추
+      var nd = document.querySelector('#ajax-goods-goodsqa-list .no_data');
+      if (!nd || nd.querySelector('.dbh-qa')) return;
+      nd.innerHTML = '<div class="dbh-qa"><p>아직 문의가 없어요. 궁금한 점을 편하게 물어보세요.</p>' +
+        '<a class="dbh-qb k" href="#" data-k="1">카톡으로 바로 문의</a><a class="dbh-qb dbh-qw" href="#">문의 글 남기기</a></div>';
+      nd.querySelector('[data-k]').addEventListener('click', function (e) { e.preventDefault(); kakao(); });
+      nd.querySelector('.dbh-qw').addEventListener('click', function (e) {
+        if (guest()) return;                                        // 비회원은 위 가로채기가 작은 창을 띄움
+        e.preventDefault(); var w = document.querySelector('a.btn_qna_write'); if (w) w.click();
+      });
+    };
+    fill(); setTimeout(fill, 1500); setTimeout(fill, 4000);
+  }
+
+  // 2026-11-12 R: 경로 글자 — 상세의 'HOME'(주소 '#')과 펼쳐지지 않는 분류 이름을 실제 주소로
+  function crumbFix() {
+    [].forEach.call(document.querySelectorAll('a.local_home'), function (a) { if (a.getAttribute('href') === '#') a.setAttribute('href', '/'); });
+    [].forEach.call(document.querySelectorAll('.location_select'), function (s) {
+      var t = s.querySelector('.location_tit a'), items = s.querySelectorAll('ul a[href]');
+      if (!t || items.length !== 1) return;                         // 고를 분류가 하나뿐일 때만(여러 개면 원래 펼침 그대로)
+      var m = (items[0].getAttribute('href') || '').match(/(?:cateCd|Cd)=(\w+)/);   // 상세에선 '?Cd=002'가 상세 주소에 붙어 틀림 → 목록 주소로
+      var to = m ? '/goods/goods_list.php?cateCd=' + m[1] : items[0].href;
+      t.setAttribute('href', to);
+      t.addEventListener('click', function (e) { e.preventDefault(); e.stopPropagation(); location.href = to; }, true);
+    });
+  }
+
   function run() {
     css();
+    [qaHelp, crumbFix].forEach(function (f) { try { f(); } catch (e) {} });   // PC·휴대폰 모두
     if (!mob) return;                         // B·C·D·E는 휴대폰 화면만 (X는 CSS로 PC도)
     [smallChat, buyNote, guestUp, freeShip].forEach(function (f) { try { f(); } catch (e) {} });
   }
