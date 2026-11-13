@@ -4,6 +4,8 @@
       카톡 단추: 빛드론 카카오톡 채널 채팅을 열고 '[견적 요청] 상품·링크·수량' 글을 복사(채팅창에 붙여넣기)
    D: 휴대폰 후기·문의 탭이 상세정보 칸에 갇히던 것 바로잡기(2026-11-05)
    C: 가격 아래 정보 표를 아이콘 타일 4칸으로(정품·무료배송/방문 납품·적립·직영 A/S) — 2026-11-05 사장님 승인
+   U(11-13): 견적 상품은 PC 아래 고정 띠 글자를 '견적 요청하기 (카톡·전화)' 한 칸으로
+   T(11-13): 타일을 누르면 아래에 숨긴 원래 정보 표 문구를 한 줄로(눌러도 반응 없던 '막힌 클릭' 대응)
    되돌리기: 카페24 스크립트 태그에서 이 파일만 빼면 원래대로 */
 (function () {
   if (window.__bdBuyHelp) return; window.__bdBuyHelp = 1;
@@ -48,6 +50,9 @@
     '.ivc-t div{border:1.5px solid #E5E8EB;border-radius:10px;padding:12px 8px 11px;text-align:center;background:#fff}' +
     '.ivc-t i{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:#F2F4F6;color:#191F28;margin-bottom:6px}' +
     '.ivc-t b{display:block;font-size:14px;color:#191F28;line-height:1.3}.ivc-t em{display:block;font-style:normal;font-size:12px;color:#6B7684;margin-top:2px;line-height:1.35}' +
+    '.ivc-t .tap{cursor:pointer;-webkit-tap-highlight-color:transparent}.ivc-t .tap.on{border-color:#191F28}.ivc-t .pt.tap.on{border-color:#0B7A3B}' +
+    '.ivc-d{margin-top:8px;padding:9px 12px;background:#F2F4F6;border-radius:8px;font-size:13px;line-height:1.55;color:#333D4B;text-align:left}' +
+    '.ivc-d span{display:block}.ivc-d a{color:#191F28;font-weight:700;text-decoration:underline}' +
     '.ivc-t .pt{border-color:#7BD4A0;background:#F0FBF4}.ivc-t .pt i{background:#D3F5DF;color:#0B7A3B}.ivc-t .pt b{color:#0B7A3B;font-size:15px}' +
     '.ivc-s{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:10px;padding:10px 12px;background:#F9FAFB;border-radius:8px;font-size:12.5px;color:#333D4B}' +
     '.ivc-s span{display:inline-flex;align-items:center;gap:6px}.ivc-s svg{width:16px;height:16px}.ivc-s a{color:#191F28;font-weight:700}' +
@@ -81,6 +86,46 @@
   }
   table.parentNode.insertBefore(box, table);
   [rShip, rPt, rDoc, rTech, rCs, rMaker, rVisit, rModel].forEach(function (r) { if (r) r.style.display = 'none'; });
+  tileInfo(box);
+  // 2026-11-13 T: 타일을 누르는 손님이 많은데(11-05~11-12 녹화 513·535·317·442·426) 반응이 없어 '막힌 클릭' → 누르면 타일 아래에
+  //   숨긴 원래 정보 표 문구(배송비·적립금·제조사·구매서류·기술지원·고객상담·방문납품)를 한 줄로 보여 줌. 새로 지은 문구 없음.
+  function tileInfo(bx) {
+    var grid = bx.querySelector('.ivc-t'); if (!grid) return;
+    var cs = val(rCs), tel = (cs.match(/0\d{1,2}-\d{3,4}-\d{4}/) || [TEL])[0];
+    function info(t) {
+      var c = t.className, w = t.innerText || t.textContent || '';
+      if (/\bpt\b/.test(c)) return ['적립금 ' + val(rPt), '회원 일반결제 시 적립 (비회원·네이버페이 주문은 적립 안 됨)'];
+      if (/\bvis\b|\bedu\b/.test(c)) return [val(rVisit), rShip ? '택배 배송 ' + val(rShip) : '', cs];
+      if (/무료배송/.test(w)) return ['배송비 ' + val(rShip)];
+      if (/납품 서류/.test(w)) return ['구매서류 ' + val(rDoc)];
+      if (/기술 지원/.test(w)) return [cs];
+      if (/직영 A\/S/.test(w)) return ['기술지원 ' + val(rTech), cs];
+      if (/정품/.test(w)) return ['제조사 ' + (mk || 'DJI'), '정품만 판매합니다', rDoc ? val(rDoc) : ''];
+      return null;
+    }
+    var line = document.createElement('div'); line.className = 'ivc-d'; line.style.display = 'none';
+    grid.parentNode.insertBefore(line, grid.nextSibling);
+    [].forEach.call(grid.children, function (t) {
+      var a = info(t); if (!a) return;
+      a = a.filter(function (x) { return x && !/^(제조사|적립금|배송비|구매서류|기술지원|택배 배송) ?$/.test(x); });
+      if (!a.length) return;
+      t.classList.add('tap'); t.setAttribute('role', 'button'); t.setAttribute('aria-expanded', 'false');
+      t.addEventListener('click', function () {
+        var on = t.classList.contains('on');
+        [].forEach.call(grid.children, function (x) { x.classList.remove('on'); x.setAttribute('aria-expanded', 'false'); });
+        if (on) { line.style.display = 'none'; return; }
+        t.classList.add('on'); t.setAttribute('aria-expanded', 'true');
+        line.textContent = '';
+        a.forEach(function (x, i) {
+          var sp = document.createElement('span'); var m = x.indexOf(tel);
+          if (m >= 0) { sp.appendChild(document.createTextNode(x.slice(0, m))); var l = document.createElement('a'); l.href = 'tel:' + tel; l.textContent = tel; sp.appendChild(l); sp.appendChild(document.createTextNode(x.slice(m + tel.length))); }
+          else sp.textContent = x;
+          line.appendChild(sp);
+        });
+        line.style.display = 'block';
+      });
+    });
+  }
   }
 
   // 2026-11-05 휴대폰 '상품후기·상품문의·구매안내' 탭이 안 열리던 문제: 공통 하단(구매시 유의사항 그림)의 <center><div>가 안 닫혀
@@ -127,6 +172,12 @@
     note.innerHTML = '<b>로그인 없이</b> 아래 네이버페이로 바로 구매할 수 있어요.<br><span style="color:#6B7684">(회원 로그인 상태에서는 일반결제 · 적립금 적립)</span>';
     if (quote) { var tp = document.getElementById('totalPrice'); if (tp) tp.style.display = 'none'; }
     else npay.parentNode.insertBefore(note, npay);
+    // 2026-11-13 U: PC 아래 고정 띠가 견적 상품에도 '장바구니 담기 / 바로 구매하기'라 손님이 띠를 거듭 누름(11-12 535 녹화 3번)
+    //   → 견적 상품만 '견적 요청하기 (카톡·전화)' 한 칸으로. 누르면 원래대로 위로 펼쳐지는 칸에 견적 카드가 보임.
+    if (quote) [].forEach.call(document.querySelectorAll('.tab_cate_area a.move'), function (a) {
+      if (/장바구니/.test(a.textContent)) a.style.display = 'none';
+      else if (/구매/.test(a.textContent)) a.textContent = '견적 요청하기 (카톡·전화)';
+    });
 
     // B. 산업용·고가 상품 (+ 견적 상품)
     var path = (document.querySelector('.xans-product-headcategory, .path, .location') || {}).textContent || '';
