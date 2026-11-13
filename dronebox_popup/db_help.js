@@ -6,6 +6,8 @@
    X: 비어 있는 '검수상품보기' 링크, 깨진 옛 쿠폰 그림(210831coupon.jpg) 숨김
    Q(11-12): 비회원이 상품문의 쓰기를 누르면 아래에서 올라오는 시트(B안) [카톡][로그인하고 글][전화], 문의 0건 칸은 자주 묻는 질문 3개+카톡(나안)
    K(11-12): 비회원이 쿠폰적용을 누르면 같은 시트로 [로그인하고 쿠폰 쓰기][쿠폰 없이 바로 구매] (상세·장바구니, PC·휴대폰)
+   K2(11-13): PC '쿠폰적용' 그림 단추(img alt, 글자 없음)도 시트로 — 11-12 15:10 녹화(1309)에서 여전히 로그인 화면으로 감
+   S(11-13): PC 추가상품 목록 맨 위 '상품선택' 안내 줄 숨김(눌러도 반응 없는 줄, 1270·1294 녹화)
    R(11-12): 경로 글자 — 상세 'HOME'(#)과 펼쳐지지 않는 분류 이름을 실제 목록 주소로 (PC·휴대폰)
    개인정보·쿠키를 읽거나 밖으로 보내지 않음. 화면 글자·배치만 바꿈. 빼면 원래대로. */
 (function () {
@@ -21,6 +23,8 @@
     var c = document.createElement('style'); c.id = 'dbh-css';
     c.textContent =
       '.secondhand_goods_mobile{display:none!important}img[src*="210831coupon"]{display:none!important}' +
+      // 11-13 S: 추가상품 목록 맨 위 '상품선택'(고를 수 없는 안내 줄)을 눌러 반응 없음 → 펼친 목록에서 숨김 (PC chosen)
+      'select[name^="addGoodsInput"]+.chosen-container .chosen-results li[data-option-array-index="0"]{display:none}' +
       'a.kakaoChatPc.dbh-d{width:46px!important;height:46px!important;overflow:hidden!important;right:8px!important;bottom:178px!important;border-radius:50%!important}' +
       'a.kakaoChatPc.dbh-d img{width:108px!important;max-width:none!important;margin:0!important}' +
       '.dbh-b{margin:8px 0;padding:8px 12px;font-size:13px;line-height:1.5;color:#333D4B;background:#F2FBF5;border:1px solid #C3E6CB;border-radius:6px;text-align:left}.dbh-b b{color:#03A94D}' +
@@ -152,7 +156,10 @@
     window.__dbhCp = 1; css2();
     document.addEventListener('click', function (e) {
       var b = e.target.closest && e.target.closest('.coupon_apply_btn, .detail_coupon_btn, .btn_alert_login');
-      if (!b || !guest() || !(/쿠폰/.test(txt(b)) || /coupon/.test(b.className))) return;   // PC 쿠폰 받기는 그림 단추(글자 없음)
+      // 11-13: PC '쿠폰적용'은 <button class="btn_alert_login"><img alt="쿠폰적용"></button> (글자 없음) → 그림 alt·주소도 봄
+      if (!b) return;
+      var im = [].map.call(b.querySelectorAll('img'), function (i) { return (i.alt || '') + ' ' + (i.getAttribute('src') || ''); }).join(' ');
+      if (!b || !guest() || !(/쿠폰/.test(txt(b) + ' ' + im) || /coupon/i.test(b.className + ' ' + im))) return;   // PC 쿠폰 받기는 그림 단추(글자 없음)
       e.preventDefault(); e.stopPropagation(); if (e.stopImmediatePropagation) e.stopImmediatePropagation();
       couponLayer(function () {
         var vis = function (sel, re) { return [].filter.call(document.querySelectorAll(sel), function (x) { return x.offsetParent && (!re || re.test(txt(x))); })[0]; };
