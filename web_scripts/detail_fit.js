@@ -16,8 +16,13 @@
   function openUp(e, r, W) {
     for (var p = e.parentElement; p && p !== r; p = p.parentElement) {
       var mw = parseFloat(getComputedStyle(p).maxWidth);
-      if (mw && mw < W + padX(p) - 1 && mw >= 0.6 * W) { p.style.maxWidth = (W + padX(p)) + 'px'; }
+      if (!(mw && mw < W + padX(p) - 1 && mw >= 0.6 * W)) continue;
+      // 그림이 든 틀은 넓히지 않음(넓히면 그림이 원래보다 커짐 — 11-16 빛드론 552에서 확인)
+      var hasImg = [].some.call(p.querySelectorAll('img'), function (im) { return im.getBoundingClientRect().width >= 300; });
+      if (hasImg) return false;
+      p.style.maxWidth = (W + padX(p)) + 'px';
     }
+    return true;
   }
   function run() {
     // 넘치는 상자가 있으면 휴대폰 innerWidth가 1270처럼 커지므로 기기 화면 폭·휴대폰 주소로 판단
@@ -46,12 +51,12 @@
       var w = Math.round(b.width); area[w] = (area[w] || 0) + b.height;
     });
     var W = 0, best = 0; for (var k in area) if (area[k] > best) { best = area[k]; W = +k; }
-    if (!W) W = Math.min(R, document.querySelector('#prdDetail .cont') ? 1000 : 860);
+    if (!W) return;   // 잴 그림이 아직 없으면(늦게 뜨는 그림) 다음 차례에
     W = Math.min(W, R);
     // 4) 영상 → W (16:9 틀 안 영상은 틀이 높이를 맞춤)
     [].forEach.call(r.querySelectorAll('iframe'), function (f) {
       if (!/youtube|youtu\.be|vimeo/.test(f.src || f.getAttribute('data-src') || '')) return;
-      openUp(f, r, W);
+      if (openUp(f, r, W) === false) return;
       if (getComputedStyle(f).position === 'absolute') {   // 16:9 비율 틀(padding-bottom) 안 영상 → 틀을 W로
         var fp = f.parentElement;
         if (fp && fp !== r && fp.getBoundingClientRect().width > W + 12) { fp.style.maxWidth = W + 'px'; center(fp); }
@@ -69,11 +74,11 @@
       if (!boxy || e.querySelectorAll('img').length > 2) return;
       // 이미 맞춘 상자 안의 표·상자는 건너뜀(바깥 상자만 맞춤)
       for (var q = e.parentElement; q && q !== r; q = q.parentElement) if (q.getAttribute('data-bdfit')) return;
-      openUp(e, r, W);
+      if (openUp(e, r, W) === false) return;
       var p = e.parentElement; if (!p || cw(p) < W - 2) return;
       e.style.width = W + 'px'; e.style.maxWidth = '100%'; e.style.boxSizing = 'border-box'; center(e); e.setAttribute('data-bdfit', '1');
     });
   }
-  function go() { run(); setTimeout(run, 1500); setTimeout(run, 4000); }
+  function go() { run(); setTimeout(run, 1500); setTimeout(run, 4000); setTimeout(run, 8000); }
   if (document.readyState === 'complete') go(); else window.addEventListener('load', go);
 })();
