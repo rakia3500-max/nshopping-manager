@@ -4,6 +4,7 @@
       카톡 단추: 빛드론 카카오톡 채널 채팅을 열고 '[견적 요청] 상품·링크·수량' 글을 복사(채팅창에 붙여넣기)
    D: 휴대폰 후기·문의 탭이 상세정보 칸에 갇히던 것 바로잡기(2026-11-05)
    C: 가격 아래 정보 표를 아이콘 타일 4칸으로(정품·무료배송/방문 납품·적립·직영 A/S) — 2026-11-05 사장님 승인
+   I(11-16): 아이콘 4칸 개편 — 산업용 DJI 공식수입·방문납품(700만↑)/무료배송·기술서포트·유지보수, 컨슈머 DJI 공식수입·방문납품/무료배송·적립·기술서포트
    U(11-13): 견적 상품은 PC 아래 고정 띠 글자를 '견적 요청하기 (카톡·전화)' 한 칸으로
    T(11-13): 타일을 누르면 아래에 숨긴 원래 정보 표 문구를 한 줄로(눌러도 반응 없던 '막힌 클릭' 대응)
    되돌리기: 카페24 스크립트 태그에서 이 파일만 빼면 원래대로 */
@@ -63,19 +64,32 @@
   //   소프트웨어(S/W 분류)는 무료배송·직영 A/S 대신 정품 라이선스·납품 서류·기술 지원
   var hasPt = !!(amt && pct && !/^0(\.0+)?%$/.test(pct)) && price >= 1000;
   var isSw = /S\/W|소프트웨어/.test(path);
-  var DRONES = [513, 514, 535, 536, 550, 307, 308, 309, 534, 507];   // 산업용 드론 본체만 (사장님 11-06): 4E·4T·4TD·4D·M400·매빅3E/3T/3M·독3 세트·플라이카트30
-  var isDrone = !isSw && DRONES.indexOf(parseInt(window.iProductNo || '0', 10)) >= 0;
+  // 2026-11-16 사장님 아이콘 4칸 개편:
+  //   산업용  = DJI 공식수입 / 엔지니어 방문납품(판매가 700만 원 이상) 또는 무료배송(5만 원 이상 구매 시) / 기술서포트 제공(영상·유선) / 유지보수 지원(장치신고·보험)
+  //   컨슈머 = DJI 공식수입 / 방문납품 또는 무료배송(같은 기준) / 적립 / 기술서포트 제공
+  //   산업용 판정은 상품 번호(11-16 산업용 분류 43·89 기준, S/W·인스파이어 3 계열 제외). 새 산업용 상품은 IND에 추가(목록에 없어도 경로에 '산업용'이면 산업용).
+  var IND = [276,307,308,309,310,311,312,320,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,362,405,413,422,425,426,431,432,433,434,435,436,437,451,452,453,454,455,456,457,458,459,460,472,474,476,477,488,493,506,507,509,513,514,515,516,517,518,519,520,521,534,535,536,539,540,546,547,550,552,553,555,556,557,558,559,560,561,562,563,564,608,627,629,631,632,703,706,761,787,796,797,798,799,800,801,802,804,805,806,807,808,809,810,811,812,813,814,815,816,826,827,828,829,830,831,832,833,834,835,836,837,838,839,840,841,842,843,844,845,846,847,848,849,850,851,852,853,854,855,856,857,858,859];
+  var pno = parseInt(window.iProductNo || '0', 10);
+  var indT = !isSw && (IND.indexOf(pno) >= 0 || path.indexOf('산업용') >= 0);
+  // 견적 상품(판매가 1,000원 미만)은 실제 소비자가를 몰라 700만 원 이상으로 봄 — 단 아래는 소비자가 700만 원 미만(307 매빅3E 5,513,800 · 405 H30 5,097,000)
+  var UNDER7 = [307, 405];
+  var big = price >= 7000000 || (price < 1000 && (indT || price_content_on()) && UNDER7.indexOf(pno) < 0);
+  function price_content_on() { return String(window.product_price_content || '') === '1'; }
   var mk = maker.trim(), isDji = /^dji$/i.test(mk), plain = /자체|^$/.test(mk);
   var T = [];
   if (isSw) T.push('<div><i>' + I.badge + '</i><b>정품 라이선스</b><em>' + (isDji ? 'DJI 공식 딜러' : plain ? '정품만 판매' : '제조사 ' + mk) + '</em></div>');
-  else T.push('<div><i>' + I.badge + '</i>' + (isDji ? '<b>DJI 정품</b><em>제조사 DJI 공식 딜러</em>' : plain ? '<b>정품 보증</b><em>정품만 판매합니다</em>' : '<b>' + mk + ' 정품</b><em>제조사 ' + mk + '</em>') + '</div>');
+  else T.push('<div><i>' + I.badge + '</i>' + (isDji ? '<b>DJI 공식수입</b><em>정품만 판매합니다</em>' : plain ? '<b>정품 보증</b><em>정품만 판매합니다</em>' : '<b>' + mk + ' 정품</b><em>제조사 ' + mk + '</em>') + '</div>');
   if (isSw) T.push('<div><i>' + I.doc + '</i><b>납품 서류</b><em>공공기관·학교·기업</em></div>');
-  // 2026-11-06 사장님: 산업용 드론 본체는 '무료배송' 대신 '방문납품(무료)'. 본체 목록은 상품 번호로 관리(새 드론 등록 시 DRONES에 추가)
-  else if (isDrone) T.push('<div class="vis"><i>' + I.van + '</i><b>방문납품 (무료)</b><em>' + (rVisit ? '교육·초기 세팅 포함' : '택배 무료배송도 가능') + '</em></div>');
+  else if (big) T.push('<div class="vis"><i>' + I.van + '</i><b>엔지니어 방문납품</b><em>교육·초기 세팅 포함</em></div>');
   else T.push('<div><i>' + I.truck + '</i><b>무료배송</b><em>5만 원 이상 구매 시</em></div>');
-  if (rVisit && !isDrone) T.push('<div class="edu"><i>' + I.cap + '</i><b>무료 교육·세팅</b><em>방문 납품 시 제공</em></div>');   // 2026-11-06 사장님: 방문납품은 무료 교육·초기 세팅 때문
-  if (hasPt) T.push('<div class="pt"><i>' + I.coin + '</i><b>' + amt + '</b><em>회원 적립 ' + pct + '</em></div>');
-  T.push(isSw ? '<div><i>' + I.phone + '</i><b>기술 지원</b><em>빛드론 고객센터 상담</em></div>' : '<div><i>' + I.tool + '</i><b>직영 A/S</b><em>전주 수리센터</em></div>');
+  if (isSw) T.push('<div><i>' + I.phone + '</i><b>기술 지원</b><em>빛드론 고객센터 상담</em></div>');
+  else if (indT) {
+    T.push('<div class="sup"><i>' + I.phone + '</i><b>기술서포트 제공</b><em>영상·유선 지원</em></div>');
+    T.push('<div class="mnt"><i>' + I.tool + '</i><b>유지보수 지원</b><em>장치신고·보험</em></div>');
+  } else {
+    if (hasPt) T.push('<div class="pt"><i>' + I.coin + '</i><b>' + amt + '</b><em>회원 적립 ' + pct + '</em></div>');
+    T.push('<div class="sup"><i>' + I.phone + '</i><b>기술서포트 제공</b><em>영상·유선 지원</em></div>');
+  }
   var n = T.length;
   box.innerHTML = '<div class="ivc-t n' + n + '">' + T.join('') + '</div>' +
     (ind || isSw ? '' : '<div class="ivc-s"><span>' + I.doc + '공공기관·학교·기업 납품 서류 가능</span><span>' + I.phone + '상담 <a href="tel:070-5176-7075">070-5176-7075</a></span></div>');
@@ -99,6 +113,8 @@
       if (/무료배송/.test(w)) return ['배송비 ' + val(rShip)];
       if (/납품 서류/.test(w)) return ['구매서류 ' + val(rDoc)];
       if (/기술 지원/.test(w)) return [cs];
+      if (/\bsup\b/.test(c)) return [rTech ? '기술지원 ' + val(rTech) : '', '사용법 영상·유선 안내', cs];
+      if (/\bmnt\b/.test(c)) return ['장치신고·보험 가입 안내 등 유지보수 지원', cs];
       if (/직영 A\/S/.test(w)) return ['기술지원 ' + val(rTech), cs];
       if (/정품/.test(w)) return ['제조사 ' + (mk || 'DJI'), '정품만 판매합니다', rDoc ? val(rDoc) : ''];
       return null;
