@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000000654</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>[견적상품] DJI SkyPort for RedEdge-MX or RedEdge-P</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002020|002019|002019008|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>g</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<goodsPrice>10.00</goodsPrice>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<script data-bd="cpanel">(function(){
+var D={"intro": "MicaSense 다중분광 카메라를 M300에 플러그 앤 플레이로 연결하는 SkyPort 어댑터 키트. RedEdge·Altum 시리즈용.", "chips": ["Matrice 300용", "RedEdge-MX · RedEdge-P", "Altum · Altum-PT", "플러그 앤 플레이", "카메라 마운트 · 하니스 포함", "DLS2 브래킷 포함"], "badges": [{"text": "견적 · 호환 문의", "href": "https://www.drone-box.co.kr/board/popup_goods_board_write.php?mode=write&bdId=goodsqa&goodsNo=1000000654&orderGoodsNo=0"}, {"text": "기관·기업 납품서류 발급"}], "box": ["카메라 마운트", "와이어 하니스", "DLS2 마운팅 브래킷"], "ship": ""};
+var S_INTRO="font-size:13.5px;color:#333D4B;line-height:1.65;margin:0 0 8px;",
+S_CHIPS="display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px;",
+S_CHIP="font-size:12px;background:#F2F4F6;color:#333D4B;border-radius:999px;padding:4px 10px;line-height:1.4;",
+S_BADGES="display:flex;flex-wrap:wrap;gap:5px;margin:0 0 10px;",
+S_BADGE="font-size:11.5px;border:1px solid #D6E4FF;color:#1B64DA;background:#F2F6FF;border-radius:6px;padding:3px 8px;font-weight:600;line-height:1.4;text-decoration:none;white-space:nowrap;",
+S_FOLD="font-size:13px;color:#4E5968;border:1px dashed #D1D6DB;border-radius:8px;padding:9px 12px;margin:10px 0 4px;cursor:pointer;line-height:1.6;",
+S_FOLD_B="color:#191F28;font-weight:700;";
+function el(tag,html){var d=document.createElement(tag);if(html!=null)d.innerHTML=html;return d;}
+function introHtml(){var chips=D.chips.map(function(c){return '<span style="'+S_CHIP+'">'+c+'</span>';}).join('');
+return '<p data-bdc="intro" style="'+S_INTRO+'">'+D.intro+'</p><div data-bdc="chips" style="'+S_CHIPS+'">'+chips+'</div>';}
+function badgesHtml(){return '<div data-bdc="badges" style="'+S_BADGES+'">'+D.badges.map(function(b){return b.href?'<a href="'+b.href+'" style="'+S_BADGE+'">'+b.text+'</a>':'<span style="'+S_BADGE+'">'+b.text+'</span>';}).join('')+'</div>';}
+S_LI="font-size:12.5px;color:#4E5968;line-height:1.5;padding:2px 0 2px 11px;text-indent:-11px;break-inside:avoid;margin:0;",
+S_UL="display:none;margin:8px 0 0;padding:0;list-style:none;columns:2;column-gap:20px;";
+function foldHtml(){var items=D.box.map(function(b){return '<li style="'+S_LI+'">· '+b+'</li>';}).join('');
+return '<div data-bdc="fold" style="'+S_FOLD+'"><span style="'+S_FOLD_B+'">구성품 보기 ▾</span><span style="color:#8B95A1;font-size:12px;"> &nbsp;'+D.box.length+'개</span><ul data-bdc="foldbody" style="'+S_UL+'">'+items+(D.ship?'<li style="'+S_LI+'color:#8B95A1;">'+D.ship+'</li>':'')+'</ul></div>';}
+function bindFold(f){if(f.getAttribute('data-bound'))return;f.setAttribute('data-bound','1');f.onclick=function(){var b=f.querySelector('[data-bdc="foldbody"]'),t=f.querySelector('span');var open=b.style.display!=='none';b.style.display=open?'none':'block';t.textContent=open?'구성품 보기 ▾':'구성품 접기 ▴';};}
+var S_ROW=";clear:both;float:left;width:100%;box-sizing:border-box;";
+function css(){if(document.querySelector('style[data-bdc="css"]'))return;var s=document.createElement('style');s.setAttribute('data-bdc','css');
+s.textContent='.item_detail_tit, .item_detail_tit *{word-break:keep-all !important;overflow-wrap:normal !important;} .item_detail_list > dl{padding-top:3px !important;} .item_detail_list dt{width:100px !important;} .item_detail_list dd{width:400px !important;} .item_detail_list > dl > dt,.item_detail_list > dl > dd{line-height:20px !important;} .item_detail_list .item_delivery dd .delivery-detail{line-height:20px;} .item_detail_list [data-bdc="fold"]{margin:4px 0 0 !important;padding:6px 12px !important;}';document.head.appendChild(s);}
+function pc(){var list=document.querySelector('.item_detail_list');if(!list)return;css();
+if(!list.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText+=S_ROW;list.insertBefore(w,list.firstChild);}
+var dv=list.querySelector('.item_delivery');
+if(D.box&&D.box.length&&!list.querySelector('[data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;f.style.cssText+=S_ROW;if(dv&&dv.nextSibling)dv.parentNode.insertBefore(f,dv.nextSibling);else list.appendChild(f);}
+var fd=list.querySelector('[data-bdc="fold"]');if(fd)bindFold(fd);}
+function mo(){var top=document.querySelector('.detail_info_top');if(!top)return;
+var pb=top.querySelector('.price_box');
+if(pb&&!top.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText='padding:8px 0 4px;';var sub=pb.querySelector('.detail_sub_info');if(sub)pb.insertBefore(w,sub);else pb.appendChild(w);}
+var sub2=document.querySelector('.detail_sub_info');
+if(D.box&&D.box.length&&sub2&&!document.querySelector('[data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;sub2.parentNode.insertBefore(f,sub2.nextSibling);}
+var fd=document.querySelector('[data-bdc="fold"]');if(fd)bindFold(fd);}
+function fix(){try{pc();}catch(e){}try{mo();}catch(e){}}
+function start(){fix();try{new MutationObserver(function(){fix();}).observe(document.body,{childList:true,subtree:true});}catch(e){}
+var n=0,t=setInterval(function(){fix();if(++n>40)clearInterval(t);},500);}
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',start);}else{start();}
+})();</script>
+<p style=\"text-align: center;\" align=\"center\">&nbsp;</p><div area=\"before\" sp-edit=\"text\" class=\"initialize\" style=\"margin: 0px; padding: 1.5rem; list-style: none; line-height: inherit; position: relative; cursor: auto; word-break: break-all; max-width: 100%; font-family: Roboto, &quot;Noto Sans KR&quot;, &quot;Apple SD Gothic Neo&quot;, arial, &quot;sans-serif&quot;, &quot;serif&quot;, &quot;Noto Color Emoji&quot;, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; color: rgb(51, 51, 51); text-align: center; box-sizing: border-box !important;\"><span sp-font=\"10\" style=\"line-height: inherit; max-width: 100%; font-size: 1rem; display: inline-block; vertical-align: middle; font-family: inherit; box-sizing: border-box !important;\"><br style=\"box-sizing: border-box !important; line-height: inherit; font-family: inherit;\"><br style=\"box-sizing: border-box !important; line-height: inherit; font-family: inherit;\"><br style=\"box-sizing: border-box !important; line-height: inherit; font-family: inherit;\">DJI Skyport for Matrice 300<br style=\"box-sizing: border-box !important; line-height: inherit; font-family: inherit;\">&nbsp;</span><strong style=\"box-sizing: border-box !important; line-height: inherit; font-family: inherit;\"><br style=\"box-sizing: border-box !important; line-height: inherit; font-family: inherit;\"><span sp-font=\"17\" style=\"box-sizing: border-box !important; line-height: inherit; max-width: 100%; font-size: 1.7rem; font-family: inherit;\">DJI SkyPort for RedEdge-MX or RedEdge-P</span></strong> </div><div area=\"after\" sp-edit=\"box\" sp-sort-nodrop=\"fixed\" class=\"mo-4BC8F294A9 initialize\" style=\"margin: 0px; padding: 0px; list-style: none; line-height: inherit; position: relative; max-width: 100%; font-family: Roboto, &quot;Noto Sans KR&quot;, &quot;Apple SD Gothic Neo&quot;, arial, &quot;sans-serif&quot;, &quot;serif&quot;, &quot;Noto Color Emoji&quot;, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; color: rgb(51, 51, 51); text-align: center; box-sizing: border-box !important;\"><div sp-edit=\"box\" sp-size=\"\" sp-sort-nodrop=\"element\" class=\"initialize\" style=\"margin: 0rem auto; padding: 0rem 0rem 4rem; list-style: none; box-sizing: border-box !important; line-height: inherit; width: 1000px; min-width: 320px; position: relative; max-width: 100%; font-family: inherit;\"><div area=\"before\" sp-edit=\"box\" class=\"initialize\" style=\"margin: 0rem auto; padding: 0rem 5rem; list-style: none; line-height: inherit; position: relative; max-width: 100%; font-family: inherit; box-sizing: border-box !important;\"><a sp-edit=\"image_button\" sp-resize=\"\" class=\"initialize\" style=\"text-decoration-line: none; outline: 0px; line-height: inherit; max-width: 100%; position: relative; display: inline-flex; vertical-align: middle; font-size: 0px; font-family: inherit; width: 672px; box-sizing: border-box !important;\"><img sp-edit=\"image\" class=\"initialize\" src=\"https://www.helicraft-b2b.com/product/dji/22531.png\" style=\"margin: 0px; padding: 0px; border: none; vertical-align: super; list-style: none; box-sizing: border-box !important; line-height: inherit; max-width: 100%; position: relative; width: 672px; display: inline-block; font-family: inherit;\"></a></div><div area=\"after\" sp-edit=\"text\" class=\"initialize\" style=\"margin: 0px auto; padding: 1.5rem; list-style: none; line-height: 2; position: relative; cursor: auto; word-break: break-all; max-width: 100%; font-family: inherit; width: 900px; box-sizing: border-box !important;\"><span style=\"box-sizing: border-box !important; line-height: inherit; max-width: 100%; display: inline-block; vertical-align: middle; font-family: inherit; font-size: 16px;\">DJI SkyPort 어댑터를 사용하면 RedEdge-MX, RedEdge-P, Altum 또는 Altum-PT와 DJI Matrice 300 드론을&nbsp;</span></div><div area=\"after\" sp-edit=\"text\" class=\"initialize\" style=\"margin: 0px auto; padding: 1.5rem; list-style: none; line-height: 2; position: relative; cursor: auto; word-break: break-all; max-width: 100%; font-family: inherit; width: 900px; box-sizing: border-box !important;\"><span style=\"font-family: inherit; font-size: 16px;\">플러그 앤 플레이로 통합할 수 있습니다.&nbsp;</span></div><div area=\"after\" sp-edit=\"text\" class=\"initialize\" style=\"margin: 0px auto; padding: 1.5rem; list-style: none; line-height: inherit; position: relative; cursor: auto; word-break: break-all; max-width: 100%; font-family: inherit; width: 900px; box-sizing: border-box !important;\"><span style=\"box-sizing: border-box !important; line-height: inherit; max-width: 100%; display: inline-block; vertical-align: middle; font-family: inherit; font-size: 16px;\">SkyPort 키트에는 카메라 마운트, 와이어 하니스 및 DLS2 마운팅 브래킷이 포함되어 있습니다.</span></div></div></div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+</goods_data>
+</data>
