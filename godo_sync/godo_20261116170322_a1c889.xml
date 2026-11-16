@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000001140</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI 매트리스 600 TB47S 배터리 5700mAh (매트리스600시리즈 전용)</goodsNm>
+<goodsDisplayFl>n</goodsDisplayFl>
+<goodsDisplayMobileFl>n</goodsDisplayMobileFl>
+<goodsSellFl>n</goodsSellFl>
+<goodsSellMobileFl>n</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002019008|002019|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>y</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>g</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<div style=\"text-align: center;\" align=\"center\"><p align=\"center\"><span style=\"font-size: 32px;\"><b><br></b></span></p><p align=\"center\"><span style=\"font-size: 32px;\"><b>M600 전용배터리</b></span></p><p align=\"center\"><span style=\"font-size: 32px;\"><b>TB48s의 경우 6PC를 구입하셔야 1조로&nbsp;</b></span></p><p align=\"center\"><span style=\"font-size: 32px;\"><b>사용이 가능합니다</b></span></p></div><div style=\"text-align: center;\" align=\"center\"><img src=\"http://dronetr7262.godomall.com/data/editor/goods/240122/bfb2e86c27962d9650fa4e4a33d97637_165901.jpg\" title=\"bfb2e86c27962d9650fa4e4a33d97637_165901.jpg\" class=\"js-smart-img\"><br style=\"clear:both;\"> </div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+</goods_data>
+</data>
