@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000000452</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>배터리 셀 체커기 [농업용 드론]</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002025|002028|002029|002</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>local</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>g</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<goodsPrice>12000.00</goodsPrice>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<script data-bd="cpanel">(function(){
+var D={"intro": "배터리 총 전압·잔량(%)·셀별 전압을 바로 보여 주는 디지털 배터리 체커 Cellmeter-7. 농업용 드론 배터리 점검용.", "chips": ["Cellmeter-7", "LiPo · LiFe · Li-ion · NiMH · NiCd", "리튬 1S~7S", "셀별 전압 · 전압차 표시", "잔량(%) 표시", "약 40g"], "badges": [{"text": "사용 · 호환 문의", "href": "https://www.drone-box.co.kr/board/popup_goods_board_write.php?mode=write&bdId=goodsqa&goodsNo=1000000452&orderGoodsNo=0"}, {"text": "기관·기업 납품서류 발급"}], "box": [], "ship": ""};
+var S_INTRO="font-size:13.5px;color:#333D4B;line-height:1.65;margin:0 0 8px;",
+S_CHIPS="display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px;",
+S_CHIP="font-size:12px;background:#F2F4F6;color:#333D4B;border-radius:999px;padding:4px 10px;line-height:1.4;",
+S_BADGES="display:flex;flex-wrap:wrap;gap:5px;margin:0 0 10px;",
+S_BADGE="font-size:11.5px;border:1px solid #D6E4FF;color:#1B64DA;background:#F2F6FF;border-radius:6px;padding:3px 8px;font-weight:600;line-height:1.4;text-decoration:none;white-space:nowrap;",
+S_FOLD="font-size:13px;color:#4E5968;border:1px dashed #D1D6DB;border-radius:8px;padding:9px 12px;margin:10px 0 4px;cursor:pointer;line-height:1.6;",
+S_FOLD_B="color:#191F28;font-weight:700;";
+function el(tag,html){var d=document.createElement(tag);if(html!=null)d.innerHTML=html;return d;}
+function introHtml(){var chips=D.chips.map(function(c){return '<span style="'+S_CHIP+'">'+c+'</span>';}).join('');
+return '<p data-bdc="intro" style="'+S_INTRO+'">'+D.intro+'</p><div data-bdc="chips" style="'+S_CHIPS+'">'+chips+'</div>';}
+function badgesHtml(){return '<div data-bdc="badges" style="'+S_BADGES+'">'+D.badges.map(function(b){return b.href?'<a href="'+b.href+'" style="'+S_BADGE+'">'+b.text+'</a>':'<span style="'+S_BADGE+'">'+b.text+'</span>';}).join('')+'</div>';}
+S_LI="font-size:12.5px;color:#4E5968;line-height:1.5;padding:2px 0 2px 11px;text-indent:-11px;break-inside:avoid;margin:0;",
+S_UL="display:none;margin:8px 0 0;padding:0;list-style:none;columns:2;column-gap:20px;";
+function foldHtml(){var items=D.box.map(function(b){return '<li style="'+S_LI+'">· '+b+'</li>';}).join('');
+return '<div data-bdc="fold" style="'+S_FOLD+'"><span style="'+S_FOLD_B+'">구성품 보기 ▾</span><span style="color:#8B95A1;font-size:12px;"> &nbsp;'+D.box.length+'개</span><ul data-bdc="foldbody" style="'+S_UL+'">'+items+(D.ship?'<li style="'+S_LI+'color:#8B95A1;">'+D.ship+'</li>':'')+'</ul></div>';}
+function bindFold(f){if(f.getAttribute('data-bound'))return;f.setAttribute('data-bound','1');f.onclick=function(){var b=f.querySelector('[data-bdc="foldbody"]'),t=f.querySelector('span');var open=b.style.display!=='none';b.style.display=open?'none':'block';t.textContent=open?'구성품 보기 ▾':'구성품 접기 ▴';};}
+var S_ROW=";clear:both;float:left;width:100%;box-sizing:border-box;";
+function css(){if(document.querySelector('style[data-bdc="css"]'))return;var s=document.createElement('style');s.setAttribute('data-bdc','css');
+s.textContent='.item_detail_tit, .item_detail_tit *{word-break:keep-all !important;overflow-wrap:normal !important;} .item_detail_list > dl{padding-top:3px !important;} .item_detail_list dt{width:100px !important;} .item_detail_list dd{width:400px !important;} .item_detail_list > dl > dt,.item_detail_list > dl > dd{line-height:20px !important;} .item_detail_list .item_delivery dd .delivery-detail{line-height:20px;} .item_detail_list [data-bdc="fold"]{margin:4px 0 0 !important;padding:6px 12px !important;}';document.head.appendChild(s);}
+function pc(){var list=document.querySelector('.item_detail_list');if(!list)return;css();
+if(!list.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText+=S_ROW;list.insertBefore(w,list.firstChild);}
+var dv=list.querySelector('.item_delivery');
+if(D.box&&D.box.length&&!list.querySelector('[data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;f.style.cssText+=S_ROW;if(dv&&dv.nextSibling)dv.parentNode.insertBefore(f,dv.nextSibling);else list.appendChild(f);}
+var fd=list.querySelector('[data-bdc="fold"]');if(fd)bindFold(fd);}
+function mo(){var top=document.querySelector('.detail_info_top');if(!top)return;
+var pb=top.querySelector('.price_box');
+if(pb&&!top.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText='padding:8px 0 4px;';var sub=pb.querySelector('.detail_sub_info');if(sub)pb.insertBefore(w,sub);else pb.appendChild(w);}
+var sub2=document.querySelector('.detail_sub_info');
+if(D.box&&D.box.length&&sub2&&!document.querySelector('[data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;sub2.parentNode.insertBefore(f,sub2.nextSibling);}
+var fd=document.querySelector('[data-bdc="fold"]');if(fd)bindFold(fd);}
+function fix(){try{pc();}catch(e){}try{mo();}catch(e){}}
+function start(){fix();try{new MutationObserver(function(){fix();}).observe(document.body,{childList:true,subtree:true});}catch(e){}
+var n=0,t=setInterval(function(){fix();if(++n>40)clearInterval(t);},500);}
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',start);}else{start();}
+})();</script>
+<style>\r\n    /* Cellmeter-7 Clean Tech Theme */\r\n    .cm7-wrapper {\r\n        width: 100%; \r\n        max-width: 100%; \r\n        margin: 0 auto;\r\n        background-color: #f8fafc; /* Clean Light Gray Background */\r\n        color: #334155;\r\n        font-family: \'Pretendard\', \'Malgun Gothic\', sans-serif;\r\n        line-height: 1.6;\r\n        word-break: keep-all;\r\n    }\r\n\r\n    /* Common Layout */\r\n    .cm7-sec {\r\n        padding: 80px 20px; \r\n        max-width: 1000px; \r\n        margin: 0 auto; \r\n    }\r\n    .cm7-bg-blue {\r\n        background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);\r\n        color: #ffffff;\r\n    }\r\n\r\n    /* Typography */\r\n    .cm7-title {\r\n        font-size: 38px;\r\n        font-weight: 800;\r\n        margin-bottom: 20px;\r\n        letter-spacing: -1px;\r\n        text-align: center;\r\n        line-height: 1.3;\r\n    }\r\n    .cm7-subtitle {\r\n        font-size: 18px;\r\n        font-weight: 700;\r\n        color: #3b82f6; \r\n        text-align: center;\r\n        margin-bottom: 10px;\r\n        letter-spacing: 1px;\r\n    }\r\n    .cm7-desc {\r\n        font-size: 17px;\r\n        color: #64748b;\r\n        text-align: center;\r\n        margin-bottom: 40px;\r\n    }\r\n\r\n    /* Full Image */\r\n    .cm7-img {\r\n        width: 100%;\r\n        max-width: 1000px;\r\n        height: auto;\r\n        display: block;\r\n        margin: 0 auto;\r\n    }\r\n\r\n    /* 3D Features Grid */\r\n    .cm7-grid {\r\n        display: grid;\r\n        grid-template-columns: repeat(2, 1fr);\r\n        gap: 20px;\r\n        margin-top: 40px;\r\n    }\r\n    .cm7-card {\r\n        background: #ffffff;\r\n        border: 1px solid #e2e8f0;\r\n        border-radius: 12px;\r\n        padding: 35px 30px;\r\n        box-shadow: 0 4px 6px rgba(0,0,0,0.02);\r\n        transition: all 0.3s ease; \r\n    }\r\n    .cm7-card:hover {\r\n        transform: translateY(-5px); \r\n        box-shadow: 0 12px 25px rgba(37, 99, 235, 0.1); \r\n        border-color: #93c5fd; \r\n    }\r\n    .cm7-card-icon {\r\n        font-size: 36px;\r\n        color: #2563eb; \r\n        margin-bottom: 15px;\r\n    }\r\n    .cm7-card h4 { font-size: 20px; font-weight: 800; color: #0f172a; margin-bottom: 10px; }\r\n    .cm7-card p { font-size: 15px; color: #475569; margin: 0; }\r\n\r\n    /* Specs Table */\r\n    .cm7-table-wrap { overflow-x: auto; margin-top: 40px; }\r\n    .cm7-table {\r\n        width: 100%;\r\n        border-collapse: collapse;\r\n        font-size: 15px;\r\n        background: #ffffff;\r\n        border-top: 3px solid #2563eb;\r\n    }\r\n    .cm7-table th {\r\n        background: #f1f5f9;\r\n        color: #0f172a;\r\n        padding: 16px;\r\n        font-weight: 700;\r\n        border-bottom: 1px solid #e2e8f0;\r\n        text-align: left;\r\n        width: 30%;\r\n    }\r\n    .cm7-table td {\r\n        padding: 16px;\r\n        border-bottom: 1px solid #e2e8f0;\r\n        color: #334155;\r\n        text-align: left;\r\n    }\r\n\r\n    /* Warning & Guide Box */\r\n    .cm7-guide-box {\r\n        background: #eff6ff;\r\n        border: 1px solid #bfdbfe;\r\n        border-left: 5px solid #3b82f6;\r\n        padding: 30px;\r\n        margin-top: 50px;\r\n        border-radius: 4px;\r\n    }\r\n    .cm7-guide-box h4 { font-size: 20px; color: #1e3a8a; margin-bottom: 15px; font-weight: 800; }\r\n    .cm7-guide-box ul { padding-left: 20px; margin: 0; color: #334155; font-size: 15px; }\r\n    .cm7-guide-box li { margin-bottom: 10px; }\r\n\r\n    @media (max-width: 768px) {\r\n        .cm7-title { font-size: 30px; }\r\n        .cm7-grid { grid-template-columns: 1fr; }\r\n        .cm7-card { padding: 25px 20px; }\r\n    }\r\n</style>\r\n\r\n<div class=\"cm7-wrapper\">\r\n\r\n    <section class=\"cm7-sec cm7-bg-blue\" style=\"text-align: center;\">\r\n        <h3 class=\"cm7-subtitle\" style=\"color: #93c5fd;\">BATTERY CAPACITY CHECKER</h3>\r\n        <h2 class=\"cm7-title\" style=\"color: #ffffff;\">비행 전 필수 확인!<br>Cellmeter-7 디지털 배터리 체커</h2>\r\n        <p class=\"cm7-desc\" style=\"color: #dbeafe;\">\r\n            단 몇 초 만에 배터리의 상태를 완벽하게 파악하십시오.<br>\r\n            총 전압, 잔량(%), 개별 셀 전압을 한눈에 보여주는 직관적인 셀 모니터입니다.\r\n        </p>\r\n    </section>\r\n\r\n    <div style=\"background-color: #ffffff; padding-bottom: 0;\">\r\n        <img src=\"http://dronetr7262.godomall.com/data/goods/260219/Cellmeter/cellmeter%20th.png\" class=\"cm7-img\" alt=\"Cellmeter-7 배터리 체커 메인\">\r\n    </div>\r\n\r\n    <section class=\"cm7-sec\">\r\n        <h3 class=\"cm7-subtitle\">KEY FEATURES</h3>\r\n        <h2 class=\"cm7-title\" style=\"color: #0f172a;\">작지만 강력한 측정 능력</h2>\r\n        \r\n        <div class=\"cm7-grid\">\r\n            <div class=\"cm7-card\">\r\n                <div class=\"cm7-card-icon\">🔋</div>\r\n                <h4>광범위한 배터리 호환성</h4>\r\n                <p>LiPo(리튬폴리머), LiFe, Li-ion 등 리튬계열은 물론 NiMH, NiCd까지 드론 및 RC에서 사용하는 대부분의 배터리 타입을 지원합니다.</p>\r\n            </div>\r\n            <div class=\"cm7-card\">\r\n                <div class=\"cm7-card-icon\">📊</div>\r\n                <h4>직관적인 LCD 디스플레이</h4>\r\n                <p>별도의 계산 없이 화면을 통해 현재 배터리의 <b>총 전압</b>과 <b>예상 잔여 용량(%)</b>을 즉각적으로 확인할 수 있어 매우 편리합니다.</p>\r\n            </div>\r\n            <div class=\"cm7-card\">\r\n                <div class=\"cm7-card-icon\">⚖️</div>\r\n                <h4>최대 7S 정밀 셀 밸런스 확인</h4>\r\n                <p>리튬 배터리의 경우 1S부터 최대 7S까지 개별 셀의 전압을 순차적으로 보여주며, 가장 높은 셀과 낮은 셀의 전압차(Gap)를 정확히 표시합니다.</p>\r\n            </div>\r\n            <div class=\"cm7-card\">\r\n                <div class=\"cm7-card-icon\">🪶</div>\r\n                <h4>초소형 · 초경량 디자인</h4>\r\n                <p>한 손에 들어오는 컴팩트한 사이즈와 가벼운 무게로 작업 현장, 비행장 어디든 부담 없이 휴대할 수 있는 필수 공구입니다.</p>\r\n            </div>\r\n        </div>\r\n    </section>\r\n\r\n    <section class=\"cm7-sec\" style=\"background-color: #ffffff;\">\r\n        <h2 class=\"cm7-title\" style=\"color: #0f172a;\">제품 상세 사양</h2>\r\n        \r\n        <div class=\"cm7-table-wrap\">\r\n            <table class=\"cm7-table\">\r\n                <tbody>\r\n                    <tr>\r\n                        <th>제품명</th>\r\n                        <td>Cellmeter-7 (셀미터 7) 디지털 배터리 체커</td>\r\n                    </tr>\r\n                    <tr>\r\n                        <th>지원 배터리 타입</th>\r\n                        <td>LiPo, LiFe, Li-ion, NiMH, NiCd</td>\r\n                    </tr>\r\n                    <tr>\r\n                        <th>지원 셀 (Cell) 수</th>\r\n                        <td><strong>리튬 계열: 1S ~ 7S</strong> / 니켈 계열: 4S ~ 7S</td>\r\n                    </tr>\r\n                    <tr>\r\n                        <th>표시 정보 (디스플레이)</th>\r\n                        <td>총 전압(Total), 개별 셀 전압(Cell), 최저 전압(Min), 최고 전압(Max), 전압차(Gap), 잔량(%)</td>\r\n                    </tr>\r\n                    <tr>\r\n                        <th>크기 및 무게</th>\r\n                        <td>약 84 x 50 x 16 (mm) / 약 40g</td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n        </div>\r\n\r\n        <div class=\"cm7-guide-box\">\r\n            <h4>💡 올바른 사용 방법 및 주의사항</h4>\r\n            <ul>\r\n                <li><strong>연결 방향 주의:</strong> 배터리의 밸런스 케이블을 체커기에 연결할 때, <b>검은색 선(마이너스, -)이 체커기 핀의 제일 위쪽 - 부분</b>으로 가도록 맞추어 꽂아주십시오.</li>\r\n                <li><strong>배터리 타입 설정:</strong>&nbsp;측정하고자 하는 배터리 종류(LiPo 등)를 정확하게 맞춰주셔야 올바른 잔량(%)이 표시됩니다.</li>\r\n                <li><strong>화면 전환:</strong> [CELL] 버튼을 누를 때마다 각 셀의 전압을 개별적으로 확인할 수 있으며, [MODE] 버튼을 통해 최고 전압, 최저 전압, 셀 간 전압 차이를 확인할 수 있습니다.</li>\r\n                <li><strong>보관 주의:</strong> 본 기기는 측정용 툴입니다. 측정이 끝난 후에는 배터리 방전을 막기 위해 <b>반드시 체커기를 배터리에서 분리하여 보관</b>하십시오.</li>\r\n            </ul>\r\n        </div>\r\n    </section>\r\n\r\n</div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+</goods_data>
+</data>
