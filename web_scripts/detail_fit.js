@@ -47,10 +47,11 @@
     // 3) 기준 폭 W = 큰 그림이 가장 많이 차지한 폭(면적 기준)
     var area = {};
     [].forEach.call(r.querySelectorAll('img'), function (im) {
-      var b = im.getBoundingClientRect(); if (b.width < 400 || b.height < 60) return;
+      var b = im.getBoundingClientRect(); if (b.width < Math.max(400, 0.55 * R) || b.height < 60) return;   // 작은 그림(두 칸 그림 등)은 기준에서 뺌
       var w = Math.round(b.width); area[w] = (area[w] || 0) + b.height;
     });
     var W = 0, best = 0; for (var k in area) if (area[k] > best) { best = area[k]; W = +k; }
+    if (best < 500) return;   // 큰 그림이 덜 떴으면(높이 합 500px 미만) 다음 차례에 — 잘못된 기준 폭 방지(11-16 514 영상 498px 사고)
     if (!W) return;   // 잴 그림이 아직 없으면(늦게 뜨는 그림) 다음 차례에
     W = Math.min(W, R);
     // 4) 영상 → W (16:9 틀 안 영상은 틀이 높이를 맞춤)
@@ -79,6 +80,9 @@
       e.style.width = W + 'px'; e.style.maxWidth = '100%'; e.style.boxSizing = 'border-box'; center(e); e.setAttribute('data-bdfit', '1');
     });
   }
-  function go() { run(); setTimeout(run, 1500); setTimeout(run, 4000); setTimeout(run, 8000); }
+  var n = 0, t = null;
+  function go() { run(); setTimeout(run, 1500); setTimeout(run, 4000); setTimeout(run, 8000);
+    // 늦게 뜨는 그림(스크롤해야 뜸) 대비: 스크롤 멈출 때마다 다시 맞춤(최대 15번)
+    window.addEventListener('scroll', function () { if (n >= 15) return; clearTimeout(t); t = setTimeout(function () { n++; run(); }, 400); }, {passive: true}); }
   if (document.readyState === 'complete') go(); else window.addEventListener('load', go);
 })();
