@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>Jackery 잭커리 1500 Ultra 파워뱅크 1536Wh IP65 방진방수 캠핑</goodsNm>
+<goodsDisplayFl>n</goodsDisplayFl>
+<goodsDisplayMobileFl>n</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002034</cateCd>
+<allCateCd>002|002034</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>url</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>g</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>Y</imageUpdate>
+<magnifyImageData idx="1">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/5e07069e0653f1671c79ff32afe861ad.jpg</magnifyImageData>
+<magnifyImageData idx="2">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/f234ba50cbe346cd5de81352af1c98c0.jpg</magnifyImageData>
+<magnifyImageData idx="3">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/6c50be7a22bff295324a8409241517ab.jpg</magnifyImageData>
+<magnifyImageData idx="4">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/b6ee97e9269812982bda51949f1c527a.jpg</magnifyImageData>
+<magnifyImageData idx="5">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/f945b2fb37a0d87855378185d00d5ff1.jpg</magnifyImageData>
+<magnifyImageData idx="6">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/1f4590f044e5d49ff3001205bd703732.jpg</magnifyImageData>
+<magnifyImageData idx="7">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/2bfe3cc246914f64c925ae80fd41bc95.jpg</magnifyImageData>
+<magnifyImageData idx="8">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/5feffd411cc79e6b589fcb8598246f29.jpg</magnifyImageData>
+<magnifyImageData idx="9">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/704c0a9c35d1f5b95e147e6ae0a936de.jpg</magnifyImageData>
+<magnifyImageData idx="10">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/3a44907f3b6a1476b35741cd08235407.jpg</magnifyImageData>
+<detailImageData idx="1">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/5e07069e0653f1671c79ff32afe861ad.jpg</detailImageData>
+<detailImageData idx="2">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/f234ba50cbe346cd5de81352af1c98c0.jpg</detailImageData>
+<detailImageData idx="3">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/6c50be7a22bff295324a8409241517ab.jpg</detailImageData>
+<detailImageData idx="4">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/b6ee97e9269812982bda51949f1c527a.jpg</detailImageData>
+<detailImageData idx="5">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/f945b2fb37a0d87855378185d00d5ff1.jpg</detailImageData>
+<detailImageData idx="6">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/1f4590f044e5d49ff3001205bd703732.jpg</detailImageData>
+<detailImageData idx="7">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/2bfe3cc246914f64c925ae80fd41bc95.jpg</detailImageData>
+<detailImageData idx="8">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/5feffd411cc79e6b589fcb8598246f29.jpg</detailImageData>
+<detailImageData idx="9">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/704c0a9c35d1f5b95e147e6ae0a936de.jpg</detailImageData>
+<detailImageData idx="10">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/3a44907f3b6a1476b35741cd08235407.jpg</detailImageData>
+<listImageData idx="1">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/5e07069e0653f1671c79ff32afe861ad.jpg</listImageData>
+<mainImageData idx="1">https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/5e07069e0653f1671c79ff32afe861ad.jpg</mainImageData>
+<goodsPrice>1970000</goodsPrice>
+<fixedPrice>0</fixedPrice>
+<goodsDescription><![CDATA[<!-- bd-jackery-p1500ultra v1 드론박스 -->
+<div style="background:#fff;color:#191F28;color-scheme:light only"><div style="max-width:860px;margin:0 auto;line-height:1.7">
+<div style="border:1px solid #ffd2b5;background:#fff7f1;border-radius:12px;padding:20px 22px;margin:0 0 18px"><p style="margin:0 0 4px;font-size:13px;color:#ff6a13;font-weight:700">Jackery 국내 정식 수입품</p><h2 style="margin:0 0 12px;font-size:22px;font-weight:700;color:#191F28">잭커리 Explorer 1500 Ultra</h2><table style="width:100%;border-collapse:collapse;font-size:15px;background:#fff;border-radius:8px"><tr><th style="text-align:left;padding:7px 12px;color:#6b6b70;font-weight:600;white-space:nowrap;border-bottom:1px solid #f0e2d8">용량</th><td style="padding:7px 12px;border-bottom:1px solid #f0e2d8">1,536Wh</td></tr><tr><th style="text-align:left;padding:7px 12px;color:#6b6b70;font-weight:600;white-space:nowrap;border-bottom:1px solid #f0e2d8">출력</th><td style="padding:7px 12px;border-bottom:1px solid #f0e2d8">1,800W</td></tr><tr><th style="text-align:left;padding:7px 12px;color:#6b6b70;font-weight:600;white-space:nowrap;border-bottom:1px solid #f0e2d8">방진·방수</th><td style="padding:7px 12px;border-bottom:1px solid #f0e2d8">IP65</td></tr><tr><th style="text-align:left;padding:7px 12px;color:#6b6b70;font-weight:600;white-space:nowrap;border-bottom:1px solid #f0e2d8">UPS</th><td style="padding:7px 12px;border-bottom:1px solid #f0e2d8">정전 시 0.02초 이내 자동 전환</td></tr><tr><th style="text-align:left;padding:7px 12px;color:#6b6b70;font-weight:600;white-space:nowrap;border-bottom:1px solid #f0e2d8">관리</th><td style="padding:7px 12px;border-bottom:1px solid #f0e2d8">물세척 가능한 바닥 판</td></tr></table><p style="margin:12px 0 0;font-size:13px;color:#6b6b70">A/S는 국내 수입사 보증 정책을 따릅니다(아래 보증 안내 참고).</p></div>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/ff7518bcb82125527e72f8ca64fd2602.jpg" alt="Jackery 브랜드 소개" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/832700a33ab4b5e7b50bf9ee714d63ad.jpg" alt="잭커리 Explorer 1500 Ultra 상세 1" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/8a363f3de76bd1f42a05f6c87cf10fe5.jpg" alt="잭커리 Explorer 1500 Ultra 상세 2" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/536d8b60670454df7e22551329a6d124.jpg" alt="잭커리 Explorer 1500 Ultra 상세 3" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/9d3f475e14cb924f7bf06f2f7ac72178.jpg" alt="잭커리 Explorer 1500 Ultra 상세 4" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/5f6a4ce8f164459b3fa17d36f2788255.jpg" alt="잭커리 Explorer 1500 Ultra 상세 5" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/3cf8b86f6764d3e934024c3256e9fc24.jpg" alt="잭커리 Explorer 1500 Ultra 상세 6" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/e6b0a11d8aa12dbd9518c2d6bd37dfa1.jpg" alt="잭커리 Explorer 1500 Ultra 상세 7" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/4c444b882cc280eb838f84e09d53b26c.jpg" alt="잭커리 Explorer 1500 Ultra 상세 8" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/a3dd2712a22ebd6d2ee3423b93f672f9.jpg" alt="잭커리 Explorer 1500 Ultra 상세 9" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/1f67f144ec349547134e51b455a611f8.jpg" alt="잭커리 Explorer 1500 Ultra 상세 10" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/edc019d9d34df0751ff0793175d53cd4.jpg" alt="잭커리 Explorer 1500 Ultra 상세 11" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/0fa321245486a6ea6196aa13674c89f2.jpg" alt="잭커리 Explorer 1500 Ultra 상세 12" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/5183ade84cd2c62a9ab898589b64e9a4.jpg" alt="Jackery 자주 묻는 질문·보증 안내" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/e9cf5876398a12a95f9c9cae89169208.jpg" alt="Jackery 자주 묻는 질문·보증 안내" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/a2a9e96c50e0cc1b7762217eb4a93b5e.jpg" alt="Jackery 자주 묻는 질문·보증 안내" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/3918687891d7162ee8fd871507eac179.jpg" alt="Jackery 자주 묻는 질문·보증 안내" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/56877e7dc678c4290c554e1d4c33373f.jpg" alt="Jackery 자주 묻는 질문·보증 안내" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="font-size:13px;color:#8B95A1;margin:20px 0 14px;text-align:center">사진·사양은 Jackery 국내 수입사((주)에코로보텍) 자료</p>
+</div></div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<goodsSearchWord><![CDATA[잭커리 파워뱅크, 잭커리 1500 Ultra, Jackery 1500 Ultra, 잭커리 1500울트라, 방수 파워뱅크, 캠핑 파워뱅크, 차박 파워뱅크, 파워스테이션, 1536Wh, jackery explorer 1500 ultra, 잭커리, jackery]]></goodsSearchWord>
+<seoTagTitle><![CDATA[Jackery 잭커리 1500 Ultra 파워뱅크 1536Wh IP65 방진방수 캠핑]]></seoTagTitle>
+<seoTagDescription><![CDATA[Jackery Explorer 1500 Ultra. 1,536Wh 용량·1,800W 출력, IP65 방진·방수, 정전 시 0.02초 UPS 전환. Jackery 국내 정식 수입품.]]></seoTagDescription>
+<seoTagKeyword><![CDATA[잭커리 파워뱅크, 잭커리 1500 Ultra, Jackery 1500 Ultra, 잭커리 1500울트라, 방수 파워뱅크, 캠핑 파워뱅크, 차박 파워뱅크, 파워스테이션, 1536Wh, 드론박스]]></seoTagKeyword>
+<seoTagAuthor><![CDATA[드론박스]]></seoTagAuthor>
+<seoTagFl><![CDATA[y]]></seoTagFl>
+<naverTag><![CDATA[잭커리 파워뱅크|잭커리 1500 Ultra|Jackery 1500 Ultra|잭커리 1500울트라|방수 파워뱅크|캠핑 파워뱅크|차박 파워뱅크|파워스테이션|1536Wh]]></naverTag>
+<naverFl><![CDATA[y]]></naverFl>
+<naverCategory><![CDATA[]]></naverCategory>
+<brandCd><![CDATA[]]></brandCd>
+<goodsModelNo><![CDATA[Jackery Explorer 1500 Ultra]]></goodsModelNo>
+<goodsIconCd><![CDATA[]]></goodsIconCd>
+<makerNm><![CDATA[Jackery]]></makerNm>
+<originNm><![CDATA[중국]]></originNm>
+</goods_data>
+</data>
