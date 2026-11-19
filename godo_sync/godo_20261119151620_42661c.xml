@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000001637</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>DJI Matrice 4TD SP Plus+ | DJI 매트리스 4TD RC Plus 2</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002</cateCd>
+<allCateCd>002|002019|002019008|002019008003|002019018</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>url</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>g</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>y</addGoodsFl>
+<deliverySno>6</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>y</externalVideoFl>
+<detailInfoDelivery>002002</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<goodsPrice>12400000.00</goodsPrice>
+<imageUpdate>N</imageUpdate>
+<addGoodsData idx="1"><title><![CDATA[배터리·충전]]></title><mustFl>n</mustFl><goodsNoData idx="1">1000001048</goodsNoData><goodsNoData idx="2">1000001049</goodsNoData><goodsNoData idx="3">1000001050</goodsNoData></addGoodsData>
+<addGoodsData idx="2"><title><![CDATA[프로펠러]]></title><mustFl>n</mustFl><goodsNoData idx="1">1000001051</goodsNoData></addGoodsData>
+<addGoodsData idx="3"><title><![CDATA[셀룰러 동글 2]]></title><mustFl>n</mustFl><goodsNoData idx="1">1000000965</goodsNoData></addGoodsData>
+<addGoodsData idx="4"><title><![CDATA[RTK 기지국 (D-RTK 3)]]></title><mustFl>n</mustFl><goodsNoData idx="1">1000001043</goodsNoData><goodsNoData idx="2">1000001044</goodsNoData></addGoodsData>
+<addGoodsData idx="5"><title><![CDATA[DJI 케어]]></title><mustFl>n</mustFl><goodsNoData idx="1">1000001052</goodsNoData></addGoodsData>
+<goodsDescription><![CDATA[<script data-bd="cpanel">(function(){
+var D={"intro": "Dock 3에서 운용하는 열화상 드론 매트리스 4TD와 RC Plus 2 Enterprise 조종기 구성입니다.", "chips": ["Dock 3 운용 · 조종기 직접 비행", "RC Plus 2 Enterprise 포함", "최대 54분 비행", "640×512 열화상", "48MP 광각·미디엄 망원·망원", "레이저 거리측정 1800m", "IP55"], "badges": [{"text": "DJI 정품"}, {"text": "국내 A/S 접수"}, {"text": "기관·기업 납품서류 발급"}], "box": [], "ship": ""};
+var S_INTRO="font-size:13.5px;color:#333D4B;line-height:1.65;margin:0 0 8px;",
+S_CHIPS="display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px;",
+S_CHIP="font-size:12px;background:#F2F4F6;color:#333D4B;border-radius:999px;padding:4px 10px;line-height:1.4;",
+S_BADGES="display:flex;flex-wrap:wrap;gap:5px;margin:0 0 10px;",
+S_BADGE="font-size:11.5px;border:1px solid #D6E4FF;color:#1B64DA;background:#F2F6FF;border-radius:6px;padding:3px 8px;font-weight:600;line-height:1.4;text-decoration:none;white-space:nowrap;",
+S_FOLD="font-size:13px;color:#4E5968;border:1px dashed #D1D6DB;border-radius:8px;padding:9px 12px;margin:10px 0 4px;cursor:pointer;line-height:1.6;",
+S_FOLD_B="color:#191F28;font-weight:700;";
+function el(tag,html){var d=document.createElement(tag);if(html!=null)d.innerHTML=html;return d;}
+function introHtml(){var chips=D.chips.map(function(c){return '<span style="'+S_CHIP+'">'+c+'</span>';}).join('');
+return '<p data-bdc="intro" style="'+S_INTRO+'">'+D.intro+'</p><div data-bdc="chips" style="'+S_CHIPS+'">'+chips+'</div>';}
+function badgesHtml(){return '<div data-bdc="badges" style="'+S_BADGES+'">'+D.badges.map(function(b){return b.href?'<a href="'+b.href+'" style="'+S_BADGE+'">'+b.text+'</a>':'<span style="'+S_BADGE+'">'+b.text+'</span>';}).join('')+'</div>';}
+S_LI="font-size:12.5px;color:#4E5968;line-height:1.5;padding:2px 0 2px 11px;text-indent:-11px;break-inside:avoid;margin:0;",
+S_UL="display:none;margin:8px 0 0;padding:0;list-style:none;columns:2;column-gap:20px;";
+function foldHtml(){var items=D.box.map(function(b){return '<li style="'+S_LI+'">· '+b+'</li>';}).join('');
+return '<div data-bdc="fold" style="'+S_FOLD+'"><span style="'+S_FOLD_B+'">구성품 보기 ▾</span><span style="color:#8B95A1;font-size:12px;"> &nbsp;'+D.box.length+'개</span><ul data-bdc="foldbody" style="'+S_UL+'">'+items+(D.ship?'<li style="'+S_LI+'color:#8B95A1;">'+D.ship+'</li>':'')+'</ul></div>';}
+function bindFold(f){if(f.getAttribute('data-bound'))return;f.setAttribute('data-bound','1');f.onclick=function(){var b=f.querySelector('[data-bdc="foldbody"]'),t=f.querySelector('span');var open=b.style.display!=='none';b.style.display=open?'none':'block';t.textContent=open?'구성품 보기 ▾':'구성품 접기 ▴';};}
+var S_ROW=";clear:both;float:left;width:100%;box-sizing:border-box;";
+function css(){if(document.querySelector('style[data-bdc="css"]'))return;var s=document.createElement('style');s.setAttribute('data-bdc','css');
+s.textContent='.item_detail_tit, .item_detail_tit *{word-break:keep-all !important;overflow-wrap:normal !important;} .item_detail_list > dl{padding-top:3px !important;} .item_detail_list dt{width:100px !important;} .item_detail_list dd{width:400px !important;} .item_detail_list > dl > dt,.item_detail_list > dl > dd{line-height:20px !important;} .item_detail_list .item_delivery dd .delivery-detail{line-height:20px;} .item_detail_list [data-bdc="fold"]{margin:4px 0 0 !important;padding:6px 12px !important;}';document.head.appendChild(s);}
+function pc(){var list=document.querySelector('.item_detail_list');if(!list)return;css();
+if(!list.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText+=S_ROW;list.insertBefore(w,list.firstChild);}
+var dv=list.querySelector('.item_delivery');
+if(D.box&&D.box.length&&!list.querySelector('[data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;f.style.cssText+=S_ROW;if(dv&&dv.nextSibling)dv.parentNode.insertBefore(f,dv.nextSibling);else list.appendChild(f);}
+var fd=list.querySelector('[data-bdc="fold"]');if(fd)bindFold(fd);}
+function mo(){var top=document.querySelector('.detail_info_top');if(!top)return;
+var pb=top.querySelector('.price_box');
+if(pb&&!top.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText='padding:8px 0 4px;';var sub=pb.querySelector('.detail_sub_info');if(sub)pb.insertBefore(w,sub);else pb.appendChild(w);}
+var sub2=document.querySelector('.detail_sub_info');
+if(D.box&&D.box.length&&sub2&&!document.querySelector('[data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;sub2.parentNode.insertBefore(f,sub2.nextSibling);}
+var fd=document.querySelector('[data-bdc="fold"]');if(fd)bindFold(fd);}
+function fix(){try{pc();}catch(e){}try{mo();}catch(e){}}
+function start(){fix();try{new MutationObserver(function(){fix();}).observe(document.body,{childList:true,subtree:true});}catch(e){}
+var n=0,t=setInterval(function(){fix();if(++n>40)clearInterval(t);},500);}
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',start);}else{start();}
+})();</script>
+<script data-bdinfo="v1">(function(){function run(){var L=document.querySelector('.item_detail_list');if(!L||L.querySelector('dl[data-bdinfo]'))return;var ref=null,model=null;L.querySelectorAll('dl').forEach(function(d){var t=d.querySelector('dt');if(!t)return;var s=t.textContent.trim();if(s==='배송비')ref=d;if(s==='모델명'&&!d.getAttribute('data-bdq'))model=d;});if(model)model.style.display='none';var rows='<dt>제조사</dt><dd>DJI (공식 수입상품)</dd>|<dt>구매서류</dt><dd>공공기관 · 학교 · 기업체 납품서류 가능</dd>|<dt>기술지원</dt><dd>드론박스 A/S센터 및 DJI공식센터 가능</dd>|<dt>구매시 방문 납품</dt><dd>초기세팅 및 사용법 교육</dd>|<dt>고객센터</dt><dd>드론박스 070-7811-4422</dd>'.split('|');var after=ref;rows.forEach(function(r){var d=document.createElement('dl');d.setAttribute('data-bdinfo','1');d.innerHTML=r;if(after&&after.parentNode){after.parentNode.insertBefore(d,after.nextSibling);after=d;}else{L.appendChild(d);}});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}else{run();}})();</script>
+<!-- bd-indmiss-m4td_spplus2 v1 드론박스 -->
+<style>
+.p4pw-card, .p4pw-step { transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease, background .22s ease; }
+.p4pw-card:hover, .p4pw-step:hover { transform: translateY(-4px); box-shadow: 0 10px 24px rgba(25,31,40,.10); border-color: #2F7DF6 !important; background: #FFFFFF !important; }
+.p4pw-card:hover > p:first-child, .p4pw-step:hover > p:first-child { color: #2F7DF6 !important; }
+.p4pw-faq { transition: background .2s ease; border-radius: 8px; padding: 6px 8px; margin: 0 -8px 12px; }
+.p4pw-faq:hover { background: #F2F6FF; }
+@media (hover: none) { .p4pw-card:hover, .p4pw-step:hover { transform: none; box-shadow: none; } }
+</style>
+<div style="background:#FFFFFF; color:#191F28; color-scheme:light only;"><div style="max-width:1000px; margin:0 auto; padding:0; font-family:inherit; color:#191F28; background:#FFFFFF; line-height:1.7;">
+<p style="margin:0; text-align:center; line-height:0;"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261117/e180f39e05fc5c0489bb13a1485014d7.jpg" alt="DJI 매트리스 4TD SP Plus+ (DJI RC Plus 2 Enterprise 포함) — DJI 사진" style="max-width:100%; width:100%; display:block; margin:0 auto;"></p>
+<p style="font-size:14px; color:#4E5968; margin:0 0 6px;">DJI 정품 판매점 <b>드론박스</b> · Matrice 4TD · DJI RC Plus 2 Enterprise 포함</p><h2 style="font-size:24px; font-weight:700; margin:0 0 12px; color:#191F28;">DJI 매트리스 4TD SP Plus+ (DJI RC Plus 2 Enterprise 포함)</h2><div style="height:12px;"></div>
+<div itemscope itemtype="https://schema.org/Article" style="margin:0 0 8px; padding:24px 20px 10px; border:1px solid #E3E6EB; border-radius:12px; background:#FFFFFF;"><h3 itemprop="headline" style="font-size:21px; font-weight:700; margin:32px 0 14px; padding-bottom:8px; border-bottom:2px solid #E3E6EB; color:#191F28; margin-top:0;">DJI 매트리스 4TD SP Plus+ (DJI RC Plus 2 Enterprise 포함)</h3><div itemprop="articleBody"><p style="font-size:15px; color:#333D4B; margin:0 0 10px; line-height:1.75;">DJI Dock 3에서 운용하는 열화상 드론 DJI Matrice 4TD와 DJI RC Plus 2 Enterprise 조종기 구성입니다(DJI 운영표 품명 기준).</p><p style="font-size:15px; color:#333D4B; margin:0 0 10px; line-height:1.75;">광각·미디엄 망원·망원 카메라에 640×512 열화상 카메라, NIR 보조등, 레이저 거리측정기를 갖췄고 IP55 등급으로 비·먼지 환경에서도 운용합니다.</p></div></div>
+<div itemscope itemtype="https://schema.org/Article" style="margin:0 0 8px; padding:24px 20px 10px; border:1px solid #E3E6EB; border-radius:12px; background:#FFFFFF;"><h3 itemprop="headline" style="font-size:21px; font-weight:700; margin:32px 0 14px; padding-bottom:8px; border-bottom:2px solid #E3E6EB; color:#191F28; margin-top:0;">사양 (DJI 사양 기준)</h3><div itemprop="articleBody"><div style="overflow-x:auto;"><table style="border-collapse:collapse; width:100%;">
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">호환</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">DJI Dock 3 (Matrice 4D 시리즈 운용 도크)</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">최대 비행시간</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">54분 (DJI 시험 조건)</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">최대 호버링 시간</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">47분 (DJI 시험 조건)</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">기체 무게</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">1850 g (배터리·프로펠러·microSD 카드 포함)</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">최대 이륙 무게</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">2090 g</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">IP 등급</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">IP55</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">카메라</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">광각 48MP 1/1.3인치 CMOS · 미디엄 망원 48MP 1/1.3인치 CMOS(환산 70mm) · 망원 48MP 1/1.5인치 CMOS(환산 168mm)</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">열화상</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">640×512 · DFOV 45° · 측정 범위 -40~150°C(하이 게인) / 0~500°C(로우 게인)</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">레이저 거리측정</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">1800 m (1 Hz, 반사율 20% 목표)</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">동영상 전송</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">DJI O4+ Enterprise · 최대 25 km(FCC) / 12 km(CE)</td></tr>
+<tr><th style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; background:#F7F8FA; color:#191F28; text-align:left; font-weight:700; vertical-align:top; width:34%;">조종기</th><td style="padding:10px 12px; border:1px solid #E3E6EB; font-size:15px; text-align:left; background:#FFFFFF; color:#191F28; vertical-align:top;">DJI RC Plus 2 Enterprise · 7.02인치 1920×1200 · 1,400 nit</td></tr>
+</table></div><p style="font-size:13px; color:#8B95A1; margin:10px 0 0;">수치는 DJI 사양·DJI 스토어 표기 기준이며 환경·펌웨어에 따라 달라질 수 있습니다. 표기가 없는 항목은 출고 전 안내해 드립니다.</p></div></div>
+<div itemscope itemtype="https://schema.org/Article" style="margin:0 0 8px; padding:24px 20px 10px; border:1px solid #E3E6EB; border-radius:12px; background:#FFFFFF;"><h3 itemprop="headline" style="font-size:21px; font-weight:700; margin:32px 0 14px; padding-bottom:8px; border-bottom:2px solid #E3E6EB; color:#191F28; margin-top:0;">구성품</h3><div itemprop="articleBody"><p style="font-size:15px; color:#333D4B; margin:0 0 10px; line-height:1.75;">구성품은 DJI 표기 확인 뒤 출고 전 상품 문의 게시판로 안내해 드립니다.</p></div></div>
+<p style="font-size:13px; color:#8B95A1; margin:6px 0 0; text-align:center;">사진은 DJI 자료입니다. 실제 구성은 품목 기준입니다.</p>
+<div style="margin:0 0 8px; padding:24px 20px 10px; border:1px solid #E3E6EB; border-radius:12px; background:#FFFFFF;"><h3 style="font-size:21px; font-weight:700; margin:32px 0 14px; padding-bottom:8px; border-bottom:2px solid #E3E6EB; color:#191F28; margin-top:0;">FAQ</h3><div itemscope itemtype="https://schema.org/FAQPage">
+<div class="p4pw-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom:18px;"><p itemprop="name" style="font-weight:700; font-size:16px; margin:0 0 6px; color:#191F28;">Q. 가격은 어떻게 확인하나요?</p><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-size:15px; color:#333D4B; margin:0; line-height:1.7;">A. 표시된 판매가로 바로 구매하실 수 있습니다. 여러 대 구매·납품 조건에 맞춘 견적은 상품 문의 게시판으로 안내해 드립니다.</p></div></div>
+<div class="p4pw-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom:18px;"><p itemprop="name" style="font-weight:700; font-size:16px; margin:0 0 6px; color:#191F28;">Q. SP Plus와 SP Plus+는 무엇이 다른가요?</p><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-size:15px; color:#333D4B; margin:0; line-height:1.7;">A. SP Plus+는 DJI RC Plus 2 Enterprise 조종기가 들어 있는 구성입니다(DJI 운영표 품명). 세부 구성품은 견적 상담 때 안내해 드립니다.</p></div></div>
+<div class="p4pw-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom:18px;"><p itemprop="name" style="font-weight:700; font-size:16px; margin:0 0 6px; color:#191F28;">Q. Dock 3 없이 조종기로만 비행할 수 있나요?</p><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-size:15px; color:#333D4B; margin:0; line-height:1.7;">A. DJI RC Plus 2 Enterprise로 직접 조종할 수 있습니다. DJI 사양에 RC Plus 2 Enterprise 지원 기체로 Matrice 4TD/4D가 표기돼 있습니다.</p></div></div>
+<div class="p4pw-faq" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom:18px;"><p itemprop="name" style="font-weight:700; font-size:16px; margin:0 0 6px; color:#191F28;">Q. 정품인가요?</p><div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-size:15px; color:#333D4B; margin:0; line-height:1.7;">A. 드론박스는 DJI 정품만 판매합니다. 문의는 상품 문의 게시판으로 남겨 주세요.</p></div></div>
+</div></div>
+<p style="font-size:13px; color:#8B95A1; margin:20px 0 14px; text-align:center;">드론박스는 DJI 정품만 판매합니다 · 문의는 상품 문의 게시판 · 사양·사진은 DJI 자료(enterprise.dji.com/kr · store.dji.com/kr)</p>
+</div></div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+</goods_data>
+</data>
