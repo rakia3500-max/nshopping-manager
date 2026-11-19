@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<goods_data idx="1">
+<goodsNo>1000001640</goodsNo>
+<goodsNmFl>d</goodsNmFl>
+<goodsNm>Jackery 잭커리 1000 Plus 파워뱅크 1264Wh 캠핑 차박 비상전원</goodsNm>
+<goodsDisplayFl>y</goodsDisplayFl>
+<goodsDisplayMobileFl>y</goodsDisplayMobileFl>
+<goodsSellFl>y</goodsSellFl>
+<goodsSellMobileFl>y</goodsSellMobileFl>
+<scmNo>1</scmNo>
+<cateCd>002034</cateCd>
+<allCateCd>002|002034</allCateCd>
+<goodsState>n</goodsState>
+<goodsPermission>all</goodsPermission>
+<taxFreeFl>t</taxFreeFl>
+<taxPercent>10.0</taxPercent>
+<stockFl>n</stockFl>
+<soldOutFl>n</soldOutFl>
+<imageStorage>url</imageStorage>
+<restockFl>y</restockFl>
+<mileageFl>g</mileageFl>
+<goodsDiscountFl>n</goodsDiscountFl>
+<payLimitFl>n</payLimitFl>
+<optionFl>n</optionFl>
+<optionTextFl>n</optionTextFl>
+<addGoodsFl>n</addGoodsFl>
+<deliverySno>2</deliverySno>
+<relationFl>n</relationFl>
+<imgDetailViewFl>y</imgDetailViewFl>
+<externalVideoFl>n</externalVideoFl>
+<detailInfoDelivery>002001</detailInfoDelivery>
+<detailInfoAS>003002</detailInfoAS>
+<detailInfoRefund>0</detailInfoRefund>
+<detailInfoExchange>005001</detailInfoExchange>
+<imageUpdate>N</imageUpdate>
+<goodsDescription><![CDATA[<script data-bdinfo="v1">(function(){function run(){var L=document.querySelector('.item_detail_list');if(!L||L.querySelector('dl[data-bdinfo]'))return;var ref=null,model=null;L.querySelectorAll('dl').forEach(function(d){var t=d.querySelector('dt');if(!t)return;var s=t.textContent.trim();if(s==='배송비')ref=d;if(s==='모델명'&&!d.getAttribute('data-bdq'))model=d;});if(model)model.style.display='none';var rows='<dt>제조사</dt><dd>Jackery (국내 정식 수입품)</dd>|<dt>구매서류</dt><dd>공공기관 · 학교 · 기업체 납품서류 가능</dd>|<dt>기술지원</dt><dd>Jackery 국내 수입사 A/S (보증 기간은 상세 안내 참고)</dd>|<dt>고객상담</dt><dd>드론박스 0507-1337-7089</dd>'.split('|');var after=ref;rows.forEach(function(r){var d=document.createElement('dl');d.setAttribute('data-bdinfo','1');d.innerHTML=r;if(after&&after.parentNode){after.parentNode.insertBefore(d,after.nextSibling);after=d;}else{L.appendChild(d);}});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}else{run();}})();</script>
+<script data-bd="cpanel">(function(){
+var D={"intro": "1,264Wh 용량·최대 2,000W 출력의 휴대용 파워뱅크. 리튬인산철 배터리 4,000회 충전, 확장 배터리를 연결해 용량을 늘릴 수 있어요.", "chips": ["1,264Wh", "최대 2,000W 출력", "리튬인산철 4,000회", "확장 배터리 연결", "캠핑·차박·비상 전원"], "badges": [{"text": "Jackery 정식 수입품"}, {"text": "국내 수입사 A/S"}, {"text": "기관·기업 납품서류 발급"}], "box": [], "ship": ""};
+var S_INTRO="font-size:13.5px;color:#333D4B;line-height:1.65;margin:0 0 8px;",
+S_CHIPS="display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px;",
+S_CHIP="font-size:12px;background:#F2F4F6;color:#333D4B;border-radius:999px;padding:4px 10px;line-height:1.4;",
+S_BADGES="display:flex;flex-wrap:wrap;gap:5px;margin:0 0 10px;",
+S_BADGE="font-size:11.5px;border:1px solid #D6E4FF;color:#1B64DA;background:#F2F6FF;border-radius:6px;padding:3px 8px;font-weight:600;line-height:1.4;text-decoration:none;white-space:nowrap;",
+S_FOLD="font-size:13px;color:#4E5968;border:1px dashed #D1D6DB;border-radius:8px;padding:9px 12px;margin:10px 0 4px;cursor:pointer;line-height:1.6;",
+S_FOLD_B="color:#191F28;font-weight:700;";
+function el(tag,html){var d=document.createElement(tag);if(html!=null)d.innerHTML=html;return d;}
+function introHtml(){var chips=D.chips.map(function(c){return '<span style="'+S_CHIP+'">'+c+'</span>';}).join('');
+return '<p data-bdc="intro" style="'+S_INTRO+'">'+D.intro+'</p><div data-bdc="chips" style="'+S_CHIPS+'">'+chips+'</div>';}
+function badgesHtml(){return '<div data-bdc="badges" style="'+S_BADGES+'">'+D.badges.map(function(b){return b.href?'<a href="'+b.href+'" style="'+S_BADGE+'">'+b.text+'</a>':'<span style="'+S_BADGE+'">'+b.text+'</span>';}).join('')+'</div>';}
+S_LI="font-size:12.5px;color:#4E5968;line-height:1.5;padding:2px 0 2px 11px;text-indent:-11px;break-inside:avoid;margin:0;",
+S_UL="display:none;margin:8px 0 0;padding:0;list-style:none;columns:2;column-gap:20px;";
+function foldHtml(){var items=D.box.map(function(b){return '<li style="'+S_LI+'">· '+b+'</li>';}).join('');
+return '<div data-bdc="fold" style="'+S_FOLD+'"><span style="'+S_FOLD_B+'">구성품 보기 ▾</span><span style="color:#8B95A1;font-size:12px;"> &nbsp;'+D.box.length+'개</span><ul data-bdc="foldbody" style="'+S_UL+'">'+items+(D.ship?'<li style="'+S_LI+'color:#8B95A1;">'+D.ship+'</li>':'')+'</ul></div>';}
+function bindFold(f){if(f.getAttribute('data-bound'))return;f.setAttribute('data-bound','1');f.onclick=function(){var b=f.querySelector('[data-bdc="foldbody"]'),t=f.querySelector('span');var open=b.style.display!=='none';b.style.display=open?'none':'block';t.textContent=open?'구성품 보기 ▾':'구성품 접기 ▴';};}
+var S_ROW=";clear:both;float:left;width:100%;box-sizing:border-box;";
+function css(){if(document.querySelector('style[data-bdc="css"]'))return;var s=document.createElement('style');s.setAttribute('data-bdc','css');
+s.textContent='.item_detail_tit, .item_detail_tit *{word-break:keep-all !important;overflow-wrap:normal !important;} .item_detail_list > dl{padding-top:3px !important;} .item_detail_list dt{width:100px !important;} .item_detail_list dd{width:400px !important;} .item_detail_list > dl > dt,.item_detail_list > dl > dd{line-height:20px !important;} .item_detail_list .item_delivery dd .delivery-detail{line-height:20px;} .item_detail_list [data-bdc="fold"]{margin:4px 0 0 !important;padding:6px 12px !important;}';document.head.appendChild(s);}
+function pc(){var list=document.querySelector('.item_detail_list');if(!list)return;css();
+if(!list.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText+=S_ROW;list.insertBefore(w,list.firstChild);}
+var dv=list.querySelector('.item_delivery');
+if(D.box&&D.box.length&&!list.querySelector('[data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;f.style.cssText+=S_ROW;if(dv&&dv.nextSibling)dv.parentNode.insertBefore(f,dv.nextSibling);else list.appendChild(f);}
+var fd=list.querySelector('[data-bdc="fold"]');if(fd)bindFold(fd);}
+function mo(){var top=document.querySelector('.detail_info_top');if(!top)return;
+var pb=top.querySelector('.price_box');
+if(pb&&!top.querySelector('[data-bdc="intro"]')){var w=el('div',introHtml()+badgesHtml());w.setAttribute('data-bdc','top');w.style.cssText='padding:8px 0 4px;';var sub=pb.querySelector('.detail_sub_info');if(sub)pb.insertBefore(w,sub);else pb.appendChild(w);}
+var sub2=document.querySelector('.detail_sub_info');
+if(D.box&&D.box.length&&sub2&&!document.querySelector('[data-bdc="fold"]')){var f=el('div',foldHtml()).firstChild;sub2.parentNode.insertBefore(f,sub2.nextSibling);}
+var fd=document.querySelector('[data-bdc="fold"]');if(fd)bindFold(fd);}
+function fix(){try{pc();}catch(e){}try{mo();}catch(e){}}
+function start(){fix();try{new MutationObserver(function(){fix();}).observe(document.body,{childList:true,subtree:true});}catch(e){}
+var n=0,t=setInterval(function(){fix();if(++n>40)clearInterval(t);},500);}
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',start);}else{start();}
+})();</script>
+<!-- bd-jackery-p1000plus v1 드론박스 -->
+<div style="background:#fff;color:#191F28;color-scheme:light only"><div style="max-width:860px;margin:0 auto;line-height:1.7">
+<div style="border:1px solid #ffd2b5;background:#fff7f1;border-radius:12px;padding:20px 22px;margin:0 0 18px"><p style="margin:0 0 4px;font-size:13px;color:#ff6a13;font-weight:700">Jackery 국내 정식 수입품</p><h2 style="margin:0 0 12px;font-size:22px;font-weight:700;color:#191F28">잭커리 Explorer 1000 Plus</h2><table style="width:100%;border-collapse:collapse;font-size:15px;background:#fff;border-radius:8px"><tr><th style="text-align:left;padding:7px 12px;color:#6b6b70;font-weight:600;white-space:nowrap;border-bottom:1px solid #f0e2d8">용량</th><td style="padding:7px 12px;border-bottom:1px solid #f0e2d8">1,264Wh</td></tr><tr><th style="text-align:left;padding:7px 12px;color:#6b6b70;font-weight:600;white-space:nowrap;border-bottom:1px solid #f0e2d8">출력</th><td style="padding:7px 12px;border-bottom:1px solid #f0e2d8">최대 2,000W</td></tr><tr><th style="text-align:left;padding:7px 12px;color:#6b6b70;font-weight:600;white-space:nowrap;border-bottom:1px solid #f0e2d8">배터리</th><td style="padding:7px 12px;border-bottom:1px solid #f0e2d8">리튬인산철 · 4,000회 이상 충전 사이클</td></tr><tr><th style="text-align:left;padding:7px 12px;color:#6b6b70;font-weight:600;white-space:nowrap;border-bottom:1px solid #f0e2d8">충전</th><td style="padding:7px 12px;border-bottom:1px solid #f0e2d8">벽면 AC 약 1.7시간</td></tr><tr><th style="text-align:left;padding:7px 12px;color:#6b6b70;font-weight:600;white-space:nowrap;border-bottom:1px solid #f0e2d8">확장</th><td style="padding:7px 12px;border-bottom:1px solid #f0e2d8">1000 Plus 확장 배터리 연결</td></tr><tr><th style="text-align:left;padding:7px 12px;color:#6b6b70;font-weight:600;white-space:nowrap;border-bottom:1px solid #f0e2d8">앱</th><td style="padding:7px 12px;border-bottom:1px solid #f0e2d8">블루투스·Wi-Fi 원격 제어</td></tr></table><p style="margin:12px 0 0;font-size:13px;color:#6b6b70">A/S는 국내 수입사 보증 정책을 따릅니다(아래 보증 안내 참고).</p></div>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/ff7518bcb82125527e72f8ca64fd2602.jpg" alt="Jackery 브랜드 소개" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<div style="position:relative;width:100%;padding-top:56.25%;margin:0"><iframe src="https://www.youtube.com/embed/ZyxoEIQT8vI" title="잭커리 Explorer 1000 Plus 소개 영상" style="position:absolute;inset:0;width:100%;height:100%;border:0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/21a2b9b46bf7a7f1a3df94f5a6b589d3.jpg" alt="잭커리 Explorer 1000 Plus 상세 1" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/5c345ce7caea9dce50a95950d83bb0e7.jpg" alt="잭커리 Explorer 1000 Plus 상세 2" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/3300425c36789797d5bccbb0c4903288.jpg" alt="잭커리 Explorer 1000 Plus 상세 3" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/87898551a85de3f2dcfc96729e45fe24.jpg" alt="잭커리 Explorer 1000 Plus 상세 4" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/0715d36faf883b97e725503e1961038a.jpg" alt="잭커리 Explorer 1000 Plus 상세 5" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/dd90c937000042fd0a5ff6927f71c50c.jpg" alt="잭커리 Explorer 1000 Plus 상세 6" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/49b4f3223800d0a2124131b2ceb89efc.jpg" alt="잭커리 Explorer 1000 Plus 상세 7" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/97d1d158467d9f4eb04cf0684ee47a80.jpg" alt="잭커리 Explorer 1000 Plus 상세 8" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/5b2d2ea7f7736a407d663c899d85aa84.jpg" alt="잭커리 Explorer 1000 Plus 상세 9" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/b94b9f7519e0a11a799812e405504497.jpg" alt="잭커리 Explorer 1000 Plus 상세 10" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/df5692efd4a93c3b247b0001f07a5064.jpg" alt="잭커리 Explorer 1000 Plus 상세 11" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/a49c1c54165c415269d54a4a1dc8ac67.jpg" alt="잭커리 Explorer 1000 Plus 상세 12" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/acda7e012931741aa485e87efd831c00.jpg" alt="잭커리 Explorer 1000 Plus 상세 13" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/e4c8ab16d6b0fe9a11233372d348c5be.jpg" alt="잭커리 Explorer 1000 Plus 상세 14" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/f2ff0aaa9de60348639ee122f12ad97f.jpg" alt="잭커리 Explorer 1000 Plus 상세 15" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/542e9624c69f04e1d3a67471f57bd6bb.jpg" alt="잭커리 Explorer 1000 Plus 상세 16" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/0908019161e4c4f81599bd6ed6cc0b71.jpg" alt="잭커리 Explorer 1000 Plus 상세 17" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/0293a17b5870ef9588814047d90d7fb0.jpg" alt="잭커리 Explorer 1000 Plus 상세 18" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/0e682328337464f573021cd22e79fc5b.jpg" alt="잭커리 Explorer 1000 Plus 상세 19" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/d77a2f6a89c343015903dc3f546f0215.jpg" alt="잭커리 Explorer 1000 Plus 상세 20" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/8b9f1a1798634a4cb2fb639ad543f546.jpg" alt="잭커리 Explorer 1000 Plus 상세 21" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/ec49e132ce8047fa1d0544491a966929.jpg" alt="잭커리 Explorer 1000 Plus 상세 22" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/c21637fed47b223323b332a430cef95b.jpg" alt="잭커리 Explorer 1000 Plus 상세 23" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/a82ba3eabfeb41c06ec3e19bd8a41025.jpg" alt="잭커리 Explorer 1000 Plus 상세 24" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/57cc7bc27a6da2ae313f11d876f05c47.jpg" alt="잭커리 Explorer 1000 Plus 상세 25" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/1152afd61a919a4b3185870857cda5f9.jpg" alt="잭커리 Explorer 1000 Plus 상세 26" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/b3ac0cb1d208c8b6e3aa57adbf179301.jpg" alt="잭커리 Explorer 1000 Plus 상세 27" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/27a7319380eefb9e948293bdb1a89970.jpg" alt="잭커리 Explorer 1000 Plus 상세 28" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/c8d652eb726cf1994bbf3fc271ef9d76.jpg" alt="잭커리 Explorer 1000 Plus 상세 29" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/9af3316fc22b9b7a1f18465b738ffc53.jpg" alt="잭커리 Explorer 1000 Plus 상세 30" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/4607abd809c57855fafa460d3ff63c1a.jpg" alt="잭커리 Explorer 1000 Plus 상세 31" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/bdccd0bb167ece0123d3ddc6fd124317.jpg" alt="잭커리 Explorer 1000 Plus 상세 32" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/7eb375a4713849a74eb5860cc3f61430.jpg" alt="잭커리 Explorer 1000 Plus 상세 33" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/5183ade84cd2c62a9ab898589b64e9a4.jpg" alt="Jackery 자주 묻는 질문·보증 안내" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/e9cf5876398a12a95f9c9cae89169208.jpg" alt="Jackery 자주 묻는 질문·보증 안내" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/a2a9e96c50e0cc1b7762217eb4a93b5e.jpg" alt="Jackery 자주 묻는 질문·보증 안내" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/3918687891d7162ee8fd871507eac179.jpg" alt="Jackery 자주 묻는 질문·보증 안내" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="margin:0;line-height:0;text-align:center"><img src="https://ecimg.cafe24img.com/pg724b63244550007/dronebox2/web/upload/NNEditor/20261119/56877e7dc678c4290c554e1d4c33373f.jpg" alt="Jackery 자주 묻는 질문·보증 안내" style="max-width:100%;width:100%;display:block;margin:0 auto"></p>
+<p style="font-size:13px;color:#8B95A1;margin:20px 0 14px;text-align:center">사진·사양은 Jackery 국내 수입사((주)에코로보텍) 자료</p>
+</div></div>]]></goodsDescription>
+<goodsDescriptionSameFl>y</goodsDescriptionSameFl>
+<mileageGoods><![CDATA[2]]></mileageGoods>
+<mileageGoodsUnit><![CDATA[percent]]></mileageGoodsUnit>
+</goods_data>
+</data>
